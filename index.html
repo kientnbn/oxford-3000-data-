@@ -57,43 +57,93 @@
     header {
         background: var(--primary);
         color: white;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 8px 15px;
         position: sticky;
         top: 0;
-        z-index: 100;
+        z-index: 200;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
-    header h1 {
-        font-size: 28px;
-        font-weight: 700;
-        letter-spacing: -0.5px;
-        margin-bottom: 5px;
+    header h1 { display: none; }
+    header p { display: none; }
+
+    .header-btn, .header-select {
+        padding: 6px 8px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        background: rgba(255,255,255,0.2);
+        color: white;
+        transition: 0.2s;
     }
 
-    header p {
+    .header-btn:active, .header-select:active {
+        background: rgba(255,255,255,0.4);
+    }
+
+    .header-select {
         font-size: 12px;
-        opacity: 0.9;
+        padding: 6px 6px;
+    }
+
+    .search-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: 300;
+        padding-top: 60px;
+    }
+
+    .search-modal-content {
+        position: relative;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .search-close-btn {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #999;
+    }
+
+    .search-clear-btn {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        color: #e74c3c;
+        padding: 8px;
+    }
+
+    .search-clear-btn:hover {
+        opacity: 0.7;
     }
 
     .controls {
-        padding: 15px 20px;
-        background: white;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    body.dark-mode .controls {
-        background: #2a2a2a;
+        display: none;
     }
 
     .search-box {
         flex: 1;
         min-width: 200px;
-        padding: 10px 15px;
+        padding: 10px 15px 10px 45px;
         border: 2px solid var(--border);
         border-radius: 8px;
         font-size: 14px;
@@ -103,6 +153,66 @@
 
     body.dark-mode .search-box {
         background: #1a1a1a;
+    }
+
+    .category-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 13px;
+        border-bottom: 1px solid var(--light);
+    }
+
+    body.dark-mode .category-checkbox {
+        border-bottom-color: #444;
+    }
+
+    .category-checkbox input[type="checkbox"] {
+        cursor: pointer;
+        accent-color: var(--secondary);
+    }
+
+    .category-checkbox label {
+        cursor: pointer;
+        margin: 0;
+        flex: 1;
+        color: var(--text);
+    }
+
+    body.dark-mode .category-checkbox label {
+        color: #ecf0f1;
+    }
+
+    /* Category checkbox dark mode */
+    body.dark-mode #categoryFilterList {
+        background: #1a1a1a !important;
+        border-color: #444 !important;
+    }
+
+    body.dark-mode .category-checkbox {
+        border-bottom-color: #444;
+        color: #ecf0f1;
+    }
+
+    body.dark-mode #categorySearchInput {
+        background: #1a1a1a;
+        color: #ecf0f1;
+        border-color: #444 !important;
+    }
+
+    body.dark-mode #categorySearchInput::placeholder {
+        color: #888;
+    }
+
+    #categoryCount {
+        background: var(--light);
+    }
+
+    body.dark-mode #categoryCount {
+        background: #444;
+        color: #bdc3c7;
     }
 
     .lang-select {
@@ -286,6 +396,50 @@
     @keyframes pulse {
         0%, 100% { opacity: 1; }
         50% { opacity: 0.7; }
+    }
+
+    /* Frequency & Categories Meta */
+    .word-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        padding: 12px 0;
+        margin: 10px 0 5px 0;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .freq-badge {
+        font-size: 12px;
+        font-weight: 700;
+        color: #ff6b35;
+        background: rgba(255, 107, 53, 0.1);
+        padding: 4px 10px;
+        border-radius: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    body.dark-mode .freq-badge {
+        color: #ff8c42;
+        background: rgba(255, 107, 53, 0.2);
+    }
+
+    .category-chip {
+        font-size: 11px;
+        font-weight: 600;
+        color: white;
+        background: var(--secondary);
+        padding: 4px 10px;
+        border-radius: 14px;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+
+    body.dark-mode .category-chip {
+        background: #4a90e2;
+        color: white;
     }
 
     /* Tabs System */
@@ -572,24 +726,109 @@
 
 </head>
 <body>
-    <header>
-        <h1>📚 Oxford 3000</h1>
-        <p>Essential English Vocabulary</p>
+    <header id="mainHeader">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 20px;">📚</span>
+                <span style="font-size: 16px; font-weight: 700;">Oxford 3K</span>
+            </div>
+            <div id="headerControls" style="display: flex; gap: 8px; align-items: center;">
+                <button id="searchIcon" class="header-btn" title="Search">🔍</button>
+                <select id="langSelect" class="header-select">
+                    <option value="en">EN</option>
+                    <option value="en-vi" selected>E/V</option>
+                    <option value="vi">VI</option>
+                </select>
+                <button id="reloadBtn" class="header-btn" title="Reload">🔄</button>
+                <button id="darkToggle" class="header-btn" title="Dark mode">🌙</button>
+                <button id="filterSortIcon" class="header-btn" title="Filter & Sort">⚙️</button>
+            </div>
+            <button id="toggleHeaderSize" class="header-btn" title="Collapse" style="margin-left: auto;">⌃</button>
+        </div>
     </header>
 
-<div class="controls">
-    <input 
-        type="text" 
-        id="searchInput" 
-        class="search-box" 
-        placeholder="Search words... (e.g., 'about', 'absolutely')"
-    >
-    <select id="langSelect" class="lang-select">
-        <option value="en-vi">EN + VI</option>
-        <option value="en">EN only</option>
-        <option value="vi">VI only</option>
-    </select>
-    <button id="darkToggle" class="dark-toggle">🌙</button>
+<!-- Floating Show Header Button -->
+<button id="showHeaderBtn" style="display: none; position: fixed; top: 12px; right: 12px; z-index: 250; padding: 6px 8px; background: rgba(0, 0, 0, 0.3); color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 18px; backdrop-filter: blur(5px); opacity: 0.6; transition: opacity 0.2s; box-shadow: none;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">⌄</button>
+
+<!-- Search Modal -->
+<div id="searchModal" class="search-modal" style="display: none;">
+    <div class="search-modal-content">
+        <div style="position: relative; display: flex; align-items: center;">
+            <button id="clearSearchBtn" class="search-clear-btn" onclick="clearSearch()" style="display: none;">🗑️</button>
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-box" 
+                placeholder="Search words... (e.g., 'about', 'absolutely')"
+                autofocus
+                inputmode="text"
+                autocomplete="off"
+            >
+            <button class="search-close-btn" onclick="closeSearchModal()">✕</button>
+        </div>
+    </div>
+</div>
+
+<!-- Filter & Sort Modal -->
+<div id="filterSortModal" class="search-modal" style="display: none;">
+    <div class="search-modal-content" style="max-width: 400px;">
+        <div style="position: relative;">
+            <div style="padding: 0; background: white; border-radius: 8px; overflow: hidden;">
+                
+                <!-- === FILTER SECTION === -->
+                <div style="padding: 16px; border-bottom: 1px solid var(--border);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <div style="font-size: 13px; font-weight: 600; color: var(--text);">🏷️ Categories</div>
+                        <div id="categoryCount" style="font-size: 11px; color: #7f8c8d; background: var(--light); padding: 2px 6px; border-radius: 3px;">0</div>
+                    </div>
+                    
+                    <!-- Search Input -->
+                    <input type="text" id="categorySearchInput" placeholder="Search categories..." style="width: 100%; padding: 8px 10px; margin-bottom: 8px; border: 1px solid var(--border); border-radius: 4px; font-size: 13px;">
+                    
+                    <!-- Select All -->
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px; cursor: pointer;" onclick="toggleSelectAll()">
+                        <input type="checkbox" id="selectAllCheckbox" style="cursor: pointer; width: 16px; height: 16px; accent-color: var(--secondary);">
+                        <label for="selectAllCheckbox" style="cursor: pointer; font-weight: 600; font-size: 12px; color: var(--text);">Select All</label>
+                    </div>
+                    
+                    <!-- Category List -->
+                    <div id="categoryFilterList" style="max-height: 200px; overflow-y: auto; border: 1px solid var(--border); border-radius: 4px; padding: 0; background: white;">
+                        <!-- Checkboxes generated here -->
+                    </div>
+                </div>
+
+                <!-- === SORT SECTION === -->
+                <div style="padding: 16px; border-bottom: 1px solid var(--border);">
+                    <div style="font-size: 13px; font-weight: 600; margin-bottom: 10px; color: var(--text);">📊 Sort by</div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 12px;">
+                            <input type="radio" name="sortType" value="frequency-desc" checked onchange="applyFilterAndSort()">
+                            <span>Freq ↓</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 12px;">
+                            <input type="radio" name="sortType" value="frequency-asc" onchange="applyFilterAndSort()">
+                            <span>Freq ↑</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 12px;">
+                            <input type="radio" name="sortType" value="alphabet-asc" onchange="applyFilterAndSort()">
+                            <span>A→Z</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 12px;">
+                            <input type="radio" name="sortType" value="alphabet-desc" onchange="applyFilterAndSort()">
+                            <span>Z→A</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- === BUTTONS SECTION === -->
+                <div style="padding: 12px 16px; display: flex; gap: 8px; justify-content: flex-end;">
+                    <button onclick="clearAllFilters()" style="padding: 8px 16px; background: white; color: var(--text); border: 1px solid var(--border); border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">Clear</button>
+                    <button onclick="closeFilterModal()" style="padding: 8px 20px; background: var(--secondary); color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">Done</button>
+                </div>
+            </div>
+            <button class="search-close-btn" onclick="closeFilterModal()">✕</button>
+        </div>
+    </div>
 </div>
 
 <div class="container">
@@ -648,6 +887,8 @@
             word: "about",
             phonetic: "/əˈbaʊt/",
             pos: "Preposition, Adverb",
+            categories: ["General", "Communication"],
+            frequency: 4892,
             meanings: [
                 {
                     vi: "Về, liên quan đến (chỉ chủ đề, nội dung)",
@@ -706,6 +947,8 @@
             word: "absolutely",
             phonetic: "/ˈæbsəluːtli/",
             pos: "Adverb",
+            categories: ["Communication", "General"],
+            frequency: 487,
             meanings: [
                 {
                     vi: "Hoàn toàn, tuyệt đối (diễn tả sự chắc chắn)",
@@ -752,6 +995,8 @@
             word: "academy",
             phonetic: "/əˈkædəmi/",
             pos: "Noun",
+            categories: ["Education", "General"],
+            frequency: 342,
             meanings: [
                 {
                     vi: "Học viện, trường (đặc biệt là dạy kỹ năng đặc biệt)",
@@ -966,6 +1211,12 @@
                     </div>
                 </div>
 
+                <!-- Frequency & Categories -->
+                <div class="word-meta">
+                    ${word.frequency ? `<span class="freq-badge">#${word.frequency}</span>` : ''}
+                    ${word.categories ? word.categories.map(cat => `<span class="category-chip">${cat}</span>`).join('') : ''}
+                </div>
+
                 <!-- Tabs -->
                 <div class="word-tabs">
                     <button class="tab-btn active" data-tab="definition" onclick="switchTab(${word.id}, 'definition')">📖 Definition</button>
@@ -1012,7 +1263,6 @@
                                     ` : ''}
                                     ${document.getElementById('langSelect') && (document.getElementById('langSelect').value === 'en-vi' || document.getElementById('langSelect').value === 'vi') ? `
                                     <div class="conv-text conv-text-vi">
-                                        <button class="conv-audio-btn" onclick="speakWord('${line.vi.replace(/"/g, '\\"')}', 'vi-VN')">🔊</button>
                                         <span>${line.vi}</span>
                                     </div>
                                     ` : ''}
@@ -1028,12 +1278,69 @@
 
     // Search Functionality
     function setupSearch(words) {
+        // Store all words for filter to use
+        window.currentAllWords = words;
+        
         const searchInput = document.getElementById('searchInput');
+        const clearBtn = document.getElementById('clearSearchBtn');
+        
         searchInput.addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const filtered = words.filter(w => 
-                w.word.toLowerCase().includes(query)
-            );
+            const query = e.target.value.toLowerCase().trim();
+            
+            // Show/hide clear button
+            clearBtn.style.display = query ? 'block' : 'none';
+            
+            if (!query) {
+                renderWords(words);
+                return;
+            }
+            
+            // Full text search - search in all fields
+            const filtered = words.filter(w => {
+                const word = w.word.toLowerCase();
+                const phonetic = (w.phonetic || '').toLowerCase();
+                const pos = (w.pos || '').toLowerCase();
+                
+                // Search in word or phonetic
+                if (word.includes(query) || phonetic.includes(query) || pos.includes(query)) {
+                    return true;
+                }
+                
+                // Search in meanings and examples
+                if (w.meanings) {
+                    for (let m of w.meanings) {
+                        const vi = (m.vi || '').toLowerCase();
+                        if (vi.includes(query)) return true;
+                        
+                        if (m.examples) {
+                            for (let ex of m.examples) {
+                                const en = (ex.en || '').toLowerCase();
+                                const exvi = (ex.vi || '').toLowerCase();
+                                if (en.includes(query) || exvi.includes(query)) return true;
+                            }
+                        }
+                    }
+                }
+                
+                // Search in conversations
+                if (w.conversations) {
+                    for (let conv of w.conversations) {
+                        const title = (conv.title || '').toLowerCase();
+                        if (title.includes(query)) return true;
+                        
+                        if (conv.lines) {
+                            for (let line of conv.lines) {
+                                const en = (line.en || '').toLowerCase();
+                                const vi = (line.vi || '').toLowerCase();
+                                if (en.includes(query) || vi.includes(query)) return true;
+                            }
+                        }
+                    }
+                }
+                
+                return false;
+            });
+            
             renderWords(filtered);
         });
     }
@@ -1051,6 +1358,22 @@
             toggle.textContent = isDarkNow ? '☀️' : '🌙';
         });
         toggle.textContent = isDark ? '☀️' : '🌙';
+    }
+
+    function setupLanguagePreference() {
+        const langSelect = document.getElementById('langSelect');
+        const savedLang = localStorage.getItem('language');
+        
+        // Restore saved language
+        if (savedLang) {
+            langSelect.value = savedLang;
+        }
+        
+        // Save language on change
+        langSelect.addEventListener('change', () => {
+            localStorage.setItem('language', langSelect.value);
+            renderWords(window.currentAllWords || []);
+        });
     }
 
     // Load Data
@@ -1132,7 +1455,9 @@
 
                 renderWords(data);
                 setupSearch(data);
+                window.currentAllWords = data;
                 statusText.textContent = `✓ Loaded ${data.length} words via ${successEndpoint}`;
+                applyFilterAndSort();  // Restore & apply saved filter state
             } else {
                 console.error('❌ All endpoints failed:', errors);
                 data = sampleData;
@@ -1144,21 +1469,347 @@
 
                 renderWords(data);
                 setupSearch(data);
+                window.currentAllWords = data;
                 statusText.innerHTML = `⚠️ All fetches failed. Errors:<br><small>${errors.join('<br>')}</small>`;
+                applyFilterAndSort();  // Restore & apply saved filter state
             }
         } catch (error) {
             console.error('Fatal error:', error);
             renderWords(sampleData);
             setupSearch(sampleData);
+            window.currentAllWords = sampleData;
             statusText.textContent = `✓ Using offline data`;
+            applyFilterAndSort();  // Restore & apply saved filter state
         }
+    }
+
+    // Reload data from GitHub
+    function reloadData() {
+        const statusText = document.querySelector('.status');
+        statusText.textContent = '🔄 Reloading...';
+        loadData();
+    }
+
+    // Search Modal Functions
+    function openSearchModal() {
+        document.getElementById('searchModal').style.display = 'flex';
+        const input = document.getElementById('searchInput');
+        
+        // Instant keyboard trigger
+        input.blur();
+        input.focus();
+        input.click();
+        input.select();
+        // Extra trigger for mobile
+        if (input.setSelectionRange) {
+            input.setSelectionRange(0, 0);
+        }
+        input.focus();
+    }
+
+    // Clear search
+    function clearSearch() {
+        const searchInput = document.getElementById('searchInput');
+        const clearBtn = document.getElementById('clearSearchBtn');
+        searchInput.value = '';
+        clearBtn.style.display = 'none';
+        searchInput.focus();
+        // Trigger search update
+        searchInput.dispatchEvent(new Event('input'));
+    }
+
+    function closeSearchModal() {
+        document.getElementById('searchModal').style.display = 'none';
+    }
+
+    // Filter & Sort Functions
+    function openFilterModal() {
+        const modal = document.getElementById('filterSortModal');
+        modal.style.display = 'flex';
+        
+        // Generate category filters
+        const allWords = window.currentAllWords || [];
+        generateCategoryFilters(allWords);
+        
+        // Restore previous filter state
+        restoreFilterState();
+    }
+
+    function closeFilterModal() {
+        document.getElementById('filterSortModal').style.display = 'none';
+    }
+
+    function extractAllCategories(words) {
+        const categoriesSet = new Set();
+        let totalWords = words.length;
+        let wordsWithCategories = 0;
+        
+        words.forEach(word => {
+            if (word.categories && Array.isArray(word.categories) && word.categories.length > 0) {
+                wordsWithCategories++;
+                word.categories.forEach(cat => {
+                    if (cat && cat.trim()) {
+                        categoriesSet.add(cat.trim());
+                    }
+                });
+            }
+        });
+        
+        const result = Array.from(categoriesSet).sort();
+        console.log(`📊 Categories extracted: ${result.length} unique categories from ${wordsWithCategories}/${totalWords} words`);
+        console.log(`   Categories: [${result.join(', ')}]`);
+        
+        return result;
+    }
+
+    function generateCategoryFilters(allWords) {
+        const categories = extractAllCategories(allWords);
+        const filterList = document.getElementById('categoryFilterList');
+        const countDisplay = document.getElementById('categoryCount');
+        
+        // Update count display
+        countDisplay.textContent = categories.length;
+        
+        // Clear existing checkboxes
+        filterList.innerHTML = '';
+        
+        // Create checkboxes for each category
+        categories.forEach(category => {
+            const div = document.createElement('div');
+            div.className = 'category-checkbox';
+            div.style.cssText = 'display: flex; align-items: center; gap: 8px; padding: 8px 10px; cursor: pointer; font-size: 13px; border-bottom: 1px solid #f0f0f0;';
+            div.innerHTML = `
+                <input type="checkbox" id="cat_${category}" value="${category}" onchange="applyFilterAndSort()" style="cursor: pointer; width: 16px; height: 16px; accent-color: var(--secondary);">
+                <label for="cat_${category}" style="cursor: pointer; flex: 1; margin: 0; color: var(--text);">${category}</label>
+            `;
+            filterList.appendChild(div);
+        });
+        
+        // Add search input listener
+        const searchInput = document.getElementById('categorySearchInput');
+        searchInput.addEventListener('input', filterCategoriesBySearch);
+        
+        console.log(`✓ Generated ${categories.length} category checkboxes`);
+        updateSelectAllIcon();
+    }
+
+    function filterCategoriesBySearch() {
+        const searchInput = document.getElementById('categorySearchInput').value.toLowerCase();
+        const checkboxes = document.querySelectorAll('#categoryFilterList .category-checkbox');
+        
+        checkboxes.forEach(cb => {
+            const label = cb.querySelector('label').textContent.toLowerCase();
+            cb.style.display = label.includes(searchInput) ? 'flex' : 'none';
+        });
+    }
+
+    function getSelectedCategories() {
+        const checkboxes = document.querySelectorAll('#categoryFilterList input[type="checkbox"]:checked');
+        return Array.from(checkboxes).map(cb => cb.value);
+    }
+
+    function sortWords(words) {
+        const sortType = document.querySelector('input[name="sortType"]:checked').value;
+        const wordsCopy = [...words];
+        
+        if (sortType === 'frequency-desc') {
+            wordsCopy.sort((a, b) => (b.frequency || 0) - (a.frequency || 0));
+        } else if (sortType === 'frequency-asc') {
+            wordsCopy.sort((a, b) => (a.frequency || 0) - (b.frequency || 0));
+        } else if (sortType === 'alphabet-asc') {
+            wordsCopy.sort((a, b) => a.word.localeCompare(b.word));
+        } else if (sortType === 'alphabet-desc') {
+            wordsCopy.sort((a, b) => b.word.localeCompare(a.word));
+        }
+        
+        return wordsCopy;
+    }
+
+    function filterByCategories(words) {
+        const selectedCategories = getSelectedCategories();
+        
+        if (selectedCategories.length === 0) {
+            return words;
+        }
+        
+        return words.filter(word => {
+            if (!word.categories) return false;
+            return selectedCategories.some(cat => word.categories.includes(cat));
+        });
+    }
+
+    function toggleSelectAll() {
+        const allCheckboxes = document.querySelectorAll('#categoryFilterList input[type="checkbox"]');
+        const checkedCount = document.querySelectorAll('#categoryFilterList input[type="checkbox"]:checked').length;
+        const shouldCheckAll = checkedCount < allCheckboxes.length;
+        
+        allCheckboxes.forEach(cb => {
+            cb.checked = shouldCheckAll;
+        });
+        applyFilterAndSort();
+    }
+
+    function updateSelectAllIcon() {
+        const allCheckboxes = document.querySelectorAll('#categoryFilterList input[type="checkbox"]');
+        const checkedCount = document.querySelectorAll('#categoryFilterList input[type="checkbox"]:checked').length;
+        const selectAllCheckbox = document.getElementById('selectAllCheckbox');
+        
+        selectAllCheckbox.indeterminate = checkedCount > 0 && checkedCount < allCheckboxes.length;
+        selectAllCheckbox.checked = checkedCount === allCheckboxes.length && allCheckboxes.length > 0;
+    }
+
+    function clearAllFilters() {
+        document.querySelectorAll('#categoryFilterList input[type="checkbox"]').forEach(cb => {
+            cb.checked = false;
+        });
+        document.getElementById('categorySearchInput').value = '';
+        applyFilterAndSort();
+    }
+
+    // Save/Restore Filter State
+    function saveFilterState() {
+        const selectedCategories = getSelectedCategories();
+        const sortType = document.querySelector('input[name="sortType"]:checked').value;
+        
+        localStorage.setItem('filterState', JSON.stringify({
+            categories: selectedCategories,
+            sortType: sortType
+        }));
+        
+        console.log(`💾 Filter state saved: ${selectedCategories.length} categories, sort=${sortType}`);
+    }
+
+    function restoreFilterState() {
+        try {
+            const saved = localStorage.getItem('filterState');
+            if (!saved) {
+                console.log('📂 No saved filter state');
+                return;
+            }
+            
+            const state = JSON.parse(saved);
+            
+            // Restore category selections
+            if (state.categories && Array.isArray(state.categories)) {
+                state.categories.forEach(category => {
+                    const checkbox = document.getElementById(`cat_${category}`);
+                    if (checkbox) {
+                        checkbox.checked = true;
+                    }
+                });
+                console.log(`♻️ Restored ${state.categories.length} categories`);
+            }
+            
+            // Restore sort selection
+            if (state.sortType) {
+                const sortRadio = document.querySelector(`input[name="sortType"][value="${state.sortType}"]`);
+                if (sortRadio) {
+                    sortRadio.checked = true;
+                }
+                console.log(`♻️ Restored sort: ${state.sortType}`);
+            }
+            
+            updateSelectAllIcon();
+        } catch (error) {
+            console.error('❌ Error restoring filter state:', error);
+        }
+    }
+
+    function applyFilterAndSort() {
+        const allWords = window.currentAllWords || [];
+        let filtered = filterByCategories(allWords);
+        let sorted = sortWords(filtered);
+        renderWords(sorted);
+        updateSelectAllIcon();
+        saveFilterState();  // Save state after applying
+    }
+
+    // Toggle Header
+    function toggleHeaderSize() {
+        const header = document.getElementById('mainHeader');
+        const floatingBtn = document.getElementById('showHeaderBtn');
+        const isHidden = header.style.display === 'none';
+        
+        header.style.display = isHidden ? 'block' : 'none';
+        floatingBtn.style.display = isHidden ? 'none' : 'flex';
+        localStorage.setItem('headerExpanded', !isHidden);
+    }
+
+    // Reload data from GitHub
+    function reloadData() {
+        const statusText = document.querySelector('.status');
+        statusText.textContent = '🔄 Reloading...';
+        loadData();
     }
 
     // Initialize
     window.addEventListener('load', () => {
         setupDarkMode();
+        setupLanguagePreference();
         loadData();
+        
+        // Search icon
+        const searchIcon = document.getElementById('searchIcon');
+        if (searchIcon) {
+            searchIcon.addEventListener('click', openSearchModal);
+        }
+
+        // Filter button
+        const filterSortIcon = document.getElementById('filterSortIcon');
+        if (filterSortIcon) {
+            filterSortIcon.addEventListener('click', openFilterModal);
+        }
+
+        // Search modal close on outside click
+        document.getElementById('searchModal').addEventListener('click', (e) => {
+            if (e.target.id === 'searchModal') closeSearchModal();
+        });
+
+        // Filter modal close on outside click
+        const filterModal = document.getElementById('filterSortModal');
+        if (filterModal) {
+            filterModal.addEventListener('click', (e) => {
+                if (e.target.id === 'filterSortModal') closeFilterModal();
+            });
+        }
+
+        // Close modal on ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeSearchModal();
+        });
+
+        // Reload button
+        const reloadBtn = document.getElementById('reloadBtn');
+        if (reloadBtn) {
+            reloadBtn.addEventListener('click', reloadData);
+        }
+
+        // Toggle header size
+        const toggleSizeBtn = document.getElementById('toggleHeaderSize');
+        if (toggleSizeBtn) {
+            toggleSizeBtn.addEventListener('click', toggleHeaderSize);
+        }
+
+        // Show header button
+        const showHeaderBtn = document.getElementById('showHeaderBtn');
+        if (showHeaderBtn) {
+            showHeaderBtn.addEventListener('click', () => {
+                const header = document.getElementById('mainHeader');
+                header.style.display = 'block';
+                showHeaderBtn.style.display = 'none';
+                localStorage.setItem('headerExpanded', 'true');
+            });
+        }
+
+        // Restore header state
+        const headerExpanded = localStorage.getItem('headerExpanded');
+        if (headerExpanded === 'false') {
+            document.getElementById('mainHeader').style.display = 'none';
+            document.getElementById('showHeaderBtn').style.display = 'flex';
+        }
     });
+
+    // Mobile keyboard handled in openSearchModal function
 </script>
 
 </body>
