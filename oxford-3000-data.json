@@ -9414,3 +9414,1692 @@
           },
           {
             "en": "We need government approval before construction can begin.",
+            "vi": "Chúng ta cần sự phê duyệt của chính phủ trước khi xây dựng có thể bắt đầu.",
+            "category": "Government"
+          }
+        ]
+      },
+      {
+        "vi": "2. Sự tán thành hoặc đồng ý (bày tỏ sự hài lòng)",
+        "examples": [
+          {
+            "en": "She looked for approval in his eyes after her presentation.",
+            "vi": "Cô ấy tìm kiếm sự tán thành trong mắt anh ấy sau bài thuyết trình của cô ấy.",
+            "category": "Personal"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Project Review",
+        "lines": [
+          {
+            "speaker": "Manager",
+            "en": "Has the project received final approval from leadership?",
+            "vi": "Dự án đã nhận được sự phê duyệt cuối cùng từ lãnh đạo chưa?"
+          },
+          {
+            "speaker": "Project Lead",
+            "en": "Not yet! We're awaiting approval from the executive team.",
+            "vi": "Chưa! Chúng tôi đang chờ sự phê duyệt từ đội điều hành.",
+            "vocabs": [
+              "awaiting",
+              "executive"
+            ]
+          },
+          {
+            "speaker": "Manager",
+            "en": "When do you expect approval?",
+            "vi": "Bạn dự kiến sẽ nhận được sự phê duyệt khi nào?",
+            "vocabs": [
+              "expect"
+            ]
+          },
+          {
+            "speaker": "Lead",
+            "en": "I anticipate approval within two weeks if our metrics look good.",
+            "vi": "Tôi dự báo sự phê duyệt trong vòng hai tuần nếu các số liệu của chúng tôi trông tốt.",
+            "vocabs": [
+              "anticipate",
+              "metrics"
+            ]
+          },
+          {
+            "speaker": "Manager",
+            "en": "Good! Do we need additional approval from finance?",
+            "vi": "Tốt! Chúng ta có cần sự phê duyệt bổ sung từ tài chính không?",
+            "vocabs": [
+              "finance"
+            ]
+          },
+          {
+            "speaker": "Lead",
+            "en": "Yes, their approval is crucial before budget allocation.",
+            "vi": "Vâng, sự phê duyệt của họ là rất quan trọng trước khi phân bổ ngân sách.",
+            "vocabs": [
+              "crucial",
+              "allocation"
+            ]
+          },
+          {
+            "speaker": "Manager",
+            "en": "I'll escalate this. Management approval should come soon.",
+            "vi": "Tôi sẽ nâng cấp điều này. Sự phê duyệt của quản lý sẽ sớm đến.",
+            "vocabs": [
+              "escalate"
+            ]
+          },
+          {
+            "speaker": "Lead",
+            "en": "Thank you! With your approval, I'll prepare final documentation.",
+            "vi": "Cảm ơn! Với sự phê duyệt của bạn, tôi sẽ chuẩn bị tài liệu cuối cùng.",
+            "vocabs": [
+              "documentation"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "word": "architect",
+    "phonetic": "/ˈɑːrkɪtekt/",
+    "pos": "Noun",
+    "frequency": 1234,
+    "categories": [
+      "General",
+      "Business"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Kiến trúc sư (thiết kế tòa nhà)",
+        "examples": [
+          {
+            "en": "The architect designed a modern building.",
+            "vi": "Kiến trúc sư thiết kế một tòa nhà hiện đại.",
+            "category": "General"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Daily Conversation",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Let's talk about architect.",
+            "vi": "Hãy nói về architect."
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, architect is important.",
+            "vi": "Vâng, architect rất quan trọng.",
+            "vocabs": [
+              "architect"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Can you explain architect?",
+            "vi": "Bạn có thể giải thích architect?",
+            "vocabs": [
+              "architect"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Architect means something significant.",
+            "vi": "architect có nghĩa là gì đó quan trọng.",
+            "vocabs": [
+              "means"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "How is architect used in life?",
+            "vi": "architect được sử dụng trong cuộc sống như thế nào?",
+            "vocabs": [
+              "used"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Architect appears everywhere daily.",
+            "vi": "architect xuất hiện ở mọi nơi hàng ngày.",
+            "vocabs": [
+              "everywhere"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Thanks for explaining architect!",
+            "vi": "Cảm ơn bạn đã giải thích architect!",
+            "vocabs": [
+              "thanks"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Happy to help! architect is clear now!",
+            "vi": "Vui lòng giúp! Bây giờ architect rõ ràng!",
+            "vocabs": [
+              "help"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "word": "arise",
+    "phonetic": "/əˈraɪz/",
+    "pos": "Verb",
+    "frequency": 1234,
+    "categories": [
+      "General",
+      "Goal"
+    ],
+    "meanings": [
+      {
+        "vi": "1. (Định nghĩa arise từ Oxford)",
+        "examples": [
+          {
+            "en": "This arise is important.",
+            "vi": "arise này rất quan trọng.",
+            "category": "General"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Quick Chat",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "About arise?",
+            "vi": "Về arise?"
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, arise matters.",
+            "vi": "Vâng, arise có quan trọng.",
+            "vocabs": [
+              "arise"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "What is arise?",
+            "vi": "arise là gì?",
+            "vocabs": [
+              "arise"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "arise is significant.",
+            "vi": "arise rất quan trọng.",
+            "vocabs": [
+              "significant"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "How use arise?",
+            "vi": "Sử dụng arise như thế nào?",
+            "vocabs": [
+              "use"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "arise applies everywhere.",
+            "vi": "arise áp dụng ở mọi nơi.",
+            "vocabs": [
+              "applies"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Will arise help?",
+            "vi": "arise sẽ giúp?",
+            "vocabs": [
+              "help"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Yes! arise helps greatly always!",
+            "vi": "Vâng! arise luôn giúp rất nhiều!",
+            "vocabs": [
+              "always"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "word": "arrangement",
+    "phonetic": "/əˈreɪndʒmənt/",
+    "pos": "Noun",
+    "frequency": 1234,
+    "categories": [
+      "General",
+      "Organization"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Cách sắp xếp hoặc bố trí đồ vật hoặc người",
+        "examples": [
+          {
+            "en": "The arrangement of furniture in the room looks modern.",
+            "vi": "Cách sắp xếp đồ đạc trong phòng trông hiện đại.",
+            "category": "Design"
+          },
+          {
+            "en": "A flower arrangement makes the table more attractive.",
+            "vi": "Cách sắp xếp hoa làm cho bàn hấp dẫn hơn.",
+            "category": "Decoration"
+          }
+        ]
+      },
+      {
+        "vi": "2. Sự thỏa thuận hoặc bản thỏa hiệp về cách hành động",
+        "examples": [
+          {
+            "en": "They made an arrangement to meet weekly.",
+            "vi": "Họ đã sắp xếp để gặp mặt hàng tuần.",
+            "category": "Agreement"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Event Planning",
+        "lines": [
+          {
+            "speaker": "Planner",
+            "en": "Let's discuss the arrangement for the event.",
+            "vi": "Hãy thảo luận về cách sắp xếp sự kiện."
+          },
+          {
+            "speaker": "Client",
+            "en": "What arrangement works best for the space?",
+            "vi": "Cách sắp xếp nào hoạt động tốt nhất cho không gian?",
+            "vocabs": [
+              "works",
+              "space"
+            ]
+          },
+          {
+            "speaker": "Planner",
+            "en": "The arrangement I suggest is open and spacious.",
+            "vi": "Cách sắp xếp tôi đề xuất là mở và rộng rãi.",
+            "vocabs": [
+              "suggest",
+              "spacious"
+            ]
+          },
+          {
+            "speaker": "Client",
+            "en": "This arrangement allows good movement and flow.",
+            "vi": "Cách sắp xếp này cho phép chuyển động và dòng chảy tốt.",
+            "vocabs": [
+              "movement",
+              "flow"
+            ]
+          },
+          {
+            "speaker": "Planner",
+            "en": "Yes! We also need an arrangement for catering.",
+            "vi": "Vâng! Chúng ta cũng cần sắp xếp cho dịch vụ ăn uống.",
+            "vocabs": [
+              "catering"
+            ]
+          },
+          {
+            "speaker": "Client",
+            "en": "Can we arrange separate seating by arrangement?",
+            "vi": "Chúng ta có thể sắp xếp chỗ ngồi riêng biệt không?",
+            "vocabs": [
+              "seating"
+            ]
+          },
+          {
+            "speaker": "Planner",
+            "en": "Absolutely! The arrangement can be fully customized.",
+            "vi": "Chắc chắn! Cách sắp xếp có thể được tùy chỉnh hoàn toàn.",
+            "vocabs": [
+              "customized"
+            ]
+          },
+          {
+            "speaker": "Client",
+            "en": "Perfect! This arrangement will be fantastic!",
+            "vi": "Hoàn hảo! Cách sắp xếp này sẽ tuyệt vời!",
+            "vocabs": [
+              "fantastic"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "word": "arrival",
+    "phonetic": "/əˈraɪvəl/",
+    "pos": "Noun",
+    "frequency": 1234,
+    "categories": [
+      "General",
+      "Travel"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Sự đến hoặc tới tại một nơi",
+        "examples": [
+          {
+            "en": "Our arrival at the airport was delayed by bad weather.",
+            "vi": "Sự đến của chúng tôi tại sân bay bị trì hoãn do thời tiết xấu.",
+            "category": "Travel"
+          },
+          {
+            "en": "The arrival time for the flight is 8 PM.",
+            "vi": "Thời gian đến của chuyến bay là 8 giờ tối.",
+            "category": "Transport"
+          }
+        ]
+      },
+      {
+        "vi": "2. Người hoặc thứ vừa mới đến hoặc xuất hiện",
+        "examples": [
+          {
+            "en": "New arrivals at the store include the latest fashion items.",
+            "vi": "Hàng mới về ở cửa hàng bao gồm những mặt hàng thời trang mới nhất.",
+            "category": "Shopping"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Travel Plans",
+        "lines": [
+          {
+            "speaker": "Traveler",
+            "en": "What's the arrival time at the destination?",
+            "vi": "Thời gian đến tại điểm đến là bao nhiêu?"
+          },
+          {
+            "speaker": "Agent",
+            "en": "Your arrival is scheduled for 6 PM tomorrow.",
+            "vi": "Sự đến của bạn được lên lịch lúc 6 giờ tối ngày mai.",
+            "vocabs": [
+              "scheduled"
+            ]
+          },
+          {
+            "speaker": "Traveler",
+            "en": "Will the arrival include hotel pickup?",
+            "vi": "Sự đến có bao gồm đón từ khách sạn không?",
+            "vocabs": [
+              "pickup"
+            ]
+          },
+          {
+            "speaker": "Agent",
+            "en": "Yes, after arrival we arrange hotel transfer.",
+            "vi": "Vâng, sau khi đến chúng tôi sắp xếp chuyển phòng khách sạn.",
+            "vocabs": [
+              "transfer"
+            ]
+          },
+          {
+            "speaker": "Traveler",
+            "en": "What happens upon arrival at the hotel?",
+            "vi": "Điều gì xảy ra khi đến khách sạn?",
+            "vocabs": [
+              "upon"
+            ]
+          },
+          {
+            "speaker": "Agent",
+            "en": "Upon arrival, check-in is quick and efficient.",
+            "vi": "Khi đến, nhận phòng là nhanh chóng và hiệu quả.",
+            "vocabs": [
+              "check-in",
+              "efficient"
+            ]
+          },
+          {
+            "speaker": "Traveler",
+            "en": "Is early arrival possible for extra time?",
+            "vi": "Có thể đến sớm để có thời gian thêm?",
+            "vocabs": [
+              "early"
+            ]
+          },
+          {
+            "speaker": "Agent",
+            "en": "Early arrival depends on transport availability!",
+            "vi": "Sự đến sớm tùy thuộc vào khả dụng của giao thông!",
+            "vocabs": [
+              "availability"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "word": "artificial",
+    "phonetic": "/ɑːrtɪˈfɪʃəl/",
+    "pos": "Adjective",
+    "frequency": 1234,
+    "categories": [
+      "General",
+      "Technology"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Nhân tạo (không tự nhiên)",
+        "examples": [
+          {
+            "en": "Artificial flowers look almost real.",
+            "vi": "Hoa nhân tạo trông gần như thật.",
+            "category": "General"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Daily Conversation",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Let's talk about artificial.",
+            "vi": "Hãy nói về artificial."
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, artificial is important.",
+            "vi": "Vâng, artificial rất quan trọng.",
+            "vocabs": [
+              "artificial"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Can you explain artificial?",
+            "vi": "Bạn có thể giải thích artificial?",
+            "vocabs": [
+              "artificial"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Artificial means something significant.",
+            "vi": "artificial có nghĩa là gì đó quan trọng.",
+            "vocabs": [
+              "means"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "How is artificial used in life?",
+            "vi": "artificial được sử dụng trong cuộc sống như thế nào?",
+            "vocabs": [
+              "used"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Artificial appears everywhere daily.",
+            "vi": "artificial xuất hiện ở mọi nơi hàng ngày.",
+            "vocabs": [
+              "everywhere"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Thanks for explaining artificial!",
+            "vi": "Cảm ơn bạn đã giải thích artificial!",
+            "vocabs": [
+              "thanks"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Happy to help! artificial is clear now!",
+            "vi": "Vui lòng giúp! Bây giờ artificial rõ ràng!",
+            "vocabs": [
+              "help"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "word": "ash",
+    "phonetic": "/æʃ/",
+    "pos": "Noun",
+    "frequency": 1234,
+    "categories": [
+      "General",
+      "Nature"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Tro cặn màu xám còn sót lại sau khi cái gì bị đốt",
+        "examples": [
+          {
+            "en": "The cigarette ash fell onto the white tablecloth.",
+            "vi": "Tro cặn của điếu thuốc rơi lên khăn trải bàn trắng.",
+            "category": "Daily"
+          },
+          {
+            "en": "Ash from the fireplace needs to be cleaned regularly.",
+            "vi": "Tro cặn từ lò sưởi cần được làm sạch thường xuyên.",
+            "category": "Home"
+          }
+        ]
+      },
+      {
+        "vi": "2. Cây tro (loài cây)",
+        "examples": [
+          {
+            "en": "The ash tree grows tall and provides good shade.",
+            "vi": "Cây tro mọc cao và cung cấp bóng mát tốt.",
+            "category": "Nature"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Cleaning Up",
+        "lines": [
+          {
+            "speaker": "Helper",
+            "en": "I need to clean the ash from the fireplace.",
+            "vi": "Tôi cần làm sạch tro cặn từ lò sưởi."
+          },
+          {
+            "speaker": "Assistant",
+            "en": "Be careful with ash dust when cleaning.",
+            "vi": "Hãy cẩn thận với bụi tro cặn khi làm sạch.",
+            "vocabs": [
+              "careful",
+              "dust"
+            ]
+          },
+          {
+            "speaker": "Helper",
+            "en": "How often should we remove ash?",
+            "vi": "Chúng ta nên loại bỏ tro cặn bao lâu một lần?",
+            "vocabs": [
+              "remove"
+            ]
+          },
+          {
+            "speaker": "Assistant",
+            "en": "Ash should be removed weekly for safety.",
+            "vi": "Tro cặn nên được loại bỏ hàng tuần vì an toàn.",
+            "vocabs": [
+              "safety"
+            ]
+          },
+          {
+            "speaker": "Helper",
+            "en": "Is ash harmful to health?",
+            "vi": "Tro cặn có hại cho sức khỏe không?",
+            "vocabs": [
+              "harmful",
+              "health"
+            ]
+          },
+          {
+            "speaker": "Assistant",
+            "en": "Ash particles can irritate lungs if inhaled.",
+            "vi": "Các hạt tro cặn có thể gây kích ứng phổi nếu hít vào.",
+            "vocabs": [
+              "particles",
+              "irritate",
+              "lungs"
+            ]
+          },
+          {
+            "speaker": "Helper",
+            "en": "What's the best way to handle ash?",
+            "vi": "Cách tốt nhất để xử lý tro cặn là gì?",
+            "vocabs": [
+              "handle"
+            ]
+          },
+          {
+            "speaker": "Assistant",
+            "en": "Use a shovel, dispose ash carefully, and ventilate well!",
+            "vi": "Sử dụng xẻng, vứt tro cặn cẩn thận, và thông gió tốt!",
+            "vocabs": [
+              "shovel",
+              "dispose",
+              "ventilate"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "word": "asleep",
+    "phonetic": "/əˈsliːp/",
+    "pos": "Adjective, Adverb",
+    "frequency": 1234,
+    "categories": [
+      "General",
+      "Physical"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Ở trạng thái ngủ hoặc thiếp đi",
+        "examples": [
+          {
+            "en": "The baby fell asleep after drinking milk.",
+            "vi": "Em bé ngủ sau khi uống sữa.",
+            "category": "Daily"
+          },
+          {
+            "en": "He was still asleep when the alarm went off.",
+            "vi": "Anh ấy vẫn đang ngủ khi báo thức rung.",
+            "category": "Morning"
+          }
+        ]
+      },
+      {
+        "vi": "2. Không hoạt động hoặc đã mất cảm giác (về cơ thể)",
+        "examples": [
+          {
+            "en": "My leg fell asleep from sitting too long.",
+            "vi": "Chân tôi bị tê do ngồi lâu quá.",
+            "category": "Sensation"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Bedtime Routine",
+        "lines": [
+          {
+            "speaker": "Parent",
+            "en": "Is the child asleep yet?",
+            "vi": "Có phải đứa trẻ đã ngủ chưa?"
+          },
+          {
+            "speaker": "Partner",
+            "en": "Yes, she fell asleep right after dinner.",
+            "vi": "Vâng, cô ấy ngủ ngay sau bữa tối.",
+            "vocabs": [
+              "fell"
+            ]
+          },
+          {
+            "speaker": "Parent",
+            "en": "She looks peaceful asleep like this.",
+            "vi": "Cô ấy trông bình yên khi ngủ như thế này.",
+            "vocabs": [
+              "peaceful"
+            ]
+          },
+          {
+            "speaker": "Partner",
+            "en": "Yes, kids sleep better when they're tired.",
+            "vi": "Vâng, trẻ em ngủ tốt hơn khi chúng mệt.",
+            "vocabs": [
+              "tired"
+            ]
+          },
+          {
+            "speaker": "Parent",
+            "en": "Should we keep the room dark while she's asleep?",
+            "vi": "Chúng ta có nên giữ phòng tối khi cô ấy ngủ không?",
+            "vocabs": [
+              "dark",
+              "room"
+            ]
+          },
+          {
+            "speaker": "Partner",
+            "en": "Yes, darkness helps keep her asleep longer.",
+            "vi": "Vâng, bóng tối giúp cô ấy ngủ lâu hơn.",
+            "vocabs": [
+              "darkness",
+              "longer"
+            ]
+          },
+          {
+            "speaker": "Parent",
+            "en": "She's so cute when asleep and dreaming.",
+            "vi": "Cô ấy rất dễ thương khi ngủ và nằm mơ.",
+            "vocabs": [
+              "cute",
+              "dreaming"
+            ]
+          },
+          {
+            "speaker": "Partner",
+            "en": "We're blessed! Let's keep her asleep peacefully!",
+            "vi": "Chúng ta thật may mắn! Hãy giữ cho cô ấy ngủ yên bình!",
+            "vocabs": [
+              "blessed",
+              "peacefully"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "word": "assign",
+    "phonetic": "/əˈsaɪn/",
+    "pos": "Verb",
+    "frequency": 1234,
+    "categories": [
+      "Business",
+      "General"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Giao nhiệm vụ hoặc phân công (cho ai đó một công việc)",
+        "examples": [
+          {
+            "en": "The manager decided to assign the project to our team.",
+            "vi": "Người quản lý quyết định giao dự án cho đội của chúng tôi.",
+            "category": "Work"
+          },
+          {
+            "en": "Each student was assigned a different topic for research.",
+            "vi": "Mỗi học sinh được giao một chủ đề khác nhau để nghiên cứu.",
+            "category": "School"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Task Distribution",
+        "lines": [
+          {
+            "speaker": "Supervisor",
+            "en": "I need to assign these tasks to the team members.",
+            "vi": "Tôi cần giao những nhiệm vụ này cho các thành viên của đội."
+          },
+          {
+            "speaker": "Colleague",
+            "en": "Who will you assign to lead the project?",
+            "vi": "Bạn sẽ giao cho ai lãnh đạo dự án?",
+            "vocabs": [
+              "lead"
+            ]
+          },
+          {
+            "speaker": "Supervisor",
+            "en": "I'll assign Sarah to lead because she's experienced.",
+            "vi": "Tôi sẽ giao cho Sarah lãnh đạo vì cô ấy có kinh nghiệm.",
+            "vocabs": [
+              "experienced"
+            ]
+          },
+          {
+            "speaker": "Colleague",
+            "en": "Good choice! Who else will you assign to the team?",
+            "vi": "Lựa chọn hay! Bạn sẽ giao cho ai khác để tham gia đội?",
+            "vocabs": [
+              "choice"
+            ]
+          },
+          {
+            "speaker": "Supervisor",
+            "en": "I'll assign John and Maria to support the research.",
+            "vi": "Tôi sẽ giao cho John và Maria hỗ trợ nghiên cứu.",
+            "vocabs": [
+              "support",
+              "research"
+            ]
+          },
+          {
+            "speaker": "Colleague",
+            "en": "Will you assign roles and responsibilities clearly?",
+            "vi": "Bạn sẽ giao vai trò và trách nhiệm một cách rõ ràng?",
+            "vocabs": [
+              "roles",
+              "responsibilities"
+            ]
+          },
+          {
+            "speaker": "Supervisor",
+            "en": "Yes! I'll assign detailed instructions to each person.",
+            "vi": "Vâng! Tôi sẽ giao hướng dẫn chi tiết cho mỗi người.",
+            "vocabs": [
+              "detailed",
+              "instructions"
+            ]
+          },
+          {
+            "speaker": "Colleague",
+            "en": "Perfect! Clear assignments ensure team success and efficiency.",
+            "vi": "Hoàn hảo! Các bài tập rõ ràng đảm bảo thành công và hiệu quả của đội.",
+            "vocabs": [
+              "assignments",
+              "efficiency"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "word": "assistance",
+    "phonetic": "/əˈsɪstəns/",
+    "pos": "Noun",
+    "frequency": 1234,
+    "categories": [
+      "General",
+      "Help"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Sự giúp đỡ hoặc hỗ trợ kỹ thuật hoặc vật chất",
+        "examples": [
+          {
+            "en": "The elderly need assistance with daily activities.",
+            "vi": "Người già cần sự giúp đỡ với các hoạt động hàng ngày.",
+            "category": "Care"
+          },
+          {
+            "en": "Technical assistance is available 24/7 for customers.",
+            "vi": "Hỗ trợ kỹ thuật có sẵn 24/7 cho khách hàng.",
+            "category": "Support"
+          }
+        ]
+      },
+      {
+        "vi": "2. Công việc hoặc vai trò của người trợ lý",
+        "examples": [
+          {
+            "en": "She provides assistance to the project manager.",
+            "vi": "Cô ấy cung cấp sự hỗ trợ cho người quản lý dự án.",
+            "category": "Work"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Getting Help",
+        "lines": [
+          {
+            "speaker": "Customer",
+            "en": "I need assistance with my account.",
+            "vi": "Tôi cần giúp đỡ với tài khoản của tôi."
+          },
+          {
+            "speaker": "Support",
+            "en": "I'm ready to provide assistance right away.",
+            "vi": "Tôi sẵn sàng cung cấp hỗ trợ ngay lập tức.",
+            "vocabs": [
+              "provide"
+            ]
+          },
+          {
+            "speaker": "Customer",
+            "en": "What assistance can you offer?",
+            "vi": "Bạn có thể cung cấp sự giúp đỡ nào?",
+            "vocabs": [
+              "offer"
+            ]
+          },
+          {
+            "speaker": "Support",
+            "en": "Assistance includes password reset and account troubleshooting.",
+            "vi": "Hỗ trợ bao gồm đặt lại mật khẩu và khắc phục sự cố tài khoản.",
+            "vocabs": [
+              "password",
+              "troubleshooting"
+            ]
+          },
+          {
+            "speaker": "Customer",
+            "en": "Do I need assistance from a manager too?",
+            "vi": "Tôi có cần sự giúp đỡ từ người quản lý không?",
+            "vocabs": [
+              "manager"
+            ]
+          },
+          {
+            "speaker": "Support",
+            "en": "Assistance from management only if issue is complex.",
+            "vi": "Hỗ trợ từ quản lý chỉ khi vấn đề phức tạp.",
+            "vocabs": [
+              "management",
+              "complex"
+            ]
+          },
+          {
+            "speaker": "Customer",
+            "en": "Is there any charge for assistance?",
+            "vi": "Có phí nào cho sự giúp đỡ không?",
+            "vocabs": [
+              "charge"
+            ]
+          },
+          {
+            "speaker": "Support",
+            "en": "No! Assistance is completely free for all clients!",
+            "vi": "Không! Hỗ trợ hoàn toàn miễn phí cho tất cả khách hàng!",
+            "vocabs": [
+              "free",
+              "clients"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "word": "association",
+    "phonetic": "/əˌsoʊʃiˈeɪʃən/",
+    "pos": "Noun",
+    "frequency": 1234,
+    "categories": [
+      "General",
+      "Social"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Tổ chức hoặc nhóm các người có cùng lợi ích hoặc mục đích",
+        "examples": [
+          {
+            "en": "She joined a professional association for engineers.",
+            "vi": "Cô ấy tham gia một hiệp hội chuyên nghiệp dành cho kỹ sư.",
+            "category": "Organization"
+          },
+          {
+            "en": "The association holds annual conferences for members.",
+            "vi": "Hiệp hội tổ chức các hội nghị hàng năm cho các thành viên.",
+            "category": "Events"
+          }
+        ]
+      },
+      {
+        "vi": "2. Mối liên hệ hoặc kết nối giữa hai thứ",
+        "examples": [
+          {
+            "en": "The association between exercise and health is well-known.",
+            "vi": "Mối liên hệ giữa tập thể dục và sức khỏe được biết đến rộng rãi.",
+            "category": "Health"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Group Membership",
+        "lines": [
+          {
+            "speaker": "Member",
+            "en": "Why did you join this association?",
+            "vi": "Tại sao bạn tham gia hiệp hội này?"
+          },
+          {
+            "speaker": "Peer",
+            "en": "The association provides valuable networking opportunities.",
+            "vi": "Hiệp hội cung cấp các cơ hội kết nối có giá trị.",
+            "vocabs": [
+              "networking",
+              "opportunities"
+            ]
+          },
+          {
+            "speaker": "Member",
+            "en": "What benefits does the association offer?",
+            "vi": "Hiệp hội cung cấp những lợi ích gì?",
+            "vocabs": [
+              "benefits",
+              "offer"
+            ]
+          },
+          {
+            "speaker": "Peer",
+            "en": "Association membership includes workshops and training.",
+            "vi": "Thành viên hiệp hội bao gồm các hội thảo và đào tạo.",
+            "vocabs": [
+              "workshops"
+            ]
+          },
+          {
+            "speaker": "Member",
+            "en": "Is the association affordable for students?",
+            "vi": "Hiệp hội có giá cả phải chăng cho sinh viên không?",
+            "vocabs": [
+              "affordable"
+            ]
+          },
+          {
+            "speaker": "Peer",
+            "en": "Yes! Association offers student discounts regularly.",
+            "vi": "Vâng! Hiệp hội thường xuyên cung cấp giảm giá cho sinh viên.",
+            "vocabs": [
+              "discounts",
+              "regularly"
+            ]
+          },
+          {
+            "speaker": "Member",
+            "en": "What is the association's main mission?",
+            "vi": "Sứ mệnh chính của hiệp hội là gì?",
+            "vocabs": [
+              "mission"
+            ]
+          },
+          {
+            "speaker": "Peer",
+            "en": "The association promotes professional development and industry standards!",
+            "vi": "Hiệp hội thúc đẩy sự phát triển chuyên nghiệp và tiêu chuẩn ngành!",
+            "vocabs": [
+              "promotes",
+              "development",
+              "industry",
+              "standards"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "word": "able",
+    "phonetic": "/ˈeɪbl/",
+    "pos": "Adjective",
+    "frequency": 1203,
+    "categories": [
+      "General",
+      "Ability"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Có khả năng hoặc kỹ năng để làm điều gì đó",
+        "examples": [
+          {
+            "en": "She is able to speak five languages fluently.",
+            "vi": "Cô ấy có khả năng nói thành thạo năm ngôn ngữ.",
+            "category": "Skill"
+          },
+          {
+            "en": "Are you able to help me with this project?",
+            "vi": "Bạn có khả năng giúp tôi với dự án này không?",
+            "category": "Capability"
+          }
+        ]
+      },
+      {
+        "vi": "2. Thông minh hoặc có năng lực cao (intelligent)",
+        "examples": [
+          {
+            "en": "An able student quickly understands complex concepts.",
+            "vi": "Một học sinh giỏi nhanh chóng hiểu các khái niệm phức tạp.",
+            "category": "Intelligence"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Job Interview",
+        "lines": [
+          {
+            "speaker": "Interviewer",
+            "en": "Are you able to work under pressure?",
+            "vi": "Bạn có khả năng làm việc dưới áp lực không?"
+          },
+          {
+            "speaker": "Candidate",
+            "en": "Yes, I'm able to manage multiple tasks simultaneously.",
+            "vi": "Vâng, tôi có khả năng quản lý nhiều tác vụ cùng lúc.",
+            "vocabs": [
+              "manage",
+              "multiple",
+              "tasks"
+            ]
+          },
+          {
+            "speaker": "Interviewer",
+            "en": "Will you be able to travel frequently?",
+            "vi": "Bạn sẽ có khả năng đi du lịch thường xuyên không?",
+            "vocabs": [
+              "travel",
+              "frequently"
+            ]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "I'm able to travel up to 30% of the time.",
+            "vi": "Tôi có khả năng đi du lịch lên đến 30% thời gian.",
+            "vocabs": [
+              "percent",
+              "time"
+            ]
+          },
+          {
+            "speaker": "Interviewer",
+            "en": "Can you be able to start next month?",
+            "vi": "Bạn có khả năng bắt đầu tháng tới không?",
+            "vocabs": [
+              "start",
+              "month"
+            ]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "I'm able to begin immediately if needed.",
+            "vi": "Tôi có khả năng bắt đầu ngay lập tức nếu cần.",
+            "vocabs": [
+              "begin",
+              "immediately"
+            ]
+          },
+          {
+            "speaker": "Interviewer",
+            "en": "Your abilities and skills make you well able for this role.",
+            "vi": "Khả năng và kỹ năng của bạn khiến bạn rất phù hợp cho vị trí này.",
+            "vocabs": [
+              "abilities",
+              "skills",
+              "role"
+            ]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "Thank you! I'm able to meet all your requirements.",
+            "vi": "Cảm ơn! Tôi có khả năng đáp ứng tất cả yêu cầu của bạn.",
+            "vocabs": [
+              "requirements"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "word": "accept",
+    "phonetic": "/əkˈsept/",
+    "pos": "Verb",
+    "frequency": 987,
+    "categories": [
+      "Communication",
+      "Agreement"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Chấp nhận hoặc đồng ý (agree to take)",
+        "examples": [
+          {
+            "en": "He accepted the job offer immediately.",
+            "vi": "Anh ấy chấp nhận lời đề nghị công việc ngay lập tức.",
+            "category": "Decision"
+          },
+          {
+            "en": "Will you accept this invitation to the event?",
+            "vi": "Bạn sẽ chấp nhận lời mời này đến sự kiện không?",
+            "category": "Invitation"
+          }
+        ]
+      },
+      {
+        "vi": "2. Chịu đựng hoặc thừa nhận (tolerate, recognize)",
+        "examples": [
+          {
+            "en": "She learned to accept her limitations.",
+            "vi": "Cô ấy học cách chấp nhận những hạn chế của mình.",
+            "category": "Personal Growth"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Professional Opportunity",
+        "lines": [
+          {
+            "speaker": "HR Manager",
+            "en": "We're pleased to offer this position. Will you accept?",
+            "vi": "Chúng tôi vui mừng cung cấp vị trí này. Bạn sẽ chấp nhận không?"
+          },
+          {
+            "speaker": "Candidate",
+            "en": "I'm honored to accept this opportunity.",
+            "vi": "Tôi vinh dự chấp nhận cơ hội này.",
+            "vocabs": [
+              "honored",
+              "opportunity"
+            ]
+          },
+          {
+            "speaker": "HR",
+            "en": "Great! Do you accept the terms and conditions?",
+            "vi": "Tuyệt vời! Bạn chấp nhận các điều khoản và điều kiện không?",
+            "vocabs": [
+              "accept",
+              "terms",
+              "conditions"
+            ]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "Yes, I fully accept all the terms presented.",
+            "vi": "Vâng, tôi hoàn toàn chấp nhận tất cả các điều khoản được trình bày.",
+            "vocabs": [
+              "fully",
+              "terms"
+            ]
+          },
+          {
+            "speaker": "HR",
+            "en": "Will you accept the starting salary we discussed?",
+            "vi": "Bạn sẽ chấp nhận lương khởi điểm mà chúng ta đã thảo luận?",
+            "vocabs": [
+              "salary",
+              "discussed"
+            ]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "Absolutely! I accept the compensation package.",
+            "vi": "Chắc chắn! Tôi chấp nhận gói bồi thường.",
+            "vocabs": [
+              "compensation",
+              "package"
+            ]
+          },
+          {
+            "speaker": "HR",
+            "en": "Can you accept a start date of next month?",
+            "vi": "Bạn có thể chấp nhận ngày bắt đầu vào tháng tới?",
+            "vocabs": [
+              "start",
+              "date"
+            ]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "Perfect! I accept and look forward to joining!",
+            "vi": "Hoàn hảo! Tôi chấp nhận và mong chờ tham gia!",
+            "vocabs": [
+              "joining"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "word": "achieve",
+    "phonetic": "/əˈtʃiːv/",
+    "pos": "Verb",
+    "frequency": 856,
+    "categories": [
+      "Success",
+      "Goal"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Đạt được hoặc hoàn thành (reach or accomplish)",
+        "examples": [
+          {
+            "en": "She worked hard to achieve her goals.",
+            "vi": "Cô ấy làm việc chăm chỉ để đạt được mục tiêu của mình.",
+            "category": "Success"
+          },
+          {
+            "en": "This team has achieved remarkable results this year.",
+            "vi": "Đội này đã đạt được những kết quả đáng chú ý năm nay.",
+            "category": "Achievement"
+          }
+        ]
+      },
+      {
+        "vi": "2. Thành công hoặc đưa ra kết quả tốt",
+        "examples": [
+          {
+            "en": "Through persistence, you can achieve anything.",
+            "vi": "Thông qua sự kiên trì, bạn có thể đạt được bất cứ điều gì.",
+            "category": "Motivation"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Success Stories",
+        "lines": [
+          {
+            "speaker": "Mentor",
+            "en": "What goals do you want to achieve?",
+            "vi": "Bạn muốn đạt được những mục tiêu gì?"
+          },
+          {
+            "speaker": "Student",
+            "en": "I want to achieve excellence in academics.",
+            "vi": "Tôi muốn đạt được sự xuất sắc trong học tập.",
+            "vocabs": [
+              "excellence",
+              "academics"
+            ]
+          },
+          {
+            "speaker": "Mentor",
+            "en": "That's admirable! Here's how you can achieve it.",
+            "vi": "Điều đó đáng ngưỡng mộ! Đây là cách bạn có thể đạt được nó.",
+            "vocabs": [
+              "admirable"
+            ]
+          },
+          {
+            "speaker": "Student",
+            "en": "What milestones should I achieve first?",
+            "vi": "Tôi nên đạt được những cột mốc nào trước tiên?",
+            "vocabs": [
+              "milestones"
+            ]
+          },
+          {
+            "speaker": "Mentor",
+            "en": "Achieve mastery in core subjects before advanced topics.",
+            "vi": "Đạt được sự thành thạo trong các môn học cơ bản trước các chủ đề nâng cao.",
+            "vocabs": [
+              "mastery",
+              "core",
+              "subjects"
+            ]
+          },
+          {
+            "speaker": "Student",
+            "en": "How long will it take to achieve my goals?",
+            "vi": "Sẽ mất bao lâu để đạt được mục tiêu của tôi?",
+            "vocabs": [
+              "take"
+            ]
+          },
+          {
+            "speaker": "Mentor",
+            "en": "You'll achieve significant progress within six months.",
+            "vi": "Bạn sẽ đạt được tiến bộ đáng kể trong sáu tháng.",
+            "vocabs": [
+              "significant",
+              "progress"
+            ]
+          },
+          {
+            "speaker": "Student",
+            "en": "I'm committed to achieve my best potential!",
+            "vi": "Tôi cam kết đạt được tiềm năng tốt nhất của mình!",
+            "vocabs": [
+              "committed",
+              "potential"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "word": "absolutely",
+    "phonetic": "/ˌæbsəˈluːtli/",
+    "pos": "Adverb",
+    "frequency": 487,
+    "categories": [
+      "Communication",
+      "General"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Hoàn toàn, tuyệt đối (completely, certainly)",
+        "examples": [
+          {
+            "en": "This is absolutely necessary for success.",
+            "vi": "Điều này tuyệt đối cần thiết để thành công.",
+            "category": "Certainty"
+          },
+          {
+            "en": "I absolutely agree with your proposal.",
+            "vi": "Tôi tuyệt đối đồng ý với đề xuất của bạn.",
+            "category": "Agreement"
+          }
+        ]
+      },
+      {
+        "vi": "2. Chắc chắn, đúng vậy (used to agree)",
+        "examples": [
+          {
+            "en": "Are you coming to the party? Absolutely!",
+            "vi": "Bạn sắp đến bữa tiệc? Chắc chắn!",
+            "category": "Agreement"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Team Agreement",
+        "lines": [
+          {
+            "speaker": "Manager",
+            "en": "This project is absolutely critical for our success.",
+            "vi": "Dự án này tuyệt đối quan trọng cho thành công của chúng ta."
+          },
+          {
+            "speaker": "Team",
+            "en": "Absolutely! We're committed to excellence here.",
+            "vi": "Chắc chắn! Chúng tôi cam kết vào sự xuất sắc ở đây.",
+            "vocabs": [
+              "committed",
+              "excellence"
+            ]
+          },
+          {
+            "speaker": "Manager",
+            "en": "The quality standards are absolutely non-negotiable.",
+            "vi": "Các tiêu chuẩn chất lượng tuyệt đối không thể thương lượng.",
+            "vocabs": [
+              "quality",
+              "standards",
+              "non-negotiable"
+            ]
+          },
+          {
+            "speaker": "Team",
+            "en": "Absolutely understood! We will maintain high quality.",
+            "vi": "Hiểu rõ ràng! Chúng tôi sẽ duy trì chất lượng cao.",
+            "vocabs": [
+              "maintain",
+              "quality"
+            ]
+          },
+          {
+            "speaker": "Manager",
+            "en": "This deadline is absolutely firm—no extensions.",
+            "vi": "Thời hạn này tuyệt đối chắc chắn—không gia hạn.",
+            "vocabs": [
+              "deadline",
+              "firm",
+              "extensions"
+            ]
+          },
+          {
+            "speaker": "Team",
+            "en": "Absolutely! We'll complete it on time without fail.",
+            "vi": "Chắc chắn! Chúng tôi sẽ hoàn thành nó đúng hạn mà không thất bại.",
+            "vocabs": [
+              "complete",
+              "fail"
+            ]
+          },
+          {
+            "speaker": "Manager",
+            "en": "Your dedication is absolutely inspiring to everyone.",
+            "vi": "Sự tận tâm của bạn tuyệt đối truyền cảm hứng cho mọi người.",
+            "vocabs": [
+              "dedication",
+              "inspiring"
+            ]
+          },
+          {
+            "speaker": "Team",
+            "en": "Thank you! Absolutely motivated to deliver results!",
+            "vi": "Cảm ơn! Tuyệt đối có động lực để đạt kết quả!",
+            "vocabs": [
+              "motivated",
+              "deliver",
+              "results"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "word": "academy",
+    "phonetic": "/əˈkædəmi/",
+    "pos": "Noun",
+    "frequency": 342,
+    "categories": [
+      "Education",
+      "General"
+    ],
+    "meanings": [
+      {
+        "vi": "1. Trường học hoặc viện giáo dục (school)",
+        "examples": [
+          {
+            "en": "She graduated from a prestigious military academy.",
+            "vi": "Cô ấy tốt nghiệp từ một học viện quân sự nổi tiếng.",
+            "category": "Education"
+          },
+          {
+            "en": "The academy offers advanced courses in science.",
+            "vi": "Học viện cung cấp các khóa học nâng cao trong khoa học.",
+            "category": "Academics"
+          }
+        ]
+      },
+      {
+        "vi": "2. Tổ chức hoặc hội học (society of scholars)",
+        "examples": [
+          {
+            "en": "He was elected to the National Academy of Sciences.",
+            "vi": "Anh ấy được bầu vào Học viện Khoa học Quốc gia.",
+            "category": "Honor"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "School Choice",
+        "lines": [
+          {
+            "speaker": "Parent",
+            "en": "Which academy would you recommend for my child?",
+            "vi": "Bạn sẽ giới thiệu học viện nào cho con tôi?"
+          },
+          {
+            "speaker": "Advisor",
+            "en": "This academy is excellent for advanced students.",
+            "vi": "Học viện này rất xuất sắc cho học sinh nâng cao.",
+            "vocabs": [
+              "excellent",
+              "advanced",
+              "students"
+            ]
+          },
+          {
+            "speaker": "Parent",
+            "en": "What programs does the academy offer?",
+            "vi": "Học viện cung cấp những chương trình nào?",
+            "vocabs": [
+              "programs"
+            ]
+          },
+          {
+            "speaker": "Advisor",
+            "en": "The academy offers STEM and arts programs extensively.",
+            "vi": "Học viện cung cấp các chương trình STEM và nghệ thuật rộng rãi.",
+            "vocabs": [
+              "STEM",
+              "arts"
+            ]
+          },
+          {
+            "speaker": "Parent",
+            "en": "Is the academy curriculum challenging enough?",
+            "vi": "Chương trình học của học viện có thách thức đủ không?",
+            "vocabs": [
+              "curriculum",
+              "challenging"
+            ]
+          },
+          {
+            "speaker": "Advisor",
+            "en": "Yes! The academy maintains rigorous academic standards.",
+            "vi": "Vâng! Học viện duy trì các tiêu chuẩn học tập nghiêm ngặt.",
+            "vocabs": [
+              "maintains",
+              "rigorous"
+            ]
+          },
+          {
+            "speaker": "Parent",
+            "en": "Do academy graduates succeed in universities?",
+            "vi": "Các sinh viên tốt nghiệp của học viện có thành công ở đại học không?",
+            "vocabs": [
+              "graduates",
+              "universities"
+            ]
+          },
+          {
+            "speaker": "Advisor",
+            "en": "Absolutely! Academy alumni excel in top universities worldwide.",
+            "vi": "Chắc chắn! Các cựu học sinh của học viện xuất sắc ở các đại học hàng đầu trên thế giới.",
+            "vocabs": [
+              "alumni",
+              "excel",
+              "worldwide"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
