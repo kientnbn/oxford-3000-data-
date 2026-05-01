@@ -1,483 +1,88 @@
 [
   {
     "id": 1,
-    "word": "and",
-    "phonetic": "/ənd/",
-    "pos": "Conjunction",
-    "frequency": 6234,
-    "categories": [
-      "Grammar",
-      "Communication"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa and từ Oxford)",
-        "examples": [
-          {
-            "en": "This and is important.",
-            "vi": "and này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About and?",
-            "vi": "Về and?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, and matters.",
-            "vi": "Vâng, and có quan trọng.",
-            "vocabs": [
-              "and"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is and?",
-            "vi": "and là gì?",
-            "vocabs": [
-              "and"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "and is significant.",
-            "vi": "and rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use and?",
-            "vi": "Sử dụng and như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "and applies everywhere.",
-            "vi": "and áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will and help?",
-            "vi": "and sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! and helps greatly always!",
-            "vi": "Vâng! and luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "word": "all",
-    "phonetic": "/ɔːl/",
-    "pos": "Determiner, Pronoun",
-    "frequency": 5234,
-    "categories": [
-      "Quantifier",
-      "Communication"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa all từ Oxford)",
-        "examples": [
-          {
-            "en": "This all is important.",
-            "vi": "all này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About all?",
-            "vi": "Về all?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, all matters.",
-            "vi": "Vâng, all có quan trọng.",
-            "vocabs": [
-              "all"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is all?",
-            "vi": "all là gì?",
-            "vocabs": [
-              "all"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "all is significant.",
-            "vi": "all rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use all?",
-            "vi": "Sử dụng all như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "all applies everywhere.",
-            "vi": "all áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will all help?",
-            "vi": "all sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! all helps greatly always!",
-            "vi": "Vâng! all luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 3,
     "word": "about",
     "phonetic": "/əˈbaʊt/",
     "pos": "Preposition, Adverb",
-    "frequency": 4892,
-    "categories": [
-      "Communication",
-      "General"
-    ],
     "meanings": [
       {
-        "vi": "1. Liên quan đến hoặc nói về",
+        "vi": "Về, liên quan đến (chỉ chủ đề, nội dung)",
         "examples": [
           {
-            "en": "What is this book about?",
-            "vi": "Cuốn sách này nói về cái gì?",
-            "category": "Topic"
+            "en": "The book is about a young boy who discovers magic.",
+            "vi": "Cuốn sách nói về một cậu bé trẻ khám phá phép thuật."
           },
           {
-            "en": "Tell me about your experience.",
-            "vi": "Kể cho tôi về kinh nghiệm của bạn.",
-            "category": "Conversation"
+            "en": "I want to talk about the new project.",
+            "vi": "Tôi muốn nói về dự án mới."
           }
         ]
       },
       {
-        "vi": "2. Xấp xỉ hoặc khoảng chừng",
+        "vi": "Khoảng, xấp xỉ (chỉ số lượng gần đúng)",
         "examples": [
           {
-            "en": "About 50 people attended the event.",
-            "vi": "Khoảng 50 người tham dự sự kiện.",
-            "category": "Number"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Getting Info",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "Tell me about yourself.",
-            "vi": "Hãy kể cho tôi về bạn."
-          },
-          {
-            "speaker": "B",
-            "en": "I'm a teacher. About 10 years experience.",
-            "vi": "Tôi là giáo viên. Khoảng 10 năm kinh nghiệm.",
-            "vocabs": [
-              "experience"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What's your job about?",
-            "vi": "Công việc của bạn về cái gì?",
-            "vocabs": [
-              "job"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "It's about teaching and helping students.",
-            "vi": "Nó là về giảng dạy và giúp học sinh.",
-            "vocabs": [
-              "teaching"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How many students about per class?",
-            "vi": "Khoảng bao nhiêu học sinh mỗi lớp?",
-            "vocabs": [
-              "students"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "About 30 students per class maximum.",
-            "vi": "Khoảng 30 học sinh mỗi lớp tối đa.",
-            "vocabs": [
-              "maximum"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What's teaching about for you?",
-            "vi": "Giảng dạy có ý nghĩa gì với bạn?",
-            "vocabs": [
-              "meaning"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "It's about making a difference! About impacting lives!",
-            "vi": "Nó là về làm thay đổi! Về ảnh hưởng đến cuộc sống!",
-            "vocabs": [
-              "difference"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "word": "about",
-    "phonetic": "/əˈbaʊt/",
-    "pos": "Preposition, Adverb",
-    "frequency": 4892,
-    "categories": [
-      "General",
-      "Communication"
-    ],
-    "meanings": [
-      {
-        "vi": "1. Liên quan đến hoặc nói về",
-        "examples": [
-          {
-            "en": "What is this book about?",
-            "vi": "Cuốn sách này nói về cái gì?",
-            "category": "Topic"
-          },
-          {
-            "en": "Tell me about your experience.",
-            "vi": "Kể cho tôi về kinh nghiệm của bạn.",
-            "category": "Conversation"
+            "en": "There are about 100 people at the party.",
+            "vi": "Có khoảng 100 người tại bữa tiệc."
           }
         ]
       },
       {
-        "vi": "2. Xấp xỉ hoặc khoảng chừng",
+        "vi": "Sắp, chuẩn bị (điều sắp xảy ra)",
         "examples": [
           {
-            "en": "About 50 people attended the event.",
-            "vi": "Khoảng 50 người tham dự sự kiện.",
-            "category": "Number"
+            "en": "I was about to leave when you called.",
+            "vi": "Tôi sắp ra đi khi bạn gọi."
           }
         ]
       }
     ],
     "conversations": [
       {
-        "title": "Getting Info",
+        "title": "Talking About a New Project",
         "lines": [
           {
-            "speaker": "A",
-            "en": "Tell me about yourself.",
-            "vi": "Hãy kể cho tôi về bạn."
-          },
-          {
-            "speaker": "B",
-            "en": "I'm a teacher. About 10 years experience.",
-            "vi": "Tôi là giáo viên. Khoảng 10 năm kinh nghiệm.",
+            "speaker": "Alice",
+            "en": "Hey Bob! Have you heard about the new English learning app?",
+            "vi": "Này Bob! Bạn đã nghe về ứng dụng học tiếng Anh mới chưa?",
             "vocabs": [
-              "experience"
+              "heard",
+              "about",
+              "app"
             ]
           },
           {
-            "speaker": "A",
-            "en": "What's your job about?",
-            "vi": "Công việc của bạn về cái gì?",
+            "speaker": "Bob",
+            "en": "I absolutely love it! It's about learning vocabulary in context.",
+            "vi": "Tôi tuyệt đối yêu thích nó! Nó là về việc học từ vựng trong bối cảnh.",
             "vocabs": [
-              "job"
+              "absolutely",
+              "love",
+              "about",
+              "learning",
+              "vocabulary"
             ]
           },
           {
-            "speaker": "B",
-            "en": "It's about teaching and helping students.",
-            "vi": "Nó là về giảng dạy và giúp học sinh.",
+            "speaker": "Alice",
+            "en": "That sounds amazing! Tell me more about the features.",
+            "vi": "Nghe hay quá! Hãy kể cho tôi thêm về các tính năng.",
             "vocabs": [
-              "teaching"
+              "sounds",
+              "amazing",
+              "more",
+              "about",
+              "features"
             ]
           },
           {
-            "speaker": "A",
-            "en": "How many students about per class?",
-            "vi": "Khoảng bao nhiêu học sinh mỗi lớp?",
+            "speaker": "Bob",
+            "en": "Well, it has conversations like this one. You can read and listen.",
+            "vi": "Chà, nó có các cuộc hội thoại như thế này. Bạn có thể đọc và nghe.",
             "vocabs": [
-              "students"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "About 30 students per class maximum.",
-            "vi": "Khoảng 30 học sinh mỗi lớp tối đa.",
-            "vocabs": [
-              "maximum"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What's teaching about for you?",
-            "vi": "Giảng dạy có ý nghĩa gì với bạn?",
-            "vocabs": [
-              "meaning"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "It's about making a difference! About impacting lives!",
-            "vi": "Nó là về làm thay đổi! Về ảnh hưởng đến cuộc sống!",
-            "vocabs": [
-              "difference"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "word": "after",
-    "phonetic": "/ˈɑːftər/",
-    "pos": "Preposition, Conjunction",
-    "frequency": 4567,
-    "categories": [
-      "General",
-      "Communication"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa after từ Oxford)",
-        "examples": [
-          {
-            "en": "This after is important.",
-            "vi": "after này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About after?",
-            "vi": "Về after?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, after matters.",
-            "vi": "Vâng, after có quan trọng.",
-            "vocabs": [
-              "after"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is after?",
-            "vi": "after là gì?",
-            "vocabs": [
-              "after"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "after is significant.",
-            "vi": "after rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use after?",
-            "vi": "Sử dụng after như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "after applies everywhere.",
-            "vi": "after áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will after help?",
-            "vi": "after sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! after helps greatly always!",
-            "vi": "Vâng! after luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
+              "conversations",
+              "read",
+              "listen"
             ]
           }
         ]
@@ -589,97 +194,6 @@
             "vocabs": [
               "culture",
               "opportunities"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "word": "again",
-    "phonetic": "/əˈɡen/",
-    "pos": "Adverb",
-    "frequency": 3456,
-    "categories": [
-      "General",
-      "Communication"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa again từ Oxford)",
-        "examples": [
-          {
-            "en": "This again is important.",
-            "vi": "again này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About again?",
-            "vi": "Về again?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, again matters.",
-            "vi": "Vâng, again có quan trọng.",
-            "vocabs": [
-              "again"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is again?",
-            "vi": "again là gì?",
-            "vocabs": [
-              "again"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "again is significant.",
-            "vi": "again rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use again?",
-            "vi": "Sử dụng again như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "again applies everywhere.",
-            "vi": "again áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will again help?",
-            "vi": "again sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! again helps greatly always!",
-            "vi": "Vâng! again luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
             ]
           }
         ]
@@ -1057,188 +571,6 @@
             "vocabs": [
               "immediately",
               "back"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 11,
-    "word": "age",
-    "phonetic": "/eɪdʒ/",
-    "pos": "Noun, Verb",
-    "frequency": 2945,
-    "categories": [
-      "General",
-      "Education"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa age từ Oxford)",
-        "examples": [
-          {
-            "en": "This age is important.",
-            "vi": "age này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About age?",
-            "vi": "Về age?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, age matters.",
-            "vi": "Vâng, age có quan trọng.",
-            "vocabs": [
-              "age"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is age?",
-            "vi": "age là gì?",
-            "vocabs": [
-              "age"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "age is significant.",
-            "vi": "age rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use age?",
-            "vi": "Sử dụng age như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "age applies everywhere.",
-            "vi": "age áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will age help?",
-            "vi": "age sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! age helps greatly always!",
-            "vi": "Vâng! age luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 12,
-    "word": "against",
-    "phonetic": "/əˈɡenst/",
-    "pos": "Preposition",
-    "frequency": 2789,
-    "categories": [
-      "General",
-      "Communication"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa against từ Oxford)",
-        "examples": [
-          {
-            "en": "This against is important.",
-            "vi": "against này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About against?",
-            "vi": "Về against?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, against matters.",
-            "vi": "Vâng, against có quan trọng.",
-            "vocabs": [
-              "against"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is against?",
-            "vi": "against là gì?",
-            "vocabs": [
-              "against"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "against is significant.",
-            "vi": "against rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use against?",
-            "vi": "Sử dụng against như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "against applies everywhere.",
-            "vi": "against áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will against help?",
-            "vi": "against sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! against helps greatly always!",
-            "vi": "Vâng! against luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
             ]
           }
         ]
@@ -1841,188 +1173,6 @@
     ]
   },
   {
-    "id": 18,
-    "word": "anything",
-    "phonetic": "/ˈeniθɪŋ/",
-    "pos": "Pronoun",
-    "frequency": 2567,
-    "categories": [
-      "General",
-      "Communication"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa anything từ Oxford)",
-        "examples": [
-          {
-            "en": "This anything is important.",
-            "vi": "anything này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About anything?",
-            "vi": "Về anything?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, anything matters.",
-            "vi": "Vâng, anything có quan trọng.",
-            "vocabs": [
-              "anything"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is anything?",
-            "vi": "anything là gì?",
-            "vocabs": [
-              "anything"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "anything is significant.",
-            "vi": "anything rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use anything?",
-            "vi": "Sử dụng anything như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "anything applies everywhere.",
-            "vi": "anything áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will anything help?",
-            "vi": "anything sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! anything helps greatly always!",
-            "vi": "Vâng! anything luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 19,
-    "word": "area",
-    "phonetic": "/ˈeriə/",
-    "pos": "Noun",
-    "frequency": 2567,
-    "categories": [
-      "General",
-      "Geography"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa area từ Oxford)",
-        "examples": [
-          {
-            "en": "This area is important.",
-            "vi": "area này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About area?",
-            "vi": "Về area?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, area matters.",
-            "vi": "Vâng, area có quan trọng.",
-            "vocabs": [
-              "area"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is area?",
-            "vi": "area là gì?",
-            "vocabs": [
-              "area"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "area is significant.",
-            "vi": "area rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use area?",
-            "vi": "Sử dụng area như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "area applies everywhere.",
-            "vi": "area áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will area help?",
-            "vi": "area sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! area helps greatly always!",
-            "vi": "Vâng! area luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": 20,
     "word": "allow",
     "phonetic": "/əˈlaʊ/",
@@ -2259,188 +1409,6 @@
     ]
   },
   {
-    "id": 22,
-    "word": "answer",
-    "phonetic": "/ˈænsər/",
-    "pos": "Noun, Verb",
-    "frequency": 2456,
-    "categories": [
-      "Communication",
-      "General"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa answer từ Oxford)",
-        "examples": [
-          {
-            "en": "This answer is important.",
-            "vi": "answer này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About answer?",
-            "vi": "Về answer?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, answer matters.",
-            "vi": "Vâng, answer có quan trọng.",
-            "vocabs": [
-              "answer"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is answer?",
-            "vi": "answer là gì?",
-            "vocabs": [
-              "answer"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "answer is significant.",
-            "vi": "answer rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use answer?",
-            "vi": "Sử dụng answer như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "answer applies everywhere.",
-            "vi": "answer áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will answer help?",
-            "vi": "answer sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! answer helps greatly always!",
-            "vi": "Vâng! answer luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 23,
-    "word": "anyone",
-    "phonetic": "/ˈeniwʌn/",
-    "pos": "Pronoun",
-    "frequency": 2345,
-    "categories": [
-      "General",
-      "Communication"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa anyone từ Oxford)",
-        "examples": [
-          {
-            "en": "This anyone is important.",
-            "vi": "anyone này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About anyone?",
-            "vi": "Về anyone?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, anyone matters.",
-            "vi": "Vâng, anyone có quan trọng.",
-            "vocabs": [
-              "anyone"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is anyone?",
-            "vi": "anyone là gì?",
-            "vocabs": [
-              "anyone"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "anyone is significant.",
-            "vi": "anyone rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use anyone?",
-            "vi": "Sử dụng anyone như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "anyone applies everywhere.",
-            "vi": "anyone áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will anyone help?",
-            "vi": "anyone sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! anyone helps greatly always!",
-            "vi": "Vâng! anyone luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": 24,
     "word": "action",
     "phonetic": "/ˈækʃən/",
@@ -2545,97 +1513,6 @@
             "vi": "Hiểu rồi! Chúng tôi sẵn sàng hành động bây giờ!",
             "vocabs": [
               "ready"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 25,
-    "word": "air",
-    "phonetic": "/er/",
-    "pos": "Noun",
-    "frequency": 2234,
-    "categories": [
-      "General",
-      "Nature"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa air từ Oxford)",
-        "examples": [
-          {
-            "en": "This air is important.",
-            "vi": "air này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About air?",
-            "vi": "Về air?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, air matters.",
-            "vi": "Vâng, air có quan trọng.",
-            "vocabs": [
-              "air"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is air?",
-            "vi": "air là gì?",
-            "vocabs": [
-              "air"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "air is significant.",
-            "vi": "air rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use air?",
-            "vi": "Sử dụng air như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "air applies everywhere.",
-            "vi": "air áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will air help?",
-            "vi": "air sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! air helps greatly always!",
-            "vi": "Vâng! air luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
             ]
           }
         ]
@@ -5857,97 +4734,6 @@
     ]
   },
   {
-    "id": 56,
-    "word": "analysis",
-    "phonetic": "/əˈnæləsɪs/",
-    "pos": "Noun",
-    "frequency": 1567,
-    "categories": [
-      "General",
-      "Business"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa analysis từ Oxford)",
-        "examples": [
-          {
-            "en": "This analysis is important.",
-            "vi": "analysis này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About analysis?",
-            "vi": "Về analysis?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, analysis matters.",
-            "vi": "Vâng, analysis có quan trọng.",
-            "vocabs": [
-              "analysis"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is analysis?",
-            "vi": "analysis là gì?",
-            "vocabs": [
-              "analysis"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "analysis is significant.",
-            "vi": "analysis rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use analysis?",
-            "vi": "Sử dụng analysis như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "analysis applies everywhere.",
-            "vi": "analysis áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will analysis help?",
-            "vi": "analysis sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! analysis helps greatly always!",
-            "vi": "Vâng! analysis luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": 57,
     "word": "apartment",
     "phonetic": "/əˈpɑːrtmənt/",
@@ -7132,97 +5918,6 @@
     ]
   },
   {
-    "id": 68,
-    "word": "appearance",
-    "phonetic": "/əˈpɪrəns/",
-    "pos": "Noun",
-    "frequency": 1456,
-    "categories": [
-      "General",
-      "Physical"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa appearance từ Oxford)",
-        "examples": [
-          {
-            "en": "This appearance is important.",
-            "vi": "appearance này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About appearance?",
-            "vi": "Về appearance?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, appearance matters.",
-            "vi": "Vâng, appearance có quan trọng.",
-            "vocabs": [
-              "appearance"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is appearance?",
-            "vi": "appearance là gì?",
-            "vocabs": [
-              "appearance"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "appearance is significant.",
-            "vi": "appearance rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use appearance?",
-            "vi": "Sử dụng appearance như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "appearance applies everywhere.",
-            "vi": "appearance áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will appearance help?",
-            "vi": "appearance sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! appearance helps greatly always!",
-            "vi": "Vâng! appearance luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": 69,
     "word": "appropriate",
     "phonetic": "/əˈproʊpriət/",
@@ -7415,97 +6110,6 @@
             "vi": "Vui lòng giúp! Bây giờ april rõ ràng!",
             "vocabs": [
               "help"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 71,
-    "word": "argue",
-    "phonetic": "/ˈɑːrɡjuː/",
-    "pos": "Verb",
-    "frequency": 1456,
-    "categories": [
-      "Communication",
-      "General"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa argue từ Oxford)",
-        "examples": [
-          {
-            "en": "This argue is important.",
-            "vi": "argue này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About argue?",
-            "vi": "Về argue?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, argue matters.",
-            "vi": "Vâng, argue có quan trọng.",
-            "vocabs": [
-              "argue"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is argue?",
-            "vi": "argue là gì?",
-            "vocabs": [
-              "argue"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "argue is significant.",
-            "vi": "argue rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use argue?",
-            "vi": "Sử dụng argue như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "argue applies everywhere.",
-            "vi": "argue áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will argue help?",
-            "vi": "argue sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! argue helps greatly always!",
-            "vi": "Vâng! argue luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
             ]
           }
         ]
@@ -8414,97 +7018,6 @@
     ]
   },
   {
-    "id": 81,
-    "word": "appointment",
-    "phonetic": "/əˈpɔɪntmənt/",
-    "pos": "Noun",
-    "frequency": 1345,
-    "categories": [
-      "Business",
-      "General"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa appointment từ Oxford)",
-        "examples": [
-          {
-            "en": "This appointment is important.",
-            "vi": "appointment này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About appointment?",
-            "vi": "Về appointment?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, appointment matters.",
-            "vi": "Vâng, appointment có quan trọng.",
-            "vocabs": [
-              "appointment"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is appointment?",
-            "vi": "appointment là gì?",
-            "vocabs": [
-              "appointment"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "appointment is significant.",
-            "vi": "appointment rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use appointment?",
-            "vi": "Sử dụng appointment như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "appointment applies everywhere.",
-            "vi": "appointment áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will appointment help?",
-            "vi": "appointment sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! appointment helps greatly always!",
-            "vi": "Vâng! appointment luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": 82,
     "word": "arrest",
     "phonetic": "/əˈrest/",
@@ -9303,97 +7816,6 @@
     ]
   },
   {
-    "id": 90,
-    "word": "appoint",
-    "phonetic": "/əˈpɔɪnt/",
-    "pos": "Verb",
-    "frequency": 1234,
-    "categories": [
-      "Business",
-      "General"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa appoint từ Oxford)",
-        "examples": [
-          {
-            "en": "This appoint is important.",
-            "vi": "appoint này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About appoint?",
-            "vi": "Về appoint?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, appoint matters.",
-            "vi": "Vâng, appoint có quan trọng.",
-            "vocabs": [
-              "appoint"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is appoint?",
-            "vi": "appoint là gì?",
-            "vocabs": [
-              "appoint"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "appoint is significant.",
-            "vi": "appoint rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use appoint?",
-            "vi": "Sử dụng appoint như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "appoint applies everywhere.",
-            "vi": "appoint áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will appoint help?",
-            "vi": "appoint sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! appoint helps greatly always!",
-            "vi": "Vâng! appoint luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": 91,
     "word": "approval",
     "phonetic": "/əˈpruːvəl/",
@@ -9587,97 +8009,6 @@
             "vi": "Vui lòng giúp! Bây giờ architect rõ ràng!",
             "vocabs": [
               "help"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 93,
-    "word": "arise",
-    "phonetic": "/əˈraɪz/",
-    "pos": "Verb",
-    "frequency": 1234,
-    "categories": [
-      "General",
-      "Goal"
-    ],
-    "meanings": [
-      {
-        "vi": "1. (Định nghĩa arise từ Oxford)",
-        "examples": [
-          {
-            "en": "This arise is important.",
-            "vi": "arise này rất quan trọng.",
-            "category": "General"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Quick Chat",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "About arise?",
-            "vi": "Về arise?"
-          },
-          {
-            "speaker": "B",
-            "en": "Yes, arise matters.",
-            "vi": "Vâng, arise có quan trọng.",
-            "vocabs": [
-              "arise"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "What is arise?",
-            "vi": "arise là gì?",
-            "vocabs": [
-              "arise"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "arise is significant.",
-            "vi": "arise rất quan trọng.",
-            "vocabs": [
-              "significant"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "How use arise?",
-            "vi": "Sử dụng arise như thế nào?",
-            "vocabs": [
-              "use"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "arise applies everywhere.",
-            "vi": "arise áp dụng ở mọi nơi.",
-            "vocabs": [
-              "applies"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Will arise help?",
-            "vi": "arise sẽ giúp?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Yes! arise helps greatly always!",
-            "vi": "Vâng! arise luôn giúp rất nhiều!",
-            "vocabs": [
-              "always"
             ]
           }
         ]
@@ -10873,115 +9204,71 @@
     ]
   },
   {
-    "id": 105,
+    "id": 2,
     "word": "absolutely",
-    "phonetic": "/ˌæbsəˈluːtli/",
+    "phonetic": "/ˈæbsəluːtli/",
     "pos": "Adverb",
-    "frequency": 487,
-    "categories": [
-      "Communication",
-      "General"
-    ],
     "meanings": [
       {
-        "vi": "1. Hoàn toàn, tuyệt đối (completely, certainly)",
+        "vi": "Hoàn toàn, tuyệt đối (diễn tả sự chắc chắn)",
         "examples": [
           {
-            "en": "This is absolutely necessary for success.",
-            "vi": "Điều này tuyệt đối cần thiết để thành công.",
-            "category": "Certainty"
+            "en": "This is absolutely correct.",
+            "vi": "Điều này hoàn toàn chính xác."
           },
           {
-            "en": "I absolutely agree with your proposal.",
-            "vi": "Tôi tuyệt đối đồng ý với đề xuất của bạn.",
-            "category": "Agreement"
-          }
-        ]
-      },
-      {
-        "vi": "2. Chắc chắn, đúng vậy (used to agree)",
-        "examples": [
-          {
-            "en": "Are you coming to the party? Absolutely!",
-            "vi": "Bạn sắp đến bữa tiệc? Chắc chắn!",
-            "category": "Agreement"
+            "en": "I absolutely love this movie!",
+            "vi": "Tôi tuyệt đối yêu thích bộ phim này!"
           }
         ]
       }
     ],
     "conversations": [
       {
-        "title": "Team Agreement",
+        "title": "Job Interview - Talking About Yourself",
         "lines": [
           {
-            "speaker": "Manager",
-            "en": "This project is absolutely critical for our success.",
-            "vi": "Dự án này tuyệt đối quan trọng cho thành công của chúng ta."
-          },
-          {
-            "speaker": "Team",
-            "en": "Absolutely! We're committed to excellence here.",
-            "vi": "Chắc chắn! Chúng tôi cam kết vào sự xuất sắc ở đây.",
+            "speaker": "Interviewer",
+            "en": "Tell me about your experience with English.",
+            "vi": "Hãy kể cho tôi về kinh nghiệm tiếng Anh của bạn.",
             "vocabs": [
-              "committed",
-              "excellence"
+              "about",
+              "experience",
+              "English"
             ]
           },
           {
-            "speaker": "Manager",
-            "en": "The quality standards are absolutely non-negotiable.",
-            "vi": "Các tiêu chuẩn chất lượng tuyệt đối không thể thương lượng.",
+            "speaker": "Candidate",
+            "en": "I am absolutely passionate about learning new languages.",
+            "vi": "Tôi hoàn toàn đam mê học các ngôn ngữ mới.",
             "vocabs": [
-              "quality",
-              "standards",
-              "non-negotiable"
+              "absolutely",
+              "passionate",
+              "about",
+              "learning",
+              "languages"
             ]
           },
           {
-            "speaker": "Team",
-            "en": "Absolutely understood! We will maintain high quality.",
-            "vi": "Hiểu rõ ràng! Chúng tôi sẽ duy trì chất lượng cao.",
+            "speaker": "Interviewer",
+            "en": "That's absolutely wonderful! How long have you been studying?",
+            "vi": "Điều đó thật tuyệt vời! Bạn đã học bao lâu?",
             "vocabs": [
-              "maintain",
-              "quality"
+              "absolutely",
+              "wonderful",
+              "studying"
             ]
           },
           {
-            "speaker": "Manager",
-            "en": "This deadline is absolutely firm—no extensions.",
-            "vi": "Thời hạn này tuyệt đối chắc chắn—không gia hạn.",
+            "speaker": "Candidate",
+            "en": "For three years. I practice daily and absolutely believe in consistency.",
+            "vi": "Ba năm. Tôi luyện tập hàng ngày và tuyệt đối tin vào sự nhất quán.",
             "vocabs": [
-              "deadline",
-              "firm",
-              "extensions"
-            ]
-          },
-          {
-            "speaker": "Team",
-            "en": "Absolutely! We'll complete it on time without fail.",
-            "vi": "Chắc chắn! Chúng tôi sẽ hoàn thành nó đúng hạn mà không thất bại.",
-            "vocabs": [
-              "complete",
-              "fail"
-            ]
-          },
-          {
-            "speaker": "Manager",
-            "en": "Your dedication is absolutely inspiring to everyone.",
-            "vi": "Sự tận tâm của bạn tuyệt đối truyền cảm hứng cho mọi người.",
-            "vocabs": [
-              "dedication",
-              "inspiring"
-            ]
-          },
-          {
-            "speaker": "Team",
-            "en": "Thank you! Absolutely motivated to deliver results!",
-            "vi": "Cảm ơn! Tuyệt đối có động lực để đạt kết quả!",
-            "vocabs": [
-              "motivated",
-              "deliver",
-              "results"
+              "practice",
+              "daily",
+              "absolutely",
+              "believe",
+              "consistency"
             ]
           }
         ]
@@ -10989,113 +9276,93 @@
     ]
   },
   {
-    "id": 106,
+    "id": 3,
     "word": "academy",
     "phonetic": "/əˈkædəmi/",
     "pos": "Noun",
-    "frequency": 342,
-    "categories": [
-      "Education",
-      "General"
-    ],
     "meanings": [
       {
-        "vi": "1. Trường học hoặc viện giáo dục (school)",
+        "vi": "Học viện, trường (đặc biệt là dạy kỹ năng đặc biệt)",
         "examples": [
           {
-            "en": "She graduated from a prestigious military academy.",
-            "vi": "Cô ấy tốt nghiệp từ một học viện quân sự nổi tiếng.",
-            "category": "Education"
+            "en": "She graduated from a military academy.",
+            "vi": "Cô ấy tốt nghiệp từ một học viện quân sự."
           },
           {
-            "en": "The academy offers advanced courses in science.",
-            "vi": "Học viện cung cấp các khóa học nâng cao trong khoa học.",
-            "category": "Academics"
+            "en": "He studies at an art academy.",
+            "vi": "Anh ấy học tại một học viện nghệ thuật."
           }
         ]
       },
       {
-        "vi": "2. Tổ chức hoặc hội học (society of scholars)",
+        "vi": "Tổ chức hoặc xã hội cho học tập (đặc biệt về khoa học, nghệ thuật)",
         "examples": [
           {
-            "en": "He was elected to the National Academy of Sciences.",
-            "vi": "Anh ấy được bầu vào Học viện Khoa học Quốc gia.",
-            "category": "Honor"
+            "en": "She was elected to the National Academy of Sciences.",
+            "vi": "Cô ấy được bầu vào Học viện Khoa học Quốc gia."
           }
         ]
       }
     ],
     "conversations": [
       {
-        "title": "School Choice",
+        "title": "Choosing a School - Planning for Future",
         "lines": [
           {
             "speaker": "Parent",
-            "en": "Which academy would you recommend for my child?",
-            "vi": "Bạn sẽ giới thiệu học viện nào cho con tôi?"
+            "en": "Have you thought about which academy you want to attend?",
+            "vi": "Bạn đã nghĩ về học viện nào bạn muốn theo học?",
+            "vocabs": [
+              "thought",
+              "academy",
+              "want",
+              "attend"
+            ]
           },
           {
-            "speaker": "Advisor",
-            "en": "This academy is excellent for advanced students.",
-            "vi": "Học viện này rất xuất sắc cho học sinh nâng cao.",
+            "speaker": "Student",
+            "en": "Yes! I'm interested in the military academy because of the discipline.",
+            "vi": "Vâng! Tôi quan tâm đến học viện quân sự vì sự kỷ luật.",
             "vocabs": [
+              "interested",
+              "military",
+              "academy",
+              "discipline"
+            ]
+          },
+          {
+            "speaker": "Parent",
+            "en": "That's absolutely great! The academy has an excellent reputation.",
+            "vi": "Điều đó tuyệt vời! Học viện có danh tiếng tuyệt vời.",
+            "vocabs": [
+              "absolutely",
+              "academy",
               "excellent",
-              "advanced",
-              "students"
+              "reputation"
+            ]
+          },
+          {
+            "speaker": "Student",
+            "en": "I heard the academy offers many programs in science and technology.",
+            "vi": "Tôi nghe học viện cung cấp nhiều chương trình về khoa học và công nghệ.",
+            "vocabs": [
+              "heard",
+              "academy",
+              "offers",
+              "programs",
+              "science",
+              "technology"
             ]
           },
           {
             "speaker": "Parent",
-            "en": "What programs does the academy offer?",
-            "vi": "Học viện cung cấp những chương trình nào?",
+            "en": "Perfect! Let's learn more about the academy and prepare your application.",
+            "vi": "Tuyệt vời! Hãy tìm hiểu thêm về học viện và chuẩn bị hồ sơ ứng tuyển của bạn.",
             "vocabs": [
-              "programs"
-            ]
-          },
-          {
-            "speaker": "Advisor",
-            "en": "The academy offers STEM and arts programs extensively.",
-            "vi": "Học viện cung cấp các chương trình STEM và nghệ thuật rộng rãi.",
-            "vocabs": [
-              "STEM",
-              "arts"
-            ]
-          },
-          {
-            "speaker": "Parent",
-            "en": "Is the academy curriculum challenging enough?",
-            "vi": "Chương trình học của học viện có thách thức đủ không?",
-            "vocabs": [
-              "curriculum",
-              "challenging"
-            ]
-          },
-          {
-            "speaker": "Advisor",
-            "en": "Yes! The academy maintains rigorous academic standards.",
-            "vi": "Vâng! Học viện duy trì các tiêu chuẩn học tập nghiêm ngặt.",
-            "vocabs": [
-              "maintains",
-              "rigorous"
-            ]
-          },
-          {
-            "speaker": "Parent",
-            "en": "Do academy graduates succeed in universities?",
-            "vi": "Các sinh viên tốt nghiệp của học viện có thành công ở đại học không?",
-            "vocabs": [
-              "graduates",
-              "universities"
-            ]
-          },
-          {
-            "speaker": "Advisor",
-            "en": "Absolutely! Academy alumni excel in top universities worldwide.",
-            "vi": "Chắc chắn! Các cựu học sinh của học viện xuất sắc ở các đại học hàng đầu trên thế giới.",
-            "vocabs": [
-              "alumni",
-              "excel",
-              "worldwide"
+              "learn",
+              "academy",
+              "prepare",
+              "application"
             ]
           }
         ]
