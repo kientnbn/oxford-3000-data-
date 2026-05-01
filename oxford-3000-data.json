@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "word": "about",
+    "phonetic": "/əˈbaʊt/",
+    "pos": "Preposition, Adverb",
+    "meanings": [
+      {
+        "vi": "Về, liên quan đến (chỉ chủ đề, nội dung)",
+        "examples": [
+          {
+            "en": "The book is about a young boy who discovers magic.",
+            "vi": "Cuốn sách nói về một cậu bé trẻ khám phá phép thuật."
+          },
+          {
+            "en": "I want to talk about the new project.",
+            "vi": "Tôi muốn nói về dự án mới."
+          }
+        ]
+      },
+      {
+        "vi": "Khoảng, xấp xỉ (chỉ số lượng gần đúng)",
+        "examples": [
+          {
+            "en": "There are about 100 people at the party.",
+            "vi": "Có khoảng 100 người tại bữa tiệc."
+          }
+        ]
+      },
+      {
+        "vi": "Sắp, chuẩn bị (điều sắp xảy ra)",
+        "examples": [
+          {
+            "en": "I was about to leave when you called.",
+            "vi": "Tôi sắp ra đi khi bạn gọi."
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Talking About a New Project",
+        "lines": [
+          {
+            "speaker": "Alice",
+            "en": "Hey Bob! Have you heard about the new English learning app?",
+            "vi": "Này Bob! Bạn đã nghe về ứng dụng học tiếng Anh mới chưa?",
+            "vocabs": ["heard", "about", "app"]
+          },
+          {
+            "speaker": "Bob",
+            "en": "I absolutely love it! It's about learning vocabulary in context.",
+            "vi": "Tôi tuyệt đối yêu thích nó! Nó là về việc học từ vựng trong bối cảnh.",
+            "vocabs": ["absolutely", "love", "about", "learning", "vocabulary"]
+          },
+          {
+            "speaker": "Alice",
+            "en": "That sounds amazing! Tell me more about the features.",
+            "vi": "Nghe hay quá! Hãy kể cho tôi thêm về các tính năng.",
+            "vocabs": ["sounds", "amazing", "more", "about", "features"]
+          },
+          {
+            "speaker": "Bob",
+            "en": "Well, it has conversations like this one. You can read and listen.",
+            "vi": "Chà, nó có các cuộc hội thoại như thế này. Bạn có thể đọc và nghe.",
+            "vocabs": ["conversations", "read", "listen"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "word": "absolutely",
+    "phonetic": "/ˈæbsəluːtli/",
+    "pos": "Adverb",
+    "meanings": [
+      {
+        "vi": "Hoàn toàn, tuyệt đối (diễn tả sự chắc chắn)",
+        "examples": [
+          {
+            "en": "This is absolutely correct.",
+            "vi": "Điều này hoàn toàn chính xác."
+          },
+          {
+            "en": "I absolutely love this movie!",
+            "vi": "Tôi tuyệt đối yêu thích bộ phim này!"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Job Interview - Talking About Yourself",
+        "lines": [
+          {
+            "speaker": "Interviewer",
+            "en": "Tell me about your experience with English.",
+            "vi": "Hãy kể cho tôi về kinh nghiệm tiếng Anh của bạn.",
+            "vocabs": ["about", "experience", "English"]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "I am absolutely passionate about learning new languages.",
+            "vi": "Tôi hoàn toàn đam mê học các ngôn ngữ mới.",
+            "vocabs": ["absolutely", "passionate", "about", "learning", "languages"]
+          },
+          {
+            "speaker": "Interviewer",
+            "en": "That's absolutely wonderful! How long have you been studying?",
+            "vi": "Điều đó thật tuyệt vời! Bạn đã học bao lâu?",
+            "vocabs": ["absolutely", "wonderful", "studying"]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "For three years. I practice daily and absolutely believe in consistency.",
+            "vi": "Ba năm. Tôi luyện tập hàng ngày và tuyệt đối tin vào sự nhất quán.",
+            "vocabs": ["practice", "daily", "absolutely", "believe", "consistency"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "word": "academy",
+    "phonetic": "/əˈkædəmi/",
+    "pos": "Noun",
+    "meanings": [
+      {
+        "vi": "Học viện, trường (đặc biệt là dạy kỹ năng đặc biệt)",
+        "examples": [
+          {
+            "en": "She graduated from a military academy.",
+            "vi": "Cô ấy tốt nghiệp từ một học viện quân sự."
+          },
+          {
+            "en": "He studies at an art academy.",
+            "vi": "Anh ấy học tại một học viện nghệ thuật."
+          }
+        ]
+      },
+      {
+        "vi": "Tổ chức hoặc xã hội cho học tập (đặc biệt về khoa học, nghệ thuật)",
+        "examples": [
+          {
+            "en": "She was elected to the National Academy of Sciences.",
+            "vi": "Cô ấy được bầu vào Học viện Khoa học Quốc gia."
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Choosing a School - Planning for Future",
+        "lines": [
+          {
+            "speaker": "Parent",
+            "en": "Have you thought about which academy you want to attend?",
+            "vi": "Bạn đã nghĩ về học viện nào bạn muốn theo học?",
+            "vocabs": ["thought", "academy", "want", "attend"]
+          },
+          {
+            "speaker": "Student",
+            "en": "Yes! I'm interested in the military academy because of the discipline.",
+            "vi": "Vâng! Tôi quan tâm đến học viện quân sự vì sự kỷ luật.",
+            "vocabs": ["interested", "military", "academy", "discipline"]
+          },
+          {
+            "speaker": "Parent",
+            "en": "That's absolutely great! The academy has an excellent reputation.",
+            "vi": "Điều đó tuyệt vời! Học viện có danh tiếng tuyệt vời.",
+            "vocabs": ["absolutely", "academy", "excellent", "reputation"]
+          },
+          {
+            "speaker": "Student",
+            "en": "I heard the academy offers many programs in science and technology.",
+            "vi": "Tôi nghe học viện cung cấp nhiều chương trình về khoa học và công nghệ.",
+            "vocabs": ["heard", "academy", "offers", "programs", "science", "technology"]
+          },
+          {
+            "speaker": "Parent",
+            "en": "Perfect! Let's learn more about the academy and prepare your application.",
+            "vi": "Tuyệt vời! Hãy tìm hiểu thêm về học viện và chuẩn bị hồ sơ ứng tuyển của bạn.",
+            "vocabs": ["learn", "academy", "prepare", "application"]
+          }
+        ]
+      }
+    ]
+  }
+]
