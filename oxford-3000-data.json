@@ -38,6 +38,37 @@
           }
         ]
       }
+    ],
+    "conversations": [
+      {
+        "title": "Talking About a New Project",
+        "lines": [
+          {
+            "speaker": "Alice",
+            "en": "Hey Bob! Have you heard about the new English learning app?",
+            "vi": "Này Bob! Bạn đã nghe về ứng dụng học tiếng Anh mới chưa?",
+            "vocabs": ["heard", "about", "app"]
+          },
+          {
+            "speaker": "Bob",
+            "en": "I absolutely love it! It's about learning vocabulary in context.",
+            "vi": "Tôi tuyệt đối yêu thích nó! Nó là về việc học từ vựng trong bối cảnh.",
+            "vocabs": ["absolutely", "love", "about", "learning", "vocabulary"]
+          },
+          {
+            "speaker": "Alice",
+            "en": "That sounds amazing! Tell me more about the features.",
+            "vi": "Nghe hay quá! Hãy kể cho tôi thêm về các tính năng.",
+            "vocabs": ["sounds", "amazing", "more", "about", "features"]
+          },
+          {
+            "speaker": "Bob",
+            "en": "Well, it has conversations like this one. You can read and listen.",
+            "vi": "Chà, nó có các cuộc hội thoại như thế này. Bạn có thể đọc và nghe.",
+            "vocabs": ["conversations", "read", "listen"]
+          }
+        ]
+      }
     ]
   },
   {
@@ -58,6 +89,37 @@
           {
             "en": "I absolutely love this movie!",
             "vi": "Tôi tuyệt đối yêu thích bộ phim này!"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Job Interview - Talking About Yourself",
+        "lines": [
+          {
+            "speaker": "Interviewer",
+            "en": "Tell me about your experience with English.",
+            "vi": "Hãy kể cho tôi về kinh nghiệm tiếng Anh của bạn.",
+            "vocabs": ["about", "experience", "English"]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "I am absolutely passionate about learning new languages.",
+            "vi": "Tôi hoàn toàn đam mê học các ngôn ngữ mới.",
+            "vocabs": ["absolutely", "passionate", "learning", "languages"]
+          },
+          {
+            "speaker": "Interviewer",
+            "en": "That's absolutely wonderful! How long have you been studying?",
+            "vi": "Điều đó thật tuyệt vời! Bạn đã học bao lâu?",
+            "vocabs": ["absolutely", "wonderful", "studying"]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "For three years. I practice daily and absolutely believe in consistency.",
+            "vi": "Ba năm. Tôi luyện tập hàng ngày và tuyệt đối tin vào sự nhất quán.",
+            "vocabs": ["practice", "daily", "absolutely", "believe", "consistency"]
           }
         ]
       }
@@ -93,6 +155,43 @@
           }
         ]
       }
+    ],
+    "conversations": [
+      {
+        "title": "Choosing a School - Planning for Future",
+        "lines": [
+          {
+            "speaker": "Parent",
+            "en": "Have you thought about which academy you want to attend?",
+            "vi": "Bạn đã nghĩ về học viện nào bạn muốn theo học?",
+            "vocabs": ["thought", "academy", "want", "attend"]
+          },
+          {
+            "speaker": "Student",
+            "en": "Yes! I'm interested in the military academy because of the discipline.",
+            "vi": "Vâng! Tôi quan tâm đến học viện quân sự vì sự kỷ luật.",
+            "vocabs": ["interested", "military", "academy", "discipline"]
+          },
+          {
+            "speaker": "Parent",
+            "en": "That's absolutely great! The academy has an excellent reputation.",
+            "vi": "Điều đó tuyệt vời! Học viện có danh tiếng tuyệt vời.",
+            "vocabs": ["absolutely", "academy", "excellent", "reputation"]
+          },
+          {
+            "speaker": "Student",
+            "en": "I heard the academy offers many programs in science and technology.",
+            "vi": "Tôi nghe học viện cung cấp nhiều chương trình về khoa học và công nghệ.",
+            "vocabs": ["heard", "academy", "offers", "programs", "science", "technology"]
+          },
+          {
+            "speaker": "Parent",
+            "en": "Perfect! Let's learn more about the academy and prepare your application.",
+            "vi": "Tuyệt vời! Hãy tìm hiểu thêm về học viện và chuẩn bị hồ sơ ứng tuyển của bạn.",
+            "vocabs": ["learn", "academy", "prepare", "application"]
+          }
+        ]
+      }
     ]
   },
   {
@@ -108,11 +207,43 @@
         "examples": [
           {
             "en": "She is able to speak three languages fluently.",
-            "vi": "Cô ấy có khả năng nói ba thứ tiếng trôi chảy."
+            "vi": "Cô ấy có khả năng nói ba thứ tiếng trôi chảy.",
+            "category": "General"
           },
           {
             "en": "With proper training, anyone can become able to master new skills.",
-            "vi": "Với đào tạo thích hợp, bất kỳ ai cũng có thể thành thạo kỹ năng mới."
+            "vi": "Với đào tạo thích hợp, bất kỳ ai cũng có thể thành thạo kỹ năng mới.",
+            "category": "Education"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Discussing Skills and Abilities",
+        "lines": [
+          {
+            "speaker": "Tom",
+            "en": "Are you able to help me with this project?",
+            "vi": "Bạn có thể giúp tôi dự án này không?"
+          },
+          {
+            "speaker": "Sarah",
+            "en": "I'm able to help, but I need to finish my work first.",
+            "vi": "Tôi có thể giúp, nhưng tôi cần hoàn thành công việc của tôi trước.",
+            "vocabs": ["able", "finish", "work"]
+          },
+          {
+            "speaker": "Tom",
+            "en": "That's great! Are you able to start tomorrow?",
+            "vi": "Tuyệt vời! Bạn có thể bắt đầu ngày mai không?",
+            "vocabs": ["able", "start", "tomorrow"]
+          },
+          {
+            "speaker": "Sarah",
+            "en": "Yes, I'll be able to dedicate my full attention to it.",
+            "vi": "Vâng, tôi sẽ có thể dành toàn bộ sự chú ý của tôi cho nó.",
+            "vocabs": ["able", "dedicate", "attention"]
           }
         ]
       }
@@ -131,11 +262,43 @@
         "examples": [
           {
             "en": "I accept your offer and look forward to working with you.",
-            "vi": "Tôi chấp nhận lời đề nghị của bạn và mong muốn hợp tác với bạn."
+            "vi": "Tôi chấp nhận lời đề nghị của bạn và mong muốn hợp tác với bạn.",
+            "category": "Business"
           },
           {
             "en": "The university will accept applications until the end of March.",
-            "vi": "Đại học sẽ chấp nhận đơn xin cho đến cuối tháng Ba."
+            "vi": "Đại học sẽ chấp nhận đơn xin cho đến cuối tháng Ba.",
+            "category": "Education"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Job Offer Discussion",
+        "lines": [
+          {
+            "speaker": "Manager",
+            "en": "We'd like to offer you the position of Senior Developer.",
+            "vi": "Chúng tôi muốn đề nghị bạn vị trí Lập trình viên Cấp cao."
+          },
+          {
+            "speaker": "Candidate",
+            "en": "Thank you! I'm honored and I accept your offer.",
+            "vi": "Cảm ơn! Tôi cảm thấy vinh dự và tôi chấp nhận lời đề nghị của bạn.",
+            "vocabs": ["accept", "offer", "honored"]
+          },
+          {
+            "speaker": "Manager",
+            "en": "Excellent! Will you accept the starting salary we discussed?",
+            "vi": "Tuyệt vời! Bạn có chấp nhận mức lương khởi điểm mà chúng ta đã thảo luận không?",
+            "vocabs": ["accept", "salary", "discussed"]
+          },
+          {
+            "speaker": "Candidate",
+            "en": "Yes, I fully accept all the terms and conditions.",
+            "vi": "Vâng, tôi chấp nhận đầy đủ tất cả các điều khoản và điều kiện.",
+            "vocabs": ["accept", "terms", "conditions"]
           }
         ]
       }
@@ -154,11 +317,43 @@
         "examples": [
           {
             "en": "Through hard work and dedication, she achieved her dream of becoming a doctor.",
-            "vi": "Thông qua làm việc chăm chỉ và tận tâm, cô ấy đã đạt được ước mơ trở thành bác sĩ."
+            "vi": "Thông qua làm việc chăm chỉ và tận tâm, cô ấy đã đạt được ước mơ trở thành bác sĩ.",
+            "category": "Education"
           },
           {
             "en": "The company achieved record profits this year.",
-            "vi": "Công ty đã đạt được lợi nhuận kỷ lục năm nay."
+            "vi": "Công ty đã đạt được lợi nhuận kỷ lục năm nay.",
+            "category": "Business"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Success Stories and Goals",
+        "lines": [
+          {
+            "speaker": "Coach",
+            "en": "Congratulations! You've achieved your fitness goal!",
+            "vi": "Chúc mừng! Bạn đã đạt được mục tiêu thể dục của mình!"
+          },
+          {
+            "speaker": "Student",
+            "en": "Thank you! I worked hard to achieve this result.",
+            "vi": "Cảm ơn! Tôi đã làm việc chăm chỉ để đạt được kết quả này.",
+            "vocabs": ["achieve", "worked", "result"]
+          },
+          {
+            "speaker": "Coach",
+            "en": "What's your next goal you want to achieve?",
+            "vi": "Mục tiêu tiếp theo bạn muốn đạt được là gì?",
+            "vocabs": ["achieve", "goal", "next"]
+          },
+          {
+            "speaker": "Student",
+            "en": "I want to achieve a faster running time by next month.",
+            "vi": "Tôi muốn đạt được thời gian chạy nhanh hơn vào tháng tới.",
+            "vocabs": ["achieve", "running", "time"]
           }
         ]
       }
