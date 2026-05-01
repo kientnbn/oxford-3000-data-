@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oxford 3000 Vocabulary Learner - PWA">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Oxford 3000</title>
+    <link rel="manifest" href="data:application/json,{
+        %22name%22:%22Oxford%203000%22,
+        %22short_name%22:%22Oxford%203K%22,
+        %22start_url%22:%22./oxford-3000-pwa.html%22,
+        %22display%22:%22standalone%22,
+        %22background_color%22:%22%23ffffff%22,
+        %22theme_color%22:%22%232c3e50%22,
+        %22orientation%22:%22portrait-primary%22,
+        %22icons%22:[{%22src%22:%22data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 192 192%27><rect fill=%27%232c3e50%27 width=%27192%27 height=%27192%27/><text x=%2750%25%27 y=%2750%25%27 font-size=%27120%27 fill=%27white%27 text-anchor=%27middle%27 dominant-baseline=%27central%27 font-weight=%27bold%27>O</text></svg>%22,%22sizes%22:%22192x192%22,%22type%22:%22image/svg+xml%22}]
+    }">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    :root {
+        --primary: #2c3e50;
+        --secondary: #3498db;
+        --accent: #e74c3c;
+        --light: #ecf0f1;
+        --dark: #34495e;
+        --text: #2c3e50;
+        --border: #bdc3c7;
+        --success: #27ae60;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: var(--text);
+        min-height: 100vh;
+        padding-bottom: 20px;
+    }
+
+    body.dark-mode {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        color: #ecf0f1;
+    }
+
+    body.dark-mode * {
+        --text: #ecf0f1;
+        --primary: #ecf0f1;
+        --border: #444;
+    }
+
+    header {
+        background: var(--primary);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    header h1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin-bottom: 5px;
+    }
+
+    header p {
+        font-size: 12px;
+        opacity: 0.9;
+    }
+
+    .controls {
+        padding: 15px 20px;
+        background: white;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    body.dark-mode .controls {
+        background: #2a2a2a;
+    }
+
+    .search-box {
+        flex: 1;
+        min-width: 200px;
+        padding: 10px 15px;
+        border: 2px solid var(--border);
+        border-radius: 8px;
+        font-size: 14px;
+        background: white;
+        color: var(--text);
+    }
+
+    body.dark-mode .search-box {
+        background: #1a1a1a;
+    }
+
+    .lang-select {
+        padding: 10px 12px;
+        border: 2px solid var(--border);
+        border-radius: 8px;
+        font-size: 13px;
+        background: white;
+        color: var(--text);
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    body.dark-mode .lang-select {
+        background: #1a1a1a;
+    }
+
+    .lang-select:hover {
+        border-color: var(--secondary);
+    }
+
+    button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        background: var(--secondary);
+        color: white;
+    }
+
+    button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+    }
+
+    button.dark-toggle {
+        background: var(--dark);
+        padding: 10px 12px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .word-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        border-left: 4px solid var(--secondary);
+        animation: slideIn 0.3s ease;
+    }
+
+    body.dark-mode .word-card {
+        background: #2a2a2a;
+        border-left-color: var(--secondary);
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .word-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        gap: 10px;
+    }
+
+    .word-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1;
+    }
+
+    .word-main {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--secondary);
+    }
+
+    .phonetic {
+        font-size: 14px;
+        color: #7f8c8d;
+        font-style: italic;
+    }
+
+    body.dark-mode .phonetic {
+        color: #95a5a6;
+    }
+
+    .word-pos {
+        display: inline-block;
+        background: var(--light);
+        color: var(--text);
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    body.dark-mode .word-pos {
+        background: #444;
+    }
+
+    .audio-btn {
+        background: var(--success);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    .audio-btn:hover {
+        background: #229954;
+    }
+
+    .audio-btn.playing {
+        animation: pulse 0.6s ease infinite;
+    }
+
+    .audio-buttons {
+        display: flex;
+        gap: 8px;
+        flex-shrink: 0;
+    }
+
+    .read-all-btn {
+        background: var(--accent);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+        border: none;
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+    }
+
+    .read-all-btn:hover {
+        background: #c0392b;
+        transform: translateY(-2px);
+    }
+
+    .read-all-btn.playing {
+        animation: pulse 0.6s ease infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+    }
+
+    /* Tabs System */
+    .word-tabs {
+        display: flex;
+        gap: 0;
+        border-bottom: 2px solid var(--border);
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .tab-btn {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        background: transparent;
+        color: #7f8c8d;
+        font-weight: 600;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+        font-size: 14px;
+    }
+
+    .tab-btn:hover {
+        color: var(--text);
+    }
+
+    .tab-btn.active {
+        color: var(--secondary);
+        border-bottom-color: var(--secondary);
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .vocab-word {
+        background: var(--vocab-bg);
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+        border-bottom: 2px dashed var(--accent);
+    }
+
+    .vocab-word:hover {
+        background: var(--accent);
+        color: white;
+    }
+
+    .vocab-tooltip {
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background: var(--dark);
+        color: white;
+        padding: 8px 10px;
+        border-radius: 4px;
+        font-size: 11px;
+        white-space: nowrap;
+        z-index: 10;
+        margin-bottom: 5px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .vocab-word:hover .vocab-tooltip {
+        display: block;
+    }
+
+    /* Conversation styles */
+    .conv-line {
+        margin-bottom: 12px;
+    }
+
+    .conv-speaker {
+        font-weight: 700;
+        font-size: 13px;
+        margin-bottom: 4px;
+        color: var(--secondary);
+    }
+
+    .conv-text {
+        padding: 10px 12px;
+        border-radius: 6px;
+        margin-bottom: 4px;
+        line-height: 1.5;
+        font-size: 13px;
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .conv-text-en {
+        background: #f0f8ff;
+        color: var(--secondary);
+    }
+
+    body.dark-mode .conv-text-en {
+        background: #1a2a3a;
+    }
+
+    .conv-text-vi {
+        background: var(--light);
+        color: var(--text);
+    }
+
+    body.dark-mode .conv-text-vi {
+        background: #3a3a3a;
+    }
+
+    .conv-audio-btn {
+        background: var(--success);
+        color: white;
+        border: none;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 11px;
+        flex-shrink: 0;
+        transition: all 0.2s ease;
+    }
+
+    .conv-audio-btn:hover {
+        background: #229954;
+        transform: scale(1.1);
+    }
+
+    .conv-controls-small {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    .conv-read-btn {
+        background: var(--accent);
+        color: white;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-size: 11px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .conv-read-btn:hover {
+        background: #c0392b;
+    }
+
+    .meaning {
+        margin-bottom: 15px;
+    }
+
+    .meaning-vi {
+        font-size: 14px;
+        color: var(--text);
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+
+    .examples {
+        background: var(--light);
+        padding: 12px;
+        border-radius: 8px;
+        margin-top: 8px;
+        border-left: 3px solid var(--accent);
+    }
+
+    body.dark-mode .examples {
+        background: #1a1a1a;
+    }
+
+    .example {
+        margin-bottom: 10px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .example:last-child {
+        margin-bottom: 0;
+    }
+
+    .example-en {
+        color: var(--secondary);
+        font-style: italic;
+        margin-bottom: 3px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .example-en-text {
+        flex: 1;
+    }
+
+    .example-audio-btn {
+        background: var(--secondary);
+        color: white;
+        border: none;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 12px;
+        flex-shrink: 0;
+        transition: all 0.2s ease;
+    }
+
+    .example-audio-btn:hover {
+        background: var(--dark);
+        transform: scale(1.1);
+    }
+
+    .example-audio-btn.playing {
+        animation: pulse 0.6s ease infinite;
+    }
+
+    .example-vi {
+        color: var(--text);
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 40px 20px;
+        color: #95a5a6;
+    }
+
+    .empty-state svg {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+        opacity: 0.5;
+    }
+
+    .status {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #7f8c8d;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 24px;
+        }
+
+        .controls {
+            padding: 12px 15px;
+        }
+
+        .search-box {
+            min-width: 100%;
+        }
+
+        .word-card {
+            padding: 15px;
+        }
+
+        .word-main {
+            font-size: 20px;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>📚 Oxford 3000</h1>
+        <p>Essential English Vocabulary</p>
+    </header>
+
+<div class="controls">
+    <input 
+        type="text" 
+        id="searchInput" 
+        class="search-box" 
+        placeholder="Search words... (e.g., 'about', 'absolutely')"
+    >
+    <select id="langSelect" class="lang-select">
+        <option value="en-vi">EN + VI</option>
+        <option value="en">EN only</option>
+        <option value="vi">VI only</option>
+    </select>
+    <button id="darkToggle" class="dark-toggle">🌙</button>
+</div>
+
+<div class="container">
+    <div id="wordsContainer"></div>
+    <div class="status">
+        <span id="statusText">Loading data...</span>
+    </div>
+</div>
+
+<script>
+    // Service Worker Registration
+    if ('serviceWorker' in navigator) {
+        const swCode = `
+            self.addEventListener('install', event => {
+                event.waitUntil(caches.open('oxford-3000-v1').then(cache => cache.addAll([
+                    './'
+                ])));
+            });
+
+            self.addEventListener('fetch', event => {
+                event.respondWith(
+                    caches.match(event.request).then(response => {
+                        return response || fetch(event.request);
+                    })
+                );
+            });
+        `;
+
+        const blob = new Blob([swCode], { type: 'application/javascript' });
+        const swUrl = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(swUrl).catch(() => {});
+    }
+
+    // IndexedDB Setup
+    const DB_NAME = 'Oxford3000';
+    const STORE_NAME = 'words';
+    
+    function initDB() {
+        return new Promise((resolve, reject) => {
+            const request = indexedDB.open(DB_NAME, 1);
+            request.onerror = () => reject(request.error);
+            request.onsuccess = () => resolve(request.result);
+            request.onupgradeneeded = (event) => {
+                const db = event.target.result;
+                if (!db.objectStoreNames.contains(STORE_NAME)) {
+                    db.createObjectStore(STORE_NAME, { keyPath: 'id' });
+                }
+            };
+        });
+    }
+
+    // Sample Data (Test with 3 words, will fetch full from Google Drive later)
+    const sampleData = [
+        {
+            id: 1,
+            word: "about",
+            phonetic: "/əˈbaʊt/",
+            pos: "Preposition, Adverb",
+            meanings: [
+                {
+                    vi: "Về, liên quan đến (chỉ chủ đề, nội dung)",
+                    examples: [
+                        { en: "The book is about a young boy who discovers magic.", vi: "Cuốn sách nói về một cậu bé trẻ khám phá phép thuật." },
+                        { en: "I want to talk about the new project.", vi: "Tôi muốn nói về dự án mới." }
+                    ]
+                },
+                {
+                    vi: "Khoảng, xấp xỉ (chỉ số lượng gần đúng)",
+                    examples: [
+                        { en: "There are about 100 people at the party.", vi: "Có khoảng 100 người tại bữa tiệc." }
+                    ]
+                },
+                {
+                    vi: "Sắp, chuẩn bị (điều sắp xảy ra)",
+                    examples: [
+                        { en: "I was about to leave when you called.", vi: "Tôi sắp ra đi khi bạn gọi." }
+                    ]
+                }
+            ],
+            conversations: [
+                {
+                    title: "Talking About a New Project",
+                    lines: [
+                        {
+                            speaker: "Alice",
+                            en: "Hey Bob! Have you heard about the new English learning app?",
+                            vi: "Này Bob! Bạn đã nghe về ứng dụng học tiếng Anh mới chưa?",
+                            vocabs: ["heard", "about", "app"]
+                        },
+                        {
+                            speaker: "Bob",
+                            en: "I absolutely love it! It's about learning vocabulary in context.",
+                            vi: "Tôi tuyệt đối yêu thích nó! Nó là về việc học từ vựng trong bối cảnh.",
+                            vocabs: ["absolutely", "love", "about", "learning", "vocabulary"]
+                        },
+                        {
+                            speaker: "Alice",
+                            en: "That sounds amazing! Tell me more about the features.",
+                            vi: "Nghe hay quá! Hãy kể cho tôi thêm về các tính năng.",
+                            vocabs: ["sounds", "amazing", "more", "about", "features"]
+                        },
+                        {
+                            speaker: "Bob",
+                            en: "Well, it has conversations like this one. You can read and listen.",
+                            vi: "Chà, nó có các cuộc hội thoại như thế này. Bạn có thể đọc và nghe.",
+                            vocabs: ["conversations", "read", "listen"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 2,
+            word: "absolutely",
+            phonetic: "/ˈæbsəluːtli/",
+            pos: "Adverb",
+            meanings: [
+                {
+                    vi: "Hoàn toàn, tuyệt đối (diễn tả sự chắc chắn)",
+                    examples: [
+                        { en: "This is absolutely correct.", vi: "Điều này hoàn toàn chính xác." },
+                        { en: "I absolutely love this movie!", vi: "Tôi tuyệt đối yêu thích bộ phim này!" }
+                    ]
+                }
+            ],
+            conversations: [
+                {
+                    title: "Job Interview - Talking About Yourself",
+                    lines: [
+                        {
+                            speaker: "Interviewer",
+                            en: "Tell me about your experience with English.",
+                            vi: "Hãy kể cho tôi về kinh nghiệm tiếng Anh của bạn.",
+                            vocabs: ["about", "experience", "English"]
+                        },
+                        {
+                            speaker: "Candidate",
+                            en: "I am absolutely passionate about learning new languages.",
+                            vi: "Tôi hoàn toàn đam mê học các ngôn ngữ mới.",
+                            vocabs: ["absolutely", "passionate", "learning", "languages"]
+                        },
+                        {
+                            speaker: "Interviewer",
+                            en: "That's absolutely wonderful! How long have you been studying?",
+                            vi: "Điều đó thật tuyệt vời! Bạn đã học bao lâu?",
+                            vocabs: ["absolutely", "wonderful", "studying"]
+                        },
+                        {
+                            speaker: "Candidate",
+                            en: "For three years. I practice daily and absolutely believe in consistency.",
+                            vi: "Ba năm. Tôi luyện tập hàng ngày và tuyệt đối tin vào sự nhất quán.",
+                            vocabs: ["practice", "daily", "absolutely", "believe", "consistency"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 3,
+            word: "academy",
+            phonetic: "/əˈkædəmi/",
+            pos: "Noun",
+            meanings: [
+                {
+                    vi: "Học viện, trường (đặc biệt là dạy kỹ năng đặc biệt)",
+                    examples: [
+                        { en: "She graduated from a military academy.", vi: "Cô ấy tốt nghiệp từ một học viện quân sự." },
+                        { en: "He studies at an art academy.", vi: "Anh ấy học tại một học viện nghệ thuật." }
+                    ]
+                },
+                {
+                    vi: "Tổ chức hoặc xã hội cho học tập (đặc biệt về khoa học, nghệ thuật)",
+                    examples: [
+                        { en: "She was elected to the National Academy of Sciences.", vi: "Cô ấy được bầu vào Học viện Khoa học Quốc gia." }
+                    ]
+                }
+            ],
+            conversations: [
+                {
+                    title: "Choosing a School - Planning for Future",
+                    lines: [
+                        {
+                            speaker: "Parent",
+                            en: "Have you thought about which academy you want to attend?",
+                            vi: "Bạn đã nghĩ về học viện nào bạn muốn theo học?",
+                            vocabs: ["thought", "academy", "want", "attend"]
+                        },
+                        {
+                            speaker: "Student",
+                            en: "Yes! I'm interested in the military academy because of the discipline.",
+                            vi: "Vâng! Tôi quan tâm đến học viện quân sự vì sự kỷ luật.",
+                            vocabs: ["interested", "military", "academy", "discipline"]
+                        },
+                        {
+                            speaker: "Parent",
+                            en: "That's absolutely great! The academy has an excellent reputation.",
+                            vi: "Điều đó tuyệt vời! Học viện có danh tiếng tuyệt vời.",
+                            vocabs: ["absolutely", "academy", "excellent", "reputation"]
+                        },
+                        {
+                            speaker: "Student",
+                            en: "I heard the academy offers many programs in science and technology.",
+                            vi: "Tôi nghe học viện cung cấp nhiều chương trình về khoa học và công nghệ.",
+                            vocabs: ["heard", "academy", "offers", "programs", "science", "technology"]
+                        },
+                        {
+                            speaker: "Parent",
+                            en: "Perfect! Let's learn more about the academy and prepare your application.",
+                            vi: "Tuyệt vời! Hãy tìm hiểu thêm về học viện và chuẩn bị hồ sơ ứng tuyển của bạn.",
+                            vocabs: ["learn", "academy", "prepare", "application"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ];
+
+    // Text-to-Speech
+    // Global words map for read all functionality
+    const wordsMap = {};
+
+    function speakWord(word) {
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        speechSynthesis.cancel();
+        speechSynthesis.speak(utterance);
+    }
+
+    function readAllWordById(wordId) {
+        const word = wordsMap[wordId];
+        if (!word) return;
+
+        const langMode = document.getElementById('langSelect').value;
+        const utterances = [];
+
+        // 1. Read the word itself
+        utterances.push({ text: word.word, lang: 'en-US' });
+
+        // 2. Read all meanings and examples
+        word.meanings.forEach(meaning => {
+            // Read Vietnamese meaning
+            if (langMode === 'en-vi' || langMode === 'vi') {
+                utterances.push({ text: meaning.vi, lang: 'vi-VN' });
+            }
+
+            // Read examples
+            meaning.examples.forEach(example => {
+                if (langMode === 'en-vi' || langMode === 'en') {
+                    utterances.push({ text: example.en, lang: 'en-US' });
+                }
+                if (langMode === 'en-vi') {
+                    utterances.push({ text: example.vi, lang: 'vi-VN' });
+                }
+            });
+        });
+
+        // Speak all utterances sequentially
+        let index = 0;
+        const speakNext = () => {
+            if (index < utterances.length) {
+                const item = utterances[index];
+                const utterance = new SpeechSynthesisUtterance(item.text);
+                utterance.lang = item.lang;
+                utterance.rate = 0.85;
+                utterance.onend = () => {
+                    index++;
+                    // Small delay between sentences
+                    setTimeout(speakNext, 300);
+                };
+                speechSynthesis.speak(utterance);
+            }
+        };
+
+        speechSynthesis.cancel();
+        speakNext();
+    }
+
+    // Vocabulary highlighting for conversations
+    function highlightVocabInText(text, vocabs) {
+        if (!vocabs || vocabs.length === 0) return text;
+        let result = text;
+        vocabs.forEach(vocab => {
+            const regex = new RegExp(`\\b${vocab}\\b`, 'gi');
+            result = result.replace(regex, `<span class="vocab-word">${vocab}<span class="vocab-tooltip">Learn more</span></span>`);
+        });
+        return result;
+    }
+
+    // Read conversation
+    function readConversationByWordId(wordId) {
+        const word = wordsMap[wordId];
+        if (!word || !word.conversations || word.conversations.length === 0) return;
+
+        const langMode = document.getElementById('langSelect').value;
+        const conv = word.conversations[0];
+        const utterances = [];
+
+        conv.lines.forEach(line => {
+            if (langMode === 'en-vi' || langMode === 'en') {
+                utterances.push({ text: `${line.speaker}: ${line.en}`, lang: 'en-US' });
+            }
+            if (langMode === 'en-vi' || langMode === 'vi') {
+                utterances.push({ text: line.vi, lang: 'vi-VN' });
+            }
+        });
+
+        let index = 0;
+        const speakNext = () => {
+            if (index < utterances.length) {
+                const item = utterances[index];
+                const utterance = new SpeechSynthesisUtterance(item.text);
+                utterance.lang = item.lang;
+                utterance.rate = 0.85;
+                utterance.onend = () => {
+                    index++;
+                    setTimeout(speakNext, 300);
+                };
+                speechSynthesis.speak(utterance);
+            }
+        };
+
+        speechSynthesis.cancel();
+        speakNext();
+    }
+
+    // Tab switching
+    function switchTab(wordId, tabName) {
+        document.querySelectorAll(`[data-word="${wordId}"] .tab-btn`).forEach(btn => {
+            btn.classList.remove('active');
+        });
+        document.querySelectorAll(`[data-word="${wordId}"] .tab-content`).forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        document.querySelector(`[data-word="${wordId}"] .tab-btn[data-tab="${tabName}"]`).classList.add('active');
+        document.querySelector(`[data-word="${wordId}"] .tab-content[data-tab="${tabName}"]`).classList.add('active');
+    }
+
+    // Render Words
+    function renderWords(words) {
+        const container = document.getElementById('wordsContainer');
+        if (words.length === 0) {
+            container.innerHTML = `
+                <div class="empty-state">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <p>No words found. Try another search.</p>
+                </div>
+            `;
+            return;
+        }
+
+        // Populate wordsMap for read all functionality
+        words.forEach(word => {
+            wordsMap[word.id] = word;
+        });
+
+        container.innerHTML = words.map(word => `
+            <div class="word-card" data-word="${word.id}">
+                <div class="word-header">
+                    <div class="word-title">
+                        <div>
+                            <div class="word-main">${word.word}</div>
+                            <div class="phonetic">${word.phonetic}</div>
+                        </div>
+                        <span class="word-pos">${word.pos}</span>
+                    </div>
+                    <div class="audio-buttons">
+                        <button class="audio-btn" onclick="speakWord('${word.word}')" title="Pronounce word">🔊</button>
+                        <button class="read-all-btn" onclick="readAllWordById(${word.id})" title="Read all">📖</button>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="word-tabs">
+                    <button class="tab-btn active" data-tab="definition" onclick="switchTab(${word.id}, 'definition')">📖 Definition</button>
+                    ${word.conversations && word.conversations.length > 0 ? `<button class="tab-btn" data-tab="conversation" onclick="switchTab(${word.id}, 'conversation')">🎬 Conversations</button>` : ''}
+                </div>
+
+                <!-- Definition Tab -->
+                <div class="tab-content active" data-tab="definition">
+                    ${word.meanings.map(meaning => `
+                        <div class="meaning">
+                            <div class="meaning-vi">${meaning.vi}</div>
+                            <div class="examples">
+                                ${meaning.examples.map(ex => `
+                                    <div class="example">
+                                        <div class="example-en">
+                                            <span class="example-en-text">"${ex.en}"</span>
+                                            <button class="example-audio-btn" onclick="speakWord('${ex.en.replace(/"/g, '\\"')}')" title="Pronounce example">🔊</button>
+                                        </div>
+                                        <div class="example-vi">→ ${ex.vi}</div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <!-- Conversation Tab -->
+                ${word.conversations && word.conversations.length > 0 ? `
+                <div class="tab-content" data-tab="conversation">
+                    ${word.conversations.map(conv => `
+                        <div style="margin-bottom: 15px;">
+                            <div style="font-weight: 700; margin-bottom: 10px; color: var(--secondary);">${conv.title}</div>
+                            <div class="conv-controls-small">
+                                <button class="conv-read-btn" onclick="readConversationByWordId(${word.id})">📖 Read All</button>
+                            </div>
+                            ${conv.lines.map(line => `
+                                <div class="conv-line">
+                                    <div class="conv-speaker">${line.speaker}</div>
+                                    ${document.getElementById('langSelect') && (document.getElementById('langSelect').value === 'en-vi' || document.getElementById('langSelect').value === 'en') ? `
+                                    <div class="conv-text conv-text-en">
+                                        <button class="conv-audio-btn" onclick="speakWord('${line.en.replace(/"/g, '\\"')}')">🔊</button>
+                                        <span>${highlightVocabInText(line.en, line.vocabs)}</span>
+                                    </div>
+                                    ` : ''}
+                                    ${document.getElementById('langSelect') && (document.getElementById('langSelect').value === 'en-vi' || document.getElementById('langSelect').value === 'vi') ? `
+                                    <div class="conv-text conv-text-vi">
+                                        <button class="conv-audio-btn" onclick="speakWord('${line.vi.replace(/"/g, '\\"')}', 'vi-VN')">🔊</button>
+                                        <span>${line.vi}</span>
+                                    </div>
+                                    ` : ''}
+                                </div>
+                            `).join('')}
+                        </div>
+                    `).join('')}
+                </div>
+                ` : ''}
+            </div>
+        `).join('');
+    }
+
+    // Search Functionality
+    function setupSearch(words) {
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = words.filter(w => 
+                w.word.toLowerCase().includes(query)
+            );
+            renderWords(filtered);
+        });
+    }
+
+    // Dark Mode
+    function setupDarkMode() {
+        const toggle = document.getElementById('darkToggle');
+        const isDark = localStorage.getItem('darkMode') === 'true';
+        if (isDark) document.body.classList.add('dark-mode');
+        
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const isDarkNow = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkNow);
+            toggle.textContent = isDarkNow ? '☀️' : '🌙';
+        });
+        toggle.textContent = isDark ? '☀️' : '🌙';
+    }
+
+    // Load Data
+    async function loadData() {
+        const statusText = document.getElementById('statusText');
+        
+        try {
+            const db = await initDB();
+            
+            // Try multiple endpoints
+            const endpoints = [
+                {
+                    name: 'GitHub Raw',
+                    url: 'https://raw.githubusercontent.com/kientnbn/oxford-3000-data-/main/oxford-3000-data.json'
+                },
+                {
+                    name: 'jsDelivr CDN',
+                    url: 'https://cdn.jsdelivr.net/gh/kientnbn/oxford-3000-data-@main/oxford-3000-data.json'
+                },
+                {
+                    name: 'GitHub API',
+                    url: 'https://api.github.com/repos/kientnbn/oxford-3000-data-/contents/oxford-3000-data.json'
+                }
+            ];
+            
+            let data = null;
+            let successEndpoint = null;
+            let errors = [];
+            
+            for (const endpoint of endpoints) {
+                try {
+                    console.log(`🔄 Trying ${endpoint.name}: ${endpoint.url}`);
+                    
+                    const response = await fetch(endpoint.url, {
+                        method: 'GET',
+                        mode: 'cors',
+                        credentials: 'omit'
+                    });
+                    
+                    console.log(`📊 ${endpoint.name} response:`, {
+                        status: response.status,
+                        statusText: response.statusText,
+                        ok: response.ok,
+                        type: response.type,
+                        headers: Array.from(response.headers.entries())
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}`);
+                    }
+                    
+                    let parsedData;
+                    if (endpoint.name === 'GitHub API') {
+                        const apiData = await response.json();
+                        const decoded = atob(apiData.content);
+                        parsedData = JSON.parse(decoded);
+                    } else {
+                        parsedData = await response.json();
+                    }
+                    
+                    if (Array.isArray(parsedData) && parsedData.length > 0) {
+                        data = parsedData;
+                        successEndpoint = endpoint.name;
+                        console.log(`✅ SUCCESS via ${endpoint.name}: ${data.length} words`);
+                        break;
+                    }
+                } catch (err) {
+                    const errorMsg = `${endpoint.name}: ${err.message}`;
+                    console.error(`❌ ${errorMsg}`);
+                    errors.push(errorMsg);
+                }
+            }
+            
+            if (data) {
+                const tx = db.transaction(STORE_NAME, 'readwrite');
+                const store = tx.objectStore(STORE_NAME);
+                data.forEach(word => store.put(word));
+                await tx.complete;
+
+                renderWords(data);
+                setupSearch(data);
+                statusText.textContent = `✓ Loaded ${data.length} words via ${successEndpoint}`;
+            } else {
+                console.error('❌ All endpoints failed:', errors);
+                data = sampleData;
+                
+                const tx = db.transaction(STORE_NAME, 'readwrite');
+                const store = tx.objectStore(STORE_NAME);
+                data.forEach(word => store.put(word));
+                await tx.complete;
+
+                renderWords(data);
+                setupSearch(data);
+                statusText.innerHTML = `⚠️ All fetches failed. Errors:<br><small>${errors.join('<br>')}</small>`;
+            }
+        } catch (error) {
+            console.error('Fatal error:', error);
+            renderWords(sampleData);
+            setupSearch(sampleData);
+            statusText.textContent = `✓ Using offline data`;
+        }
+    }
+
+    // Initialize
+    window.addEventListener('load', () => {
+        setupDarkMode();
+        loadData();
+    });
+</script>
+
+</body>
+</html>
