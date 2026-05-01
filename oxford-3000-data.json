@@ -1,5 +1,743 @@
 [
   {
+    "id": 20001,
+    "word": "advance",
+    "phonetic": "/ədˈvɑːns/",
+    "pos": "Noun, Verb",
+    "frequency": 1834,
+    "categories": [
+      "General",
+      "Goal"
+    ],
+    "meanings": [
+      {
+        "vi": "Sự tiến bộ, phát triển hoặc cải thiện theo thời gian",
+        "examples": [
+          {
+            "en": "Medical advances have saved many lives.",
+            "vi": "Những tiến bộ y học đã cứu sống nhiều người.",
+            "category": "Health"
+          },
+          {
+            "en": "The company made great advances this year.",
+            "vi": "Công ty đã có những tiến bộ lớn trong năm nay.",
+            "category": "Work"
+          },
+          {
+            "en": "Scientific advances often change daily life.",
+            "vi": "Những tiến bộ khoa học thường thay đổi đời sống hằng ngày.",
+            "category": "Science"
+          }
+        ]
+      },
+      {
+        "vi": "Tiến lên phía trước hoặc tiến đến gần hơn",
+        "examples": [
+          {
+            "en": "The army advanced toward the city.",
+            "vi": "Quân đội tiến về phía thành phố.",
+            "category": "General"
+          },
+          {
+            "en": "She advanced a few steps and stopped.",
+            "vi": "Cô ấy tiến vài bước rồi dừng lại.",
+            "category": "General"
+          }
+        ]
+      },
+      {
+        "vi": "Làm cho một quá trình tiến xa hơn, đặc biệt trong học tập hoặc công việc",
+        "examples": [
+          {
+            "en": "This course will advance your career.",
+            "vi": "Khóa học này sẽ giúp bạn tiến xa hơn trong sự nghiệp.",
+            "category": "Work"
+          },
+          {
+            "en": "We need new ideas to advance the project.",
+            "vi": "Chúng ta cần ý tưởng mới để thúc đẩy dự án tiến lên.",
+            "category": "Work"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Project Progress",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "How is the project advancing?",
+            "vi": "Dự án đang tiến triển thế nào?",
+            "vocabs": [
+              "advance",
+              "project"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "It is advancing well because the team works together.",
+            "vi": "Nó đang tiến triển tốt vì cả đội làm việc cùng nhau.",
+            "vocabs": [
+              "advancing",
+              "team"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Good. These small advances will help us finish earlier.",
+            "vi": "Tốt. Những tiến bộ nhỏ này sẽ giúp chúng ta hoàn thành sớm hơn.",
+            "vocabs": [
+              "advances",
+              "finish"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, and the new design will advance our goals.",
+            "vi": "Đúng vậy, và thiết kế mới sẽ giúp thúc đẩy mục tiêu của chúng ta.",
+            "vocabs": [
+              "design",
+              "goals"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20002,
+    "word": "affect",
+    "phonetic": "/əˈfekt/",
+    "pos": "Verb",
+    "frequency": 1789,
+    "categories": [
+      "General",
+      "Goal"
+    ],
+    "meanings": [
+      {
+        "vi": "Ảnh hưởng đến ai đó hoặc điều gì đó",
+        "examples": [
+          {
+            "en": "Stress can affect your health.",
+            "vi": "Căng thẳng có thể ảnh hưởng đến sức khỏe của bạn.",
+            "category": "Health"
+          },
+          {
+            "en": "The new law will affect thousands of people.",
+            "vi": "Luật mới sẽ ảnh hưởng đến hàng nghìn người.",
+            "category": "General"
+          },
+          {
+            "en": "Weather affects travel plans.",
+            "vi": "Thời tiết ảnh hưởng đến kế hoạch đi lại.",
+            "category": "Travel"
+          }
+        ]
+      },
+      {
+        "vi": "Làm thay đổi kết quả, cảm xúc hoặc hành vi của ai đó",
+        "examples": [
+          {
+            "en": "Lack of sleep affects concentration.",
+            "vi": "Thiếu ngủ làm ảnh hưởng đến khả năng tập trung.",
+            "category": "Health"
+          },
+          {
+            "en": "Kind words can affect a person deeply.",
+            "vi": "Những lời tử tế có thể tác động rất sâu đến một người.",
+            "category": "Communication"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Healthy Habits",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Does stress affect your sleep?",
+            "vi": "Căng thẳng có ảnh hưởng đến giấc ngủ của bạn không?",
+            "vocabs": [
+              "stress",
+              "affect",
+              "sleep"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, it affects me a lot when I work too late.",
+            "vi": "Có, nó ảnh hưởng rất nhiều đến tôi khi tôi làm việc quá muộn.",
+            "vocabs": [
+              "affects",
+              "work"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Then better habits will affect your energy too.",
+            "vi": "Vậy thói quen tốt hơn cũng sẽ ảnh hưởng đến năng lượng của bạn.",
+            "vocabs": [
+              "habits",
+              "energy"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Exactly, small changes can affect my whole day.",
+            "vi": "Chính xác, những thay đổi nhỏ có thể ảnh hưởng đến cả ngày của tôi.",
+            "vocabs": [
+              "changes",
+              "whole"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20003,
+    "word": "approach",
+    "phonetic": "/əˈproʊtʃ/",
+    "pos": "Noun, Verb",
+    "frequency": 1789,
+    "categories": [
+      "General",
+      "Goal"
+    ],
+    "meanings": [
+      {
+        "vi": "Cách tiếp cận để giải quyết một vấn đề hoặc nhiệm vụ",
+        "examples": [
+          {
+            "en": "We need a better approach to this problem.",
+            "vi": "Chúng ta cần một cách tiếp cận tốt hơn cho vấn đề này.",
+            "category": "Work"
+          },
+          {
+            "en": "Her approach to learning is very organized.",
+            "vi": "Cách tiếp cận việc học của cô ấy rất có tổ chức.",
+            "category": "Education"
+          },
+          {
+            "en": "The team used a new approach to reduce costs.",
+            "vi": "Đội đã dùng một cách tiếp cận mới để giảm chi phí.",
+            "category": "Business"
+          }
+        ]
+      },
+      {
+        "vi": "Tiến lại gần ai đó hoặc cái gì đó",
+        "examples": [
+          {
+            "en": "He approached the desk and asked a question.",
+            "vi": "Anh ấy tiến lại gần bàn làm việc và hỏi một câu.",
+            "category": "General"
+          },
+          {
+            "en": "A stranger approached me at the station.",
+            "vi": "Một người lạ đã đến gần tôi ở nhà ga.",
+            "category": "General"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Solving a Problem",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "What approach should we use for this project?",
+            "vi": "Chúng ta nên dùng cách tiếp cận nào cho dự án này?",
+            "vocabs": [
+              "approach",
+              "project"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "I think a simple approach will work best.",
+            "vi": "Tôi nghĩ cách tiếp cận đơn giản sẽ hiệu quả nhất.",
+            "vocabs": [
+              "simple",
+              "work"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Let’s approach the issue step by step.",
+            "vi": "Hãy tiếp cận vấn đề từng bước một.",
+            "vocabs": [
+              "issue",
+              "step by step"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Good idea. That approach will help us stay clear.",
+            "vi": "Ý hay. Cách tiếp cận đó sẽ giúp chúng ta rõ ràng hơn.",
+            "vocabs": [
+              "clear"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20004,
+    "word": "assume",
+    "phonetic": "/əˈsuːm/",
+    "pos": "Verb",
+    "frequency": 1678,
+    "categories": [
+      "General",
+      "Communication"
+    ],
+    "meanings": [
+      {
+        "vi": "Cho rằng điều gì là đúng khi chưa có đủ bằng chứng",
+        "examples": [
+          {
+            "en": "I assumed he was busy.",
+            "vi": "Tôi cho rằng anh ấy đang bận.",
+            "category": "General"
+          },
+          {
+            "en": "Do not assume the answer before checking.",
+            "vi": "Đừng vội cho rằng câu trả lời đúng trước khi kiểm tra.",
+            "category": "Advice"
+          },
+          {
+            "en": "She assumed the meeting was tomorrow.",
+            "vi": "Cô ấy cho rằng cuộc họp là vào ngày mai.",
+            "category": "Work"
+          }
+        ]
+      },
+      {
+        "vi": "Nhận hoặc đảm nhiệm một vai trò, trách nhiệm hay quyền lực",
+        "examples": [
+          {
+            "en": "He assumed the role of team leader.",
+            "vi": "Anh ấy đảm nhiệm vai trò trưởng nhóm.",
+            "category": "Work"
+          },
+          {
+            "en": "The new manager assumed responsibility quickly.",
+            "vi": "Người quản lý mới nhanh chóng nhận trách nhiệm.",
+            "category": "Work"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Making Assumptions",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Did you assume the meeting was canceled?",
+            "vi": "Bạn đã cho rằng cuộc họp bị hủy à?",
+            "vocabs": [
+              "assume",
+              "meeting"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, but I should have checked first.",
+            "vi": "Đúng, nhưng lẽ ra tôi nên kiểm tra trước.",
+            "vocabs": [
+              "checked"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "It is risky to assume without facts.",
+            "vi": "Suy đoán mà không có dữ kiện thì rất rủi ro.",
+            "vocabs": [
+              "risky",
+              "facts"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Agreed. Next time I will ask instead of assuming.",
+            "vi": "Đồng ý. Lần sau tôi sẽ hỏi thay vì tự suy đoán.",
+            "vocabs": [
+              "instead",
+              "assuming"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20005,
+    "word": "available",
+    "phonetic": "/əˈveɪləbl/",
+    "pos": "Adjective",
+    "frequency": 1520,
+    "categories": [
+      "General"
+    ],
+    "meanings": [
+      {
+        "vi": "Có sẵn để dùng, mua hoặc lấy",
+        "examples": [
+          {
+            "en": "Tickets are available online.",
+            "vi": "Vé có sẵn trên mạng.",
+            "category": "Technology"
+          },
+          {
+            "en": "Fresh fruit is available in the market.",
+            "vi": "Trái cây tươi có sẵn ở chợ.",
+            "category": "Food"
+          },
+          {
+            "en": "The book is available in paperback and e-book versions.",
+            "vi": "Cuốn sách có sẵn ở bản bìa mềm và bản điện tử.",
+            "category": "General"
+          }
+        ]
+      },
+      {
+        "vi": "Rảnh hoặc có thể tham gia vào một thời điểm nào đó",
+        "examples": [
+          {
+            "en": "I am available this afternoon.",
+            "vi": "Tôi rảnh vào chiều nay.",
+            "category": "General"
+          },
+          {
+            "en": "Is she available for a short call?",
+            "vi": "Cô ấy có rảnh để gọi ngắn không?",
+            "category": "Communication"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Checking Time",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Are you available for a meeting tomorrow?",
+            "vi": "Ngày mai bạn có rảnh cho một cuộc họp không?",
+            "vocabs": [
+              "available",
+              "meeting"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, I’m available after 2 PM.",
+            "vi": "Có, tôi rảnh sau 2 giờ chiều.",
+            "vocabs": [
+              "PM"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Great. The room is also available then.",
+            "vi": "Tốt. Khi đó phòng cũng còn trống.",
+            "vocabs": [
+              "room"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Perfect, let’s book it while it is available.",
+            "vi": "Hoàn hảo, hãy đặt nó khi vẫn còn trống.",
+            "vocabs": [
+              "book"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20006,
+    "word": "avoid",
+    "phonetic": "/əˈvɔɪd/",
+    "pos": "Verb",
+    "frequency": 1500,
+    "categories": [
+      "Advice"
+    ],
+    "meanings": [
+      {
+        "vi": "Tránh làm điều gì đó hoặc tránh gặp điều gì đó xấu",
+        "examples": [
+          {
+            "en": "Try to avoid making the same mistake.",
+            "vi": "Hãy cố gắng tránh mắc cùng một lỗi.",
+            "category": "Advice"
+          },
+          {
+            "en": "We should avoid heavy traffic.",
+            "vi": "Chúng ta nên tránh kẹt xe.",
+            "category": "Travel"
+          },
+          {
+            "en": "She avoids sugar for health reasons.",
+            "vi": "Cô ấy tránh đường vì lý do sức khỏe.",
+            "category": "Health"
+          }
+        ]
+      },
+      {
+        "vi": "Không đến gần hoặc không chạm vào điều gì đó",
+        "examples": [
+          {
+            "en": "The cat avoided the water.",
+            "vi": "Con mèo tránh nước.",
+            "category": "General"
+          },
+          {
+            "en": "He avoided eye contact during the conversation.",
+            "vi": "Anh ấy tránh giao tiếp bằng mắt trong cuộc trò chuyện.",
+            "category": "Communication"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Healthy Choices",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "How do you avoid getting tired so quickly?",
+            "vi": "Làm sao bạn tránh bị mệt nhanh như vậy?",
+            "vocabs": [
+              "avoid",
+              "tired"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "I avoid staying up late and drink enough water.",
+            "vi": "Tôi tránh thức khuya và uống đủ nước.",
+            "vocabs": [
+              "staying up late",
+              "drink"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "That is a smart way to avoid problems.",
+            "vi": "Đó là cách thông minh để tránh vấn đề.",
+            "vocabs": [
+              "smart",
+              "problems"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, and it helps me avoid stress too.",
+            "vi": "Đúng, và nó cũng giúp tôi tránh căng thẳng.",
+            "vocabs": [
+              "stress"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20007,
+    "word": "benefit",
+    "phonetic": "/ˈbenɪfɪt/",
+    "pos": "Noun, Verb",
+    "frequency": 1480,
+    "categories": [
+      "Health",
+      "Work"
+    ],
+    "meanings": [
+      {
+        "vi": "Lợi ích hoặc điều tốt mà ai đó nhận được",
+        "examples": [
+          {
+            "en": "Exercise has many health benefits.",
+            "vi": "Tập thể dục có nhiều lợi ích cho sức khỏe.",
+            "category": "Health"
+          },
+          {
+            "en": "One benefit of online learning is flexibility.",
+            "vi": "Một lợi ích của việc học trực tuyến là sự linh hoạt.",
+            "category": "Education"
+          },
+          {
+            "en": "The new policy brings benefits to workers.",
+            "vi": "Chính sách mới mang lại lợi ích cho người lao động.",
+            "category": "Work"
+          }
+        ]
+      },
+      {
+        "vi": "Được hưởng lợi từ điều gì đó",
+        "examples": [
+          {
+            "en": "Students benefit from regular practice.",
+            "vi": "Học sinh được hưởng lợi từ việc luyện tập đều đặn.",
+            "category": "Education"
+          },
+          {
+            "en": "The team benefited from the new strategy.",
+            "vi": "Đội đã hưởng lợi từ chiến lược mới.",
+            "category": "Work"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Why It Matters",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "What benefit does exercise give us?",
+            "vi": "Tập thể dục mang lại lợi ích gì cho chúng ta?",
+            "vocabs": [
+              "benefit",
+              "exercise"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "It helps the body and the mind.",
+            "vi": "Nó giúp ích cho cơ thể và tinh thần.",
+            "vocabs": [
+              "body",
+              "mind"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "So we benefit from doing it every day?",
+            "vi": "Vậy chúng ta hưởng lợi khi làm nó mỗi ngày à?",
+            "vocabs": [
+              "benefit",
+              "every day"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Exactly. Small habits can bring big benefits.",
+            "vi": "Chính xác. Những thói quen nhỏ có thể mang lại lợi ích lớn.",
+            "vocabs": [
+              "habits",
+              "bring"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20008,
+    "word": "beyond",
+    "phonetic": "/bɪˈjɑːnd/",
+    "pos": "Preposition, Adverb",
+    "frequency": 1450,
+    "categories": [
+      "General"
+    ],
+    "meanings": [
+      {
+        "vi": "Ở phía bên kia hoặc xa hơn một điểm, ranh giới hay địa điểm nào đó",
+        "examples": [
+          {
+            "en": "The village is beyond the mountains.",
+            "vi": "Ngôi làng ở phía bên kia dãy núi.",
+            "category": "Geography"
+          },
+          {
+            "en": "The shop is just beyond the bridge.",
+            "vi": "Cửa hàng ở ngay phía bên kia cây cầu.",
+            "category": "Travel"
+          },
+          {
+            "en": "Look beyond the window.",
+            "vi": "Nhìn ra phía ngoài cửa sổ.",
+            "category": "General"
+          }
+        ]
+      },
+      {
+        "vi": "Vượt quá mức, hơn khả năng hoặc ngoài phạm vi",
+        "examples": [
+          {
+            "en": "This task is beyond my ability.",
+            "vi": "Nhiệm vụ này vượt quá khả năng của tôi.",
+            "category": "General"
+          },
+          {
+            "en": "The result was beyond expectations.",
+            "vi": "Kết quả vượt ngoài mong đợi.",
+            "category": "Work"
+          },
+          {
+            "en": "That price is beyond what I can pay.",
+            "vi": "Mức giá đó vượt quá khả năng chi trả của tôi.",
+            "category": "Finance"
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Travel and Limits",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Is the town beyond the river?",
+            "vi": "Thị trấn có ở phía bên kia con sông không?",
+            "vocabs": [
+              "beyond",
+              "river"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, it is just beyond the bridge.",
+            "vi": "Có, nó ở ngay phía bên kia cây cầu.",
+            "vocabs": [
+              "bridge"
+            ]
+          },
+          {
+            "speaker": "A",
+            "en": "Great. The view beyond the hill must be beautiful.",
+            "vi": "Tuyệt. Cảnh bên kia ngọn đồi hẳn rất đẹp.",
+            "vocabs": [
+              "view",
+              "hill"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "Maybe, but the walk is beyond my energy today.",
+            "vi": "Có lẽ vậy, nhưng hôm nay việc đi bộ thì vượt quá sức tôi.",
+            "vocabs": [
+              "energy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 1,
     "word": "about",
     "phonetic": "/əˈbaʊt/",
@@ -2829,121 +3567,6 @@
     ]
   },
   {
-    "id": 38,
-    "word": "advance",
-    "phonetic": "/ədˈvɑːns/",
-    "pos": "Noun, Verb",
-    "frequency": 1834,
-    "categories": [
-      "General",
-      "Goal"
-    ],
-    "meanings": [
-      {
-        "vi": "1. Tiến lên phía trước hoặc đạt được tiến bộ",
-        "examples": [
-          {
-            "en": "The army will advance toward the capital city.",
-            "vi": "Quân đội sẽ tiến lên thủ đô.",
-            "category": "Military"
-          },
-          {
-            "en": "Technology continues to advance each year.",
-            "vi": "Công nghệ tiếp tục tiến bộ mỗi năm.",
-            "category": "Technology"
-          }
-        ]
-      },
-      {
-        "vi": "2. Đưa lên hoặc thúc đẩy sự phát triển của ai/cái gì",
-        "examples": [
-          {
-            "en": "Good education can advance your career prospects.",
-            "vi": "Giáo dục tốt có thể thúc đẩy triển vọng sự nghiệp của bạn.",
-            "category": "Career"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Career Advancement",
-        "lines": [
-          {
-            "speaker": "Manager",
-            "en": "How can you advance in your role?",
-            "vi": "Bạn có thể tiến bộ trong vai trò của mình như thế nào?"
-          },
-          {
-            "speaker": "Employee",
-            "en": "I want to advance to a senior position.",
-            "vi": "Tôi muốn tiến lên vị trí cao cấp.",
-            "vocabs": [
-              "senior",
-              "position"
-            ]
-          },
-          {
-            "speaker": "Manager",
-            "en": "Good! What will help you advance?",
-            "vi": "Tốt! Điều gì sẽ giúp bạn tiến bộ?",
-            "vocabs": [
-              "help"
-            ]
-          },
-          {
-            "speaker": "Employee",
-            "en": "Skills development and leadership training will advance my goals.",
-            "vi": "Phát triển kỹ năng và đào tạo lãnh đạo sẽ thúc đẩy mục tiêu của tôi.",
-            "vocabs": [
-              "skills",
-              "development",
-              "leadership",
-              "training",
-              "goals"
-            ]
-          },
-          {
-            "speaker": "Manager",
-            "en": "We can advance your career through mentoring.",
-            "vi": "Chúng ta có thể thúc đẩy sự nghiệp của bạn thông qua hướng dẫn.",
-            "vocabs": [
-              "mentoring"
-            ]
-          },
-          {
-            "speaker": "Employee",
-            "en": "That will definitely advance my professional growth.",
-            "vi": "Điều đó chắc chắn sẽ thúc đẩy sự phát triển chuyên nghiệp của tôi.",
-            "vocabs": [
-              "definitely",
-              "professional",
-              "growth"
-            ]
-          },
-          {
-            "speaker": "Manager",
-            "en": "I believe you can advance quickly with effort.",
-            "vi": "Tôi tin rằng bạn có thể tiến nhanh chóng với nỗ lực.",
-            "vocabs": [
-              "believe",
-              "quickly",
-              "effort"
-            ]
-          },
-          {
-            "speaker": "Employee",
-            "en": "Thank you! I'm committed to advance my career!",
-            "vi": "Cảm ơn! Tôi cam kết thúc đẩy sự nghiệp của tôi!",
-            "vocabs": [
-              "committed"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": 39,
     "word": "according",
     "phonetic": "/əˈkɔːrdɪŋ/",
@@ -3028,103 +3651,6 @@
             "vi": "Theo mọi người, tiến bộ tuyệt vời!",
             "vocabs": [
               "progress"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 40,
-    "word": "affect",
-    "phonetic": "/əˈfekt/",
-    "pos": "Verb",
-    "frequency": 1789,
-    "categories": [
-      "General",
-      "Goal"
-    ],
-    "meanings": [
-      {
-        "vi": "1. Có ảnh hưởng đến (influence)",
-        "examples": [
-          {
-            "en": "Weather affects our mood significantly.",
-            "vi": "Thời tiết ảnh hưởng đến tâm trạng của chúng ta.",
-            "category": "Usage1"
-          },
-          {
-            "en": "How will this affect your plans?",
-            "vi": "Điều này sẽ ảnh hưởng đến kế hoạch của bạn như thế nào?",
-            "category": "Usage2"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Impact Discussion",
-        "lines": [
-          {
-            "speaker": "A",
-            "en": "This change will affect everyone.",
-            "vi": "Sự thay đổi này sẽ ảnh hưởng đến mọi người."
-          },
-          {
-            "speaker": "B",
-            "en": "How will it affect our work?",
-            "vi": "Nó sẽ ảnh hưởng đến công việc của chúng ta như thế nào?",
-            "vocabs": [
-              "work"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "It may affect productivity levels.",
-            "vi": "Nó có thể ảnh hưởng đến mức độ năng suất.",
-            "vocabs": [
-              "productivity"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "Will it negatively affect the schedule?",
-            "vi": "Nó sẽ ảnh hưởng tiêu cực đến lịch biểu?",
-            "vocabs": [
-              "negatively",
-              "schedule"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "Yes, it will affect our timeline.",
-            "vi": "Vâng, nó sẽ ảnh hưởng đến mốc thời gian của chúng ta.",
-            "vocabs": [
-              "timeline"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "How severely will it affect us?",
-            "vi": "Nó sẽ ảnh hưởng đến chúng ta nghiêm trọng như thế nào?",
-            "vocabs": [
-              "severely"
-            ]
-          },
-          {
-            "speaker": "A",
-            "en": "It will affect about 30% of operations.",
-            "vi": "Nó sẽ ảnh hưởng đến khoảng 30% hoạt động.",
-            "vocabs": [
-              "operations"
-            ]
-          },
-          {
-            "speaker": "B",
-            "en": "We must prepare for changes that affect us!",
-            "vi": "Chúng ta phải chuẩn bị cho những thay đổi ảnh hưởng đến chúng ta!",
-            "vocabs": [
-              "prepare"
             ]
           }
         ]
@@ -3323,126 +3849,6 @@
             "vocabs": [
               "committed",
               "rewarding"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 43,
-    "word": "approach",
-    "phonetic": "/əˈproʊtʃ/",
-    "pos": "Noun, Verb",
-    "frequency": 1789,
-    "categories": [
-      "General",
-      "Goal"
-    ],
-    "meanings": [
-      {
-        "vi": "1. Tiến lại gần hoặc lại gần ai/cái gì",
-        "examples": [
-          {
-            "en": "As we approach the city, the buildings get taller.",
-            "vi": "Khi chúng ta lại gần thành phố, các tòa nhà trở nên cao hơn.",
-            "category": "Travel"
-          },
-          {
-            "en": "Winter is approaching quickly this year.",
-            "vi": "Mùa đông đang lại gần nhanh chóng năm nay.",
-            "category": "Season"
-          }
-        ]
-      },
-      {
-        "vi": "2. Cách thức hoặc phương pháp để xử lý vấn đề",
-        "examples": [
-          {
-            "en": "Her approach to teaching is innovative and engaging.",
-            "vi": "Cách tiếp cận giảng dạy của cô ấy sáng tạo và hấp dẫn.",
-            "category": "Education"
-          }
-        ]
-      },
-      {
-        "vi": "3. Bắt đầu nói chuyện hoặc liên hệ với ai",
-        "examples": [
-          {
-            "en": "I want to approach the manager about a raise.",
-            "vi": "Tôi muốn nói chuyện với người quản lý về tăng lương.",
-            "category": "Work"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Problem Solving",
-        "lines": [
-          {
-            "speaker": "Team Lead",
-            "en": "What approach should we take?",
-            "vi": "Chúng ta nên áp dụng phương pháp nào?"
-          },
-          {
-            "speaker": "Member",
-            "en": "Let's approach this systematically and carefully.",
-            "vi": "Hãy tiếp cận vấn đề này một cách hệ thống và cẩn thận.",
-            "vocabs": [
-              "systematically",
-              "carefully"
-            ]
-          },
-          {
-            "speaker": "Lead",
-            "en": "Good approach! How will you approach the analysis?",
-            "vi": "Cách tiếp cận hay! Bạn sẽ tiếp cận phân tích như thế nào?",
-            "vocabs": [
-              "analysis"
-            ]
-          },
-          {
-            "speaker": "Member",
-            "en": "My approach involves gathering data first.",
-            "vi": "Cách tiếp cận của tôi liên quan đến việc thu thập dữ liệu trước tiên.",
-            "vocabs": [
-              "involves",
-              "gathering",
-              "data"
-            ]
-          },
-          {
-            "speaker": "Lead",
-            "en": "Smart approach! As deadlines approach, be ready.",
-            "vi": "Cách tiếp cận thông minh! Khi thời hạn lại gần, hãy sẵn sàng.",
-            "vocabs": [
-              "deadlines",
-              "ready"
-            ]
-          },
-          {
-            "speaker": "Member",
-            "en": "I will approach each task with dedication.",
-            "vi": "Tôi sẽ tiếp cận mỗi nhiệm vụ với sự tận tâm.",
-            "vocabs": [
-              "dedication"
-            ]
-          },
-          {
-            "speaker": "Lead",
-            "en": "Your approach shows professionalism and care.",
-            "vi": "Cách tiếp cận của bạn cho thấy tính chuyên nghiệp và sự chăm sóc.",
-            "vocabs": [
-              "professionalism"
-            ]
-          },
-          {
-            "speaker": "Member",
-            "en": "Thank you! I approach work with full commitment!",
-            "vi": "Cảm ơn! Tôi tiếp cận công việc với toàn bộ cam kết!",
-            "vocabs": [
-              "commitment"
             ]
           }
         ]
@@ -4405,114 +4811,6 @@
             "vocabs": [
               "excited",
               "print"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 53,
-    "word": "assume",
-    "phonetic": "/əˈsuːm/",
-    "pos": "Verb",
-    "frequency": 1678,
-    "categories": [
-      "General",
-      "Communication"
-    ],
-    "meanings": [
-      {
-        "vi": "1. Giả sử hoặc cho rằng (tin cái gì đó mà không có bằng chứng)",
-        "examples": [
-          {
-            "en": "Don't assume the worst will happen without evidence.",
-            "vi": "Đừng giả sử điều tồi tệ nhất sẽ xảy ra mà không có bằng chứng.",
-            "category": "Thinking"
-          },
-          {
-            "en": "I shouldn't assume you understood without asking.",
-            "vi": "Tôi không nên cho rằng bạn đã hiểu mà không hỏi.",
-            "category": "Communication"
-          }
-        ]
-      },
-      {
-        "vi": "2. Tiếp quản hoặc nhận lấy (trách nhiệm hoặc quyền lực)",
-        "examples": [
-          {
-            "en": "The new CEO will assume leadership of the company next month.",
-            "vi": "Giám đốc điều hành mới sẽ tiếp quản lãnh đạo công ty tháng tới.",
-            "category": "Business"
-          }
-        ]
-      }
-    ],
-    "conversations": [
-      {
-        "title": "Clear Communication",
-        "lines": [
-          {
-            "speaker": "Manager",
-            "en": "Don't assume everyone understands the new policy.",
-            "vi": "Đừng cho rằng mọi người đều hiểu chính sách mới."
-          },
-          {
-            "speaker": "Employee",
-            "en": "Should we assume they'll read the memo?",
-            "vi": "Chúng ta nên giả sử họ sẽ đọc memo?",
-            "vocabs": [
-              "read",
-              "memo"
-            ]
-          },
-          {
-            "speaker": "Manager",
-            "en": "No! Never assume without confirmation from all.",
-            "vi": "Không! Đừng bao giờ giả sử mà không có sự xác nhận từ tất cả.",
-            "vocabs": [
-              "confirmation"
-            ]
-          },
-          {
-            "speaker": "Employee",
-            "en": "Right! We should assume questions will arise.",
-            "vi": "Đúng! Chúng ta nên giả sử sẽ có câu hỏi phát sinh.",
-            "vocabs": [
-              "questions",
-              "arise"
-            ]
-          },
-          {
-            "speaker": "Manager",
-            "en": "Exactly! Let me assume the role of clarifying everything.",
-            "vi": "Chính xác! Hãy để tôi giả sử vai trò làm rõ mọi thứ.",
-            "vocabs": [
-              "clarifying"
-            ]
-          },
-          {
-            "speaker": "Employee",
-            "en": "Good idea. When will you assume that responsibility?",
-            "vi": "Ý tưởng hay. Bạn sẽ tiếp quản trách nhiệm đó khi nào?",
-            "vocabs": [
-              "responsibility"
-            ]
-          },
-          {
-            "speaker": "Manager",
-            "en": "Tomorrow! I'll assume leadership of the communication.",
-            "vi": "Ngày mai! Tôi sẽ tiếp quản lãnh đạo giao tiếp.",
-            "vocabs": [
-              "leadership"
-            ]
-          },
-          {
-            "speaker": "Employee",
-            "en": "Perfect! Never assume things—always communicate clearly!",
-            "vi": "Hoàn hảo! Không bao giờ giả sử—luôn giao tiếp rõ ràng!",
-            "vocabs": [
-              "communicate"
             ]
           }
         ]
@@ -9109,99 +9407,55 @@
     ],
     "meanings": [
       {
-        "vi": "1. Đạt được hoặc hoàn thành (reach or accomplish)",
+        "vi": "Đạt được mục tiêu nhờ nỗ lực",
         "examples": [
           {
-            "en": "She worked hard to achieve her goals.",
-            "vi": "Cô ấy làm việc chăm chỉ để đạt được mục tiêu của mình.",
-            "category": "Success"
+            "en": "She achieved her dream after years of effort.",
+            "vi": "Cô ấy đã đạt được ước mơ sau nhiều năm nỗ lực."
           },
           {
-            "en": "This team has achieved remarkable results this year.",
-            "vi": "Đội này đã đạt được những kết quả đáng chú ý năm nay.",
-            "category": "Achievement"
+            "en": "Hard work helps you achieve success.",
+            "vi": "Làm việc chăm chỉ giúp bạn đạt được thành công."
           }
         ]
       },
       {
-        "vi": "2. Thành công hoặc đưa ra kết quả tốt",
+        "vi": "Hoàn thành điều gì đó thành công",
         "examples": [
           {
-            "en": "Through persistence, you can achieve anything.",
-            "vi": "Thông qua sự kiên trì, bạn có thể đạt được bất cứ điều gì.",
-            "category": "Motivation"
+            "en": "The team achieved all project goals.",
+            "vi": "Đội đã hoàn thành tất cả mục tiêu dự án."
           }
         ]
       }
     ],
     "conversations": [
       {
-        "title": "Success Stories",
+        "title": "Goals",
         "lines": [
           {
-            "speaker": "Mentor",
-            "en": "What goals do you want to achieve?",
-            "vi": "Bạn muốn đạt được những mục tiêu gì?"
-          },
-          {
-            "speaker": "Student",
-            "en": "I want to achieve excellence in academics.",
-            "vi": "Tôi muốn đạt được sự xuất sắc trong học tập.",
+            "speaker": "A",
+            "en": "What do you want to achieve this year?",
+            "vi": "Bạn muốn đạt được gì năm nay?",
             "vocabs": [
-              "excellence",
-              "academics"
+              "achieve"
             ]
           },
           {
-            "speaker": "Mentor",
-            "en": "That's admirable! Here's how you can achieve it.",
-            "vi": "Điều đó đáng ngưỡng mộ! Đây là cách bạn có thể đạt được nó.",
+            "speaker": "B",
+            "en": "I want to achieve better results at work.",
+            "vi": "Tôi muốn đạt kết quả tốt hơn trong công việc.",
             "vocabs": [
-              "admirable"
+              "results",
+              "work"
             ]
           },
           {
-            "speaker": "Student",
-            "en": "What milestones should I achieve first?",
-            "vi": "Tôi nên đạt được những cột mốc nào trước tiên?",
+            "speaker": "A",
+            "en": "Consistency will help you achieve it.",
+            "vi": "Sự kiên trì sẽ giúp bạn đạt được điều đó.",
             "vocabs": [
-              "milestones"
-            ]
-          },
-          {
-            "speaker": "Mentor",
-            "en": "Achieve mastery in core subjects before advanced topics.",
-            "vi": "Đạt được sự thành thạo trong các môn học cơ bản trước các chủ đề nâng cao.",
-            "vocabs": [
-              "mastery",
-              "core",
-              "subjects"
-            ]
-          },
-          {
-            "speaker": "Student",
-            "en": "How long will it take to achieve my goals?",
-            "vi": "Sẽ mất bao lâu để đạt được mục tiêu của tôi?",
-            "vocabs": [
-              "take"
-            ]
-          },
-          {
-            "speaker": "Mentor",
-            "en": "You'll achieve significant progress within six months.",
-            "vi": "Bạn sẽ đạt được tiến bộ đáng kể trong sáu tháng.",
-            "vocabs": [
-              "significant",
-              "progress"
-            ]
-          },
-          {
-            "speaker": "Student",
-            "en": "I'm committed to achieve my best potential!",
-            "vi": "Tôi cam kết đạt được tiềm năng tốt nhất của mình!",
-            "vocabs": [
-              "committed",
-              "potential"
+              "consistency"
             ]
           }
         ]
@@ -9383,5 +9637,63 @@
       "General"
     ],
     "frequency": 342
+  },
+  {
+    "id": 10002,
+    "word": "adapt",
+    "phonetic": "/əˈdæpt/",
+    "pos": "Verb",
+    "frequency": 1700,
+    "categories": [
+      "General",
+      "Skill"
+    ],
+    "meanings": [
+      {
+        "vi": "Thích nghi với hoàn cảnh mới",
+        "examples": [
+          {
+            "en": "Animals adapt to their environment.",
+            "vi": "Động vật thích nghi với môi trường."
+          },
+          {
+            "en": "He adapted quickly to city life.",
+            "vi": "Anh ấy nhanh chóng thích nghi với cuộc sống thành phố."
+          }
+        ]
+      },
+      {
+        "vi": "Điều chỉnh cho phù hợp",
+        "examples": [
+          {
+            "en": "We adapted the plan to fit the budget.",
+            "vi": "Chúng tôi điều chỉnh kế hoạch để phù hợp ngân sách."
+          }
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "title": "Change",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Is it hard to adapt to a new job?",
+            "vi": "Thích nghi với công việc mới có khó không?",
+            "vocabs": [
+              "adapt"
+            ]
+          },
+          {
+            "speaker": "B",
+            "en": "At first yes, but I learned to adapt quickly.",
+            "vi": "Ban đầu có, nhưng tôi đã học cách thích nghi nhanh.",
+            "vocabs": [
+              "quickly"
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
