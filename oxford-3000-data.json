@@ -87,7 +87,12 @@
           }
         ]
       }
-    ]
+    ],
+    "categories": [
+      "Communication",
+      "General"
+    ],
+    "frequency": 4892
   },
   {
     "id": 6,
@@ -9273,7 +9278,12 @@
           }
         ]
       }
-    ]
+    ],
+    "categories": [
+      "Communication",
+      "General"
+    ],
+    "frequency": 487
   },
   {
     "id": 3,
@@ -9367,6 +9377,11 @@
           }
         ]
       }
-    ]
+    ],
+    "categories": [
+      "Education",
+      "General"
+    ],
+    "frequency": 342
   }
 ]
