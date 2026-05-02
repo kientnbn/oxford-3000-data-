@@ -1,17 +1,4 @@
-{
-  "batch_info": {
-    "batch_number": 2,
-    "batch_size": 10,
-    "cumulative_entries": "1-20",
-    "batches_included": [
-      1,
-      2
-    ],
-    "date": "2026-05-02",
-    "status": "COMPLETED",
-    "test_results": "20/20 PASS"
-  },
-  "data": [
+[
     {
       "id": 20158,
       "word": "above",
@@ -1790,4 +1777,3 @@
       ]
     }
   ]
-}
