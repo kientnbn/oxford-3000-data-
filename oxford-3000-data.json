@@ -1,8 +1,8 @@
 {
   "batch_info": {
-    "batch_number": 11,
+    "batch_number": 13,
     "batch_size": 10,
-    "cumulative_entries": "1-110",
+    "cumulative_entries": "1-130",
     "batches_included": [
       1,
       2,
@@ -14,12 +14,14 @@
       8,
       9,
       10,
-      11
+      11,
+      12,
+      13
     ],
     "date": "2026-05-03",
     "status": "COMPLETED",
     "scope": "C0 only (conversations rewrite)",
-    "test_results": "110/110 PASS"
+    "test_results": "130/130 PASS"
   },
   "data": [
     {
@@ -9985,6 +9987,1838 @@
                 "thoughtful questions",
                 "summarizing speakers",
                 "social settings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "word": "watch",
+      "phonetic": "/wɒtʃ/",
+      "pos": "Verb, Noun",
+      "frequency": 440,
+      "categories": [
+        "General",
+        "Entertainment"
+      ],
+      "meanings": [
+        {
+          "vi": "Xem, theo dõi điều gì đó bằng mắt",
+          "examples": [
+            {
+              "en": "We watch movies every Friday night.",
+              "vi": "Chúng tôi xem phim mỗi tối thứ Sáu.",
+              "category": "Entertainment"
+            },
+            {
+              "en": "She watched the children playing.",
+              "vi": "Cô ấy quan sát bọn trẻ đang chơi.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Đồng hồ đeo tay, thiết bị xem giờ",
+          "examples": [
+            {
+              "en": "My grandfather gave me his old watch.",
+              "vi": "Ông tôi đã tặng tôi chiếc đồng hồ cũ của ông.",
+              "category": "Family"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Streaming habits · watch",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How many hours do you typically watch streaming content during a regular weekday evening?",
+              "vi": "Bạn thường xem nội dung phát trực tuyến bao nhiêu giờ vào một buổi tối ngày thường?",
+              "vocabs": [
+                "watch",
+                "streaming content",
+                "weekday evening"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I watch maybe two hours nightly across multiple platforms casually. Documentaries and foreign series have replaced traditional television because algorithms recommend genuinely fascinating cultural content.",
+              "vi": "Tôi xem có lẽ hai giờ mỗi tối qua nhiều nền tảng một cách bình thường. Phim tài liệu và series nước ngoài đã thay thế truyền hình truyền thống vì các thuật toán đề xuất nội dung văn hóa thực sự hấp dẫn.",
+              "vocabs": [
+                "watch",
+                "platforms",
+                "documentaries",
+                "foreign series",
+                "algorithms",
+                "fascinating cultural"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Don't you find it overwhelming choosing what to watch among so many available options nowadays?",
+              "vi": "Bạn không thấy choáng ngợp khi chọn xem gì giữa rất nhiều lựa chọn có sẵn ngày nay sao?",
+              "vocabs": [
+                "watch",
+                "overwhelming",
+                "available options"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Decision fatigue affects everyone watching modern services definitely. Curated playlists from trusted reviewers and friend recommendations save valuable evening hours otherwise wasted browsing menus indecisively.",
+              "vi": "Sự mệt mỏi quyết định ảnh hưởng đến mọi người xem các dịch vụ hiện đại chắc chắn. Danh sách phát được tuyển chọn từ các nhà phê bình đáng tin cậy và gợi ý của bạn bè tiết kiệm những giờ buổi tối quý giá lẽ ra bị lãng phí khi duyệt menu thiếu quyết đoán.",
+              "vocabs": [
+                "watching",
+                "decision fatigue",
+                "curated playlists",
+                "trusted reviewers",
+                "friend recommendations",
+                "indecisively"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "word": "move",
+      "phonetic": "/muːv/",
+      "pos": "Verb, Noun",
+      "frequency": 435,
+      "categories": [
+        "General",
+        "Travel"
+      ],
+      "meanings": [
+        {
+          "vi": "Di chuyển, thay đổi vị trí từ nơi này sang nơi khác",
+          "examples": [
+            {
+              "en": "Please move your car from the entrance.",
+              "vi": "Vui lòng di chuyển xe của bạn khỏi lối vào.",
+              "category": "General"
+            },
+            {
+              "en": "We moved to a new house last year.",
+              "vi": "Chúng tôi đã chuyển đến một ngôi nhà mới năm ngoái.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Bước đi, hành động trong trò chơi hoặc kế hoạch",
+          "examples": [
+            {
+              "en": "Buying that property was a smart move.",
+              "vi": "Mua tài sản đó là một bước đi thông minh.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Career relocation · move",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you decide to move your entire family across the country for this new opportunity?",
+              "vi": "Tại sao bạn quyết định chuyển cả gia đình qua đất nước cho cơ hội mới này?",
+              "vocabs": [
+                "move",
+                "entire family",
+                "across the country",
+                "new opportunity"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "This strategic move offers significantly better educational resources for our children. Coastal cities provide world-class schools and cultural experiences unavailable in our previous remote town.",
+              "vi": "Bước đi chiến lược này mang lại các nguồn lực giáo dục tốt hơn đáng kể cho con chúng tôi. Các thành phố ven biển cung cấp các trường học đẳng cấp thế giới và trải nghiệm văn hóa không có ở thị trấn xa xôi trước đây của chúng tôi.",
+              "vocabs": [
+                "strategic move",
+                "educational resources",
+                "coastal cities",
+                "world-class schools",
+                "cultural experiences",
+                "remote town"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How are your children adjusting after such a major move during their formative school years?",
+              "vi": "Con bạn đang thích nghi như thế nào sau một bước chuyển lớn như vậy trong những năm học đang hình thành của chúng?",
+              "vocabs": [
+                "move",
+                "adjusting",
+                "formative school years"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Initially they resisted the move strongly missing established friendships terribly. Joining diverse extracurricular activities helped them rebuild social connections gradually within their new welcoming community.",
+              "vi": "Ban đầu chúng phản đối mạnh mẽ việc chuyển đi nhớ nhung những tình bạn đã hình thành. Tham gia các hoạt động ngoại khóa đa dạng giúp chúng xây dựng lại các kết nối xã hội dần dần trong cộng đồng chào đón mới.",
+              "vocabs": [
+                "move",
+                "established friendships",
+                "extracurricular activities",
+                "social connections",
+                "welcoming community"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "word": "work",
+      "phonetic": "/wɜːk/",
+      "pos": "Verb, Noun",
+      "frequency": 430,
+      "categories": [
+        "Work",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Làm việc, thực hiện công việc để kiếm sống",
+          "examples": [
+            {
+              "en": "He works as a software engineer.",
+              "vi": "Anh ấy làm việc như một kỹ sư phần mềm.",
+              "category": "Work"
+            },
+            {
+              "en": "She works hard to support her family.",
+              "vi": "Cô ấy làm việc chăm chỉ để hỗ trợ gia đình.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Hoạt động hiệu quả, đem lại kết quả mong muốn",
+          "examples": [
+            {
+              "en": "This medicine works really well.",
+              "vi": "Thuốc này thực sự có hiệu quả.",
+              "category": "Health"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Remote freelancing · work",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How has remote work transformed your professional lifestyle since leaving the corporate office last year?",
+              "vi": "Làm việc từ xa đã biến đổi lối sống chuyên nghiệp của bạn như thế nào kể từ khi rời văn phòng công ty năm ngoái?",
+              "vocabs": [
+                "remote work",
+                "professional lifestyle",
+                "corporate office"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Working from anywhere fundamentally restructured my entire daily routine. Eliminating commutes saves precious hours while flexible scheduling accommodates my creative peaks and personal commitments effectively.",
+              "vi": "Làm việc từ bất cứ đâu đã tái cấu trúc toàn bộ thói quen hàng ngày của tôi cơ bản. Loại bỏ việc đi lại tiết kiệm những giờ quý giá trong khi lịch trình linh hoạt phù hợp với đỉnh sáng tạo và cam kết cá nhân hiệu quả.",
+              "vocabs": [
+                "working",
+                "restructured",
+                "daily routine",
+                "commutes",
+                "flexible scheduling",
+                "creative peaks"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Don't you struggle to maintain focused work boundaries between professional duties and personal life?",
+              "vi": "Bạn không vật lộn để duy trì ranh giới công việc tập trung giữa nhiệm vụ chuyên môn và cuộc sống cá nhân sao?",
+              "vocabs": [
+                "work",
+                "boundaries",
+                "professional duties",
+                "personal life"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Establishing dedicated workspaces and rigid working hours prevents harmful overlap. Closing my laptop ceremonially each evening signals completion while protecting weekends from unnecessary professional intrusions consistently.",
+              "vi": "Thiết lập không gian làm việc dành riêng và giờ làm việc cứng nhắc ngăn ngừa sự chồng chéo có hại. Đóng laptop một cách trang trọng mỗi tối báo hiệu hoàn thành trong khi bảo vệ cuối tuần khỏi sự xâm nhập chuyên môn không cần thiết một cách nhất quán.",
+              "vocabs": [
+                "work",
+                "dedicated workspaces",
+                "working hours",
+                "harmful overlap",
+                "ceremonially",
+                "professional intrusions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "word": "study",
+      "phonetic": "/ˈstʌdi/",
+      "pos": "Verb, Noun",
+      "frequency": 425,
+      "categories": [
+        "Education",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Học, nghiên cứu để hiểu sâu một chủ đề",
+          "examples": [
+            {
+              "en": "She studies medicine at Harvard.",
+              "vi": "Cô ấy học y khoa tại Harvard.",
+              "category": "Education"
+            },
+            {
+              "en": "I studied for the exam all weekend.",
+              "vi": "Tôi đã học cho kỳ thi cả cuối tuần.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Nghiên cứu khoa học, công trình điều tra",
+          "examples": [
+            {
+              "en": "A new study shows that sleep affects memory.",
+              "vi": "Một nghiên cứu mới cho thấy giấc ngủ ảnh hưởng đến trí nhớ.",
+              "category": "Science"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Doctorate journey · study",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you decide to study marine biology specifically rather than medicine like your siblings did?",
+              "vi": "Tại sao bạn quyết định học sinh học biển cụ thể thay vì y khoa như anh chị em của bạn?",
+              "vocabs": [
+                "study",
+                "marine biology",
+                "medicine",
+                "siblings"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Studying ocean ecosystems satisfies my insatiable scientific curiosity completely. Documenting endangered species and discovering deep-sea organisms provides intellectual fulfillment surpassing traditional medical career trajectories meaningfully.",
+              "vi": "Học các hệ sinh thái đại dương thỏa mãn hoàn toàn sự tò mò khoa học không thể dập tắt của tôi. Ghi chép các loài có nguy cơ tuyệt chủng và khám phá các sinh vật biển sâu mang lại sự thỏa mãn trí tuệ vượt qua các quỹ đạo nghề nghiệp y tế truyền thống một cách ý nghĩa.",
+              "vocabs": [
+                "studying",
+                "ocean ecosystems",
+                "scientific curiosity",
+                "endangered species",
+                "deep-sea organisms",
+                "intellectual fulfillment"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How do you study marine creatures effectively given the obvious challenges of underwater research environments?",
+              "vi": "Bạn nghiên cứu các sinh vật biển hiệu quả như thế nào với những thử thách rõ ràng của môi trường nghiên cứu dưới nước?",
+              "vocabs": [
+                "study",
+                "marine creatures",
+                "underwater research"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Modern technology revolutionized how researchers study oceanic biodiversity tremendously. Underwater drones, advanced sonar mapping, and DNA sampling techniques unlock previously inaccessible knowledge about mysterious marine life.",
+              "vi": "Công nghệ hiện đại đã cách mạng hóa cách các nhà nghiên cứu học đa dạng sinh học đại dương đáng kể. Máy bay không người lái dưới nước, lập bản đồ sonar tiên tiến và kỹ thuật lấy mẫu DNA mở khóa kiến thức trước đây không thể tiếp cận về đời sống biển bí ẩn.",
+              "vocabs": [
+                "study",
+                "oceanic biodiversity",
+                "underwater drones",
+                "sonar mapping",
+                "DNA sampling",
+                "marine life"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "word": "teach",
+      "phonetic": "/tiːtʃ/",
+      "pos": "Verb",
+      "frequency": 420,
+      "categories": [
+        "Education",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Dạy, truyền đạt kiến thức cho người khác",
+          "examples": [
+            {
+              "en": "She teaches English at the university.",
+              "vi": "Cô ấy dạy tiếng Anh tại trường đại học.",
+              "category": "Education"
+            },
+            {
+              "en": "My father taught me to drive.",
+              "vi": "Cha tôi đã dạy tôi lái xe.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Cho ai bài học, truyền đạt kinh nghiệm sống",
+          "examples": [
+            {
+              "en": "Failure can teach us valuable lessons.",
+              "vi": "Thất bại có thể dạy chúng ta những bài học quý giá.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Educational philosophy · teach",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What inspired you to teach underprivileged children rather than pursue lucrative private tutoring opportunities?",
+              "vi": "Điều gì đã truyền cảm hứng để bạn dạy những đứa trẻ thiệt thòi thay vì theo đuổi các cơ hội gia sư tư nhân béo bở?",
+              "vocabs": [
+                "teach",
+                "underprivileged children",
+                "lucrative",
+                "private tutoring"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Teaching marginalized students transforms entire communities through generational impact. Witnessing students overcome systemic barriers and pursue ambitious dreams provides meaningful purpose surpassing financial rewards substantially.",
+              "vi": "Dạy những học sinh bị thiệt thòi biến đổi toàn bộ cộng đồng thông qua tác động thế hệ. Chứng kiến học sinh vượt qua các rào cản hệ thống và theo đuổi ước mơ đầy tham vọng mang lại mục đích ý nghĩa vượt qua phần thưởng tài chính đáng kể.",
+              "vocabs": [
+                "teaching",
+                "marginalized students",
+                "generational impact",
+                "systemic barriers",
+                "ambitious dreams",
+                "financial rewards"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How do you teach effectively when many students struggle with basic literacy and limited home resources?",
+              "vi": "Bạn dạy hiệu quả như thế nào khi nhiều học sinh vật lộn với khả năng đọc viết cơ bản và nguồn lực gia đình hạn chế?",
+              "vocabs": [
+                "teach",
+                "literacy",
+                "home resources"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Patience and creative instructional approaches teach struggling learners best fundamentally. Building genuine relationships, customizing lessons individually, and celebrating small breakthroughs creates supportive environments where curiosity flourishes despite obstacles.",
+              "vi": "Sự kiên nhẫn và các phương pháp hướng dẫn sáng tạo dạy những người học khó khăn tốt nhất một cách cơ bản. Xây dựng các mối quan hệ chân thực, tùy chỉnh bài học riêng và ăn mừng những bước đột phá nhỏ tạo ra môi trường hỗ trợ nơi sự tò mò phát triển mạnh bất chấp trở ngại.",
+              "vocabs": [
+                "teach",
+                "instructional approaches",
+                "struggling learners",
+                "customizing lessons",
+                "small breakthroughs",
+                "curiosity flourishes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "word": "drive",
+      "phonetic": "/draɪv/",
+      "pos": "Verb, Noun",
+      "frequency": 415,
+      "categories": [
+        "Travel",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Lái xe, điều khiển phương tiện giao thông",
+          "examples": [
+            {
+              "en": "She drives to work every morning.",
+              "vi": "Cô ấy lái xe đi làm mỗi sáng.",
+              "category": "Travel"
+            },
+            {
+              "en": "He drove all night to reach the airport.",
+              "vi": "Anh ấy đã lái xe cả đêm để đến sân bay.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Động lực, sức mạnh thúc đẩy hành động",
+          "examples": [
+            {
+              "en": "She has a strong drive to succeed.",
+              "vi": "Cô ấy có động lực mạnh mẽ để thành công.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Long-distance journey · drive",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How did you manage to drive eighteen hours straight during your cross-country road trip last summer?",
+              "vi": "Bạn đã xoay xở thế nào để lái xe mười tám giờ liên tục trong chuyến đi xuyên đất nước mùa hè năm ngoái?",
+              "vocabs": [
+                "drive",
+                "straight",
+                "cross-country",
+                "road trip"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Strategic caffeine consumption and energetic playlists kept me alertly driving through monotonous highways. Loud audiobooks engaged my brain while regular roadside stops prevented dangerous fatigue effectively.",
+              "vi": "Tiêu thụ caffeine chiến lược và danh sách phát đầy năng lượng giữ tôi tỉnh táo lái xe qua các đường cao tốc đơn điệu. Sách nói âm lượng lớn thu hút não bộ tôi trong khi các điểm dừng bên đường thường xuyên ngăn ngừa mệt mỏi nguy hiểm hiệu quả.",
+              "vocabs": [
+                "driving",
+                "caffeine consumption",
+                "energetic playlists",
+                "monotonous highways",
+                "audiobooks",
+                "dangerous fatigue"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Wouldn't flying be far easier than spending so many exhausting hours behind the steering wheel?",
+              "vi": "Bay sẽ không dễ dàng hơn nhiều so với dành quá nhiều giờ mệt mỏi sau vô lăng sao?",
+              "vocabs": [
+                "drive",
+                "flying",
+                "steering wheel"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Driving offers spontaneous adventure flying genuinely cannot match. Discovering hidden roadside diners, scenic overlooks, and quirky small towns transforms routine travel into unforgettable memorable experiences naturally.",
+              "vi": "Lái xe mang đến cuộc phiêu lưu tự phát mà việc bay thực sự không thể sánh kịp. Khám phá các quán ăn ven đường ẩn, các điểm ngắm cảnh đẹp và các thị trấn nhỏ kỳ quặc biến đổi du lịch thường nhật thành những trải nghiệm khó quên một cách tự nhiên.",
+              "vocabs": [
+                "driving",
+                "spontaneous adventure",
+                "roadside diners",
+                "scenic overlooks",
+                "quirky small towns",
+                "memorable experiences"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "word": "eat",
+      "phonetic": "/iːt/",
+      "pos": "Verb",
+      "frequency": 410,
+      "categories": [
+        "Food",
+        "Health"
+      ],
+      "meanings": [
+        {
+          "vi": "Ăn, đưa thức ăn vào miệng và nuốt",
+          "examples": [
+            {
+              "en": "We eat dinner together every evening.",
+              "vi": "Chúng tôi ăn tối cùng nhau mỗi tối.",
+              "category": "Family"
+            },
+            {
+              "en": "She ate the entire pizza by herself.",
+              "vi": "Cô ấy đã ăn hết cả chiếc pizza một mình.",
+              "category": "Food"
+            }
+          ]
+        },
+        {
+          "vi": "Bào mòn, làm hỏng dần dần qua thời gian",
+          "examples": [
+            {
+              "en": "Worry was eating away at his health.",
+              "vi": "Sự lo lắng đang dần làm tổn hại sức khỏe của anh ấy.",
+              "category": "Health"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Plant-based diet · eat",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you decide to eat strictly plant-based meals instead of your previous omnivorous lifestyle?",
+              "vi": "Tại sao bạn quyết định ăn các bữa thuần thực vật nghiêm ngặt thay vì lối sống ăn tạp trước đây?",
+              "vocabs": [
+                "eat",
+                "plant-based meals",
+                "omnivorous lifestyle"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Reading about industrial farming practices motivated me to eat consciously instead. Documentary evidence about environmental destruction and ethical concerns fundamentally transformed my dietary philosophy permanently.",
+              "vi": "Đọc về các hoạt động chăn nuôi công nghiệp đã thúc đẩy tôi ăn uống có ý thức thay vào đó. Bằng chứng phim tài liệu về sự tàn phá môi trường và mối quan tâm đạo đức đã biến đổi triết lý ăn uống của tôi vĩnh viễn một cách cơ bản.",
+              "vocabs": [
+                "eat",
+                "industrial farming",
+                "consciously",
+                "environmental destruction",
+                "ethical concerns",
+                "dietary philosophy"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Hasn't restricting what you eat made dining out with omnivore friends socially complicated?",
+              "vi": "Việc hạn chế những gì bạn ăn không làm cho việc đi ăn ngoài với bạn bè ăn tạp trở nên phức tạp về mặt xã hội sao?",
+              "vocabs": [
+                "eat",
+                "dining out",
+                "omnivore friends",
+                "socially complicated"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Most restaurants accommodate plant eaters surprisingly well nowadays. Creative chefs offer remarkable vegetable-focused menus while supportive friends genuinely respect my dietary choices without making uncomfortable comments regularly.",
+              "vi": "Hầu hết các nhà hàng phục vụ những người ăn thực vật tốt một cách bất ngờ ngày nay. Các đầu bếp sáng tạo cung cấp các thực đơn tập trung vào rau đáng chú ý trong khi những người bạn ủng hộ chân thành tôn trọng các lựa chọn ăn uống của tôi mà không có những bình luận khó chịu thường xuyên.",
+              "vocabs": [
+                "eaters",
+                "creative chefs",
+                "vegetable-focused menus",
+                "supportive friends",
+                "dietary choices",
+                "uncomfortable comments"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "word": "drink",
+      "phonetic": "/drɪŋk/",
+      "pos": "Verb, Noun",
+      "frequency": 405,
+      "categories": [
+        "Food",
+        "Health"
+      ],
+      "meanings": [
+        {
+          "vi": "Uống, đưa chất lỏng vào miệng và nuốt",
+          "examples": [
+            {
+              "en": "Please drink plenty of water.",
+              "vi": "Vui lòng uống nhiều nước.",
+              "category": "Health"
+            },
+            {
+              "en": "She drinks coffee every morning.",
+              "vi": "Cô ấy uống cà phê mỗi sáng.",
+              "category": "Food"
+            }
+          ]
+        },
+        {
+          "vi": "Đồ uống, chất lỏng để uống",
+          "examples": [
+            {
+              "en": "Would you like a cold drink?",
+              "vi": "Bạn có muốn một thức uống lạnh không?",
+              "category": "Food"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Hydration habits · drink",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why have you started carrying a reusable water bottle to drink consistently throughout busy workdays?",
+              "vi": "Tại sao bạn đã bắt đầu mang theo chai nước có thể tái sử dụng để uống đều đặn trong các ngày làm việc bận rộn?",
+              "vocabs": [
+                "drink",
+                "reusable water bottle",
+                "workdays"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Doctors recommended that I drink approximately three liters daily preventing kidney issues. Proper hydration dramatically improves cognitive performance and reduces afternoon energy crashes during demanding meetings.",
+              "vi": "Các bác sĩ đã khuyên tôi uống khoảng ba lít hàng ngày ngăn ngừa các vấn đề về thận. Hydration đúng cách cải thiện đáng kể hiệu suất nhận thức và giảm sự sụt giảm năng lượng buổi chiều trong các cuộc họp đòi hỏi.",
+              "vocabs": [
+                "drink",
+                "kidney issues",
+                "hydration",
+                "cognitive performance",
+                "energy crashes",
+                "demanding meetings"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What other beverages do you drink besides plain water during long working hours?",
+              "vi": "Bạn còn uống những loại đồ uống nào khác ngoài nước lọc trong những giờ làm việc dài?",
+              "vocabs": [
+                "drink",
+                "beverages",
+                "plain water",
+                "working hours"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Herbal teas and infused waters complement my regular drinking habits beautifully. Avoiding sugary drinks prevents unnecessary calorie consumption while maintaining steady energy levels throughout demanding professional schedules consistently.",
+              "vi": "Trà thảo dược và nước truyền hương bổ sung cho thói quen uống đều đặn của tôi một cách tuyệt đẹp. Tránh đồ uống có đường ngăn ngừa tiêu thụ calo không cần thiết trong khi duy trì mức năng lượng ổn định trong suốt lịch trình chuyên nghiệp đòi hỏi một cách nhất quán.",
+              "vocabs": [
+                "drinking habits",
+                "herbal teas",
+                "infused waters",
+                "sugary drinks",
+                "calorie consumption",
+                "energy levels"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "word": "sleep",
+      "phonetic": "/sliːp/",
+      "pos": "Verb, Noun",
+      "frequency": 400,
+      "categories": [
+        "Health",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Ngủ, trạng thái nghỉ ngơi của cơ thể",
+          "examples": [
+            {
+              "en": "I sleep eight hours every night.",
+              "vi": "Tôi ngủ tám tiếng mỗi đêm.",
+              "category": "Health"
+            },
+            {
+              "en": "The baby is sleeping peacefully.",
+              "vi": "Em bé đang ngủ yên bình.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Giấc ngủ, thời gian dành để nghỉ ngơi",
+          "examples": [
+            {
+              "en": "Quality sleep is essential for health.",
+              "vi": "Giấc ngủ chất lượng rất quan trọng cho sức khỏe.",
+              "category": "Health"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Insomnia struggle · sleep",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long have you struggled to sleep peacefully through entire nights without medication assistance?",
+              "vi": "Bạn đã vật lộn để ngủ yên bình suốt cả đêm mà không cần hỗ trợ thuốc trong bao lâu?",
+              "vocabs": [
+                "sleep peacefully",
+                "entire nights",
+                "medication assistance"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Chronic insomnia disrupted my sleep cycles dramatically for nearly three years. Anxiety about work performance combined with excessive screen exposure created seemingly unbreakable patterns affecting daily functioning seriously.",
+              "vi": "Mất ngủ mãn tính đã làm gián đoạn chu kỳ giấc ngủ của tôi đáng kể trong gần ba năm. Lo lắng về hiệu suất công việc kết hợp với việc tiếp xúc màn hình quá mức tạo ra những mô hình dường như không thể phá vỡ ảnh hưởng đến chức năng hàng ngày nghiêm trọng.",
+              "vocabs": [
+                "sleep cycles",
+                "chronic insomnia",
+                "anxiety",
+                "screen exposure",
+                "unbreakable patterns",
+                "daily functioning"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What strategies finally helped you sleep better and restore healthy nighttime rest patterns again?",
+              "vi": "Những chiến lược nào cuối cùng đã giúp bạn ngủ tốt hơn và khôi phục các mô hình nghỉ ngơi ban đêm lành mạnh trở lại?",
+              "vocabs": [
+                "sleep better",
+                "restore",
+                "nighttime rest patterns"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Cognitive behavioral therapy taught me to sleep without anxious overthinking eventually. Establishing consistent bedtimes, eliminating evening caffeine, and practicing relaxation techniques restored peaceful nights gradually over months.",
+              "vi": "Liệu pháp hành vi nhận thức đã dạy tôi ngủ mà không có suy nghĩ lo lắng quá mức cuối cùng. Thiết lập giờ ngủ nhất quán, loại bỏ caffeine buổi tối và thực hành kỹ thuật thư giãn đã khôi phục những đêm yên bình dần dần qua nhiều tháng.",
+              "vocabs": [
+                "sleep",
+                "cognitive behavioral therapy",
+                "anxious overthinking",
+                "consistent bedtimes",
+                "evening caffeine",
+                "relaxation techniques"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "word": "wake",
+      "phonetic": "/weɪk/",
+      "pos": "Verb",
+      "frequency": 395,
+      "categories": [
+        "General",
+        "Health"
+      ],
+      "meanings": [
+        {
+          "vi": "Thức dậy, ngừng ngủ và mở mắt",
+          "examples": [
+            {
+              "en": "I wake up at six every morning.",
+              "vi": "Tôi thức dậy lúc sáu giờ mỗi sáng.",
+              "category": "Health"
+            },
+            {
+              "en": "The noise woke me from a deep sleep.",
+              "vi": "Tiếng ồn đã đánh thức tôi khỏi giấc ngủ sâu.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Đánh thức, làm cho ai đó tỉnh dậy",
+          "examples": [
+            {
+              "en": "Please wake me at seven tomorrow.",
+              "vi": "Vui lòng đánh thức tôi vào lúc bảy giờ ngày mai.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Polyphasic sleeping · wake",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why do you wake up multiple times deliberately during the night to follow this unusual sleep schedule?",
+              "vi": "Tại sao bạn cố ý thức dậy nhiều lần trong đêm để tuân theo lịch ngủ bất thường này?",
+              "vocabs": [
+                "wake up",
+                "deliberately",
+                "unusual sleep schedule"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Polyphasic sleeping helps me wake refreshed despite shorter total rest hours. Distributed napping throughout twenty-four-hour cycles provides consistent productivity gains for ambitious creative professionals managing intense workloads.",
+              "vi": "Ngủ đa pha giúp tôi thức dậy sảng khoái dù tổng giờ nghỉ ngắn hơn. Ngủ trưa phân tán trong chu kỳ hai mươi bốn giờ mang lại lợi ích năng suất nhất quán cho các chuyên gia sáng tạo đầy tham vọng quản lý khối lượng công việc cường độ cao.",
+              "vocabs": [
+                "wake refreshed",
+                "polyphasic sleeping",
+                "distributed napping",
+                "productivity gains",
+                "ambitious creative",
+                "intense workloads"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Doesn't waking constantly throughout nighttime hours damage your overall energy and immune system?",
+              "vi": "Việc thức dậy liên tục trong các giờ đêm không làm tổn hại đến năng lượng tổng thể và hệ miễn dịch của bạn sao?",
+              "vocabs": [
+                "waking",
+                "energy",
+                "immune system"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Critics warn about waking risks but my health remains surprisingly stable. Quality nutrition, regular exercise, and stress management compensate for unconventional patterns according to experienced polyphasic practitioners worldwide.",
+              "vi": "Các nhà phê bình cảnh báo về rủi ro thức dậy nhưng sức khỏe của tôi vẫn ổn định một cách bất ngờ. Dinh dưỡng chất lượng, tập thể dục đều đặn và quản lý căng thẳng bù đắp cho các mô hình không truyền thống theo các nhà thực hành đa pha có kinh nghiệm trên toàn thế giới.",
+              "vocabs": [
+                "waking risks",
+                "quality nutrition",
+                "regular exercise",
+                "stress management",
+                "unconventional patterns",
+                "polyphasic practitioners"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "word": "start",
+      "phonetic": "/stɑːt/",
+      "pos": "Verb, Noun",
+      "frequency": 390,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Bắt đầu, khởi sự một hoạt động hoặc quá trình",
+          "examples": [
+            {
+              "en": "The meeting will start at nine.",
+              "vi": "Cuộc họp sẽ bắt đầu lúc chín giờ.",
+              "category": "Work"
+            },
+            {
+              "en": "She started learning Spanish last year.",
+              "vi": "Cô ấy bắt đầu học tiếng Tây Ban Nha năm ngoái.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Khởi đầu, điểm bắt đầu của một việc gì đó",
+          "examples": [
+            {
+              "en": "It was a great start to the year.",
+              "vi": "Đó là một khởi đầu tuyệt vời cho năm mới.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Startup founding · start",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What inspired you to start your own technology company instead of joining established corporations after graduation?",
+              "vi": "Điều gì đã truyền cảm hứng để bạn khởi nghiệp công ty công nghệ riêng thay vì gia nhập các tập đoàn đã thành lập sau khi tốt nghiệp?",
+              "vocabs": [
+                "start",
+                "technology company",
+                "established corporations",
+                "graduation"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Identifying genuine market gaps motivated me to start solving overlooked problems myself. Watching corporations ignore underserved customers convinced me that innovative startups create meaningful societal value.",
+              "vi": "Việc xác định các khoảng trống thị trường thực sự đã thúc đẩy tôi khởi nghiệp giải quyết những vấn đề bị bỏ qua. Quan sát các tập đoàn bỏ qua khách hàng không được phục vụ đã thuyết phục tôi rằng các công ty khởi nghiệp đổi mới tạo ra giá trị xã hội ý nghĩa.",
+              "vocabs": [
+                "start solving",
+                "market gaps",
+                "overlooked problems",
+                "underserved customers",
+                "innovative startups",
+                "societal value"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How difficult was it to start operating without the safety net of stable corporate income?",
+              "vi": "Việc bắt đầu vận hành mà không có lưới an toàn từ thu nhập doanh nghiệp ổn định khó khăn như thế nào?",
+              "vocabs": [
+                "start",
+                "safety net",
+                "corporate income"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Starting required substantial financial sacrifice and emotional resilience for nearly two years. Personal savings dwindled rapidly while sleepless nights demanded unwavering commitment despite uncertainty about eventual profitability.",
+              "vi": "Việc khởi nghiệp đòi hỏi sự hy sinh tài chính đáng kể và sức bền cảm xúc trong gần hai năm. Tiền tiết kiệm cá nhân cạn kiệt nhanh chóng trong khi những đêm mất ngủ đòi hỏi cam kết không lay chuyển bất chấp sự không chắc chắn về lợi nhuận cuối cùng.",
+              "vocabs": [
+                "starting",
+                "financial sacrifice",
+                "emotional resilience",
+                "personal savings",
+                "sleepless nights",
+                "profitability"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "word": "finish",
+      "phonetic": "/ˈfɪnɪʃ/",
+      "pos": "Verb, Noun",
+      "frequency": 385,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Hoàn thành, kết thúc một công việc",
+          "examples": [
+            {
+              "en": "Please finish your homework first.",
+              "vi": "Vui lòng hoàn thành bài tập về nhà trước.",
+              "category": "Education"
+            },
+            {
+              "en": "She finished the marathon in record time.",
+              "vi": "Cô ấy đã hoàn thành cuộc chạy marathon trong thời gian kỷ lục.",
+              "category": "Sports"
+            }
+          ]
+        },
+        {
+          "vi": "Đoạn kết, phần cuối của một việc",
+          "examples": [
+            {
+              "en": "The race had an exciting finish.",
+              "vi": "Cuộc đua có một đoạn kết hấp dẫn.",
+              "category": "Sports"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Marathon achievement · finish",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How emotional was it to finish your first international marathon after months of intense training?",
+              "vi": "Việc hoàn thành cuộc chạy marathon quốc tế đầu tiên sau nhiều tháng tập luyện cường độ cao đã cảm xúc đến mức nào?",
+              "vocabs": [
+                "finish",
+                "international marathon",
+                "intense training",
+                "months"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Crossing the finish line overwhelmed me with profound joy and tears immediately. Years of dedicated preparation, countless predawn workouts, and dietary discipline finally produced this incredible achievement.",
+              "vi": "Vượt qua vạch đích đã làm tôi choáng ngợp với niềm vui sâu sắc và nước mắt ngay lập tức. Nhiều năm chuẩn bị tận tâm, vô số buổi tập trước bình minh và kỷ luật ăn uống cuối cùng đã tạo ra thành tựu đáng kinh ngạc này.",
+              "vocabs": [
+                "finish line",
+                "profound joy",
+                "dedicated preparation",
+                "predawn workouts",
+                "dietary discipline",
+                "incredible achievement"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What kept you motivated to finish despite obvious physical exhaustion during those final challenging miles?",
+              "vi": "Điều gì đã giữ động lực để bạn hoàn thành bất chấp sự kiệt sức thể chất rõ ràng trong những dặm cuối thử thách đó?",
+              "vocabs": [
+                "finish",
+                "physical exhaustion",
+                "challenging miles"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Visualizing the finish helped tremendously while supporters cheered enthusiastically along the route. Mental imagery of crossing the threshold and embracing my anxious family members fueled determination throughout exhausting kilometers.",
+              "vi": "Hình dung vạch đích đã giúp ích rất nhiều trong khi những người ủng hộ cổ vũ nhiệt tình dọc theo đường đua. Hình ảnh tinh thần về việc vượt qua ngưỡng và ôm các thành viên gia đình lo lắng đã thúc đẩy sự quyết tâm trong những ki-lô-mét kiệt sức.",
+              "vocabs": [
+                "finish",
+                "visualizing",
+                "supporters",
+                "mental imagery",
+                "threshold",
+                "determination"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "word": "begin",
+      "phonetic": "/bɪˈɡɪn/",
+      "pos": "Verb",
+      "frequency": 380,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Bắt đầu, khởi sự một việc gì đó",
+          "examples": [
+            {
+              "en": "Let's begin the lesson.",
+              "vi": "Hãy bắt đầu bài học.",
+              "category": "Education"
+            },
+            {
+              "en": "The film begins at eight o'clock.",
+              "vi": "Bộ phim bắt đầu lúc tám giờ.",
+              "category": "Entertainment"
+            }
+          ]
+        },
+        {
+          "vi": "Khởi nguồn, có nguồn gốc từ đâu đó",
+          "examples": [
+            {
+              "en": "Our friendship began in college.",
+              "vi": "Tình bạn của chúng tôi bắt đầu ở đại học.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Career transition · begin",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How did you begin transitioning from accounting into the rapidly evolving software development field?",
+              "vi": "Bạn đã bắt đầu chuyển đổi từ kế toán sang lĩnh vực phát triển phần mềm đang phát triển nhanh chóng như thế nào?",
+              "vocabs": [
+                "begin transitioning",
+                "accounting",
+                "rapidly evolving",
+                "software development"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I began with online programming courses every weekend evening systematically. Coding bootcamps later accelerated my learning while volunteer projects helped me build portfolios demonstrating practical technical skills.",
+              "vi": "Tôi đã bắt đầu với các khóa học lập trình trực tuyến mỗi tối cuối tuần một cách có hệ thống. Các khóa đào tạo cấp tốc về lập trình sau đó đã đẩy nhanh việc học của tôi trong khi các dự án tình nguyện giúp tôi xây dựng portfolio thể hiện kỹ năng kỹ thuật thực tế.",
+              "vocabs": [
+                "began",
+                "online programming",
+                "weekend evening",
+                "coding bootcamps",
+                "volunteer projects",
+                "portfolios"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "When did you actually begin earning competitive technology salaries comparable to your previous accounting position?",
+              "vi": "Khi nào bạn thực sự bắt đầu kiếm được mức lương công nghệ cạnh tranh tương đương với vị trí kế toán trước đây?",
+              "vocabs": [
+                "begin earning",
+                "competitive salaries",
+                "accounting position"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Salary parity began approximately eighteen months after my career transition started. Specialized expertise in financial software combined with previous industry knowledge made me uniquely valuable for fintech recruiters.",
+              "vi": "Bình đẳng lương bắt đầu khoảng mười tám tháng sau khi quá trình chuyển đổi nghề nghiệp của tôi bắt đầu. Chuyên môn chuyên ngành về phần mềm tài chính kết hợp với kiến thức ngành trước đây đã làm tôi có giá trị độc đáo cho các nhà tuyển dụng fintech.",
+              "vocabs": [
+                "began",
+                "salary parity",
+                "career transition",
+                "specialized expertise",
+                "industry knowledge",
+                "fintech recruiters"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "word": "end",
+      "phonetic": "/end/",
+      "pos": "Verb, Noun",
+      "frequency": 375,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Kết thúc, làm cho điều gì đó dừng lại",
+          "examples": [
+            {
+              "en": "The meeting ended at five o'clock.",
+              "vi": "Cuộc họp kết thúc lúc năm giờ.",
+              "category": "Work"
+            },
+            {
+              "en": "We need to end this argument.",
+              "vi": "Chúng ta cần kết thúc cuộc tranh cãi này.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Phần cuối, điểm kết thúc của vật hoặc khoảng thời gian",
+          "examples": [
+            {
+              "en": "The end of the movie was sad.",
+              "vi": "Phần cuối của bộ phim buồn.",
+              "category": "Entertainment"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Long-term partnership · end",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you decide to end your business partnership with someone you have known since college?",
+              "vi": "Tại sao bạn quyết định kết thúc quan hệ đối tác kinh doanh với người bạn đã biết từ thời đại học?",
+              "vocabs": [
+                "end",
+                "business partnership",
+                "college"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Differing strategic visions ultimately ended our productive collaboration painfully. Disagreements about expansion plans and risk tolerance created unresolvable tensions threatening both personal friendship and professional achievements.",
+              "vi": "Tầm nhìn chiến lược khác nhau cuối cùng đã kết thúc sự hợp tác hiệu quả của chúng tôi một cách đau đớn. Bất đồng về kế hoạch mở rộng và mức độ chấp nhận rủi ro đã tạo ra những căng thẳng không thể giải quyết đe dọa cả tình bạn cá nhân và thành tựu nghề nghiệp.",
+              "vocabs": [
+                "ended",
+                "strategic visions",
+                "productive collaboration",
+                "expansion plans",
+                "risk tolerance",
+                "unresolvable tensions"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How did this difficult end affect your personal friendship beyond the professional aspects?",
+              "vi": "Sự kết thúc khó khăn này đã ảnh hưởng đến tình bạn cá nhân của bạn ngoài các khía cạnh nghề nghiệp như thế nào?",
+              "vocabs": [
+                "end",
+                "personal friendship",
+                "professional aspects"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our friendship survived the dissolution surprisingly intact through deliberate effort. Maintaining clear communication about ending business decisions while respecting personal boundaries preserved precious longstanding emotional connections completely.",
+              "vi": "Tình bạn của chúng tôi đã sống sót qua sự tan rã một cách bất ngờ thông qua nỗ lực có chủ ý. Duy trì giao tiếp rõ ràng về quyết định kết thúc kinh doanh trong khi tôn trọng ranh giới cá nhân đã bảo tồn các kết nối cảm xúc lâu dài quý giá hoàn toàn.",
+              "vocabs": [
+                "ending",
+                "dissolution",
+                "deliberate effort",
+                "clear communication",
+                "personal boundaries",
+                "longstanding"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "word": "help",
+      "phonetic": "/help/",
+      "pos": "Verb, Noun",
+      "frequency": 370,
+      "categories": [
+        "General",
+        "Social"
+      ],
+      "meanings": [
+        {
+          "vi": "Giúp đỡ, hỗ trợ ai đó làm việc gì",
+          "examples": [
+            {
+              "en": "Could you help me with this problem?",
+              "vi": "Bạn có thể giúp tôi với vấn đề này không?",
+              "category": "General"
+            },
+            {
+              "en": "She helped her grandmother with shopping.",
+              "vi": "Cô ấy đã giúp bà nội đi mua sắm.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Sự giúp đỡ, sự hỗ trợ từ người khác",
+          "examples": [
+            {
+              "en": "Thank you for your help.",
+              "vi": "Cảm ơn bạn đã giúp đỡ.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Volunteer experience · help",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long have you been volunteering to help disadvantaged children with their academic studies?",
+              "vi": "Bạn đã tình nguyện giúp đỡ những đứa trẻ thiệt thòi với việc học thuật của chúng được bao lâu rồi?",
+              "vocabs": [
+                "help",
+                "disadvantaged children",
+                "academic studies"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I have helped underprivileged students for nearly four years through weekly sessions. Watching them gradually overcome literacy challenges motivates continued involvement despite occasionally exhausting professional demands.",
+              "vi": "Tôi đã giúp đỡ những học sinh thiệt thòi trong gần bốn năm qua các buổi học hàng tuần. Quan sát chúng dần dần vượt qua các thử thách về khả năng đọc viết thúc đẩy sự tham gia tiếp tục bất chấp các nhu cầu chuyên nghiệp đôi khi mệt mỏi.",
+              "vocabs": [
+                "helped",
+                "underprivileged students",
+                "weekly sessions",
+                "literacy challenges",
+                "involvement",
+                "professional demands"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What kind of personal satisfaction does helping these vulnerable young learners provide for you regularly?",
+              "vi": "Việc giúp đỡ những người học trẻ dễ bị tổn thương này mang lại loại sự thỏa mãn cá nhân nào cho bạn thường xuyên?",
+              "vocabs": [
+                "helping",
+                "vulnerable young learners",
+                "personal satisfaction"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Helping youngsters succeed academically genuinely transforms my emotional wellbeing positively. Witnessing breakthrough moments and gratitude letters from former students creates meaningful memories outweighing temporary inconveniences entirely.",
+              "vi": "Giúp các bạn trẻ thành công về mặt học thuật thực sự biến đổi tích cực sự lành mạnh cảm xúc của tôi. Chứng kiến những khoảnh khắc đột phá và những lá thư biết ơn từ các học sinh cũ tạo ra những kỷ niệm ý nghĩa vượt qua sự bất tiện tạm thời hoàn toàn.",
+              "vocabs": [
+                "helping",
+                "youngsters",
+                "emotional wellbeing",
+                "breakthrough moments",
+                "gratitude letters",
+                "inconveniences"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "word": "try",
+      "phonetic": "/traɪ/",
+      "pos": "Verb, Noun",
+      "frequency": 365,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Thử, cố gắng làm điều gì đó",
+          "examples": [
+            {
+              "en": "I will try to finish the report today.",
+              "vi": "Tôi sẽ cố gắng hoàn thành báo cáo hôm nay.",
+              "category": "Work"
+            },
+            {
+              "en": "Have you ever tried Vietnamese food?",
+              "vi": "Bạn đã từng thử món ăn Việt Nam chưa?",
+              "category": "Food"
+            }
+          ]
+        },
+        {
+          "vi": "Lần thử, một nỗ lực để đạt điều gì đó",
+          "examples": [
+            {
+              "en": "Give it one more try.",
+              "vi": "Hãy thử thêm một lần nữa.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Skydiving adventure · try",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What finally convinced you to try skydiving despite years of expressing genuine fear about heights?",
+              "vi": "Điều gì cuối cùng đã thuyết phục bạn thử nhảy dù bất chấp nhiều năm thể hiện sự sợ hãi chân thực về độ cao?",
+              "vocabs": [
+                "try skydiving",
+                "years",
+                "genuine fear",
+                "heights"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Approaching forty pushed me to try overcoming psychological limitations courageously. Watching documentaries about adventure athletes inspired me to confront irrational fears blocking countless meaningful experiences.",
+              "vi": "Sắp bước sang tuổi bốn mươi đã thúc đẩy tôi thử vượt qua các giới hạn tâm lý một cách dũng cảm. Xem phim tài liệu về các vận động viên phiêu lưu đã truyền cảm hứng cho tôi đối mặt với những nỗi sợ hãi phi lý chặn những trải nghiệm ý nghĩa.",
+              "vocabs": [
+                "try overcoming",
+                "psychological limitations",
+                "courageously",
+                "documentaries",
+                "irrational fears",
+                "meaningful experiences"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Would you actually try it again now after surviving that terrifying first experience successfully?",
+              "vi": "Bạn có thực sự thử lại nó bây giờ sau khi đã sống sót qua trải nghiệm đầu tiên đáng sợ đó thành công không?",
+              "vocabs": [
+                "try",
+                "terrifying",
+                "first experience"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, I would happily try skydiving repeatedly because adrenaline became addictive surprisingly. Subsequent jumps feel exhilarating rather than terrifying once mental barriers dissolve through repeated exposure consistently.",
+              "vi": "Thật lòng mà nói, tôi sẽ vui vẻ thử nhảy dù lặp đi lặp lại vì adrenaline đã trở nên gây nghiện một cách bất ngờ. Những lần nhảy tiếp theo cảm thấy phấn khích thay vì đáng sợ khi rào cản tinh thần tan biến thông qua tiếp xúc lặp lại nhất quán.",
+              "vocabs": [
+                "try",
+                "adrenaline",
+                "addictive",
+                "exhilarating",
+                "mental barriers",
+                "repeated exposure"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "word": "use",
+      "phonetic": "/juːz/",
+      "pos": "Verb, Noun",
+      "frequency": 360,
+      "categories": [
+        "General",
+        "Technology"
+      ],
+      "meanings": [
+        {
+          "vi": "Sử dụng, dùng vật gì cho mục đích nào đó",
+          "examples": [
+            {
+              "en": "I use my laptop for work every day.",
+              "vi": "Tôi sử dụng laptop để làm việc mỗi ngày.",
+              "category": "Technology"
+            },
+            {
+              "en": "She uses public transportation regularly.",
+              "vi": "Cô ấy sử dụng phương tiện công cộng thường xuyên.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Việc sử dụng, hành động dùng vật cho việc gì",
+          "examples": [
+            {
+              "en": "The use of plastic bags is decreasing.",
+              "vi": "Việc sử dụng túi nhựa đang giảm.",
+              "category": "Nature"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Digital minimalism · use",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why have you decided to drastically reduce how often you use social media platforms throughout daily routines?",
+              "vi": "Tại sao bạn quyết định giảm đáng kể tần suất sử dụng các nền tảng mạng xã hội trong các thói quen hàng ngày?",
+              "vocabs": [
+                "use",
+                "social media platforms",
+                "daily routines"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Tracking my screen usage revealed shocking dependency patterns I hadn't realized previously. Algorithms designed to maximize engagement consume cognitive resources better invested in meaningful relationships and creative pursuits.",
+              "vi": "Theo dõi việc sử dụng màn hình của tôi đã tiết lộ các mô hình phụ thuộc đáng sợ mà tôi chưa nhận ra trước đó. Các thuật toán được thiết kế để tối đa hóa sự tương tác tiêu thụ các nguồn lực nhận thức tốt hơn được đầu tư vào các mối quan hệ ý nghĩa và theo đuổi sáng tạo.",
+              "vocabs": [
+                "usage",
+                "dependency patterns",
+                "algorithms",
+                "engagement",
+                "cognitive resources",
+                "creative pursuits"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What productive activities do you now use that previously wasted time on social platforms?",
+              "vi": "Bạn hiện đang sử dụng những hoạt động năng suất nào mà trước đây dành thời gian vào các nền tảng xã hội?",
+              "vocabs": [
+                "use",
+                "productive activities",
+                "social platforms"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I use newly recovered hours for reading literature, learning languages, and outdoor exercise daily. Decreased digital consumption produces remarkable mental clarity while enriching authentic offline relationships substantially over months.",
+              "vi": "Tôi sử dụng những giờ mới phục hồi cho việc đọc văn học, học ngôn ngữ và tập thể dục ngoài trời hàng ngày. Tiêu thụ kỹ thuật số giảm tạo ra sự minh mẫn tinh thần đáng chú ý trong khi làm phong phú các mối quan hệ ngoại tuyến chân thực đáng kể trong nhiều tháng.",
+              "vocabs": [
+                "use",
+                "reading literature",
+                "learning languages",
+                "digital consumption",
+                "mental clarity",
+                "authentic offline"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "word": "make",
+      "phonetic": "/meɪk/",
+      "pos": "Verb",
+      "frequency": 355,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Làm, tạo ra hoặc sản xuất vật gì đó",
+          "examples": [
+            {
+              "en": "She makes wonderful birthday cakes.",
+              "vi": "Cô ấy làm những chiếc bánh sinh nhật tuyệt vời.",
+              "category": "Food"
+            },
+            {
+              "en": "He made a paper airplane for his son.",
+              "vi": "Anh ấy đã làm một chiếc máy bay giấy cho con trai.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Khiến cho, làm cho ai đó cảm thấy hoặc làm việc gì",
+          "examples": [
+            {
+              "en": "The news made her happy.",
+              "vi": "Tin tức đã khiến cô ấy vui.",
+              "category": "Emotion"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Artisan craft · make",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long does it typically take you to make custom leather wallets from start to completion?",
+              "vi": "Bạn thường mất bao lâu để làm những chiếc ví da đặt riêng từ đầu đến hoàn thành?",
+              "vocabs": [
+                "make",
+                "custom leather wallets",
+                "completion"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Crafting each wallet typically takes me approximately twelve hours of meticulous handwork. Cutting premium leather, hand-stitching seams, and applying protective finishes require patient attention throughout multiple production stages.",
+              "vi": "Chế tác mỗi chiếc ví thường mất khoảng mười hai giờ làm thủ công tỉ mỉ. Cắt da cao cấp, khâu tay các đường may và áp dụng lớp hoàn thiện bảo vệ đòi hỏi sự chú ý kiên nhẫn trong nhiều giai đoạn sản xuất.",
+              "vocabs": [
+                "crafting",
+                "meticulous handwork",
+                "premium leather",
+                "hand-stitching",
+                "protective finishes",
+                "production stages"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Does making everything by hand make it difficult to compete with mass-produced factory wallets?",
+              "vi": "Việc làm mọi thứ bằng tay có làm cho việc cạnh tranh với những chiếc ví được sản xuất hàng loạt từ nhà máy khó khăn không?",
+              "vocabs": [
+                "making",
+                "mass-produced",
+                "factory wallets",
+                "compete"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Customers willingly pay premium prices for handmade quality and personalized customization options. Discerning buyers appreciate traditional craftsmanship while supporting sustainable artisan businesses challenging mass-market consumption ethically.",
+              "vi": "Khách hàng sẵn lòng trả giá cao cho chất lượng thủ công và các tùy chọn cá nhân hóa. Những người mua sành điệu đánh giá cao nghề thủ công truyền thống trong khi hỗ trợ các doanh nghiệp thủ công bền vững thách thức tiêu thụ thị trường đại chúng một cách có đạo đức.",
+              "vocabs": [
+                "handmade",
+                "customization options",
+                "discerning buyers",
+                "traditional craftsmanship",
+                "artisan businesses",
+                "ethically"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "word": "create",
+      "phonetic": "/kriˈeɪt/",
+      "pos": "Verb",
+      "frequency": 350,
+      "categories": [
+        "Arts",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Sáng tạo, tạo ra cái gì mới mẻ",
+          "examples": [
+            {
+              "en": "She creates beautiful paintings.",
+              "vi": "Cô ấy sáng tạo những bức tranh đẹp.",
+              "category": "Arts"
+            },
+            {
+              "en": "The team created an innovative product.",
+              "vi": "Đội ngũ đã tạo ra một sản phẩm đổi mới.",
+              "category": "Business"
+            }
+          ]
+        },
+        {
+          "vi": "Gây ra, tạo nên một tình huống hoặc cảm xúc",
+          "examples": [
+            {
+              "en": "His behavior created tension at the meeting.",
+              "vi": "Hành vi của anh ấy đã tạo ra căng thẳng tại cuộc họp.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Independent filmmaking · create",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long did it take to create your award-winning documentary about urban poverty challenges?",
+              "vi": "Bạn đã mất bao lâu để tạo ra bộ phim tài liệu đoạt giải thưởng về những thử thách của nghèo đói đô thị?",
+              "vocabs": [
+                "create",
+                "award-winning documentary",
+                "urban poverty"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Creating this independent film consumed nearly three years of intensive production work overall. Establishing trust with vulnerable participants and capturing authentic emotional moments demanded patience throughout difficult shooting locations citywide.",
+              "vi": "Việc tạo ra bộ phim độc lập này đã tiêu tốn gần ba năm công việc sản xuất chuyên sâu tổng cộng. Xây dựng niềm tin với những người tham gia dễ bị tổn thương và ghi lại những khoảnh khắc cảm xúc chân thực đòi hỏi sự kiên nhẫn trong các địa điểm quay khó khăn trên toàn thành phố.",
+              "vocabs": [
+                "creating",
+                "independent film",
+                "intensive production",
+                "vulnerable participants",
+                "authentic emotional",
+                "shooting locations"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What unique perspective did you create that distinguished your film from similar social documentaries?",
+              "vi": "Bạn đã tạo ra góc nhìn độc đáo nào đã phân biệt bộ phim của bạn với các phim tài liệu xã hội tương tự?",
+              "vocabs": [
+                "create",
+                "unique perspective",
+                "social documentaries"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I created intimate character portraits avoiding sensationalism that exploits vulnerable populations carelessly. Allowing subjects genuine creative input throughout production created authentic narratives respecting human dignity meaningfully.",
+              "vi": "Tôi đã tạo ra những bức chân dung nhân vật thân mật tránh sự giật gân khai thác các nhóm dễ bị tổn thương một cách bất cẩn. Cho phép các đối tượng đóng góp sáng tạo chân thực trong suốt quá trình sản xuất đã tạo ra các câu chuyện chân thực tôn trọng phẩm giá con người ý nghĩa.",
+              "vocabs": [
+                "created",
+                "intimate portraits",
+                "sensationalism",
+                "vulnerable populations",
+                "creative input",
+                "human dignity"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "word": "find",
+      "phonetic": "/faɪnd/",
+      "pos": "Verb",
+      "frequency": 345,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Tìm thấy, phát hiện ra điều gì đó qua tìm kiếm",
+          "examples": [
+            {
+              "en": "I found my keys in the kitchen.",
+              "vi": "Tôi tìm thấy chìa khóa của mình trong bếp.",
+              "category": "General"
+            },
+            {
+              "en": "She found a great new restaurant.",
+              "vi": "Cô ấy đã tìm được một nhà hàng tuyệt vời mới.",
+              "category": "Food"
+            }
+          ]
+        },
+        {
+          "vi": "Cảm thấy, có ấn tượng hoặc đánh giá về điều gì đó",
+          "examples": [
+            {
+              "en": "I find this book very interesting.",
+              "vi": "Tôi thấy quyển sách này rất thú vị.",
+              "category": "Education"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Career discovery · find",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How did you finally find your true professional calling after switching careers four times throughout your twenties?",
+              "vi": "Bạn đã tìm thấy tiếng gọi nghề nghiệp thực sự cuối cùng như thế nào sau khi chuyển đổi nghề nghiệp bốn lần trong suốt những năm hai mươi tuổi?",
+              "vocabs": [
+                "find",
+                "professional calling",
+                "switching careers",
+                "twenties"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Discovering my passion required experiencing diverse roles that didn't quite fit eventually. Working alongside therapists during volunteer projects revealed psychology fascinated me beyond superficial casual interest tremendously.",
+              "vi": "Khám phá đam mê của tôi đòi hỏi trải nghiệm các vai trò đa dạng mà cuối cùng không phù hợp. Làm việc cùng các nhà trị liệu trong các dự án tình nguyện đã tiết lộ rằng tâm lý học làm tôi say mê vượt qua sự quan tâm thông thường bề mặt đáng kể.",
+              "vocabs": [
+                "discovering passion",
+                "diverse roles",
+                "therapists",
+                "volunteer projects",
+                "psychology",
+                "superficial casual"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Where can someone realistically find that specific career calling without years of expensive trial-and-error experimentation?",
+              "vi": "Một người có thể tìm thấy tiếng gọi nghề nghiệp cụ thể đó một cách thực tế ở đâu mà không cần nhiều năm thử nghiệm tốn kém?",
+              "vocabs": [
+                "find",
+                "career calling",
+                "trial-and-error"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Finding meaningful work requires honest self-reflection combined with practical exploratory experiences. Informational interviews, internships, and personality assessments help individuals quickly identify environments naturally aligning with intrinsic motivations.",
+              "vi": "Tìm kiếm công việc ý nghĩa đòi hỏi sự tự suy ngẫm trung thực kết hợp với trải nghiệm khám phá thực tế. Các cuộc phỏng vấn thông tin, thực tập và đánh giá tính cách giúp các cá nhân nhanh chóng xác định môi trường tự nhiên phù hợp với động lực nội tại.",
+              "vocabs": [
+                "finding",
+                "self-reflection",
+                "informational interviews",
+                "internships",
+                "personality assessments",
+                "intrinsic motivations"
               ]
             }
           ]
