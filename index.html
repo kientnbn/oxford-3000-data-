@@ -1242,13 +1242,66 @@
 
     // Text-to-Speech
     // Global words map for read all functionality
-    const wordsMap = {};
-
+    // ========== OPTIMIZED SPEECH SYNTHESIS ==========
+    let currentUtteranceIndex = 0;
+    let currentUtterances = [];
+    let isSpeaking = false;
+    let isPaused = false;
+    
+    function getOptimalVoice(lang) {
+        const voices = speechSynthesis.getVoices();
+        if (!voices.length) return null;
+        
+        // Prioritize voices by language
+        if (lang === 'en-US') {
+            // Prefer female English voices (more natural)
+            return voices.find(v => v.lang.includes('en') && v.name.includes('Google US English')) ||
+                   voices.find(v => v.lang.includes('en-US') && v.name.includes('Female')) ||
+                   voices.find(v => v.lang.includes('en-US')) ||
+                   voices[0];
+        } else if (lang === 'vi-VN') {
+            // Vietnamese voice
+            return voices.find(v => v.lang.includes('vi')) ||
+                   voices[0];
+        }
+        return voices[0];
+    }
+    
+    function createOptimizedUtterance(text, lang, isWord = false) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+        utterance.voice = getOptimalVoice(lang);
+        
+        // Optimize rate and pitch based on content type
+        if (isWord) {
+            // Word pronunciation: slower, higher pitch for clarity
+            utterance.rate = 0.7;
+            utterance.pitch = 1.2;
+        } else if (lang === 'en-US') {
+            // English content: natural pace
+            utterance.rate = 0.8;
+            utterance.pitch = 1.0;
+        } else {
+            // Vietnamese: slightly slower
+            utterance.rate = 0.85;
+            utterance.pitch = 1.0;
+        }
+        
+        // Optimize volume and quality
+        utterance.volume = 0.9;
+        
+        return utterance;
+    }
+    
     function speakWord(word) {
-        const utterance = new SpeechSynthesisUtterance(word);
-        utterance.lang = 'en-US';
-        utterance.rate = 0.9;
         speechSynthesis.cancel();
+        isSpeaking = true;
+        const utterance = createOptimizedUtterance(word, 'en-US', true);
+        utterance.onend = () => { isSpeaking = false; };
+        utterance.onerror = (e) => { 
+            console.error('Speech error:', e); 
+            isSpeaking = false; 
+        };
         speechSynthesis.speak(utterance);
     }
 
@@ -1257,49 +1310,103 @@
         if (!word) return;
 
         const langMode = document.getElementById('langSelect').value;
-        const utterances = [];
+        currentUtterances = [];
 
-        // 1. Read the word itself
-        utterances.push({ text: word.word, lang: 'en-US' });
+        // 1. Read the word itself (slower, clearer)
+        currentUtterances.push({ text: word.word, lang: 'en-US', isWord: true });
 
-        // 2. Read all meanings and examples
-        word.meanings.forEach(meaning => {
+        // 2. Read phonetic pronunciation if available
+        if (word.phonetic) {
+            currentUtterances.push({ text: `Pronunciation: ${word.phonetic}`, lang: 'en-US', isWord: false });
+        }
+
+        // 3. Read all meanings and examples
+        word.meanings.forEach((meaning, idx) => {
             // Read Vietnamese meaning
             if (langMode === 'en-vi' || langMode === 'vi') {
-                utterances.push({ text: meaning.vi, lang: 'vi-VN' });
+                currentUtterances.push({ text: `Meaning ${idx + 1}: ${meaning.vi}`, lang: 'vi-VN', isWord: false });
             }
 
             // Read examples
             meaning.examples.forEach(example => {
                 if (langMode === 'en-vi' || langMode === 'en') {
-                    utterances.push({ text: example.en, lang: 'en-US' });
+                    currentUtterances.push({ text: example.en, lang: 'en-US', isWord: false });
                 }
                 if (langMode === 'en-vi') {
-                    utterances.push({ text: example.vi, lang: 'vi-VN' });
+                    currentUtterances.push({ text: example.vi, lang: 'vi-VN', isWord: false });
                 }
             });
         });
 
         // Speak all utterances sequentially
-        let index = 0;
-        const speakNext = () => {
-            if (index < utterances.length) {
-                const item = utterances[index];
-                const utterance = new SpeechSynthesisUtterance(item.text);
-                utterance.lang = item.lang;
-                utterance.rate = 0.85;
-                utterance.onend = () => {
-                    index++;
-                    // Small delay between sentences
-                    setTimeout(speakNext, 300);
-                };
-                speechSynthesis.speak(utterance);
-            }
-        };
-
-        speechSynthesis.cancel();
-        speakNext();
+        currentUtteranceIndex = 0;
+        isSpeaking = true;
+        isPaused = false;
+        speakNextUtterance();
     }
+    
+    function speakNextUtterance() {
+        if (currentUtteranceIndex < currentUtterances.length) {
+            const item = currentUtterances[currentUtteranceIndex];
+            const utterance = createOptimizedUtterance(item.text, item.lang, item.isWord || false);
+            
+            utterance.onend = () => {
+                if (!isPaused) {
+                    currentUtteranceIndex++;
+                    // Optimal delay between sentences (200ms for clarity)
+                    setTimeout(speakNextUtterance, 200);
+                } else {
+                    isSpeaking = false;
+                }
+            };
+            
+            utterance.onerror = (e) => {
+                console.error('Speech synthesis error:', e);
+                currentUtteranceIndex++;
+                setTimeout(speakNextUtterance, 200);
+            };
+            
+            speechSynthesis.speak(utterance);
+        } else {
+            isSpeaking = false;
+        }
+    }
+    
+    function pauseAudio() {
+        if (isSpeaking) {
+            speechSynthesis.pause();
+            isPaused = true;
+            isSpeaking = false;
+        }
+    }
+    
+    function resumeAudio() {
+        if (isPaused) {
+            speechSynthesis.resume();
+            isPaused = false;
+            isSpeaking = true;
+        } else if (currentUtterances.length > 0) {
+            isSpeaking = true;
+            speakNextUtterance();
+        }
+    }
+    
+    function stopAudio() {
+        speechSynthesis.cancel();
+        currentUtterances = [];
+        currentUtteranceIndex = 0;
+        isSpeaking = false;
+        isPaused = false;
+    }
+    
+    // Initialize voices when available
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = () => {
+            console.log('✅ Speech synthesis voices loaded:', speechSynthesis.getVoices().length);
+        };
+    }
+
+    const wordsMap = {};
 
     // Vocabulary highlighting for conversations
     function highlightVocabInText(text, vocabs) {
