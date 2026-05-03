@@ -1572,111 +1572,78 @@
         try {
             const db = await initDB();
             
-            // Try multiple endpoints
-            const endpoints = [
-                {
-                    name: 'GitHub Raw',
-                    url: 'https://raw.githubusercontent.com/kientnbn/oxford-3000-data-/main/oxford-3000-data.json'
-                },
-                {
-                    name: 'jsDelivr CDN',
-                    url: 'https://cdn.jsdelivr.net/gh/kientnbn/oxford-3000-data-@main/oxford-3000-data.json'
-                },
-                {
-                    name: 'GitHub API',
-                    url: 'https://api.github.com/repos/kientnbn/oxford-3000-data-/contents/oxford-3000-data.json'
-                }
-            ];
+            // GITHUB RAW - Direct load (primary source)
+            const githubRawUrl = 'https://raw.githubusercontent.com/kientnbn/oxford-3000-data-/main/oxford-3000-data.json';
             
-            let data = null;
-            let successEndpoint = null;
-            let errors = [];
+            console.log(`🔄 Loading from GitHub Raw: ${githubRawUrl}`);
+            statusText.textContent = '🔄 Loading from GitHub...';
             
-            for (const endpoint of endpoints) {
-                try {
-                    console.log(`🔄 Trying ${endpoint.name}: ${endpoint.url}`);
-                    
-                    const response = await fetch(endpoint.url, {
-                        method: 'GET',
-                        mode: 'cors',
-                        credentials: 'omit'
-                    });
-                    
-                    console.log(`📊 ${endpoint.name} response:`, {
-                        status: response.status,
-                        statusText: response.statusText,
-                        ok: response.ok,
-                        type: response.type,
-                        headers: Array.from(response.headers.entries())
-                    });
-                    
-                    if (!response.ok) {
-                        throw new Error(`HTTP ${response.status}`);
-                    }
-                    
-                    let parsedData;
-                    if (endpoint.name === 'GitHub API') {
-                        const apiData = await response.json();
-                        const decoded = atob(apiData.content);
-                        parsedData = JSON.parse(decoded);
-                    } else {
-                        parsedData = await response.json();
-                    }
-                    
-                    // Support both array format and {batch_info, data} format
-                    let wordArray = null;
-                    if (Array.isArray(parsedData) && parsedData.length > 0) {
-                        wordArray = parsedData;
-                    } else if (parsedData && typeof parsedData === 'object' && Array.isArray(parsedData.data) && parsedData.data.length > 0) {
-                        wordArray = parsedData.data;
-                    }
-                    
-                    if (wordArray) {
-                        data = wordArray;
-                        successEndpoint = endpoint.name;
-                        console.log(`✅ SUCCESS via ${endpoint.name}: ${data.length} words`);
-                        break;
-                    }
-                } catch (err) {
-                    const errorMsg = `${endpoint.name}: ${err.message}`;
-                    console.error(`❌ ${errorMsg}`);
-                    errors.push(errorMsg);
-                }
-            }
-            
-            if (data) {
-                const tx = db.transaction(STORE_NAME, 'readwrite');
-                const store = tx.objectStore(STORE_NAME);
-                data.forEach(word => store.put(word));
-                await tx.complete;
-
-                renderWords(data);
-                setupSearch(data);
-                window.currentAllWords = data;
-                statusText.textContent = `✓ Loaded ${data.length} words via ${successEndpoint}`;
-                applyFilterAndSort();  // Restore & apply saved filter state
-            } else {
-                console.error('❌ All endpoints failed:', errors);
-                data = sampleData;
+            try {
+                const response = await fetch(githubRawUrl, {
+                    method: 'GET',
+                    mode: 'cors',
+                    credentials: 'omit',
+                    cache: 'no-cache'  // Force fresh load, no cache
+                });
                 
+                console.log(`📊 GitHub Raw Response:`, {
+                    status: response.status,
+                    statusText: response.statusText,
+                    ok: response.ok
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const parsedData = await response.json();
+                
+                // Support both array format and {batch_info, data} format
+                let wordArray = null;
+                if (Array.isArray(parsedData) && parsedData.length > 0) {
+                    wordArray = parsedData;
+                } else if (parsedData && typeof parsedData === 'object' && Array.isArray(parsedData.data) && parsedData.data.length > 0) {
+                    wordArray = parsedData.data;
+                }
+                
+                if (!wordArray || wordArray.length === 0) {
+                    throw new Error('No words found in data');
+                }
+                
+                // SUCCESS - Store in DB and render
                 const tx = db.transaction(STORE_NAME, 'readwrite');
                 const store = tx.objectStore(STORE_NAME);
-                data.forEach(word => store.put(word));
+                // Clear old data first
+                store.clear();
+                wordArray.forEach(word => store.put(word));
                 await tx.complete;
 
-                renderWords(data);
-                setupSearch(data);
-                window.currentAllWords = data;
-                statusText.innerHTML = `⚠️ All fetches failed. Errors:<br><small>${errors.join('<br>')}</small>`;
-                applyFilterAndSort();  // Restore & apply saved filter state
+                window.currentAllWords = wordArray;
+                renderWords(wordArray);
+                setupSearch(wordArray);
+                statusText.innerHTML = `✅ Loaded ${wordArray.length} words from GitHub Raw<br><small>${new Date().toLocaleTimeString()}</small>`;
+                applyFilterAndSort();
+                
+                console.log(`✅ SUCCESS: Loaded ${wordArray.length} words from GitHub Raw`);
+                
+            } catch (gitError) {
+                // GitHub Raw failed - show error, don't fallback to sampleData
+                console.error(`❌ GitHub Raw Failed:`, gitError);
+                
+                statusText.innerHTML = `❌ Failed to load from GitHub<br>
+                    <small style="color:#ff6b6b">Error: ${gitError.message}</small><br>
+                    <small>Please check: File exists in repo? Network connection OK?</small>`;
+                
+                console.error('🔍 Debug Info:', {
+                    url: githubRawUrl,
+                    error: gitError.message,
+                    repo: 'kientnbn/oxford-3000-data-',
+                    file: 'oxford-3000-data.json'
+                });
             }
         } catch (error) {
             console.error('Fatal error:', error);
-            renderWords(sampleData);
-            setupSearch(sampleData);
-            window.currentAllWords = sampleData;
-            statusText.textContent = `✓ Using offline data`;
-            applyFilterAndSort();  // Restore & apply saved filter state
+            statusText.textContent = `❌ Fatal Error: ${error.message}`;
         }
     }
 
