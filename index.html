@@ -1242,53 +1242,261 @@
 
     // Text-to-Speech
     // Global words map for read all functionality
-    // ========== OPTIMIZED SPEECH SYNTHESIS ==========
+    // ========== NATURAL SPEECH SYNTHESIS - V2 ==========
     let currentUtteranceIndex = 0;
     let currentUtterances = [];
     let isSpeaking = false;
     let isPaused = false;
     
-    function getOptimalVoice(lang) {
+    // Voice pool for variety
+    let voicePool = {
+        'en-US': { male: [], female: [], neutral: [] },
+        'vi-VN': { male: [], female: [], neutral: [] }
+    };
+    
+    // Speaker-to-voice mapping (consistent voice per speaker in conversation)
+    let speakerVoiceMap = {};
+    
+    // Initialize voice pool with quality detection
+    function initVoicePool() {
         const voices = speechSynthesis.getVoices();
-        if (!voices.length) return null;
+        if (!voices.length) return;
         
-        // Prioritize voices by language
-        if (lang === 'en-US') {
-            // Prefer female English voices (more natural)
-            return voices.find(v => v.lang.includes('en') && v.name.includes('Google US English')) ||
-                   voices.find(v => v.lang.includes('en-US') && v.name.includes('Female')) ||
-                   voices.find(v => v.lang.includes('en-US')) ||
-                   voices[0];
-        } else if (lang === 'vi-VN') {
-            // Vietnamese voice
-            return voices.find(v => v.lang.includes('vi')) ||
-                   voices[0];
-        }
-        return voices[0];
+        // Reset pools
+        voicePool = {
+            'en-US': { male: [], female: [], neutral: [] },
+            'vi-VN': { male: [], female: [], neutral: [] }
+        };
+        
+        voices.forEach(voice => {
+            const name = voice.name.toLowerCase();
+            const lang = voice.lang.toLowerCase();
+            
+            // Determine quality (Neural > Premium > Enhanced > Default)
+            const isHighQuality = 
+                name.includes('neural') || 
+                name.includes('premium') || 
+                name.includes('enhanced') ||
+                name.includes('natural') ||
+                name.includes('online');
+            
+            // Detect gender from voice name
+            const isMale = 
+                name.includes('male') && !name.includes('female') ||
+                name.includes('daniel') ||
+                name.includes('alex') ||
+                name.includes('aaron') ||
+                name.includes('arthur') ||
+                name.includes('fred') ||
+                name.includes('george') ||
+                name.includes('rishi') ||
+                name.includes('tom') ||
+                name.includes('mark');
+            
+            const isFemale = 
+                name.includes('female') ||
+                name.includes('samantha') ||
+                name.includes('victoria') ||
+                name.includes('karen') ||
+                name.includes('moira') ||
+                name.includes('tessa') ||
+                name.includes('zoe') ||
+                name.includes('susan') ||
+                name.includes('allison') ||
+                name.includes('ava') ||
+                name.includes('serena') ||
+                name.includes('kate') ||
+                name.includes('linh') ||
+                name.includes('hoai');
+            
+            // Categorize by language
+            let langKey = null;
+            if (lang.startsWith('en-us') || lang.startsWith('en_us') || lang === 'en') {
+                langKey = 'en-US';
+            } else if (lang.startsWith('vi')) {
+                langKey = 'vi-VN';
+            }
+            
+            if (langKey) {
+                const voiceData = { voice, isHighQuality };
+                if (isFemale) {
+                    voicePool[langKey].female.push(voiceData);
+                } else if (isMale) {
+                    voicePool[langKey].male.push(voiceData);
+                } else {
+                    voicePool[langKey].neutral.push(voiceData);
+                }
+            }
+        });
+        
+        // Sort each pool by quality (high quality first)
+        Object.keys(voicePool).forEach(lang => {
+            Object.keys(voicePool[lang]).forEach(gender => {
+                voicePool[lang][gender].sort((a, b) => b.isHighQuality - a.isHighQuality);
+            });
+        });
+        
+        console.log('🎤 Voice Pool initialized:', {
+            'en-US': {
+                male: voicePool['en-US'].male.length,
+                female: voicePool['en-US'].female.length,
+                neutral: voicePool['en-US'].neutral.length
+            },
+            'vi-VN': {
+                male: voicePool['vi-VN'].male.length,
+                female: voicePool['vi-VN'].female.length,
+                neutral: voicePool['vi-VN'].neutral.length
+            }
+        });
     }
     
-    function createOptimizedUtterance(text, lang, isWord = false) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = lang;
-        utterance.voice = getOptimalVoice(lang);
+    // Get voice for a specific speaker (consistent voice per speaker)
+    function getVoiceForSpeaker(speaker, lang) {
+        const langKey = lang.startsWith('en') ? 'en-US' : 'vi-VN';
+        const pool = voicePool[langKey];
         
-        // Optimize rate and pitch based on content type
-        if (isWord) {
-            // Word pronunciation: slower, higher pitch for clarity
-            utterance.rate = 0.7;
-            utterance.pitch = 1.2;
-        } else if (lang === 'en-US') {
-            // English content: natural pace
-            utterance.rate = 0.8;
-            utterance.pitch = 1.0;
-        } else {
-            // Vietnamese: slightly slower
-            utterance.rate = 0.85;
-            utterance.pitch = 1.0;
+        // Return cached voice for this speaker
+        const cacheKey = `${speaker}-${langKey}`;
+        if (speakerVoiceMap[cacheKey]) {
+            return speakerVoiceMap[cacheKey];
         }
         
-        // Optimize volume and quality
-        utterance.volume = 0.9;
+        // Determine gender preference based on speaker name
+        const speakerLower = (speaker || '').toLowerCase();
+        const maleNames = ['tom', 'john', 'mike', 'david', 'james', 'robert', 'man', 'father', 'dad', 'boy', 'son', 'mr', 'sir', 'boss', 'manager', 'doctor', 'teacher', 'minh', 'tuan', 'hai', 'nam'];
+        const femaleNames = ['mary', 'jane', 'linda', 'susan', 'sarah', 'emma', 'woman', 'mother', 'mom', 'girl', 'daughter', 'mrs', 'ms', 'lady', 'nurse', 'lan', 'mai', 'huong', 'thuy', 'hoa'];
+        
+        let preferredGender = null;
+        for (const name of maleNames) {
+            if (speakerLower.includes(name)) { preferredGender = 'male'; break; }
+        }
+        if (!preferredGender) {
+            for (const name of femaleNames) {
+                if (speakerLower.includes(name)) { preferredGender = 'female'; break; }
+            }
+        }
+        
+        // Hash speaker name to consistent gender if not detected
+        if (!preferredGender) {
+            let hash = 0;
+            for (let i = 0; i < speaker.length; i++) {
+                hash = ((hash << 5) - hash) + speaker.charCodeAt(i);
+            }
+            preferredGender = Math.abs(hash) % 2 === 0 ? 'female' : 'male';
+        }
+        
+        // Get voice from pool
+        let availableVoices = pool[preferredGender];
+        if (!availableVoices.length) {
+            availableVoices = pool[preferredGender === 'male' ? 'female' : 'male'];
+        }
+        if (!availableVoices.length) {
+            availableVoices = pool.neutral;
+        }
+        
+        if (!availableVoices.length) {
+            // Last resort: use any voice
+            const allVoices = speechSynthesis.getVoices();
+            speakerVoiceMap[cacheKey] = allVoices[0];
+            return allVoices[0];
+        }
+        
+        // Pick best (high quality first) and cache for consistency
+        const selectedVoice = availableVoices[0].voice;
+        speakerVoiceMap[cacheKey] = selectedVoice;
+        return selectedVoice;
+    }
+    
+    // Get default voice for language (no speaker)
+    function getDefaultVoice(lang) {
+        const langKey = lang.startsWith('en') ? 'en-US' : 'vi-VN';
+        const pool = voicePool[langKey];
+        
+        // Prefer female (often higher quality voice samples in browsers)
+        const candidates = [
+            ...pool.female,
+            ...pool.male,
+            ...pool.neutral
+        ];
+        
+        if (candidates.length) return candidates[0].voice;
+        
+        // Fallback to any voice
+        const allVoices = speechSynthesis.getVoices();
+        return allVoices[0];
+    }
+    
+    // Add natural pauses based on punctuation
+    function addNaturalPauses(text) {
+        // Add SSML-like markers (won't work as SSML but we'll use them for splitting)
+        return text
+            .replace(/\.\.\./g, '. ')           // Ellipsis
+            .replace(/([.!?])\s+/g, '$1 ')      // Sentence end
+            .replace(/([,;:])\s+/g, '$1 ')      // Mid-sentence pause
+            .replace(/\s+/g, ' ')               // Normalize spaces
+            .trim();
+    }
+    
+    // Calculate dynamic pause based on punctuation
+    function getPauseAfterText(text) {
+        const lastChar = text.trim().slice(-1);
+        if (lastChar === '.' || lastChar === '!' || lastChar === '?') return 400;  // Long pause for sentence end
+        if (lastChar === ',' || lastChar === ';') return 200;  // Medium pause
+        if (lastChar === ':') return 250;  // Slight emphasis pause
+        return 150;  // Default short pause
+    }
+    
+    // Create natural utterance with variation
+    function createNaturalUtterance(text, lang, options = {}) {
+        const { 
+            isWord = false, 
+            speaker = null, 
+            emphasis = 'normal'  // 'normal', 'soft', 'strong'
+        } = options;
+        
+        const cleanText = addNaturalPauses(text);
+        const utterance = new SpeechSynthesisUtterance(cleanText);
+        utterance.lang = lang;
+        
+        // Voice selection
+        if (speaker) {
+            utterance.voice = getVoiceForSpeaker(speaker, lang);
+        } else {
+            utterance.voice = getDefaultVoice(lang);
+        }
+        
+        // Rate variation - more natural with slight randomization
+        let baseRate;
+        if (isWord) {
+            baseRate = 0.75;  // Slower for word pronunciation
+        } else if (lang.startsWith('en')) {
+            baseRate = 0.95;  // Natural English pace
+        } else {
+            baseRate = 0.95;  // Natural Vietnamese pace
+        }
+        
+        // Add slight randomization (±5%) for naturalness
+        const rateVariation = (Math.random() - 0.5) * 0.1;
+        utterance.rate = Math.max(0.5, Math.min(1.5, baseRate + rateVariation));
+        
+        // Pitch variation - more natural with slight variation
+        let basePitch;
+        if (isWord) {
+            basePitch = 1.0;  // Neutral pitch for word
+        } else if (emphasis === 'soft') {
+            basePitch = 0.95;
+        } else if (emphasis === 'strong') {
+            basePitch = 1.1;
+        } else {
+            basePitch = 1.0;
+        }
+        
+        // Add slight pitch variation (±5%) for naturalness
+        const pitchVariation = (Math.random() - 0.5) * 0.1;
+        utterance.pitch = Math.max(0.5, Math.min(2.0, basePitch + pitchVariation));
+        
+        // Volume - consistent
+        utterance.volume = 1.0;
         
         return utterance;
     }
@@ -1296,7 +1504,20 @@
     function speakWord(word) {
         speechSynthesis.cancel();
         isSpeaking = true;
-        const utterance = createOptimizedUtterance(word, 'en-US', true);
+        const utterance = createNaturalUtterance(word, 'en-US', { isWord: true });
+        utterance.onend = () => { isSpeaking = false; };
+        utterance.onerror = (e) => { 
+            console.error('Speech error:', e); 
+            isSpeaking = false; 
+        };
+        speechSynthesis.speak(utterance);
+    }
+    
+    // Speak text from conversation with speaker context
+    function speakConversationLine(text, speaker, lang = 'en-US') {
+        speechSynthesis.cancel();
+        isSpeaking = true;
+        const utterance = createNaturalUtterance(text, lang, { speaker });
         utterance.onend = () => { isSpeaking = false; };
         utterance.onerror = (e) => { 
             console.error('Speech error:', e); 
@@ -1309,31 +1530,54 @@
         const word = wordsMap[wordId];
         if (!word) return;
 
-        const langMode = document.getElementById('langSelect').value;
+        const langSelect = document.getElementById('langSelect');
+        const langMode = langSelect?.value || 'en';
         currentUtterances = [];
+        
+        // Reset speaker voice map for fresh variety
+        speakerVoiceMap = {};
 
-        // 1. Read the word itself (slower, clearer)
-        currentUtterances.push({ text: word.word, lang: 'en-US', isWord: true });
+        // 1. Read the word itself (slower, clearer, neutral)
+        currentUtterances.push({ 
+            text: word.word, 
+            lang: 'en-US', 
+            isWord: true,
+            pauseAfter: 600  // Longer pause after word announcement
+        });
 
-        // 2. Read phonetic pronunciation if available
-        if (word.phonetic) {
-            currentUtterances.push({ text: `Pronunciation: ${word.phonetic}`, lang: 'en-US', isWord: false });
-        }
-
-        // 3. Read all meanings and examples
+        // 2. Read all meanings and examples
         word.meanings.forEach((meaning, idx) => {
             // Read Vietnamese meaning
             if (langMode === 'en-vi' || langMode === 'vi') {
-                currentUtterances.push({ text: `Meaning ${idx + 1}: ${meaning.vi}`, lang: 'vi-VN', isWord: false });
+                currentUtterances.push({ 
+                    text: meaning.vi, 
+                    lang: 'vi-VN', 
+                    isWord: false,
+                    emphasis: 'normal',
+                    pauseAfter: 400
+                });
             }
 
-            // Read examples
-            meaning.examples.forEach(example => {
+            // Read examples (alternating speakers for variety)
+            meaning.examples.forEach((example, exIdx) => {
+                const exampleSpeaker = `Example_${exIdx % 2}`;  // Alternate speakers
+                
                 if (langMode === 'en-vi' || langMode === 'en') {
-                    currentUtterances.push({ text: example.en, lang: 'en-US', isWord: false });
+                    currentUtterances.push({ 
+                        text: example.en, 
+                        lang: 'en-US', 
+                        isWord: false,
+                        speaker: exampleSpeaker,
+                        pauseAfter: 350
+                    });
                 }
                 if (langMode === 'en-vi') {
-                    currentUtterances.push({ text: example.vi, lang: 'vi-VN', isWord: false });
+                    currentUtterances.push({ 
+                        text: example.vi, 
+                        lang: 'vi-VN', 
+                        isWord: false,
+                        pauseAfter: 400
+                    });
                 }
             });
         });
@@ -1348,13 +1592,22 @@
     function speakNextUtterance() {
         if (currentUtteranceIndex < currentUtterances.length) {
             const item = currentUtterances[currentUtteranceIndex];
-            const utterance = createOptimizedUtterance(item.text, item.lang, item.isWord || false);
+            const utterance = createNaturalUtterance(item.text, item.lang, {
+                isWord: item.isWord || false,
+                speaker: item.speaker || null,
+                emphasis: item.emphasis || 'normal'
+            });
             
             utterance.onend = () => {
                 if (!isPaused) {
                     currentUtteranceIndex++;
-                    // Optimal delay between sentences (200ms for clarity)
-                    setTimeout(speakNextUtterance, 200);
+                    // Use natural pause based on punctuation or specified pause
+                    const delay = item.pauseAfter || getPauseAfterText(item.text);
+                    if (currentUtteranceIndex < currentUtterances.length) {
+                        setTimeout(speakNextUtterance, delay);
+                    } else {
+                        isSpeaking = false;
+                    }
                 } else {
                     isSpeaking = false;
                 }
@@ -1397,14 +1650,32 @@
         currentUtteranceIndex = 0;
         isSpeaking = false;
         isPaused = false;
+        speakerVoiceMap = {};  // Reset speaker mappings
     }
     
     // Initialize voices when available
-    if (speechSynthesis.onvoiceschanged !== undefined) {
-        speechSynthesis.onvoiceschanged = () => {
-            console.log('✅ Speech synthesis voices loaded:', speechSynthesis.getVoices().length);
-        };
+    function initVoices() {
+        initVoicePool();
     }
+    
+    // Initial voice load attempt
+    if (speechSynthesis.getVoices().length > 0) {
+        initVoices();
+    }
+    
+    // Also listen for voice changes (some browsers load voices async)
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = initVoices;
+    }
+    
+    // Force voice load (Chrome workaround)
+    setTimeout(() => {
+        if (Object.values(voicePool).every(p => 
+            p.male.length === 0 && p.female.length === 0 && p.neutral.length === 0
+        )) {
+            initVoices();
+        }
+    }, 1000);
 
     const wordsMap = {};
 
@@ -1553,7 +1824,7 @@
                                     <div class="conv-speaker">${line.speaker}</div>
                                     ${document.getElementById('langSelect') && (document.getElementById('langSelect').value === 'en-vi' || document.getElementById('langSelect').value === 'en') ? `
                                     <div class="conv-text conv-text-en">
-                                        <button class="conv-audio-btn" onclick="speakWord('${line.en.replace(/"/g, '\\"')}')">🔊</button>
+                                        <button class="conv-audio-btn" onclick="speakConversationLine('${line.en.replace(/"/g, '\\"').replace(/\'/g, "\\\\'")}', '${line.speaker.replace(/\'/g, "\\\\'")}', 'en-US')">🔊</button>
                                         <span>${highlightVocabInText(line.en, line.vocabs)}</span>
                                     </div>
                                     ` : ''}
@@ -1734,19 +2005,41 @@
                 console.log(`✅ SUCCESS: Loaded ${wordArray.length} words from GitHub Raw`);
                 
             } catch (gitError) {
-                // GitHub Raw failed - show error, don't fallback to sampleData
+                // GitHub Raw failed - fallback to sampleData
                 console.error(`❌ GitHub Raw Failed:`, gitError);
-                
-                statusText.innerHTML = `❌ Failed to load from GitHub<br>
-                    <small style="color:#ff6b6b">Error: ${gitError.message}</small><br>
-                    <small>Please check: File exists in repo? Network connection OK?</small>`;
-                
                 console.error('🔍 Debug Info:', {
                     url: githubRawUrl,
                     error: gitError.message,
                     repo: 'kientnbn/oxford-3000-data-',
                     file: 'oxford-3000-data.json'
                 });
+                
+                // FALLBACK: Use sampleData
+                console.warn('⚠️  Using fallback sampleData...');
+                
+                const fallbackData = sampleData;
+                
+                if (fallbackData && fallbackData.length > 0) {
+                    const tx = db.transaction(STORE_NAME, 'readwrite');
+                    const store = tx.objectStore(STORE_NAME);
+                    store.clear();
+                    fallbackData.forEach(word => store.put(word));
+                    await tx.complete;
+
+                    window.currentAllWords = fallbackData;
+                    renderWords(fallbackData);
+                    setupSearch(fallbackData);
+                    
+                    statusText.innerHTML = `⚠️  GitHub unavailable. Using fallback data (${fallbackData.length} words)<br>
+                        <small style="color:#ff9800">Error: ${gitError.message}</small><br>
+                        <small>Data is limited. Please check your connection.</small>`;
+                    
+                    applyFilterAndSort();
+                    console.log(`⚠️  Using ${fallbackData.length} words from fallback data`);
+                } else {
+                    statusText.innerHTML = `❌ Failed to load data<br>
+                        <small style="color:#ff6b6b">No fallback data available</small>`;
+                }
             }
         } catch (error) {
             console.error('Fatal error:', error);
