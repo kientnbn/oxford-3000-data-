@@ -1,8 +1,8 @@
 {
   "batch_info": {
-    "batch_number": 8,
+    "batch_number": 11,
     "batch_size": 10,
-    "cumulative_entries": "1-80",
+    "cumulative_entries": "1-110",
     "batches_included": [
       1,
       2,
@@ -11,12 +11,15 @@
       5,
       6,
       7,
-      8
+      8,
+      9,
+      10,
+      11
     ],
     "date": "2026-05-03",
     "status": "COMPLETED",
     "scope": "C0 only (conversations rewrite)",
-    "test_results": "80/80 PASS"
+    "test_results": "110/110 PASS"
   },
   "data": [
     {
@@ -7225,6 +7228,2763 @@
                 "wellbeing",
                 "product quality",
                 "departments"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "word": "country",
+      "phonetic": "/ˈkʌntri/",
+      "pos": "Noun",
+      "frequency": 590,
+      "categories": [
+        "Geography",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Quốc gia, vùng đất có chính phủ và lãnh thổ riêng",
+          "examples": [
+            {
+              "en": "Japan is a beautiful country in Asia.",
+              "vi": "Nhật Bản là một đất nước xinh đẹp ở châu Á.",
+              "category": "Geography"
+            },
+            {
+              "en": "She has visited over thirty countries.",
+              "vi": "Cô ấy đã thăm hơn ba mươi quốc gia.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Vùng nông thôn, khu vực nằm ngoài thành phố",
+          "examples": [
+            {
+              "en": "We spent the weekend in the country.",
+              "vi": "Chúng tôi đã nghỉ cuối tuần ở vùng nông thôn.",
+              "category": "Nature"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Cultural exchange · country",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Which country left the strongest impression on you during your gap year backpacking adventure?",
+              "vi": "Quốc gia nào đã để lại ấn tượng mạnh mẽ nhất với bạn trong năm tạm nghỉ đi du lịch ba lô?",
+              "vocabs": [
+                "country",
+                "gap year",
+                "backpacking adventure"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Mongolia overwhelmed me as the most authentic country experience. Nomadic communities and vast steppes provided perspectives unavailable in any other developed nation.",
+              "vi": "Mông Cổ đã làm tôi choáng ngợp như trải nghiệm đất nước chân thực nhất. Cộng đồng du mục và thảo nguyên rộng lớn mang lại góc nhìn không có ở bất kỳ quốc gia phát triển nào khác.",
+              "vocabs": [
+                "country",
+                "Mongolia",
+                "authentic",
+                "nomadic communities",
+                "vast steppes",
+                "developed nation"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Which country offered the warmest hospitality from local people you encountered along the way?",
+              "vi": "Quốc gia nào đã mang đến sự hiếu khách ấm áp nhất từ người dân địa phương bạn gặp trên đường?",
+              "vocabs": [
+                "country",
+                "hospitality",
+                "local people"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Iranians welcomed travelers throughout their country generously. Strangers invited me into their homes for meals and shared traditional stories despite international political tensions.",
+              "vi": "Người Iran chào đón du khách khắp đất nước họ một cách hào phóng. Những người lạ mời tôi vào nhà ăn bữa và chia sẻ những câu chuyện truyền thống mặc dù có căng thẳng chính trị quốc tế.",
+              "vocabs": [
+                "country",
+                "Iranians",
+                "strangers",
+                "traditional stories",
+                "political tensions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "word": "cross",
+      "phonetic": "/krɒs/",
+      "pos": "Verb, Adjective, Noun",
+      "frequency": 585,
+      "categories": [
+        "General",
+        "Travel"
+      ],
+      "meanings": [
+        {
+          "vi": "Đi qua, băng qua từ bên này sang bên kia",
+          "examples": [
+            {
+              "en": "Please look both ways before crossing the street.",
+              "vi": "Hãy nhìn cả hai bên trước khi qua đường.",
+              "category": "Safety"
+            },
+            {
+              "en": "We crossed the river by boat.",
+              "vi": "Chúng tôi đã vượt sông bằng thuyền.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Bực bội, cảm thấy khó chịu hoặc giận dữ",
+          "examples": [
+            {
+              "en": "Don't be cross with me about the broken vase.",
+              "vi": "Đừng giận tôi vì cái bình vỡ.",
+              "category": "Emotion"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Border crossing · cross",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long did it take you to cross the border between Switzerland and Italy by train?",
+              "vi": "Mất bao lâu để bạn vượt qua biên giới giữa Thụy Sĩ và Ý bằng tàu hỏa?",
+              "vocabs": [
+                "cross",
+                "border",
+                "Switzerland",
+                "Italy",
+                "train"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Crossing took only forty minutes through the alpine tunnel. Stunning mountain landscapes provided breathtaking views during this scenic journey across European national boundaries.",
+              "vi": "Việc vượt qua chỉ mất bốn mươi phút qua đường hầm Alps. Phong cảnh núi non tuyệt đẹp đã mang lại tầm nhìn ngoạn mục trong hành trình đẹp như tranh qua biên giới quốc gia châu Âu này.",
+              "vocabs": [
+                "cross",
+                "alpine tunnel",
+                "mountain landscapes",
+                "breathtaking views",
+                "scenic journey",
+                "boundaries"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Did you need to show your passport when crossing this particular international border?",
+              "vi": "Bạn có cần xuất trình hộ chiếu khi vượt qua biên giới quốc tế cụ thể này không?",
+              "vocabs": [
+                "cross",
+                "passport",
+                "international border"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Officers rarely cross-check documents thoroughly within Schengen Zone countries. Modern European integration eliminates most bureaucratic procedures previously required at every transit point historically.",
+              "vi": "Các nhân viên hiếm khi kiểm tra chéo giấy tờ kỹ lưỡng trong các nước thuộc Khu vực Schengen. Hội nhập châu Âu hiện đại loại bỏ hầu hết các thủ tục hành chính trước đây được yêu cầu tại mỗi điểm chuyển tuyến.",
+              "vocabs": [
+                "cross-check",
+                "Schengen Zone",
+                "European integration",
+                "bureaucratic procedures",
+                "transit point"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "word": "culture",
+      "phonetic": "/ˈkʌltʃə(r)/",
+      "pos": "Noun",
+      "frequency": 580,
+      "categories": [
+        "General",
+        "Social"
+      ],
+      "meanings": [
+        {
+          "vi": "Văn hóa, phong tục và lối sống của một dân tộc",
+          "examples": [
+            {
+              "en": "Japanese culture is rich and complex.",
+              "vi": "Văn hóa Nhật Bản phong phú và phức tạp.",
+              "category": "Social"
+            },
+            {
+              "en": "Music is an important part of every culture.",
+              "vi": "Âm nhạc là phần quan trọng của mọi nền văn hóa.",
+              "category": "Arts"
+            }
+          ]
+        },
+        {
+          "vi": "Văn hóa doanh nghiệp, môi trường làm việc của công ty",
+          "examples": [
+            {
+              "en": "Our company has a strong team culture.",
+              "vi": "Công ty của chúng tôi có văn hóa nhóm mạnh mẽ.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Workplace dynamics · culture",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How would you describe the unique culture at your tech company compared to traditional corporations?",
+              "vi": "Bạn sẽ miêu tả văn hóa độc đáo tại công ty công nghệ của mình so với các tập đoàn truyền thống thế nào?",
+              "vocabs": [
+                "culture",
+                "unique",
+                "tech company",
+                "corporations"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our culture emphasizes radical transparency and continuous learning openly. Flat hierarchies encourage everyone to challenge ideas regardless of their seniority within the organization.",
+              "vi": "Văn hóa của chúng tôi nhấn mạnh sự minh bạch triệt để và học tập liên tục một cách cởi mở. Hệ thống phẳng khuyến khích mọi người thách thức ý tưởng bất kể thâm niên trong tổ chức.",
+              "vocabs": [
+                "culture",
+                "radical transparency",
+                "continuous learning",
+                "flat hierarchies",
+                "challenge ideas",
+                "seniority"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Has this distinctive culture impacted your ability to attract and retain top talent globally?",
+              "vi": "Văn hóa đặc biệt này có ảnh hưởng đến khả năng thu hút và giữ chân nhân tài hàng đầu toàn cầu không?",
+              "vocabs": [
+                "culture",
+                "attract",
+                "retain",
+                "top talent",
+                "globally"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Strong company culture significantly reduces our turnover rates. Engineers from competing firms frequently cite our environment when accepting positions despite occasionally lower salary offers.",
+              "vi": "Văn hóa công ty mạnh mẽ giảm đáng kể tỷ lệ nghỉ việc của chúng tôi. Các kỹ sư từ công ty đối thủ thường viện dẫn môi trường của chúng tôi khi chấp nhận các vị trí mặc dù đôi khi có mức lương thấp hơn.",
+              "vocabs": [
+                "culture",
+                "turnover rates",
+                "engineers",
+                "competing firms",
+                "environment",
+                "salary offers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "word": "daily",
+      "phonetic": "/ˈdeɪli/",
+      "pos": "Adjective, Adverb",
+      "frequency": 575,
+      "categories": [
+        "General",
+        "Habit"
+      ],
+      "meanings": [
+        {
+          "vi": "Hàng ngày, xảy ra mỗi ngày một lần",
+          "examples": [
+            {
+              "en": "I practice yoga daily.",
+              "vi": "Tôi tập yoga hàng ngày.",
+              "category": "Health"
+            },
+            {
+              "en": "She reads the daily newspaper.",
+              "vi": "Cô ấy đọc báo hàng ngày.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Thường nhật, liên quan đến cuộc sống bình thường",
+          "examples": [
+            {
+              "en": "Mobile phones are part of our daily life.",
+              "vi": "Điện thoại di động là một phần của cuộc sống hàng ngày.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Morning rituals · daily",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What does your daily morning routine look like before you start working from your home office?",
+              "vi": "Thói quen buổi sáng hàng ngày của bạn trông như thế nào trước khi bắt đầu làm việc tại văn phòng nhà?",
+              "vocabs": [
+                "daily",
+                "morning routine",
+                "home office"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "My daily ritual begins with meditation followed by intense exercise. Healthy breakfast and journaling complete this productivity-boosting sequence before logging into work platforms.",
+              "vi": "Nghi thức hàng ngày của tôi bắt đầu với thiền tiếp theo là tập thể dục cường độ cao. Bữa sáng lành mạnh và viết nhật ký hoàn thành chuỗi tăng năng suất này trước khi đăng nhập vào các nền tảng làm việc.",
+              "vocabs": [
+                "daily ritual",
+                "meditation",
+                "intense exercise",
+                "journaling",
+                "productivity-boosting",
+                "work platforms"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How long did establishing this consistent daily structure take after starting remote work last year?",
+              "vi": "Việc thiết lập cấu trúc hàng ngày nhất quán này mất bao lâu sau khi bắt đầu làm việc từ xa năm ngoái?",
+              "vocabs": [
+                "daily structure",
+                "consistent",
+                "remote work"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Building daily habits required three months of conscious effort. Tracking my progress through dedicated apps reinforced positive behaviors and gradually transformed scattered mornings into productive sessions.",
+              "vi": "Xây dựng thói quen hàng ngày đòi hỏi ba tháng nỗ lực có ý thức. Theo dõi tiến trình qua các ứng dụng chuyên dụng củng cố hành vi tích cực và dần dần biến những buổi sáng rời rạc thành những buổi làm việc năng suất.",
+              "vocabs": [
+                "daily habits",
+                "conscious effort",
+                "tracking progress",
+                "dedicated apps",
+                "positive behaviors",
+                "scattered mornings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "word": "damage",
+      "phonetic": "/ˈdæmɪdʒ/",
+      "pos": "Noun, Verb",
+      "frequency": 570,
+      "categories": [
+        "General",
+        "Safety"
+      ],
+      "meanings": [
+        {
+          "vi": "Thiệt hại, sự hư hại đến vật hoặc người",
+          "examples": [
+            {
+              "en": "The storm caused serious damage.",
+              "vi": "Cơn bão đã gây ra thiệt hại nghiêm trọng.",
+              "category": "Nature"
+            },
+            {
+              "en": "The damage to the car is extensive.",
+              "vi": "Thiệt hại đối với chiếc xe rất nặng.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Làm hư hại, gây tổn thương đến vật",
+          "examples": [
+            {
+              "en": "Smoking can damage your lungs seriously.",
+              "vi": "Hút thuốc có thể làm hỏng phổi nghiêm trọng.",
+              "category": "Health"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Property insurance · damage",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How much damage did the recent typhoon cause to your beachfront property last weekend?",
+              "vi": "Cơn bão gần đây đã gây ra bao nhiêu thiệt hại cho tài sản ven biển của bạn vào cuối tuần qua?",
+              "vocabs": [
+                "damage",
+                "typhoon",
+                "beachfront property",
+                "weekend"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Structural damage exceeded fifty thousand dollars unfortunately. Flooded basement, shattered windows, and roof tiles requiring complete replacement made this disaster particularly devastating financially.",
+              "vi": "Thiệt hại cấu trúc đã vượt quá năm mươi nghìn đô la không may. Tầng hầm ngập lụt, cửa sổ vỡ và ngói mái cần thay thế hoàn toàn khiến thảm họa này đặc biệt tàn phá về tài chính.",
+              "vocabs": [
+                "damage",
+                "structural",
+                "flooded basement",
+                "shattered windows",
+                "roof tiles",
+                "devastating"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Will your insurance policy cover the full cost of repairing all this damage thoroughly?",
+              "vi": "Bảo hiểm của bạn có chi trả toàn bộ chi phí sửa chữa tất cả thiệt hại này một cách kỹ lưỡng không?",
+              "vocabs": [
+                "damage",
+                "insurance policy",
+                "cost",
+                "repairing"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Comprehensive coverage handles most damage claims successfully. However, deductibles and depreciated values mean homeowners typically absorb fifteen percent of total restoration expenses themselves.",
+              "vi": "Bảo hiểm toàn diện xử lý hầu hết các yêu cầu bồi thường thiệt hại thành công. Tuy nhiên, mức khấu trừ và giá trị khấu hao có nghĩa là chủ nhà thường tự chịu mười lăm phần trăm tổng chi phí phục hồi.",
+              "vocabs": [
+                "damage claims",
+                "comprehensive coverage",
+                "deductibles",
+                "depreciated values",
+                "homeowners",
+                "restoration expenses"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "word": "dark",
+      "phonetic": "/dɑːk/",
+      "pos": "Adjective, Noun",
+      "frequency": 565,
+      "categories": [
+        "General",
+        "Nature"
+      ],
+      "meanings": [
+        {
+          "vi": "Tối, không có hoặc ít ánh sáng",
+          "examples": [
+            {
+              "en": "The room is too dark for reading.",
+              "vi": "Căn phòng quá tối để đọc sách.",
+              "category": "General"
+            },
+            {
+              "en": "It gets dark early in winter.",
+              "vi": "Trời tối sớm vào mùa đông.",
+              "category": "Nature"
+            }
+          ]
+        },
+        {
+          "vi": "Đậm, có màu sẫm hơn các tông khác",
+          "examples": [
+            {
+              "en": "She prefers dark chocolate to milk chocolate.",
+              "vi": "Cô ấy thích sô cô la đen hơn sô cô la sữa.",
+              "category": "Food"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Stargazing trip · dark",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did your astronomy club drive three hours specifically to find a dark sky reserve last weekend?",
+              "vi": "Tại sao câu lạc bộ thiên văn của bạn lại lái xe ba giờ đặc biệt để tìm khu bảo tồn bầu trời tối vào cuối tuần qua?",
+              "vocabs": [
+                "dark sky reserve",
+                "astronomy club",
+                "drive"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Light pollution makes urban stargazing virtually impossible nowadays. Truly dark locations reveal stunning galaxy formations and meteor showers invisible from any major populated area.",
+              "vi": "Ô nhiễm ánh sáng khiến việc ngắm sao đô thị gần như không thể ngày nay. Các địa điểm thực sự tối tiết lộ các hình thành thiên hà tuyệt đẹp và mưa sao băng không thể nhìn thấy từ bất kỳ khu vực đông dân lớn nào.",
+              "vocabs": [
+                "dark",
+                "light pollution",
+                "stargazing",
+                "galaxy formations",
+                "meteor showers",
+                "populated area"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How does your eye adjust to such overwhelming darkness when you first arrive at remote sites?",
+              "vi": "Mắt của bạn thích nghi với bóng tối choáng ngợp như vậy thế nào khi mới đến các địa điểm xa xôi?",
+              "vocabs": [
+                "dark",
+                "eye adjust",
+                "overwhelming",
+                "remote sites"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Adjusting to complete darkness requires forty patient minutes minimum. Avoiding bright phone screens beforehand maximizes night vision and helps astronomers identify faint celestial objects effectively.",
+              "vi": "Thích nghi với bóng tối hoàn toàn cần ít nhất bốn mươi phút kiên nhẫn. Tránh màn hình điện thoại sáng trước đó tối đa hóa tầm nhìn ban đêm và giúp các nhà thiên văn xác định các vật thể thiên thể mờ hiệu quả.",
+              "vocabs": [
+                "dark",
+                "patient",
+                "phone screens",
+                "night vision",
+                "celestial objects",
+                "astronomers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "word": "date",
+      "phonetic": "/deɪt/",
+      "pos": "Noun, Verb",
+      "frequency": 560,
+      "categories": [
+        "General",
+        "Time"
+      ],
+      "meanings": [
+        {
+          "vi": "Ngày tháng, thời điểm cụ thể trong lịch",
+          "examples": [
+            {
+              "en": "Please write the date at the top of the page.",
+              "vi": "Vui lòng viết ngày tháng ở đầu trang.",
+              "category": "General"
+            },
+            {
+              "en": "What is the date of your birthday?",
+              "vi": "Sinh nhật của bạn là ngày nào?",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Cuộc hẹn lãng mạn, buổi gặp gỡ giữa các cặp đôi",
+          "examples": [
+            {
+              "en": "They went on their first date last week.",
+              "vi": "Họ đã có buổi hẹn hò đầu tiên tuần trước.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Wedding planning · date",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you and your fiancé choose this specific date for your outdoor wedding ceremony?",
+              "vi": "Tại sao bạn và vị hôn phu chọn ngày cụ thể này cho lễ cưới ngoài trời?",
+              "vocabs": [
+                "date",
+                "fiancé",
+                "outdoor wedding ceremony"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "This date marks our seventh anniversary together meaningfully. Spring weather provides ideal conditions while flowering gardens create photogenic backdrops throughout our celebration venue.",
+              "vi": "Ngày này đánh dấu kỷ niệm bảy năm chúng tôi bên nhau một cách ý nghĩa. Thời tiết mùa xuân cung cấp điều kiện lý tưởng trong khi vườn hoa nở rộ tạo ra phông nền ăn ảnh khắp địa điểm lễ kỷ niệm.",
+              "vocabs": [
+                "date",
+                "anniversary",
+                "spring weather",
+                "flowering gardens",
+                "photogenic backdrops",
+                "celebration venue"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Have you confirmed all vendor availability for that specific date already through written contracts?",
+              "vi": "Bạn đã xác nhận tất cả nhà cung cấp có sẵn cho ngày cụ thể đó qua hợp đồng văn bản chưa?",
+              "vocabs": [
+                "date",
+                "vendor availability",
+                "written contracts"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "We secured this popular date six months in advance fortunately. Photographers, caterers, and florists confirmed bookings while wedding planners managed deposits to prevent unexpected cancellations.",
+              "vi": "Chúng tôi đã đảm bảo ngày phổ biến này trước sáu tháng may mắn. Nhiếp ảnh gia, người phục vụ và người trang trí hoa đã xác nhận đặt chỗ trong khi người lập kế hoạch đám cưới quản lý tiền đặt cọc để ngăn ngừa hủy bỏ bất ngờ.",
+              "vocabs": [
+                "date",
+                "photographers",
+                "caterers",
+                "florists",
+                "wedding planners",
+                "deposits"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "word": "deep",
+      "phonetic": "/diːp/",
+      "pos": "Adjective, Adverb",
+      "frequency": 555,
+      "categories": [
+        "General",
+        "Emotion"
+      ],
+      "meanings": [
+        {
+          "vi": "Sâu, có khoảng cách lớn từ trên xuống dưới",
+          "examples": [
+            {
+              "en": "The lake is very deep here.",
+              "vi": "Hồ nước rất sâu ở đây.",
+              "category": "Nature"
+            },
+            {
+              "en": "He took a deep breath before speaking.",
+              "vi": "Anh ấy hít một hơi sâu trước khi nói.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Sâu sắc, mãnh liệt về cảm xúc hoặc suy nghĩ",
+          "examples": [
+            {
+              "en": "She has a deep love for classical music.",
+              "vi": "Cô ấy có một tình yêu sâu sắc với âm nhạc cổ điển.",
+              "category": "Arts"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Diving experience · deep",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How deep have you descended during your professional scuba diving expeditions in tropical waters?",
+              "vi": "Bạn đã lặn sâu đến mức nào trong các chuyến thám hiểm lặn biển chuyên nghiệp ở vùng nước nhiệt đới?",
+              "vocabs": [
+                "deep",
+                "descended",
+                "scuba diving expeditions",
+                "tropical waters"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I dive down to forty meters deep regularly during exploration. Underwater pressure increases significantly while light diminishes, creating mysterious environments perfect for marine biology research.",
+              "vi": "Tôi lặn xuống bốn mươi mét sâu thường xuyên trong khám phá. Áp suất dưới nước tăng đáng kể trong khi ánh sáng giảm, tạo ra môi trường bí ẩn hoàn hảo cho nghiên cứu sinh học biển.",
+              "vocabs": [
+                "deep",
+                "underwater pressure",
+                "exploration",
+                "diminishes",
+                "mysterious environments",
+                "marine biology"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Do you experience deep emotional responses when exploring such isolated underwater environments alone?",
+              "vi": "Bạn có trải qua những phản ứng cảm xúc sâu sắc khi khám phá những môi trường dưới nước cô lập một mình không?",
+              "vocabs": [
+                "deep emotional",
+                "responses",
+                "isolated"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Diving creates deep meditative experiences unlike anything terrestrial. Floating weightlessly among coral reefs evokes profound tranquility while observing rare species fosters genuine appreciation for ecosystems.",
+              "vi": "Lặn tạo ra trải nghiệm thiền sâu sắc không giống bất cứ điều gì trên cạn. Lơ lửng không trọng lực giữa các rạn san hô gợi lên sự yên bình sâu sắc trong khi quan sát các loài quý hiếm thúc đẩy sự trân trọng chân thật đối với hệ sinh thái.",
+              "vocabs": [
+                "deep meditative",
+                "weightlessly",
+                "coral reefs",
+                "tranquility",
+                "rare species",
+                "ecosystems"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "word": "difference",
+      "phonetic": "/ˈdɪfrəns/",
+      "pos": "Noun",
+      "frequency": 550,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Sự khác biệt, điều không giống nhau giữa hai vật",
+          "examples": [
+            {
+              "en": "There is a big difference between the two cars.",
+              "vi": "Có sự khác biệt lớn giữa hai chiếc xe.",
+              "category": "General"
+            },
+            {
+              "en": "I can see the difference in their behavior.",
+              "vi": "Tôi có thể thấy sự khác biệt trong hành vi của họ.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Tác động, ảnh hưởng đáng kể đến điều gì đó",
+          "examples": [
+            {
+              "en": "Your support made all the difference.",
+              "vi": "Sự hỗ trợ của bạn đã tạo nên tất cả sự khác biệt.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Cultural adaptation · difference",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What major cultural differences surprised you most after relocating to South Korea two years ago?",
+              "vi": "Những khác biệt văn hóa lớn nào đã làm bạn ngạc nhiên nhất sau khi chuyển đến Hàn Quốc hai năm trước?",
+              "vocabs": [
+                "difference",
+                "cultural",
+                "relocating",
+                "South Korea"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "The hierarchical workplace difference shocked me initially. Respecting age-based seniority and using specific honorifics demanded careful attention during professional and personal interactions.",
+              "vi": "Sự khác biệt nơi làm việc theo thứ bậc đã làm tôi sốc ban đầu. Tôn trọng thâm niên dựa trên tuổi tác và sử dụng các từ kính ngữ cụ thể đòi hỏi sự chú ý cẩn thận trong các tương tác chuyên nghiệp và cá nhân.",
+              "vocabs": [
+                "difference",
+                "hierarchical workplace",
+                "age-based seniority",
+                "honorifics",
+                "professional",
+                "interactions"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Has understanding these differences improved your relationships with Korean colleagues over time gradually?",
+              "vi": "Hiểu được những khác biệt này có cải thiện mối quan hệ với đồng nghiệp Hàn Quốc theo thời gian dần dần không?",
+              "vocabs": [
+                "differences",
+                "improved",
+                "Korean colleagues"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Bridging these differences transformed my professional life completely. Embracing local customs while maintaining authentic personality created meaningful connections that transcended language barriers naturally.",
+              "vi": "Thu hẹp những khác biệt này đã biến đổi cuộc sống chuyên nghiệp của tôi hoàn toàn. Chấp nhận phong tục địa phương trong khi duy trì tính cách chân thực đã tạo ra những kết nối ý nghĩa vượt qua rào cản ngôn ngữ một cách tự nhiên.",
+              "vocabs": [
+                "difference",
+                "professional life",
+                "local customs",
+                "authentic personality",
+                "meaningful connections",
+                "language barriers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "word": "direct",
+      "phonetic": "/dəˈrekt/",
+      "pos": "Adjective, Verb",
+      "frequency": 545,
+      "categories": [
+        "Work",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Trực tiếp, đi thẳng không qua trung gian",
+          "examples": [
+            {
+              "en": "Take the direct route to save time.",
+              "vi": "Hãy đi đường trực tiếp để tiết kiệm thời gian.",
+              "category": "Travel"
+            },
+            {
+              "en": "She gave a direct answer to my question.",
+              "vi": "Cô ấy đã đưa ra câu trả lời thẳng thắn cho câu hỏi của tôi.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Chỉ đạo, hướng dẫn người khác thực hiện",
+          "examples": [
+            {
+              "en": "He directs the marketing team.",
+              "vi": "Anh ấy chỉ đạo đội ngũ marketing.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Leadership style · direct",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why have you adopted such a direct communication style with your engineering team this quarter?",
+              "vi": "Tại sao bạn đã áp dụng phong cách giao tiếp trực tiếp như vậy với đội ngũ kỹ sư của mình quý này?",
+              "vocabs": [
+                "direct",
+                "communication style",
+                "engineering team",
+                "quarter"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Direct feedback eliminates wasteful misunderstandings throughout our projects. Engineers appreciate clear expectations and specific guidance more than diplomatic phrasing during critical product development phases.",
+              "vi": "Phản hồi trực tiếp loại bỏ những hiểu lầm lãng phí trong các dự án của chúng tôi. Kỹ sư đánh giá cao kỳ vọng rõ ràng và hướng dẫn cụ thể hơn là cách diễn đạt ngoại giao trong các giai đoạn phát triển sản phẩm quan trọng.",
+              "vocabs": [
+                "direct feedback",
+                "misunderstandings",
+                "expectations",
+                "guidance",
+                "diplomatic phrasing",
+                "product development"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Doesn't being too direct sometimes hurt feelings or damage workplace morale unintentionally?",
+              "vi": "Việc quá trực tiếp đôi khi không làm tổn thương cảm xúc hoặc tổn hại tinh thần công sở một cách vô tình sao?",
+              "vocabs": [
+                "direct",
+                "hurt feelings",
+                "workplace morale",
+                "unintentionally"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Balanced direct communication respects everyone's dignity simultaneously. Pairing honest critique with genuine appreciation prevents resentment while building trust between leaders and team members effectively.",
+              "vi": "Giao tiếp trực tiếp cân bằng tôn trọng phẩm giá của mọi người đồng thời. Kết hợp phê bình trung thực với sự đánh giá cao chân thành ngăn ngừa sự oán giận trong khi xây dựng lòng tin giữa các nhà lãnh đạo và thành viên nhóm hiệu quả.",
+              "vocabs": [
+                "direct communication",
+                "dignity",
+                "honest critique",
+                "genuine appreciation",
+                "resentment",
+                "trust"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "word": "distance",
+      "phonetic": "/ˈdɪstəns/",
+      "pos": "Noun",
+      "frequency": 540,
+      "categories": [
+        "General",
+        "Travel"
+      ],
+      "meanings": [
+        {
+          "vi": "Khoảng cách, khoảng giữa hai địa điểm hoặc vật",
+          "examples": [
+            {
+              "en": "The distance between the two cities is 500 kilometers.",
+              "vi": "Khoảng cách giữa hai thành phố là 500 ki-lô-mét.",
+              "category": "Geography"
+            },
+            {
+              "en": "He could see the mountain in the distance.",
+              "vi": "Anh ấy có thể nhìn thấy ngọn núi ở xa xa.",
+              "category": "Nature"
+            }
+          ]
+        },
+        {
+          "vi": "Sự cách xa, khoảng trống về cảm xúc hoặc quan hệ",
+          "examples": [
+            {
+              "en": "There is some distance in their relationship now.",
+              "vi": "Có một khoảng cách trong mối quan hệ của họ bây giờ.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Marathon training · distance",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long does it take you to cover the full marathon distance during training sessions?",
+              "vi": "Mất bao lâu để bạn hoàn thành quãng đường marathon đầy đủ trong các buổi tập luyện?",
+              "vocabs": [
+                "distance",
+                "marathon",
+                "training sessions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Completing the entire distance takes me approximately three hours and forty minutes consistently. Pacing strategy and proper hydration determine whether I finish strong or struggle painfully.",
+              "vi": "Hoàn thành toàn bộ quãng đường mất khoảng ba giờ bốn mươi phút một cách nhất quán. Chiến lược điều phối nhịp độ và bù nước đúng cách quyết định liệu tôi kết thúc mạnh mẽ hay vật lộn đau đớn.",
+              "vocabs": [
+                "distance",
+                "completing",
+                "pacing strategy",
+                "hydration",
+                "struggle",
+                "painfully"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What strategies help you mentally cope with such overwhelming distance during competitive races?",
+              "vi": "Những chiến lược nào giúp bạn đối phó tinh thần với khoảng cách choáng ngợp như vậy trong các cuộc đua cạnh tranh?",
+              "vocabs": [
+                "distance",
+                "mentally cope",
+                "competitive races"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Breaking the distance into smaller mental segments works wonderfully. Focusing on individual mile markers prevents anxiety while celebrating gradual progress maintains motivation throughout exhausting hours.",
+              "vi": "Chia quãng đường thành các đoạn tinh thần nhỏ hơn hoạt động tuyệt vời. Tập trung vào các mốc mile riêng lẻ ngăn ngừa lo lắng trong khi ăn mừng sự tiến bộ dần dần duy trì động lực trong nhiều giờ kiệt sức.",
+              "vocabs": [
+                "distance",
+                "mental segments",
+                "mile markers",
+                "anxiety",
+                "motivation",
+                "exhausting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "word": "drop",
+      "phonetic": "/drɒp/",
+      "pos": "Verb, Noun",
+      "frequency": 535,
+      "categories": [
+        "General",
+        "Travel"
+      ],
+      "meanings": [
+        {
+          "vi": "Rơi, để cho vật rơi xuống đất",
+          "examples": [
+            {
+              "en": "He accidentally dropped his phone.",
+              "vi": "Anh ấy vô tình làm rơi điện thoại.",
+              "category": "General"
+            },
+            {
+              "en": "Temperatures dropped overnight.",
+              "vi": "Nhiệt độ giảm vào ban đêm.",
+              "category": "Nature"
+            }
+          ]
+        },
+        {
+          "vi": "Giọt, lượng nhỏ chất lỏng",
+          "examples": [
+            {
+              "en": "Add a few drops of lemon to the tea.",
+              "vi": "Thêm vài giọt chanh vào trà.",
+              "category": "Food"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Stock market · drop",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How did investors react when the stock market suddenly dropped twelve percent overnight last Tuesday?",
+              "vi": "Các nhà đầu tư đã phản ứng như thế nào khi thị trường chứng khoán đột nhiên giảm mười hai phần trăm chỉ sau một đêm vào thứ Ba tuần trước?",
+              "vocabs": [
+                "drop",
+                "investors",
+                "stock market",
+                "overnight"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Many panicked traders dropped their holdings immediately fearing further declines. Experienced investors remained calm and viewed this dramatic drop as an excellent purchasing opportunity.",
+              "vi": "Nhiều nhà giao dịch hoảng loạn đã bán tháo cổ phần ngay lập tức vì sợ giảm thêm. Các nhà đầu tư có kinh nghiệm giữ bình tĩnh và xem sự giảm mạnh này như một cơ hội mua tuyệt vời.",
+              "vocabs": [
+                "drop",
+                "panicked traders",
+                "holdings",
+                "declines",
+                "experienced investors",
+                "purchasing opportunity"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What economic factors typically cause such dramatic price drops during otherwise stable trading periods?",
+              "vi": "Những yếu tố kinh tế nào thường gây ra sự giảm giá mạnh như vậy trong các giai đoạn giao dịch ổn định?",
+              "vocabs": [
+                "drops",
+                "economic factors",
+                "stable trading"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Geopolitical tensions and inflation concerns trigger sudden drops frequently. Central bank policies, corporate earnings reports, and consumer confidence indicators all influence dramatic market fluctuations significantly.",
+              "vi": "Căng thẳng địa chính trị và lo ngại lạm phát kích hoạt sự giảm đột ngột thường xuyên. Chính sách ngân hàng trung ương, báo cáo thu nhập doanh nghiệp và chỉ số niềm tin người tiêu dùng đều ảnh hưởng đến biến động thị trường đáng kể.",
+              "vocabs": [
+                "drops",
+                "geopolitical tensions",
+                "inflation",
+                "central bank",
+                "corporate earnings",
+                "consumer confidence"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "word": "early",
+      "phonetic": "/ˈɜːli/",
+      "pos": "Adjective, Adverb",
+      "frequency": 530,
+      "categories": [
+        "Time",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Sớm, trước thời gian thông thường",
+          "examples": [
+            {
+              "en": "She arrived early for the meeting.",
+              "vi": "Cô ấy đến sớm cho cuộc họp.",
+              "category": "Work"
+            },
+            {
+              "en": "We need an early start tomorrow.",
+              "vi": "Chúng tôi cần khởi hành sớm vào ngày mai.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Đầu, ở giai đoạn ban đầu của thời kỳ",
+          "examples": [
+            {
+              "en": "In the early morning, the streets are quiet.",
+              "vi": "Vào sáng sớm, đường phố yên tĩnh.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Sleep habits · early",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you suddenly switch to becoming an early riser after years of staying up late?",
+              "vi": "Tại sao bạn đột nhiên chuyển sang dậy sớm sau nhiều năm thức khuya?",
+              "vocabs": [
+                "early riser",
+                "switch",
+                "staying up late"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Waking up early transformed my productivity dramatically. Quiet mornings provide focused hours for creative work before notifications and meetings consume my entire attention span.",
+              "vi": "Thức dậy sớm đã biến đổi năng suất của tôi đáng kể. Buổi sáng yên tĩnh cung cấp những giờ tập trung cho công việc sáng tạo trước khi thông báo và cuộc họp tiêu thụ toàn bộ sự chú ý của tôi.",
+              "vocabs": [
+                "early",
+                "productivity",
+                "quiet mornings",
+                "focused hours",
+                "notifications",
+                "attention span"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How early do you typically wake up to maximize this peaceful morning routine effectively?",
+              "vi": "Bạn thường dậy sớm đến mức nào để tối đa hóa thói quen sáng yên bình hiệu quả?",
+              "vocabs": [
+                "early",
+                "peaceful",
+                "morning routine"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I rise consistently at five-thirty every morning regardless of weekends. Early birds enjoy peaceful sunrises, productive sessions, and remarkable mental clarity that night owls genuinely miss.",
+              "vi": "Tôi dậy đều đặn vào năm giờ ba mươi mỗi sáng bất kể cuối tuần. Người dậy sớm tận hưởng cảnh bình minh yên bình, các phiên làm việc năng suất và sự minh mẫn tinh thần đáng chú ý mà người thức khuya thực sự bỏ lỡ.",
+              "vocabs": [
+                "early birds",
+                "sunrises",
+                "productive sessions",
+                "mental clarity",
+                "night owls"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "word": "earth",
+      "phonetic": "/ɜːθ/",
+      "pos": "Noun",
+      "frequency": 525,
+      "categories": [
+        "Science",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Trái đất, hành tinh chúng ta đang sống",
+          "examples": [
+            {
+              "en": "The Earth orbits the sun once a year.",
+              "vi": "Trái đất quay quanh mặt trời một lần mỗi năm.",
+              "category": "Science"
+            },
+            {
+              "en": "Climate change affects the entire Earth.",
+              "vi": "Biến đổi khí hậu ảnh hưởng đến toàn bộ Trái đất.",
+              "category": "Nature"
+            }
+          ]
+        },
+        {
+          "vi": "Đất, lớp đất bề mặt nơi cây cối mọc",
+          "examples": [
+            {
+              "en": "The seeds were planted in fertile earth.",
+              "vi": "Hạt giống được trồng trong đất màu mỡ.",
+              "category": "Nature"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Environmental crisis · earth",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How worried should we genuinely be about Earth's deteriorating climate condition over the next century?",
+              "vi": "Chúng ta nên lo lắng thực sự đến mức nào về tình trạng khí hậu đang xấu đi của Trái đất trong thế kỷ tới?",
+              "vocabs": [
+                "earth",
+                "deteriorating climate",
+                "century"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Scientific evidence about Earth's warming patterns demands immediate global action. Rising sea levels and extreme weather events threaten coastal populations across diverse continents simultaneously.",
+              "vi": "Bằng chứng khoa học về các mô hình ấm lên của Trái đất đòi hỏi hành động toàn cầu ngay lập tức. Mực nước biển dâng và các sự kiện thời tiết khắc nghiệt đe dọa các quần thể ven biển trên các châu lục đa dạng đồng thời.",
+              "vocabs": [
+                "earth",
+                "scientific evidence",
+                "warming patterns",
+                "sea levels",
+                "extreme weather",
+                "coastal populations"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What can ordinary citizens do to protect our shared Earth from further environmental destruction?",
+              "vi": "Người dân bình thường có thể làm gì để bảo vệ Trái đất chung của chúng ta khỏi sự tàn phá môi trường thêm?",
+              "vocabs": [
+                "earth",
+                "ordinary citizens",
+                "environmental destruction"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Saving Earth requires collective effort beyond individual sacrifices alone. Reducing consumption, supporting renewable energy initiatives, and pressuring corporations through informed voting create meaningful systemic transformation.",
+              "vi": "Cứu Trái đất đòi hỏi nỗ lực tập thể vượt ra ngoài hy sinh cá nhân đơn thuần. Giảm tiêu thụ, hỗ trợ các sáng kiến năng lượng tái tạo và gây áp lực lên các tập đoàn thông qua việc bỏ phiếu có hiểu biết tạo ra sự chuyển đổi hệ thống có ý nghĩa.",
+              "vocabs": [
+                "earth",
+                "collective effort",
+                "consumption",
+                "renewable energy",
+                "corporations",
+                "systemic transformation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "word": "easy",
+      "phonetic": "/ˈiːzi/",
+      "pos": "Adjective",
+      "frequency": 520,
+      "categories": [
+        "General",
+        "Education"
+      ],
+      "meanings": [
+        {
+          "vi": "Dễ dàng, không gây khó khăn",
+          "examples": [
+            {
+              "en": "This recipe is very easy to follow.",
+              "vi": "Công thức này rất dễ làm theo.",
+              "category": "Food"
+            },
+            {
+              "en": "She finds math easy.",
+              "vi": "Cô ấy thấy môn toán dễ.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Thoải mái, không bị căng thẳng",
+          "examples": [
+            {
+              "en": "He has an easy life now.",
+              "vi": "Anh ấy có một cuộc sống thoải mái bây giờ.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Coding bootcamp · easy",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Was learning programming actually as easy as the bootcamp marketing materials promised before enrollment?",
+              "vi": "Việc học lập trình thực sự có dễ như tài liệu marketing của bootcamp đã hứa trước khi đăng ký không?",
+              "vocabs": [
+                "easy",
+                "programming",
+                "bootcamp",
+                "enrollment"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Beginner concepts seemed easy initially during the foundation weeks. However, advanced algorithms and complex frameworks demanded significant problem-solving skills beyond basic syntax memorization.",
+              "vi": "Các khái niệm cơ bản có vẻ dễ ban đầu trong các tuần nền tảng. Tuy nhiên, các thuật toán nâng cao và các framework phức tạp đòi hỏi kỹ năng giải quyết vấn đề đáng kể vượt ra ngoài việc ghi nhớ cú pháp cơ bản.",
+              "vocabs": [
+                "easy",
+                "beginner concepts",
+                "advanced algorithms",
+                "complex frameworks",
+                "problem-solving",
+                "syntax memorization"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What made certain programming concepts feel particularly easy compared to other challenging subjects?",
+              "vi": "Điều gì khiến một số khái niệm lập trình cảm thấy đặc biệt dễ so với các môn học thử thách khác?",
+              "vocabs": [
+                "easy",
+                "programming concepts",
+                "challenging subjects"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Topics involving logical patterns came easily because mathematics provided strong foundations. Visual concepts like web design also felt accessible since immediate results encouraged continuous experimentation throughout learning sessions.",
+              "vi": "Các chủ đề liên quan đến mẫu hình logic đến dễ dàng vì toán học cung cấp nền tảng mạnh mẽ. Các khái niệm trực quan như thiết kế web cũng cảm thấy dễ tiếp cận vì kết quả tức thời khuyến khích thử nghiệm liên tục trong suốt các phiên học tập.",
+              "vocabs": [
+                "easily",
+                "logical patterns",
+                "mathematics",
+                "visual concepts",
+                "web design",
+                "experimentation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "word": "effect",
+      "phonetic": "/ɪˈfekt/",
+      "pos": "Noun",
+      "frequency": 515,
+      "categories": [
+        "General",
+        "Science"
+      ],
+      "meanings": [
+        {
+          "vi": "Hiệu quả, kết quả của một hành động hoặc quá trình",
+          "examples": [
+            {
+              "en": "The medicine had a positive effect.",
+              "vi": "Thuốc đã có hiệu quả tích cực.",
+              "category": "Health"
+            },
+            {
+              "en": "Exercise has a great effect on mood.",
+              "vi": "Tập thể dục có tác động lớn đến tâm trạng.",
+              "category": "Health"
+            }
+          ]
+        },
+        {
+          "vi": "Hiệu ứng, sự ấn tượng tạo ra cho người khác",
+          "examples": [
+            {
+              "en": "The lighting created a dramatic effect.",
+              "vi": "Ánh sáng tạo ra hiệu ứng kịch tính.",
+              "category": "Arts"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Meditation benefits · effect",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What positive effects have you noticed since starting daily meditation practice six months ago?",
+              "vi": "Bạn đã nhận thấy những hiệu quả tích cực nào kể từ khi bắt đầu thực hành thiền hàng ngày sáu tháng trước?",
+              "vocabs": [
+                "effects",
+                "meditation practice",
+                "months"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "The cumulative effect on stress levels has been remarkable throughout months. Improved concentration and emotional regulation transformed both my professional performance and personal relationships significantly.",
+              "vi": "Tác động tích lũy lên mức độ căng thẳng đã đáng chú ý trong nhiều tháng. Sự tập trung được cải thiện và điều chỉnh cảm xúc đã biến đổi cả hiệu suất chuyên môn và mối quan hệ cá nhân đáng kể.",
+              "vocabs": [
+                "effect",
+                "cumulative",
+                "stress levels",
+                "concentration",
+                "emotional regulation",
+                "professional performance"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Have you noticed any negative effects or unexpected challenges from this consistent meditation routine?",
+              "vi": "Bạn có nhận thấy bất kỳ hiệu quả tiêu cực hoặc thử thách bất ngờ nào từ thói quen thiền nhất quán này không?",
+              "vocabs": [
+                "negative effects",
+                "unexpected challenges",
+                "consistent"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Meditation occasionally brought difficult emotional effects to surface unexpectedly. Processing buried feelings required additional therapy sessions, ultimately producing healthier psychological wellbeing across longer durations gradually.",
+              "vi": "Thiền đôi khi mang đến những hiệu quả cảm xúc khó khăn bất ngờ. Xử lý những cảm xúc bị chôn vùi đòi hỏi các buổi trị liệu bổ sung, cuối cùng tạo ra phúc lợi tâm lý lành mạnh hơn qua thời gian dài hơn dần dần.",
+              "vocabs": [
+                "effects",
+                "buried feelings",
+                "therapy sessions",
+                "psychological wellbeing",
+                "durations",
+                "gradually"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "word": "empty",
+      "phonetic": "/ˈempti/",
+      "pos": "Adjective, Verb",
+      "frequency": 510,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Trống rỗng, không chứa gì bên trong",
+          "examples": [
+            {
+              "en": "The bottle is empty.",
+              "vi": "Cái chai trống không.",
+              "category": "General"
+            },
+            {
+              "en": "The streets were empty late at night.",
+              "vi": "Đường phố vắng vẻ vào đêm khuya.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Đổ ra, làm cho thứ gì đó trở nên trống không",
+          "examples": [
+            {
+              "en": "She emptied the trash before leaving.",
+              "vi": "Cô ấy đã đổ rác trước khi rời đi.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Office downsizing · empty",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why does the entire third floor look completely empty when most employees still work full-time?",
+              "vi": "Tại sao toàn bộ tầng ba trông hoàn toàn trống vắng khi hầu hết nhân viên vẫn làm việc toàn thời gian?",
+              "vocabs": [
+                "empty",
+                "entire third floor",
+                "employees",
+                "full-time"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Hybrid work policies left many desks permanently empty throughout weekdays. Companies recognize that flexible arrangements reduce overhead expenses while maintaining productivity through digital collaboration platforms.",
+              "vi": "Chính sách làm việc kết hợp khiến nhiều bàn làm việc trống vĩnh viễn trong các ngày trong tuần. Các công ty nhận ra rằng các sắp xếp linh hoạt giảm chi phí gián tiếp trong khi duy trì năng suất thông qua các nền tảng cộng tác kỹ thuật số.",
+              "vocabs": [
+                "empty",
+                "hybrid work",
+                "weekdays",
+                "flexible arrangements",
+                "overhead expenses",
+                "digital collaboration"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What does management plan to do with these empty office spaces during the transition period?",
+              "vi": "Ban quản lý dự định làm gì với những không gian văn phòng trống này trong giai đoạn chuyển đổi?",
+              "vocabs": [
+                "empty",
+                "office spaces",
+                "transition period"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Leadership emptied entire sections to convert them into collaborative meeting hubs. Subleasing remaining empty floors generates additional revenue while smaller dedicated zones serve current operational needs efficiently.",
+              "vi": "Lãnh đạo đã làm trống toàn bộ các khu vực để chuyển đổi thành các trung tâm họp cộng tác. Cho thuê lại các tầng trống còn lại tạo ra doanh thu bổ sung trong khi các khu vực chuyên dụng nhỏ hơn phục vụ nhu cầu vận hành hiện tại hiệu quả.",
+              "vocabs": [
+                "empty",
+                "collaborative meeting hubs",
+                "subleasing",
+                "revenue",
+                "dedicated zones",
+                "operational needs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "word": "enough",
+      "phonetic": "/ɪˈnʌf/",
+      "pos": "Determiner, Pronoun, Adverb",
+      "frequency": 505,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Đủ, lượng cần thiết để đáp ứng yêu cầu",
+          "examples": [
+            {
+              "en": "Do we have enough food for everyone?",
+              "vi": "Chúng ta có đủ thức ăn cho mọi người không?",
+              "category": "Food"
+            },
+            {
+              "en": "She earned enough money to buy a car.",
+              "vi": "Cô ấy đã kiếm đủ tiền để mua một chiếc xe.",
+              "category": "Finance"
+            }
+          ]
+        },
+        {
+          "vi": "Đủ rồi, giới hạn không cần thêm nữa",
+          "examples": [
+            {
+              "en": "That's enough complaining for today.",
+              "vi": "Hôm nay phàn nàn như vậy đủ rồi.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Burnout recovery · enough",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you finally decide that taking sabbatical leave was important enough to risk your career advancement?",
+              "vi": "Tại sao bạn cuối cùng quyết định rằng nghỉ phép dài hạn đủ quan trọng để mạo hiểm sự thăng tiến nghề nghiệp?",
+              "vocabs": [
+                "enough",
+                "sabbatical leave",
+                "risk",
+                "career advancement"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Years of overwork eventually proved enough to damage my health seriously. Physical symptoms and chronic anxiety convinced me that recovery requires substantial time away from professional pressures.",
+              "vi": "Nhiều năm làm việc quá sức cuối cùng đã đủ để làm tổn hại sức khỏe của tôi nghiêm trọng. Các triệu chứng thể chất và lo lắng mãn tính đã thuyết phục tôi rằng phục hồi đòi hỏi thời gian đáng kể tránh xa áp lực chuyên môn.",
+              "vocabs": [
+                "enough",
+                "overwork",
+                "physical symptoms",
+                "chronic anxiety",
+                "recovery",
+                "professional pressures"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How much time do you genuinely need to feel recovered enough to return successfully?",
+              "vi": "Bạn thực sự cần bao nhiêu thời gian để cảm thấy phục hồi đủ để quay lại thành công?",
+              "vocabs": [
+                "enough",
+                "recovered",
+                "return"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Six months should provide enough mental restoration for sustainable returning. Therapy sessions, meaningful hobbies, and family connection together rebuild emotional resilience essential before resuming demanding responsibilities again.",
+              "vi": "Sáu tháng sẽ cung cấp đủ sự phục hồi tinh thần để trở lại bền vững. Các buổi trị liệu, sở thích ý nghĩa và kết nối gia đình cùng nhau xây dựng lại sức bền cảm xúc cần thiết trước khi tiếp tục các trách nhiệm đòi hỏi.",
+              "vocabs": [
+                "enough",
+                "mental restoration",
+                "therapy sessions",
+                "meaningful hobbies",
+                "emotional resilience",
+                "demanding responsibilities"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "word": "even",
+      "phonetic": "/ˈiːvn/",
+      "pos": "Adjective, Adverb",
+      "frequency": 500,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Ngay cả, dùng để nhấn mạnh điều bất ngờ",
+          "examples": [
+            {
+              "en": "Even children can solve this puzzle.",
+              "vi": "Ngay cả trẻ em cũng có thể giải câu đố này.",
+              "category": "Education"
+            },
+            {
+              "en": "He was working even on weekends.",
+              "vi": "Anh ấy thậm chí làm việc cả vào cuối tuần.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Bằng phẳng, đều, không có chỗ lồi lõm",
+          "examples": [
+            {
+              "en": "The table has an even surface.",
+              "vi": "Cái bàn có bề mặt phẳng.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Public speaking · even",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How do you maintain such an even tone of voice even when audiences disagree with your controversial points?",
+              "vi": "Làm sao bạn duy trì giọng nói đều như vậy ngay cả khi khán giả không đồng ý với các quan điểm gây tranh cãi của bạn?",
+              "vocabs": [
+                "even tone",
+                "voice",
+                "controversial points"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Years of debate training taught me to remain composed even during heated exchanges. Breathing techniques and mental preparation help speakers project confidence regardless of unexpected emotional pushback.",
+              "vi": "Nhiều năm đào tạo tranh luận đã dạy tôi giữ bình tĩnh ngay cả trong các trao đổi nóng nảy. Các kỹ thuật thở và chuẩn bị tinh thần giúp diễn giả thể hiện sự tự tin bất kể phản ứng cảm xúc bất ngờ.",
+              "vocabs": [
+                "even",
+                "debate training",
+                "composed",
+                "breathing techniques",
+                "mental preparation",
+                "emotional pushback"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Can even introverted personalities really learn this kind of professional public speaking effectiveness?",
+              "vi": "Ngay cả những người có tính cách hướng nội thực sự có thể học loại hiệu quả phát biểu công khai chuyên nghiệp này không?",
+              "vocabs": [
+                "even",
+                "introverted personalities",
+                "public speaking effectiveness"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Even naturally shy individuals develop powerful presentation skills through deliberate practice. Joining Toastmasters chapters and recording rehearsals builds remarkable confidence over consistent practice cycles spanning months.",
+              "vi": "Ngay cả những cá nhân nhút nhát tự nhiên cũng phát triển kỹ năng thuyết trình mạnh mẽ thông qua thực hành có chủ ý. Tham gia các chi nhánh Toastmasters và ghi âm tập dượt xây dựng sự tự tin đáng chú ý qua các chu kỳ thực hành nhất quán kéo dài nhiều tháng.",
+              "vocabs": [
+                "even",
+                "naturally shy",
+                "deliberate practice",
+                "Toastmasters chapters",
+                "rehearsals",
+                "practice cycles"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "word": "event",
+      "phonetic": "/ɪˈvent/",
+      "pos": "Noun",
+      "frequency": 495,
+      "categories": [
+        "General",
+        "Education"
+      ],
+      "meanings": [
+        {
+          "vi": "Sự kiện, một sự việc đáng chú ý xảy ra",
+          "examples": [
+            {
+              "en": "The wedding was a beautiful event.",
+              "vi": "Đám cưới là một sự kiện đẹp đẽ.",
+              "category": "Family"
+            },
+            {
+              "en": "Recent events have changed everything.",
+              "vi": "Các sự kiện gần đây đã thay đổi mọi thứ.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Cuộc thi đấu, sự kiện thể thao có tổ chức",
+          "examples": [
+            {
+              "en": "The Olympics is a major sporting event.",
+              "vi": "Thế vận hội là một sự kiện thể thao lớn.",
+              "category": "Sports"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Conference organizing · event",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long did you spend organizing this international tech event that attracted thousands of attendees globally?",
+              "vi": "Bạn đã mất bao lâu để tổ chức sự kiện công nghệ quốc tế này thu hút hàng nghìn người tham dự toàn cầu?",
+              "vocabs": [
+                "event",
+                "organizing",
+                "international",
+                "attendees",
+                "globally"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Planning this massive event consumed eighteen months of intense preparation. Coordinating venues, securing keynote speakers, and managing complex logistics required dedicated teams working around the clock.",
+              "vi": "Lập kế hoạch sự kiện lớn này đã tiêu tốn mười tám tháng chuẩn bị căng thẳng. Điều phối địa điểm, đảm bảo diễn giả chính và quản lý hậu cần phức tạp đòi hỏi các đội ngũ chuyên dụng làm việc suốt ngày đêm.",
+              "vocabs": [
+                "event",
+                "intense preparation",
+                "coordinating venues",
+                "keynote speakers",
+                "logistics",
+                "around the clock"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What unexpected challenges arose during the actual event despite such thorough preparation beforehand?",
+              "vi": "Những thử thách bất ngờ nào đã phát sinh trong sự kiện thực tế mặc dù đã chuẩn bị kỹ lưỡng như vậy trước đó?",
+              "vocabs": [
+                "event",
+                "unexpected challenges",
+                "thorough preparation"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Last-minute speaker cancellations threatened the event significantly. Having backup plans and flexible programming saved attendee experiences while networking sessions evolved into surprisingly productive collaborative opportunities.",
+              "vi": "Việc hủy bỏ diễn giả vào phút chót đã đe dọa sự kiện đáng kể. Có kế hoạch dự phòng và lịch trình linh hoạt đã cứu trải nghiệm của người tham dự trong khi các phiên kết nối mạng đã phát triển thành các cơ hội cộng tác năng suất một cách bất ngờ.",
+              "vocabs": [
+                "event",
+                "speaker cancellations",
+                "backup plans",
+                "flexible programming",
+                "networking sessions",
+                "collaborative opportunities"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "word": "open",
+      "phonetic": "/ˈəʊpən/",
+      "pos": "Verb, Adjective",
+      "frequency": 490,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Mở, làm cho không còn đóng kín",
+          "examples": [
+            {
+              "en": "Please open the window for some fresh air.",
+              "vi": "Vui lòng mở cửa sổ để có không khí trong lành.",
+              "category": "General"
+            },
+            {
+              "en": "She opened the gift slowly.",
+              "vi": "Cô ấy mở quà từ từ.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Cởi mở, sẵn sàng chia sẻ và chấp nhận",
+          "examples": [
+            {
+              "en": "He is open to new ideas.",
+              "vi": "Anh ấy cởi mở với những ý tưởng mới.",
+              "category": "Thinking"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Bookstore launch · open",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you decide to open an independent bookstore in this competitive digital era?",
+              "vi": "Tại sao bạn quyết định mở một hiệu sách độc lập trong kỷ nguyên số cạnh tranh này?",
+              "vocabs": [
+                "open",
+                "independent bookstore",
+                "competitive",
+                "digital era"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Communities desperately need physical spaces that remain open for genuine literary discussions. Online platforms cannot replicate the intimate browsing experience traditional bookshops naturally provide.",
+              "vi": "Cộng đồng đang cần các không gian vật lý vẫn mở cho các thảo luận văn học chân thực. Các nền tảng trực tuyến không thể tái tạo trải nghiệm duyệt sách thân mật mà các hiệu sách truyền thống tự nhiên mang lại.",
+              "vocabs": [
+                "open",
+                "communities",
+                "physical spaces",
+                "literary discussions",
+                "intimate browsing",
+                "bookshops"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How are you keeping the shop open profitably despite Amazon's overwhelming market dominance?",
+              "vi": "Bạn duy trì hiệu sách mở cửa có lãi như thế nào bất chấp sự thống trị thị trường áp đảo của Amazon?",
+              "vocabs": [
+                "open",
+                "profitably",
+                "market dominance"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "We open weekly events featuring local authors and reading clubs regularly. Diversifying revenue through coffee sales and curated subscription boxes builds loyal customers seeking authentic experiences.",
+              "vi": "Chúng tôi mở các sự kiện hàng tuần có sự tham gia của các tác giả địa phương và câu lạc bộ đọc sách thường xuyên. Đa dạng hóa doanh thu thông qua bán cà phê và hộp đăng ký được tuyển chọn xây dựng khách hàng trung thành tìm kiếm trải nghiệm chân thực.",
+              "vocabs": [
+                "open",
+                "weekly events",
+                "local authors",
+                "diversifying revenue",
+                "curated subscription",
+                "loyal customers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "word": "play",
+      "phonetic": "/pleɪ/",
+      "pos": "Verb, Noun",
+      "frequency": 485,
+      "categories": [
+        "General",
+        "Sports"
+      ],
+      "meanings": [
+        {
+          "vi": "Chơi, tham gia trò chơi hoặc hoạt động giải trí",
+          "examples": [
+            {
+              "en": "Children love to play in the park.",
+              "vi": "Trẻ em thích chơi trong công viên.",
+              "category": "Family"
+            },
+            {
+              "en": "She plays the piano beautifully.",
+              "vi": "Cô ấy chơi đàn piano rất đẹp.",
+              "category": "Arts"
+            }
+          ]
+        },
+        {
+          "vi": "Vở kịch, tác phẩm sân khấu được biểu diễn",
+          "examples": [
+            {
+              "en": "We watched a Shakespeare play last night.",
+              "vi": "Chúng tôi đã xem một vở kịch Shakespeare tối qua.",
+              "category": "Arts"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Music education · play",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long have you been able to play classical violin pieces fluently in front of audiences?",
+              "vi": "Bạn đã có thể chơi các tác phẩm violin cổ điển trôi chảy trước khán giả được bao lâu?",
+              "vocabs": [
+                "play",
+                "classical violin",
+                "fluently",
+                "audiences"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I started learning to play violin twelve years ago at age six. Performing complex compositions onstage required thousands of dedicated practice hours over multiple challenging years.",
+              "vi": "Tôi bắt đầu học chơi violin mười hai năm trước khi lên sáu tuổi. Biểu diễn các tác phẩm phức tạp trên sân khấu đòi hỏi hàng nghìn giờ luyện tập tận tâm qua nhiều năm thử thách.",
+              "vocabs": [
+                "play",
+                "learning",
+                "complex compositions",
+                "dedicated practice",
+                "challenging years"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What advice would you give beginners hoping to play stringed instruments professionally someday?",
+              "vi": "Bạn sẽ đưa ra lời khuyên gì cho người mới bắt đầu hy vọng chơi nhạc cụ dây chuyên nghiệp một ngày nào đó?",
+              "vocabs": [
+                "play",
+                "beginners",
+                "stringed instruments",
+                "professionally"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Patient daily practice produces remarkable progress when learning to play seriously. Finding inspiring teachers and joining youth orchestras creates motivation while developing essential ensemble skills together.",
+              "vi": "Luyện tập hàng ngày kiên nhẫn tạo ra sự tiến bộ đáng chú ý khi học chơi nghiêm túc. Tìm các giáo viên truyền cảm hứng và tham gia dàn nhạc thanh niên tạo động lực trong khi phát triển các kỹ năng hòa tấu cần thiết cùng nhau.",
+              "vocabs": [
+                "play",
+                "patient daily practice",
+                "inspiring teachers",
+                "youth orchestras",
+                "ensemble skills"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "word": "read",
+      "phonetic": "/riːd/",
+      "pos": "Verb",
+      "frequency": 480,
+      "categories": [
+        "Education",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Đọc, hiểu nghĩa của chữ viết",
+          "examples": [
+            {
+              "en": "I read three books last month.",
+              "vi": "Tôi đã đọc ba cuốn sách tháng trước.",
+              "category": "Education"
+            },
+            {
+              "en": "She reads the news every morning.",
+              "vi": "Cô ấy đọc tin tức mỗi sáng.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Hiểu, nhận ra điều gì đó qua quan sát",
+          "examples": [
+            {
+              "en": "She can read his expressions easily.",
+              "vi": "Cô ấy có thể đọc được biểu cảm của anh ấy dễ dàng.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Reading challenge · read",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How many books do you typically read throughout an entire calendar year for personal enjoyment?",
+              "vi": "Bạn thường đọc bao nhiêu cuốn sách trong suốt một năm dương lịch để giải trí cá nhân?",
+              "vocabs": [
+                "read",
+                "calendar year",
+                "personal enjoyment"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I read approximately fifty books annually across diverse genres consistently. Setting monthly targets keeps reading habits sustainable while expanding intellectual horizons throughout busy professional periods.",
+              "vi": "Tôi đọc khoảng năm mươi cuốn sách hàng năm qua các thể loại đa dạng một cách nhất quán. Đặt mục tiêu hàng tháng giúp duy trì thói quen đọc sách trong khi mở rộng tầm nhìn trí tuệ trong các giai đoạn nghề nghiệp bận rộn.",
+              "vocabs": [
+                "read",
+                "diverse genres",
+                "monthly targets",
+                "sustainable",
+                "intellectual horizons",
+                "professional periods"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Do you prefer to read fiction novels or factual nonfiction works during your limited free time?",
+              "vi": "Bạn thích đọc tiểu thuyết hư cấu hay các tác phẩm phi hư cấu thực tế trong thời gian rảnh hạn chế của mình?",
+              "vocabs": [
+                "read",
+                "fiction novels",
+                "nonfiction works",
+                "free time"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Reading both genres equally enriches my perspective remarkably. Fiction develops empathy through character experiences while nonfiction builds practical knowledge applicable across various life situations daily.",
+              "vi": "Đọc cả hai thể loại đều làm phong phú quan điểm của tôi đáng chú ý. Hư cấu phát triển sự đồng cảm qua trải nghiệm nhân vật trong khi phi hư cấu xây dựng kiến thức thực tế áp dụng trong các tình huống cuộc sống khác nhau hàng ngày.",
+              "vocabs": [
+                "read",
+                "perspective",
+                "empathy",
+                "character experiences",
+                "practical knowledge",
+                "life situations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "word": "write",
+      "phonetic": "/raɪt/",
+      "pos": "Verb",
+      "frequency": 475,
+      "categories": [
+        "Communication",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Viết, tạo ra chữ trên giấy hoặc thiết bị",
+          "examples": [
+            {
+              "en": "She writes in her journal every night.",
+              "vi": "Cô ấy viết nhật ký mỗi tối.",
+              "category": "Communication"
+            },
+            {
+              "en": "Please write your name on the form.",
+              "vi": "Vui lòng viết tên của bạn vào biểu mẫu.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Sáng tác, tạo ra tác phẩm văn học hoặc âm nhạc",
+          "examples": [
+            {
+              "en": "He writes science fiction novels.",
+              "vi": "Anh ấy viết tiểu thuyết khoa học viễn tưởng.",
+              "category": "Arts"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Author's process · write",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How do you find inspiration to write compelling stories during periods of creative blocks?",
+              "vi": "Bạn tìm cảm hứng để viết những câu chuyện hấp dẫn như thế nào trong những giai đoạn bế tắc sáng tạo?",
+              "vocabs": [
+                "write",
+                "compelling stories",
+                "creative blocks"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I deliberately write rough drafts despite intense creative blocks. Walking through unfamiliar neighborhoods and observing strangers provides surprising material that sparks fresh narrative directions naturally.",
+              "vi": "Tôi cố tình viết bản nháp thô bất chấp các bế tắc sáng tạo dữ dội. Đi bộ qua các khu phố không quen thuộc và quan sát người lạ cung cấp tài liệu bất ngờ tạo ra hướng kể chuyện mới mẻ một cách tự nhiên.",
+              "vocabs": [
+                "write",
+                "rough drafts",
+                "unfamiliar neighborhoods",
+                "observing",
+                "narrative directions",
+                "naturally"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How long does it typically take to write your novels from initial concept to final manuscript?",
+              "vi": "Bạn thường mất bao lâu để viết tiểu thuyết của mình từ ý tưởng ban đầu đến bản thảo cuối cùng?",
+              "vocabs": [
+                "write",
+                "initial concept",
+                "final manuscript"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Writing each novel requires about eighteen months including extensive revision cycles. Editor feedback, beta readers, and self-doubt all influence the lengthy process before publication becomes truly possible.",
+              "vi": "Viết mỗi tiểu thuyết đòi hỏi khoảng mười tám tháng bao gồm các chu kỳ chỉnh sửa rộng rãi. Phản hồi của biên tập viên, người đọc thử và sự tự nghi ngờ đều ảnh hưởng đến quá trình kéo dài trước khi xuất bản trở nên thực sự khả thi.",
+              "vocabs": [
+                "writing",
+                "revision cycles",
+                "editor feedback",
+                "beta readers",
+                "self-doubt",
+                "publication"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "word": "run",
+      "phonetic": "/rʌn/",
+      "pos": "Verb, Noun",
+      "frequency": 470,
+      "categories": [
+        "Sports",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Chạy, di chuyển nhanh bằng chân",
+          "examples": [
+            {
+              "en": "He runs five kilometers every morning.",
+              "vi": "Anh ấy chạy năm ki-lô-mét mỗi sáng.",
+              "category": "Sports"
+            },
+            {
+              "en": "She had to run to catch the bus.",
+              "vi": "Cô ấy phải chạy để bắt xe buýt.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Điều hành, quản lý hoạt động kinh doanh",
+          "examples": [
+            {
+              "en": "She runs her own restaurant.",
+              "vi": "Cô ấy điều hành nhà hàng của riêng mình.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Restaurant management · run",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How challenging is it to run a successful restaurant business in this current economic climate?",
+              "vi": "Việc điều hành một công ty nhà hàng thành công trong bối cảnh kinh tế hiện tại khó khăn như thế nào?",
+              "vocabs": [
+                "run",
+                "successful restaurant",
+                "economic climate"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Running this establishment demands constant adaptation throughout volatile market conditions. Supply chain disruptions and rising labor costs force owners to creatively manage operations while maintaining quality.",
+              "vi": "Điều hành cơ sở này đòi hỏi sự thích nghi liên tục trong các điều kiện thị trường biến động. Sự gián đoạn chuỗi cung ứng và chi phí lao động tăng buộc các chủ phải sáng tạo quản lý hoạt động trong khi duy trì chất lượng.",
+              "vocabs": [
+                "running",
+                "establishment",
+                "volatile market",
+                "supply chain",
+                "labor costs",
+                "quality"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What innovative strategies have you implemented to run profitable operations during pandemic recovery years?",
+              "vi": "Bạn đã triển khai những chiến lược đổi mới nào để điều hành hoạt động có lãi trong những năm phục hồi sau đại dịch?",
+              "vocabs": [
+                "run",
+                "innovative strategies",
+                "profitable operations",
+                "pandemic recovery"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "We run delivery partnerships and curated tasting events generating reliable revenue streams. Diversifying offerings beyond traditional dining attracts younger customers seeking memorable interactive experiences regularly.",
+              "vi": "Chúng tôi điều hành quan hệ đối tác giao hàng và các sự kiện nếm thử được tuyển chọn tạo ra dòng doanh thu đáng tin cậy. Đa dạng hóa các dịch vụ ngoài ăn uống truyền thống thu hút khách hàng trẻ tuổi tìm kiếm trải nghiệm tương tác đáng nhớ thường xuyên.",
+              "vocabs": [
+                "run",
+                "delivery partnerships",
+                "tasting events",
+                "revenue streams",
+                "diversifying offerings",
+                "interactive experiences"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "word": "walk",
+      "phonetic": "/wɔːk/",
+      "pos": "Verb, Noun",
+      "frequency": 465,
+      "categories": [
+        "Health",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Đi bộ, di chuyển bằng chân với tốc độ chậm",
+          "examples": [
+            {
+              "en": "We walk to school every day.",
+              "vi": "Chúng tôi đi bộ đến trường mỗi ngày.",
+              "category": "Education"
+            },
+            {
+              "en": "She enjoys walking in the rain.",
+              "vi": "Cô ấy thích đi dạo dưới mưa.",
+              "category": "Nature"
+            }
+          ]
+        },
+        {
+          "vi": "Cuộc đi bộ, hoạt động đi bộ thư giãn",
+          "examples": [
+            {
+              "en": "Let's go for a walk in the park.",
+              "vi": "Hãy đi dạo trong công viên nào.",
+              "category": "Health"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Health benefits · walk",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why do you walk approximately ten thousand steps daily despite your demanding office schedule?",
+              "vi": "Tại sao bạn đi bộ khoảng mười nghìn bước hàng ngày bất chấp lịch trình văn phòng đòi hỏi của mình?",
+              "vocabs": [
+                "walk",
+                "steps daily",
+                "demanding",
+                "office schedule"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Daily walking dramatically improves my cardiovascular health and mental clarity throughout busy weekdays. Physicians repeatedly emphasize that consistent movement prevents serious chronic conditions effectively over time.",
+              "vi": "Đi bộ hàng ngày cải thiện đáng kể sức khỏe tim mạch và sự minh mẫn tinh thần của tôi trong các ngày trong tuần bận rộn. Các bác sĩ liên tục nhấn mạnh rằng sự di chuyển nhất quán ngăn ngừa các tình trạng mãn tính nghiêm trọng hiệu quả theo thời gian.",
+              "vocabs": [
+                "walking",
+                "cardiovascular health",
+                "mental clarity",
+                "physicians",
+                "consistent movement",
+                "chronic conditions"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Where do you walk regularly to make this beneficial habit enjoyable rather than tedious obligation?",
+              "vi": "Bạn đi bộ thường xuyên ở đâu để biến thói quen có lợi này trở nên thú vị thay vì nghĩa vụ tẻ nhạt?",
+              "vocabs": [
+                "walk",
+                "beneficial habit",
+                "tedious obligation"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I walk through varied parks, scenic waterfronts, and urban neighborhoods rotating weekly. Listening to engaging podcasts transforms ordinary walks into productive learning sessions that benefit both body and mind simultaneously.",
+              "vi": "Tôi đi bộ qua các công viên khác nhau, bờ sông đẹp và khu phố đô thị thay đổi hàng tuần. Nghe podcast hấp dẫn biến những cuộc đi bộ bình thường thành những phiên học tập năng suất mang lại lợi ích cho cả cơ thể và tinh thần đồng thời.",
+              "vocabs": [
+                "walk",
+                "varied parks",
+                "scenic waterfronts",
+                "urban neighborhoods",
+                "engaging podcasts",
+                "learning sessions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "word": "sit",
+      "phonetic": "/sɪt/",
+      "pos": "Verb",
+      "frequency": 460,
+      "categories": [
+        "General",
+        "Health"
+      ],
+      "meanings": [
+        {
+          "vi": "Ngồi, đặt mình ở vị trí ngồi trên chỗ nào đó",
+          "examples": [
+            {
+              "en": "Please sit down and relax.",
+              "vi": "Vui lòng ngồi xuống và thư giãn.",
+              "category": "General"
+            },
+            {
+              "en": "She sat by the window watching the rain.",
+              "vi": "Cô ấy ngồi bên cửa sổ ngắm mưa.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Đặt vị trí, tổ chức cuộc họp hoặc kỳ thi",
+          "examples": [
+            {
+              "en": "He sits on the company board.",
+              "vi": "Anh ấy có ghế trong hội đồng công ty.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Sedentary lifestyle · sit",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How many hours do you typically sit at your desk during a standard busy workday?",
+              "vi": "Bạn thường ngồi tại bàn làm việc bao nhiêu giờ trong một ngày làm việc bận rộn tiêu chuẩn?",
+              "vocabs": [
+                "sit",
+                "desk",
+                "standard",
+                "workday"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I sit roughly nine hours weekly which damages my posture significantly. Standing desks and frequent stretching breaks combat the negative health effects associated with prolonged sedentary activities.",
+              "vi": "Tôi ngồi khoảng chín giờ hàng ngày làm tổn hại tư thế của tôi đáng kể. Bàn đứng và các kỳ nghỉ giãn cơ thường xuyên chống lại các tác động tiêu cực đến sức khỏe liên quan đến các hoạt động ít vận động kéo dài.",
+              "vocabs": [
+                "sit",
+                "posture",
+                "standing desks",
+                "stretching breaks",
+                "negative effects",
+                "sedentary activities"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Has your physical health improved since reducing the time you sit continuously throughout daily routines?",
+              "vi": "Sức khỏe thể chất của bạn có cải thiện kể từ khi giảm thời gian ngồi liên tục trong các thói quen hàng ngày không?",
+              "vocabs": [
+                "sit",
+                "physical health",
+                "daily routines"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Reducing time spent sitting transformed my chronic back pain remarkably within weeks. Improved circulation, better energy levels, and stronger core muscles emerged from this simple lifestyle adjustment naturally.",
+              "vi": "Giảm thời gian ngồi đã biến đổi cơn đau lưng mãn tính của tôi đáng chú ý trong vòng vài tuần. Tuần hoàn được cải thiện, mức năng lượng tốt hơn và cơ trọng tâm mạnh hơn xuất hiện từ điều chỉnh lối sống đơn giản này một cách tự nhiên.",
+              "vocabs": [
+                "sitting",
+                "chronic back pain",
+                "improved circulation",
+                "energy levels",
+                "core muscles",
+                "lifestyle adjustment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "word": "stand",
+      "phonetic": "/stænd/",
+      "pos": "Verb, Noun",
+      "frequency": 455,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Đứng, giữ tư thế thẳng đứng trên chân",
+          "examples": [
+            {
+              "en": "Please stand up when the judge enters.",
+              "vi": "Vui lòng đứng dậy khi thẩm phán đi vào.",
+              "category": "General"
+            },
+            {
+              "en": "He stood at the entrance waiting.",
+              "vi": "Anh ấy đứng ở cửa vào chờ đợi.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Lập trường, quan điểm về một vấn đề",
+          "examples": [
+            {
+              "en": "She took a strong stand against injustice.",
+              "vi": "Cô ấy đã giữ một lập trường mạnh mẽ chống lại bất công.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Activist protest · stand",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you decide to stand publicly against your government's environmental policies during last weekend's massive protest?",
+              "vi": "Tại sao bạn quyết định công khai đứng lên chống lại các chính sách môi trường của chính phủ trong cuộc biểu tình lớn cuối tuần qua?",
+              "vocabs": [
+                "stand",
+                "publicly",
+                "environmental policies",
+                "massive protest"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Future generations deserve advocates who actively stand against destructive corporate practices today. Remaining silent during critical moments enables continued environmental damage that future communities will inevitably inherit.",
+              "vi": "Các thế hệ tương lai xứng đáng có những người ủng hộ tích cực đứng lên chống lại các hoạt động doanh nghiệp tàn phá ngày nay. Im lặng trong những khoảnh khắc quan trọng cho phép tiếp tục gây thiệt hại môi trường mà các cộng đồng tương lai chắc chắn sẽ kế thừa.",
+              "vocabs": [
+                "stand",
+                "future generations",
+                "advocates",
+                "destructive corporate",
+                "critical moments",
+                "environmental damage"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Has taking such a public stand impacted your professional reputation negatively among conservative business contacts?",
+              "vi": "Việc đứng lên công khai như vậy có ảnh hưởng tiêu cực đến danh tiếng chuyên môn của bạn trong số các liên hệ kinh doanh bảo thủ không?",
+              "vocabs": [
+                "stand",
+                "professional reputation",
+                "conservative",
+                "business contacts"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Some traditional clients distanced themselves after my stand became publicly visible. However, progressive organizations actively pursue partnerships, recognizing principled leadership creates meaningful long-term commercial value too.",
+              "vi": "Một số khách hàng truyền thống đã giữ khoảng cách sau khi lập trường của tôi trở nên công khai. Tuy nhiên, các tổ chức tiến bộ tích cực theo đuổi quan hệ đối tác, nhận ra rằng lãnh đạo có nguyên tắc cũng tạo ra giá trị thương mại dài hạn ý nghĩa.",
+              "vocabs": [
+                "stand",
+                "traditional clients",
+                "progressive organizations",
+                "partnerships",
+                "principled leadership",
+                "commercial value"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "word": "talk",
+      "phonetic": "/tɔːk/",
+      "pos": "Verb, Noun",
+      "frequency": 450,
+      "categories": [
+        "Communication",
+        "Social"
+      ],
+      "meanings": [
+        {
+          "vi": "Nói chuyện, giao tiếp bằng lời với người khác",
+          "examples": [
+            {
+              "en": "Let's talk about your weekend plans.",
+              "vi": "Hãy nói về kế hoạch cuối tuần của bạn.",
+              "category": "Social"
+            },
+            {
+              "en": "She talks to her grandmother every week.",
+              "vi": "Cô ấy nói chuyện với bà mỗi tuần.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Bài nói, buổi thuyết trình về chủ đề nào đó",
+          "examples": [
+            {
+              "en": "He gave an interesting talk on climate change.",
+              "vi": "Anh ấy đã có một bài nói thú vị về biến đổi khí hậu.",
+              "category": "Education"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "TED talk preparation · talk",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long did you prepare to talk in front of thousands at the international TED conference last month?",
+              "vi": "Bạn đã chuẩn bị bao lâu để nói chuyện trước hàng nghìn người tại hội nghị TED quốc tế tháng trước?",
+              "vocabs": [
+                "talk",
+                "prepare",
+                "thousands",
+                "international",
+                "TED conference"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I prepared this eighteen-minute talk for almost six months systematically. Memorizing key transitions, practicing with mentors, and refining storytelling techniques ensured polished delivery before live audiences.",
+              "vi": "Tôi đã chuẩn bị bài nói mười tám phút này trong gần sáu tháng một cách có hệ thống. Ghi nhớ các chuyển tiếp chính, luyện tập với cố vấn và tinh chỉnh kỹ thuật kể chuyện đảm bảo trình bày trau chuốt trước khán giả trực tiếp.",
+              "vocabs": [
+                "talk",
+                "memorizing",
+                "key transitions",
+                "mentors",
+                "storytelling techniques",
+                "polished delivery"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What advice would you give beginners hoping to deliver impactful public talks like yours someday?",
+              "vi": "Bạn sẽ đưa ra lời khuyên gì cho người mới bắt đầu hy vọng có thể có những bài nói công khai có tác động như của bạn một ngày nào đó?",
+              "vocabs": [
+                "talk",
+                "beginners",
+                "impactful",
+                "public"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Aspiring presenters should talk frequently in smaller venues developing confidence gradually. Recording rehearsals reveals weaknesses while watching exceptional speakers studying their pacing and gestures provides invaluable instructional inspiration regularly.",
+              "vi": "Người thuyết trình có khát vọng nên nói thường xuyên ở các địa điểm nhỏ hơn để phát triển sự tự tin dần dần. Ghi âm tập dượt tiết lộ điểm yếu trong khi xem các diễn giả xuất sắc nghiên cứu nhịp độ và cử chỉ của họ cung cấp cảm hứng giáo huấn vô giá thường xuyên.",
+              "vocabs": [
+                "talk",
+                "aspiring presenters",
+                "smaller venues",
+                "rehearsals",
+                "exceptional speakers",
+                "instructional inspiration"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "word": "listen",
+      "phonetic": "/ˈlɪsn/",
+      "pos": "Verb",
+      "frequency": 445,
+      "categories": [
+        "Communication",
+        "Education"
+      ],
+      "meanings": [
+        {
+          "vi": "Lắng nghe, chú ý đến âm thanh hoặc lời nói",
+          "examples": [
+            {
+              "en": "Please listen carefully to the instructions.",
+              "vi": "Vui lòng lắng nghe kỹ các hướng dẫn.",
+              "category": "Education"
+            },
+            {
+              "en": "I love listening to classical music.",
+              "vi": "Tôi yêu thích lắng nghe nhạc cổ điển.",
+              "category": "Arts"
+            }
+          ]
+        },
+        {
+          "vi": "Lắng nghe ý kiến, chấp nhận lời khuyên từ người khác",
+          "examples": [
+            {
+              "en": "He never listens to his parents' advice.",
+              "vi": "Anh ấy không bao giờ nghe lời khuyên của cha mẹ.",
+              "category": "Family"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Active listening · listen",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why is it so important to listen actively rather than waiting impatiently to express your own opinions?",
+              "vi": "Tại sao việc lắng nghe tích cực quan trọng hơn là chờ đợi sốt ruột để bày tỏ quan điểm của bản thân?",
+              "vocabs": [
+                "listen",
+                "actively",
+                "impatiently",
+                "express opinions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Genuinely listening transforms relationships through demonstrating authentic respect consistently. People share deeper insights when they sense undivided attention rather than feeling rushed toward predetermined conclusions.",
+              "vi": "Lắng nghe chân thành biến đổi các mối quan hệ thông qua thể hiện sự tôn trọng chân thực một cách nhất quán. Mọi người chia sẻ những hiểu biết sâu sắc hơn khi họ cảm nhận được sự chú ý không phân tâm thay vì cảm thấy bị thúc ép hướng đến kết luận đã được định trước.",
+              "vocabs": [
+                "listening",
+                "transforms relationships",
+                "authentic respect",
+                "deeper insights",
+                "undivided attention",
+                "predetermined conclusions"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How can introverts develop better skills to listen effectively during fast-paced group discussions naturally?",
+              "vi": "Người hướng nội có thể phát triển kỹ năng tốt hơn để lắng nghe hiệu quả trong các cuộc thảo luận nhóm nhanh chóng như thế nào?",
+              "vocabs": [
+                "listen effectively",
+                "introverts",
+                "fast-paced",
+                "group discussions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Quiet personalities often listen better than extroverts surprisingly because they observe nuances. Asking thoughtful questions, summarizing speakers, and pausing before responding deepens meaningful conversations across diverse social settings.",
+              "vi": "Tính cách trầm lặng thường lắng nghe tốt hơn người hướng ngoại đáng ngạc nhiên vì họ quan sát các sắc thái. Đặt câu hỏi chu đáo, tóm tắt diễn giả và tạm dừng trước khi phản hồi đào sâu các cuộc trò chuyện ý nghĩa qua các bối cảnh xã hội đa dạng.",
+              "vocabs": [
+                "listen",
+                "quiet personalities",
+                "nuances",
+                "thoughtful questions",
+                "summarizing speakers",
+                "social settings"
               ]
             }
           ]
