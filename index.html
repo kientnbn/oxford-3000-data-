@@ -651,6 +651,25 @@
         flex: 1;
     }
 
+    .example-category {
+        font-size: 10px;
+        font-weight: 700;
+        color: white;
+        background: #9b59b6;
+        padding: 2px 6px;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        height: 20px;
+        white-space: nowrap;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+
+    body.dark-mode .example-category {
+        background: #b565d8;
+    }
+
     .example-audio-btn {
         background: var(--secondary);
         color: white;
@@ -1052,6 +1071,175 @@
         }
     ];
 
+    // Additional words for testing (id 4-6)
+    sampleData.push(
+        {
+            id: 4,
+            word: "able",
+            phonetic: "/ˈeɪbl/",
+            pos: "Adjective",
+            frequency: 1203,
+            categories: ["General", "Ability"],
+            meanings: [
+                {
+                    vi: "Có khả năng, có thể",
+                    examples: [
+                        {
+                            en: "She is able to speak three languages fluently.",
+                            vi: "Cô ấy có khả năng nói ba thứ tiếng trôi chảy.",
+                            category: "General"
+                        },
+                        {
+                            en: "With proper training, anyone can become able to master new skills.",
+                            vi: "Với đào tạo thích hợp, bất kỳ ai cũng có thể thành thạo kỹ năng mới.",
+                            category: "Education"
+                        }
+                    ]
+                }
+            ],
+            conversations: [
+                {
+                    title: "Discussing Skills and Abilities",
+                    lines: [
+                        {
+                            speaker: "Tom",
+                            en: "Are you able to help me with this project?",
+                            vi: "Bạn có thể giúp tôi dự án này không?"
+                        },
+                        {
+                            speaker: "Sarah",
+                            en: "I'm able to help, but I need to finish my work first.",
+                            vi: "Tôi có thể giúp, nhưng tôi cần hoàn thành công việc của tôi trước.",
+                            vocabs: ["able", "finish", "work"]
+                        },
+                        {
+                            speaker: "Tom",
+                            en: "That's great! Are you able to start tomorrow?",
+                            vi: "Tuyệt vời! Bạn có thể bắt đầu ngày mai không?",
+                            vocabs: ["able", "start", "tomorrow"]
+                        },
+                        {
+                            speaker: "Sarah",
+                            en: "Yes, I'll be able to dedicate my full attention to it.",
+                            vi: "Vâng, tôi sẽ có thể dành toàn bộ sự chú ý của tôi cho nó.",
+                            vocabs: ["able", "dedicate", "attention"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 5,
+            word: "accept",
+            phonetic: "/əkˈsept/",
+            pos: "Verb",
+            frequency: 987,
+            categories: ["Communication", "Agreement"],
+            meanings: [
+                {
+                    vi: "Chấp nhận, tiếp nhận",
+                    examples: [
+                        {
+                            en: "I accept your offer and look forward to working with you.",
+                            vi: "Tôi chấp nhận lời đề nghị của bạn và mong muốn hợp tác với bạn.",
+                            category: "Business"
+                        },
+                        {
+                            en: "The university will accept applications until the end of March.",
+                            vi: "Đại học sẽ chấp nhận đơn xin cho đến cuối tháng Ba.",
+                            category: "Education"
+                        }
+                    ]
+                }
+            ],
+            conversations: [
+                {
+                    title: "Job Offer Discussion",
+                    lines: [
+                        {
+                            speaker: "Manager",
+                            en: "We'd like to offer you the position of Senior Developer.",
+                            vi: "Chúng tôi muốn đề nghị bạn vị trí Lập trình viên Cấp cao."
+                        },
+                        {
+                            speaker: "Candidate",
+                            en: "Thank you! I'm honored and I accept your offer.",
+                            vi: "Cảm ơn! Tôi cảm thấy vinh dự và tôi chấp nhận lời đề nghị của bạn.",
+                            vocabs: ["accept", "offer", "honored"]
+                        },
+                        {
+                            speaker: "Manager",
+                            en: "Excellent! Will you accept the starting salary we discussed?",
+                            vi: "Tuyệt vời! Bạn có chấp nhận mức lương khởi điểm mà chúng ta đã thảo luận không?",
+                            vocabs: ["accept", "salary", "discussed"]
+                        },
+                        {
+                            speaker: "Candidate",
+                            en: "Yes, I fully accept all the terms and conditions.",
+                            vi: "Vâng, tôi chấp nhận đầy đủ tất cả các điều khoản và điều kiện.",
+                            vocabs: ["accept", "terms", "conditions"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 6,
+            word: "achieve",
+            phonetic: "/əˈtʃiːv/",
+            pos: "Verb",
+            frequency: 856,
+            categories: ["Success", "Goal"],
+            meanings: [
+                {
+                    vi: "Đạt được, thành công",
+                    examples: [
+                        {
+                            en: "Through hard work and dedication, she achieved her dream of becoming a doctor.",
+                            vi: "Thông qua làm việc chăm chỉ và tận tâm, cô ấy đã đạt được ước mơ trở thành bác sĩ.",
+                            category: "Education"
+                        },
+                        {
+                            en: "The company achieved record profits this year.",
+                            vi: "Công ty đã đạt được lợi nhuận kỷ lục năm nay.",
+                            category: "Business"
+                        }
+                    ]
+                }
+            ],
+            conversations: [
+                {
+                    title: "Success Stories and Goals",
+                    lines: [
+                        {
+                            speaker: "Coach",
+                            en: "Congratulations! You've achieved your fitness goal!",
+                            vi: "Chúc mừng! Bạn đã đạt được mục tiêu thể dục của mình!"
+                        },
+                        {
+                            speaker: "Student",
+                            en: "Thank you! I worked hard to achieve this result.",
+                            vi: "Cảm ơn! Tôi đã làm việc chăm chỉ để đạt được kết quả này.",
+                            vocabs: ["achieve", "worked", "result"]
+                        },
+                        {
+                            speaker: "Coach",
+                            en: "What's your next goal you want to achieve?",
+                            vi: "Mục tiêu tiếp theo bạn muốn đạt được là gì?",
+                            vocabs: ["achieve", "goal", "next"]
+                        },
+                        {
+                            speaker: "Student",
+                            en: "I want to achieve a faster running time by next month.",
+                            vi: "Tôi muốn đạt được thời gian chạy nhanh hơn vào tháng tới.",
+                            vocabs: ["achieve", "running", "time"]
+                        }
+                    ]
+                }
+            ]
+        }
+    );
+
     // Text-to-Speech
     // Global words map for read all functionality
     const wordsMap = {};
@@ -1233,6 +1421,7 @@
                                     <div class="example">
                                         <div class="example-en">
                                             <span class="example-en-text">"${ex.en}"</span>
+                                            ${ex.category ? `<span class="example-category">${ex.category}</span>` : ''}
                                             <button class="example-audio-btn" onclick="speakWord('${ex.en.replace(/"/g, '\\"')}')" title="Pronounce example">🔊</button>
                                         </div>
                                         <div class="example-vi">→ ${ex.vi}</div>
@@ -1387,15 +1576,15 @@
             const endpoints = [
                 {
                     name: 'GitHub Raw',
-                    url: 'https://raw.githubusercontent.com/kientnbn/oxford-3000-data-/main/oxford-3000-data.json'
+                    url: 'https://raw.githubusercontent.com/kientnbn/oxford-3000-data-/main/pwa-4.json'
                 },
                 {
                     name: 'jsDelivr CDN',
-                    url: 'https://cdn.jsdelivr.net/gh/kientnbn/oxford-3000-data-@main/oxford-3000-data.json'
+                    url: 'https://cdn.jsdelivr.net/gh/kientnbn/oxford-3000-data-@main/pwa-4.json'
                 },
                 {
                     name: 'GitHub API',
-                    url: 'https://api.github.com/repos/kientnbn/oxford-3000-data-/contents/oxford-3000-data.json'
+                    url: 'https://api.github.com/repos/kientnbn/oxford-3000-data-/contents/pwa-4.json'
                 }
             ];
             
@@ -1434,8 +1623,16 @@
                         parsedData = await response.json();
                     }
                     
+                    // Support both array format and {batch_info, data} format
+                    let wordArray = null;
                     if (Array.isArray(parsedData) && parsedData.length > 0) {
-                        data = parsedData;
+                        wordArray = parsedData;
+                    } else if (parsedData && typeof parsedData === 'object' && Array.isArray(parsedData.data) && parsedData.data.length > 0) {
+                        wordArray = parsedData.data;
+                    }
+                    
+                    if (wordArray) {
+                        data = wordArray;
                         successEndpoint = endpoint.name;
                         console.log(`✅ SUCCESS via ${endpoint.name}: ${data.length} words`);
                         break;
