@@ -1,8 +1,8 @@
 {
   "batch_info": {
-    "batch_number": 13,
+    "batch_number": 15,
     "batch_size": 10,
-    "cumulative_entries": "1-130",
+    "cumulative_entries": "1-150",
     "batches_included": [
       1,
       2,
@@ -16,12 +16,15 @@
       10,
       11,
       12,
-      13
+      13,
+      14,
+      15
     ],
-    "date": "2026-05-03",
+    "date": "2026-05-04",
     "status": "COMPLETED",
     "scope": "C0 only (conversations rewrite)",
-    "test_results": "130/130 PASS"
+    "test_results": "150/150 PASS",
+    "milestone": "🎉 HALFWAY MILESTONE - 50% complete!"
   },
   "data": [
     {
@@ -11819,6 +11822,1843 @@
                 "internships",
                 "personality assessments",
                 "intrinsic motivations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "word": "give",
+      "phonetic": "/ɡɪv/",
+      "pos": "Verb",
+      "frequency": 340,
+      "categories": [
+        "General",
+        "Social"
+      ],
+      "meanings": [
+        {
+          "vi": "Cho, đưa cái gì đó cho ai đó",
+          "examples": [
+            {
+              "en": "She gave him a beautiful birthday present.",
+              "vi": "Cô ấy đã tặng anh ấy một món quà sinh nhật đẹp.",
+              "category": "Family"
+            },
+            {
+              "en": "Please give me a moment to think.",
+              "vi": "Xin hãy cho tôi một khoảnh khắc để suy nghĩ.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Tổ chức, thực hiện sự kiện hoặc hành động cho người khác",
+          "examples": [
+            {
+              "en": "He gave an interesting presentation.",
+              "vi": "Anh ấy đã trình bày một buổi thuyết trình thú vị.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Charitable donation · give",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How much do you typically give to charitable organizations throughout an entire fiscal calendar year?",
+              "vi": "Bạn thường cho các tổ chức từ thiện bao nhiêu trong cả một năm tài chính?",
+              "vocabs": [
+                "give",
+                "charitable organizations",
+                "fiscal calendar"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I deliberately give approximately ten percent of my annual income across diverse causes consistently. Allocating regular contributions to education, environmental, and humanitarian initiatives provides genuine fulfillment beyond personal accumulation.",
+              "vi": "Tôi cố ý cho khoảng mười phần trăm thu nhập hàng năm cho các nguyên nhân đa dạng một cách nhất quán. Phân bổ đóng góp đều đặn cho các sáng kiến giáo dục, môi trường và nhân đạo mang lại sự thỏa mãn chân thực vượt qua sự tích lũy cá nhân.",
+              "vocabs": [
+                "give",
+                "annual income",
+                "diverse causes",
+                "regular contributions",
+                "humanitarian initiatives",
+                "personal accumulation"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How do you decide which specific organizations deserve to receive your generous monthly donations consistently?",
+              "vi": "Bạn quyết định những tổ chức cụ thể nào xứng đáng nhận khoản đóng góp hàng tháng hào phóng của bạn như thế nào?",
+              "vocabs": [
+                "give",
+                "deserve",
+                "monthly donations"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Researching transparent organizations with measurable impact guides every giving decision carefully. Independent watchdog ratings, financial accountability reports, and verified beneficiary outcomes ensure my contributions create meaningful systemic transformation.",
+              "vi": "Nghiên cứu các tổ chức minh bạch với tác động có thể đo lường hướng dẫn mọi quyết định đóng góp một cách cẩn thận. Xếp hạng giám sát độc lập, báo cáo trách nhiệm tài chính và kết quả người thụ hưởng đã xác minh đảm bảo đóng góp của tôi tạo ra sự chuyển đổi hệ thống ý nghĩa.",
+              "vocabs": [
+                "giving",
+                "transparent organizations",
+                "measurable impact",
+                "watchdog ratings",
+                "financial accountability",
+                "verified beneficiary"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "word": "take",
+      "phonetic": "/teɪk/",
+      "pos": "Verb",
+      "frequency": 335,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Lấy, cầm hoặc nhận vật gì đó",
+          "examples": [
+            {
+              "en": "Please take this book home with you.",
+              "vi": "Vui lòng mang quyển sách này về nhà.",
+              "category": "General"
+            },
+            {
+              "en": "She took the train to work today.",
+              "vi": "Cô ấy đi tàu đến chỗ làm hôm nay.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Mất thời gian, cần thời gian để hoàn thành điều gì",
+          "examples": [
+            {
+              "en": "It takes thirty minutes to drive there.",
+              "vi": "Phải mất ba mươi phút để lái xe đến đó.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Sabbatical year · take",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you decide to take a complete year away from your demanding executive position last spring?",
+              "vi": "Tại sao bạn quyết định nghỉ phép hoàn toàn một năm khỏi vị trí điều hành đòi hỏi vào mùa xuân năm ngoái?",
+              "vocabs": [
+                "take",
+                "demanding executive position",
+                "spring"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Chronic burnout symptoms forced me to take immediate restorative action seriously. Two decades of nonstop professional pressure created persistent health complications threatening both physical and psychological wellbeing significantly.",
+              "vi": "Các triệu chứng kiệt sức mãn tính buộc tôi phải hành động khôi phục ngay lập tức. Hai thập kỷ áp lực chuyên nghiệp không ngừng đã tạo ra biến chứng sức khỏe dai dẳng đe dọa cả sức khỏe thể chất và tâm lý đáng kể.",
+              "vocabs": [
+                "take immediate",
+                "chronic burnout",
+                "restorative action",
+                "professional pressure",
+                "health complications",
+                "psychological wellbeing"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What activities do you take advantage of during this unstructured time off from corporate responsibilities?",
+              "vi": "Bạn tận dụng những hoạt động nào trong thời gian không có cấu trúc nghỉ này khỏi trách nhiệm doanh nghiệp?",
+              "vocabs": [
+                "take advantage",
+                "unstructured",
+                "corporate responsibilities"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Daily meditation, language learning, and traveling internationally take priority throughout this sabbatical period. Pursuing dormant creative interests rebuilds my mental resilience while preparing me for thoughtful career decisions ahead.",
+              "vi": "Thiền hàng ngày, học ngôn ngữ và du lịch quốc tế được ưu tiên trong suốt giai đoạn nghỉ phép này. Theo đuổi các sở thích sáng tạo bị bỏ quên xây dựng lại sức bền tinh thần của tôi trong khi chuẩn bị cho các quyết định nghề nghiệp chu đáo phía trước.",
+              "vocabs": [
+                "take priority",
+                "sabbatical period",
+                "dormant creative",
+                "mental resilience",
+                "thoughtful career",
+                "preparing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "word": "bring",
+      "phonetic": "/brɪŋ/",
+      "pos": "Verb",
+      "frequency": 330,
+      "categories": [
+        "General",
+        "Social"
+      ],
+      "meanings": [
+        {
+          "vi": "Mang đến, đem theo vật hoặc người đến nơi",
+          "examples": [
+            {
+              "en": "Please bring your textbook tomorrow.",
+              "vi": "Vui lòng mang theo sách giáo khoa của bạn ngày mai.",
+              "category": "Education"
+            },
+            {
+              "en": "She brought her dog to the park.",
+              "vi": "Cô ấy đã mang chó của mình đến công viên.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Đem lại, gây ra một kết quả hoặc cảm xúc",
+          "examples": [
+            {
+              "en": "Spring brings warm weather.",
+              "vi": "Mùa xuân mang đến thời tiết ấm áp.",
+              "category": "Nature"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Cultural festival · bring",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What should attendees bring to the multicultural community festival happening next weekend at the central park?",
+              "vi": "Những người tham dự nên mang theo gì đến lễ hội cộng đồng đa văn hóa diễn ra cuối tuần tới tại công viên trung tâm?",
+              "vocabs": [
+                "bring",
+                "attendees",
+                "multicultural community",
+                "festival",
+                "central park"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Visitors should bring traditional dishes representing their heritage to share with neighbors generously. Bringing cultural artifacts, photographs, and musical instruments enriches the celebration through authentic intergenerational storytelling experiences.",
+              "vi": "Du khách nên mang các món ăn truyền thống đại diện cho di sản của họ để chia sẻ với hàng xóm một cách hào phóng. Mang theo các hiện vật văn hóa, ảnh chụp và nhạc cụ làm phong phú lễ kỷ niệm thông qua trải nghiệm kể chuyện chân thực giữa các thế hệ.",
+              "vocabs": [
+                "bring",
+                "traditional dishes",
+                "heritage",
+                "cultural artifacts",
+                "musical instruments",
+                "intergenerational storytelling"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How does this annual celebration bring genuine benefits to your diverse local community over time?",
+              "vi": "Lễ kỷ niệm hàng năm này mang lại những lợi ích chân thực nào cho cộng đồng địa phương đa dạng của bạn theo thời gian?",
+              "vocabs": [
+                "bring",
+                "annual celebration",
+                "diverse local"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "These gatherings bring marginalized groups meaningful visibility while strengthening interethnic friendships substantially. Reducing prejudice through shared experiences brings transformative cultural understanding lasting throughout entire neighborhoods consistently.",
+              "vi": "Những cuộc tụ họp này mang lại cho các nhóm bị thiệt thòi sự hiện diện ý nghĩa trong khi củng cố tình bạn liên sắc tộc đáng kể. Giảm định kiến thông qua trải nghiệm chia sẻ mang lại sự hiểu biết văn hóa biến đổi kéo dài khắp toàn bộ khu phố một cách nhất quán.",
+              "vocabs": [
+                "bring",
+                "marginalized groups",
+                "visibility",
+                "interethnic friendships",
+                "prejudice",
+                "transformative cultural"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "word": "send",
+      "phonetic": "/send/",
+      "pos": "Verb",
+      "frequency": 325,
+      "categories": [
+        "Communication",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Gửi, chuyển vật hoặc thông tin đến người khác",
+          "examples": [
+            {
+              "en": "I will send you the document tomorrow.",
+              "vi": "Tôi sẽ gửi tài liệu cho bạn vào ngày mai.",
+              "category": "Work"
+            },
+            {
+              "en": "She sends letters to her grandmother.",
+              "vi": "Cô ấy gửi thư cho bà của mình.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Cử đi, sai ai đó đi đâu để làm việc",
+          "examples": [
+            {
+              "en": "The company sent him to Tokyo.",
+              "vi": "Công ty đã cử anh ấy đến Tokyo.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "International correspondence · send",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How frequently do you send handwritten letters to relatives living in distant foreign countries nowadays?",
+              "vi": "Bạn gửi thư viết tay cho người thân sống ở các quốc gia xa xôi với tần suất như thế nào hiện nay?",
+              "vocabs": [
+                "send",
+                "handwritten letters",
+                "relatives",
+                "distant foreign countries"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I deliberately send physical letters quarterly because they create lasting emotional connections beyond digital communication. Receiving handwritten correspondence brings unparalleled joy that fleeting electronic messages cannot replicate meaningfully.",
+              "vi": "Tôi cố ý gửi thư vật lý hàng quý vì chúng tạo ra những kết nối cảm xúc lâu dài vượt qua giao tiếp kỹ thuật số. Nhận thư viết tay mang lại niềm vui không thể so sánh mà những tin nhắn điện tử thoáng qua không thể tái tạo một cách ý nghĩa.",
+              "vocabs": [
+                "send",
+                "physical letters",
+                "lasting emotional",
+                "handwritten correspondence",
+                "unparalleled joy",
+                "fleeting electronic"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Don't you find it impractical to send mail internationally given current postal delays and rising costs?",
+              "vi": "Bạn không thấy việc gửi thư quốc tế là không thực tế khi xét đến sự chậm trễ bưu chính hiện tại và chi phí tăng cao sao?",
+              "vocabs": [
+                "send",
+                "impractical",
+                "postal delays",
+                "rising costs"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Inconveniences associated with sending international mail seem minor compared to relationship benefits gained. Anticipating delivery transforms mundane weeks into magical occasions while strengthening transcontinental family bonds permanently across distances.",
+              "vi": "Sự bất tiện liên quan đến việc gửi thư quốc tế dường như nhỏ so với những lợi ích về mối quan hệ đạt được. Dự đoán việc gửi đến biến những tuần bình thường thành những dịp kỳ diệu trong khi củng cố các mối quan hệ gia đình xuyên lục địa vĩnh viễn qua khoảng cách.",
+              "vocabs": [
+                "sending",
+                "inconveniences",
+                "mundane weeks",
+                "magical occasions",
+                "transcontinental family",
+                "permanently"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "word": "receive",
+      "phonetic": "/rɪˈsiːv/",
+      "pos": "Verb",
+      "frequency": 320,
+      "categories": [
+        "Communication",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Nhận, được trao cho điều gì đó",
+          "examples": [
+            {
+              "en": "She received a beautiful gift on her birthday.",
+              "vi": "Cô ấy đã nhận được một món quà đẹp vào ngày sinh nhật.",
+              "category": "Family"
+            },
+            {
+              "en": "He received excellent grades this semester.",
+              "vi": "Anh ấy nhận được điểm xuất sắc trong học kỳ này.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Đón tiếp, chào đón ai đó hoặc điều gì",
+          "examples": [
+            {
+              "en": "The hotel received the guests warmly.",
+              "vi": "Khách sạn đã đón tiếp khách nồng nhiệt.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Award ceremony · receive",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How did you feel when you received the prestigious lifetime achievement award at last month's industry conference?",
+              "vi": "Bạn cảm thấy thế nào khi nhận giải thưởng thành tựu trọn đời danh giá tại hội nghị ngành tháng trước?",
+              "vocabs": [
+                "receive",
+                "prestigious lifetime achievement",
+                "industry conference"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Receiving this recognition overwhelmed me with humbling emotions and grateful tears immediately. Decades of unrecognized struggles, mentorship from countless colleagues, and persistent failures finally produced this remarkable acknowledgment publicly.",
+              "vi": "Việc nhận được sự công nhận này đã làm tôi choáng ngợp với những cảm xúc khiêm nhường và nước mắt biết ơn ngay lập tức. Hàng thập kỷ vật lộn không được công nhận, sự cố vấn từ vô số đồng nghiệp và những thất bại dai dẳng cuối cùng đã tạo ra sự ghi nhận đáng chú ý này một cách công khai.",
+              "vocabs": [
+                "receiving",
+                "humbling emotions",
+                "grateful tears",
+                "unrecognized struggles",
+                "mentorship",
+                "remarkable acknowledgment"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Did you receive much media attention following this unexpected industry-wide professional honor recently?",
+              "vi": "Bạn có nhận được nhiều sự chú ý của truyền thông sau danh dự chuyên môn toàn ngành bất ngờ này gần đây không?",
+              "vocabs": [
+                "receive",
+                "media attention",
+                "industry-wide",
+                "professional honor"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Numerous publications received my interview requests, although I declined most overwhelming opportunities purposefully. Maintaining focus on continuing meaningful work matters significantly more than chasing temporary fame through superficial promotional appearances.",
+              "vi": "Nhiều ấn phẩm đã nhận yêu cầu phỏng vấn của tôi, mặc dù tôi đã từ chối hầu hết những cơ hội choáng ngợp một cách có chủ ý. Duy trì sự tập trung vào việc tiếp tục công việc ý nghĩa quan trọng hơn đáng kể so với việc theo đuổi sự nổi tiếng tạm thời thông qua các xuất hiện quảng bá hời hợt.",
+              "vocabs": [
+                "received",
+                "interview requests",
+                "overwhelming opportunities",
+                "purposefully",
+                "temporary fame",
+                "superficial promotional"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "word": "hold",
+      "phonetic": "/həʊld/",
+      "pos": "Verb, Noun",
+      "frequency": 315,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Cầm, giữ vật trong tay",
+          "examples": [
+            {
+              "en": "Please hold this bag for me.",
+              "vi": "Vui lòng cầm giúp tôi cái túi này.",
+              "category": "General"
+            },
+            {
+              "en": "She held the baby gently.",
+              "vi": "Cô ấy bế em bé nhẹ nhàng.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Tổ chức, sắp xếp một sự kiện",
+          "examples": [
+            {
+              "en": "The company holds annual meetings.",
+              "vi": "Công ty tổ chức các cuộc họp hàng năm.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Conference hosting · hold",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How did your association decide to hold the annual psychology conference virtually rather than in person this year?",
+              "vi": "Hiệp hội của bạn quyết định tổ chức hội nghị tâm lý học thường niên trực tuyến thay vì trực tiếp năm nay như thế nào?",
+              "vocabs": [
+                "hold",
+                "annual psychology conference",
+                "virtually",
+                "in person"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Member surveys revealed overwhelming preference to hold accessible online sessions reaching diverse global audiences. Reducing travel costs democratizes academic participation while accommodating researchers managing complex personal commitments simultaneously.",
+              "vi": "Khảo sát thành viên đã tiết lộ sự ưa thích áp đảo để tổ chức các phiên trực tuyến dễ tiếp cận với khán giả toàn cầu đa dạng. Giảm chi phí đi lại dân chủ hóa sự tham gia học thuật trong khi đáp ứng các nhà nghiên cứu quản lý các cam kết cá nhân phức tạp đồng thời.",
+              "vocabs": [
+                "hold",
+                "accessible online",
+                "diverse global",
+                "travel costs",
+                "democratizes academic",
+                "personal commitments"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Will you hold next year's gathering using similar virtual technology platforms or return to traditional venues?",
+              "vi": "Bạn sẽ tổ chức cuộc tụ họp năm tới bằng nền tảng công nghệ ảo tương tự hay quay lại các địa điểm truyền thống?",
+              "vocabs": [
+                "hold",
+                "virtual technology platforms",
+                "traditional venues"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Future conferences will hold hybrid sessions combining intimate physical gatherings with extensive online accessibility options. Maintaining flexibility honors evolving member needs while preserving valuable face-to-face networking opportunities meaningfully.",
+              "vi": "Các hội nghị tương lai sẽ tổ chức các phiên hỗn hợp kết hợp các cuộc tụ họp vật lý thân mật với các tùy chọn truy cập trực tuyến rộng rãi. Duy trì sự linh hoạt tôn vinh nhu cầu thành viên đang phát triển trong khi bảo tồn cơ hội kết nối mặt đối mặt quý giá một cách ý nghĩa.",
+              "vocabs": [
+                "hold hybrid",
+                "intimate physical gatherings",
+                "online accessibility",
+                "evolving member",
+                "face-to-face networking",
+                "preserving"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "word": "break",
+      "phonetic": "/breɪk/",
+      "pos": "Verb, Noun",
+      "frequency": 310,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Vỡ, làm cho vật bị hư hỏng thành nhiều mảnh",
+          "examples": [
+            {
+              "en": "The vase fell and broke into pieces.",
+              "vi": "Cái bình đã rơi và vỡ thành nhiều mảnh.",
+              "category": "General"
+            },
+            {
+              "en": "He accidentally broke the window.",
+              "vi": "Anh ấy đã vô tình làm vỡ cửa sổ.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Nghỉ giải lao, thời gian ngắn để nghỉ ngơi",
+          "examples": [
+            {
+              "en": "Let's take a coffee break.",
+              "vi": "Hãy nghỉ giải lao uống cà phê.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Workplace boundaries · break",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why have you started taking regular breaks throughout your demanding workday despite tight project deadlines?",
+              "vi": "Tại sao bạn đã bắt đầu nghỉ giải lao đều đặn trong ngày làm việc đòi hỏi của mình bất chấp những hạn chót dự án gấp gáp?",
+              "vocabs": [
+                "break",
+                "demanding workday",
+                "tight project deadlines"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Research consistently demonstrates that brief mental breaks dramatically improve productivity and creative thinking. Stepping away from screens prevents harmful eye strain while restoring cognitive resources depleted during intense concentration periods.",
+              "vi": "Nghiên cứu liên tục chứng minh rằng những lần nghỉ ngơi tinh thần ngắn cải thiện đáng kể năng suất và tư duy sáng tạo. Bước ra khỏi màn hình ngăn ngừa căng mắt có hại trong khi phục hồi các nguồn lực nhận thức bị cạn kiệt trong các giai đoạn tập trung cường độ cao.",
+              "vocabs": [
+                "breaks",
+                "creative thinking",
+                "harmful eye strain",
+                "cognitive resources",
+                "depleted",
+                "concentration periods"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Doesn't taking these frequent breaks break your concentration flow during especially complex analytical tasks?",
+              "vi": "Việc nghỉ giải lao thường xuyên này không phá vỡ dòng tập trung của bạn trong các nhiệm vụ phân tích đặc biệt phức tạp sao?",
+              "vocabs": [
+                "breaks",
+                "concentration flow",
+                "complex analytical"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Strategic break timing actually breaks unproductive mental patterns rather than disrupting genuine creative flow. Returning refreshed enables breakthrough insights that prolonged exhaustion typically prevents during stubborn problem-solving sessions completely.",
+              "vi": "Thời điểm nghỉ giải lao chiến lược thực sự phá vỡ các mô hình tinh thần không hiệu quả thay vì làm gián đoạn dòng sáng tạo chân thực. Trở lại sảng khoái cho phép những hiểu biết đột phá mà sự kiệt sức kéo dài thường ngăn chặn trong các phiên giải quyết vấn đề bướng bỉnh hoàn toàn.",
+              "vocabs": [
+                "break",
+                "strategic timing",
+                "unproductive mental",
+                "creative flow",
+                "breakthrough insights",
+                "problem-solving sessions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "word": "fix",
+      "phonetic": "/fɪks/",
+      "pos": "Verb",
+      "frequency": 305,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Sửa chữa, làm cho vật hỏng hoạt động trở lại",
+          "examples": [
+            {
+              "en": "Can you fix my broken laptop?",
+              "vi": "Bạn có thể sửa laptop hỏng của tôi được không?",
+              "category": "Technology"
+            },
+            {
+              "en": "He fixed the leaking faucet.",
+              "vi": "Anh ấy đã sửa cái vòi nước bị rò.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Cố định, đặt vật vào vị trí ổn định",
+          "examples": [
+            {
+              "en": "Please fix the picture to the wall.",
+              "vi": "Vui lòng gắn bức tranh lên tường.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Vintage car restoration · fix",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long did it actually take to fix your grandfather's classic 1965 Ford Mustang completely?",
+              "vi": "Thực ra bạn đã mất bao lâu để sửa chữa hoàn toàn chiếc Ford Mustang đời 1965 cổ điển của ông nội bạn?",
+              "vocabs": [
+                "fix",
+                "grandfather's classic",
+                "Mustang",
+                "completely"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Fixing this vintage automobile required nearly four years of dedicated weekend mechanical work. Sourcing original replacement parts and learning specialized restoration techniques presented unexpected challenges throughout this passionate hobby project.",
+              "vi": "Việc sửa chữa chiếc ô tô cổ điển này đòi hỏi gần bốn năm công việc cơ khí cuối tuần tận tâm. Tìm kiếm các bộ phận thay thế nguyên bản và học các kỹ thuật phục hồi chuyên ngành đã đặt ra những thử thách bất ngờ trong suốt dự án sở thích đầy đam mê này.",
+              "vocabs": [
+                "fixing",
+                "vintage automobile",
+                "weekend mechanical",
+                "original replacement",
+                "specialized restoration",
+                "passionate hobby"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What was the most challenging component you had to fix during this lengthy restoration journey overall?",
+              "vi": "Thành phần thử thách nhất mà bạn phải sửa chữa trong hành trình phục hồi kéo dài này tổng thể là gì?",
+              "vocabs": [
+                "fix",
+                "challenging component",
+                "restoration journey"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Rebuilding the original engine demanded the greatest patience and technical expertise overall. Watching countless YouTube tutorials, consulting retired mechanics, and ordering specialized tools enabled successful restoration despite intimidating mechanical complexity initially.",
+              "vi": "Xây dựng lại động cơ nguyên bản đòi hỏi sự kiên nhẫn và chuyên môn kỹ thuật lớn nhất tổng thể. Xem vô số hướng dẫn YouTube, tham khảo các thợ cơ khí đã nghỉ hưu và đặt các công cụ chuyên dụng cho phép phục hồi thành công bất chấp sự phức tạp cơ khí đáng sợ ban đầu.",
+              "vocabs": [
+                "rebuilding",
+                "original engine",
+                "technical expertise",
+                "retired mechanics",
+                "specialized tools",
+                "mechanical complexity"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "word": "turn",
+      "phonetic": "/tɜːn/",
+      "pos": "Verb, Noun",
+      "frequency": 300,
+      "categories": [
+        "General",
+        "Travel"
+      ],
+      "meanings": [
+        {
+          "vi": "Quay, xoay theo hướng khác",
+          "examples": [
+            {
+              "en": "Please turn left at the corner.",
+              "vi": "Vui lòng rẽ trái tại góc đường.",
+              "category": "Travel"
+            },
+            {
+              "en": "She turned to face her friend.",
+              "vi": "Cô ấy quay lại để đối diện với bạn.",
+              "category": "Social"
+            }
+          ]
+        },
+        {
+          "vi": "Trở thành, chuyển đổi sang trạng thái khác",
+          "examples": [
+            {
+              "en": "The leaves turn red in autumn.",
+              "vi": "Lá cây chuyển sang màu đỏ vào mùa thu.",
+              "category": "Nature"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Life transition · turn",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What major event made your life turn dramatically in completely unexpected directions during last year alone?",
+              "vi": "Sự kiện lớn nào đã khiến cuộc sống của bạn rẽ ngoặt đáng kể theo những hướng hoàn toàn bất ngờ chỉ trong năm ngoái?",
+              "vocabs": [
+                "turn",
+                "dramatically",
+                "unexpected directions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Receiving a serious diagnosis turned my entire perspective toward genuine priorities permanently. Reevaluating relationships, ambitions, and lifestyle choices created profound clarity about meaningful pursuits worth dedicating limited time toward.",
+              "vi": "Nhận chẩn đoán nghiêm trọng đã làm cho toàn bộ quan điểm của tôi quay sang các ưu tiên chân thực vĩnh viễn. Đánh giá lại các mối quan hệ, hoài bão và lựa chọn lối sống đã tạo ra sự rõ ràng sâu sắc về những theo đuổi ý nghĩa đáng dành thời gian hạn chế.",
+              "vocabs": [
+                "turned",
+                "serious diagnosis",
+                "genuine priorities",
+                "reevaluating relationships",
+                "lifestyle choices",
+                "meaningful pursuits"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How did this challenging turn affect your specific professional trajectory and previous long-term ambitions seriously?",
+              "vi": "Sự rẽ ngoặt đầy thử thách này đã ảnh hưởng đến quỹ đạo nghề nghiệp cụ thể của bạn và những hoài bão dài hạn trước đây như thế nào?",
+              "vocabs": [
+                "turn",
+                "professional trajectory",
+                "long-term ambitions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I turned away from corporate ambitions toward purposeful entrepreneurship benefiting underserved communities tangibly. Creating positive societal impact provides immeasurably greater satisfaction than chasing wealth that accumulated meaninglessly without genuine purpose.",
+              "vi": "Tôi đã rẽ khỏi tham vọng doanh nghiệp hướng đến khởi nghiệp có mục đích mang lại lợi ích cho các cộng đồng không được phục vụ một cách hữu hình. Tạo ra tác động xã hội tích cực mang lại sự thỏa mãn lớn hơn không thể đo lường so với việc theo đuổi sự giàu có tích lũy vô nghĩa mà không có mục đích chân thực.",
+              "vocabs": [
+                "turned",
+                "corporate ambitions",
+                "purposeful entrepreneurship",
+                "underserved communities",
+                "societal impact",
+                "immeasurably"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "word": "push",
+      "phonetic": "/pʊʃ/",
+      "pos": "Verb, Noun",
+      "frequency": 295,
+      "categories": [
+        "General",
+        "Sports"
+      ],
+      "meanings": [
+        {
+          "vi": "Đẩy, dùng lực để di chuyển vật ra xa",
+          "examples": [
+            {
+              "en": "Please push the door to open it.",
+              "vi": "Vui lòng đẩy cửa để mở.",
+              "category": "General"
+            },
+            {
+              "en": "He pushed the heavy box across the room.",
+              "vi": "Anh ấy đã đẩy cái thùng nặng qua căn phòng.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Thúc đẩy, ép buộc làm điều gì đó",
+          "examples": [
+            {
+              "en": "She pushed herself to study harder.",
+              "vi": "Cô ấy đã thúc đẩy bản thân học chăm chỉ hơn.",
+              "category": "Education"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Athletic training · push",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How do you push yourself to keep training intensely after experiencing such severe muscle injuries last season?",
+              "vi": "Bạn thúc đẩy bản thân tiếp tục tập luyện cường độ cao như thế nào sau khi trải qua những chấn thương cơ nghiêm trọng như vậy mùa trước?",
+              "vocabs": [
+                "push yourself",
+                "training intensely",
+                "severe muscle injuries",
+                "season"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Disciplined recovery protocols allow me to push appropriate boundaries gradually without dangerous reinjury risks. Listening attentively to physical signals while maintaining mental determination produces sustainable athletic improvements throughout demanding rehabilitation periods.",
+              "vi": "Các quy trình phục hồi có kỷ luật cho phép tôi vượt qua các ranh giới phù hợp dần dần mà không có nguy cơ tái chấn thương nguy hiểm. Lắng nghe chú ý đến các tín hiệu thể chất trong khi duy trì quyết tâm tinh thần tạo ra cải tiến thể thao bền vững trong các giai đoạn phục hồi đòi hỏi.",
+              "vocabs": [
+                "push",
+                "disciplined recovery",
+                "appropriate boundaries",
+                "reinjury risks",
+                "physical signals",
+                "rehabilitation periods"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Should athletes push through painful sensations or pause immediately when their bodies signal warning discomfort?",
+              "vi": "Vận động viên nên cố gắng vượt qua các cảm giác đau đớn hay tạm dừng ngay khi cơ thể họ phát tín hiệu khó chịu cảnh báo?",
+              "vocabs": [
+                "push through",
+                "painful sensations",
+                "pause immediately",
+                "warning discomfort"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Distinguishing productive discomfort from damaging pain matters enormously throughout serious athletic development. Pushing too aggressively risks devastating long-term consequences while excessive caution prevents necessary physiological adaptations entirely over training cycles.",
+              "vi": "Phân biệt sự khó chịu năng suất với cơn đau gây hại quan trọng vô cùng trong suốt sự phát triển thể thao nghiêm túc. Đẩy quá mạnh mẽ rủi ro hậu quả lâu dài tàn khốc trong khi sự thận trọng quá mức ngăn cản sự thích nghi sinh lý cần thiết hoàn toàn qua các chu kỳ tập luyện.",
+              "vocabs": [
+                "pushing",
+                "productive discomfort",
+                "damaging pain",
+                "athletic development",
+                "long-term consequences",
+                "physiological adaptations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "word": "pull",
+      "phonetic": "/pʊl/",
+      "pos": "Verb, Noun",
+      "frequency": 290,
+      "categories": [
+        "General",
+        "Sports"
+      ],
+      "meanings": [
+        {
+          "vi": "Kéo, dùng lực kéo vật về phía mình",
+          "examples": [
+            {
+              "en": "Please pull the door open carefully.",
+              "vi": "Vui lòng kéo cửa mở một cách cẩn thận.",
+              "category": "General"
+            },
+            {
+              "en": "She pulled her suitcase across the airport.",
+              "vi": "Cô ấy đã kéo vali qua sân bay.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Thu hút, lôi cuốn sự chú ý",
+          "examples": [
+            {
+              "en": "The advertisement pulls many customers.",
+              "vi": "Quảng cáo thu hút nhiều khách hàng.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Crisis recovery · pull",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How did you pull yourself together emotionally after losing your business during last year's economic downturn?",
+              "vi": "Bạn đã ổn định lại tinh thần như thế nào sau khi mất doanh nghiệp trong đợt suy thoái kinh tế năm ngoái?",
+              "vocabs": [
+                "pull yourself together",
+                "emotionally",
+                "economic downturn"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Therapy sessions and meditation helped me pull through this devastating professional setback gradually. Reframing failure as valuable learning experiences transformed my perspective about resilience and entrepreneurial growth opportunities.",
+              "vi": "Các buổi trị liệu và thiền giúp tôi vượt qua sự thất bại nghề nghiệp tàn khốc này dần dần. Định hình lại thất bại như những trải nghiệm học tập quý giá đã biến đổi quan điểm của tôi về khả năng phục hồi và cơ hội phát triển khởi nghiệp.",
+              "vocabs": [
+                "pull through",
+                "therapy sessions",
+                "devastating professional",
+                "reframing failure",
+                "resilience",
+                "entrepreneurial growth"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What strategies actually pull aspiring entrepreneurs out of similar emotional spirals during major financial crises?",
+              "vi": "Những chiến lược nào thực sự kéo các doanh nhân đầy tham vọng ra khỏi những vòng xoáy cảm xúc tương tự trong các cuộc khủng hoảng tài chính lớn?",
+              "vocabs": [
+                "pull",
+                "aspiring entrepreneurs",
+                "emotional spirals",
+                "financial crises"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Connecting with supportive mentor networks pulls struggling founders toward genuine recovery surprisingly fast. Consistent daily routines, professional counseling, and physical exercise rebuild psychological foundations essential for future ambitious ventures.",
+              "vi": "Kết nối với mạng lưới cố vấn hỗ trợ kéo những người sáng lập đang vật lộn về phía phục hồi chân thực một cách nhanh chóng đáng ngạc nhiên. Thói quen hàng ngày nhất quán, tư vấn chuyên nghiệp và tập thể dục thể chất xây dựng lại nền tảng tâm lý cần thiết cho các dự án đầy tham vọng trong tương lai.",
+              "vocabs": [
+                "pulls",
+                "supportive mentor",
+                "struggling founders",
+                "consistent daily",
+                "professional counseling",
+                "ambitious ventures"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "word": "draw",
+      "phonetic": "/drɔː/",
+      "pos": "Verb, Noun",
+      "frequency": 285,
+      "categories": [
+        "Arts",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Vẽ, tạo ra hình ảnh bằng bút chì hoặc dụng cụ",
+          "examples": [
+            {
+              "en": "She draws beautiful landscapes.",
+              "vi": "Cô ấy vẽ những phong cảnh đẹp.",
+              "category": "Arts"
+            },
+            {
+              "en": "Children love to draw with crayons.",
+              "vi": "Trẻ em thích vẽ bằng bút sáp màu.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Thu hút, lôi cuốn sự quan tâm hoặc sự chú ý",
+          "examples": [
+            {
+              "en": "The festival drew thousands of visitors.",
+              "vi": "Lễ hội đã thu hút hàng nghìn du khách.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Architectural sketching · draw",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why do you continue to draw architectural plans by hand instead of using modern design software exclusively?",
+              "vi": "Tại sao bạn tiếp tục vẽ các bản thiết kế kiến trúc bằng tay thay vì sử dụng phần mềm thiết kế hiện đại độc quyền?",
+              "vocabs": [
+                "draw",
+                "architectural plans",
+                "hand",
+                "design software"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Hand-drawn sketches draw out creative ideas that digital tools sometimes constrain rigidly. Manual sketching allows organic exploration of spatial relationships fostering innovative architectural solutions through tactile creative engagement.",
+              "vi": "Các bản phác thảo vẽ tay rút ra những ý tưởng sáng tạo mà các công cụ kỹ thuật số đôi khi hạn chế cứng nhắc. Phác thảo thủ công cho phép khám phá hữu cơ về các mối quan hệ không gian thúc đẩy các giải pháp kiến trúc đổi mới thông qua sự tham gia sáng tạo xúc giác.",
+              "vocabs": [
+                "draw out",
+                "hand-drawn sketches",
+                "digital tools",
+                "manual sketching",
+                "spatial relationships",
+                "tactile creative"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Does drawing manually really draw clients toward your traditional architectural firm rather than competitors?",
+              "vi": "Việc vẽ thủ công có thực sự thu hút khách hàng đến công ty kiến trúc truyền thống của bạn hơn là các đối thủ không?",
+              "vocabs": [
+                "drawing manually",
+                "draw clients",
+                "architectural firm"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Personalized hand-drawn presentations consistently draw discerning clients seeking authentic craftsmanship over mass-produced renderings. Discerning patrons appreciate artistic uniqueness translating into genuinely distinctive buildings reflecting individual character and aspirations.",
+              "vi": "Các bản trình bày vẽ tay cá nhân hóa liên tục thu hút những khách hàng sành điệu tìm kiếm nghề thủ công chân thực hơn các bản vẽ sản xuất hàng loạt. Những người bảo trợ sành điệu đánh giá cao sự độc đáo nghệ thuật chuyển thành những tòa nhà thực sự khác biệt phản ánh tính cách cá nhân và khát vọng.",
+              "vocabs": [
+                "draw",
+                "personalized presentations",
+                "discerning clients",
+                "authentic craftsmanship",
+                "mass-produced renderings",
+                "distinctive buildings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "word": "cut",
+      "phonetic": "/kʌt/",
+      "pos": "Verb, Noun",
+      "frequency": 280,
+      "categories": [
+        "General",
+        "Food"
+      ],
+      "meanings": [
+        {
+          "vi": "Cắt, dùng dao hoặc kéo để chia vật thành phần",
+          "examples": [
+            {
+              "en": "Please cut the bread into slices.",
+              "vi": "Vui lòng cắt bánh mì thành lát.",
+              "category": "Food"
+            },
+            {
+              "en": "He cut his finger while cooking.",
+              "vi": "Anh ấy đã cắt vào ngón tay khi nấu ăn.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Giảm, làm cho cái gì đó nhỏ hơn về số lượng",
+          "examples": [
+            {
+              "en": "The company cut its workforce by ten percent.",
+              "vi": "Công ty đã cắt giảm lực lượng lao động mười phần trăm.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Budget management · cut",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did your household need to cut monthly expenses so drastically after starting your home renovation project?",
+              "vi": "Tại sao gia đình bạn cần phải cắt giảm chi tiêu hàng tháng quá đáng kể sau khi bắt đầu dự án cải tạo nhà?",
+              "vocabs": [
+                "cut",
+                "monthly expenses",
+                "home renovation",
+                "project"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Unexpected construction overruns forced us to cut discretionary spending immediately throughout this challenging period. Eliminating restaurant outings and entertainment subscriptions preserved savings desperately needed for essential structural improvements.",
+              "vi": "Sự vượt chi xây dựng không lường trước buộc chúng tôi phải cắt giảm chi tiêu tùy ý ngay lập tức trong giai đoạn thử thách này. Loại bỏ các bữa ăn nhà hàng và đăng ký giải trí đã bảo tồn tiền tiết kiệm cần thiết cho các cải tiến cấu trúc thiết yếu.",
+              "vocabs": [
+                "cut",
+                "construction overruns",
+                "discretionary spending",
+                "restaurant outings",
+                "entertainment subscriptions",
+                "structural improvements"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How did your family adjust emotionally to such significant cuts in your previously comfortable lifestyle?",
+              "vi": "Gia đình bạn đã điều chỉnh cảm xúc như thế nào với sự cắt giảm đáng kể trong lối sống thoải mái trước đây?",
+              "vocabs": [
+                "cuts",
+                "comfortable lifestyle",
+                "adjust emotionally"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Reframing temporary cuts as collective sacrifice toward shared dreams unified our family beautifully. Children embraced creative budget activities, learning valuable financial discipline lessons that ultimately enriched their understanding about purposeful resource allocation.",
+              "vi": "Định hình lại những cắt giảm tạm thời như sự hy sinh tập thể hướng đến những giấc mơ chung đã thống nhất gia đình chúng tôi một cách tuyệt đẹp. Trẻ em đón nhận các hoạt động ngân sách sáng tạo, học những bài học kỷ luật tài chính quý giá mà cuối cùng làm phong phú sự hiểu biết của chúng về phân bổ nguồn lực có mục đích.",
+              "vocabs": [
+                "cuts",
+                "collective sacrifice",
+                "shared dreams",
+                "creative budget",
+                "financial discipline",
+                "resource allocation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "word": "grow",
+      "phonetic": "/ɡrəʊ/",
+      "pos": "Verb",
+      "frequency": 275,
+      "categories": [
+        "General",
+        "Nature"
+      ],
+      "meanings": [
+        {
+          "vi": "Mọc lên, phát triển về kích thước hoặc số lượng",
+          "examples": [
+            {
+              "en": "Children grow quickly during the early years.",
+              "vi": "Trẻ em lớn nhanh trong những năm đầu đời.",
+              "category": "Family"
+            },
+            {
+              "en": "Tomatoes grow well in this soil.",
+              "vi": "Cà chua phát triển tốt trong loại đất này.",
+              "category": "Nature"
+            }
+          ]
+        },
+        {
+          "vi": "Trở thành, dần dần biến đổi sang trạng thái khác",
+          "examples": [
+            {
+              "en": "He has grown into a mature young man.",
+              "vi": "Anh ấy đã trưởng thành thành một thanh niên chững chạc.",
+              "category": "Family"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Urban farming · grow",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How did you start to grow vegetables successfully on your tiny apartment balcony in this congested urban environment?",
+              "vi": "Bạn đã bắt đầu trồng rau thành công trên ban công căn hộ nhỏ của mình trong môi trường đô thị đông đúc này như thế nào?",
+              "vocabs": [
+                "grow vegetables",
+                "tiny apartment balcony",
+                "congested urban"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Vertical hydroponic systems allow me to grow remarkable yields within extremely limited spaces consistently. Cherry tomatoes, leafy greens, and aromatic herbs thrive when receiving adequate natural sunlight throughout daylight hours.",
+              "vi": "Hệ thống thủy canh thẳng đứng cho phép tôi trồng năng suất đáng chú ý trong không gian cực kỳ hạn chế một cách nhất quán. Cà chua bi, rau lá xanh và các loại thảo mộc thơm phát triển mạnh khi nhận được ánh sáng mặt trời tự nhiên đầy đủ trong các giờ ban ngày.",
+              "vocabs": [
+                "grow",
+                "vertical hydroponic",
+                "remarkable yields",
+                "cherry tomatoes",
+                "leafy greens",
+                "aromatic herbs"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Have you helped your neighbors grow their own urban gardens after seeing your impressive successful harvest?",
+              "vi": "Bạn đã giúp hàng xóm trồng vườn đô thị của riêng họ sau khi thấy mùa thu hoạch thành công ấn tượng của bạn không?",
+              "vocabs": [
+                "grow",
+                "neighbors",
+                "urban gardens",
+                "successful harvest"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Fellow apartment dwellers genuinely want to grow homemade produce after tasting freshness firsthand. Sharing seedlings, exchanging gardening techniques, and teaching beginner classes transformed isolated neighbors into supportive community gardening enthusiasts.",
+              "vi": "Những cư dân chung cư cùng nhà thực sự muốn trồng sản phẩm tự làm sau khi nếm thử độ tươi tận tay. Chia sẻ cây giống, trao đổi kỹ thuật làm vườn và dạy các lớp người mới bắt đầu đã biến những hàng xóm cô lập thành những người đam mê làm vườn cộng đồng hỗ trợ.",
+              "vocabs": [
+                "grow",
+                "fellow dwellers",
+                "homemade produce",
+                "seedlings",
+                "gardening techniques",
+                "community gardening"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "word": "builds",
+      "phonetic": "/bɪldz/",
+      "pos": "Verb",
+      "frequency": 270,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Xây dựng, tạo nên một công trình hoặc cấu trúc",
+          "examples": [
+            {
+              "en": "He builds custom furniture for clients.",
+              "vi": "Anh ấy xây dựng nội thất theo yêu cầu cho khách hàng.",
+              "category": "Work"
+            },
+            {
+              "en": "She builds robots in her garage workshop.",
+              "vi": "Cô ấy chế tạo robot trong xưởng ga-ra.",
+              "category": "Technology"
+            }
+          ]
+        },
+        {
+          "vi": "Phát triển, gia tăng dần dần về số lượng hoặc cường độ",
+          "examples": [
+            {
+              "en": "Trust builds over many years of friendship.",
+              "vi": "Niềm tin được xây dựng qua nhiều năm tình bạn.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Reputation development · builds",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What specific approach builds professional credibility for newcomers entering the highly competitive consulting industry quickly?",
+              "vi": "Cách tiếp cận cụ thể nào xây dựng uy tín chuyên môn cho những người mới bước vào ngành tư vấn cạnh tranh cao nhanh chóng?",
+              "vocabs": [
+                "builds",
+                "professional credibility",
+                "newcomers",
+                "competitive consulting"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Demonstrating consistent expertise through publishing thoughtful articles builds genuine industry recognition systematically. Speaking at relevant conferences, mentoring rising professionals, and producing valuable case studies establishes credibility surpassing aggressive marketing tactics.",
+              "vi": "Thể hiện chuyên môn nhất quán thông qua xuất bản các bài viết chu đáo xây dựng sự công nhận ngành chân thực một cách có hệ thống. Phát biểu tại các hội nghị liên quan, cố vấn các chuyên gia đang lên và sản xuất các nghiên cứu trường hợp có giá trị thiết lập uy tín vượt qua các chiến thuật tiếp thị hung hăng.",
+              "vocabs": [
+                "builds",
+                "consistent expertise",
+                "thoughtful articles",
+                "industry recognition",
+                "rising professionals",
+                "case studies"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How long typically builds enough credibility to attract premium consulting clients independently from established firms?",
+              "vi": "Thông thường mất bao lâu để xây dựng đủ uy tín thu hút khách hàng tư vấn cao cấp độc lập từ các công ty đã thành lập?",
+              "vocabs": [
+                "builds",
+                "premium consulting clients",
+                "established firms"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Building reputation typically requires three to five years of dedicated visibility efforts persistently. Combining digital presence with strategic networking builds compound recognition while authentic relationships generate referrals exceeding traditional cold outreach methods.",
+              "vi": "Xây dựng danh tiếng thường đòi hỏi ba đến năm năm nỗ lực hiển thị tận tâm một cách kiên trì. Kết hợp sự hiện diện kỹ thuật số với kết nối mạng chiến lược xây dựng sự công nhận tổng hợp trong khi các mối quan hệ chân thực tạo ra giới thiệu vượt qua các phương pháp tiếp cận lạnh truyền thống.",
+              "vocabs": [
+                "building",
+                "dedicated visibility",
+                "digital presence",
+                "strategic networking",
+                "compound recognition",
+                "cold outreach"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "word": "check",
+      "phonetic": "/tʃek/",
+      "pos": "Verb, Noun",
+      "frequency": 265,
+      "categories": [
+        "General",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Kiểm tra, xem xét để đảm bảo đúng đắn",
+          "examples": [
+            {
+              "en": "Please check your email regularly.",
+              "vi": "Vui lòng kiểm tra email thường xuyên.",
+              "category": "Work"
+            },
+            {
+              "en": "She checked her answers before submitting.",
+              "vi": "Cô ấy đã kiểm tra câu trả lời trước khi nộp.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Sự kiểm tra, lần xem xét để xác nhận",
+          "examples": [
+            {
+              "en": "The doctor gave him a thorough check.",
+              "vi": "Bác sĩ đã kiểm tra anh ấy kỹ càng.",
+              "category": "Health"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Pre-flight inspection · check",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How thoroughly do experienced pilots check aircraft systems before each commercial international flight departure?",
+              "vi": "Các phi công có kinh nghiệm kiểm tra hệ thống máy bay kỹ lưỡng đến mức nào trước mỗi chuyến bay thương mại quốc tế?",
+              "vocabs": [
+                "check",
+                "experienced pilots",
+                "commercial international",
+                "departure"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Captains methodically check approximately three hundred separate components throughout comprehensive preflight inspections rigorously. Verifying hydraulic systems, electronic instruments, and emergency equipment ensures absolute passenger safety during transcontinental aviation operations.",
+              "vi": "Cơ trưởng kiểm tra một cách có phương pháp khoảng ba trăm thành phần riêng biệt trong các cuộc kiểm tra trước chuyến bay toàn diện một cách nghiêm ngặt. Xác minh hệ thống thủy lực, thiết bị điện tử và thiết bị khẩn cấp đảm bảo an toàn tuyệt đối cho hành khách trong các hoạt động hàng không xuyên lục địa.",
+              "vocabs": [
+                "check",
+                "methodically",
+                "preflight inspections",
+                "hydraulic systems",
+                "electronic instruments",
+                "emergency equipment"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What happens when these meticulous checks reveal potentially serious mechanical problems requiring immediate attention?",
+              "vi": "Điều gì xảy ra khi các cuộc kiểm tra tỉ mỉ này tiết lộ các vấn đề cơ học nghiêm trọng tiềm ẩn cần được chú ý ngay lập tức?",
+              "vocabs": [
+                "checks",
+                "mechanical problems",
+                "immediate attention"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Identified issues immediately ground flights despite passenger inconveniences and considerable financial costs. Maintaining absolute safety standards over commercial pressure protects countless lives while preserving public trust throughout international airline operations consistently.",
+              "vi": "Các vấn đề được xác định ngay lập tức đình chỉ các chuyến bay bất chấp sự bất tiện của hành khách và chi phí tài chính đáng kể. Duy trì các tiêu chuẩn an toàn tuyệt đối hơn áp lực thương mại bảo vệ vô số mạng sống trong khi bảo tồn niềm tin của công chúng trong suốt các hoạt động hàng không quốc tế một cách nhất quán.",
+              "vocabs": [
+                "check",
+                "ground flights",
+                "passenger inconveniences",
+                "safety standards",
+                "commercial pressure",
+                "public trust"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "word": "test",
+      "phonetic": "/test/",
+      "pos": "Verb, Noun",
+      "frequency": 260,
+      "categories": [
+        "Education",
+        "Work"
+      ],
+      "meanings": [
+        {
+          "vi": "Kiểm tra, đánh giá kiến thức hoặc khả năng",
+          "examples": [
+            {
+              "en": "The teacher will test us on chapter five.",
+              "vi": "Giáo viên sẽ kiểm tra chúng tôi về chương năm.",
+              "category": "Education"
+            },
+            {
+              "en": "She tested the recipe before dinner.",
+              "vi": "Cô ấy đã thử công thức trước bữa tối.",
+              "category": "Food"
+            }
+          ]
+        },
+        {
+          "vi": "Bài kiểm tra, kỳ thi đánh giá kết quả học tập",
+          "examples": [
+            {
+              "en": "He passed the driving test on the first try.",
+              "vi": "Anh ấy đã đỗ kỳ thi lái xe ngay lần đầu.",
+              "category": "Education"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Software quality · test",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How rigorously do your engineering teams test new software features before official public release deployment?",
+              "vi": "Đội ngũ kỹ thuật của bạn kiểm tra các tính năng phần mềm mới nghiêm ngặt như thế nào trước khi triển khai phát hành công khai chính thức?",
+              "vocabs": [
+                "test",
+                "engineering teams",
+                "software features",
+                "release deployment"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "We test extensively across multiple environments simulating real-world usage patterns realistically. Automated testing suites combined with manual verification by quality assurance specialists ensure stable releases without disruptive bugs.",
+              "vi": "Chúng tôi kiểm tra rộng rãi qua nhiều môi trường mô phỏng các mẫu sử dụng thực tế một cách thực tế. Bộ kiểm tra tự động kết hợp với xác minh thủ công bởi các chuyên gia đảm bảo chất lượng đảm bảo các bản phát hành ổn định mà không có lỗi gây gián đoạn.",
+              "vocabs": [
+                "test extensively",
+                "real-world usage",
+                "automated testing",
+                "manual verification",
+                "quality assurance",
+                "disruptive bugs"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Have automated testing tools really eliminated the need for manual quality testing throughout development cycles?",
+              "vi": "Các công cụ kiểm tra tự động có thực sự loại bỏ nhu cầu kiểm tra chất lượng thủ công trong các chu kỳ phát triển không?",
+              "vocabs": [
+                "testing tools",
+                "manual quality testing",
+                "development cycles"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Automated tests handle repetitive scenarios efficiently but cannot test nuanced user experiences fully. Skilled human testers identify subtle interface problems while predicting unusual edge cases automated frameworks frequently miss completely.",
+              "vi": "Các bài kiểm tra tự động xử lý các kịch bản lặp lại hiệu quả nhưng không thể kiểm tra trải nghiệm người dùng sắc thái đầy đủ. Những người kiểm tra con người có kỹ năng xác định các vấn đề giao diện tinh tế trong khi dự đoán các trường hợp biên bất thường mà các framework tự động thường xuyên bỏ qua hoàn toàn.",
+              "vocabs": [
+                "test",
+                "automated tests",
+                "nuanced user experiences",
+                "skilled human testers",
+                "interface problems",
+                "edge cases"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "word": "review",
+      "phonetic": "/rɪˈvjuː/",
+      "pos": "Verb, Noun",
+      "frequency": 255,
+      "categories": [
+        "Work",
+        "Education"
+      ],
+      "meanings": [
+        {
+          "vi": "Xem xét lại, đánh giá kỹ điều gì đó",
+          "examples": [
+            {
+              "en": "Please review the contract carefully.",
+              "vi": "Vui lòng xem xét hợp đồng cẩn thận.",
+              "category": "Work"
+            },
+            {
+              "en": "She reviews her notes before exams.",
+              "vi": "Cô ấy ôn lại ghi chú trước kỳ thi.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Bài đánh giá, lời nhận xét về tác phẩm hoặc sản phẩm",
+          "examples": [
+            {
+              "en": "The book received excellent reviews.",
+              "vi": "Cuốn sách đã nhận được những đánh giá xuất sắc.",
+              "category": "Arts"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Performance evaluation · review",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How does your manager review individual contributions during the formal annual performance evaluation process?",
+              "vi": "Quản lý của bạn xem xét những đóng góp cá nhân trong quá trình đánh giá hiệu suất chính thức hàng năm như thế nào?",
+              "vocabs": [
+                "review",
+                "individual contributions",
+                "performance evaluation"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "She conducts thorough reviews examining quantifiable achievements alongside qualitative collaborative behaviors holistically. Comprehensive feedback combines self-assessments, peer reviews, and managerial observations creating balanced perspectives on professional growth opportunities.",
+              "vi": "Cô ấy thực hiện các đánh giá kỹ lưỡng xem xét các thành tựu có thể định lượng cùng với hành vi cộng tác định tính một cách toàn diện. Phản hồi toàn diện kết hợp tự đánh giá, đánh giá đồng nghiệp và quan sát quản lý tạo ra quan điểm cân bằng về cơ hội phát triển nghề nghiệp.",
+              "vocabs": [
+                "reviews",
+                "quantifiable achievements",
+                "qualitative collaborative",
+                "self-assessments",
+                "peer reviews",
+                "professional growth"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Do you find these intensive review sessions genuinely helpful or merely bureaucratic exercises wasting valuable time?",
+              "vi": "Bạn thấy các buổi đánh giá chuyên sâu này thực sự hữu ích hay chỉ là các bài tập quan liêu lãng phí thời gian quý giá?",
+              "vocabs": [
+                "review sessions",
+                "bureaucratic exercises",
+                "wasting"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Reviews provide invaluable opportunities to discuss aspirations and address constructive criticism openly. Setting concrete development goals and identifying training opportunities transforms ordinary reviews into pivotal career-shaping consultations annually.",
+              "vi": "Các đánh giá cung cấp cơ hội vô giá để thảo luận về khát vọng và giải quyết lời phê bình mang tính xây dựng một cách cởi mở. Đặt ra các mục tiêu phát triển cụ thể và xác định cơ hội đào tạo biến các đánh giá thông thường thành các cuộc tư vấn định hình nghề nghiệp then chốt hàng năm.",
+              "vocabs": [
+                "reviews",
+                "discuss aspirations",
+                "constructive criticism",
+                "development goals",
+                "training opportunities",
+                "career-shaping"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "word": "share",
+      "phonetic": "/ʃeə(r)/",
+      "pos": "Verb, Noun",
+      "frequency": 250,
+      "categories": [
+        "Social",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Chia sẻ, cho người khác cùng sử dụng",
+          "examples": [
+            {
+              "en": "She shares her lunch with colleagues.",
+              "vi": "Cô ấy chia sẻ bữa trưa với đồng nghiệp.",
+              "category": "Work"
+            },
+            {
+              "en": "Please share this article with your friends.",
+              "vi": "Vui lòng chia sẻ bài viết này với bạn bè.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Phần được chia, phần thuộc về một người trong tổng số",
+          "examples": [
+            {
+              "en": "He owns shares in the company.",
+              "vi": "Anh ấy sở hữu cổ phần trong công ty.",
+              "category": "Finance"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Knowledge platform · share",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you create that online platform allowing experts to share specialized knowledge with global audiences freely?",
+              "vi": "Tại sao bạn tạo ra nền tảng trực tuyến đó cho phép các chuyên gia chia sẻ kiến thức chuyên biệt với khán giả toàn cầu miễn phí?",
+              "vocabs": [
+                "share specialized",
+                "online platform",
+                "global audiences"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Democratizing education motivates me to share valuable expertise typically reserved for elite institutions exclusively. Watching learners worldwide access transformative knowledge creates genuine systemic change, surpassing traditional gatekeeping educational paradigms substantially.",
+              "vi": "Dân chủ hóa giáo dục thúc đẩy tôi chia sẻ chuyên môn quý giá thường dành riêng cho các tổ chức ưu tú. Quan sát người học trên toàn thế giới truy cập kiến thức biến đổi tạo ra sự thay đổi hệ thống chân thực, vượt qua các mô hình giáo dục giữ cửa truyền thống đáng kể.",
+              "vocabs": [
+                "share",
+                "democratizing education",
+                "valuable expertise",
+                "elite institutions",
+                "transformative knowledge",
+                "gatekeeping educational"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Do contributors actually want to share their hard-earned professional knowledge without receiving substantial financial compensation regularly?",
+              "vi": "Những người đóng góp có thực sự muốn chia sẻ kiến thức chuyên môn khó kiếm được mà không nhận được sự đền bù tài chính đáng kể thường xuyên không?",
+              "vocabs": [
+                "share",
+                "hard-earned",
+                "financial compensation"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Many established experts willingly share insights motivated by altruistic purposes beyond monetary rewards. Building meaningful legacies, expanding professional reputations, and inspiring future practitioners provides intrinsic satisfaction transcending superficial transactional considerations entirely.",
+              "vi": "Nhiều chuyên gia đã thành lập sẵn lòng chia sẻ những hiểu biết được thúc đẩy bởi mục đích vị tha vượt qua phần thưởng tiền tệ. Xây dựng di sản ý nghĩa, mở rộng danh tiếng chuyên môn và truyền cảm hứng cho các nhà thực hành tương lai mang lại sự thỏa mãn nội tại vượt qua những cân nhắc giao dịch hời hợt hoàn toàn.",
+              "vocabs": [
+                "share insights",
+                "altruistic purposes",
+                "meaningful legacies",
+                "professional reputations",
+                "future practitioners",
+                "transactional considerations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "word": "believe",
+      "phonetic": "/bɪˈliːv/",
+      "pos": "Verb",
+      "frequency": 245,
+      "categories": [
+        "Thinking",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Tin tưởng, chấp nhận điều gì đó là đúng sự thật",
+          "examples": [
+            {
+              "en": "I believe what he said was true.",
+              "vi": "Tôi tin rằng những gì anh ấy nói là sự thật.",
+              "category": "Communication"
+            },
+            {
+              "en": "She believes in honesty above all.",
+              "vi": "Cô ấy tin vào sự trung thực trên hết.",
+              "category": "Thinking"
+            }
+          ]
+        },
+        {
+          "vi": "Cho rằng, có ý kiến về điều gì đó",
+          "examples": [
+            {
+              "en": "I believe she will arrive soon.",
+              "vi": "Tôi cho rằng cô ấy sẽ sớm đến.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Conviction power · believe",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why do you genuinely believe that maintaining unwavering optimism actually changes outcomes during challenging life circumstances?",
+              "vi": "Tại sao bạn thực sự tin rằng duy trì sự lạc quan không lay chuyển thực sự thay đổi kết quả trong những hoàn cảnh sống đầy thử thách?",
+              "vocabs": [
+                "believe",
+                "unwavering optimism",
+                "challenging life circumstances"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Psychological research consistently shows that those who believe in positive outcomes generally manifest those expectations remarkably. Cognitive frameworks shape behaviors, attracting opportunities while resilient mindsets create authentic transformations across difficult professional and personal experiences.",
+              "vi": "Nghiên cứu tâm lý liên tục cho thấy rằng những người tin vào kết quả tích cực nói chung thể hiện những kỳ vọng đó một cách đáng chú ý. Các khuôn khổ nhận thức định hình hành vi, thu hút cơ hội trong khi tư duy kiên cường tạo ra những biến đổi chân thực qua các trải nghiệm chuyên môn và cá nhân khó khăn.",
+              "vocabs": [
+                "believe",
+                "psychological research",
+                "positive outcomes",
+                "cognitive frameworks",
+                "resilient mindsets",
+                "authentic transformations"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Don't pessimists believe their realistic assessments simply reflect harsh truths rather than negative thinking patterns?",
+              "vi": "Những người bi quan không tin rằng đánh giá thực tế của họ chỉ phản ánh sự thật khắc nghiệt thay vì các mô hình tư duy tiêu cực sao?",
+              "vocabs": [
+                "believe",
+                "pessimists",
+                "realistic assessments",
+                "thinking patterns"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Pessimistic individuals genuinely believe they protect themselves from disappointment through preemptive negative expectations defensively. Studies suggest cultivating balanced realistic optimism actually produces superior decision-making and emotional wellbeing throughout uncertain demanding circumstances reliably.",
+              "vi": "Những cá nhân bi quan thực sự tin rằng họ bảo vệ bản thân khỏi thất vọng thông qua những kỳ vọng tiêu cực phòng ngừa một cách phòng thủ. Các nghiên cứu cho thấy nuôi dưỡng sự lạc quan thực tế cân bằng thực sự tạo ra việc đưa ra quyết định vượt trội và sự lành mạnh cảm xúc trong các hoàn cảnh không chắc chắn đòi hỏi một cách đáng tin cậy.",
+              "vocabs": [
+                "believe",
+                "pessimistic individuals",
+                "preemptive negative",
+                "balanced realistic",
+                "decision-making",
+                "demanding circumstances"
               ]
             }
           ]
