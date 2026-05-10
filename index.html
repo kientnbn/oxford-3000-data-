@@ -743,14 +743,6 @@
         opacity: 0.5;
     }
 
-    .status {
-        text-align: center;
-        padding: 10px;
-        font-size: 12px;
-        color: #7f8c8d;
-        margin-top: 10px;
-    }
-
     @media (max-width: 600px) {
         header h1 {
             font-size: 24px;
@@ -1072,33 +1064,38 @@
     }
 
     
-    /* ===== FLASH CARD — NO PAGE SCROLL ===== */
+    /* ===== FLASH CARD — FIT CONTENT, SCROLL IF TALL ===== */
     body.flash-mode {
-        overflow: hidden;   /* prevent page scroll entirely */
+        overflow: hidden;
+        height: 100dvh;
+    }
+
+    body.flash-mode .container {
+        padding: 0 10px;
+        margin: 0 auto;
     }
 
     #wordsContainer.mode-flashcard {
-        /* Fill remaining height below header + inlineNav */
-        height: calc(100dvh - var(--fc-offset, 100px));
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        padding: 8px 0 0;
+        /* Allow internal scroll only when content exceeds viewport */
+        max-height: calc(100dvh - var(--fc-offset, 104px) - 10px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        padding: 6px 0 4px;
     }
 
     #wordsContainer.mode-flashcard .word-card {
-        flex: 1;
-        overflow-y: auto;          /* scroll inside card if content tall */
-        -webkit-overflow-scrolling: touch;
-        box-shadow: 0 6px 24px rgba(0,0,0,.10);
+        /* Fit content — do NOT stretch */
+        height: auto;
+        box-shadow: 0 6px 24px rgba(0,0,0,.12);
         margin-bottom: 0;
         border-radius: 14px;
     }
 
-    @keyframes cardInLeft  { from { opacity:0; transform:translateX(40px);  } to { opacity:1; transform:none; } }
-    @keyframes cardInRight { from { opacity:0; transform:translateX(-40px); } to { opacity:1; transform:none; } }
-    .card-anim-left  { animation: cardInLeft  .22s ease; }
-    .card-anim-right { animation: cardInRight .22s ease; }
+    @keyframes cardInLeft  { from { opacity:0; transform:translateX(36px);  } to { opacity:1; transform:none; } }
+    @keyframes cardInRight { from { opacity:0; transform:translateX(-36px); } to { opacity:1; transform:none; } }
+    .card-anim-left  { animation: cardInLeft  .22s cubic-bezier(.4,0,.2,1); }
+    .card-anim-right { animation: cardInRight .22s cubic-bezier(.4,0,.2,1); }
 
     </style>
 
@@ -1259,14 +1256,6 @@
     <div id="inlineNav"></div>
     <div id="pageBar"><button class="page-back" onclick="navigateTo('home')">← Home</button><span class="page-title" id="pageBarTitle"></span></div>
     <div id="wordsContainer"></div>
-    <div class="status">
-        <span id="statusText">Loading data...</span>
-    </div>
-</div>
-    <div id="wordsContainer"></div>
-    <div class="status">
-        <span id="statusText">Loading data...</span>
-    </div>
 </div>
 
 <script>
@@ -1748,18 +1737,6 @@
             });
         });
         
-        console.log('🎤 Voice Pool initialized:', {
-            'en-US': {
-                male: voicePool['en-US'].male.length,
-                female: voicePool['en-US'].female.length,
-                neutral: voicePool['en-US'].neutral.length
-            },
-            'vi-VN': {
-                male: voicePool['vi-VN'].male.length,
-                female: voicePool['vi-VN'].female.length,
-                neutral: voicePool['vi-VN'].neutral.length
-            }
-        });
     }
     
     // Get voice for a specific speaker (consistent voice per speaker)
@@ -1918,10 +1895,7 @@
         isSpeaking = true;
         const utterance = createNaturalUtterance(word, 'en-US', { isWord: true });
         utterance.onend = () => { isSpeaking = false; };
-        utterance.onerror = (e) => { 
-            console.error('Speech error:', e); 
-            isSpeaking = false; 
-        };
+        utterance.onerror = () => { isSpeaking = false; };
         speechSynthesis.speak(utterance);
     }
     
@@ -1931,10 +1905,7 @@
         isSpeaking = true;
         const utterance = createNaturalUtterance(text, lang, { speaker });
         utterance.onend = () => { isSpeaking = false; };
-        utterance.onerror = (e) => { 
-            console.error('Speech error:', e); 
-            isSpeaking = false; 
-        };
+        utterance.onerror = () => { isSpeaking = false; };
         speechSynthesis.speak(utterance);
     }
 
@@ -2042,7 +2013,6 @@
             };
             
             utterance.onerror = (e) => {
-                console.error('Speech synthesis error:', e);
                 currentUtteranceIndex++;
                 setTimeout(speakNextUtterance, 200);
             };
@@ -2770,9 +2740,6 @@
             // GITHUB RAW - Direct load (primary source)
             const githubRawUrl = 'https://raw.githubusercontent.com/kientnbn/oxford-3000-data-/main/oxford-3000-data.json';
             
-            console.log(`🔄 Loading from GitHub Raw: ${githubRawUrl}`);
-            statusText.textContent = '🔄 Loading from GitHub...';
-            
             try {
                 const response = await fetch(githubRawUrl, {
                     method: 'GET',
@@ -2781,11 +2748,6 @@
                     cache: 'no-cache'  // Force fresh load, no cache
                 });
                 
-                console.log(`📊 GitHub Raw Response:`, {
-                    status: response.status,
-                    statusText: response.statusText,
-                    ok: response.ok
-                });
                 
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -2816,23 +2778,13 @@
                 window.currentAllWords = wordArray;
                 renderByMode(wordArray);
                 setupSearch(wordArray);
-                statusText.innerHTML = `✅ Loaded ${wordArray.length} words from GitHub Raw<br><small>${new Date().toLocaleTimeString()}</small>`;
                 applyFilterAndSort();
                 
-                console.log(`✅ SUCCESS: Loaded ${wordArray.length} words from GitHub Raw`);
                 
             } catch (gitError) {
                 // GitHub Raw failed - fallback to sampleData
-                console.error(`❌ GitHub Raw Failed:`, gitError);
-                console.error('🔍 Debug Info:', {
-                    url: githubRawUrl,
-                    error: gitError.message,
-                    repo: 'kientnbn/oxford-3000-data-',
-                    file: 'oxford-3000-data.json'
-                });
                 
                 // FALLBACK: Use sampleData
-                console.warn('⚠️  Using fallback sampleData...');
                 
                 const fallbackData = sampleData;
                 
@@ -2847,20 +2799,11 @@
                     renderByMode(fallbackData);
                     setupSearch(fallbackData);
                     
-                    statusText.innerHTML = `⚠️  GitHub unavailable. Using fallback data (${fallbackData.length} words)<br>
-                        <small style="color:#ff9800">Error: ${gitError.message}</small><br>
-                        <small>Data is limited. Please check your connection.</small>`;
-                    
                     applyFilterAndSort();
-                    console.log(`⚠️  Using ${fallbackData.length} words from fallback data`);
                 } else {
-                    statusText.innerHTML = `❌ Failed to load data<br>
-                        <small style="color:#ff6b6b">No fallback data available</small>`;
                 }
             }
         } catch (error) {
-            console.error('Fatal error:', error);
-            statusText.textContent = `❌ Fatal Error: ${error.message}`;
         }
     }
 
@@ -2930,8 +2873,6 @@
         });
         
         const result = Array.from(categoriesSet).sort();
-        console.log(`📊 Categories extracted: ${result.length} unique categories from ${wordsWithCategories}/${totalWords} words`);
-        console.log(`   Categories: [${result.join(', ')}]`);
         
         return result;
     }
@@ -2963,7 +2904,6 @@
         const searchInput = document.getElementById('categorySearchInput');
         searchInput.addEventListener('input', filterCategoriesBySearch);
         
-        console.log(`✓ Generated ${categories.length} category checkboxes`);
         updateSelectAllIcon();
     }
 
@@ -3050,14 +2990,12 @@
             sortType: sortType
         }));
         
-        console.log(`💾 Filter state saved: ${selectedCategories.length} categories, sort=${sortType}`);
     }
 
     function restoreFilterState() {
         try {
             const saved = localStorage.getItem('filterState');
             if (!saved) {
-                console.log('📂 No saved filter state');
                 return;
             }
             
@@ -3071,7 +3009,6 @@
                         checkbox.checked = true;
                     }
                 });
-                console.log(`♻️ Restored ${state.categories.length} categories`);
             }
             
             // Restore sort selection
@@ -3080,12 +3017,10 @@
                 if (sortRadio) {
                     sortRadio.checked = true;
                 }
-                console.log(`♻️ Restored sort: ${state.sortType}`);
             }
             
             updateSelectAllIcon();
         } catch (error) {
-            console.error('❌ Error restoring filter state:', error);
         }
     }
 
