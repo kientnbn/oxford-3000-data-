@@ -1071,6 +1071,35 @@
         80%       { transform: translateX(4px); }
     }
 
+    
+    /* ===== FLASH CARD — NO PAGE SCROLL ===== */
+    body.flash-mode {
+        overflow: hidden;   /* prevent page scroll entirely */
+    }
+
+    #wordsContainer.mode-flashcard {
+        /* Fill remaining height below header + inlineNav */
+        height: calc(100dvh - var(--fc-offset, 100px));
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0 0;
+    }
+
+    #wordsContainer.mode-flashcard .word-card {
+        flex: 1;
+        overflow-y: auto;          /* scroll inside card if content tall */
+        -webkit-overflow-scrolling: touch;
+        box-shadow: 0 6px 24px rgba(0,0,0,.10);
+        margin-bottom: 0;
+        border-radius: 14px;
+    }
+
+    @keyframes cardInLeft  { from { opacity:0; transform:translateX(40px);  } to { opacity:1; transform:none; } }
+    @keyframes cardInRight { from { opacity:0; transform:translateX(-40px); } to { opacity:1; transform:none; } }
+    .card-anim-left  { animation: cardInLeft  .22s ease; }
+    .card-anim-right { animation: cardInRight .22s ease; }
+
     </style>
 
 
@@ -2242,8 +2271,13 @@
     function renderFlashCard(anim = 'left') {
         const container = document.getElementById('wordsContainer');
         container.className = 'mode-flashcard';
+        document.body.classList.add('flash-mode');
 
-        if (!currentDataset.length) { container.innerHTML = emptyStateHTML(); return; }
+        if (!currentDataset.length) {
+            document.body.classList.remove('flash-mode');
+            container.innerHTML = emptyStateHTML();
+            return;
+        }
 
         const word  = currentDataset[flashIndex];
         const total = currentDataset.length;
@@ -2251,7 +2285,15 @@
 
         showInlineNav({ index: flashIndex, total, type: 'flashcard' });
 
-        // Render single card — NO shell, NO skeleton, full content directly
+        // Set CSS var for card height calculation (header + inlineNav)
+        requestAnimationFrame(() => {
+            const hdr = document.querySelector('header');
+            const nav = document.getElementById('inlineNav');
+            const hH  = hdr ? hdr.getBoundingClientRect().bottom : 56;
+            const nH  = nav && nav.classList.contains('active') ? nav.offsetHeight : 0;
+            document.documentElement.style.setProperty('--fc-offset', (hH + nH + 8) + 'px');
+        });
+
         container.innerHTML = `
             <div class="word-card ${anim === 'right' ? 'card-anim-right' : 'card-anim-left'}" data-word="${word.id}">
                 <div class="word-header">
@@ -2283,6 +2325,8 @@
     function renderPage(page) {
         const container = document.getElementById('wordsContainer');
         container.className = '';
+        document.body.classList.remove('flash-mode');
+        document.documentElement.style.removeProperty('--fc-offset');
         currentPage = page;
         if (!currentDataset.length) { container.innerHTML = emptyStateHTML(); return; }
 
@@ -2313,6 +2357,8 @@
     function renderLazy() {
         const container = document.getElementById('wordsContainer');
         container.className = '';
+        document.body.classList.remove('flash-mode');
+        document.documentElement.style.removeProperty('--fc-offset');
         // Ensure nav is always hidden in lazy mode
         hideInlineNav();
         if (lazyObserver) { lazyObserver.disconnect(); lazyObserver = null; }
@@ -3102,6 +3148,13 @@
             new ResizeObserver(() => requestAnimationFrame(updateNavPosition))
                 .observe(hdrEl);
         }
+
+        // Scroll: keep paging/flashcard nav pinned below sticky header
+        window.addEventListener('scroll', () => {
+            if (displayMode !== 'lazy') {
+                requestAnimationFrame(updateNavPosition);
+            }
+        }, { passive: true });
         
         // Search icon
         const searchIcon = document.getElementById('searchIcon');
@@ -3738,6 +3791,7 @@
 
 <!-- TOAST -->
 <div id="toast"></div>
+
 
 </body>
 </html>
