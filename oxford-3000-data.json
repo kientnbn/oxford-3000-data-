@@ -1,8 +1,8 @@
 {
   "batch_info": {
-    "batch_number": 22,
+    "batch_number": 23,
     "batch_size": 10,
-    "cumulative_entries": "1-220",
+    "cumulative_entries": "1-230",
     "batches_included": [
       1,
       2,
@@ -25,12 +25,13 @@
       19,
       20,
       21,
-      22
+      22,
+      23
     ],
     "date": "2026-05-10",
     "status": "COMPLETED",
     "scope": "C0 only (conversations rewrite)",
-    "test_results": "220/220 PASS"
+    "test_results": "230/230 PASS"
   },
   "data": [
     {
@@ -20133,6 +20134,941 @@
                 "worker retraining",
                 "displaced workers",
                 "green job opportunities"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "word": "appear",
+      "phonetic": "/əˈpɪə(r)/",
+      "pos": "Verb",
+      "frequency": 40,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Xuất hiện, trở nên có thể nhìn thấy được",
+          "examples": [
+            {
+              "en": "Stars appear in the sky after sunset.",
+              "vi": "Các ngôi sao xuất hiện trên bầu trời sau khi mặt trời lặn.",
+              "category": "Nature"
+            },
+            {
+              "en": "She suddenly appeared at the doorway.",
+              "vi": "Cô ấy đột nhiên xuất hiện ở cửa.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Có vẻ, dường như là",
+          "examples": [
+            {
+              "en": "He appears to be very tired today.",
+              "vi": "Anh ấy có vẻ rất mệt mỏi hôm nay.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Television debut · appear",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How nervous were you when you first appeared on national television to discuss your groundbreaking neuroscience research findings publicly?",
+              "vi": "Bạn đã lo lắng đến mức nào khi lần đầu xuất hiện trên truyền hình quốc gia để thảo luận các phát hiện nghiên cứu thần kinh đột phá của mình công khai?",
+              "vocabs": [
+                "appear",
+                "national television",
+                "groundbreaking neuroscience research",
+                "publicly"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Initially appearing under bright studio lights nearly paralyzed me with overwhelming anxiety throughout extensive preparation rehearsals beforehand. Recognizing that millions of curious viewers would watch my technical explanations made me appear visibly trembling during opening introductory segments despite extensive professional preparation.",
+              "vi": "Ban đầu xuất hiện dưới ánh đèn studio sáng gần như làm tê liệt tôi với sự lo lắng choáng ngợp trong các buổi tập dượt chuẩn bị rộng rãi trước đó. Nhận ra rằng hàng triệu người xem tò mò sẽ xem các giải thích kỹ thuật của tôi khiến tôi xuất hiện run rẩy có thể nhìn thấy trong các đoạn giới thiệu mở đầu mặc dù chuẩn bị chuyên nghiệp rộng rãi.",
+              "vocabs": [
+                "appearing",
+                "studio lights",
+                "overwhelming anxiety",
+                "rehearsals",
+                "curious viewers",
+                "introductory segments"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How does experienced media coaching help researchers appear genuinely confident discussing complex scientific topics throughout demanding interview formats nationally?",
+              "vi": "Việc huấn luyện truyền thông có kinh nghiệm giúp các nhà nghiên cứu xuất hiện tự tin chân thực thảo luận các chủ đề khoa học phức tạp trong các định dạng phỏng vấn đòi hỏi toàn quốc như thế nào?",
+              "vocabs": [
+                "appear",
+                "media coaching",
+                "confident",
+                "interview formats"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Professional coaching transformed how I appear during subsequent television interviews providing structured frameworks for explaining intricate concepts accessibly. Practicing memorable analogies, controlled breathing techniques, and confident body language enables researchers to appear naturally authoritative while genuinely connecting with diverse public audiences throughout demanding live broadcast sessions effectively.",
+              "vi": "Huấn luyện chuyên nghiệp đã biến đổi cách tôi xuất hiện trong các cuộc phỏng vấn truyền hình tiếp theo cung cấp các khuôn khổ có cấu trúc cho việc giải thích các khái niệm phức tạp dễ tiếp cận. Thực hành các phép loại suy đáng nhớ, kỹ thuật thở có kiểm soát và ngôn ngữ cơ thể tự tin cho phép các nhà nghiên cứu xuất hiện uy quyền tự nhiên trong khi thực sự kết nối với khán giả công chúng đa dạng trong các phiên phát sóng trực tiếp đòi hỏi một cách hiệu quả.",
+              "vocabs": [
+                "appear",
+                "professional coaching",
+                "memorable analogies",
+                "controlled breathing",
+                "body language",
+                "broadcast sessions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "word": "account",
+      "phonetic": "/əˈkaʊnt/",
+      "pos": "Noun, Verb",
+      "frequency": 38,
+      "categories": [
+        "Business",
+        "Finance"
+      ],
+      "meanings": [
+        {
+          "vi": "Tài khoản, ghi chép tài chính tại ngân hàng",
+          "examples": [
+            {
+              "en": "She opened a new savings account.",
+              "vi": "Cô ấy đã mở tài khoản tiết kiệm mới.",
+              "category": "Finance"
+            },
+            {
+              "en": "Please check your email account regularly.",
+              "vi": "Vui lòng kiểm tra tài khoản email thường xuyên.",
+              "category": "Technology"
+            }
+          ]
+        },
+        {
+          "vi": "Lý giải, giải thích nguyên nhân của việc gì",
+          "examples": [
+            {
+              "en": "How do you account for these missing funds?",
+              "vi": "Bạn giải thích thế nào về số tiền bị thiếu này?",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Financial planning · account",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How many separate financial accounts do you actively maintain across different banking institutions throughout your comprehensive personal investment strategy currently?",
+              "vi": "Bạn duy trì tích cực bao nhiêu tài khoản tài chính riêng biệt qua các tổ chức ngân hàng khác nhau trong chiến lược đầu tư cá nhân toàn diện của mình hiện nay?",
+              "vocabs": [
+                "account",
+                "financial accounts",
+                "banking institutions",
+                "investment strategy"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I maintain approximately seven distinct accounts strategically distributed across diversified financial categories throughout established institutions internationally. Separate emergency reserves, tax-advantaged retirement accounts, and dedicated investment portfolios provide structured organization preventing cross-contamination between different financial purposes during demanding life transitions consistently throughout extensive professional careers thoughtfully.",
+              "vi": "Tôi duy trì khoảng bảy tài khoản riêng biệt được phân phối chiến lược qua các danh mục tài chính đa dạng trong các tổ chức đã thành lập quốc tế. Dự trữ khẩn cấp riêng biệt, tài khoản hưu trí có lợi thuế và danh mục đầu tư chuyên dụng cung cấp tổ chức có cấu trúc ngăn ngừa sự ô nhiễm chéo giữa các mục đích tài chính khác nhau trong các giai đoạn chuyển tiếp cuộc sống đòi hỏi một cách nhất quán trong các sự nghiệp chuyên nghiệp rộng rãi một cách chu đáo.",
+              "vocabs": [
+                "accounts",
+                "distinct",
+                "diversified financial",
+                "emergency reserves",
+                "tax-advantaged retirement",
+                "investment portfolios"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How effectively can professionals account for systematic management complexity across multiple account types while maintaining straightforward simplicity throughout demanding daily life schedules realistically?",
+              "vi": "Các chuyên gia có thể giải thích sự phức tạp quản lý có hệ thống qua nhiều loại tài khoản hiệu quả như thế nào trong khi duy trì sự đơn giản rõ ràng trong các lịch trình cuộc sống hàng ngày đòi hỏi một cách thực tế?",
+              "vocabs": [
+                "account",
+                "systematic management",
+                "complexity",
+                "multiple account types"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Modern financial dashboards aggregate disparate accounts visualizing consolidated portfolio performance through unified application interfaces throughout demanding management timelines effectively. Automated rebalancing algorithms, comprehensive tax-loss harvesting tools, and systematic monthly reporting eliminate manual administrative burdens enabling investors to account thoughtfully for sophisticated diversified financial strategies efficiently throughout demanding professional lives meaningfully.",
+              "vi": "Các bảng điều khiển tài chính hiện đại tổng hợp các tài khoản khác nhau hình dung hiệu suất danh mục đầu tư hợp nhất qua các giao diện ứng dụng thống nhất trong các mốc thời gian quản lý đòi hỏi một cách hiệu quả. Các thuật toán tái cân bằng tự động, các công cụ thu hoạch lỗ thuế toàn diện và báo cáo hàng tháng có hệ thống loại bỏ gánh nặng hành chính thủ công cho phép các nhà đầu tư giải thích chu đáo cho các chiến lược tài chính đa dạng tinh vi một cách hiệu quả trong các cuộc sống chuyên nghiệp đòi hỏi một cách có ý nghĩa.",
+              "vocabs": [
+                "accounts",
+                "financial dashboards",
+                "consolidated portfolio",
+                "rebalancing algorithms",
+                "tax-loss harvesting",
+                "administrative burdens"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "word": "agree",
+      "phonetic": "/əˈɡriː/",
+      "pos": "Verb",
+      "frequency": 36,
+      "categories": [
+        "Communication",
+        "Agreement"
+      ],
+      "meanings": [
+        {
+          "vi": "Đồng ý, có cùng ý kiến với người khác",
+          "examples": [
+            {
+              "en": "I completely agree with your suggestion.",
+              "vi": "Tôi hoàn toàn đồng ý với đề xuất của bạn.",
+              "category": "Communication"
+            },
+            {
+              "en": "Everyone agreed about the new schedule.",
+              "vi": "Mọi người đã đồng ý về lịch mới.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Thỏa thuận, đạt được sự nhất trí về điều gì đó",
+          "examples": [
+            {
+              "en": "They agreed on the meeting time.",
+              "vi": "Họ đã thỏa thuận về thời gian họp.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Diplomatic negotiation · agree",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How did international diplomats finally agree on these comprehensive trade regulations after months of contentious bilateral discussions involving multiple disputed economic principles?",
+              "vi": "Các nhà ngoại giao quốc tế cuối cùng đã đồng ý về những quy định thương mại toàn diện này sau nhiều tháng thảo luận song phương gây tranh cãi liên quan đến nhiều nguyên tắc kinh tế tranh chấp như thế nào?",
+              "vocabs": [
+                "agree",
+                "international diplomats",
+                "comprehensive trade regulations",
+                "bilateral discussions",
+                "economic principles"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Reaching consensus required negotiating teams to agree gradually through carefully balanced compromise frameworks addressing every party's essential strategic concerns thoroughly. Developing creative phased implementation schedules, neutral arbitration mechanisms, and equitable dispute resolution procedures enabled previously antagonistic governments to agree on substantively meaningful frameworks benefiting genuine multilateral economic cooperation across regional boundaries.",
+              "vi": "Đạt được sự đồng thuận đòi hỏi các đội đàm phán đồng ý dần dần qua các khuôn khổ thỏa hiệp cân bằng cẩn thận giải quyết các mối quan tâm chiến lược thiết yếu của mọi bên một cách kỹ lưỡng. Phát triển các lịch trình triển khai theo từng giai đoạn sáng tạo, cơ chế trọng tài trung lập và thủ tục giải quyết tranh chấp công bằng đã cho phép các chính phủ trước đây thù địch đồng ý về các khuôn khổ ý nghĩa thực chất mang lại lợi ích cho hợp tác kinh tế đa phương chân thực qua các ranh giới khu vực.",
+              "vocabs": [
+                "agree",
+                "negotiating teams",
+                "compromise frameworks",
+                "phased implementation",
+                "arbitration mechanisms",
+                "multilateral economic"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Why is it particularly challenging to agree on environmental policies among nations possessing fundamentally different economic development priorities throughout global negotiations historically?",
+              "vi": "Tại sao việc đồng ý về các chính sách môi trường giữa các quốc gia sở hữu các ưu tiên phát triển kinh tế cơ bản khác nhau lại đặc biệt khó khăn trong các cuộc đàm phán toàn cầu lịch sử?",
+              "vocabs": [
+                "agree",
+                "environmental policies",
+                "economic development priorities",
+                "global negotiations"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Developed economies must genuinely agree to subsidize developing nations adopting expensive sustainable technologies throughout ambitious transition timelines fairly. Industrialized historical polluters bearing disproportionate financial responsibility while ensuring equitable participation prevents poorer countries from rejecting binding commitments protecting their immediate economic growth aspirations eventually meaningful.",
+              "vi": "Các nền kinh tế phát triển phải thực sự đồng ý trợ cấp các quốc gia đang phát triển áp dụng các công nghệ bền vững đắt tiền trong các mốc thời gian chuyển đổi đầy hoài bão một cách công bằng. Các nước công nghiệp gây ô nhiễm lịch sử chịu trách nhiệm tài chính không cân đối trong khi đảm bảo sự tham gia công bằng ngăn ngừa các nước nghèo hơn từ chối các cam kết ràng buộc bảo vệ khát vọng tăng trưởng kinh tế ngay lập tức của họ cuối cùng có ý nghĩa.",
+              "vocabs": [
+                "agree",
+                "developed economies",
+                "developing nations",
+                "industrialized historical",
+                "binding commitments",
+                "economic growth"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 224,
+      "word": "along",
+      "phonetic": "/əˈlɒŋ/",
+      "pos": "Preposition, Adverb",
+      "frequency": 34,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Dọc theo, theo chiều dài của vật hoặc đường",
+          "examples": [
+            {
+              "en": "We walked along the beautiful coastline.",
+              "vi": "Chúng tôi đi dọc theo đường bờ biển đẹp.",
+              "category": "Nature"
+            },
+            {
+              "en": "Trees grow along the riverbank.",
+              "vi": "Cây mọc dọc theo bờ sông.",
+              "category": "Nature"
+            }
+          ]
+        },
+        {
+          "vi": "Cùng, theo cùng với người khác",
+          "examples": [
+            {
+              "en": "Why don't you come along to the party?",
+              "vi": "Tại sao bạn không đi cùng đến tiệc?",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Coastal hike · along",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What scenic landmarks did you discover along the famous coastal trail during your weeklong solo backpacking adventure last autumn?",
+              "vi": "Những địa danh ngắm cảnh nào bạn đã phát hiện ra dọc theo đường mòn ven biển nổi tiếng trong chuyến đi du lịch ba lô một mình kéo dài một tuần vào mùa thu năm ngoái?",
+              "vocabs": [
+                "along",
+                "scenic landmarks",
+                "coastal trail",
+                "backpacking adventure",
+                "autumn"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Hiking along dramatic cliff edges revealed breathtaking panoramic ocean views surpassing every prior travel experience considerably throughout multiple continents traversed previously. Wildflower meadows scattered along secluded beaches, ancient lighthouse ruins, and abandoned fishing villages along weathered shorelines transformed simple recreational hiking into profound spiritually meaningful journey experiences continuously.",
+              "vi": "Đi bộ dọc theo các mép vách đá ấn tượng tiết lộ những tầm nhìn đại dương toàn cảnh ngoạn mục vượt qua mọi trải nghiệm du lịch trước đây đáng kể qua nhiều châu lục đã đi qua trước đó. Các đồng cỏ hoa dại rải rác dọc theo các bãi biển hẻo lánh, các tàn tích hải đăng cổ và các làng chài bỏ hoang dọc theo các bờ biển bị phong hóa biến hành trình đi bộ giải trí đơn giản thành những trải nghiệm hành trình ý nghĩa tinh thần sâu sắc liên tục.",
+              "vocabs": [
+                "hiking along",
+                "cliff edges",
+                "panoramic ocean",
+                "wildflower meadows",
+                "lighthouse ruins",
+                "fishing villages"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Did you encounter many other hikers traveling along the same demanding trail seeking similar transformative outdoor wilderness adventure experiences throughout solitary days?",
+              "vi": "Bạn có gặp nhiều người đi bộ khác đang đi dọc theo cùng một con đường mòn đòi hỏi tìm kiếm các trải nghiệm phiêu lưu hoang dã ngoài trời biến đổi tương tự trong những ngày cô đơn không?",
+              "vocabs": [
+                "traveling along",
+                "demanding trail",
+                "wilderness adventure",
+                "solitary days"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Surprisingly few travelers ventured along the entire challenging route preferring shorter accessible weekend sections nearby established population centers safely. Meeting genuinely remarkable adventurers along isolated pathways forged unexpected friendships sharing meaningful philosophical conversations beneath spectacular starlit skies during evening campfire gatherings throughout demanding multi-day expeditions thoughtfully.",
+              "vi": "Đáng ngạc nhiên có ít du khách mạo hiểm dọc theo toàn bộ tuyến đường thử thách thích các phần ngắn hơn dễ tiếp cận cuối tuần gần các trung tâm dân số đã thành lập một cách an toàn. Gặp những nhà phiêu lưu thực sự đáng chú ý dọc theo những con đường bị cô lập đã tạo nên những tình bạn bất ngờ chia sẻ những cuộc trò chuyện triết học có ý nghĩa dưới bầu trời đầy sao ngoạn mục trong các cuộc tụ họp lửa trại buổi tối trong các chuyến thám hiểm nhiều ngày đòi hỏi một cách chu đáo.",
+              "vocabs": [
+                "along",
+                "challenging route",
+                "accessible weekend",
+                "remarkable adventurers",
+                "philosophical conversations",
+                "campfire gatherings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 225,
+      "word": "activity",
+      "phonetic": "/ækˈtɪvəti/",
+      "pos": "Noun",
+      "frequency": 32,
+      "categories": [
+        "General",
+        "Goal"
+      ],
+      "meanings": [
+        {
+          "vi": "Hoạt động, việc làm hoặc sự kiện đang diễn ra",
+          "examples": [
+            {
+              "en": "Outdoor activities are great for children.",
+              "vi": "Các hoạt động ngoài trời rất tốt cho trẻ em.",
+              "category": "Family"
+            },
+            {
+              "en": "Reading is my favorite leisure activity.",
+              "vi": "Đọc sách là hoạt động giải trí yêu thích của tôi.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Sự sôi động, mức độ vận động hoặc bận rộn",
+          "examples": [
+            {
+              "en": "There was lots of activity in the office today.",
+              "vi": "Có nhiều hoạt động ở văn phòng hôm nay.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Senior wellness · activity",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What recreational activities have research studies confirmed most genuinely benefit elderly cognitive function throughout retirement years preserving valuable mental sharpness substantively?",
+              "vi": "Những hoạt động giải trí nào các nghiên cứu đã xác nhận thực sự mang lại lợi ích nhất cho chức năng nhận thức người cao tuổi trong các năm hưu trí bảo tồn sự sắc bén tinh thần quý giá thực chất?",
+              "vocabs": [
+                "activities",
+                "research studies",
+                "elderly cognitive function",
+                "retirement years"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Combining diverse mental activities like learning languages, playing musical instruments, and solving challenging puzzles dramatically slows cognitive decline throughout aging neurological processes effectively. Social activities involving meaningful peer interaction, gentle physical activity programs, and creative artistic expression create comprehensive cognitive stimulation surpassing isolated reading or watching television passively throughout extended retirement decades.",
+              "vi": "Kết hợp các hoạt động tinh thần đa dạng như học ngôn ngữ, chơi nhạc cụ và giải các câu đố thử thách làm chậm đáng kể sự suy giảm nhận thức qua các quá trình thần kinh lão hóa một cách hiệu quả. Các hoạt động xã hội liên quan đến tương tác đồng đẳng có ý nghĩa, các chương trình hoạt động thể chất nhẹ nhàng và biểu hiện nghệ thuật sáng tạo tạo ra kích thích nhận thức toàn diện vượt qua việc đọc đơn độc hoặc xem truyền hình thụ động trong các thập kỷ hưu trí kéo dài.",
+              "vocabs": [
+                "activities",
+                "learning languages",
+                "musical instruments",
+                "cognitive decline",
+                "peer interaction",
+                "artistic expression"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How can families effectively encourage older relatives reluctant to engage in unfamiliar activities preserving health throughout demanding aging transitions sensitively?",
+              "vi": "Các gia đình có thể khuyến khích hiệu quả người thân lớn tuổi miễn cưỡng tham gia vào các hoạt động xa lạ bảo tồn sức khỏe trong các giai đoạn lão hóa đòi hỏi một cách nhạy cảm như thế nào?",
+              "vocabs": [
+                "activities",
+                "older relatives",
+                "reluctant",
+                "aging transitions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Introducing engaging activities gradually through familiar contexts preserves dignity while gently expanding comfort zones respecting individual personality preferences thoughtfully. Adult children attending classes alongside parents, organizing intergenerational family activity sessions, and discovering genuine shared interests rebuilds meaningful relationships while fostering long-term enthusiasm encouraging continued participation across challenging aging journey years substantially.",
+              "vi": "Giới thiệu các hoạt động hấp dẫn dần dần qua các bối cảnh quen thuộc bảo tồn phẩm giá trong khi nhẹ nhàng mở rộng vùng thoải mái tôn trọng sở thích tính cách cá nhân một cách chu đáo. Con cái trưởng thành tham dự các lớp học cùng cha mẹ, tổ chức các buổi hoạt động gia đình liên thế hệ và phát hiện các sở thích chia sẻ chân thực xây dựng lại các mối quan hệ ý nghĩa trong khi nuôi dưỡng sự nhiệt tình lâu dài khuyến khích tiếp tục tham gia trong các năm hành trình lão hóa thử thách một cách đáng kể.",
+              "vocabs": [
+                "activities",
+                "engaging",
+                "comfort zones",
+                "personality preferences",
+                "intergenerational family",
+                "aging journey"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 226,
+      "word": "agreement",
+      "phonetic": "/əˈɡriːmənt/",
+      "pos": "Noun",
+      "frequency": 30,
+      "categories": [
+        "Business",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Thỏa thuận, sự nhất trí giữa các bên về điều gì đó",
+          "examples": [
+            {
+              "en": "They reached an agreement after long discussions.",
+              "vi": "Họ đã đạt được thỏa thuận sau những cuộc thảo luận dài.",
+              "category": "Business"
+            },
+            {
+              "en": "Please sign the rental agreement.",
+              "vi": "Vui lòng ký hợp đồng thuê.",
+              "category": "Business"
+            }
+          ]
+        },
+        {
+          "vi": "Sự đồng ý, sự nhất trí về quan điểm",
+          "examples": [
+            {
+              "en": "The team is in complete agreement.",
+              "vi": "Cả đội hoàn toàn đồng ý với nhau.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Partnership formation · agreement",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How meticulously did your legal team review every clause within this complex international business agreement before final signature ceremony last weekend?",
+              "vi": "Đội pháp lý của bạn đã xem xét tỉ mỉ từng điều khoản trong thỏa thuận kinh doanh quốc tế phức tạp này một cách kỹ lưỡng như thế nào trước lễ ký kết cuối cùng cuối tuần trước?",
+              "vocabs": [
+                "agreement",
+                "legal team",
+                "international business",
+                "signature ceremony"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Specialized lawyers carefully analyzed every contractual provision spanning approximately three hundred detailed pages throughout demanding multi-week review processes thoroughly. Identifying subtle ambiguities, addressing jurisdictional discrepancies, and clarifying termination conditions ensured this comprehensive partnership agreement protected both companies' essential strategic interests across multiple international regulatory frameworks effectively.",
+              "vi": "Các luật sư chuyên ngành đã cẩn thận phân tích từng điều khoản hợp đồng trải dài khoảng ba trăm trang chi tiết qua các quy trình đánh giá nhiều tuần đòi hỏi một cách kỹ lưỡng. Xác định các điểm mơ hồ tinh tế, giải quyết các sự khác biệt thẩm quyền và làm rõ các điều kiện chấm dứt đảm bảo thỏa thuận đối tác toàn diện này bảo vệ các lợi ích chiến lược thiết yếu của cả hai công ty qua nhiều khuôn khổ quy định quốc tế một cách hiệu quả.",
+              "vocabs": [
+                "agreement",
+                "specialized lawyers",
+                "contractual provision",
+                "ambiguities",
+                "jurisdictional discrepancies",
+                "termination conditions"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What essential clauses generally cause the most difficult disputes during negotiations preventing parties from reaching mutually beneficial agreement quickly throughout demanding business deals?",
+              "vi": "Những điều khoản thiết yếu nào thường gây ra những tranh chấp khó khăn nhất trong các cuộc đàm phán ngăn các bên đạt được thỏa thuận có lợi cho cả hai một cách nhanh chóng trong các giao dịch kinh doanh đòi hỏi?",
+              "vocabs": [
+                "agreement",
+                "essential clauses",
+                "difficult disputes",
+                "mutually beneficial"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Intellectual property ownership, profit distribution mechanisms, and exit strategy protocols generate maximum negotiation complexity prolonging final agreement timelines significantly throughout intricate corporate deals globally. Establishing equitable governance structures balancing competing strategic interests requires extensive diplomatic patience preventing costly relationship deterioration eventually compromising entire partnership foundations meaningfully throughout extended cooperative business endeavors.",
+              "vi": "Quyền sở hữu trí tuệ, cơ chế phân phối lợi nhuận và giao thức chiến lược thoát tạo ra độ phức tạp đàm phán tối đa kéo dài các mốc thời gian thỏa thuận cuối cùng đáng kể trong các giao dịch doanh nghiệp phức tạp toàn cầu. Thiết lập các cấu trúc quản trị công bằng cân bằng các lợi ích chiến lược cạnh tranh đòi hỏi sự kiên nhẫn ngoại giao rộng rãi ngăn ngừa sự suy giảm mối quan hệ tốn kém cuối cùng làm tổn hại toàn bộ nền tảng đối tác một cách có ý nghĩa trong các nỗ lực kinh doanh hợp tác kéo dài.",
+              "vocabs": [
+                "agreement",
+                "intellectual property",
+                "profit distribution",
+                "exit strategy",
+                "governance structures",
+                "cooperative business"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "word": "although",
+      "phonetic": "/ɔːlˈðəʊ/",
+      "pos": "Conjunction",
+      "frequency": 28,
+      "categories": [
+        "Communication",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Mặc dù, trái với mong đợi",
+          "examples": [
+            {
+              "en": "Although it was raining, we went hiking.",
+              "vi": "Mặc dù trời đang mưa, chúng tôi vẫn đi bộ đường dài.",
+              "category": "Nature"
+            },
+            {
+              "en": "She succeeded although it was very difficult.",
+              "vi": "Cô ấy đã thành công mặc dù rất khó khăn.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Tuy nhiên, dù cho điều gì xảy ra",
+          "examples": [
+            {
+              "en": "Although tired, he kept working hard.",
+              "vi": "Dù mệt mỏi, anh ấy vẫn tiếp tục làm việc chăm chỉ.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Persistence story · although",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Although you faced overwhelming financial obstacles initially, how did you successfully launch your innovative biotechnology startup throughout challenging early years?",
+              "vi": "Mặc dù ban đầu bạn đối mặt với những trở ngại tài chính choáng ngợp, bạn đã khởi nghiệp thành công công ty công nghệ sinh học đổi mới của mình trong những năm đầu thử thách như thế nào?",
+              "vocabs": [
+                "although",
+                "financial obstacles",
+                "innovative biotechnology",
+                "challenging early years"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Although traditional venture capitalists rejected our preliminary pitch presentations repeatedly, alternative funding sources including government research grants eventually validated our scientific approach substantially. Although early prototypes consistently failed reliability testing, persistent experimental iteration alongside dedicated graduate student researchers eventually produced breakthrough therapeutic compounds revolutionizing entire medical treatment protocols throughout pharmaceutical industry sectors meaningfully.",
+              "vi": "Mặc dù các nhà đầu tư mạo hiểm truyền thống đã từ chối các bài thuyết trình pitch sơ bộ của chúng tôi nhiều lần, các nguồn tài trợ thay thế bao gồm các khoản tài trợ nghiên cứu chính phủ cuối cùng đã xác nhận cách tiếp cận khoa học của chúng tôi đáng kể. Mặc dù các nguyên mẫu ban đầu liên tục thất bại trong thử nghiệm độ tin cậy, sự lặp lại thử nghiệm kiên trì cùng với các nhà nghiên cứu sinh viên cao học tận tâm cuối cùng đã tạo ra các hợp chất trị liệu đột phá cách mạng hóa toàn bộ giao thức điều trị y tế qua các lĩnh vực ngành dược phẩm một cách có ý nghĩa.",
+              "vocabs": [
+                "although",
+                "venture capitalists",
+                "research grants",
+                "experimental iteration",
+                "graduate student",
+                "therapeutic compounds"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Although many promising biotechnology startups eventually fail despite genuine scientific merit, what specific factors enabled your particular venture achieving sustained commercial success?",
+              "vi": "Mặc dù nhiều công ty khởi nghiệp công nghệ sinh học đầy triển vọng cuối cùng thất bại bất chấp giá trị khoa học chân thực, những yếu tố cụ thể nào đã cho phép dự án cụ thể của bạn đạt được thành công thương mại bền vững?",
+              "vocabs": [
+                "although",
+                "promising biotechnology",
+                "scientific merit",
+                "sustained commercial success"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Although competing organizations possessed similar technological capabilities scientifically, our exceptional commercialization strategy distinguishing strategic priorities substantially helped tremendously throughout demanding regulatory approval pathways. Although establishing dedicated medical advisory boards consumed considerable resources initially, strategic partnerships with prestigious academic medical centers facilitated rapid clinical adoption ultimately exceeding projected revenue benchmarks consistently throughout subsequent fiscal years substantially.",
+              "vi": "Mặc dù các tổ chức cạnh tranh sở hữu khả năng công nghệ tương tự về mặt khoa học, chiến lược thương mại hóa đặc biệt của chúng tôi phân biệt các ưu tiên chiến lược đáng kể đã giúp ích rất nhiều trong các con đường phê duyệt quy định đòi hỏi. Mặc dù việc thành lập các hội đồng tư vấn y tế chuyên dụng tiêu tốn các nguồn lực đáng kể ban đầu, các quan hệ đối tác chiến lược với các trung tâm y tế học thuật danh giá đã tạo điều kiện thuận lợi cho việc áp dụng lâm sàng nhanh chóng cuối cùng vượt qua các tiêu chuẩn doanh thu dự kiến một cách nhất quán trong các năm tài chính tiếp theo đáng kể.",
+              "vocabs": [
+                "although",
+                "technological capabilities",
+                "commercialization strategy",
+                "regulatory approval",
+                "medical advisory",
+                "clinical adoption"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 228,
+      "word": "address",
+      "phonetic": "/əˈdres/",
+      "pos": "Noun, Verb",
+      "frequency": 26,
+      "categories": [
+        "Communication",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Địa chỉ, vị trí cư trú hoặc nơi nhận thư",
+          "examples": [
+            {
+              "en": "Please write your home address clearly.",
+              "vi": "Vui lòng viết địa chỉ nhà bạn rõ ràng.",
+              "category": "Communication"
+            },
+            {
+              "en": "She moved to a new address downtown.",
+              "vi": "Cô ấy đã chuyển đến địa chỉ mới ở trung tâm.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Giải quyết, đối phó với vấn đề nào đó",
+          "examples": [
+            {
+              "en": "We must address these urgent concerns immediately.",
+              "vi": "Chúng ta phải giải quyết những lo ngại khẩn cấp này ngay lập tức.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Public housing · address",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How does your urban planning department comprehensively address growing affordable housing crises affecting low-income residents throughout expanding metropolitan area neighborhoods currently?",
+              "vi": "Sở quy hoạch đô thị của bạn giải quyết toàn diện các cuộc khủng hoảng nhà ở giá phải chăng đang gia tăng ảnh hưởng đến cư dân thu nhập thấp khắp các khu phố vùng đô thị mở rộng hiện nay như thế nào?",
+              "vocabs": [
+                "address",
+                "urban planning",
+                "affordable housing crises",
+                "low-income residents",
+                "metropolitan area"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our department addresses housing inadequacy through innovative mixed-income development zones combining subsidized residential units alongside private market apartments architecturally seamlessly. Comprehensive policies addressing zoning restrictions, tax incentive structures, and community-based partnership initiatives systematically tackle systemic affordability challenges across diverse demographic populations effectively throughout extensive coordinated municipal planning efforts.",
+              "vi": "Sở của chúng tôi giải quyết sự thiếu hụt nhà ở qua các khu phát triển hỗn hợp thu nhập đổi mới kết hợp các đơn vị dân cư được trợ cấp cùng với các căn hộ thị trường tư nhân về mặt kiến trúc một cách liền mạch. Các chính sách toàn diện giải quyết các hạn chế phân vùng, cấu trúc ưu đãi thuế và sáng kiến đối tác dựa trên cộng đồng giải quyết có hệ thống các thử thách khả năng chi trả hệ thống qua các quần thể nhân khẩu học đa dạng một cách hiệu quả trong các nỗ lực lập kế hoạch đô thị phối hợp rộng rãi.",
+              "vocabs": [
+                "addresses",
+                "mixed-income development",
+                "subsidized residential",
+                "zoning restrictions",
+                "tax incentive",
+                "community-based partnership"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How effectively can governmental agencies address these complex housing challenges without inadvertently displacing existing vulnerable communities throughout established neighborhoods through gentrification?",
+              "vi": "Các cơ quan chính phủ có thể giải quyết hiệu quả các thử thách nhà ở phức tạp này như thế nào mà không vô tình di dời các cộng đồng dễ bị tổn thương hiện có khắp các khu phố đã thành lập qua quá trình thay đổi đô thị?",
+              "vocabs": [
+                "address",
+                "governmental agencies",
+                "vulnerable communities",
+                "gentrification"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Thoughtfully addressing displacement concerns requires implementing protective tenant rights legislation alongside guaranteed relocation support programs throughout dramatic neighborhood transformation periods sustainably. Engaging community representatives meaningfully during planning consultations, creating affordable housing preservation funds, and establishing anti-displacement task forces enables governmental agencies to address gentrification ethically while preserving long-standing cultural neighborhood characteristics genuinely throughout urban revitalization initiatives.",
+              "vi": "Giải quyết một cách chu đáo các mối quan tâm về di dời đòi hỏi triển khai luật bảo vệ quyền của người thuê nhà cùng với các chương trình hỗ trợ tái định cư được đảm bảo trong các giai đoạn chuyển đổi khu phố ấn tượng một cách bền vững. Tương tác với đại diện cộng đồng có ý nghĩa trong các cuộc tư vấn lập kế hoạch, tạo ra các quỹ bảo tồn nhà ở giá phải chăng và thành lập các lực lượng đặc nhiệm chống di dời cho phép các cơ quan chính phủ giải quyết quá trình thay đổi đô thị một cách có đạo đức trong khi bảo tồn các đặc tính văn hóa khu phố lâu đời chân thực trong các sáng kiến phục hồi đô thị.",
+              "vocabs": [
+                "address",
+                "displacement concerns",
+                "tenant rights",
+                "relocation support",
+                "preservation funds",
+                "urban revitalization"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 229,
+      "word": "advantage",
+      "phonetic": "/ədˈvɑːntɪdʒ/",
+      "pos": "Noun",
+      "frequency": 24,
+      "categories": [
+        "General",
+        "Goal"
+      ],
+      "meanings": [
+        {
+          "vi": "Lợi thế, điều có ích hơn so với người khác",
+          "examples": [
+            {
+              "en": "Speaking multiple languages is a great advantage.",
+              "vi": "Nói nhiều ngôn ngữ là một lợi thế lớn.",
+              "category": "Education"
+            },
+            {
+              "en": "She used her experience to her advantage.",
+              "vi": "Cô ấy đã sử dụng kinh nghiệm của mình làm lợi thế.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Sự thuận lợi, ưu thế về vị trí hoặc tình huống",
+          "examples": [
+            {
+              "en": "Their team had a clear advantage in size.",
+              "vi": "Đội của họ có ưu thế rõ ràng về quy mô.",
+              "category": "Sports"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Bilingual upbringing · advantage",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What significant advantages have your bilingual children gained throughout their academic journey compared to monolingual peers studying within similar competitive school environments globally?",
+              "vi": "Những lợi thế đáng kể nào con cái song ngữ của bạn đã đạt được trong hành trình học thuật so với các bạn đồng trang lứa nói một ngôn ngữ học trong các môi trường trường học cạnh tranh tương tự trên toàn cầu?",
+              "vocabs": [
+                "advantages",
+                "bilingual children",
+                "academic journey",
+                "monolingual peers",
+                "school environments"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Bilingual upbringing genuinely creates substantial cognitive advantages strengthening executive functioning skills throughout demanding academic standardized assessments consistently. Research demonstrates lifelong advantages including enhanced cultural empathy, improved problem-solving flexibility, and superior multitasking capabilities surpassing monolingual classmates measurably throughout demanding professional career development trajectories internationally.",
+              "vi": "Việc nuôi dạy song ngữ thực sự tạo ra những lợi thế nhận thức đáng kể củng cố các kỹ năng chức năng điều hành trong các đánh giá tiêu chuẩn hóa học thuật đòi hỏi một cách nhất quán. Nghiên cứu chứng minh các lợi thế suốt đời bao gồm sự đồng cảm văn hóa được nâng cao, sự linh hoạt giải quyết vấn đề được cải thiện và khả năng đa nhiệm vượt trội vượt qua các bạn cùng lớp nói một ngôn ngữ một cách có thể đo lường được trong các quỹ đạo phát triển sự nghiệp chuyên nghiệp đòi hỏi quốc tế.",
+              "vocabs": [
+                "advantages",
+                "bilingual upbringing",
+                "executive functioning",
+                "standardized assessments",
+                "cultural empathy",
+                "multitasking capabilities"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How can monolingual parents help their children gain similar linguistic advantages despite lacking native fluency in additional foreign languages throughout educational development years?",
+              "vi": "Các bậc cha mẹ nói một ngôn ngữ có thể giúp con cái họ đạt được những lợi thế ngôn ngữ tương tự như thế nào dù thiếu sự lưu loát bản ngữ trong các ngôn ngữ nước ngoài bổ sung trong các năm phát triển giáo dục?",
+              "vocabs": [
+                "advantages",
+                "monolingual parents",
+                "linguistic",
+                "native fluency"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Modern technology democratizes language acquisition advantages through engaging immersive applications alongside dedicated online tutoring connecting children with native-speaking instructors globally. Enrolling children in language summer camps, supporting consistent multimedia exposure through foreign films, and arranging international correspondence partnerships generates similar bilingual advantages without requiring parents to demonstrate native linguistic proficiency themselves authentically throughout their formative years.",
+              "vi": "Công nghệ hiện đại dân chủ hóa lợi thế tiếp thu ngôn ngữ qua các ứng dụng đắm chìm hấp dẫn cùng với gia sư trực tuyến chuyên dụng kết nối trẻ em với các giáo viên nói bản ngữ toàn cầu. Đăng ký trẻ em vào các trại hè ngôn ngữ, hỗ trợ tiếp xúc đa phương tiện nhất quán qua phim nước ngoài và sắp xếp các quan hệ đối tác thư từ quốc tế tạo ra các lợi thế song ngữ tương tự mà không yêu cầu cha mẹ phải thể hiện sự thông thạo ngôn ngữ bản ngữ một cách chân thực trong các năm hình thành của họ.",
+              "vocabs": [
+                "advantages",
+                "language acquisition",
+                "immersive applications",
+                "online tutoring",
+                "summer camps",
+                "multimedia exposure"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230,
+      "word": "amount",
+      "phonetic": "/əˈmaʊnt/",
+      "pos": "Noun, Verb",
+      "frequency": 22,
+      "categories": [
+        "General",
+        "Finance"
+      ],
+      "meanings": [
+        {
+          "vi": "Số lượng, lượng vật chất hoặc tiền bạc",
+          "examples": [
+            {
+              "en": "Please pay the full amount today.",
+              "vi": "Vui lòng thanh toán đầy đủ số tiền hôm nay.",
+              "category": "Finance"
+            },
+            {
+              "en": "She uses a small amount of salt.",
+              "vi": "Cô ấy dùng một lượng nhỏ muối.",
+              "category": "Food"
+            }
+          ]
+        },
+        {
+          "vi": "Đạt đến, tổng cộng bằng số nào đó",
+          "examples": [
+            {
+              "en": "His debts amount to ten thousand dollars.",
+              "vi": "Khoản nợ của anh ấy lên đến mười nghìn đô la.",
+              "category": "Finance"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Charitable giving · amount",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What specific amount does your foundation donate annually toward emerging educational technology initiatives benefiting underserved communities throughout multiple developing African countries?",
+              "vi": "Số tiền cụ thể nào quỹ của bạn quyên góp hàng năm cho các sáng kiến công nghệ giáo dục mới nổi mang lại lợi ích cho các cộng đồng không được phục vụ đầy đủ khắp nhiều quốc gia châu Phi đang phát triển?",
+              "vocabs": [
+                "amount",
+                "donate annually",
+                "educational technology",
+                "underserved communities",
+                "developing African countries"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our foundation contributes approximately eight million dollars annually toward distributing educational tablets, training local instructors, and establishing community digital learning centers strategically throughout numerous regions consistently. This substantial amount supplements smaller grants from regional partner organizations creating substantively comprehensive resource networks transforming educational opportunities significantly across vast underserved demographics over extended multi-year deployment periods.",
+              "vi": "Quỹ của chúng tôi đóng góp khoảng tám triệu đô la hàng năm cho việc phân phối máy tính bảng giáo dục, đào tạo giảng viên địa phương và thành lập các trung tâm học tập kỹ thuật số cộng đồng một cách chiến lược qua nhiều khu vực một cách nhất quán. Khoản tiền đáng kể này bổ sung cho các khoản tài trợ nhỏ hơn từ các tổ chức đối tác khu vực tạo ra các mạng lưới tài nguyên toàn diện thực chất biến đổi đáng kể các cơ hội giáo dục qua các nhân khẩu học không được phục vụ rộng lớn trong các giai đoạn triển khai nhiều năm kéo dài.",
+              "vocabs": [
+                "amount",
+                "educational tablets",
+                "local instructors",
+                "digital learning centers",
+                "regional partner",
+                "deployment periods"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How does your foundation determine appropriate funding amounts ensuring that meaningful contributions reach communities genuinely needing critical technological resources rather than wasteful administrative overhead expenses?",
+              "vi": "Quỹ của bạn xác định các số tiền tài trợ phù hợp đảm bảo những đóng góp có ý nghĩa đến với cộng đồng thực sự cần các nguồn lực công nghệ quan trọng thay vì chi phí gián tiếp hành chính lãng phí như thế nào?",
+              "vocabs": [
+                "amounts",
+                "appropriate funding",
+                "meaningful contributions",
+                "administrative overhead"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Comprehensive needs assessments precede every funding decision determining specific amounts based on detailed measurable community impact projections rigorously throughout extensive evaluation processes sustainably. Independent third-party auditors monitor expenditure efficiency continuously while published transparency reports demonstrate that approximately ninety-three percent of every donated amount directly benefits intended beneficiaries throughout demanding ongoing operational accountability programs internationally.",
+              "vi": "Các đánh giá nhu cầu toàn diện đi trước mọi quyết định tài trợ xác định các số tiền cụ thể dựa trên các dự báo tác động cộng đồng có thể đo lường được chi tiết một cách nghiêm ngặt trong các quy trình đánh giá rộng rãi một cách bền vững. Các kiểm toán viên độc lập bên thứ ba theo dõi hiệu quả chi tiêu liên tục trong khi các báo cáo minh bạch được công bố chứng minh rằng khoảng chín mươi ba phần trăm mỗi khoản tiền được quyên góp trực tiếp mang lại lợi ích cho những người thụ hưởng dự kiến trong các chương trình trách nhiệm vận hành đang diễn ra đòi hỏi quốc tế.",
+              "vocabs": [
+                "amounts",
+                "needs assessments",
+                "community impact",
+                "third-party auditors",
+                "expenditure efficiency",
+                "transparency reports"
               ]
             }
           ]
