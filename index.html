@@ -699,6 +699,34 @@
         color: var(--text);
     }
 
+
+    /* ===== LAZY LOAD & SKELETON ===== */
+    .word-card--lazy .word-skeleton {
+        padding: 12px 0 8px;
+    }
+    .skeleton-line {
+        height: 12px;
+        border-radius: 6px;
+        background: linear-gradient(90deg, var(--border) 25%, color-mix(in srgb, var(--border) 60%, transparent) 50%, var(--border) 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.4s infinite;
+        margin-bottom: 8px;
+    }
+    .skeleton-line.short { width: 55%; }
+    .skeleton-line.medium { width: 78%; }
+    .skeleton-line.long { width: 95%; }
+    @keyframes shimmer {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+    }
+    .word-count-bar {
+        text-align: center;
+        font-size: 11px;
+        color: var(--text-muted);
+        padding: 8px 0 4px;
+        letter-spacing: 0.3px;
+    }
+
     .empty-state {
         text-align: center;
         padding: 40px 20px;
@@ -812,6 +840,50 @@
                     <!-- Category List -->
                     <div id="categoryFilterList" style="max-height: 200px; overflow-y: auto; border: 1px solid var(--border); border-radius: 4px; padding: 0; background: white;">
                         <!-- Checkboxes generated here -->
+                    </div>
+                </div>
+
+
+                <!-- === DISPLAY MODE SECTION === -->
+                <div style="padding: 16px; border-bottom: 1px solid var(--border);">
+                    <div style="font-size: 13px; font-weight: 600; margin-bottom: 12px; color: var(--text);">🖥️ Display Mode</div>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+
+                        <!-- Lazy Scrolling (default) -->
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 10px; border: 2px solid var(--border); border-radius: 8px; transition: all .2s;" id="mode-lazy-label">
+                            <input type="radio" name="displayMode" value="lazy" id="mode-lazy" onchange="setDisplayMode('lazy')" style="accent-color: var(--secondary);">
+                            <div>
+                                <div style="font-size: 13px; font-weight: 600;">♾️ Lazy Scrolling</div>
+                                <div style="font-size: 11px; color: var(--text-muted);">Load 50 từ/lần khi scroll — Default</div>
+                            </div>
+                        </label>
+
+                        <!-- Paging -->
+                        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; padding: 10px; border: 2px solid var(--border); border-radius: 8px; transition: all .2s;" id="mode-paging-label">
+                            <input type="radio" name="displayMode" value="paging" id="mode-paging" onchange="setDisplayMode('paging')" style="accent-color: var(--secondary); margin-top: 2px;">
+                            <div style="flex:1">
+                                <div style="font-size: 13px; font-weight: 600;">📄 Paging</div>
+                                <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">Hiển thị theo trang, vuốt để chuyển trang</div>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <span style="font-size: 12px; color: var(--text);">Page size:</span>
+                                    <input type="number" id="pageSizeInput" min="5" max="100" value="50"
+                                        style="width: 65px; padding: 4px 8px; border: 1px solid var(--border); border-radius: 4px; font-size: 12px; text-align: center;"
+                                        onclick="event.stopPropagation()"
+                                        onchange="setPageSize(this.value)">
+                                    <span style="font-size: 11px; color: var(--text-muted);">(max 100)</span>
+                                </div>
+                            </div>
+                        </label>
+
+                        <!-- Flash Card -->
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 10px; border: 2px solid var(--border); border-radius: 8px; transition: all .2s;" id="mode-flashcard-label">
+                            <input type="radio" name="displayMode" value="flashcard" id="mode-flashcard" onchange="setDisplayMode('flashcard')" style="accent-color: var(--secondary);">
+                            <div>
+                                <div style="font-size: 13px; font-weight: 600;">🃏 Flash Card</div>
+                                <div style="font-size: 11px; color: var(--text-muted);">1 từ/lần, vuốt trái/phải để chuyển</div>
+                            </div>
+                        </label>
+
                     </div>
                 </div>
 
@@ -1532,56 +1604,72 @@
         const langSelect = document.getElementById('langSelect');
         const langMode = langSelect?.value || 'en';
         currentUtterances = [];
-        
-        // Reset speaker voice map for fresh variety
         speakerVoiceMap = {};
 
-        // 1. Read the word itself (slower, clearer, neutral)
-        currentUtterances.push({ 
-            text: word.word, 
-            lang: 'en-US', 
-            isWord: true,
-            pauseAfter: 600  // Longer pause after word announcement
-        });
+        // Detect active tab
+        const card = document.querySelector(`[data-word="${wordId}"]`);
+        const activeTab = card?.querySelector('.tab-btn.active')?.dataset?.tab || 'definition';
 
-        // 2. Read all meanings and examples
-        word.meanings.forEach((meaning, idx) => {
-            // Read Vietnamese meaning
-            if (langMode === 'en-vi' || langMode === 'vi') {
-                currentUtterances.push({ 
-                    text: meaning.vi, 
-                    lang: 'vi-VN', 
+        if (activeTab === 'definition') {
+            // === READ DEFINITION TAB ===
+            // Word pronunciation
+            currentUtterances.push({ text: word.word, lang: 'en-US', isWord: true, pauseAfter: 600 });
+
+            // Meanings & examples
+            word.meanings.forEach((meaning) => {
+                if (langMode === 'en-vi' || langMode === 'vi') {
+                    currentUtterances.push({ text: meaning.vi, lang: 'vi-VN', isWord: false, pauseAfter: 400 });
+                }
+                meaning.examples.forEach((example, exIdx) => {
+                    const spk = `Example_${exIdx % 2}`;
+                    if (langMode === 'en-vi' || langMode === 'en') {
+                        currentUtterances.push({ text: example.en, lang: 'en-US', isWord: false, speaker: spk, pauseAfter: 350 });
+                    }
+                    if (langMode === 'en-vi') {
+                        currentUtterances.push({ text: example.vi, lang: 'vi-VN', isWord: false, pauseAfter: 400 });
+                    }
+                });
+            });
+
+        } else if (activeTab === 'conversation') {
+            // === READ CONVERSATION TAB ===
+            if (!word.conversations || word.conversations.length === 0) return;
+            const conv = word.conversations[0];
+
+            // Read conversation title first
+            if (conv.title) {
+                currentUtterances.push({
+                    text: conv.title,
+                    lang: 'en-US',
                     isWord: false,
-                    emphasis: 'normal',
-                    pauseAfter: 400
+                    emphasis: 'strong',
+                    pauseAfter: 500
                 });
             }
 
-            // Read examples (alternating speakers for variety)
-            meaning.examples.forEach((example, exIdx) => {
-                const exampleSpeaker = `Example_${exIdx % 2}`;  // Alternate speakers
-                
+            // Read each line with speaker-specific voices
+            conv.lines.forEach(line => {
                 if (langMode === 'en-vi' || langMode === 'en') {
-                    currentUtterances.push({ 
-                        text: example.en, 
-                        lang: 'en-US', 
+                    currentUtterances.push({
+                        text: line.en,
+                        lang: 'en-US',
                         isWord: false,
-                        speaker: exampleSpeaker,
+                        speaker: line.speaker,
+                        pauseAfter: getPauseAfterText(line.en)
+                    });
+                }
+                if (langMode === 'en-vi' || langMode === 'vi') {
+                    currentUtterances.push({
+                        text: line.vi,
+                        lang: 'vi-VN',
+                        isWord: false,
+                        speaker: line.speaker,
                         pauseAfter: 350
                     });
                 }
-                if (langMode === 'en-vi') {
-                    currentUtterances.push({ 
-                        text: example.vi, 
-                        lang: 'vi-VN', 
-                        isWord: false,
-                        pauseAfter: 400
-                    });
-                }
             });
-        });
+        }
 
-        // Speak all utterances sequentially
         currentUtteranceIndex = 0;
         isSpeaking = true;
         isPaused = false;
@@ -1690,41 +1778,7 @@
     }
 
     // Read conversation
-    function readConversationByWordId(wordId) {
-        const word = wordsMap[wordId];
-        if (!word || !word.conversations || word.conversations.length === 0) return;
 
-        const langMode = document.getElementById('langSelect').value;
-        const conv = word.conversations[0];
-        const utterances = [];
-
-        conv.lines.forEach(line => {
-            if (langMode === 'en-vi' || langMode === 'en') {
-                utterances.push({ text: `${line.speaker}: ${line.en}`, lang: 'en-US' });
-            }
-            if (langMode === 'en-vi' || langMode === 'vi') {
-                utterances.push({ text: line.vi, lang: 'vi-VN' });
-            }
-        });
-
-        let index = 0;
-        const speakNext = () => {
-            if (index < utterances.length) {
-                const item = utterances[index];
-                const utterance = new SpeechSynthesisUtterance(item.text);
-                utterance.lang = item.lang;
-                utterance.rate = 0.85;
-                utterance.onend = () => {
-                    index++;
-                    setTimeout(speakNext, 300);
-                };
-                speechSynthesis.speak(utterance);
-            }
-        };
-
-        speechSynthesis.cancel();
-        speakNext();
-    }
 
     // Tab switching
     function switchTab(wordId, tabName) {
@@ -1740,8 +1794,391 @@
     }
 
     // Render Words
-    function renderWords(words) {
+
+    // ===================================================
+    // DISPLAY MODE ENGINE
+    // ===================================================
+    let currentDataset = [];        // filtered/sorted results
+    let displayMode = localStorage.getItem('displayMode') || 'lazy';
+    let currentPage  = 1;
+    let pageSize     = parseInt(localStorage.getItem('pageSize') || '50');
+    let flashIndex   = 0;
+    let lazyOffset   = 0;          // how many words already rendered
+    const LAZY_BATCH = 50;
+
+    // --- Init saved mode on load ---
+    function initDisplayMode() {
+        const radio = document.querySelector(`input[name="displayMode"][value="${displayMode}"]`);
+        if (radio) radio.checked = true;
+        const ps = document.getElementById('pageSizeInput');
+        if (ps) ps.value = pageSize;
+        highlightModeLabel(displayMode);
+    }
+
+    function highlightModeLabel(mode) {
+        ['lazy','paging','flashcard'].forEach(m => {
+            const lbl = document.getElementById(`mode-${m}-label`);
+            if (lbl) lbl.style.borderColor = m === mode ? 'var(--secondary)' : 'var(--border)';
+        });
+    }
+
+    function setDisplayMode(mode) {
+        displayMode = mode;
+        localStorage.setItem('displayMode', mode);
+        highlightModeLabel(mode);
+        renderByMode(currentDataset);
+    }
+
+    function setPageSize(val) {
+        let n = Math.max(5, Math.min(100, parseInt(val) || 50));
+        document.getElementById('pageSizeInput').value = n;
+        pageSize = n;
+        localStorage.setItem('pageSize', n);
+        if (displayMode === 'paging') {
+            currentPage = 1;
+            renderByMode(currentDataset);
+        }
+    }
+
+    // Master render dispatcher
+    function renderByMode(dataset) {
+        currentDataset = dataset;
+        stopAudio();
+        removePagingFooter();
+
+        if (displayMode === 'flashcard') {
+            flashIndex = Math.min(flashIndex, Math.max(0, dataset.length - 1));
+            renderFlashCard();
+        } else if (displayMode === 'paging') {
+            const totalPages = Math.max(1, Math.ceil(dataset.length / pageSize));
+            currentPage = Math.min(currentPage, totalPages);
+            renderPage(currentPage);
+        } else {
+            lazyOffset = 0;
+            renderLazy();
+        }
+    }
+
+    // ---- FLASH CARD ----
+    function renderFlashCard(anim = 'left') {
         const container = document.getElementById('wordsContainer');
+        container.className = 'mode-flashcard';
+
+        if (!currentDataset.length) {
+            container.innerHTML = emptyStateHTML();
+            return;
+        }
+
+        const word = currentDataset[flashIndex];
+        wordsMap[word.id] = word;
+
+        const total = currentDataset.length;
+        const navHTML = `
+            <div class="mode-nav" id="flashNav">
+                <button class="mode-nav-btn" id="fcPrev" onclick="flashMove(-1)" ${flashIndex === 0 ? 'disabled' : ''}>‹</button>
+                <div class="mode-nav-indicator">${flashIndex + 1} / ${total.toLocaleString()}</div>
+                <button class="mode-nav-btn" id="fcNext" onclick="flashMove(1)" ${flashIndex >= total - 1 ? 'disabled' : ''}>›</button>
+            </div>`;
+
+        container.innerHTML = navHTML + `
+            <div class="word-card ${anim === 'left' ? 'card-anim-left' : 'card-anim-right'}" data-word="${word.id}">
+                ${buildCardShell(word).replace(/<div class="word-skeleton">[\s\S]*?<\/div>/, '')}
+                ${buildCardContent(word)}
+            </div>`;
+    }
+
+    function flashMove(dir) {
+        const next = flashIndex + dir;
+        if (next < 0 || next >= currentDataset.length) return;
+        flashIndex = next;
+        renderFlashCard(dir > 0 ? 'left' : 'right');
+    }
+
+    // ---- PAGING ----
+    function renderPage(page) {
+        const container = document.getElementById('wordsContainer');
+        container.className = 'mode-paging';
+        currentPage = page;
+
+        if (!currentDataset.length) {
+            container.innerHTML = emptyStateHTML();
+            return;
+        }
+
+        const totalPages = Math.max(1, Math.ceil(currentDataset.length / pageSize));
+        const start = (page - 1) * pageSize;
+        const slice = currentDataset.slice(start, start + pageSize);
+
+        // Populate wordsMap
+        slice.forEach(w => { wordsMap[w.id] = w; });
+
+        // Count bar + shells (lazy-loaded)
+        const totalWords = currentDataset.length;
+        const showing = `${start + 1}–${Math.min(start + pageSize, totalWords)} of ${totalWords.toLocaleString()}`;
+        let html = `<div class="word-count-bar">${showing}</div>`;
+        slice.forEach(w => { html += buildCardShell(w); });
+        container.innerHTML = html;
+
+        // Observe shells for lazy content
+        if (lazyObserver) lazyObserver.disconnect();
+        lazyObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const card = entry.target;
+                const wid = parseInt(card.dataset.word);
+                const w = wordsMap[wid];
+                if (!w || !card.classList.contains('word-card--lazy')) return;
+                const sk = card.querySelector('.word-skeleton');
+                if (sk) sk.outerHTML = buildCardContent(w);
+                card.classList.remove('word-card--lazy');
+                lazyObserver.unobserve(card);
+            });
+        }, { rootMargin: '200px 0px', threshold: 0 });
+        requestAnimationFrame(() => {
+            container.querySelectorAll('.word-card--lazy').forEach(c => lazyObserver.observe(c));
+        });
+
+        // Fixed paging footer
+        renderPagingFooter(page, totalPages);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function renderPagingFooter(page, totalPages) {
+        removePagingFooter();
+        const footer = document.createElement('div');
+        footer.className = 'paging-footer';
+        footer.id = 'pagingFooter';
+        footer.innerHTML = `
+            <button class="mode-nav-btn" onclick="goPage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>‹</button>
+            <div class="page-info">Page ${page} / ${totalPages}</div>
+            <button class="mode-nav-btn" onclick="goPage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>›</button>`;
+        document.body.appendChild(footer);
+    }
+
+    function removePagingFooter() {
+        const f = document.getElementById('pagingFooter');
+        if (f) f.remove();
+    }
+
+    function goPage(page) {
+        const totalPages = Math.max(1, Math.ceil(currentDataset.length / pageSize));
+        if (page < 1 || page > totalPages) return;
+        currentPage = page;
+        renderPage(currentPage);
+    }
+
+    // ---- LAZY SCROLLING ----
+    function renderLazy() {
+        const container = document.getElementById('wordsContainer');
+        container.className = '';
+
+        if (!currentDataset.length) {
+            container.innerHTML = emptyStateHTML();
+            return;
+        }
+
+        // Disconnect previous observer
+        if (lazyObserver) { lazyObserver.disconnect(); lazyObserver = null; }
+
+        const total = currentDataset.length;
+        const firstBatch = currentDataset.slice(0, LAZY_BATCH);
+        firstBatch.forEach(w => { wordsMap[w.id] = w; });
+
+        let html = `<div class="word-count-bar">${total.toLocaleString()} words</div>`;
+        firstBatch.forEach(w => { html += buildCardShell(w); });
+        container.innerHTML = html;
+        lazyOffset = firstBatch.length;
+
+        setupLazyObserver(container, total);
+    }
+
+    function setupLazyObserver(container, total) {
+        // Content lazy-loading observer
+        const contentObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const card = entry.target;
+                const wid = parseInt(card.dataset.word);
+                const w = wordsMap[wid];
+                if (!w || !card.classList.contains('word-card--lazy')) return;
+                const sk = card.querySelector('.word-skeleton');
+                if (sk) sk.outerHTML = buildCardContent(w);
+                card.classList.remove('word-card--lazy');
+                contentObserver.unobserve(card);
+            });
+        }, { rootMargin: '200px 0px', threshold: 0 });
+
+        lazyObserver = contentObserver;
+
+        // Sentinel observer: load next batch when reaching bottom
+        const loadMoreSentinel = document.createElement('div');
+        loadMoreSentinel.id = 'lazysentinel';
+        loadMoreSentinel.style.cssText = 'height:1px;margin-top:8px;';
+        container.appendChild(loadMoreSentinel);
+
+        const sentinelObserver = new IntersectionObserver(entries => {
+            if (!entries[0].isIntersecting) return;
+            if (lazyOffset >= total) {
+                sentinelObserver.disconnect();
+                return;
+            }
+
+            // Load next batch
+            const nextBatch = currentDataset.slice(lazyOffset, lazyOffset + LAZY_BATCH);
+            nextBatch.forEach(w => { wordsMap[w.id] = w; });
+
+            const fragment = document.createDocumentFragment();
+            const wrapper = document.createElement('div');
+            let batchHtml = '';
+            nextBatch.forEach(w => { batchHtml += buildCardShell(w); });
+            wrapper.innerHTML = batchHtml;
+            while (wrapper.firstChild) fragment.appendChild(wrapper.firstChild);
+
+            // Insert before sentinel
+            container.insertBefore(fragment, loadMoreSentinel);
+            lazyOffset += nextBatch.length;
+
+            // Observe new shells for content loading
+            requestAnimationFrame(() => {
+                container.querySelectorAll('.word-card--lazy').forEach(c => contentObserver.observe(c));
+            });
+
+            if (lazyOffset >= total) sentinelObserver.disconnect();
+        }, { rootMargin: '300px 0px', threshold: 0 });
+
+        requestAnimationFrame(() => {
+            container.querySelectorAll('.word-card--lazy').forEach(c => contentObserver.observe(c));
+            sentinelObserver.observe(loadMoreSentinel);
+        });
+    }
+
+    // ---- SWIPE HANDLER ----
+    function setupSwipe() {
+        const container = document.getElementById('wordsContainer');
+        let startX = 0, startY = 0;
+
+        document.addEventListener('touchstart', e => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        }, { passive: true });
+
+        document.addEventListener('touchend', e => {
+            if (displayMode !== 'flashcard' && displayMode !== 'paging') return;
+            const dx = e.changedTouches[0].clientX - startX;
+            const dy = e.changedTouches[0].clientY - startY;
+            // Only horizontal swipes (dx > dy)
+            if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy)) return;
+
+            if (displayMode === 'flashcard') {
+                dx < 0 ? flashMove(1) : flashMove(-1);
+            } else if (displayMode === 'paging') {
+                const totalPages = Math.ceil(currentDataset.length / pageSize);
+                dx < 0 ? goPage(currentPage + 1) : goPage(currentPage - 1);
+            }
+        }, { passive: true });
+    }
+
+    function emptyStateHTML() {
+        return `<div class="empty-state">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <p>No words found. Try another search.</p>
+        </div>`;
+    }
+
+
+    // ===== LAZY RENDERING ENGINE =====
+    let lazyObserver = null;
+    let searchDebounceTimer = null;
+
+    function buildCardContent(word) {
+        const langMode = document.getElementById('langSelect')?.value || 'en-vi';
+        return `
+            <div class="word-meta">
+                ${word.frequency ? `<span class="freq-badge">#${word.frequency}</span>` : ''}
+                ${word.categories ? word.categories.map(cat => `<span class="category-chip">${cat}</span>`).join('') : ''}
+            </div>
+            <div class="word-tabs">
+                <button class="tab-btn active" data-tab="definition" onclick="switchTab(${word.id}, 'definition')">📖 Definition</button>
+                ${word.conversations && word.conversations.length > 0 ? `<button class="tab-btn" data-tab="conversation" onclick="switchTab(${word.id}, 'conversation')">🎬 Conversations</button>` : ''}
+            </div>
+            <div class="tab-content active" data-tab="definition">
+                ${word.meanings.map(meaning => `
+                    <div class="meaning">
+                        <div class="meaning-vi">${meaning.vi}</div>
+                        <div class="examples">
+                            ${meaning.examples.map(ex => `
+                                <div class="example">
+                                    <div class="example-en">
+                                        <span class="example-en-text">"${ex.en}"</span>
+                                        ${ex.category ? `<span class="example-category">${ex.category}</span>` : ''}
+                                        <button class="example-audio-btn" onclick="speakWord('${ex.en.replace(/"/g, '\\"')}')">🔊</button>
+                                    </div>
+                                    <div class="example-vi">→ ${ex.vi}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+            ${word.conversations && word.conversations.length > 0 ? `
+            <div class="tab-content" data-tab="conversation">
+                ${word.conversations.map(conv => `
+                    <div style="margin-bottom:15px">
+                        <div style="font-weight:700;margin-bottom:10px;color:var(--secondary)">${conv.title}</div>
+                        ${conv.lines.map(line => `
+                            <div class="conv-line">
+                                <div class="conv-speaker">${line.speaker}</div>
+                                ${(langMode === 'en-vi' || langMode === 'en') ? `
+                                <div class="conv-text conv-text-en">
+                                    <button class="conv-audio-btn" onclick="speakConversationLine('${line.en.replace(/"/g,'\\"').replace(/'/g,"\\'")}','${line.speaker.replace(/'/g,"\\'")}','en-US')">🔊</button>
+                                    <span>${highlightVocabInText(line.en, line.vocabs)}</span>
+                                </div>` : ''}
+                                ${(langMode === 'en-vi' || langMode === 'vi') ? `
+                                <div class="conv-text conv-text-vi"><span>${line.vi}</span></div>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                `).join('')}
+            </div>` : ''}
+        `;
+    }
+
+    function buildCardShell(word) {
+        return `
+            <div class="word-card word-card--lazy" data-word="${word.id}">
+                <div class="word-header">
+                    <div class="word-title">
+                        <div>
+                            <div class="word-main">${word.word}</div>
+                            <div class="phonetic">${word.phonetic || ''}</div>
+                        </div>
+                        <span class="word-pos">${word.pos || ''}</span>
+                    </div>
+                    <div class="audio-buttons">
+                        <button class="audio-btn" onclick="speakWord('${word.word}')">🔊</button>
+                        <button class="read-all-btn" onclick="readAllWordById(${word.id})" title="Read tab">📖</button>
+                    </div>
+                </div>
+                <div class="word-skeleton">
+                    <div class="skeleton-line medium"></div>
+                    <div class="skeleton-line long"></div>
+                    <div class="skeleton-line short"></div>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderWords(words) {
+        // Legacy compat: only used by lazyObserver re-triggers
+        // Direct calls should use renderByMode()
+        const container = document.getElementById('wordsContainer');
+
+        // Disconnect previous observer
+        if (lazyObserver) { lazyObserver.disconnect(); lazyObserver = null; }
+
         if (words.length === 0) {
             container.innerHTML = `
                 <div class="empty-state">
@@ -1750,96 +2187,75 @@
                         <path d="m21 21-4.35-4.35"></path>
                     </svg>
                     <p>No words found. Try another search.</p>
-                </div>
-            `;
+                </div>`;
             return;
         }
 
-        // Populate wordsMap for read all functionality
-        words.forEach(word => {
-            wordsMap[word.id] = word;
+        // Populate wordsMap
+        words.forEach(word => { wordsMap[word.id] = word; });
+
+        // Word count bar
+        const countBar = `<div class="word-count-bar">${words.length.toLocaleString()} words</div>`;
+
+        // Render all shells first (fast: only ~3 nodes each)
+        // Use DocumentFragment + batch insertion via rAF
+        const BATCH = 80;
+        let html = countBar;
+        for (let i = 0; i < Math.min(BATCH, words.length); i++) {
+            html += buildCardShell(words[i]);
+        }
+        container.innerHTML = html;
+
+        // Render remaining shells in background (non-blocking)
+        if (words.length > BATCH) {
+            let idx = BATCH;
+            const renderBatch = () => {
+                if (idx >= words.length) return;
+                const fragment = document.createDocumentFragment();
+                const end = Math.min(idx + BATCH, words.length);
+                const div = document.createElement('div');
+                let batchHtml = '';
+                for (let i = idx; i < end; i++) {
+                    batchHtml += buildCardShell(words[i]);
+                }
+                div.innerHTML = batchHtml;
+                while (div.firstChild) fragment.appendChild(div.firstChild);
+                container.appendChild(fragment);
+                idx = end;
+                if (idx < words.length) requestAnimationFrame(renderBatch);
+            };
+            requestAnimationFrame(renderBatch);
+        }
+
+        // IntersectionObserver: inject full content when card enters viewport
+        lazyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const card = entry.target;
+                const wordId = parseInt(card.dataset.word);
+                const word = wordsMap[wordId];
+                if (!word || !card.classList.contains('word-card--lazy')) return;
+
+                // Inject full content (replace skeleton)
+                const skeleton = card.querySelector('.word-skeleton');
+                if (skeleton) {
+                    skeleton.outerHTML = buildCardContent(word);
+                }
+                card.classList.remove('word-card--lazy');
+                lazyObserver.unobserve(card);
+            });
+        }, {
+            rootMargin: '200px 0px',  // Pre-load 200px before entering viewport
+            threshold: 0
         });
 
-        container.innerHTML = words.map(word => `
-            <div class="word-card" data-word="${word.id}">
-                <div class="word-header">
-                    <div class="word-title">
-                        <div>
-                            <div class="word-main">${word.word}</div>
-                            <div class="phonetic">${word.phonetic}</div>
-                        </div>
-                        <span class="word-pos">${word.pos}</span>
-                    </div>
-                    <div class="audio-buttons">
-                        <button class="audio-btn" onclick="speakWord('${word.word}')" title="Pronounce word">🔊</button>
-                        <button class="read-all-btn" onclick="readAllWordById(${word.id})" title="Read all">📖</button>
-                    </div>
-                </div>
-
-                <!-- Frequency & Categories -->
-                <div class="word-meta">
-                    ${word.frequency ? `<span class="freq-badge">#${word.frequency}</span>` : ''}
-                    ${word.categories ? word.categories.map(cat => `<span class="category-chip">${cat}</span>`).join('') : ''}
-                </div>
-
-                <!-- Tabs -->
-                <div class="word-tabs">
-                    <button class="tab-btn active" data-tab="definition" onclick="switchTab(${word.id}, 'definition')">📖 Definition</button>
-                    ${word.conversations && word.conversations.length > 0 ? `<button class="tab-btn" data-tab="conversation" onclick="switchTab(${word.id}, 'conversation')">🎬 Conversations</button>` : ''}
-                </div>
-
-                <!-- Definition Tab -->
-                <div class="tab-content active" data-tab="definition">
-                    ${word.meanings.map(meaning => `
-                        <div class="meaning">
-                            <div class="meaning-vi">${meaning.vi}</div>
-                            <div class="examples">
-                                ${meaning.examples.map(ex => `
-                                    <div class="example">
-                                        <div class="example-en">
-                                            <span class="example-en-text">"${ex.en}"</span>
-                                            ${ex.category ? `<span class="example-category">${ex.category}</span>` : ''}
-                                            <button class="example-audio-btn" onclick="speakWord('${ex.en.replace(/"/g, '\\"')}')" title="Pronounce example">🔊</button>
-                                        </div>
-                                        <div class="example-vi">→ ${ex.vi}</div>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-
-                <!-- Conversation Tab -->
-                ${word.conversations && word.conversations.length > 0 ? `
-                <div class="tab-content" data-tab="conversation">
-                    ${word.conversations.map(conv => `
-                        <div style="margin-bottom: 15px;">
-                            <div style="font-weight: 700; margin-bottom: 10px; color: var(--secondary);">${conv.title}</div>
-                            <div class="conv-controls-small">
-                                <button class="conv-read-btn" onclick="readConversationByWordId(${word.id})">📖 Read All</button>
-                            </div>
-                            ${conv.lines.map(line => `
-                                <div class="conv-line">
-                                    <div class="conv-speaker">${line.speaker}</div>
-                                    ${document.getElementById('langSelect') && (document.getElementById('langSelect').value === 'en-vi' || document.getElementById('langSelect').value === 'en') ? `
-                                    <div class="conv-text conv-text-en">
-                                        <button class="conv-audio-btn" onclick="speakConversationLine('${line.en.replace(/"/g, '\\"').replace(/\'/g, "\\\\'")}', '${line.speaker.replace(/\'/g, "\\\\'")}', 'en-US')">🔊</button>
-                                        <span>${highlightVocabInText(line.en, line.vocabs)}</span>
-                                    </div>
-                                    ` : ''}
-                                    ${document.getElementById('langSelect') && (document.getElementById('langSelect').value === 'en-vi' || document.getElementById('langSelect').value === 'vi') ? `
-                                    <div class="conv-text conv-text-vi">
-                                        <span>${line.vi}</span>
-                                    </div>
-                                    ` : ''}
-                                </div>
-                            `).join('')}
-                        </div>
-                    `).join('')}
-                </div>
-                ` : ''}
-            </div>
-        `).join('');
+        // Observe all shells
+        const observe = () => {
+            container.querySelectorAll('.word-card--lazy').forEach(card => {
+                lazyObserver.observe(card);
+            });
+        };
+        requestAnimationFrame(observe);
     }
 
     // Search Functionality
@@ -1855,6 +2271,10 @@
             
             // Show/hide clear button
             clearBtn.style.display = query ? 'block' : 'none';
+
+            // Debounce: wait 300ms after user stops typing
+            clearTimeout(searchDebounceTimer);
+            searchDebounceTimer = setTimeout(() => {
             
             if (!query) {
                 renderWords(words);
@@ -1907,7 +2327,11 @@
                 return false;
             });
             
-            renderWords(filtered);
+            currentPage = 1;
+            flashIndex = 0;
+            lazyOffset = 0;
+            renderByMode(filtered);
+            }, 300); // end debounce
         });
     }
 
@@ -1938,7 +2362,7 @@
         // Save language on change
         langSelect.addEventListener('change', () => {
             localStorage.setItem('language', langSelect.value);
-            renderWords(window.currentAllWords || []);
+            renderByMode(window.currentAllWords || []);
         });
     }
 
@@ -1996,7 +2420,7 @@
                 await tx.complete;
 
                 window.currentAllWords = wordArray;
-                renderWords(wordArray);
+                renderByMode(wordArray);
                 setupSearch(wordArray);
                 statusText.innerHTML = `✅ Loaded ${wordArray.length} words from GitHub Raw<br><small>${new Date().toLocaleTimeString()}</small>`;
                 applyFilterAndSort();
@@ -2026,7 +2450,7 @@
                     await tx.complete;
 
                     window.currentAllWords = fallbackData;
-                    renderWords(fallbackData);
+                    renderByMode(fallbackData);
                     setupSearch(fallbackData);
                     
                     statusText.innerHTML = `⚠️  GitHub unavailable. Using fallback data (${fallbackData.length} words)<br>
@@ -2296,6 +2720,8 @@
         setupDarkMode();
         setupLanguagePreference();
         loadData();
+        initDisplayMode();
+        setupSwipe();
         
         // Search icon
         const searchIcon = document.getElementById('searchIcon');
@@ -2354,7 +2780,6 @@
 
     // Mobile keyboard handled in openSearchModal function
 </script>
-
 
 </body>
 </html>
