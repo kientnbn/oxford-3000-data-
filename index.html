@@ -24,7 +24,9 @@
             box-sizing: border-box;
         }
 
+
     :root {
+        --modal-bg: #ffffff;
         --primary: #2c3e50;
         --secondary: #3498db;
         --accent: #e74c3c;
@@ -46,7 +48,8 @@
     body.dark-mode {
         background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
         color: #ecf0f1;
-    }
+    
+        --modal-bg: #1e1e2e;}
 
     body.dark-mode * {
         --text: #ecf0f1;
@@ -266,8 +269,8 @@
 
     .container {
         max-width: 800px;
-        margin: 20px auto;
-        padding: 0 15px;
+        margin: 8px auto 20px;
+        padding: 0 12px;
     }
 
     .word-card {
@@ -769,13 +772,314 @@
             font-size: 20px;
         }
     }
-</style>
+
+    .sort-opt {
+        display: flex; align-items: center; gap: 8px; cursor: pointer;
+        padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px;
+        font-size: 12px; color: var(--text); transition: all .15s;
+    }
+    .sort-opt:has(input:checked) {
+        border-color: var(--secondary);
+        background: color-mix(in srgb, var(--secondary) 8%, transparent);
+    }
+    .dmode-opt {
+        display: flex; align-items: flex-start; gap: 10px; cursor: pointer;
+        padding: 12px; border: 2px solid var(--border); border-radius: 10px; transition: all .2s;
+    }
+    .dmode-opt:has(input:checked) {
+        border-color: var(--secondary);
+        background: color-mix(in srgb, var(--secondary) 6%, transparent);
+    }
+    .dmode-title { font-size: 13px; font-weight: 600; color: var(--text); }
+    .dmode-desc  { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+    /* ===== INLINE NAV — FIXED BELOW HEADER ===== */
+    #inlineNav {
+        display: none;          /* hidden by default */
+        position: fixed !important;
+        left: 0; right: 0;
+        top: 56px;           /* overridden by JS */
+        z-index: 190;
+        background: var(--modal-bg, #fff);
+        border-bottom: 2px solid var(--secondary);
+        padding: 7px 10px;
+        align-items: center;
+        gap: 5px;
+        box-shadow: 0 3px 10px rgba(0,0,0,.12);
+    }
+    #inlineNav.active { display: flex !important; }
+
+    .inav-btn {
+        background: var(--secondary);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 6px 11px;
+        font-size: 16px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: opacity .15s, transform .1s;
+        flex-shrink: 0;
+        line-height: 1;
+    }
+    .inav-btn:active  { transform: scale(.92); }
+    .inav-btn:disabled { opacity: .25; cursor: default; }
+
+    .inav-seek {
+        width: 52px;
+        text-align: center;
+        padding: 5px 4px;
+        border: 2px solid var(--secondary);
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--text);
+        background: var(--modal-bg, #fff);
+        -moz-appearance: textfield;
+    }
+    .inav-seek::-webkit-inner-spin-button,
+    .inav-seek::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+    .inav-sep   { font-size: 14px; color: var(--text-muted); }
+    .inav-total { font-size: 14px; font-weight: 700; color: var(--text); }
+    .inav-label {
+        margin-left: auto;
+        font-size: 11px;
+        color: var(--text-muted);
+        background: var(--border);
+        padding: 2px 7px;
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+
+    /* Push container down to not hide behind fixed nav */
+    .container { transition: padding-top .15s; }
+
+    /* ===== MODAL — SOLID BACKGROUND ===== */
+    :root { --modal-bg: #ffffff; }
+    body.dark-mode { --modal-bg: #1c1c2e; }
+
+    .search-modal-content > div > div:first-child {
+        background: var(--modal-bg) !important;
+    }
+    #filterSortModal .search-modal-content > div > div:first-child {
+        background: var(--modal-bg) !important;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(0,0,0,.22);
+    }
+    .stab-btn {
+        background: var(--modal-bg) !important;
+    }
+    .stab-panel {
+        background: var(--modal-bg) !important;
+    }
+    #stab-filter, #stab-sort, #stab-display {
+        background: var(--modal-bg) !important;
+    }
+    #filterSortModal .search-modal-content {
+        background: transparent;
+    }
+
+    
+    /* ===== SIDEBAR ===== */
+    #sidebarOverlay {
+        display: none; position: fixed; inset: 0;
+        background: rgba(0,0,0,.45); z-index: 400;
+        backdrop-filter: blur(2px);
+    }
+    #sidebarOverlay.open { display: block; }
+
+    #sidebar {
+        position: fixed; top: 0; left: -280px; bottom: 0;
+        width: 270px; z-index: 410;
+        background: var(--modal-bg, #fff);
+        box-shadow: 4px 0 24px rgba(0,0,0,.18);
+        transition: left .25s cubic-bezier(.4,0,.2,1);
+        display: flex; flex-direction: column;
+        overflow: hidden;
+    }
+    #sidebar.open { left: 0; }
+
+    .sidebar-header {
+        padding: 20px 16px 14px;
+        background: var(--primary);
+        color: white;
+        display: flex; align-items: center; gap: 10px;
+    }
+    .sidebar-header-title { font-size: 17px; font-weight: 700; }
+    .sidebar-close {
+        margin-left: auto; background: none; border: none;
+        color: white; font-size: 20px; cursor: pointer; padding: 2px 6px;
+    }
+
+    .sidebar-nav { flex: 1; overflow-y: auto; padding: 8px 0; }
+    .sidebar-item {
+        display: flex; align-items: center; gap: 12px;
+        padding: 13px 18px; cursor: pointer;
+        font-size: 14px; font-weight: 500; color: var(--text);
+        border-left: 3px solid transparent;
+        transition: all .15s;
+    }
+    .sidebar-item:hover { background: color-mix(in srgb,var(--secondary) 8%,transparent); }
+    .sidebar-item.active {
+        border-left-color: var(--secondary);
+        color: var(--secondary);
+        background: color-mix(in srgb,var(--secondary) 10%,transparent);
+        font-weight: 700;
+    }
+    .sidebar-item-icon { font-size: 18px; flex-shrink: 0; }
+    .sidebar-badge {
+        margin-left: auto; background: var(--secondary); color: white;
+        border-radius: 10px; padding: 1px 7px; font-size: 11px; font-weight: 700;
+    }
+    .sidebar-divider { height: 1px; background: var(--border); margin: 6px 16px; }
+
+    .sidebar-sublists { padding: 0 0 4px 46px; }
+    .sidebar-subitem {
+        display: flex; align-items: center; gap: 8px;
+        padding: 9px 12px 9px 0; cursor: pointer;
+        font-size: 13px; color: var(--text-muted);
+        border-radius: 6px; transition: all .15s;
+    }
+    .sidebar-subitem:hover { color: var(--secondary); }
+    .sidebar-subitem.active { color: var(--secondary); font-weight: 600; }
+    .sidebar-new-list {
+        display: flex; align-items: center; gap: 8px;
+        padding: 9px 12px 9px 0; cursor: pointer;
+        font-size: 13px; color: var(--secondary); font-weight: 600;
+    }
+
+    /* ===== SELECT MODE ===== */
+    .word-card { position: relative; }
+    .word-card .card-checkbox {
+        display: none; position: absolute; top: 12px; right: 12px; z-index: 5;
+        width: 22px; height: 22px; accent-color: var(--secondary); cursor: pointer;
+    }
+    body.select-mode .word-card .card-checkbox { display: block; }
+    body.select-mode .word-card {
+        cursor: pointer;
+        transition: box-shadow .15s, transform .1s;
+    }
+    body.select-mode .word-card.selected {
+        box-shadow: 0 0 0 2.5px var(--secondary);
+        background: color-mix(in srgb, var(--secondary) 6%, var(--card-bg, white));
+    }
+
+    /* Long-press ripple */
+    .word-card.pressing::after {
+        content: ''; position: absolute; inset: 0; border-radius: inherit;
+        background: color-mix(in srgb, var(--secondary) 12%, transparent);
+        animation: pressRipple .5s ease forwards;
+        pointer-events: none;
+    }
+    @keyframes pressRipple {
+        from { opacity: 0; } 50% { opacity: 1; } to { opacity: 0; }
+    }
+
+    /* ===== SELECT ACTION BAR ===== */
+    #selectActionBar {
+        display: none; position: fixed; bottom: 0; left: 0; right: 0;
+        z-index: 350; background: var(--primary);
+        padding: 10px 14px; gap: 8px;
+        align-items: center; justify-content: space-between;
+        box-shadow: 0 -4px 16px rgba(0,0,0,.18);
+    }
+    #selectActionBar.open { display: flex; }
+    .action-bar-count {
+        font-size: 14px; font-weight: 700; color: white; flex: 1;
+    }
+    .action-bar-btn {
+        padding: 8px 14px; border: none; border-radius: 8px;
+        font-size: 13px; font-weight: 700; cursor: pointer;
+        transition: opacity .15s;
+    }
+    .action-bar-btn:active { opacity: .75; }
+    .action-bar-btn.hide   { background: #e74c3c; color: white; }
+    .action-bar-btn.list   { background: white; color: var(--primary); }
+    .action-bar-btn.cancel { background: rgba(255,255,255,.2); color: white; }
+
+    /* ===== MY LISTS MODAL ===== */
+    #listModal {
+        display: none; position: fixed; inset: 0; z-index: 500;
+        background: rgba(0,0,0,.5); align-items: flex-end; justify-content: center;
+    }
+    #listModal.open { display: flex; }
+    .list-modal-sheet {
+        background: var(--modal-bg, #fff); width: 100%; max-width: 500px;
+        border-radius: 18px 18px 0 0; padding: 20px 16px 32px;
+        max-height: 70vh; overflow-y: auto;
+        animation: slideUp .25s ease;
+    }
+    @keyframes slideUp { from { transform: translateY(100%); } to { transform: none; } }
+    .list-modal-title {
+        font-size: 16px; font-weight: 700; margin-bottom: 14px;
+        color: var(--text); text-align: center;
+    }
+    .list-item-row {
+        display: flex; align-items: center; gap: 12px;
+        padding: 12px 10px; border-radius: 10px; cursor: pointer;
+        transition: background .15s;
+    }
+    .list-item-row:hover { background: color-mix(in srgb, var(--secondary) 8%, transparent); }
+    .list-item-icon { font-size: 20px; }
+    .list-item-name { font-size: 14px; font-weight: 600; color: var(--text); flex: 1; }
+    .list-item-count { font-size: 12px; color: var(--text-muted); }
+    .list-new-btn {
+        width: 100%; padding: 12px; margin-top: 10px;
+        background: var(--secondary); color: white; border: none;
+        border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer;
+    }
+
+    /* ===== PAGE HEADER BAR ===== */
+    #pageBar {
+        display: none; padding: 10px 16px 6px;
+        font-size: 13px; color: var(--text-muted);
+        align-items: center; gap: 10px;
+    }
+    #pageBar.visible { display: flex; }
+    #pageBar .page-title { font-weight: 700; color: var(--text); font-size: 15px; flex: 1; }
+    #pageBar .page-back {
+        background: none; border: none; color: var(--secondary);
+        font-size: 13px; font-weight: 600; cursor: pointer; padding: 4px 0;
+    }
+
+    /* ===== TOAST ===== */
+    #toast {
+        position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px);
+        background: #2c3e50; color: white; padding: 10px 20px;
+        border-radius: 20px; font-size: 13px; font-weight: 600;
+        opacity: 0; transition: all .3s; z-index: 600; white-space: nowrap;
+        pointer-events: none;
+    }
+    #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* HIDDEN WORD CARD */
+    .word-card.is-hidden-word { opacity: 0.7; }
+    .unhide-btn {
+        font-size: 11px; color: var(--secondary); background: none;
+        border: 1px solid var(--secondary); border-radius: 4px;
+        padding: 2px 8px; cursor: pointer; margin-left: 8px;
+    }
+
+    
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        20%       { transform: translateX(-6px); }
+        40%       { transform: translateX(6px); }
+        60%       { transform: translateX(-4px); }
+        80%       { transform: translateX(4px); }
+    }
+
+    </style>
+
 
 </head>
 <body>
     <header id="mainHeader">
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
             <div style="display: flex; align-items: center; gap: 8px;">
+                <button id="sidebarToggle" class="header-btn" title="Menu" style="font-size:18px;padding:5px 8px;">☰</button>
                 <span style="font-size: 20px;">📚</span>
                 <span style="font-size: 16px; font-weight: 700;">Oxford 3K</span>
             </div>
@@ -792,6 +1096,7 @@
             <button id="toggleHeaderSize" class="header-btn" title="Collapse" style="margin-left: auto;">⌃</button>
         </div>
     </header>
+
 
 <!-- Floating Show Header Button -->
 <button id="showHeaderBtn" style="display: none; position: fixed; top: 12px; right: 12px; z-index: 250; padding: 6px 8px; background: rgba(0, 0, 0, 0.3); color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 18px; backdrop-filter: blur(5px); opacity: 0.6; transition: opacity 0.2s; box-shadow: none;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">⌄</button>
@@ -817,104 +1122,103 @@
 
 <!-- Filter & Sort Modal -->
 <div id="filterSortModal" class="search-modal" style="display: none;">
-    <div class="search-modal-content" style="max-width: 400px;">
+    <div class="search-modal-content" style="max-width: 420px;">
         <div style="position: relative;">
-            <div style="padding: 0; background: white; border-radius: 8px; overflow: hidden;">
-                
-                <!-- === FILTER SECTION === -->
-                <div style="padding: 16px; border-bottom: 1px solid var(--border);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                        <div style="font-size: 13px; font-weight: 600; color: var(--text);">🏷️ Categories</div>
-                        <div id="categoryCount" style="font-size: 11px; color: #7f8c8d; background: var(--light); padding: 2px 6px; border-radius: 3px;">0</div>
-                    </div>
-                    
-                    <!-- Search Input -->
-                    <input type="text" id="categorySearchInput" placeholder="Search categories..." style="width: 100%; padding: 8px 10px; margin-bottom: 8px; border: 1px solid var(--border); border-radius: 4px; font-size: 13px;">
-                    
-                    <!-- Select All -->
-                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px; cursor: pointer;" onclick="toggleSelectAll()">
-                        <input type="checkbox" id="selectAllCheckbox" style="cursor: pointer; width: 16px; height: 16px; accent-color: var(--secondary);">
-                        <label for="selectAllCheckbox" style="cursor: pointer; font-weight: 600; font-size: 12px; color: var(--text);">Select All</label>
-                    </div>
-                    
-                    <!-- Category List -->
-                    <div id="categoryFilterList" style="max-height: 200px; overflow-y: auto; border: 1px solid var(--border); border-radius: 4px; padding: 0; background: white;">
-                        <!-- Checkboxes generated here -->
+            <div style="background: var(--modal-bg, #ffffff); border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.18);">
+
+                <!-- SETTINGS TABS HEADER -->
+                <div style="display:flex; border-bottom:2px solid var(--border); background:var(--modal-bg, #ffffff);">
+                    <button class="stab-btn active" data-stab="filter"   onclick="switchSettingTab('filter')">🏷️ Filter</button>
+                    <button class="stab-btn"        data-stab="sort"     onclick="switchSettingTab('sort')">📊 Sort</button>
+                    <button class="stab-btn"        data-stab="display"  onclick="switchSettingTab('display')">🖥️ Display</button>
+                </div>
+
+                <!-- TAB: FILTER -->
+                <div class="stab-panel" id="stab-filter">
+                    <div style="padding:16px;">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                            <span style="font-size:13px;font-weight:600;color:var(--text);">Categories</span>
+                            <span id="categoryCount" style="font-size:11px;color:#7f8c8d;background:var(--light);padding:2px 6px;border-radius:3px;">0</span>
+                        </div>
+                        <input type="text" id="categorySearchInput" placeholder="Search categories…"
+                            style="width:100%;padding:8px 10px;margin-bottom:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;box-sizing:border-box;background:var(--bg);color:var(--text);">
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;cursor:pointer;" onclick="toggleSelectAll()">
+                            <input type="checkbox" id="selectAllCheckbox" style="cursor:pointer;width:16px;height:16px;accent-color:var(--secondary);">
+                            <label for="selectAllCheckbox" style="cursor:pointer;font-weight:600;font-size:12px;color:var(--text);">Select All</label>
+                        </div>
+                        <div id="categoryFilterList" style="max-height:220px;overflow-y:auto;border:1px solid var(--border);border-radius:6px;background:var(--bg);"></div>
                     </div>
                 </div>
 
+                <!-- TAB: SORT -->
+                <div class="stab-panel" id="stab-sort" style="display:none;">
+                    <div style="padding:16px;">
+                        <div style="font-size:13px;font-weight:600;margin-bottom:14px;color:var(--text);">Sort by</div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+                            <label class="sort-opt">
+                                <input type="radio" name="sortType" value="frequency-desc" checked onchange="applyFilterAndSort()">
+                                <span>🔢 Freq ↓ (high→low)</span>
+                            </label>
+                            <label class="sort-opt">
+                                <input type="radio" name="sortType" value="frequency-asc" onchange="applyFilterAndSort()">
+                                <span>🔢 Freq ↑ (low→high)</span>
+                            </label>
+                            <label class="sort-opt">
+                                <input type="radio" name="sortType" value="alphabet-asc" onchange="applyFilterAndSort()">
+                                <span>🔤 A → Z</span>
+                            </label>
+                            <label class="sort-opt">
+                                <input type="radio" name="sortType" value="alphabet-desc" onchange="applyFilterAndSort()">
+                                <span>🔤 Z → A</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
 
-                <!-- === DISPLAY MODE SECTION === -->
-                <div style="padding: 16px; border-bottom: 1px solid var(--border);">
-                    <div style="font-size: 13px; font-weight: 600; margin-bottom: 12px; color: var(--text);">🖥️ Display Mode</div>
-                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                <!-- TAB: DISPLAY -->
+                <div class="stab-panel" id="stab-display" style="display:none;">
+                    <div style="padding:16px;display:flex;flex-direction:column;gap:10px;">
 
-                        <!-- Lazy Scrolling (default) -->
-                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 10px; border: 2px solid var(--border); border-radius: 8px; transition: all .2s;" id="mode-lazy-label">
-                            <input type="radio" name="displayMode" value="lazy" id="mode-lazy" onchange="setDisplayMode('lazy')" style="accent-color: var(--secondary);">
+                        <label class="dmode-opt" id="mode-lazy-label">
+                            <input type="radio" name="displayMode" value="lazy" id="mode-lazy" onchange="setDisplayMode('lazy')" style="accent-color:var(--secondary);">
                             <div>
-                                <div style="font-size: 13px; font-weight: 600;">♾️ Lazy Scrolling</div>
-                                <div style="font-size: 11px; color: var(--text-muted);">Load 50 từ/lần khi scroll — Default</div>
+                                <div class="dmode-title">♾️ Lazy Scrolling</div>
+                                <div class="dmode-desc">Tải 50 từ/lần khi cuộn — Mặc định</div>
                             </div>
                         </label>
 
-                        <!-- Paging -->
-                        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; padding: 10px; border: 2px solid var(--border); border-radius: 8px; transition: all .2s;" id="mode-paging-label">
-                            <input type="radio" name="displayMode" value="paging" id="mode-paging" onchange="setDisplayMode('paging')" style="accent-color: var(--secondary); margin-top: 2px;">
+                        <label class="dmode-opt" id="mode-paging-label">
+                            <input type="radio" name="displayMode" value="paging" id="mode-paging" onchange="setDisplayMode('paging')" style="accent-color:var(--secondary);margin-top:3px;">
                             <div style="flex:1">
-                                <div style="font-size: 13px; font-weight: 600;">📄 Paging</div>
-                                <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">Hiển thị theo trang, vuốt để chuyển trang</div>
-                                <div style="display: flex; align-items: center; gap: 8px;">
-                                    <span style="font-size: 12px; color: var(--text);">Page size:</span>
+                                <div class="dmode-title">📄 Paging</div>
+                                <div class="dmode-desc">Hiển thị theo trang, vuốt để chuyển</div>
+                                <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+                                    <span style="font-size:12px;color:var(--text);">Page size:</span>
                                     <input type="number" id="pageSizeInput" min="5" max="100" value="50"
-                                        style="width: 65px; padding: 4px 8px; border: 1px solid var(--border); border-radius: 4px; font-size: 12px; text-align: center;"
-                                        onclick="event.stopPropagation()"
-                                        onchange="setPageSize(this.value)">
-                                    <span style="font-size: 11px; color: var(--text-muted);">(max 100)</span>
+                                        style="width:60px;padding:4px 8px;border:1px solid var(--border);border-radius:4px;font-size:12px;text-align:center;background:var(--bg);color:var(--text);"
+                                        onclick="event.stopPropagation()" onchange="setPageSize(this.value)">
+                                    <span style="font-size:11px;color:var(--text-muted);">max 100</span>
                                 </div>
                             </div>
                         </label>
 
-                        <!-- Flash Card -->
-                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 10px; border: 2px solid var(--border); border-radius: 8px; transition: all .2s;" id="mode-flashcard-label">
-                            <input type="radio" name="displayMode" value="flashcard" id="mode-flashcard" onchange="setDisplayMode('flashcard')" style="accent-color: var(--secondary);">
+                        <label class="dmode-opt" id="mode-flashcard-label">
+                            <input type="radio" name="displayMode" value="flashcard" id="mode-flashcard" onchange="setDisplayMode('flashcard')" style="accent-color:var(--secondary);">
                             <div>
-                                <div style="font-size: 13px; font-weight: 600;">🃏 Flash Card</div>
-                                <div style="font-size: 11px; color: var(--text-muted);">1 từ/lần, vuốt trái/phải để chuyển</div>
+                                <div class="dmode-title">🃏 Flash Card</div>
+                                <div class="dmode-desc">1 từ/lần, vuốt trái/phải để chuyển</div>
                             </div>
                         </label>
 
                     </div>
                 </div>
 
-                <!-- === SORT SECTION === -->
-                <div style="padding: 16px; border-bottom: 1px solid var(--border);">
-                    <div style="font-size: 13px; font-weight: 600; margin-bottom: 10px; color: var(--text);">📊 Sort by</div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 12px;">
-                            <input type="radio" name="sortType" value="frequency-desc" checked onchange="applyFilterAndSort()">
-                            <span>Freq ↓</span>
-                        </label>
-                        <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 12px;">
-                            <input type="radio" name="sortType" value="frequency-asc" onchange="applyFilterAndSort()">
-                            <span>Freq ↑</span>
-                        </label>
-                        <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 12px;">
-                            <input type="radio" name="sortType" value="alphabet-asc" onchange="applyFilterAndSort()">
-                            <span>A→Z</span>
-                        </label>
-                        <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 12px;">
-                            <input type="radio" name="sortType" value="alphabet-desc" onchange="applyFilterAndSort()">
-                            <span>Z→A</span>
-                        </label>
-                    </div>
+                <!-- ACTION BUTTONS -->
+                <div style="padding:12px 16px;display:flex;gap:8px;justify-content:flex-end;border-top:1px solid var(--border);">
+                    <button onclick="clearAllFilters()" style="padding:8px 16px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;">Clear</button>
+                    <button onclick="closeFilterModal()" style="padding:8px 20px;background:var(--secondary);color:white;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;">Done</button>
                 </div>
 
-                <!-- === BUTTONS SECTION === -->
-                <div style="padding: 12px 16px; display: flex; gap: 8px; justify-content: flex-end;">
-                    <button onclick="clearAllFilters()" style="padding: 8px 16px; background: white; color: var(--text); border: 1px solid var(--border); border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">Clear</button>
-                    <button onclick="closeFilterModal()" style="padding: 8px 20px; background: var(--secondary); color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">Done</button>
-                </div>
             </div>
             <button class="search-close-btn" onclick="closeFilterModal()">✕</button>
         </div>
@@ -922,6 +1226,14 @@
 </div>
 
 <div class="container">
+    <!-- STICKY NAV BAR (paging / flashcard) -->
+    <div id="inlineNav"></div>
+    <div id="pageBar"><button class="page-back" onclick="navigateTo('home')">← Home</button><span class="page-title" id="pageBarTitle"></span></div>
+    <div id="wordsContainer"></div>
+    <div class="status">
+        <span id="statusText">Loading data...</span>
+    </div>
+</div>
     <div id="wordsContainer"></div>
     <div class="status">
         <span id="statusText">Loading data...</span>
@@ -1796,17 +2108,25 @@
     // Render Words
 
     // ===================================================
-    // DISPLAY MODE ENGINE
+    // DISPLAY MODE ENGINE  v2
     // ===================================================
-    let currentDataset = [];        // filtered/sorted results
-    let displayMode = localStorage.getItem('displayMode') || 'lazy';
-    let currentPage  = 1;
-    let pageSize     = parseInt(localStorage.getItem('pageSize') || '50');
-    let flashIndex   = 0;
-    let lazyOffset   = 0;          // how many words already rendered
-    const LAZY_BATCH = 50;
+    let currentDataset = [];
+    let displayMode    = localStorage.getItem('displayMode') || 'lazy';
+    let currentPage    = 1;
+    let pageSize       = parseInt(localStorage.getItem('pageSize') || '50');
+    let flashIndex     = 0;
+    let lazyOffset     = 0;
+    const LAZY_BATCH   = 50;
+    let isLoadingBatch = false;   // pending guard for lazy scroll
 
-    // --- Init saved mode on load ---
+    // ---- SETTINGS TABS ----
+    function switchSettingTab(tab) {
+        document.querySelectorAll('.stab-btn').forEach(b =>
+            b.classList.toggle('active', b.dataset.stab === tab));
+        document.querySelectorAll('.stab-panel').forEach(p =>
+            p.style.display = p.id === 'stab-' + tab ? '' : 'none');
+    }
+
     function initDisplayMode() {
         const radio = document.querySelector(`input[name="displayMode"][value="${displayMode}"]`);
         if (radio) radio.checked = true;
@@ -1826,6 +2146,8 @@
         displayMode = mode;
         localStorage.setItem('displayMode', mode);
         highlightModeLabel(mode);
+        currentPage = 1; flashIndex = 0; lazyOffset = 0;
+        if (mode === 'lazy') hideInlineNav();   // immediate hide
         renderByMode(currentDataset);
     }
 
@@ -1834,18 +2156,75 @@
         document.getElementById('pageSizeInput').value = n;
         pageSize = n;
         localStorage.setItem('pageSize', n);
-        if (displayMode === 'paging') {
-            currentPage = 1;
-            renderByMode(currentDataset);
+        if (displayMode === 'paging') { currentPage = 1; renderByMode(currentDataset); }
+    }
+
+    // ---- INLINE NAV BAR ----
+    function showInlineNav(config) {
+        // Guard: only show nav in paging/flashcard mode
+        if (displayMode === 'lazy') {
+            hideInlineNav();
+            return;
+        }
+
+        const nav = document.getElementById('inlineNav');
+        const { index, total, type } = config;
+        const isFirst = index <= 0;
+        const isLast  = index >= total - 1;
+
+        // Position fixed below sticky header
+        const hdr = document.querySelector('header');
+        if (hdr) {
+            const hBottom = hdr.getBoundingClientRect().bottom;
+            nav.style.top = hBottom + 'px';
+        }
+
+        nav.innerHTML = `
+            <button class="inav-btn" onclick="inavGo(0)" title="First" ${isFirst?'disabled':''}> « </button>
+            <button class="inav-btn" onclick="inavGo(${index-1})" title="Prev" ${isFirst?'disabled':''}> ‹ </button>
+            <input class="inav-seek" type="number" min="1" max="${total}"
+                value="${index+1}"
+                onchange="inavSeek(this.value-1)"
+                onkeydown="if(event.key==='Enter'){inavSeek(this.value-1);this.blur();}">
+            <span class="inav-sep">/</span>
+            <span class="inav-total">${total.toLocaleString()}</span>
+            <button class="inav-btn" onclick="inavGo(${index+1})" title="Next" ${isLast?'disabled':''}> › </button>
+            <button class="inav-btn" onclick="inavGo(${total-1})" title="Last" ${isLast?'disabled':''}> » </button>
+            <span class="inav-label">${type === 'paging' ? 'pg' : 'word'}</span>`;
+
+        nav.classList.add('active');
+
+        // Use shared position updater (also called by ResizeObserver)
+        requestAnimationFrame(updateNavPosition);
+    }
+
+    function hideInlineNav() {
+        const nav = document.getElementById('inlineNav');
+        if (!nav) return;
+        nav.classList.remove('active');
+        nav.innerHTML = '';
+        const cont = document.querySelector('.container');
+        if (cont) cont.style.paddingTop = '';
+    }
+
+    function inavGo(idx) {
+        if (displayMode === 'flashcard') {
+            flashIndex = Math.max(0, Math.min(currentDataset.length - 1, idx));
+            renderFlashCard(idx > flashIndex ? 'left' : 'right');
+        } else if (displayMode === 'paging') {
+            goPage(idx + 1);
         }
     }
 
-    // Master render dispatcher
+    function inavSeek(idx) {
+        inavGo(Math.max(0, Math.min(currentDataset.length - 1, parseInt(idx) || 0)));
+    }
+
+    // ---- MASTER DISPATCHER ----
     function renderByMode(dataset) {
         currentDataset = dataset;
         stopAudio();
-        removePagingFooter();
-
+        hideInlineNav();
         if (displayMode === 'flashcard') {
             flashIndex = Math.min(flashIndex, Math.max(0, dataset.length - 1));
             renderFlashCard();
@@ -1854,7 +2233,7 @@
             currentPage = Math.min(currentPage, totalPages);
             renderPage(currentPage);
         } else {
-            lazyOffset = 0;
+            lazyOffset = 0; isLoadingBatch = false;
             renderLazy();
         }
     }
@@ -1864,25 +2243,30 @@
         const container = document.getElementById('wordsContainer');
         container.className = 'mode-flashcard';
 
-        if (!currentDataset.length) {
-            container.innerHTML = emptyStateHTML();
-            return;
-        }
+        if (!currentDataset.length) { container.innerHTML = emptyStateHTML(); return; }
 
-        const word = currentDataset[flashIndex];
+        const word  = currentDataset[flashIndex];
+        const total = currentDataset.length;
         wordsMap[word.id] = word;
 
-        const total = currentDataset.length;
-        const navHTML = `
-            <div class="mode-nav" id="flashNav">
-                <button class="mode-nav-btn" id="fcPrev" onclick="flashMove(-1)" ${flashIndex === 0 ? 'disabled' : ''}>‹</button>
-                <div class="mode-nav-indicator">${flashIndex + 1} / ${total.toLocaleString()}</div>
-                <button class="mode-nav-btn" id="fcNext" onclick="flashMove(1)" ${flashIndex >= total - 1 ? 'disabled' : ''}>›</button>
-            </div>`;
+        showInlineNav({ index: flashIndex, total, type: 'flashcard' });
 
-        container.innerHTML = navHTML + `
-            <div class="word-card ${anim === 'left' ? 'card-anim-left' : 'card-anim-right'}" data-word="${word.id}">
-                ${buildCardShell(word).replace(/<div class="word-skeleton">[\s\S]*?<\/div>/, '')}
+        // Render single card — NO shell, NO skeleton, full content directly
+        container.innerHTML = `
+            <div class="word-card ${anim === 'right' ? 'card-anim-right' : 'card-anim-left'}" data-word="${word.id}">
+                <div class="word-header">
+                    <div class="word-title">
+                        <div>
+                            <div class="word-main">${word.word}</div>
+                            <div class="phonetic">${word.phonetic || ''}</div>
+                        </div>
+                        <span class="word-pos">${word.pos || ''}</span>
+                    </div>
+                    <div class="audio-buttons">
+                        <button class="audio-btn" onclick="speakWord('${word.word}')">🔊</button>
+                        <button class="read-all-btn" onclick="readAllWordById(${word.id})" title="Read tab">📖</button>
+                    </div>
+                </div>
                 ${buildCardContent(word)}
             </div>`;
     }
@@ -1890,6 +2274,7 @@
     function flashMove(dir) {
         const next = flashIndex + dir;
         if (next < 0 || next >= currentDataset.length) return;
+        const oldIdx = flashIndex;
         flashIndex = next;
         renderFlashCard(dir > 0 ? 'left' : 'right');
     }
@@ -1897,67 +2282,24 @@
     // ---- PAGING ----
     function renderPage(page) {
         const container = document.getElementById('wordsContainer');
-        container.className = 'mode-paging';
+        container.className = '';
         currentPage = page;
-
-        if (!currentDataset.length) {
-            container.innerHTML = emptyStateHTML();
-            return;
-        }
+        if (!currentDataset.length) { container.innerHTML = emptyStateHTML(); return; }
 
         const totalPages = Math.max(1, Math.ceil(currentDataset.length / pageSize));
+        showInlineNav({ index: page - 1, total: totalPages, type: 'paging' });
+
         const start = (page - 1) * pageSize;
         const slice = currentDataset.slice(start, start + pageSize);
-
-        // Populate wordsMap
         slice.forEach(w => { wordsMap[w.id] = w; });
 
-        // Count bar + shells (lazy-loaded)
-        const totalWords = currentDataset.length;
-        const showing = `${start + 1}–${Math.min(start + pageSize, totalWords)} of ${totalWords.toLocaleString()}`;
-        let html = `<div class="word-count-bar">${showing}</div>`;
+        const showing = `${start + 1}–${Math.min(start + pageSize, currentDataset.length)} of ${currentDataset.length.toLocaleString()}`;
+        let html = ``;
         slice.forEach(w => { html += buildCardShell(w); });
         container.innerHTML = html;
 
-        // Observe shells for lazy content
-        if (lazyObserver) lazyObserver.disconnect();
-        lazyObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                const card = entry.target;
-                const wid = parseInt(card.dataset.word);
-                const w = wordsMap[wid];
-                if (!w || !card.classList.contains('word-card--lazy')) return;
-                const sk = card.querySelector('.word-skeleton');
-                if (sk) sk.outerHTML = buildCardContent(w);
-                card.classList.remove('word-card--lazy');
-                lazyObserver.unobserve(card);
-            });
-        }, { rootMargin: '200px 0px', threshold: 0 });
-        requestAnimationFrame(() => {
-            container.querySelectorAll('.word-card--lazy').forEach(c => lazyObserver.observe(c));
-        });
-
-        // Fixed paging footer
-        renderPagingFooter(page, totalPages);
+        attachContentObserver(container);
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function renderPagingFooter(page, totalPages) {
-        removePagingFooter();
-        const footer = document.createElement('div');
-        footer.className = 'paging-footer';
-        footer.id = 'pagingFooter';
-        footer.innerHTML = `
-            <button class="mode-nav-btn" onclick="goPage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>‹</button>
-            <div class="page-info">Page ${page} / ${totalPages}</div>
-            <button class="mode-nav-btn" onclick="goPage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>›</button>`;
-        document.body.appendChild(footer);
-    }
-
-    function removePagingFooter() {
-        const f = document.getElementById('pagingFooter');
-        if (f) f.remove();
     }
 
     function goPage(page) {
@@ -1971,110 +2313,114 @@
     function renderLazy() {
         const container = document.getElementById('wordsContainer');
         container.className = '';
-
-        if (!currentDataset.length) {
-            container.innerHTML = emptyStateHTML();
-            return;
-        }
-
-        // Disconnect previous observer
+        // Ensure nav is always hidden in lazy mode
+        hideInlineNav();
         if (lazyObserver) { lazyObserver.disconnect(); lazyObserver = null; }
+        if (!currentDataset.length) { container.innerHTML = emptyStateHTML(); return; }
 
-        const total = currentDataset.length;
+        const total      = currentDataset.length;
         const firstBatch = currentDataset.slice(0, LAZY_BATCH);
         firstBatch.forEach(w => { wordsMap[w.id] = w; });
 
-        let html = `<div class="word-count-bar">${total.toLocaleString()} words</div>`;
+        let html = ``;
         firstBatch.forEach(w => { html += buildCardShell(w); });
         container.innerHTML = html;
         lazyOffset = firstBatch.length;
 
-        setupLazyObserver(container, total);
-    }
+        // Sentinel element
+        const sentinel = document.createElement('div');
+        sentinel.id = 'lazysentinel';
+        sentinel.style.cssText = 'height:1px;';
+        container.appendChild(sentinel);
 
-    function setupLazyObserver(container, total) {
-        // Content lazy-loading observer
-        const contentObserver = new IntersectionObserver(entries => {
+        // Content observer (cards → full content)
+        const contentObs = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
                 const card = entry.target;
-                const wid = parseInt(card.dataset.word);
-                const w = wordsMap[wid];
+                const w = wordsMap[parseInt(card.dataset.word)];
                 if (!w || !card.classList.contains('word-card--lazy')) return;
                 const sk = card.querySelector('.word-skeleton');
                 if (sk) sk.outerHTML = buildCardContent(w);
                 card.classList.remove('word-card--lazy');
-                contentObserver.unobserve(card);
+                contentObs.unobserve(card);
+                injectCheckboxes();
             });
         }, { rootMargin: '200px 0px', threshold: 0 });
 
-        lazyObserver = contentObserver;
+        lazyObserver = contentObs;
 
-        // Sentinel observer: load next batch when reaching bottom
-        const loadMoreSentinel = document.createElement('div');
-        loadMoreSentinel.id = 'lazysentinel';
-        loadMoreSentinel.style.cssText = 'height:1px;margin-top:8px;';
-        container.appendChild(loadMoreSentinel);
-
-        const sentinelObserver = new IntersectionObserver(entries => {
+        // Sentinel observer — load next batch with PENDING GUARD
+        const sentinelObs = new IntersectionObserver(entries => {
             if (!entries[0].isIntersecting) return;
-            if (lazyOffset >= total) {
-                sentinelObserver.disconnect();
-                return;
-            }
+            if (isLoadingBatch || lazyOffset >= total) return;
 
-            // Load next batch
+            isLoadingBatch = true;
+
+            // Show skeleton batch as placeholder while loading
             const nextBatch = currentDataset.slice(lazyOffset, lazyOffset + LAZY_BATCH);
             nextBatch.forEach(w => { wordsMap[w.id] = w; });
 
-            const fragment = document.createDocumentFragment();
-            const wrapper = document.createElement('div');
-            let batchHtml = '';
-            nextBatch.forEach(w => { batchHtml += buildCardShell(w); });
-            wrapper.innerHTML = batchHtml;
-            while (wrapper.firstChild) fragment.appendChild(wrapper.firstChild);
-
-            // Insert before sentinel
-            container.insertBefore(fragment, loadMoreSentinel);
-            lazyOffset += nextBatch.length;
-
-            // Observe new shells for content loading
             requestAnimationFrame(() => {
-                container.querySelectorAll('.word-card--lazy').forEach(c => contentObserver.observe(c));
-            });
+                const fragment = document.createDocumentFragment();
+                const tmp = document.createElement('div');
+                let bHtml = '';
+                nextBatch.forEach(w => { bHtml += buildCardShell(w); });
+                tmp.innerHTML = bHtml;
+                while (tmp.firstChild) fragment.appendChild(tmp.firstChild);
+                container.insertBefore(fragment, sentinel);
+                lazyOffset += nextBatch.length;
 
-            if (lazyOffset >= total) sentinelObserver.disconnect();
-        }, { rootMargin: '300px 0px', threshold: 0 });
+                // Observe new shells
+                requestAnimationFrame(() => {
+                    container.querySelectorAll('.word-card--lazy').forEach(c => contentObs.observe(c));
+                    isLoadingBatch = false;   // release guard
+                    if (lazyOffset >= total) sentinelObs.disconnect();
+                });
+            });
+        }, { rootMargin: '400px 0px', threshold: 0 });   // larger margin = earlier trigger
 
         requestAnimationFrame(() => {
-            container.querySelectorAll('.word-card--lazy').forEach(c => contentObserver.observe(c));
-            sentinelObserver.observe(loadMoreSentinel);
+            container.querySelectorAll('.word-card--lazy').forEach(c => contentObs.observe(c));
+            sentinelObs.observe(sentinel);
+            injectCheckboxes();
         });
     }
 
-    // ---- SWIPE HANDLER ----
+    // Shared helper: attach content observer to shells in container
+    function attachContentObserver(container) {
+        if (lazyObserver) lazyObserver.disconnect();
+        lazyObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const card = entry.target;
+                const w = wordsMap[parseInt(card.dataset.word)];
+                if (!w || !card.classList.contains('word-card--lazy')) return;
+                const sk = card.querySelector('.word-skeleton');
+                if (sk) sk.outerHTML = buildCardContent(w);
+                card.classList.remove('word-card--lazy');
+                lazyObserver.unobserve(card);
+            });
+        }, { rootMargin: '200px 0px', threshold: 0 });
+
+        requestAnimationFrame(() => {
+            container.querySelectorAll('.word-card--lazy').forEach(c => lazyObserver.observe(c));
+        });
+    }
+
+    // ---- SWIPE ----
     function setupSwipe() {
-        const container = document.getElementById('wordsContainer');
-        let startX = 0, startY = 0;
-
+        let sx = 0, sy = 0;
         document.addEventListener('touchstart', e => {
-            startX = e.touches[0].clientX;
-            startY = e.touches[0].clientY;
+            sx = e.touches[0].clientX; sy = e.touches[0].clientY;
         }, { passive: true });
-
         document.addEventListener('touchend', e => {
             if (displayMode !== 'flashcard' && displayMode !== 'paging') return;
-            const dx = e.changedTouches[0].clientX - startX;
-            const dy = e.changedTouches[0].clientY - startY;
-            // Only horizontal swipes (dx > dy)
-            if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy)) return;
-
-            if (displayMode === 'flashcard') {
-                dx < 0 ? flashMove(1) : flashMove(-1);
-            } else if (displayMode === 'paging') {
-                const totalPages = Math.ceil(currentDataset.length / pageSize);
-                dx < 0 ? goPage(currentPage + 1) : goPage(currentPage - 1);
-            }
+            const dx = e.changedTouches[0].clientX - sx;
+            const dy = e.changedTouches[0].clientY - sy;
+            if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+            if (displayMode === 'flashcard') { dx < 0 ? flashMove(1) : flashMove(-1); }
+            else { dx < 0 ? goPage(currentPage + 1) : goPage(currentPage - 1); }
         }, { passive: true });
     }
 
@@ -2084,8 +2430,7 @@
                 <circle cx="11" cy="11" r="8"></circle>
                 <path d="m21 21-4.35-4.35"></path>
             </svg>
-            <p>No words found. Try another search.</p>
-        </div>`;
+            <p>No words found.</p></div>`;
     }
 
 
@@ -2195,7 +2540,7 @@
         words.forEach(word => { wordsMap[word.id] = word; });
 
         // Word count bar
-        const countBar = `<div class="word-count-bar">${words.length.toLocaleString()} words</div>`;
+        const countBar = ``;
 
         // Render all shells first (fast: only ~3 nodes each)
         // Use DocumentFragment + batch insertion via rAF
@@ -2330,6 +2675,9 @@
             currentPage = 1;
             flashIndex = 0;
             lazyOffset = 0;
+            if (currentView === 'home') {
+                filtered = filtered.filter(w => !hiddenWords.has(w.id));
+            }
             renderByMode(filtered);
             }, 300); // end debounce
         });
@@ -2696,15 +3044,33 @@
     }
 
     function applyFilterAndSort() {
+        if (currentView && currentView !== 'home') return;
         const allWords = window.currentAllWords || [];
         let filtered = filterByCategories(allWords);
+        filtered = filtered.filter(w => !hiddenWords.has(w.id));
         let sorted = sortWords(filtered);
-        renderWords(sorted);
-        updateSelectAllIcon();
-        saveFilterState();  // Save state after applying
+        renderByMode(sorted);
+        saveFilterState();
     }
 
+    // Home count bar — injected after renderByMode finishes
+
     // Toggle Header
+    function updateNavPosition() {
+        const nav = document.getElementById('inlineNav');
+        const cont = document.querySelector('.container');
+        // Force hide in lazy mode
+        if (displayMode === 'lazy' || !nav || !nav.classList.contains('active')) {
+            if (cont) cont.style.paddingTop = '';
+            if (nav)  { nav.classList.remove('active'); nav.innerHTML = ''; }
+            return;
+        }
+        const hdr = document.querySelector('header');
+        const top = hdr ? Math.max(0, hdr.getBoundingClientRect().bottom) : 0;
+        nav.style.top = top + 'px';
+        if (cont) cont.style.paddingTop = (nav.offsetHeight || 44) + 'px';
+    }
+
     function toggleHeaderSize() {
         const header = document.getElementById('mainHeader');
         const floatingBtn = document.getElementById('showHeaderBtn');
@@ -2713,15 +3079,29 @@
         header.style.display = isHidden ? 'block' : 'none';
         floatingBtn.style.display = isHidden ? 'none' : 'flex';
         localStorage.setItem('headerExpanded', !isHidden);
+
+        // Update nav position after header toggles
+        requestAnimationFrame(updateNavPosition);
     }
 
     // Initialize
     window.addEventListener('load', () => {
         setupDarkMode();
         setupLanguagePreference();
+        loadStorage();
         loadData();
         initDisplayMode();
         setupSwipe();
+        setupLongPress();
+
+        document.getElementById('sidebarToggle').addEventListener('click', openSidebar);
+
+        // ResizeObserver: auto-update nav position whenever header changes size
+        const hdrEl = document.querySelector('header');
+        if (hdrEl && window.ResizeObserver) {
+            new ResizeObserver(() => requestAnimationFrame(updateNavPosition))
+                .observe(hdrEl);
+        }
         
         // Search icon
         const searchIcon = document.getElementById('searchIcon');
@@ -2763,10 +3143,10 @@
         const showHeaderBtn = document.getElementById('showHeaderBtn');
         if (showHeaderBtn) {
             showHeaderBtn.addEventListener('click', () => {
-                const header = document.getElementById('mainHeader');
-                header.style.display = 'block';
+                document.getElementById('mainHeader').style.display = 'block';
                 showHeaderBtn.style.display = 'none';
                 localStorage.setItem('headerExpanded', 'true');
+                requestAnimationFrame(updateNavPosition);
             });
         }
 
@@ -2779,7 +3159,585 @@
     });
 
     // Mobile keyboard handled in openSearchModal function
-</script>
+
+    // ===================================================
+    // MY LISTS & HIDDEN WORDS — FEATURE MODULE
+    // ===================================================
+
+    // ---- STORAGE ----
+    let hiddenWords  = new Set();
+    let wordlists    = [];          // [{id, name, wordIds:[]}]
+    let selectedIds  = new Set();
+    let currentView  = 'home';     // 'home' | 'hidden' | 'list:{id}'
+
+    function loadStorage() {
+        try {
+            const hw = localStorage.getItem('hiddenWords');
+            hiddenWords = new Set(hw ? JSON.parse(hw) : []);
+            const wl = localStorage.getItem('wordlists');
+            wordlists = wl ? JSON.parse(wl) : [];
+        } catch(e) { hiddenWords = new Set(); wordlists = []; }
+    }
+
+    function saveHiddenWords() {
+        localStorage.setItem('hiddenWords', JSON.stringify([...hiddenWords]));
+    }
+
+    function saveWordlists() {
+        localStorage.setItem('wordlists', JSON.stringify(wordlists));
+    }
+
+    function genId() {
+        return 'wl_' + Date.now() + '_' + Math.random().toString(36).slice(2,6);
+    }
+
+    // ---- SIDEBAR ----
+    function openSidebar() {
+        document.getElementById('sidebar').classList.add('open');
+        document.getElementById('sidebarOverlay').classList.add('open');
+        renderSidebarNav();
+    }
+
+    function closeSidebar() {
+        document.getElementById('sidebar').classList.remove('open');
+        document.getElementById('sidebarOverlay').classList.remove('open');
+    }
+
+    function renderSidebarNav() {
+        const nav = document.getElementById('sidebarNav');
+        const hiddenCount  = hiddenWords.size;
+        const allWords     = window.currentAllWords || [];
+        const homeCount    = allWords.filter(w => !hiddenWords.has(w.id)).length;
+
+        // My Lists submenu: each item has name + count + [-] remove btn
+        let listsHTML = wordlists.map(list => `
+            <div class="sidebar-subitem ${currentView === 'list:' + list.id ? 'active' : ''}"
+                 style="padding-right:4px;"
+                 onclick="navigateTo('list:${list.id}'); closeSidebar();">
+                <span>📄</span>
+                <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escHtml(list.name)}</span>
+                <span style="font-size:11px;font-weight:700;color:#fff;background:#27ae60;
+                               border-radius:10px;padding:1px 7px;margin-right:6px;flex-shrink:0;">${list.wordIds.length}</span>
+                <button onclick="event.stopPropagation(); deleteList('${list.id}')"
+                    style="background:none;border:1.5px solid #e74c3c;color:#e74c3c;border-radius:50%;
+                           width:20px;height:20px;font-size:13px;font-weight:700;cursor:pointer;
+                           display:flex;align-items:center;justify-content:center;flex-shrink:0;
+                           line-height:1;padding:0;">−</button>
+            </div>`).join('');
+
+        nav.innerHTML = `
+            <div class="sidebar-item ${currentView === 'home' ? 'active' : ''}"
+                 onclick="navigateTo('home'); closeSidebar();">
+                <span class="sidebar-item-icon">🏠</span>
+                <span>Home</span>
+                <span class="sidebar-badge" style="background:var(--secondary);">${homeCount.toLocaleString()}</span>
+            </div>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-item ${currentView === 'hidden' ? 'active' : ''}"
+                 onclick="navigateTo('hidden'); closeSidebar();">
+                <span class="sidebar-item-icon">👁</span>
+                <span>Hidden Words</span>
+                ${hiddenCount > 0 ? `<span class="sidebar-badge" style="background:#e74c3c;">${hiddenCount}</span>` : ''}
+            </div>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-item" style="cursor:default;opacity:.7;">
+                <span class="sidebar-item-icon">📋</span>
+                <span style="font-weight:700;">My Lists</span>
+            </div>
+            <div class="sidebar-sublists">
+                ${listsHTML}
+                <div class="sidebar-new-list" onclick="promptNewList(); closeSidebar();">
+                    <span>＋</span><span>New List</span>
+                </div>
+            </div>`;
+    }
+
+    function deleteList(listId) {
+        const list = wordlists.find(l => l.id === listId);
+        if (!list) return;
+        wordlists = wordlists.filter(l => l.id !== listId);
+        saveWordlists();
+        showToast(`"${list.name}" deleted`);
+        if (currentView === 'list:' + listId) navigateTo('home');
+        else renderSidebarNav();
+    }
+
+    // ---- ROUTER ----
+    function navigateTo(view) {
+        exitSelectMode();
+        currentView = view;
+        hideInlineNav();
+
+        const pageBar  = document.getElementById('pageBar');
+        const pageBarTitle = document.getElementById('pageBarTitle');
+
+        if (view === 'home') {
+            pageBar.classList.remove('visible');
+            // Re-apply filter/sort on full dataset
+            applyFilterAndSort();
+            return;
+        }
+
+        pageBar.classList.add('visible');
+
+        if (view === 'hidden') {
+            pageBarTitle.textContent = '👁 Hidden Words';
+            const hiddenList = (window.currentAllWords || []).filter(w => hiddenWords.has(w.id));
+            renderHiddenView(hiddenList);
+            return;
+        }
+
+        if (view.startsWith('list:')) {
+            const listId = view.slice(5);
+            const list   = wordlists.find(l => l.id === listId);
+            if (!list) { navigateTo('home'); return; }
+            pageBarTitle.textContent = '📋 ' + list.name;
+            const listWords = (window.currentAllWords || []).filter(w => list.wordIds.includes(w.id));
+            renderListView(listId, listWords);
+            return;
+        }
+    }
+
+    // ---- HIDDEN VIEW ----
+    function renderHiddenView(words) {
+        const container = document.getElementById('wordsContainer');
+        container.className = '';
+        if (!words.length) {
+            container.innerHTML = `<div class="empty-state" style="padding:40px 20px;text-align:center;">
+                <div style="font-size:40px;margin-bottom:12px;">👁</div>
+                <p>No hidden words.</p></div>`;
+            document.getElementById('pageBarTitle').textContent = '👁 Hidden Words';
+            return;
+        }
+
+        words.forEach(w => { wordsMap[w.id] = w; });
+
+        // Count bar + Unhide All action
+        let html = `
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 14px 2px;">
+                <span style="font-size:12px;font-weight:600;color:var(--text-muted);">${words.length} hidden word${words.length !== 1 ? 's' : ''}</span>
+                <button onclick="unhideAll()"
+                    style="font-size:12px;font-weight:700;color:var(--secondary);background:none;border:1.5px solid var(--secondary);border-radius:6px;padding:4px 10px;cursor:pointer;">
+                    Unhide All
+                </button>
+            </div>`;
+
+        words.forEach(w => {
+            html += `
+            <div class="word-card is-hidden-word" data-word="${w.id}">
+                <div class="word-header">
+                    <div class="word-title">
+                        <div>
+                            <div class="word-main">${w.word}</div>
+                            <div class="phonetic">${w.phonetic || ''}</div>
+                        </div>
+                        <span class="word-pos">${w.pos || ''}</span>
+                    </div>
+                    <div class="audio-buttons">
+                        <button class="audio-btn" onclick="speakWord('${w.word}')">🔊</button>
+                        <button class="unhide-btn" onclick="unhideWord(${w.id})">Unhide</button>
+                    </div>
+                </div>
+                ${buildCardContent(w)}
+            </div>`;
+        });
+        container.innerHTML = html;
+    }
+
+    function unhideWord(id) {
+        hiddenWords.delete(id);
+        saveHiddenWords();
+        showToast('Word restored to Home');
+        renderSidebarNav();
+        const hiddenList = (window.currentAllWords || []).filter(w => hiddenWords.has(w.id));
+        renderHiddenView(hiddenList);
+    }
+
+    function unhideAll() {
+        const n = hiddenWords.size;
+        hiddenWords.clear();
+        saveHiddenWords();
+        showToast(`${n} word${n !== 1 ? 's' : ''} restored to Home`);
+        renderSidebarNav();
+        renderHiddenView([]);
+    }
+
+    // ---- LIST VIEW (with Remove per word) ----
+    function renderListView(listId, words) {
+        const container = document.getElementById('wordsContainer');
+        container.className = '';
+
+        const list = wordlists.find(l => l.id === listId);
+        if (!list) return;
+
+        if (!words.length) {
+            container.innerHTML = `<div class="empty-state" style="padding:40px 20px;text-align:center;">
+                <div style="font-size:40px;margin-bottom:12px;">📋</div>
+                <p>This list is empty.</p></div>`;
+            return;
+        }
+
+        words.forEach(w => { wordsMap[w.id] = w; });
+
+        let html = ``;
+
+        words.forEach(w => {
+            html += `
+            <div class="word-card" data-word="${w.id}">
+                <div class="word-header">
+                    <div class="word-title">
+                        <div>
+                            <div class="word-main">${w.word}</div>
+                            <div class="phonetic">${w.phonetic || ''}</div>
+                        </div>
+                        <span class="word-pos">${w.pos || ''}</span>
+                    </div>
+                    <div class="audio-buttons">
+                        <button class="audio-btn" onclick="speakWord('${w.word}')">🔊</button>
+                        <button class="read-all-btn" onclick="readAllWordById(${w.id})" title="Read tab">📖</button>
+                        <button onclick="removeFromList('${listId}', ${w.id})"
+                            title="Remove from list"
+                            style="background:none;border:1.5px solid #e74c3c;color:#e74c3c;
+                                   border-radius:50%;width:28px;height:28px;font-size:14px;
+                                   font-weight:700;cursor:pointer;flex-shrink:0;
+                                   display:flex;align-items:center;justify-content:center;">✕</button>
+                    </div>
+                </div>
+                ${buildCardContent(w)}
+            </div>`;
+        });
+
+        container.innerHTML = html;
+        injectCheckboxes();
+    }
+
+    function removeFromList(listId, wordId) {
+        const list = wordlists.find(l => l.id === listId);
+        if (!list) return;
+        list.wordIds = list.wordIds.filter(id => id !== wordId);
+        saveWordlists();
+        showToast(`Removed from "${list.name}"`);
+        renderSidebarNav();
+        // Re-render list view
+        const listWords = (window.currentAllWords || []).filter(w => list.wordIds.includes(w.id));
+        renderListView(listId, listWords);
+        document.getElementById('pageBarTitle').textContent = '📋 ' + list.name;
+    }
+
+    // ---- SELECT MODE ----
+    function enterSelectMode(wordId) {
+        document.body.classList.add('select-mode');
+        selectedIds.clear();
+        if (wordId != null) toggleSelectCard(wordId);
+        document.getElementById('selectActionBar').classList.add('open');
+        updateSelectCount();
+    }
+
+    function exitSelectMode() {
+        document.body.classList.remove('select-mode');
+        selectedIds.clear();
+        document.querySelectorAll('.word-card.selected').forEach(c => c.classList.remove('selected'));
+        document.querySelectorAll('.card-checkbox').forEach(cb => cb.checked = false);
+        document.getElementById('selectActionBar').classList.remove('open');
+    }
+
+    function toggleSelectCard(wordId) {
+        const card = document.querySelector(`.word-card[data-word="${wordId}"]`);
+        const cb   = card?.querySelector('.card-checkbox');
+        if (!card) return;
+
+        if (selectedIds.has(wordId)) {
+            selectedIds.delete(wordId);
+            card.classList.remove('selected');
+            if (cb) cb.checked = false;
+        } else {
+            selectedIds.add(wordId);
+            card.classList.add('selected');
+            if (cb) cb.checked = true;
+        }
+        updateSelectCount();
+    }
+
+    function updateSelectCount() {
+        const n = selectedIds.size;
+        document.getElementById('selectCount').textContent =
+            n === 0 ? 'Tap to select' : `${n} word${n > 1 ? 's' : ''} selected`;
+    }
+
+    // ---- HIDE ACTION ----
+    function hideSelectedWords() {
+        if (!selectedIds.size) return;
+        selectedIds.forEach(id => hiddenWords.add(id));
+        saveHiddenWords();
+        const n = selectedIds.size;
+        exitSelectMode();
+        showToast(`${n} word${n>1?'s':''} hidden`);
+        renderSidebarNav();
+        applyFilterAndSort();   // re-render home without hidden words
+    }
+
+    // ---- MY LISTS MODAL ----
+    function openListModal() {
+        if (!selectedIds.size) return;
+        const modal = document.getElementById('listModal');
+        const items = document.getElementById('listModalItems');
+
+        let html = wordlists.map(list => `
+            <div class="list-item-row" onclick="addToList('${list.id}')">
+                <span class="list-item-icon">📋</span>
+                <span class="list-item-name">${escHtml(list.name)}</span>
+                <span class="list-item-count">${list.wordIds.length} words</span>
+            </div>`).join('');
+
+        if (!wordlists.length) {
+            html = `<div style="text-align:center;padding:20px;color:var(--text-muted);font-size:13px;">
+                No lists yet. Create one below!</div>`;
+        }
+
+        items.innerHTML = html;
+        modal.classList.add('open');
+    }
+
+    function closeListModal(e) {
+        if (!e || e.target === document.getElementById('listModal')) {
+            document.getElementById('listModal').classList.remove('open');
+        }
+    }
+
+    function addToList(listId) {
+        const list = wordlists.find(l => l.id === listId);
+        if (!list) return;
+        let added = 0;
+        selectedIds.forEach(id => {
+            if (!list.wordIds.includes(id)) { list.wordIds.push(id); added++; }
+        });
+        saveWordlists();
+        closeListModal({target: document.getElementById('listModal')});
+        exitSelectMode();
+        showToast(`${added} word${added>1?'s':''} added to "${list.name}"`);
+        renderSidebarNav();
+    }
+
+    // ---- CUSTOM NAME INPUT (replaces prompt() for iOS compat) ----
+    let _nameInputCallback = null;
+
+    function openNameInput(title, placeholder, callback) {
+        _nameInputCallback = callback;
+        const modal = document.getElementById('nameInputModal');
+        document.getElementById('nameInputTitle').textContent = title;
+        const field = document.getElementById('nameInputField');
+        field.placeholder = placeholder || 'Enter name…';
+        field.value = '';
+        clearNameInputError();
+        modal.style.display = 'flex';
+        setTimeout(() => field.focus(), 100);
+    }
+
+    function showNameInputError(msg) {
+        const err = document.getElementById('nameInputError');
+        const field = document.getElementById('nameInputField');
+        err.textContent = msg;
+        err.style.display = 'block';
+        field.style.borderColor = '#e74c3c';
+        field.focus();
+        // Shake animation
+        field.style.animation = 'none';
+        requestAnimationFrame(() => { field.style.animation = 'shake .3s ease'; });
+    }
+
+    function clearNameInputError() {
+        document.getElementById('nameInputError').style.display = 'none';
+        document.getElementById('nameInputField').style.borderColor = 'var(--secondary)';
+    }
+
+    function confirmNameInput() {
+        const val = document.getElementById('nameInputField').value.trim();
+        if (!val) {
+            showNameInputError('Name cannot be empty.');
+            return;
+        }
+        // Duplicate check (callback decides — pass name to callback which validates)
+        if (_nameInputCallback) {
+            const result = _nameInputCallback(val);
+            // If callback returns false → stay open (validation failed inside callback)
+            if (result !== false) {
+                document.getElementById('nameInputModal').style.display = 'none';
+                clearNameInputError();
+                _nameInputCallback = null;
+            }
+        }
+    }
+
+    function cancelNameInput() {
+        document.getElementById('nameInputModal').style.display = 'none';
+        _nameInputCallback = null;
+    }
+
+    function isDuplicateListName(name, excludeId = null) {
+        return wordlists.some(l => l.name.toLowerCase() === name.toLowerCase() && l.id !== excludeId);
+    }
+
+    function createNewList() {
+        document.getElementById('listModal').classList.remove('open');
+        openNameInput('New List', 'List name…', (name) => {
+            if (isDuplicateListName(name)) {
+                showNameInputError(`"${name}" already exists. Please use a different name.`);
+                return false;   // signal: keep modal open
+            }
+            const list = { id: genId(), name, wordIds: [] };
+            wordlists.push(list);
+            saveWordlists();
+            addToList(list.id);
+        });
+    }
+
+    function promptNewList() {
+        openNameInput('New List', 'List name…', (name) => {
+            if (isDuplicateListName(name)) {
+                showNameInputError(`"${name}" already exists. Please use a different name.`);
+                return false;   // signal: keep modal open
+            }
+            const list = { id: genId(), name, wordIds: [] };
+            wordlists.push(list);
+            saveWordlists();
+            showToast(`"${list.name}" created`);
+            renderSidebarNav();
+        });
+    }
+
+    // ---- LONG PRESS ----
+    function setupLongPress() {
+        let pressTimer  = null;
+        let pressTarget = null;
+        let moved       = false;
+
+        document.getElementById('wordsContainer').addEventListener('pointerdown', e => {
+            const card = e.target.closest('.word-card');
+            if (!card || e.target.closest('button, input, select, a')) return;
+            moved = false;
+            pressTarget = card;
+            card.classList.add('pressing');
+
+            pressTimer = setTimeout(() => {
+                if (moved) return;
+                card.classList.remove('pressing');
+                const wordId = parseInt(card.dataset.word);
+                if (!document.body.classList.contains('select-mode')) {
+                    enterSelectMode(wordId);
+                }
+            }, 500);
+        }, { passive: true });
+
+        document.getElementById('wordsContainer').addEventListener('pointermove', e => {
+            if (Math.abs(e.movementX) > 5 || Math.abs(e.movementY) > 5) {
+                moved = true;
+                clearTimeout(pressTimer);
+                if (pressTarget) pressTarget.classList.remove('pressing');
+            }
+        }, { passive: true });
+
+        const cancel = () => {
+            clearTimeout(pressTimer);
+            if (pressTarget) pressTarget.classList.remove('pressing');
+            pressTarget = null;
+        };
+        document.getElementById('wordsContainer').addEventListener('pointerup',     cancel, { passive: true });
+        document.getElementById('wordsContainer').addEventListener('pointercancel', cancel, { passive: true });
+
+        // Tap card in select mode → toggle
+        document.getElementById('wordsContainer').addEventListener('click', e => {
+            if (!document.body.classList.contains('select-mode')) return;
+            const card = e.target.closest('.word-card');
+            if (!card || e.target.closest('button')) return;
+            toggleSelectCard(parseInt(card.dataset.word));
+        });
+    }
+
+    // ---- FILTER HOME (exclude hidden) ----
+    const _origApplyFilter = typeof applyFilterAndSort === 'function' ? applyFilterAndSort : null;
+
+    // ---- HELPERS ----
+    function showToast(msg) {
+        const t = document.getElementById('toast');
+        t.textContent = msg;
+        t.classList.add('show');
+        clearTimeout(t._timer);
+        t._timer = setTimeout(() => t.classList.remove('show'), 2500);
+    }
+
+    function escHtml(str) {
+        return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    // Inject checkbox into every word card (after render)
+    function injectCheckboxes() {
+        document.querySelectorAll('.word-card:not([data-cb])').forEach(card => {
+            const cb = document.createElement('input');
+            cb.type = 'checkbox';
+            cb.className = 'card-checkbox';
+            cb.setAttribute('aria-label', 'Select word');
+            cb.addEventListener('change', () => {
+                toggleSelectCard(parseInt(card.dataset.word));
+            });
+            card.appendChild(cb);
+            card.setAttribute('data-cb', '1');
+        });
+    }
+
+    </script>
+
+<!-- SIDEBAR OVERLAY -->
+<div id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+    <div class="sidebar-header">
+        <span style="font-size:22px;">📚</span>
+        <span class="sidebar-header-title">Oxford 3K</span>
+        <button class="sidebar-close" onclick="closeSidebar()">✕</button>
+    </div>
+    <div class="sidebar-nav" id="sidebarNav">
+        <!-- Rendered by JS -->
+    </div>
+</div>
+
+<!-- SELECT ACTION BAR -->
+<div id="selectActionBar">
+    <span class="action-bar-count" id="selectCount">0 selected</span>
+    <button class="action-bar-btn hide"   onclick="hideSelectedWords()">👁 Hide</button>
+    <button class="action-bar-btn list"   onclick="openListModal()">📋 My Lists</button>
+    <button class="action-bar-btn cancel" onclick="exitSelectMode()">✕</button>
+</div>
+
+<!-- MY LISTS MODAL -->
+<div id="listModal" onclick="closeListModal(event)">
+    <div class="list-modal-sheet" onclick="event.stopPropagation()">
+        <div class="list-modal-title">Add to My Lists</div>
+        <div id="listModalItems"></div>
+        <button class="list-new-btn" onclick="createNewList()">+ New List</button>
+    </div>
+</div>
+
+<!-- NAME INPUT MODAL -->
+<div id="nameInputModal" style="display:none;position:fixed;inset:0;z-index:600;background:rgba(0,0,0,.5);align-items:center;justify-content:center;">
+    <div style="background:var(--modal-bg,#fff);border-radius:16px;padding:24px 20px;width:85%;max-width:340px;box-shadow:0 8px 32px rgba(0,0,0,.2);">
+        <div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:16px;" id="nameInputTitle">New List</div>
+        <input id="nameInputField" type="text" placeholder="Enter name…"
+            style="width:100%;padding:10px 12px;border:2px solid var(--secondary);border-radius:8px;font-size:15px;color:var(--text);background:var(--modal-bg,#fff);box-sizing:border-box;outline:none;"
+            onkeydown="if(event.key==='Enter') confirmNameInput()"
+            oninput="document.getElementById('nameInputError').style.display='none';">
+        <div id="nameInputError"
+            style="display:none;color:#e74c3c;font-size:12px;font-weight:600;margin-top:6px;padding:6px 10px;background:rgba(231,76,60,.08);border-radius:6px;border-left:3px solid #e74c3c;">
+        </div>
+        <div style="display:flex;gap:10px;margin-top:14px;">
+            <button onclick="cancelNameInput()" style="flex:1;padding:10px;background:var(--border);color:var(--text);border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;">Cancel</button>
+            <button onclick="confirmNameInput()" style="flex:1;padding:10px;background:var(--secondary);color:white;border:none;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;">OK</button>
+        </div>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
 
 </body>
 </html>
