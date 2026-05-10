@@ -758,7 +758,6 @@
                     <option value="en-vi" selected>E/V</option>
                     <option value="vi">VI</option>
                 </select>
-                <button id="reloadBtn" class="header-btn" title="Reload">🔄</button>
                 <button id="darkToggle" class="header-btn" title="Dark mode">🌙</button>
                 <button id="filterSortIcon" class="header-btn" title="Filter & Sort">⚙️</button>
             </div>
@@ -2047,13 +2046,6 @@
         }
     }
 
-    // Reload data from GitHub
-    function reloadData() {
-        const statusText = document.querySelector('.status');
-        statusText.textContent = '🔄 Reloading...';
-        loadData();
-    }
-
     // Search Modal Functions
     function openSearchModal() {
         document.getElementById('searchModal').style.display = 'flex';
@@ -2299,13 +2291,6 @@
         localStorage.setItem('headerExpanded', !isHidden);
     }
 
-    // Reload data from GitHub
-    function reloadData() {
-        const statusText = document.querySelector('.status');
-        statusText.textContent = '🔄 Reloading...';
-        loadData();
-    }
-
     // Initialize
     window.addEventListener('load', () => {
         setupDarkMode();
@@ -2342,12 +2327,6 @@
             if (e.key === 'Escape') closeSearchModal();
         });
 
-        // Reload button
-        const reloadBtn = document.getElementById('reloadBtn');
-        if (reloadBtn) {
-            reloadBtn.addEventListener('click', reloadData);
-        }
-
         // Toggle header size
         const toggleSizeBtn = document.getElementById('toggleHeaderSize');
         if (toggleSizeBtn) {
@@ -2375,6 +2354,7 @@
 
     // Mobile keyboard handled in openSearchModal function
 </script>
+
 
 </body>
 </html>
