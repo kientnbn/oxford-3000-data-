@@ -1,8 +1,8 @@
 {
   "batch_info": {
-    "batch_number": 23,
+    "batch_number": 26,
     "batch_size": 10,
-    "cumulative_entries": "1-230",
+    "cumulative_entries": "1-260",
     "batches_included": [
       1,
       2,
@@ -26,12 +26,15 @@
       20,
       21,
       22,
-      23
+      23,
+      24,
+      25,
+      26
     ],
-    "date": "2026-05-10",
+    "date": "2026-05-11",
     "status": "COMPLETED",
     "scope": "C0 only (conversations rewrite)",
-    "test_results": "230/230 PASS"
+    "test_results": "260/260 PASS"
   },
   "data": [
     {
@@ -21069,6 +21072,2805 @@
                 "third-party auditors",
                 "expenditure efficiency",
                 "transparency reports"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 231,
+      "word": "apply",
+      "phonetic": "/əˈplaɪ/",
+      "pos": "Verb",
+      "frequency": 20,
+      "categories": [
+        "General",
+        "Education"
+      ],
+      "meanings": [
+        {
+          "vi": "Nộp đơn, gửi yêu cầu chính thức",
+          "examples": [
+            {
+              "en": "She applied for a scholarship last month.",
+              "vi": "Cô ấy đã nộp đơn xin học bổng tháng trước.",
+              "category": "Education"
+            },
+            {
+              "en": "Many students apply to top universities.",
+              "vi": "Nhiều sinh viên nộp đơn vào các trường đại học hàng đầu.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Áp dụng, sử dụng kiến thức vào thực tế",
+          "examples": [
+            {
+              "en": "We must apply these new rules immediately.",
+              "vi": "Chúng ta phải áp dụng các quy tắc mới này ngay lập tức.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Graduate admissions · apply",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How many prestigious graduate programs did you eventually apply to during your stressful college senior year deciding among numerous attractive academic options?",
+              "vi": "Cuối cùng bạn đã nộp đơn vào bao nhiêu chương trình sau đại học danh giá trong năm cuối đại học căng thẳng quyết định giữa nhiều lựa chọn học thuật hấp dẫn?",
+              "vocabs": [
+                "apply",
+                "prestigious graduate programs",
+                "stressful college senior",
+                "academic options"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I deliberately applied to twelve carefully selected institutions matching my specific research interests across multiple geographic regions strategically. Crafting personalized application essays demonstrating genuine intellectual curiosity alongside compelling letters of recommendation required substantial preparation throughout demanding application deadlines spanning numerous competitive months.",
+              "vi": "Tôi đã cố ý nộp đơn vào mười hai tổ chức được lựa chọn cẩn thận phù hợp với sở thích nghiên cứu cụ thể của tôi qua nhiều khu vực địa lý một cách chiến lược. Soạn thảo các bài luận đơn cá nhân hóa thể hiện sự tò mò trí tuệ chân thực cùng với các thư giới thiệu hấp dẫn đòi hỏi sự chuẩn bị đáng kể trong các thời hạn nộp đơn đòi hỏi trải qua nhiều tháng cạnh tranh.",
+              "vocabs": [
+                "applied",
+                "institutions",
+                "research interests",
+                "application essays",
+                "intellectual curiosity",
+                "letters of recommendation"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What practical advice would you offer ambitious undergraduate students preparing to apply for competitive doctorate programs throughout their challenging final academic year?",
+              "vi": "Bạn sẽ đưa ra lời khuyên thực tế nào cho các sinh viên đại học đầy hoài bão chuẩn bị nộp đơn cho các chương trình tiến sĩ cạnh tranh trong năm học cuối thử thách của họ?",
+              "vocabs": [
+                "apply",
+                "undergraduate students",
+                "competitive doctorate programs",
+                "academic year"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Aspiring scholars should apply only to programs genuinely matching their authentic research passions throughout this transformative academic transition. Building meaningful relationships with potential faculty mentors beforehand, demonstrating substantive scholarly contributions through published research, and maintaining realistic timelines prevents emotional burnout while maximizing acceptance probabilities significantly throughout demanding doctorate selection processes.",
+              "vi": "Các học giả khát vọng nên nộp đơn chỉ cho các chương trình thực sự phù hợp với đam mê nghiên cứu chân thực của họ trong sự chuyển đổi học thuật biến đổi này. Xây dựng các mối quan hệ ý nghĩa với các cố vấn giảng viên tiềm năng trước, thể hiện những đóng góp học thuật thực chất qua nghiên cứu được xuất bản và duy trì các mốc thời gian thực tế ngăn ngừa kiệt sức cảm xúc trong khi tối đa hóa xác suất chấp nhận đáng kể trong các quy trình lựa chọn tiến sĩ đòi hỏi.",
+              "vocabs": [
+                "apply",
+                "aspiring scholars",
+                "research passions",
+                "faculty mentors",
+                "scholarly contributions",
+                "selection processes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 232,
+      "word": "actual",
+      "phonetic": "/ˈæktʃuəl/",
+      "pos": "Adjective",
+      "frequency": 19,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Thực sự, có thật trong thực tế",
+          "examples": [
+            {
+              "en": "The actual cost is much higher than expected.",
+              "vi": "Chi phí thực sự cao hơn nhiều so với mong đợi.",
+              "category": "Finance"
+            },
+            {
+              "en": "What is the actual purpose of this meeting?",
+              "vi": "Mục đích thực sự của cuộc họp này là gì?",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Cụ thể, dùng để nhấn mạnh điều gì rõ ràng",
+          "examples": [
+            {
+              "en": "She wants to see the actual product.",
+              "vi": "Cô ấy muốn xem sản phẩm cụ thể.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Project budgeting · actual",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What was the actual final cost of completing your demanding home renovation project compared to your original conservative estimated budget projections?",
+              "vi": "Chi phí thực sự cuối cùng để hoàn thành dự án cải tạo nhà đòi hỏi của bạn so với các dự báo ngân sách ước tính bảo thủ ban đầu là gì?",
+              "vocabs": [
+                "actual final cost",
+                "home renovation",
+                "estimated budget projections"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our actual expenses exceeded original conservative projections by approximately forty percent throughout demanding contractor coordination periods substantially. Discovering hidden structural damages, unexpected plumbing complications, and rising material costs forced significant additional expenditures requiring secondary loans completing this challenging extended renovation timeline successfully despite considerable financial stress.",
+              "vi": "Chi phí thực sự của chúng tôi vượt qua dự báo bảo thủ ban đầu khoảng bốn mươi phần trăm trong các giai đoạn phối hợp nhà thầu đòi hỏi đáng kể. Phát hiện các thiệt hại cấu trúc ẩn, các biến chứng đường ống bất ngờ và chi phí vật liệu tăng buộc các khoản chi tiêu bổ sung đáng kể đòi hỏi các khoản vay thứ cấp hoàn thành thời gian cải tạo kéo dài thử thách này một cách thành công bất chấp căng thẳng tài chính đáng kể.",
+              "vocabs": [
+                "actual expenses",
+                "conservative projections",
+                "contractor coordination",
+                "structural damages",
+                "plumbing complications",
+                "secondary loans"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How can future homeowners realistically calculate actual project costs preventing similar financial surprises throughout demanding renovation undertakings nationally?",
+              "vi": "Các chủ nhà tương lai có thể tính toán thực tế chi phí dự án thực sự để ngăn ngừa các bất ngờ tài chính tương tự trong các dự án cải tạo đòi hỏi trên toàn quốc như thế nào?",
+              "vocabs": [
+                "actual project costs",
+                "future homeowners",
+                "renovation undertakings"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Experienced renovators recommend adding twenty percent contingency reserves above estimated quotes accommodating actual unforeseen circumstances throughout extensive construction periods sustainably. Conducting comprehensive professional inspections beforehand, obtaining multiple competitive bids transparently, and maintaining detailed expense tracking throughout actual implementation stages prevents devastating budget overruns destroying renovation enthusiasm prematurely.",
+              "vi": "Các nhà cải tạo có kinh nghiệm khuyến nghị thêm dự phòng hai mươi phần trăm trên các báo giá ước tính phù hợp với các trường hợp không lường trước thực tế trong các giai đoạn xây dựng rộng rãi một cách bền vững. Tiến hành các kiểm tra chuyên nghiệp toàn diện trước, có được nhiều giá thầu cạnh tranh một cách minh bạch và duy trì theo dõi chi phí chi tiết trong các giai đoạn thực hiện thực tế ngăn ngừa vượt ngân sách tàn phá phá hủy nhiệt huyết cải tạo sớm.",
+              "vocabs": [
+                "actual unforeseen",
+                "actual implementation",
+                "contingency reserves",
+                "professional inspections",
+                "competitive bids",
+                "expense tracking"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 233,
+      "word": "according",
+      "phonetic": "/əˈkɔːdɪŋ/",
+      "pos": "Preposition",
+      "frequency": 18,
+      "categories": [
+        "Communication",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Theo, dựa trên thông tin từ nguồn nào",
+          "examples": [
+            {
+              "en": "According to the news, traffic is heavy today.",
+              "vi": "Theo tin tức, giao thông đông đúc hôm nay.",
+              "category": "Communication"
+            },
+            {
+              "en": "According to scientists, the climate is changing.",
+              "vi": "Theo các nhà khoa học, khí hậu đang thay đổi.",
+              "category": "Science"
+            }
+          ]
+        },
+        {
+          "vi": "Phù hợp với, đúng theo điều gì đó",
+          "examples": [
+            {
+              "en": "Plan according to the weather forecast.",
+              "vi": "Hãy lập kế hoạch theo dự báo thời tiết.",
+              "category": "Travel"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Research findings · according",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "According to your recent epidemiological study, what specific lifestyle factors contribute most significantly to longevity among elderly populations throughout developed industrialized countries?",
+              "vi": "Theo nghiên cứu dịch tễ học gần đây của bạn, những yếu tố lối sống cụ thể nào đóng góp đáng kể nhất vào tuổi thọ trong các quần thể người cao tuổi khắp các quốc gia công nghiệp phát triển?",
+              "vocabs": [
+                "according",
+                "epidemiological study",
+                "lifestyle factors",
+                "longevity",
+                "elderly populations"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "According to comprehensive longitudinal data analyzed throughout fifteen demanding years, robust social connections actually outweigh traditional dietary considerations substantially. Maintaining meaningful interpersonal relationships, participating actively in community activities, and cultivating purposeful engagement strongly predicts longevity surpassing isolated nutritional optimization strategies according to remarkably consistent international research findings.",
+              "vi": "Theo dữ liệu theo chiều dọc toàn diện được phân tích trong mười lăm năm đòi hỏi, các kết nối xã hội mạnh mẽ thực sự vượt qua các cân nhắc dinh dưỡng truyền thống đáng kể. Duy trì các mối quan hệ liên cá nhân có ý nghĩa, tích cực tham gia các hoạt động cộng đồng và nuôi dưỡng sự tham gia có mục đích dự đoán mạnh mẽ tuổi thọ vượt qua các chiến lược tối ưu hóa dinh dưỡng cô lập theo các phát hiện nghiên cứu quốc tế nhất quán đáng chú ý.",
+              "vocabs": [
+                "according",
+                "longitudinal data",
+                "social connections",
+                "interpersonal relationships",
+                "community activities",
+                "nutritional optimization"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "According to your professional analysis, how should public health policies meaningfully respond addressing these surprisingly important social determinants influencing population health outcomes nationally?",
+              "vi": "Theo phân tích chuyên môn của bạn, các chính sách y tế công cộng nên phản ứng ý nghĩa giải quyết các yếu tố quyết định xã hội quan trọng đáng ngạc nhiên ảnh hưởng đến kết quả sức khỏe dân số toàn quốc như thế nào?",
+              "vocabs": [
+                "according",
+                "public health policies",
+                "social determinants",
+                "population health outcomes"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "According to recent successful international interventions, governments should fund community center construction, expand public transportation accessibility, and create intergenerational programs encouraging meaningful relationship cultivation throughout vulnerable elderly populations sustainably. According to policy researchers, modest preventive investments yield substantial healthcare savings substantially exceeding reactive treatment expenditures dominating current expensive medical systems substantially throughout developed nations comprehensively.",
+              "vi": "Theo các can thiệp quốc tế thành công gần đây, các chính phủ nên tài trợ xây dựng trung tâm cộng đồng, mở rộng khả năng tiếp cận giao thông công cộng và tạo ra các chương trình liên thế hệ khuyến khích nuôi dưỡng mối quan hệ ý nghĩa khắp các quần thể người cao tuổi dễ bị tổn thương một cách bền vững. Theo các nhà nghiên cứu chính sách, các khoản đầu tư phòng ngừa khiêm tốn mang lại tiết kiệm chăm sóc sức khỏe đáng kể vượt qua chi phí điều trị phản ứng chi phối các hệ thống y tế đắt tiền hiện tại đáng kể trong các quốc gia phát triển một cách toàn diện.",
+              "vocabs": [
+                "according",
+                "successful interventions",
+                "community center",
+                "transportation accessibility",
+                "intergenerational programs",
+                "preventive investments"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 234,
+      "word": "aim",
+      "phonetic": "/eɪm/",
+      "pos": "Noun, Verb",
+      "frequency": 17,
+      "categories": [
+        "Goal",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Mục tiêu, điều mong muốn đạt được",
+          "examples": [
+            {
+              "en": "Her main aim is to become a doctor.",
+              "vi": "Mục tiêu chính của cô ấy là trở thành bác sĩ.",
+              "category": "Education"
+            },
+            {
+              "en": "What is the aim of this project?",
+              "vi": "Mục tiêu của dự án này là gì?",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Hướng đến, nhắm vào điều gì đó",
+          "examples": [
+            {
+              "en": "We aim to finish before the deadline.",
+              "vi": "Chúng tôi nhắm hoàn thành trước thời hạn.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Career ambitions · aim",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What ambitious professional aim do you hope to achieve over the next ten challenging years navigating demanding international career transitions?",
+              "vi": "Mục tiêu chuyên nghiệp đầy hoài bão nào bạn hy vọng đạt được trong mười năm thử thách tới điều hướng các giai đoạn chuyển tiếp nghề nghiệp quốc tế đòi hỏi?",
+              "vocabs": [
+                "aim",
+                "ambitious professional",
+                "international career",
+                "transitions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "My primary aim involves establishing comprehensive healthcare access programs throughout impoverished rural communities across developing African nations substantively. Building sustainable medical infrastructure alongside training local healthcare practitioners remains the foundational ambitious aim guiding professional decisions throughout coming decades dedicated to meaningful humanitarian impact internationally.",
+              "vi": "Mục tiêu chính của tôi bao gồm thành lập các chương trình tiếp cận chăm sóc sức khỏe toàn diện qua các cộng đồng nông thôn nghèo khó khắp các quốc gia châu Phi đang phát triển một cách thực chất. Xây dựng cơ sở hạ tầng y tế bền vững cùng với đào tạo các nhà thực hành chăm sóc sức khỏe địa phương vẫn là mục tiêu nền tảng đầy hoài bão hướng dẫn các quyết định chuyên nghiệp trong các thập kỷ sắp tới dành cho tác động nhân đạo có ý nghĩa quốc tế.",
+              "vocabs": [
+                "aim",
+                "healthcare access",
+                "impoverished rural",
+                "medical infrastructure",
+                "healthcare practitioners",
+                "humanitarian impact"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How realistically can humanitarian organizations actually achieve such ambitious aims given persistent funding limitations alongside substantial geopolitical obstacles affecting operational feasibility globally?",
+              "vi": "Các tổ chức nhân đạo có thể thực tế đạt được những mục tiêu đầy hoài bão như vậy như thế nào với những hạn chế tài trợ dai dẳng cùng với những trở ngại địa chính trị đáng kể ảnh hưởng đến tính khả thi vận hành toàn cầu?",
+              "vocabs": [
+                "aims",
+                "humanitarian organizations",
+                "funding limitations",
+                "geopolitical obstacles",
+                "operational feasibility"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Pursuing transformative humanitarian aims requires building strategic coalitions involving academic institutions, philanthropic foundations, and committed governmental partnerships ensuring sustained financial support throughout extended implementation phases responsibly. Collaborating closely with local communities respecting cultural traditions while maintaining rigorous outcome measurement enables organizations to genuinely realize substantively ambitious goals despite enormous practical implementation challenges encountered routinely.",
+              "vi": "Theo đuổi các mục tiêu nhân đạo biến đổi đòi hỏi xây dựng các liên minh chiến lược liên quan đến các tổ chức học thuật, các quỹ từ thiện và các quan hệ đối tác chính phủ cam kết đảm bảo hỗ trợ tài chính bền vững trong các giai đoạn triển khai kéo dài một cách có trách nhiệm. Hợp tác chặt chẽ với các cộng đồng địa phương tôn trọng các truyền thống văn hóa trong khi duy trì đo lường kết quả nghiêm ngặt cho phép các tổ chức thực sự nhận ra các mục tiêu đầy hoài bão thực chất bất chấp những thử thách triển khai thực tế to lớn gặp phải thường xuyên.",
+              "vocabs": [
+                "aims",
+                "strategic coalitions",
+                "academic institutions",
+                "philanthropic foundations",
+                "cultural traditions",
+                "outcome measurement"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 235,
+      "word": "anybody",
+      "phonetic": "/ˈenibɒdi/",
+      "pos": "Pronoun",
+      "frequency": 16,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Bất kỳ ai, người nào không xác định",
+          "examples": [
+            {
+              "en": "Is there anybody available to help?",
+              "vi": "Có ai rảnh giúp được không?",
+              "category": "Communication"
+            },
+            {
+              "en": "Anybody can join this class.",
+              "vi": "Bất kỳ ai cũng có thể tham gia lớp học này.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Người nào, dùng trong câu phủ định",
+          "examples": [
+            {
+              "en": "I don't know anybody here.",
+              "vi": "Tôi không biết ai ở đây.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Whistleblower courage · anybody",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Did anybody initially support your courageous decision exposing those serious corporate environmental violations despite enormous professional risks involved throughout extended legal proceedings?",
+              "vi": "Có ai ban đầu hỗ trợ quyết định dũng cảm của bạn vạch trần những vi phạm môi trường doanh nghiệp nghiêm trọng đó bất chấp những rủi ro chuyên nghiệp to lớn liên quan trong các thủ tục pháp lý kéo dài không?",
+              "vocabs": [
+                "anybody",
+                "courageous decision",
+                "corporate environmental violations",
+                "legal proceedings"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, anybody questioning my decision could not understand the moral imperative driving immediate disclosure regardless of devastating personal consequences throughout subsequent investigative years. Surprisingly few colleagues initially supported anybody whistleblowing publicly, fearing retaliation themselves although later expressing private respect after federal authorities validated my serious concerns through comprehensive independent investigations conclusively.",
+              "vi": "Thật lòng mà nói, bất kỳ ai đặt câu hỏi về quyết định của tôi đều không thể hiểu được mệnh lệnh đạo đức thúc đẩy việc tiết lộ ngay lập tức bất chấp hậu quả cá nhân tàn khốc trong các năm điều tra tiếp theo. Đáng ngạc nhiên ít đồng nghiệp ban đầu hỗ trợ bất kỳ ai tố giác công khai, sợ bị trả thù mặc dù sau đó bày tỏ sự tôn trọng riêng tư sau khi các cơ quan liên bang đã xác nhận các mối quan tâm nghiêm trọng của tôi thông qua các cuộc điều tra độc lập toàn diện một cách rõ ràng.",
+              "vocabs": [
+                "anybody",
+                "moral imperative",
+                "disclosure",
+                "investigative years",
+                "whistleblowing",
+                "retaliation"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Would anybody facing similar ethical dilemmas benefit substantially from learning about your specific personal experiences navigating complicated whistleblower protection legal frameworks throughout corporate America?",
+              "vi": "Bất kỳ ai đang đối mặt với những tình huống đạo đức khó xử tương tự có được lợi đáng kể từ việc tìm hiểu về những trải nghiệm cá nhân cụ thể của bạn điều hướng các khuôn khổ pháp lý bảo vệ người tố giác phức tạp trong doanh nghiệp Mỹ không?",
+              "vocabs": [
+                "anybody",
+                "ethical dilemmas",
+                "personal experiences",
+                "whistleblower protection",
+                "legal frameworks"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Anybody contemplating similar decisions deserves comprehensive understanding regarding available legal protections, financial preparation requirements, and emotional support resources before initiating consequential disclosures publicly. Sharing my experience teaching anybody about navigating retaliation patterns, securing competent legal representation early, and maintaining careful documentation throughout potentially lengthy investigations empowers future whistleblowers protecting genuine public interests substantially against organizational misconduct.",
+              "vi": "Bất kỳ ai đang cân nhắc các quyết định tương tự xứng đáng có sự hiểu biết toàn diện về các bảo vệ pháp lý có sẵn, các yêu cầu chuẩn bị tài chính và các nguồn lực hỗ trợ cảm xúc trước khi khởi xướng tiết lộ quan trọng công khai. Chia sẻ kinh nghiệm của tôi dạy bất kỳ ai về điều hướng các mẫu trả thù, đảm bảo đại diện pháp lý có năng lực sớm và duy trì tài liệu cẩn thận trong các cuộc điều tra có thể kéo dài trao quyền cho những người tố giác trong tương lai bảo vệ lợi ích công cộng chân thực đáng kể chống lại hành vi sai trái của tổ chức.",
+              "vocabs": [
+                "anybody",
+                "legal protections",
+                "financial preparation",
+                "emotional support",
+                "documentation",
+                "organizational misconduct"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 236,
+      "word": "arrive",
+      "phonetic": "/əˈraɪv/",
+      "pos": "Verb",
+      "frequency": 15,
+      "categories": [
+        "General",
+        "Travel"
+      ],
+      "meanings": [
+        {
+          "vi": "Đến nơi, đến địa điểm sau hành trình",
+          "examples": [
+            {
+              "en": "The train will arrive at six o'clock.",
+              "vi": "Tàu sẽ đến lúc sáu giờ.",
+              "category": "Travel"
+            },
+            {
+              "en": "She arrived at the meeting on time.",
+              "vi": "Cô ấy đến cuộc họp đúng giờ.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Đạt đến, tiến đến giai đoạn nào đó",
+          "examples": [
+            {
+              "en": "We arrived at a difficult decision.",
+              "vi": "Chúng tôi đã đi đến một quyết định khó khăn.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Cross-country journey · arrive",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How exhausted were you when you finally arrived in Tokyo after enduring that grueling sixteen-hour transcontinental international flight last weekend?",
+              "vi": "Bạn đã kiệt sức đến mức nào khi cuối cùng đến Tokyo sau khi chịu đựng chuyến bay quốc tế xuyên lục địa kéo dài mười sáu giờ vắt kiệt sức cuối tuần qua?",
+              "vocabs": [
+                "arrived",
+                "exhausted",
+                "grueling",
+                "transcontinental",
+                "international flight"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Arriving completely drained physically and mentally after enduring numerous turbulent atmospheric conditions throughout extended overhead nighttime travel honestly. Disorientation from substantial timezone differences combined with cramped airline seating prevented genuine restful sleep arriving Japan barely able to navigate complicated international airport customs procedures coherently throughout exhausted disoriented afternoon hours.",
+              "vi": "Đến nơi hoàn toàn kiệt sức về thể chất và tinh thần sau khi chịu đựng nhiều điều kiện khí quyển nhiễu loạn trong chuyến đi đêm qua trên không kéo dài một cách trung thực. Sự mất phương hướng từ sự khác biệt múi giờ đáng kể kết hợp với chỗ ngồi máy bay chật chội đã ngăn ngừa giấc ngủ nghỉ ngơi chân thực đến Nhật Bản hầu như không thể điều hướng các thủ tục hải quan sân bay quốc tế phức tạp một cách mạch lạc trong các giờ chiều mất phương hướng kiệt sức.",
+              "vocabs": [
+                "arriving",
+                "drained physically",
+                "turbulent atmospheric",
+                "overhead nighttime",
+                "timezone differences",
+                "cramped airline"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What essential strategies help international business travelers successfully recover quickly after they arrive at distant destinations facing demanding professional obligations immediately?",
+              "vi": "Những chiến lược thiết yếu nào giúp các du khách kinh doanh quốc tế phục hồi thành công nhanh chóng sau khi họ đến các điểm đến xa đối mặt với các nghĩa vụ chuyên nghiệp đòi hỏi ngay lập tức?",
+              "vocabs": [
+                "arrive",
+                "international business",
+                "distant destinations",
+                "professional obligations"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Experienced travelers strategically arrive several days early enabling adequate adjustment time before commencing demanding professional commitments throughout demanding international engagements respectfully. Practicing strategic hydration, embracing local sunlight exposure, and consuming balanced healthy meals helps travelers arriving combatting jet lag effectively maintaining optimal cognitive performance during high-stakes business negotiations across multiple challenging timezone transitions internationally.",
+              "vi": "Các du khách có kinh nghiệm chiến lược đến vài ngày sớm cho phép thời gian điều chỉnh đủ trước khi bắt đầu các cam kết chuyên nghiệp đòi hỏi trong các cuộc gặp gỡ quốc tế đòi hỏi một cách tôn trọng. Thực hành bù nước chiến lược, chấp nhận tiếp xúc ánh sáng mặt trời địa phương và tiêu thụ các bữa ăn lành mạnh cân bằng giúp du khách đến chống lại hiệu quả jet lag duy trì hiệu suất nhận thức tối ưu trong các cuộc đàm phán kinh doanh có rủi ro cao qua nhiều giai đoạn chuyển tiếp múi giờ thử thách quốc tế.",
+              "vocabs": [
+                "arrive",
+                "adequate adjustment",
+                "strategic hydration",
+                "sunlight exposure",
+                "balanced healthy meals",
+                "timezone transitions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 237,
+      "word": "adult",
+      "phonetic": "/ˈædʌlt/",
+      "pos": "Noun, Adjective",
+      "frequency": 14,
+      "categories": [
+        "General",
+        "Education"
+      ],
+      "meanings": [
+        {
+          "vi": "Người lớn, người đã trưởng thành",
+          "examples": [
+            {
+              "en": "This program is designed for adults.",
+              "vi": "Chương trình này được thiết kế cho người lớn.",
+              "category": "Education"
+            },
+            {
+              "en": "Adults must accompany young children.",
+              "vi": "Người lớn phải đi cùng trẻ nhỏ.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Trưởng thành, dành cho người đã lớn",
+          "examples": [
+            {
+              "en": "She has very adult tastes in music.",
+              "vi": "Cô ấy có gu nhạc rất người lớn.",
+              "category": "Arts"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Continuing education · adult",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why are increasing numbers of busy working adults returning to formal university classrooms despite demanding professional schedules and family obligations?",
+              "vi": "Tại sao ngày càng nhiều người lớn đi làm bận rộn quay lại các lớp học đại học chính thức bất chấp các lịch trình chuyên nghiệp đòi hỏi và nghĩa vụ gia đình?",
+              "vocabs": [
+                "adults",
+                "working",
+                "formal university classrooms",
+                "professional schedules"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Modern adults pursue continuing education recognizing that rapidly evolving industries demand continuous skill acquisition throughout extensive professional careers genuinely. Working adults benefit substantially from graduate certifications, advanced technical courses, and specialized professional development programs maintaining competitive relevance throughout demanding employment markets requiring perpetual intellectual flexibility from established workforce participants.",
+              "vi": "Người lớn hiện đại theo đuổi giáo dục liên tục nhận ra rằng các ngành công nghiệp đang phát triển nhanh chóng đòi hỏi việc tiếp thu kỹ năng liên tục trong các sự nghiệp chuyên nghiệp rộng rãi một cách chân thực. Người lớn đi làm được lợi đáng kể từ các chứng chỉ sau đại học, các khóa học kỹ thuật nâng cao và các chương trình phát triển chuyên môn chuyên ngành duy trì sự liên quan cạnh tranh trong các thị trường việc làm đòi hỏi đòi hỏi sự linh hoạt trí tuệ vĩnh viễn từ những người tham gia lực lượng lao động đã thành lập.",
+              "vocabs": [
+                "adults",
+                "continuing education",
+                "evolving industries",
+                "graduate certifications",
+                "technical courses",
+                "professional development"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How can institutions effectively accommodate adult learners juggling multiple complex personal responsibilities throughout demanding educational programs without sacrificing rigorous academic standards?",
+              "vi": "Các tổ chức có thể đáp ứng hiệu quả những người học người lớn đang xoay xở nhiều trách nhiệm cá nhân phức tạp trong các chương trình giáo dục đòi hỏi như thế nào mà không hy sinh các tiêu chuẩn học thuật nghiêm ngặt?",
+              "vocabs": [
+                "adult learners",
+                "complex personal responsibilities",
+                "educational programs",
+                "academic standards"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Progressive universities offer flexible online formats, evening hybrid classes, and accelerated weekend programs accommodating busy adult schedules throughout demanding life commitments effectively. Designing specialized adult-friendly curriculum recognizing professional experience, providing dedicated career counseling services, and creating supportive peer networks enables successful academic completion respecting working adults' substantial existing personal and professional responsibilities meaningfully throughout extended program durations.",
+              "vi": "Các trường đại học tiến bộ cung cấp các định dạng trực tuyến linh hoạt, các lớp lai buổi tối và các chương trình cuối tuần được tăng tốc đáp ứng các lịch trình người lớn bận rộn trong các cam kết cuộc sống đòi hỏi một cách hiệu quả. Thiết kế chương trình giảng dạy thân thiện với người lớn chuyên ngành công nhận kinh nghiệm chuyên nghiệp, cung cấp các dịch vụ tư vấn nghề nghiệp chuyên dụng và tạo ra các mạng lưới đồng đẳng hỗ trợ cho phép hoàn thành học thuật thành công tôn trọng các trách nhiệm cá nhân và chuyên nghiệp hiện có đáng kể của người lớn đi làm một cách có ý nghĩa trong các thời gian chương trình kéo dài.",
+              "vocabs": [
+                "adult",
+                "online formats",
+                "hybrid classes",
+                "weekend programs",
+                "career counseling",
+                "peer networks"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 238,
+      "word": "ahead",
+      "phonetic": "/əˈhed/",
+      "pos": "Adverb",
+      "frequency": 13,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Phía trước, ở vị trí trước hơn",
+          "examples": [
+            {
+              "en": "The road ahead looks dangerous.",
+              "vi": "Con đường phía trước trông nguy hiểm.",
+              "category": "Travel"
+            },
+            {
+              "en": "Please look ahead while driving.",
+              "vi": "Vui lòng nhìn thẳng phía trước khi lái xe.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Trước, sớm hơn về thời gian",
+          "examples": [
+            {
+              "en": "Plan ahead for your retirement.",
+              "vi": "Lên kế hoạch trước cho việc nghỉ hưu.",
+              "category": "Finance"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Strategic vision · ahead",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How does your strategic planning team look ahead anticipating disruptive technological transformations potentially reshaping your industry throughout coming decades fundamentally?",
+              "vi": "Đội lập kế hoạch chiến lược của bạn nhìn về phía trước dự đoán các biến đổi công nghệ mang tính đột phá có thể định hình lại ngành của bạn trong các thập kỷ sắp tới như thế nào về cơ bản?",
+              "vocabs": [
+                "ahead",
+                "strategic planning team",
+                "disruptive technological transformations",
+                "industry"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Looking decades ahead requires combining quantitative trend analysis with qualitative scenario planning examining multiple potentially divergent future possibilities thoughtfully. Engaging diverse external consultants, monitoring emerging research developments, and conducting regular strategic foresight exercises enables organizations to anticipate transformative changes ahead positioning themselves proactively rather than reacting belatedly to disruptive market shifts substantially throughout future decades effectively.",
+              "vi": "Nhìn về phía trước hàng thập kỷ đòi hỏi kết hợp phân tích xu hướng định lượng với lập kế hoạch kịch bản định tính kiểm tra nhiều khả năng tương lai có thể khác nhau một cách chu đáo. Tương tác với các nhà tư vấn bên ngoài đa dạng, theo dõi các phát triển nghiên cứu mới nổi và tiến hành các bài tập tầm nhìn chiến lược thường xuyên cho phép các tổ chức dự đoán những thay đổi biến đổi phía trước định vị bản thân chủ động thay vì phản ứng muộn màng với sự thay đổi thị trường mang tính đột phá đáng kể trong các thập kỷ tương lai một cách hiệu quả.",
+              "vocabs": [
+                "ahead",
+                "quantitative trend",
+                "qualitative scenario",
+                "external consultants",
+                "research developments",
+                "strategic foresight"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How can smaller organizations realistically plan ahead competing successfully against giant established corporations possessing exponentially superior resources for comprehensive strategic foresight programs?",
+              "vi": "Các tổ chức nhỏ hơn có thể thực tế lập kế hoạch trước cạnh tranh thành công với các tập đoàn lớn đã thành lập sở hữu các nguồn lực vượt trội theo cấp số nhân cho các chương trình tầm nhìn chiến lược toàn diện như thế nào?",
+              "vocabs": [
+                "plan ahead",
+                "smaller organizations",
+                "established corporations",
+                "strategic foresight"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Smaller agile organizations actually possess significant strategic advantages thinking ahead because nimble decision-making structures enable rapid adaptation surpassing slower bureaucratic giants encumbered by legacy operational paradigms substantially. Leveraging open-source intelligence, participating in industry consortiums, and cultivating innovative cultural mindsets emphasizing experimentation enables resource-constrained organizations to compete effectively planning ahead despite limited budgetary resources throughout demanding competitive marketplaces.",
+              "vi": "Các tổ chức nhỏ hơn linh hoạt thực sự sở hữu các lợi thế chiến lược đáng kể khi suy nghĩ phía trước vì các cấu trúc ra quyết định nhanh nhẹn cho phép thích ứng nhanh chóng vượt qua các gã khổng lồ quan liêu chậm hơn bị cản trở bởi các mô hình vận hành di sản đáng kể. Tận dụng trí tuệ nguồn mở, tham gia các tập đoàn ngành và nuôi dưỡng tư duy văn hóa đổi mới nhấn mạnh thử nghiệm cho phép các tổ chức bị hạn chế tài nguyên cạnh tranh hiệu quả lập kế hoạch trước bất chấp các nguồn lực ngân sách hạn chế trong các thị trường cạnh tranh đòi hỏi.",
+              "vocabs": [
+                "ahead",
+                "agile organizations",
+                "decision-making structures",
+                "operational paradigms",
+                "open-source intelligence",
+                "industry consortiums"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 239,
+      "word": "alternative",
+      "phonetic": "/ɔːlˈtɜːnətɪv/",
+      "pos": "Noun, Adjective",
+      "frequency": 12,
+      "categories": [
+        "General",
+        "Choice"
+      ],
+      "meanings": [
+        {
+          "vi": "Phương án thay thế, lựa chọn khác",
+          "examples": [
+            {
+              "en": "We need a better alternative to plastic.",
+              "vi": "Chúng tôi cần một phương án thay thế tốt hơn cho nhựa.",
+              "category": "Nature"
+            },
+            {
+              "en": "There is no alternative to hard work.",
+              "vi": "Không có phương án nào thay thế cho làm việc chăm chỉ.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Khác biệt, không theo cách thông thường",
+          "examples": [
+            {
+              "en": "She prefers alternative music styles.",
+              "vi": "Cô ấy thích các phong cách nhạc khác thường.",
+              "category": "Arts"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Sustainable materials · alternative",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What innovative alternative materials has your packaging research laboratory developed replacing harmful plastic products throughout consumer goods manufacturing industries globally?",
+              "vi": "Những vật liệu thay thế đổi mới nào phòng thí nghiệm nghiên cứu bao bì của bạn đã phát triển thay thế các sản phẩm nhựa có hại trong các ngành sản xuất hàng tiêu dùng toàn cầu?",
+              "vocabs": [
+                "alternative",
+                "innovative",
+                "packaging research laboratory",
+                "plastic products",
+                "consumer goods manufacturing"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "We developed remarkable biodegradable alternatives combining mushroom mycelium, agricultural waste fibers, and seaweed-derived bioplastics revolutionizing sustainable packaging throughout food industry sectors fundamentally. These innovative alternative materials decompose completely within weeks naturally producing zero environmental contamination unlike conventional petroleum-based plastics persisting destructively throughout fragile ecosystems for centuries devastating wildlife populations globally.",
+              "vi": "Chúng tôi đã phát triển các vật liệu thay thế phân hủy sinh học đáng chú ý kết hợp sợi nấm, sợi chất thải nông nghiệp và nhựa sinh học có nguồn gốc từ rong biển cách mạng hóa bao bì bền vững qua các lĩnh vực ngành thực phẩm về cơ bản. Những vật liệu thay thế đổi mới này phân hủy hoàn toàn trong vài tuần một cách tự nhiên tạo ra ô nhiễm môi trường bằng không không giống như nhựa truyền thống có nguồn gốc từ dầu mỏ tồn tại phá hoại trong các hệ sinh thái mong manh trong nhiều thế kỷ tàn phá quần thể động vật hoang dã toàn cầu.",
+              "vocabs": [
+                "alternatives",
+                "biodegradable",
+                "mushroom mycelium",
+                "agricultural waste",
+                "seaweed-derived bioplastics",
+                "petroleum-based plastics"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How affordable are these alternative sustainable products compared to conventional plastic packaging dominating commercial markets currently across diverse consumer demographics realistically?",
+              "vi": "Những sản phẩm thay thế bền vững này có giá phải chăng như thế nào so với bao bì nhựa truyền thống chi phối các thị trường thương mại hiện tại qua các nhóm người tiêu dùng đa dạng một cách thực tế?",
+              "vocabs": [
+                "alternative",
+                "affordable",
+                "sustainable products",
+                "plastic packaging",
+                "consumer demographics"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Currently alternative biodegradable materials cost approximately twenty percent more than conventional plastics although manufacturing scaling economies should eliminate price disparities within five strategic years substantially. Government subsidies supporting environmentally responsible alternative materials, plastic taxation policies, and growing consumer demand from environmentally conscious purchasers create accelerating adoption curves making sustainable alternative choices increasingly competitive compared to ecologically devastating conventional packaging substantially.",
+              "vi": "Hiện tại các vật liệu thay thế phân hủy sinh học có giá đắt hơn khoảng hai mươi phần trăm so với nhựa truyền thống mặc dù các nền kinh tế quy mô sản xuất nên loại bỏ sự chênh lệch giá trong năm năm chiến lược một cách đáng kể. Trợ cấp chính phủ hỗ trợ các vật liệu thay thế có trách nhiệm với môi trường, các chính sách thuế nhựa và nhu cầu tiêu dùng đang tăng từ người mua có ý thức về môi trường tạo ra các đường cong áp dụng tăng tốc làm cho các lựa chọn thay thế bền vững ngày càng cạnh tranh so với bao bì truyền thống tàn phá sinh thái đáng kể.",
+              "vocabs": [
+                "alternative",
+                "biodegradable materials",
+                "manufacturing scaling",
+                "government subsidies",
+                "plastic taxation",
+                "consumer demand"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "word": "animal",
+      "phonetic": "/ˈænɪml/",
+      "pos": "Noun",
+      "frequency": 11,
+      "categories": [
+        "General",
+        "Nature"
+      ],
+      "meanings": [
+        {
+          "vi": "Động vật, sinh vật sống có khả năng di chuyển",
+          "examples": [
+            {
+              "en": "Lions are powerful wild animals.",
+              "vi": "Sư tử là động vật hoang dã mạnh mẽ.",
+              "category": "Nature"
+            },
+            {
+              "en": "She loves all kinds of animals.",
+              "vi": "Cô ấy yêu mọi loại động vật.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Loài thú, vật nuôi trong nhà",
+          "examples": [
+            {
+              "en": "Dogs are loyal pet animals.",
+              "vi": "Chó là vật nuôi trung thành.",
+              "category": "Family"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Wildlife conservation · animal",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How successfully has your nonprofit organization protected endangered animal species throughout vulnerable African wildlife reserves during the past challenging decade?",
+              "vi": "Tổ chức phi lợi nhuận của bạn đã bảo vệ thành công các loài động vật có nguy cơ tuyệt chủng khắp các khu bảo tồn động vật hoang dã châu Phi dễ bị tổn thương trong thập kỷ thử thách qua như thế nào?",
+              "vocabs": [
+                "animal species",
+                "endangered",
+                "nonprofit organization",
+                "African wildlife reserves"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our conservation programs successfully recovered several critically endangered animal populations including elephants, rhinoceroses, and rare tropical big cats throughout protected biodiversity hotspots remarkably effectively. Combining anti-poaching enforcement, sophisticated habitat restoration projects, and engaging local communities through sustainable economic alternatives transformed multiple vulnerable animal species from imminent extinction toward stable population recovery measurably throughout extensive monitoring decades.",
+              "vi": "Các chương trình bảo tồn của chúng tôi đã phục hồi thành công một số quần thể động vật có nguy cơ tuyệt chủng nghiêm trọng bao gồm voi, tê giác và mèo lớn nhiệt đới quý hiếm trong các điểm nóng đa dạng sinh học được bảo vệ một cách đáng chú ý hiệu quả. Kết hợp thực thi chống săn trộm, các dự án phục hồi môi trường sống tinh vi và tương tác với các cộng đồng địa phương qua các lựa chọn thay thế kinh tế bền vững đã biến đổi nhiều loài động vật dễ bị tổn thương từ tuyệt chủng sắp xảy ra hướng đến sự phục hồi dân số ổn định một cách có thể đo lường được trong các thập kỷ giám sát rộng rãi.",
+              "vocabs": [
+                "animal populations",
+                "conservation programs",
+                "anti-poaching enforcement",
+                "habitat restoration",
+                "biodiversity hotspots",
+                "population recovery"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What specific challenges threaten ongoing animal protection efforts throughout these critical conservation areas despite recent meaningful progress achieved through your dedicated work?",
+              "vi": "Những thử thách cụ thể nào đe dọa các nỗ lực bảo vệ động vật đang diễn ra khắp các khu vực bảo tồn quan trọng này bất chấp tiến bộ ý nghĩa gần đây đạt được qua công việc tận tâm của bạn?",
+              "vocabs": [
+                "animal protection",
+                "ongoing efforts",
+                "conservation areas",
+                "meaningful progress"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Climate change accelerates animal habitat degradation disrupting traditional migration patterns affecting countless species throughout vulnerable ecosystems substantially. Persistent international wildlife trafficking, expanding agricultural encroachment, and increasing human-animal conflicts create complex systemic threats requiring coordinated global responses combining diplomatic agreements, sustainable development investments, and continuous public awareness campaigns protecting irreplaceable animal biodiversity heritage throughout coming critical decades urgently.",
+              "vi": "Biến đổi khí hậu đẩy nhanh sự suy thoái môi trường sống động vật làm gián đoạn các mẫu di cư truyền thống ảnh hưởng đến vô số loài qua các hệ sinh thái dễ bị tổn thương đáng kể. Buôn bán động vật hoang dã quốc tế dai dẳng, sự xâm lấn nông nghiệp mở rộng và xung đột người-động vật ngày càng tăng tạo ra các mối đe dọa hệ thống phức tạp đòi hỏi phản ứng toàn cầu phối hợp kết hợp các thỏa thuận ngoại giao, các khoản đầu tư phát triển bền vững và các chiến dịch nâng cao nhận thức công chúng liên tục bảo vệ di sản đa dạng sinh học động vật không thể thay thế trong các thập kỷ quan trọng sắp tới một cách khẩn cấp.",
+              "vocabs": [
+                "animal",
+                "habitat degradation",
+                "migration patterns",
+                "wildlife trafficking",
+                "agricultural encroachment",
+                "biodiversity heritage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 241,
+      "word": "application",
+      "phonetic": "/ˌæplɪˈkeɪʃn/",
+      "pos": "Noun",
+      "frequency": 10,
+      "categories": [
+        "Technology",
+        "Education"
+      ],
+      "meanings": [
+        {
+          "vi": "Đơn xin, văn bản chính thức gửi yêu cầu",
+          "examples": [
+            {
+              "en": "Please submit your application before Friday.",
+              "vi": "Vui lòng nộp đơn xin của bạn trước thứ Sáu.",
+              "category": "Education"
+            },
+            {
+              "en": "Her application was accepted by Harvard.",
+              "vi": "Đơn xin của cô ấy đã được Harvard chấp nhận.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Ứng dụng, phần mềm dùng cho thiết bị điện tử",
+          "examples": [
+            {
+              "en": "Mobile applications make life convenient.",
+              "vi": "Các ứng dụng di động làm cuộc sống thuận tiện.",
+              "category": "Technology"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Mobile development · application",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How long did your team work to develop this innovative meditation application before launching it across major mobile platforms internationally?",
+              "vi": "Đội của bạn đã làm việc trong bao lâu để phát triển ứng dụng thiền đổi mới này trước khi ra mắt nó trên các nền tảng di động lớn quốc tế?",
+              "vocabs": [
+                "application",
+                "innovative meditation",
+                "mobile platforms",
+                "internationally"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Building this comprehensive application required eighteen months including extensive user research, careful interface design, and rigorous quality testing across diverse device configurations meticulously. Recruiting talented engineers, partnering with established psychology consultants, and conducting thorough beta testing programs ensured the final application meaningfully addressed authentic user wellness needs throughout demanding development cycles consistently.",
+              "vi": "Xây dựng ứng dụng toàn diện này đòi hỏi mười tám tháng bao gồm nghiên cứu người dùng rộng rãi, thiết kế giao diện cẩn thận và kiểm tra chất lượng nghiêm ngặt qua các cấu hình thiết bị đa dạng một cách tỉ mỉ. Tuyển dụng các kỹ sư tài năng, hợp tác với các nhà tư vấn tâm lý đã thành lập và tiến hành các chương trình thử nghiệm beta kỹ lưỡng đảm bảo ứng dụng cuối cùng giải quyết nhu cầu sức khỏe người dùng chân thực một cách có ý nghĩa trong các chu kỳ phát triển đòi hỏi một cách nhất quán.",
+              "vocabs": [
+                "application",
+                "user research",
+                "interface design",
+                "device configurations",
+                "psychology consultants",
+                "beta testing"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How did your application perform commercially after launching, attracting genuinely paying subscribers throughout demanding competitive wellness market segments globally?",
+              "vi": "Ứng dụng của bạn đã hoạt động thương mại như thế nào sau khi ra mắt, thu hút những người đăng ký trả phí chân thực qua các phân khúc thị trường sức khỏe cạnh tranh đòi hỏi trên toàn cầu?",
+              "vocabs": [
+                "application",
+                "performed commercially",
+                "paying subscribers",
+                "competitive wellness market"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our application surprisingly attracted approximately two hundred thousand active subscribers within six initial months exceeding optimistic financial projections substantially. Establishing strategic partnerships with corporate wellness programs, university student support services, and healthcare insurance providers expanded our application's reach demonstrating remarkable market traction validating extensive development investments meaningfully throughout demanding initial commercial launch phases.",
+              "vi": "Ứng dụng của chúng tôi đáng ngạc nhiên đã thu hút khoảng hai trăm nghìn người đăng ký tích cực trong vòng sáu tháng đầu vượt qua các dự báo tài chính lạc quan đáng kể. Thiết lập các quan hệ đối tác chiến lược với các chương trình sức khỏe doanh nghiệp, dịch vụ hỗ trợ sinh viên đại học và các nhà cung cấp bảo hiểm y tế mở rộng phạm vi ứng dụng của chúng tôi thể hiện sức hút thị trường đáng chú ý xác nhận các khoản đầu tư phát triển rộng rãi một cách có ý nghĩa trong các giai đoạn ra mắt thương mại ban đầu đòi hỏi.",
+              "vocabs": [
+                "application",
+                "active subscribers",
+                "financial projections",
+                "wellness programs",
+                "insurance providers",
+                "market traction"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 242,
+      "word": "argument",
+      "phonetic": "/ˈɑːɡjumənt/",
+      "pos": "Noun",
+      "frequency": 9,
+      "categories": [
+        "Communication",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Cuộc tranh luận, sự bất đồng giữa người với người",
+          "examples": [
+            {
+              "en": "They had a heated argument yesterday.",
+              "vi": "Họ đã có một cuộc tranh luận gay gắt hôm qua.",
+              "category": "Communication"
+            },
+            {
+              "en": "Try to avoid family arguments during dinner.",
+              "vi": "Cố gắng tránh tranh luận gia đình trong bữa tối.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Luận điểm, lý lẽ ủng hộ hoặc phản đối ý tưởng",
+          "examples": [
+            {
+              "en": "She made a strong argument for change.",
+              "vi": "Cô ấy đã đưa ra luận điểm mạnh mẽ cho sự thay đổi.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Academic debate · argument",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How does your philosophy department teach students constructing genuinely persuasive academic arguments throughout demanding undergraduate courses without resorting to fallacious manipulative reasoning patterns?",
+              "vi": "Khoa triết học của bạn dạy học sinh xây dựng các luận điểm học thuật thuyết phục chân thực trong các khóa học đại học đòi hỏi như thế nào mà không phải dùng đến các mô hình lý luận thao túng ngụy biện?",
+              "vocabs": [
+                "argument",
+                "philosophy department",
+                "persuasive academic",
+                "undergraduate courses"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Skilled professors teach systematic argument construction through rigorous logical foundations alongside identifying common rhetorical fallacies undermining intellectual credibility substantially. Practicing structured debate exercises, analyzing classical philosophical treatises critically, and writing detailed counterargument essays trains students to develop substantively defensible scholarly arguments surpassing emotionally driven persuasive manipulation throughout demanding intellectual discussions.",
+              "vi": "Các giáo sư có kỹ năng dạy việc xây dựng luận điểm có hệ thống qua các nền tảng logic nghiêm ngặt cùng với xác định các ngụy biện hùng biện phổ biến làm suy yếu sự tín nhiệm trí tuệ đáng kể. Thực hành các bài tập tranh luận có cấu trúc, phân tích các luận thuyết triết học cổ điển một cách phê phán và viết các bài luận phản biện chi tiết đào tạo học sinh phát triển các luận điểm học thuật có thể bảo vệ thực chất vượt qua sự thao túng thuyết phục được điều khiển bởi cảm xúc trong các cuộc thảo luận trí tuệ đòi hỏi.",
+              "vocabs": [
+                "argument construction",
+                "logical foundations",
+                "rhetorical fallacies",
+                "intellectual credibility",
+                "counterargument essays",
+                "scholarly arguments"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Why do students particularly struggle constructing balanced arguments addressing multiple legitimate perspectives throughout politically charged contemporary social issues debating frequently?",
+              "vi": "Tại sao học sinh đặc biệt vật lộn xây dựng các luận điểm cân bằng giải quyết nhiều quan điểm chính đáng trong các vấn đề xã hội đương đại có yếu tố chính trị thường xuyên tranh luận?",
+              "vocabs": [
+                "arguments",
+                "balanced",
+                "legitimate perspectives",
+                "politically charged",
+                "contemporary social issues"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Modern social media echo chambers prevent young students from developing nuanced argumentation skills genuinely engaging with opposing viewpoints throughout intellectual development years. Encouraging classroom dialogue with diverse intellectual perspectives, requiring students to argue multiple positions persuasively, and modeling charitable interpretation builds substantively sophisticated argument construction capabilities essential for productive democratic citizenship throughout polarized contemporary cultural environments meaningfully.",
+              "vi": "Các phòng vọng truyền thông xã hội hiện đại ngăn cản học sinh trẻ phát triển các kỹ năng lập luận sắc thái thực sự tương tác với các quan điểm đối lập trong các năm phát triển trí tuệ. Khuyến khích đối thoại lớp học với các quan điểm trí tuệ đa dạng, yêu cầu học sinh tranh luận nhiều vị trí một cách thuyết phục và làm gương cho sự diễn giải từ thiện xây dựng các khả năng xây dựng luận điểm phức tạp thực chất cần thiết cho công dân dân chủ năng suất trong các môi trường văn hóa đương đại phân cực một cách có ý nghĩa.",
+              "vocabs": [
+                "argumentation",
+                "echo chambers",
+                "opposing viewpoints",
+                "classroom dialogue",
+                "charitable interpretation",
+                "democratic citizenship"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "word": "arm",
+      "phonetic": "/ɑːm/",
+      "pos": "Noun, Verb",
+      "frequency": 9,
+      "categories": [
+        "General",
+        "Physical"
+      ],
+      "meanings": [
+        {
+          "vi": "Cánh tay, bộ phận cơ thể từ vai đến bàn tay",
+          "examples": [
+            {
+              "en": "She broke her arm during the soccer match.",
+              "vi": "Cô ấy đã gãy cánh tay trong trận bóng đá.",
+              "category": "Sports"
+            },
+            {
+              "en": "Children love their grandfather's strong arms.",
+              "vi": "Trẻ em yêu cánh tay mạnh mẽ của ông.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Trang bị, cung cấp vũ khí hoặc công cụ",
+          "examples": [
+            {
+              "en": "We must arm ourselves with knowledge.",
+              "vi": "Chúng ta phải trang bị kiến thức cho bản thân.",
+              "category": "Education"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Athletic recovery · arm",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How seriously did breaking your dominant throwing arm affect your professional baseball career trajectory throughout your demanding rehabilitation process last season?",
+              "vi": "Việc gãy cánh tay ném ưu thế ảnh hưởng nghiêm trọng đến quỹ đạo sự nghiệp bóng chày chuyên nghiệp của bạn trong quá trình phục hồi chức năng đòi hỏi mùa trước như thế nào?",
+              "vocabs": [
+                "arm",
+                "dominant throwing",
+                "professional baseball",
+                "rehabilitation process"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Severe arm fractures threatened my pitching career devastatingly throughout extended demanding surgical recovery procedures spanning eighteen excruciating months total. Working closely with experienced sports medicine specialists, dedicated physical therapists, and supportive teammates rebuilt my throwing arm strength gradually allowing remarkable athletic comeback exceeding pessimistic medical professional projections substantially throughout intensive structured rehabilitation programs eventually meaningful.",
+              "vi": "Các vết gãy cánh tay nghiêm trọng đe dọa sự nghiệp ném bóng của tôi một cách tàn khốc trong các thủ tục phục hồi phẫu thuật đòi hỏi kéo dài trải qua mười tám tháng đau đớn tổng cộng. Làm việc chặt chẽ với các chuyên gia y học thể thao có kinh nghiệm, các nhà vật lý trị liệu tận tâm và các đồng đội hỗ trợ đã xây dựng lại sức mạnh cánh tay ném của tôi dần dần cho phép sự trở lại thể thao đáng chú ý vượt qua dự báo bi quan của các chuyên gia y tế đáng kể trong các chương trình phục hồi chức năng có cấu trúc chuyên sâu cuối cùng có ý nghĩa.",
+              "vocabs": [
+                "arm fractures",
+                "pitching career",
+                "surgical recovery",
+                "sports medicine",
+                "physical therapists",
+                "athletic comeback"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What specific exercises strengthened your injured arm throughout demanding intensive recovery sessions preventing potential reinjury during subsequent competitive baseball seasons effectively?",
+              "vi": "Những bài tập cụ thể nào củng cố cánh tay bị thương của bạn trong các buổi phục hồi cường độ cao đòi hỏi ngăn ngừa khả năng tái chấn thương trong các mùa bóng chày cạnh tranh tiếp theo một cách hiệu quả?",
+              "vocabs": [
+                "arm",
+                "injured",
+                "intensive recovery",
+                "reinjury",
+                "baseball seasons"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Progressive resistance training targeting arm muscles combined with rotator cuff stabilization exercises strengthened weakened tissues throughout demanding daily multi-hour rehabilitation sessions persistently. Integrating proprioception drills, advanced biomechanical analysis, and customized throwing programs developed by elite sports performance specialists rebuilt my throwing arm capability surpassing pre-injury performance levels remarkably throughout extensive twelve-month recovery timelines successfully.",
+              "vi": "Đào tạo kháng tiến triển nhắm vào các cơ cánh tay kết hợp với các bài tập ổn định cơ xoay đã củng cố các mô bị suy yếu trong các buổi phục hồi chức năng nhiều giờ hàng ngày đòi hỏi một cách kiên trì. Tích hợp các bài tập cảm giác vị trí, phân tích cơ sinh học tiên tiến và các chương trình ném tùy chỉnh được phát triển bởi các chuyên gia hiệu suất thể thao ưu tú đã xây dựng lại khả năng cánh tay ném của tôi vượt qua các mức hiệu suất trước chấn thương một cách đáng chú ý trong các mốc thời gian phục hồi mười hai tháng rộng rãi một cách thành công.",
+              "vocabs": [
+                "arm muscles",
+                "resistance training",
+                "rotator cuff",
+                "rehabilitation sessions",
+                "proprioception drills",
+                "biomechanical analysis"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "word": "article",
+      "phonetic": "/ˈɑːtɪkl/",
+      "pos": "Noun",
+      "frequency": 8,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Bài báo, văn bản đăng trên báo chí hoặc tạp chí",
+          "examples": [
+            {
+              "en": "She wrote an interesting article about climate.",
+              "vi": "Cô ấy đã viết một bài báo thú vị về khí hậu.",
+              "category": "Nature"
+            },
+            {
+              "en": "I read several articles about artificial intelligence today.",
+              "vi": "Tôi đã đọc nhiều bài báo về trí tuệ nhân tạo hôm nay.",
+              "category": "Technology"
+            }
+          ]
+        },
+        {
+          "vi": "Vật phẩm, đồ vật cụ thể",
+          "examples": [
+            {
+              "en": "Please donate unused articles of clothing.",
+              "vi": "Vui lòng quyên góp các vật phẩm quần áo không dùng.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Investigative journalism · article",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How thoroughly did your investigative team research that explosive front-page article exposing widespread pharmaceutical corruption throughout international healthcare regulatory systems recently?",
+              "vi": "Đội điều tra của bạn đã nghiên cứu kỹ lưỡng như thế nào về bài báo trang nhất gây nổ vạch trần tham nhũng dược phẩm rộng rãi qua các hệ thống quy định chăm sóc sức khỏe quốc tế gần đây?",
+              "vocabs": [
+                "article",
+                "investigative team",
+                "explosive front-page",
+                "pharmaceutical corruption",
+                "regulatory systems"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Researching this comprehensive article required eighteen months of meticulous document analysis alongside conducting confidential interviews with seventy whistleblowers internationally throughout demanding investigative journalism procedures rigorously. Verifying complex financial transactions, analyzing internal corporate communications, and cross-referencing multiple independent governmental sources ensured this groundbreaking article withstood substantial subsequent legal challenges from powerful pharmaceutical industry corporations throughout demanding publication aftermath.",
+              "vi": "Nghiên cứu bài báo toàn diện này đòi hỏi mười tám tháng phân tích tài liệu tỉ mỉ cùng với tiến hành các cuộc phỏng vấn bảo mật với bảy mươi người tố giác quốc tế trong các quy trình báo chí điều tra đòi hỏi một cách nghiêm ngặt. Xác minh các giao dịch tài chính phức tạp, phân tích các giao tiếp doanh nghiệp nội bộ và đối chiếu nhiều nguồn chính phủ độc lập đã đảm bảo bài báo đột phá này chịu được những thử thách pháp lý đáng kể tiếp theo từ các tập đoàn ngành dược phẩm mạnh mẽ trong hậu quả xuất bản đòi hỏi.",
+              "vocabs": [
+                "article",
+                "document analysis",
+                "confidential interviews",
+                "whistleblowers",
+                "financial transactions",
+                "legal challenges"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Did publishing this controversial article generate meaningful regulatory reform pressure motivating governmental agencies investigating pharmaceutical industry misconduct seriously throughout subsequent years?",
+              "vi": "Việc xuất bản bài báo gây tranh cãi này có tạo ra áp lực cải cách quy định có ý nghĩa thúc đẩy các cơ quan chính phủ điều tra hành vi sai trái của ngành dược phẩm một cách nghiêm túc trong những năm tiếp theo không?",
+              "vocabs": [
+                "article",
+                "regulatory reform pressure",
+                "governmental agencies",
+                "pharmaceutical industry misconduct"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our article triggered congressional hearings, multinational regulatory investigations, and ultimately substantial pharmaceutical industry reforms protecting vulnerable patients globally throughout following two challenging years remarkably effectively. Subsequent supportive articles from competing publications validated our reporting, generating sustained public attention pressuring policymakers implementing meaningful systemic regulatory transformations across pharmaceutical manufacturing oversight frameworks substantively throughout demanding subsequent reform processes globally.",
+              "vi": "Bài báo của chúng tôi đã kích hoạt các phiên điều trần quốc hội, các cuộc điều tra quy định đa quốc gia và cuối cùng là cải cách ngành dược phẩm đáng kể bảo vệ bệnh nhân dễ bị tổn thương trên toàn cầu trong hai năm thử thách sau đó một cách đáng chú ý hiệu quả. Các bài báo hỗ trợ tiếp theo từ các ấn phẩm cạnh tranh đã xác nhận việc đưa tin của chúng tôi, tạo ra sự chú ý của công chúng bền vững gây áp lực cho các nhà hoạch định chính sách triển khai các chuyển đổi quy định hệ thống có ý nghĩa qua các khuôn khổ giám sát sản xuất dược phẩm một cách thực chất trong các quy trình cải cách tiếp theo đòi hỏi toàn cầu.",
+              "vocabs": [
+                "article",
+                "congressional hearings",
+                "regulatory investigations",
+                "pharmaceutical industry reforms",
+                "policymakers",
+                "manufacturing oversight"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 245,
+      "word": "administration",
+      "phonetic": "/ədˌmɪnɪˈstreɪʃn/",
+      "pos": "Noun",
+      "frequency": 7,
+      "categories": [
+        "Business",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Quản trị, việc tổ chức và điều hành công việc",
+          "examples": [
+            {
+              "en": "The administration manages all student affairs.",
+              "vi": "Ban quản trị quản lý tất cả công việc của sinh viên.",
+              "category": "Education"
+            },
+            {
+              "en": "She works in hospital administration.",
+              "vi": "Cô ấy làm việc trong quản trị bệnh viện.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Chính quyền, đội ngũ điều hành chính phủ",
+          "examples": [
+            {
+              "en": "The new administration announced fresh policies.",
+              "vi": "Chính quyền mới đã công bố các chính sách mới.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "University leadership · administration",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How effectively does your university administration genuinely respond addressing growing concerns regarding rising tuition costs alongside increasing demands for sustainable institutional financial transparency?",
+              "vi": "Ban quản trị đại học của bạn phản ứng hiệu quả như thế nào giải quyết các mối quan tâm ngày càng tăng về chi phí học phí tăng cùng với các yêu cầu ngày càng tăng về tính minh bạch tài chính tổ chức bền vững?",
+              "vocabs": [
+                "administration",
+                "tuition costs",
+                "institutional financial transparency"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our progressive administration established comprehensive cost-reduction initiatives implementing detailed budgetary transparency reports alongside expanded financial aid programs throughout subsequent academic years systematically. Engaging students meaningfully through regular town hall meetings, publishing quarterly expenditure reports openly, and reviewing administrative compensation structures fairly demonstrates institutional accountability genuinely addressing legitimate community concerns regarding educational affordability throughout demanding institutional governance reform processes effectively.",
+              "vi": "Ban quản trị tiến bộ của chúng tôi đã thiết lập các sáng kiến giảm chi phí toàn diện triển khai các báo cáo minh bạch ngân sách chi tiết cùng với các chương trình hỗ trợ tài chính được mở rộng trong các năm học tiếp theo một cách có hệ thống. Tương tác với học sinh có ý nghĩa qua các cuộc họp thị chính thường xuyên, xuất bản báo cáo chi tiêu hàng quý một cách cởi mở và xem xét các cấu trúc bồi thường hành chính một cách công bằng thể hiện trách nhiệm tổ chức thực sự giải quyết các mối quan tâm cộng đồng chính đáng về khả năng chi trả giáo dục trong các quy trình cải cách quản trị tổ chức đòi hỏi một cách hiệu quả.",
+              "vocabs": [
+                "administration",
+                "cost-reduction initiatives",
+                "budgetary transparency",
+                "financial aid",
+                "town hall meetings",
+                "compensation structures"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What unique challenges complicate effective university administration governing diverse stakeholder interests throughout demanding contemporary higher education institutional environments globally?",
+              "vi": "Những thử thách độc đáo nào làm phức tạp việc quản trị đại học hiệu quả điều hành các lợi ích bên liên quan đa dạng trong các môi trường tổ chức giáo dục đại học đương đại đòi hỏi trên toàn cầu?",
+              "vocabs": [
+                "administration",
+                "stakeholder interests",
+                "higher education",
+                "institutional environments"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Modern administration must balance competing demands from faculty unions, student advocacy groups, philanthropic donors, government regulators, and athletic programs throughout demanding decision-making processes substantively. Navigating ideological tensions surrounding controversial academic freedom debates, athletic scholarship priorities, and research funding allocation requires sophisticated diplomatic skills uniting genuinely opposing constituencies behind shared institutional missions throughout extended governance terms internationally.",
+              "vi": "Quản trị hiện đại phải cân bằng các nhu cầu cạnh tranh từ các công đoàn giảng viên, các nhóm vận động sinh viên, các nhà tài trợ từ thiện, các cơ quan quản lý chính phủ và các chương trình thể thao trong các quy trình ra quyết định đòi hỏi một cách thực chất. Điều hướng các căng thẳng ý thức hệ xung quanh các cuộc tranh luận tự do học thuật gây tranh cãi, các ưu tiên học bổng thể thao và phân bổ tài trợ nghiên cứu đòi hỏi các kỹ năng ngoại giao tinh vi đoàn kết các cử tri thực sự đối lập đằng sau các sứ mệnh tổ chức chung trong các nhiệm kỳ quản trị kéo dài quốc tế.",
+              "vocabs": [
+                "administration",
+                "faculty unions",
+                "advocacy groups",
+                "philanthropic donors",
+                "ideological tensions",
+                "scholarship priorities"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 246,
+      "word": "advice",
+      "phonetic": "/ədˈvaɪs/",
+      "pos": "Noun",
+      "frequency": 7,
+      "categories": [
+        "Communication",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Lời khuyên, ý kiến hướng dẫn cho người khác",
+          "examples": [
+            {
+              "en": "Thank you for your helpful advice.",
+              "vi": "Cảm ơn lời khuyên hữu ích của bạn.",
+              "category": "Communication"
+            },
+            {
+              "en": "She gave me good career advice.",
+              "vi": "Cô ấy đã đưa cho tôi lời khuyên nghề nghiệp tốt.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Sự tư vấn, hướng dẫn chuyên nghiệp",
+          "examples": [
+            {
+              "en": "Doctors provide important medical advice.",
+              "vi": "Bác sĩ cung cấp lời khuyên y tế quan trọng.",
+              "category": "Health"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Mentor wisdom · advice",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What essential career advice did your influential mentor share that fundamentally transformed your professional approach throughout subsequent decades navigating demanding international consulting industry environments?",
+              "vi": "Lời khuyên nghề nghiệp thiết yếu nào người cố vấn có ảnh hưởng của bạn đã chia sẻ đã biến đổi cơ bản cách tiếp cận chuyên nghiệp của bạn trong các thập kỷ tiếp theo điều hướng các môi trường ngành tư vấn quốc tế đòi hỏi?",
+              "vocabs": [
+                "advice",
+                "essential career",
+                "influential mentor",
+                "international consulting industry"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "My mentor offered genuinely transformative advice emphasizing prioritizing meaningful relationships above transactional networking throughout demanding professional pursuits substantially. Specifically, advice about cultivating authentic friendships with diverse industry professionals, demonstrating consistent integrity throughout challenging ethical dilemmas, and pursuing intellectual curiosity beyond narrow specialization expectations reshaped my entire approach toward sustainable career success measurably across demanding decades professionally.",
+              "vi": "Người cố vấn của tôi đã đưa ra lời khuyên thực sự biến đổi nhấn mạnh ưu tiên các mối quan hệ ý nghĩa hơn kết nối mạng giao dịch trong các theo đuổi chuyên nghiệp đòi hỏi đáng kể. Cụ thể, lời khuyên về nuôi dưỡng các tình bạn chân thực với các chuyên gia ngành đa dạng, thể hiện sự chính trực nhất quán trong các tình huống đạo đức khó khăn và theo đuổi sự tò mò trí tuệ vượt qua các kỳ vọng chuyên môn hóa hẹp đã định hình lại toàn bộ cách tiếp cận của tôi hướng đến thành công nghề nghiệp bền vững một cách có thể đo lường được qua các thập kỷ đòi hỏi về mặt chuyên môn.",
+              "vocabs": [
+                "advice",
+                "transactional networking",
+                "authentic friendships",
+                "industry professionals",
+                "ethical dilemmas",
+                "specialization expectations"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What practical advice would you offer aspiring young professionals just beginning their challenging consulting careers throughout demanding initial entry-level positions worldwide?",
+              "vi": "Lời khuyên thực tế nào bạn sẽ đưa ra cho các chuyên gia trẻ đầy hoài bão chỉ mới bắt đầu sự nghiệp tư vấn thử thách trong các vị trí cấp đầu vào ban đầu đòi hỏi trên toàn thế giới?",
+              "vocabs": [
+                "advice",
+                "aspiring young professionals",
+                "consulting careers",
+                "entry-level positions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "My fundamental advice emphasizes investing significantly in developing strong analytical foundations alongside cultivating genuine interpersonal communication abilities throughout extended early formative career years substantively. Seeking diverse cross-functional project experiences, observing experienced senior consultants attentively during demanding client engagements, and maintaining intellectual humility while systematically learning from inevitable professional mistakes accelerates remarkable career advancement surpassing peers focused exclusively on technical proficiencies meaningfully.",
+              "vi": "Lời khuyên cơ bản của tôi nhấn mạnh đầu tư đáng kể vào việc phát triển nền tảng phân tích mạnh mẽ cùng với nuôi dưỡng các khả năng giao tiếp liên cá nhân chân thực trong các năm sự nghiệp hình thành sớm kéo dài một cách thực chất. Tìm kiếm các trải nghiệm dự án liên chức năng đa dạng, quan sát các chuyên gia tư vấn cấp cao có kinh nghiệm chú ý trong các cuộc gặp gỡ khách hàng đòi hỏi và duy trì sự khiêm tốn trí tuệ trong khi học có hệ thống từ những sai lầm chuyên nghiệp không thể tránh khỏi đẩy nhanh sự tiến bộ nghề nghiệp đáng chú ý vượt qua các đồng nghiệp tập trung độc quyền vào sự thành thạo kỹ thuật một cách có ý nghĩa.",
+              "vocabs": [
+                "advice",
+                "analytical foundations",
+                "interpersonal communication",
+                "cross-functional project",
+                "intellectual humility",
+                "technical proficiencies"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 247,
+      "word": "apartment",
+      "phonetic": "/əˈpɑːtmənt/",
+      "pos": "Noun",
+      "frequency": 6,
+      "categories": [
+        "General",
+        "Home"
+      ],
+      "meanings": [
+        {
+          "vi": "Căn hộ, nơi ở trong tòa nhà chung cư",
+          "examples": [
+            {
+              "en": "She rents a small apartment downtown.",
+              "vi": "Cô ấy thuê một căn hộ nhỏ ở trung tâm.",
+              "category": "Home"
+            },
+            {
+              "en": "Their apartment has a beautiful city view.",
+              "vi": "Căn hộ của họ có tầm nhìn thành phố đẹp.",
+              "category": "Home"
+            }
+          ]
+        },
+        {
+          "vi": "Khu căn hộ, tòa nhà có nhiều đơn vị nhà ở",
+          "examples": [
+            {
+              "en": "The apartment building has twenty floors.",
+              "vi": "Tòa nhà căn hộ có hai mươi tầng.",
+              "category": "Home"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Urban housing · apartment",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why did you choose this particular apartment building despite alternative downtown options offering substantially lower monthly rental rates throughout your demanding apartment hunting process recently?",
+              "vi": "Tại sao bạn chọn tòa nhà căn hộ cụ thể này bất chấp các lựa chọn trung tâm thay thế cung cấp tỷ giá thuê hàng tháng thấp hơn đáng kể trong quá trình tìm kiếm căn hộ đòi hỏi của bạn gần đây?",
+              "vocabs": [
+                "apartment building",
+                "downtown options",
+                "rental rates",
+                "apartment hunting"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "This particular apartment offers exceptional value combining superior architectural design alongside dedicated community amenities throughout building common areas remarkably comprehensively. Despite slightly elevated monthly rental costs, energy-efficient construction, included parking accommodations, and integrated wellness facilities provide substantial lifestyle benefits surpassing cheaper apartment alternatives lacking comparable infrastructure features measurably across demanding metropolitan housing market environments competitively.",
+              "vi": "Căn hộ cụ thể này cung cấp giá trị đặc biệt kết hợp thiết kế kiến trúc vượt trội cùng với các tiện ích cộng đồng chuyên dụng trong các khu vực chung của tòa nhà một cách toàn diện đáng chú ý. Mặc dù chi phí thuê hàng tháng cao hơn một chút, xây dựng tiết kiệm năng lượng, chỗ đỗ xe đi kèm và các cơ sở sức khỏe tích hợp cung cấp các lợi ích lối sống đáng kể vượt qua các căn hộ thay thế rẻ hơn thiếu các tính năng cơ sở hạ tầng có thể so sánh được một cách có thể đo lường được qua các môi trường thị trường nhà ở đô thị đòi hỏi một cách cạnh tranh.",
+              "vocabs": [
+                "apartment",
+                "architectural design",
+                "community amenities",
+                "energy-efficient",
+                "parking accommodations",
+                "wellness facilities"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How does living throughout this expensive luxury apartment complex genuinely affect your overall quality of life compared to previous more affordable residential housing arrangements?",
+              "vi": "Việc sống khắp khu căn hộ hạng sang đắt tiền này ảnh hưởng chân thực đến chất lượng cuộc sống tổng thể của bạn so với các sắp xếp nhà ở dân cư có giá phải chăng hơn trước đây như thế nào?",
+              "vocabs": [
+                "apartment complex",
+                "luxury",
+                "quality of life",
+                "residential housing arrangements"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Living throughout this thoughtfully designed apartment substantially elevated my daily experience providing meaningful psychological benefits supporting demanding professional productivity successfully. Quiet study areas, dedicated fitness centers, and beautifully landscaped courtyards create restorative environments enabling genuine work-life balance previously impossible throughout cramped budget apartment configurations lacking essential lifestyle infrastructure supporting modern professional remote work arrangements meaningfully.",
+              "vi": "Sống trong căn hộ được thiết kế chu đáo này đã nâng cao đáng kể trải nghiệm hàng ngày của tôi cung cấp các lợi ích tâm lý có ý nghĩa hỗ trợ năng suất chuyên nghiệp đòi hỏi một cách thành công. Các khu vực học tập yên tĩnh, các trung tâm thể dục chuyên dụng và sân trong được tạo cảnh quan đẹp đẽ tạo ra môi trường phục hồi cho phép cân bằng cuộc sống công việc chân thực trước đây không thể trong các cấu hình căn hộ ngân sách chật hẹp thiếu cơ sở hạ tầng lối sống thiết yếu hỗ trợ các sắp xếp làm việc từ xa chuyên nghiệp hiện đại một cách có ý nghĩa.",
+              "vocabs": [
+                "apartment",
+                "psychological benefits",
+                "fitness centers",
+                "landscaped courtyards",
+                "restorative environments",
+                "remote work arrangements"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "word": "arrange",
+      "phonetic": "/əˈreɪndʒ/",
+      "pos": "Verb",
+      "frequency": 6,
+      "categories": [
+        "General",
+        "Organization"
+      ],
+      "meanings": [
+        {
+          "vi": "Sắp xếp, tổ chức theo trật tự nào đó",
+          "examples": [
+            {
+              "en": "Please arrange the books alphabetically.",
+              "vi": "Vui lòng sắp xếp các cuốn sách theo thứ tự bảng chữ cái.",
+              "category": "Education"
+            },
+            {
+              "en": "She arranged flowers beautifully on the table.",
+              "vi": "Cô ấy đã sắp xếp hoa đẹp đẽ trên bàn.",
+              "category": "Home"
+            }
+          ]
+        },
+        {
+          "vi": "Tổ chức, lên kế hoạch cho sự kiện",
+          "examples": [
+            {
+              "en": "We must arrange the meeting before Friday.",
+              "vi": "Chúng ta phải sắp xếp cuộc họp trước thứ Sáu.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Wedding planning · arrange",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How meticulously did you arrange your destination wedding ceremony coordinating numerous international guests across multiple challenging time zones throughout demanding extensive planning months last year?",
+              "vi": "Bạn đã sắp xếp lễ cưới điểm đến của mình tỉ mỉ như thế nào phối hợp nhiều khách quốc tế qua nhiều múi giờ thử thách trong các tháng lập kế hoạch rộng rãi đòi hỏi năm ngoái?",
+              "vocabs": [
+                "arrange",
+                "destination wedding ceremony",
+                "international guests",
+                "challenging time zones"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Arranging this complex international celebration required eighteen months coordinating professional vendors, securing suitable venues, and managing detailed logistics across multiple countries simultaneously demanding considerable patience persistently. Hiring experienced wedding planners specializing throughout international destination celebrations, negotiating multilingual contracts professionally, and arranging comprehensive guest accommodations alongside transportation services successfully transformed potentially overwhelming planning chaos into genuinely memorable celebratory experiences exceeding expectations throughout extensive preparation months.",
+              "vi": "Sắp xếp lễ kỷ niệm quốc tế phức tạp này đòi hỏi mười tám tháng phối hợp các nhà cung cấp chuyên nghiệp, đảm bảo các địa điểm phù hợp và quản lý hậu cần chi tiết qua nhiều quốc gia đồng thời đòi hỏi sự kiên nhẫn đáng kể một cách kiên trì. Thuê các nhà lập kế hoạch đám cưới có kinh nghiệm chuyên về các lễ kỷ niệm điểm đến quốc tế, đàm phán hợp đồng đa ngôn ngữ một cách chuyên nghiệp và sắp xếp chỗ ở khách toàn diện cùng với các dịch vụ giao thông đã biến đổi thành công sự hỗn loạn lập kế hoạch có thể choáng ngợp thành những trải nghiệm kỷ niệm đáng nhớ thực sự vượt qua kỳ vọng trong các tháng chuẩn bị rộng rãi.",
+              "vocabs": [
+                "arranging",
+                "professional vendors",
+                "suitable venues",
+                "multilingual contracts",
+                "guest accommodations",
+                "transportation services"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What unforeseen challenges complicated efforts to arrange this elaborate destination wedding throughout demanding international logistical coordination periods successfully achieving meaningful outcomes?",
+              "vi": "Những thử thách không lường trước nào làm phức tạp các nỗ lực sắp xếp đám cưới điểm đến công phu này trong các giai đoạn phối hợp hậu cần quốc tế đòi hỏi đạt được các kết quả có ý nghĩa thành công?",
+              "vocabs": [
+                "arrange",
+                "elaborate destination wedding",
+                "international logistical coordination"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Unexpected pandemic restrictions forced multiple complete itinerary modifications requiring rearranging confirmed venues, rescheduling participating guests, and renegotiating vendor contracts repeatedly throughout demanding uncertain periods constantly. Maintaining flexible contingency planning, building strong communication frameworks with patient stakeholders, and arranging comprehensive travel insurance protection ultimately enabled genuinely successful celebration completion despite unprecedented logistical challenges encountered throughout demanding preparation timelines internationally.",
+              "vi": "Các hạn chế đại dịch bất ngờ đã buộc nhiều sửa đổi lịch trình hoàn chỉnh yêu cầu sắp xếp lại các địa điểm đã xác nhận, lên lịch lại các khách tham gia và đàm phán lại các hợp đồng nhà cung cấp lặp đi lặp lại trong các giai đoạn không chắc chắn đòi hỏi liên tục. Duy trì lập kế hoạch dự phòng linh hoạt, xây dựng các khuôn khổ giao tiếp mạnh mẽ với các bên liên quan kiên nhẫn và sắp xếp bảo vệ bảo hiểm du lịch toàn diện cuối cùng đã cho phép hoàn thành lễ kỷ niệm thực sự thành công bất chấp các thử thách hậu cần chưa từng có gặp phải trong các mốc thời gian chuẩn bị đòi hỏi quốc tế.",
+              "vocabs": [
+                "rearranging",
+                "itinerary modifications",
+                "vendor contracts",
+                "contingency planning",
+                "communication frameworks",
+                "travel insurance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 249,
+      "word": "art",
+      "phonetic": "/ɑːt/",
+      "pos": "Noun",
+      "frequency": 5,
+      "categories": [
+        "General",
+        "Culture"
+      ],
+      "meanings": [
+        {
+          "vi": "Nghệ thuật, sự sáng tạo về thẩm mỹ",
+          "examples": [
+            {
+              "en": "Modern art often surprises viewers.",
+              "vi": "Nghệ thuật hiện đại thường làm người xem ngạc nhiên.",
+              "category": "Arts"
+            },
+            {
+              "en": "She studied art history at university.",
+              "vi": "Cô ấy đã học lịch sử nghệ thuật ở đại học.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Kỹ năng, sự khéo léo trong việc gì đó",
+          "examples": [
+            {
+              "en": "He mastered the art of public speaking.",
+              "vi": "Anh ấy đã thành thạo nghệ thuật phát biểu công khai.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Public art curation · art",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How does your municipal art curation team thoughtfully select genuinely diverse public installations representing various cultural perspectives throughout urban metropolitan downtown neighborhoods?",
+              "vi": "Đội phụ trách nghệ thuật thành phố của bạn lựa chọn chu đáo các tác phẩm công cộng thực sự đa dạng đại diện cho các quan điểm văn hóa khác nhau khắp các khu phố trung tâm đô thị như thế nào?",
+              "vocabs": [
+                "art curation",
+                "municipal",
+                "public installations",
+                "cultural perspectives",
+                "metropolitan downtown"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Our committee actively engages diverse community members throughout extensive consultations identifying meaningful art installations representing authentic cultural heritage across multiple historically marginalized populations substantively. Soliciting artist proposals from immigrant communities, indigenous artists, and emerging young creators ensures public art genuinely reflects neighborhood demographic complexity surpassing previous tokenistic representation merely emphasizing dominant cultural traditions throughout established urban landscape environments meaningfully.",
+              "vi": "Ủy ban của chúng tôi tích cực tương tác với các thành viên cộng đồng đa dạng trong các cuộc tham vấn rộng rãi xác định các tác phẩm nghệ thuật ý nghĩa đại diện cho di sản văn hóa chân thực qua nhiều quần thể bị thiệt thòi lịch sử một cách thực chất. Thu hút đề xuất nghệ sĩ từ các cộng đồng nhập cư, các nghệ sĩ bản địa và các nhà sáng tạo trẻ mới nổi đảm bảo nghệ thuật công cộng thực sự phản ánh sự phức tạp nhân khẩu học khu phố vượt qua sự đại diện hình thức trước đây chỉ nhấn mạnh các truyền thống văn hóa chiếm ưu thế trong các môi trường cảnh quan đô thị đã thành lập một cách có ý nghĩa.",
+              "vocabs": [
+                "art installations",
+                "community members",
+                "cultural heritage",
+                "marginalized populations",
+                "indigenous artists",
+                "tokenistic representation"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How does public art meaningfully contribute toward overall urban livability genuinely benefiting permanent residents throughout demanding commercial neighborhood gentrification transition periods?",
+              "vi": "Nghệ thuật công cộng đóng góp ý nghĩa hướng đến tính sống động đô thị tổng thể chân thực mang lại lợi ích cho cư dân thường trú trong các giai đoạn chuyển đổi quá trình thay đổi đô thị thương mại đòi hỏi như thế nào?",
+              "vocabs": [
+                "art",
+                "urban livability",
+                "permanent residents",
+                "neighborhood gentrification"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Strategic public art initiatives transform impersonal commercial districts into vibrant culturally rich community spaces substantially elevating quality of life throughout established residential environments meaningfully. Engaging local artists creating commissioned murals depicting authentic neighborhood histories, hosting accessible community art workshops regularly, and supporting underrepresented artistic voices builds substantively deeper cultural connections strengthening community resilience preventing displacement throughout demanding gentrification pressures continually challenging vulnerable urban populations historically.",
+              "vi": "Các sáng kiến nghệ thuật công cộng chiến lược biến đổi các quận thương mại không mang tính cá nhân thành các không gian cộng đồng phong phú văn hóa sống động nâng cao đáng kể chất lượng cuộc sống trong các môi trường dân cư đã thành lập một cách có ý nghĩa. Tương tác với các nghệ sĩ địa phương tạo ra các bức tranh tường được đặt hàng mô tả lịch sử khu phố chân thực, tổ chức các hội thảo nghệ thuật cộng đồng dễ tiếp cận thường xuyên và hỗ trợ các tiếng nói nghệ thuật thiệt thòi xây dựng các kết nối văn hóa sâu sắc hơn thực chất củng cố sức bền cộng đồng ngăn ngừa di dời trong các áp lực thay đổi đô thị đòi hỏi liên tục thử thách các quần thể đô thị dễ bị tổn thương lịch sử.",
+              "vocabs": [
+                "art",
+                "commercial districts",
+                "cultural",
+                "commissioned murals",
+                "neighborhood histories",
+                "community resilience"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "word": "aspect",
+      "phonetic": "/ˈæspekt/",
+      "pos": "Noun",
+      "frequency": 5,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Khía cạnh, mặt hoặc phương diện của vấn đề",
+          "examples": [
+            {
+              "en": "Consider every aspect before deciding.",
+              "vi": "Hãy cân nhắc mọi khía cạnh trước khi quyết định.",
+              "category": "Communication"
+            },
+            {
+              "en": "Health is an important aspect of life.",
+              "vi": "Sức khỏe là một khía cạnh quan trọng của cuộc sống.",
+              "category": "Health"
+            }
+          ]
+        },
+        {
+          "vi": "Vẻ ngoài, hình dạng hoặc trạng thái xuất hiện",
+          "examples": [
+            {
+              "en": "The valley had a peaceful aspect.",
+              "vi": "Thung lũng có vẻ ngoài yên bình.",
+              "category": "Nature"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Comprehensive analysis · aspect",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Which fundamental aspect of climate adaptation strategy deserves prioritized consideration throughout demanding contemporary corporate sustainability planning processes affecting multinational operations globally?",
+              "vi": "Khía cạnh cơ bản nào của chiến lược thích ứng khí hậu xứng đáng được xem xét ưu tiên trong các quy trình lập kế hoạch bền vững doanh nghiệp đương đại đòi hỏi ảnh hưởng đến các hoạt động đa quốc gia trên toàn cầu?",
+              "vocabs": [
+                "aspect",
+                "climate adaptation",
+                "corporate sustainability",
+                "multinational operations"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "The most critical aspect involves comprehensively integrating climate risk assessment throughout every operational decision-making process spanning multiple business divisions internationally throughout demanding strategic planning cycles. Examining geographical aspect vulnerabilities, supply chain disruption probabilities, and workforce displacement scenarios systematically enables organizations to develop substantively resilient adaptation frameworks protecting business continuity against escalating environmental challenges over coming critical decades meaningfully.",
+              "vi": "Khía cạnh quan trọng nhất bao gồm tích hợp toàn diện đánh giá rủi ro khí hậu trong mọi quy trình ra quyết định vận hành trải dài qua nhiều bộ phận kinh doanh quốc tế trong các chu kỳ lập kế hoạch chiến lược đòi hỏi. Kiểm tra các điểm yếu khía cạnh địa lý, xác suất gián đoạn chuỗi cung ứng và các kịch bản di dời lực lượng lao động một cách có hệ thống cho phép các tổ chức phát triển các khuôn khổ thích ứng kiên cường thực chất bảo vệ tính liên tục kinh doanh chống lại các thử thách môi trường leo thang trong các thập kỷ quan trọng sắp tới một cách có ý nghĩa.",
+              "vocabs": [
+                "aspect",
+                "climate risk assessment",
+                "geographical aspect",
+                "supply chain disruption",
+                "workforce displacement",
+                "adaptation frameworks"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Which financial aspect of climate adaptation strategies typically generates the greatest resistance throughout traditional corporate boardroom investment decision-making conversations historically?",
+              "vi": "Khía cạnh tài chính nào của các chiến lược thích ứng khí hậu thường tạo ra sự kháng cự lớn nhất trong các cuộc trò chuyện ra quyết định đầu tư phòng họp doanh nghiệp truyền thống lịch sử?",
+              "vocabs": [
+                "aspect",
+                "financial",
+                "climate adaptation",
+                "boardroom investment decision-making"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Substantial upfront capital expenditure requirements remain the most contentious aspect generating considerable resistance throughout traditional shareholder governance frameworks emphasizing immediate quarterly profit maximization throughout standard public company reporting cycles. Convincing skeptical investors that long-term climate adaptation aspect investments produce substantive returns surpassing reactive disaster recovery costs requires sophisticated financial modeling alongside transparent communication strategies persuading governance committees prioritizing sustainable value creation eventually meaningful throughout demanding boardroom negotiations.",
+              "vi": "Yêu cầu chi tiêu vốn trả trước đáng kể vẫn là khía cạnh gây tranh cãi nhất tạo ra sự kháng cự đáng kể trong các khuôn khổ quản trị cổ đông truyền thống nhấn mạnh tối đa hóa lợi nhuận hàng quý ngay lập tức qua các chu kỳ báo cáo công ty đại chúng tiêu chuẩn. Thuyết phục các nhà đầu tư hoài nghi rằng các khoản đầu tư khía cạnh thích ứng khí hậu dài hạn tạo ra lợi nhuận thực chất vượt qua chi phí phục hồi thảm họa phản ứng đòi hỏi mô hình hóa tài chính tinh vi cùng với các chiến lược giao tiếp minh bạch thuyết phục các ủy ban quản trị ưu tiên tạo ra giá trị bền vững cuối cùng có ý nghĩa trong các cuộc đàm phán phòng họp đòi hỏi.",
+              "vocabs": [
+                "aspect",
+                "capital expenditure",
+                "shareholder governance",
+                "profit maximization",
+                "disaster recovery",
+                "value creation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 251,
+      "word": "associate",
+      "phonetic": "/əˈsəʊsieɪt/",
+      "pos": "Verb, Noun",
+      "frequency": 5,
+      "categories": [
+        "Business",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Liên kết, kết nối hai sự việc với nhau",
+          "examples": [
+            {
+              "en": "Many people associate Paris with romance.",
+              "vi": "Nhiều người liên tưởng Paris với sự lãng mạn.",
+              "category": "Travel"
+            },
+            {
+              "en": "She associates with creative professionals.",
+              "vi": "Cô ấy giao du với các chuyên gia sáng tạo.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Cộng sự, người làm việc cùng",
+          "examples": [
+            {
+              "en": "He introduced me to his business associate.",
+              "vi": "Anh ấy giới thiệu tôi với cộng sự kinh doanh của mình.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Professional networking · associate",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How carefully should young entrepreneurs choose business associates throughout demanding early company formation years affecting long-term venture success significantly?",
+              "vi": "Các doanh nhân trẻ nên chọn các cộng sự kinh doanh cẩn thận như thế nào trong các năm hình thành công ty ban đầu đòi hỏi ảnh hưởng đến thành công dự án dài hạn đáng kể?",
+              "vocabs": [
+                "associates",
+                "young entrepreneurs",
+                "company formation",
+                "long-term venture success"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Choosing trusted associates requires evaluating personal integrity alongside complementary professional skills throughout extensive collaborative working relationships substantially. Examining track records, verifying ethical reputations through mutual references, and ensuring genuine alignment on fundamental business values prevents devastating partnership conflicts undermining promising entrepreneurial ventures throughout demanding subsequent operational decades meaningfully.",
+              "vi": "Chọn các cộng sự đáng tin cậy đòi hỏi đánh giá tính chính trực cá nhân cùng với các kỹ năng chuyên nghiệp bổ sung trong các mối quan hệ làm việc hợp tác rộng rãi một cách đáng kể. Kiểm tra hồ sơ thành tích, xác minh danh tiếng đạo đức qua các tham chiếu lẫn nhau và đảm bảo sự liên kết chân thực về các giá trị kinh doanh cơ bản ngăn ngừa các xung đột đối tác tàn khốc làm suy yếu các dự án khởi nghiệp đầy hứa hẹn trong các thập kỷ vận hành tiếp theo đòi hỏi một cách có ý nghĩa.",
+              "vocabs": [
+                "associates",
+                "personal integrity",
+                "professional skills",
+                "track records",
+                "ethical reputations",
+                "partnership conflicts"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Do you typically associate primarily with industry peers sharing similar professional backgrounds or pursue diverse intellectual connections expanding broader perspectives professionally?",
+              "vi": "Bạn thường giao du chủ yếu với các đồng nghiệp ngành chia sẻ các nền tảng chuyên nghiệp tương tự hay theo đuổi các kết nối trí tuệ đa dạng mở rộng các quan điểm rộng hơn về mặt chuyên nghiệp?",
+              "vocabs": [
+                "associate",
+                "industry peers",
+                "professional backgrounds",
+                "intellectual connections"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Successful executives consistently associate broadly across multiple industries expanding strategic thinking capabilities beyond conventional sector boundaries substantively. Engaging diverse professional communities, attending interdisciplinary conferences, and cultivating meaningful relationships with creative artists, government policymakers, and scientific researchers enriches business decision-making throughout demanding strategic planning environments substantially yielding remarkable innovative breakthroughs surpassing narrowly specialized professional networks substantially.",
+              "vi": "Các giám đốc thành công liên tục giao du rộng rãi qua nhiều ngành mở rộng các khả năng tư duy chiến lược vượt qua các ranh giới ngành thông thường một cách thực chất. Tương tác với các cộng đồng chuyên nghiệp đa dạng, tham dự các hội nghị liên ngành và nuôi dưỡng các mối quan hệ ý nghĩa với các nghệ sĩ sáng tạo, các nhà hoạch định chính sách chính phủ và các nhà nghiên cứu khoa học làm phong phú việc ra quyết định kinh doanh trong các môi trường lập kế hoạch chiến lược đòi hỏi đáng kể mang lại những đột phá đổi mới đáng chú ý vượt qua các mạng lưới chuyên nghiệp chuyên ngành hẹp.",
+              "vocabs": [
+                "associate",
+                "strategic thinking",
+                "interdisciplinary conferences",
+                "creative artists",
+                "government policymakers",
+                "scientific researchers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 252,
+      "word": "access",
+      "phonetic": "/ˈækses/",
+      "pos": "Noun, Verb",
+      "frequency": 5,
+      "categories": [
+        "Technology",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Quyền truy cập, khả năng tiếp cận điều gì đó",
+          "examples": [
+            {
+              "en": "Students need access to good libraries.",
+              "vi": "Học sinh cần được tiếp cận thư viện tốt.",
+              "category": "Education"
+            },
+            {
+              "en": "Please access the document folder online.",
+              "vi": "Vui lòng truy cập thư mục tài liệu trực tuyến.",
+              "category": "Technology"
+            }
+          ]
+        },
+        {
+          "vi": "Lối vào, đường tiếp cận một địa điểm",
+          "examples": [
+            {
+              "en": "The hospital provides emergency access.",
+              "vi": "Bệnh viện cung cấp lối vào khẩn cấp.",
+              "category": "Health"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Digital divide · access",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How seriously does limited internet access throughout rural impoverished communities affect educational opportunities for talented children worldwide throughout developing economic contexts globally?",
+              "vi": "Việc tiếp cận internet hạn chế khắp các cộng đồng nông thôn nghèo khó ảnh hưởng nghiêm trọng đến cơ hội giáo dục cho trẻ em tài năng trên toàn thế giới trong các bối cảnh kinh tế đang phát triển toàn cầu như thế nào?",
+              "vocabs": [
+                "access",
+                "rural impoverished",
+                "educational opportunities",
+                "developing economic contexts"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Inadequate digital access fundamentally limits future career trajectories for ambitious rural children despite genuine intellectual capabilities matching urban metropolitan peers academically. Lacking reliable internet access prevents enrolling in online courses, accessing digital research materials, and engaging with international educational communities increasingly necessary throughout modern globalized professional pathways requiring substantial technological fluency demonstrably.",
+              "vi": "Truy cập kỹ thuật số không đủ về cơ bản hạn chế các quỹ đạo nghề nghiệp tương lai cho trẻ em nông thôn đầy hoài bão bất chấp các khả năng trí tuệ chân thực phù hợp với các bạn đồng trang lứa đô thị về mặt học thuật. Thiếu truy cập internet đáng tin cậy ngăn cản đăng ký các khóa học trực tuyến, truy cập các tài liệu nghiên cứu kỹ thuật số và tương tác với các cộng đồng giáo dục quốc tế ngày càng cần thiết trong các con đường chuyên nghiệp toàn cầu hóa hiện đại đòi hỏi sự thành thạo công nghệ đáng kể một cách rõ ràng.",
+              "vocabs": [
+                "access",
+                "digital",
+                "career trajectories",
+                "online courses",
+                "research materials",
+                "technological fluency"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What innovative initiatives effectively expand technology access throughout underserved regions despite limited infrastructure investment budgets restricting governmental capabilities significantly nationally?",
+              "vi": "Những sáng kiến đổi mới nào mở rộng hiệu quả việc tiếp cận công nghệ khắp các khu vực không được phục vụ đầy đủ bất chấp ngân sách đầu tư cơ sở hạ tầng hạn chế hạn chế các khả năng chính phủ đáng kể trên toàn quốc?",
+              "vocabs": [
+                "access",
+                "innovative initiatives",
+                "underserved regions",
+                "infrastructure investment"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Satellite-based broadband networks rapidly expand reliable digital access throughout previously isolated geographical regions transforming rural educational landscapes meaningfully across multiple countries comprehensively. Combining low-orbit satellite technology, community-funded digital learning centers, and subsidized device distribution programs enables children accessing identical educational resources previously exclusively available throughout privileged urban metropolitan environments substantively improving generational educational opportunities considerably.",
+              "vi": "Các mạng băng thông rộng dựa trên vệ tinh nhanh chóng mở rộng truy cập kỹ thuật số đáng tin cậy khắp các khu vực địa lý trước đây bị cô lập biến đổi cảnh quan giáo dục nông thôn một cách có ý nghĩa qua nhiều quốc gia một cách toàn diện. Kết hợp công nghệ vệ tinh quỹ đạo thấp, các trung tâm học tập kỹ thuật số được tài trợ bởi cộng đồng và các chương trình phân phối thiết bị được trợ cấp cho phép trẻ em tiếp cận các tài nguyên giáo dục giống hệt trước đây độc quyền có sẵn trong các môi trường đô thị đặc quyền cải thiện đáng kể các cơ hội giáo dục thế hệ một cách đáng kể.",
+              "vocabs": [
+                "access",
+                "satellite-based broadband",
+                "geographical regions",
+                "low-orbit satellite",
+                "digital learning centers",
+                "device distribution"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 253,
+      "word": "admit",
+      "phonetic": "/ədˈmɪt/",
+      "pos": "Verb",
+      "frequency": 4,
+      "categories": [
+        "Communication",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Thừa nhận, công nhận điều gì đó là đúng",
+          "examples": [
+            {
+              "en": "He admitted he was wrong about the schedule.",
+              "vi": "Anh ấy đã thừa nhận mình sai về lịch trình.",
+              "category": "Communication"
+            },
+            {
+              "en": "She admitted feeling nervous before the speech.",
+              "vi": "Cô ấy đã thừa nhận cảm thấy lo lắng trước bài phát biểu.",
+              "category": "Emotion"
+            }
+          ]
+        },
+        {
+          "vi": "Nhận vào, cho phép tham gia tổ chức",
+          "examples": [
+            {
+              "en": "Stanford admitted three thousand new students.",
+              "vi": "Stanford đã nhận ba nghìn sinh viên mới.",
+              "category": "Education"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Leadership accountability · admit",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why is it particularly difficult for senior executives to genuinely admit professional mistakes publicly throughout demanding corporate communication scenarios surrounded by shareholders constantly?",
+              "vi": "Tại sao việc các giám đốc cấp cao thực sự thừa nhận các sai lầm chuyên nghiệp công khai lại đặc biệt khó khăn trong các kịch bản giao tiếp doanh nghiệp đòi hỏi được bao quanh bởi các cổ đông liên tục?",
+              "vocabs": [
+                "admit",
+                "senior executives",
+                "professional mistakes",
+                "corporate communication",
+                "shareholders"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Executives reluctantly admit mistakes fearing reputation damage, potential shareholder litigation, and consequent professional career consequences threatening continued leadership positions throughout publicly traded organizations substantively. Cultural narratives glorifying infallible leadership combined with hierarchical organizational structures discourage substantive accountability admitting authentic professional vulnerabilities undermining genuine organizational learning opportunities throughout demanding strategic decision-making environments meaningfully.",
+              "vi": "Các giám đốc miễn cưỡng thừa nhận các sai lầm sợ tổn hại danh tiếng, kiện tụng cổ đông tiềm năng và hậu quả nghề nghiệp tiếp theo đe dọa các vị trí lãnh đạo tiếp tục trong các tổ chức được giao dịch công khai một cách thực chất. Các câu chuyện văn hóa tôn vinh lãnh đạo không thể sai lầm kết hợp với các cấu trúc tổ chức thứ bậc không khuyến khích trách nhiệm thực chất thừa nhận các điểm yếu chuyên nghiệp chân thực làm suy yếu các cơ hội học tập tổ chức chân thực trong các môi trường ra quyết định chiến lược đòi hỏi một cách có ý nghĩa.",
+              "vocabs": [
+                "admit",
+                "reputation damage",
+                "shareholder litigation",
+                "career consequences",
+                "infallible leadership",
+                "organizational learning"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What organizational benefits emerge when leaders consistently demonstrate willingness to admit personal professional shortcomings throughout demanding corporate environments encouraging substantive cultural transformation meaningfully?",
+              "vi": "Những lợi ích tổ chức nào xuất hiện khi các nhà lãnh đạo liên tục thể hiện sự sẵn lòng thừa nhận các thiếu sót chuyên nghiệp cá nhân trong các môi trường doanh nghiệp đòi hỏi khuyến khích sự chuyển đổi văn hóa thực chất một cách có ý nghĩa?",
+              "vocabs": [
+                "admit",
+                "personal professional shortcomings",
+                "corporate environments",
+                "cultural transformation"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Leaders who readily admit mistakes build authentic organizational cultures substantially encouraging psychological safety throughout subordinate professional teams genuinely substantively. Modeling vulnerability appropriately, sharing honest learning experiences openly during regular communication sessions, and rewarding subordinate employees admitting mistakes constructively transforms organizational responses toward systemic improvement opportunities benefiting long-term institutional resilience throughout demanding competitive market environments measurably.",
+              "vi": "Các nhà lãnh đạo sẵn sàng thừa nhận các sai lầm xây dựng các văn hóa tổ chức chân thực đáng kể khuyến khích an toàn tâm lý trong các đội ngũ chuyên nghiệp cấp dưới một cách chân thực thực chất. Làm gương cho sự dễ bị tổn thương một cách phù hợp, chia sẻ các trải nghiệm học tập trung thực một cách cởi mở trong các phiên giao tiếp thường xuyên và khen thưởng nhân viên cấp dưới thừa nhận sai lầm một cách xây dựng biến đổi các phản ứng tổ chức hướng đến các cơ hội cải thiện hệ thống mang lại lợi ích cho khả năng phục hồi tổ chức dài hạn trong các môi trường thị trường cạnh tranh đòi hỏi một cách có thể đo lường được.",
+              "vocabs": [
+                "admit",
+                "organizational cultures",
+                "psychological safety",
+                "subordinate teams",
+                "honest learning",
+                "institutional resilience"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 254,
+      "word": "advise",
+      "phonetic": "/ədˈvaɪz/",
+      "pos": "Verb",
+      "frequency": 4,
+      "categories": [
+        "Communication",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Khuyên, đưa ra lời khuyên cho người khác",
+          "examples": [
+            {
+              "en": "Doctors advise patients about healthy living.",
+              "vi": "Bác sĩ khuyên bệnh nhân về cuộc sống lành mạnh.",
+              "category": "Health"
+            },
+            {
+              "en": "She advised me to take the new opportunity.",
+              "vi": "Cô ấy đã khuyên tôi nắm lấy cơ hội mới.",
+              "category": "Work"
+            }
+          ]
+        },
+        {
+          "vi": "Tư vấn, hướng dẫn chuyên môn",
+          "examples": [
+            {
+              "en": "Financial experts advise about retirement planning.",
+              "vi": "Các chuyên gia tài chính tư vấn về lập kế hoạch hưu trí.",
+              "category": "Finance"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Financial consultation · advise",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why do financial advisors increasingly advise younger investors prioritizing diversified retirement accounts throughout volatile contemporary stock market conditions affecting traditional savings strategies substantially?",
+              "vi": "Tại sao các cố vấn tài chính ngày càng khuyên các nhà đầu tư trẻ ưu tiên các tài khoản hưu trí đa dạng hóa trong các điều kiện thị trường chứng khoán đương đại biến động ảnh hưởng đến các chiến lược tiết kiệm truyền thống đáng kể?",
+              "vocabs": [
+                "advise",
+                "financial advisors",
+                "younger investors",
+                "diversified retirement accounts",
+                "stock market conditions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Modern advisors strongly advise prioritizing diversified portfolios because traditional investment paradigms inadequately protect against unprecedented contemporary economic uncertainties affecting long-term wealth accumulation pathways significantly. Recommending balanced asset allocation across multiple investment categories, encouraging consistent contribution patterns regardless of market fluctuations, and diversifying across international markets helps young investors navigate substantially volatile financial environments preserving meaningful retirement security throughout coming demanding decades effectively.",
+              "vi": "Các cố vấn hiện đại mạnh mẽ khuyên ưu tiên các danh mục đầu tư đa dạng hóa vì các mô hình đầu tư truyền thống không đủ bảo vệ chống lại sự không chắc chắn kinh tế đương đại chưa từng có ảnh hưởng đến các con đường tích lũy tài sản dài hạn đáng kể. Khuyến nghị phân bổ tài sản cân bằng qua nhiều danh mục đầu tư, khuyến khích các mẫu đóng góp nhất quán bất kể biến động thị trường và đa dạng hóa qua các thị trường quốc tế giúp các nhà đầu tư trẻ điều hướng các môi trường tài chính biến động đáng kể bảo tồn an ninh hưu trí có ý nghĩa trong các thập kỷ đòi hỏi sắp tới một cách hiệu quả.",
+              "vocabs": [
+                "advise",
+                "diversified portfolios",
+                "investment paradigms",
+                "economic uncertainties",
+                "asset allocation",
+                "international markets"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How carefully should young professionals evaluate when advisors recommend ethically questionable speculative investments suggesting potentially aggressive higher returns throughout demanding market environments practically?",
+              "vi": "Các chuyên gia trẻ nên đánh giá cẩn thận như thế nào khi các cố vấn khuyến nghị các khoản đầu tư đầu cơ có vấn đề về đạo đức gợi ý lợi nhuận cao hơn tiềm năng mạnh mẽ trong các môi trường thị trường đòi hỏi một cách thực tế?",
+              "vocabs": [
+                "advisors",
+                "advise",
+                "ethically questionable",
+                "speculative investments",
+                "aggressive higher returns"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Discerning investors should verify professional credentials whenever financial advisors aggressively advise particularly risky speculative ventures requiring substantial upfront commitments without comprehensive transparent disclosure documentation supporting recommendations independently substantively. Seeking independent fiduciary opinions, examining commission incentive structures carefully, and verifying regulatory compliance prevents devastating financial losses commonly destroying inexperienced young professionals pursuing investments inappropriately recommended throughout exploitative advisory relationships across vulnerable demographic populations meaningfully.",
+              "vi": "Các nhà đầu tư sáng suốt nên xác minh các chứng chỉ chuyên nghiệp bất cứ khi nào các cố vấn tài chính mạnh mẽ khuyên các dự án đầu cơ đặc biệt rủi ro đòi hỏi các cam kết trả trước đáng kể mà không có tài liệu công bố minh bạch toàn diện hỗ trợ các khuyến nghị một cách độc lập thực chất. Tìm kiếm ý kiến ủy thác độc lập, kiểm tra các cấu trúc khuyến khích hoa hồng cẩn thận và xác minh tuân thủ quy định ngăn ngừa các tổn thất tài chính tàn khốc thường xuyên phá hủy các chuyên gia trẻ thiếu kinh nghiệm theo đuổi các khoản đầu tư được khuyến nghị không phù hợp trong các mối quan hệ tư vấn khai thác qua các quần thể nhân khẩu học dễ bị tổn thương một cách có ý nghĩa.",
+              "vocabs": [
+                "advise",
+                "professional credentials",
+                "speculative ventures",
+                "fiduciary opinions",
+                "commission incentive",
+                "regulatory compliance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 255,
+      "word": "alone",
+      "phonetic": "/əˈləʊn/",
+      "pos": "Adjective, Adverb",
+      "frequency": 4,
+      "categories": [
+        "General",
+        "Social"
+      ],
+      "meanings": [
+        {
+          "vi": "Một mình, không có ai khác bên cạnh",
+          "examples": [
+            {
+              "en": "She lives alone in the countryside.",
+              "vi": "Cô ấy sống một mình ở vùng nông thôn.",
+              "category": "Family"
+            },
+            {
+              "en": "I enjoy traveling alone occasionally.",
+              "vi": "Tôi thích đi du lịch một mình đôi khi.",
+              "category": "Travel"
+            }
+          ]
+        },
+        {
+          "vi": "Riêng, chỉ một thứ duy nhất",
+          "examples": [
+            {
+              "en": "Money alone cannot bring happiness.",
+              "vi": "Tiền bạc một mình không thể mang lại hạnh phúc.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Solo travel reflection · alone",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What profound personal insights did you gain throughout your extended six-month solo journey traveling alone across multiple challenging continents recently?",
+              "vi": "Những hiểu biết cá nhân sâu sắc nào bạn đã đạt được trong hành trình một mình kéo dài sáu tháng đi du lịch một mình qua nhiều châu lục thử thách gần đây?",
+              "vocabs": [
+                "alone",
+                "profound personal insights",
+                "solo journey",
+                "challenging continents"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Traveling alone fundamentally transformed my understanding regarding authentic self-reliance throughout demanding unfamiliar cultural environments encountered across multiple isolated geographical regions independently. Confronting personal psychological insecurities, navigating complicated language barriers without assistance, and making consequential decisions alone systematically developed unprecedented confidence supporting subsequent professional independence throughout substantial career advancement opportunities measurably afterward meaningfully.",
+              "vi": "Đi du lịch một mình đã biến đổi cơ bản sự hiểu biết của tôi về sự tự lực chân thực trong các môi trường văn hóa xa lạ đòi hỏi gặp phải qua nhiều khu vực địa lý bị cô lập một cách độc lập. Đối mặt với các sự không an toàn tâm lý cá nhân, điều hướng các rào cản ngôn ngữ phức tạp mà không có sự hỗ trợ và đưa ra các quyết định quan trọng một mình một cách có hệ thống đã phát triển sự tự tin chưa từng có hỗ trợ sự độc lập chuyên nghiệp tiếp theo trong các cơ hội tiến bộ nghề nghiệp đáng kể một cách có thể đo lường được sau đó một cách có ý nghĩa.",
+              "vocabs": [
+                "alone",
+                "authentic self-reliance",
+                "psychological insecurities",
+                "language barriers",
+                "professional independence",
+                "career advancement"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Did spending substantial time alone occasionally feel overwhelmingly isolating throughout demanding international solo travel experiences encountering challenging emotional moments routinely?",
+              "vi": "Việc dành thời gian đáng kể một mình đôi khi có cảm thấy cô lập áp đảo trong các trải nghiệm du lịch một mình quốc tế đòi hỏi gặp phải những khoảnh khắc cảm xúc thử thách thường xuyên không?",
+              "vocabs": [
+                "alone",
+                "isolating",
+                "international solo travel",
+                "emotional moments"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Loneliness occasionally overwhelmed me throughout especially difficult travel periods navigating completely alone across remote unfamiliar geographical regions encountering minimal human contact throughout extended traveling weeks substantially. Cultivating digital communication routines with supportive family members, maintaining detailed personal journals processing emotional experiences thoroughly, and connecting meaningfully with fellow international travelers through hostel community gathering spaces prevented prolonged isolation undermining substantively meaningful solo travel transformation opportunities effectively.",
+              "vi": "Sự cô đơn thỉnh thoảng làm tôi choáng ngợp trong các giai đoạn du lịch đặc biệt khó khăn điều hướng hoàn toàn một mình qua các khu vực địa lý xa lạ xa xôi gặp phải sự tiếp xúc con người tối thiểu trong các tuần du lịch kéo dài đáng kể. Nuôi dưỡng các thói quen giao tiếp kỹ thuật số với các thành viên gia đình hỗ trợ, duy trì các nhật ký cá nhân chi tiết xử lý các trải nghiệm cảm xúc một cách kỹ lưỡng và kết nối có ý nghĩa với các du khách quốc tế khác qua các không gian tụ họp cộng đồng nhà trọ đã ngăn ngừa sự cô lập kéo dài làm suy yếu các cơ hội biến đổi du lịch một mình thực chất có ý nghĩa một cách hiệu quả.",
+              "vocabs": [
+                "alone",
+                "loneliness",
+                "remote unfamiliar",
+                "digital communication",
+                "personal journals",
+                "international travelers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 256,
+      "word": "anger",
+      "phonetic": "/ˈæŋɡə(r)/",
+      "pos": "Noun, Verb",
+      "frequency": 4,
+      "categories": [
+        "General",
+        "Emotion"
+      ],
+      "meanings": [
+        {
+          "vi": "Sự tức giận, cảm xúc mạnh mẽ khi không hài lòng",
+          "examples": [
+            {
+              "en": "He expressed his anger calmly during the meeting.",
+              "vi": "Anh ấy đã thể hiện sự tức giận bình tĩnh trong cuộc họp.",
+              "category": "Emotion"
+            },
+            {
+              "en": "Her anger about the injustice motivated change.",
+              "vi": "Sự tức giận của cô ấy về sự bất công đã thúc đẩy thay đổi.",
+              "category": "Social"
+            }
+          ]
+        },
+        {
+          "vi": "Làm tức giận, gây cảm xúc giận dữ",
+          "examples": [
+            {
+              "en": "The unfair decision angered many citizens.",
+              "vi": "Quyết định không công bằng đã làm nhiều người dân tức giận.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Emotional regulation · anger",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How does your therapeutic counseling practice help angry clients constructively process intense anger throughout demanding emotional regulation training programs effectively over time?",
+              "vi": "Thực hành tư vấn trị liệu của bạn giúp các khách hàng tức giận xử lý sự tức giận dữ dội một cách xây dựng trong các chương trình đào tạo điều chỉnh cảm xúc đòi hỏi hiệu quả theo thời gian như thế nào?",
+              "vocabs": [
+                "anger",
+                "therapeutic counseling",
+                "intense",
+                "emotional regulation training"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Trained therapists help clients identify underlying emotional triggers fueling intense anger responses throughout intensive sustained therapeutic relationship development sessions consistently effectively. Teaching cognitive reframing techniques, practicing controlled breathing exercises during simulated anger scenarios, and exploring substantive childhood emotional patterns enables genuinely vulnerable individuals processing destructive anger responses constructively throughout extended therapeutic transformation journeys spanning multiple demanding rehabilitation months substantively.",
+              "vi": "Các nhà trị liệu được đào tạo giúp khách hàng xác định các tác nhân cảm xúc cơ bản thúc đẩy các phản ứng tức giận dữ dội trong các phiên phát triển mối quan hệ trị liệu bền vững chuyên sâu một cách nhất quán hiệu quả. Dạy các kỹ thuật định hình lại nhận thức, thực hành các bài tập thở có kiểm soát trong các kịch bản tức giận mô phỏng và khám phá các mẫu cảm xúc thời thơ ấu thực chất cho phép các cá nhân dễ bị tổn thương chân thực xử lý các phản ứng tức giận phá hoại một cách xây dựng trong các hành trình biến đổi trị liệu kéo dài trải qua nhiều tháng phục hồi đòi hỏi một cách thực chất.",
+              "vocabs": [
+                "anger",
+                "emotional triggers",
+                "cognitive reframing",
+                "breathing exercises",
+                "childhood emotional",
+                "therapeutic transformation"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What constructive practical strategies help everyday people effectively express anger appropriately throughout demanding interpersonal workplace conflicts without damaging important relationships permanently afterward?",
+              "vi": "Những chiến lược thực tế xây dựng nào giúp những người hàng ngày bày tỏ sự tức giận một cách thích hợp trong các xung đột công sở liên cá nhân đòi hỏi mà không làm tổn hại các mối quan hệ quan trọng vĩnh viễn sau đó?",
+              "vocabs": [
+                "anger",
+                "interpersonal workplace conflicts",
+                "important relationships"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Healthy anger expression requires pausing momentarily before reactive responses, articulating specific concerns clearly without personal attacks substantively, and seeking constructive resolution preserving working relationships meaningfully throughout difficult ongoing professional interactions. Using assertive communication frameworks combined with active listening prevents anger escalation transforming potentially destructive conflicts into productive growth opportunities benefiting both individuals involved substantially throughout demanding subsequent collaborative team interactions positively.",
+              "vi": "Biểu hiện tức giận lành mạnh đòi hỏi tạm dừng nhất thời trước các phản ứng phản xạ, diễn đạt các mối quan tâm cụ thể rõ ràng mà không có tấn công cá nhân thực chất và tìm kiếm giải quyết xây dựng bảo tồn các mối quan hệ làm việc một cách có ý nghĩa trong các tương tác chuyên nghiệp đang diễn ra khó khăn. Sử dụng các khuôn khổ giao tiếp quyết đoán kết hợp với lắng nghe tích cực ngăn ngừa sự leo thang tức giận biến đổi các xung đột có thể phá hoại thành các cơ hội phát triển năng suất mang lại lợi ích cho cả hai cá nhân liên quan đáng kể trong các tương tác đội ngũ cộng tác tiếp theo đòi hỏi một cách tích cực.",
+              "vocabs": [
+                "anger expression",
+                "reactive responses",
+                "personal attacks",
+                "constructive resolution",
+                "assertive communication",
+                "anger escalation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 257,
+      "word": "anyway",
+      "phonetic": "/ˈeniweɪ/",
+      "pos": "Adverb",
+      "frequency": 4,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Dù sao đi nữa, bất chấp hoàn cảnh",
+          "examples": [
+            {
+              "en": "It was raining, but we went out anyway.",
+              "vi": "Trời đang mưa, nhưng chúng tôi vẫn ra ngoài dù sao đi nữa.",
+              "category": "Nature"
+            },
+            {
+              "en": "Thanks for your help anyway.",
+              "vi": "Cảm ơn sự giúp đỡ của bạn dù sao đi nữa.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Chuyển chủ đề, bắt đầu nói chuyện khác",
+          "examples": [
+            {
+              "en": "Anyway, let's talk about something else.",
+              "vi": "Dù sao đi nữa, hãy nói chuyện về điều gì khác.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Determination story · anyway",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Despite serious obstacles facing your demanding research project, what motivated continuing your scientific investigation anyway through multiple challenging setback periods throughout extensive academic careers?",
+              "vi": "Bất chấp những trở ngại nghiêm trọng đối mặt với dự án nghiên cứu đòi hỏi của bạn, điều gì đã thúc đẩy tiếp tục cuộc điều tra khoa học của bạn dù sao đi nữa qua nhiều giai đoạn thất bại thử thách trong các sự nghiệp học thuật rộng rãi?",
+              "vocabs": [
+                "anyway",
+                "serious obstacles",
+                "demanding research project",
+                "scientific investigation",
+                "setback periods"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Despite catastrophic funding cuts threatening laboratory closure repeatedly, persisting anyway felt absolutely necessary because genuine scientific breakthrough opportunities consistently emerge specifically throughout difficult research periods historically. Continuing experimental investigations anyway despite challenging governmental policy obstacles, persistent technical equipment malfunctions, and demoralizing peer review rejection patterns ultimately yielded transformative research discoveries substantially benefiting countless future scientific advancement opportunities throughout subsequent academic decades meaningfully.",
+              "vi": "Bất chấp các cắt giảm tài trợ thảm khốc đe dọa đóng cửa phòng thí nghiệm lặp đi lặp lại, kiên trì dù sao đi nữa cảm thấy hoàn toàn cần thiết vì các cơ hội đột phá khoa học chân thực liên tục xuất hiện đặc biệt trong các giai đoạn nghiên cứu khó khăn lịch sử. Tiếp tục các cuộc điều tra thử nghiệm dù sao đi nữa bất chấp các trở ngại chính sách chính phủ thử thách, các trục trặc thiết bị kỹ thuật dai dẳng và các mẫu từ chối đánh giá đồng đẳng làm mất tinh thần cuối cùng đã mang lại các khám phá nghiên cứu biến đổi mang lại lợi ích đáng kể cho vô số cơ hội tiến bộ khoa học trong tương lai trong các thập kỷ học thuật tiếp theo một cách có ý nghĩa.",
+              "vocabs": [
+                "anyway",
+                "funding cuts",
+                "laboratory closure",
+                "breakthrough opportunities",
+                "equipment malfunctions",
+                "peer review rejection"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What practical strategies help young researchers persist anyway throughout demanding challenging scientific career pathways when confronting overwhelming obstacles potentially discouraging continued professional commitment substantively?",
+              "vi": "Những chiến lược thực tế nào giúp các nhà nghiên cứu trẻ kiên trì dù sao đi nữa trong các con đường sự nghiệp khoa học đòi hỏi thử thách khi đối mặt với những trở ngại choáng ngợp có thể không khuyến khích tiếp tục cam kết chuyên nghiệp thực chất?",
+              "vocabs": [
+                "anyway",
+                "young researchers",
+                "scientific career pathways",
+                "professional commitment"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Maintaining genuine intellectual curiosity anyway requires cultivating supportive academic communities, securing reliable diverse funding sources, and pursuing meaningful collaborative partnerships throughout demanding research career trajectories consistently substantively. Anyway, persisting research excellence transforming initial discouraging obstacles into substantive learning opportunities builds remarkable scientific resilience supporting transformative discovery achievements across demanding academic professional decades throughout international research environments meaningfully effectively.",
+              "vi": "Duy trì sự tò mò trí tuệ chân thực dù sao đi nữa đòi hỏi nuôi dưỡng các cộng đồng học thuật hỗ trợ, đảm bảo các nguồn tài trợ đa dạng đáng tin cậy và theo đuổi các quan hệ đối tác hợp tác có ý nghĩa trong các quỹ đạo sự nghiệp nghiên cứu đòi hỏi một cách nhất quán thực chất. Dù sao đi nữa, kiên trì xuất sắc nghiên cứu biến đổi các trở ngại không khuyến khích ban đầu thành các cơ hội học tập thực chất xây dựng khả năng phục hồi khoa học đáng chú ý hỗ trợ các thành tựu khám phá biến đổi qua các thập kỷ chuyên nghiệp học thuật đòi hỏi trong các môi trường nghiên cứu quốc tế một cách có ý nghĩa hiệu quả.",
+              "vocabs": [
+                "anyway",
+                "intellectual curiosity",
+                "supportive academic",
+                "funding sources",
+                "collaborative partnerships",
+                "scientific resilience"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 258,
+      "word": "appropriate",
+      "phonetic": "/əˈprəʊpriət/",
+      "pos": "Adjective",
+      "frequency": 3,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Thích hợp, phù hợp với hoàn cảnh",
+          "examples": [
+            {
+              "en": "Please wear appropriate clothing for the meeting.",
+              "vi": "Vui lòng mặc trang phục phù hợp cho cuộc họp.",
+              "category": "Work"
+            },
+            {
+              "en": "Her response was completely appropriate.",
+              "vi": "Câu trả lời của cô ấy hoàn toàn thích hợp.",
+              "category": "Communication"
+            }
+          ]
+        },
+        {
+          "vi": "Đúng đắn, tương ứng với mong đợi",
+          "examples": [
+            {
+              "en": "Choose appropriate words when speaking publicly.",
+              "vi": "Hãy chọn từ ngữ thích hợp khi phát biểu công khai.",
+              "category": "Communication"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Cross-cultural etiquette · appropriate",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What appropriate professional behavior should international business travelers carefully demonstrate throughout demanding meetings with traditional Japanese corporate executives respecting longstanding cultural conventions appropriately?",
+              "vi": "Hành vi chuyên nghiệp thích hợp nào các du khách kinh doanh quốc tế nên thể hiện cẩn thận trong các cuộc họp đòi hỏi với các giám đốc doanh nghiệp Nhật Bản truyền thống tôn trọng các quy ước văn hóa lâu đời một cách thích hợp?",
+              "vocabs": [
+                "appropriate professional behavior",
+                "international business travelers",
+                "Japanese corporate executives",
+                "cultural conventions"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Appropriate Japanese business interactions emphasize ceremonial bow exchanges, dignified two-handed business card presentations, and respectful hierarchical seating arrangements throughout extensive formal meeting protocols consistently meaningfully. Maintaining appropriate humble silence during senior executive comments, demonstrating substantive patience during prolonged decision-making consultations, and offering appropriate ceremonial gifts respecting traditional cultural etiquette substantially impresses prospective international Japanese partners building enduring professional relationships throughout demanding cross-cultural engagements internationally.",
+              "vi": "Các tương tác kinh doanh Nhật Bản thích hợp nhấn mạnh các trao đổi cúi chào nghi lễ, trình bày danh thiếp hai tay trang trọng và sắp xếp chỗ ngồi thứ bậc tôn trọng trong các giao thức cuộc họp chính thức rộng rãi một cách nhất quán có ý nghĩa. Duy trì sự im lặng khiêm tốn thích hợp trong các bình luận điều hành cấp cao, thể hiện sự kiên nhẫn thực chất trong các cuộc tham vấn ra quyết định kéo dài và đưa ra những món quà nghi lễ thích hợp tôn trọng nghi thức văn hóa truyền thống gây ấn tượng đáng kể với các đối tác Nhật Bản quốc tế tiềm năng xây dựng các mối quan hệ chuyên nghiệp lâu dài trong các cuộc gặp gỡ liên văn hóa đòi hỏi quốc tế.",
+              "vocabs": [
+                "appropriate",
+                "ceremonial bow",
+                "business card presentations",
+                "hierarchical seating",
+                "ceremonial gifts",
+                "cross-cultural engagements"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "How can newcomers identify appropriate cross-cultural communication patterns throughout unfamiliar international business environments avoiding embarrassing inappropriate gestures damaging important emerging professional relationships substantially?",
+              "vi": "Người mới có thể xác định các mẫu giao tiếp liên văn hóa thích hợp trong các môi trường kinh doanh quốc tế xa lạ tránh các cử chỉ không thích hợp đáng xấu hổ làm tổn hại các mối quan hệ chuyên nghiệp mới nổi quan trọng đáng kể như thế nào?",
+              "vocabs": [
+                "appropriate",
+                "cross-cultural communication",
+                "international business",
+                "inappropriate gestures"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Conducting comprehensive cultural research before international travel, hiring experienced multicultural professional advisors providing appropriate guidance, and observing native business colleagues attentively during initial introductory meetings substantially prepares newcomers respecting essential local cultural appropriate behaviors meaningfully. Asking respectful clarifying questions when uncertain, demonstrating genuine humble curiosity about authentic traditional cultural practices throughout demanding business interactions consistently, and acknowledging substantive mistakes appropriately when accidentally violating unfamiliar etiquette protocols builds meaningful trust within international professional collaborations effectively.",
+              "vi": "Tiến hành nghiên cứu văn hóa toàn diện trước khi đi du lịch quốc tế, thuê các cố vấn chuyên nghiệp đa văn hóa có kinh nghiệm cung cấp sự hướng dẫn thích hợp và quan sát các đồng nghiệp kinh doanh bản địa một cách chú ý trong các cuộc họp giới thiệu ban đầu chuẩn bị đáng kể cho người mới tôn trọng các hành vi thích hợp văn hóa địa phương thiết yếu một cách có ý nghĩa. Đặt câu hỏi làm rõ tôn trọng khi không chắc chắn, thể hiện sự tò mò khiêm tốn chân thực về các thực hành văn hóa truyền thống chân thực trong các tương tác kinh doanh đòi hỏi một cách nhất quán và thừa nhận các sai lầm thực chất một cách thích hợp khi vô tình vi phạm các giao thức nghi thức xa lạ xây dựng niềm tin có ý nghĩa trong các sự hợp tác chuyên nghiệp quốc tế một cách hiệu quả.",
+              "vocabs": [
+                "appropriate",
+                "cultural research",
+                "multicultural professional",
+                "introductory meetings",
+                "etiquette protocols",
+                "international professional"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 259,
+      "word": "april",
+      "phonetic": "/ˈeɪprəl/",
+      "pos": "Noun",
+      "frequency": 3,
+      "categories": [
+        "General",
+        "Time"
+      ],
+      "meanings": [
+        {
+          "vi": "Tháng tư, tháng thứ tư trong năm",
+          "examples": [
+            {
+              "en": "Spring flowers bloom beautifully in April.",
+              "vi": "Hoa mùa xuân nở đẹp vào tháng tư.",
+              "category": "Nature"
+            },
+            {
+              "en": "Her birthday falls in early April.",
+              "vi": "Sinh nhật cô ấy rơi vào đầu tháng tư.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Thời gian mùa xuân, khoảng thời gian sinh sôi",
+          "examples": [
+            {
+              "en": "April marks the start of cherry blossom season.",
+              "vi": "Tháng tư đánh dấu sự bắt đầu của mùa hoa anh đào.",
+              "category": "Nature"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Annual conference · april",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why does your international technology conference traditionally schedule annual gatherings every April rather than choosing alternative seasonal timing throughout academic calendar considerations strategically?",
+              "vi": "Tại sao hội nghị công nghệ quốc tế của bạn theo truyền thống lên lịch các cuộc tụ họp hàng năm vào tháng tư thay vì chọn thời gian theo mùa thay thế qua các cân nhắc lịch học thuật một cách chiến lược?",
+              "vocabs": [
+                "april",
+                "international technology conference",
+                "annual gatherings",
+                "academic calendar"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Scheduling annual conferences during April optimizes participation rates remarkably substantially because most institutional academic calendars accommodate spring travel opportunities throughout demanding professional commitment timelines internationally. April weather conditions throughout temperate conference locations provide comfortable outdoor networking environments while accommodating substantial demographic populations requiring synchronized scheduling around standard fiscal year planning deadlines significantly affecting corporate budget approval processes traditionally throughout multinational organizational coordination.",
+              "vi": "Lên lịch các hội nghị hàng năm trong tháng tư tối ưu hóa tỷ lệ tham gia đáng kể một cách đáng chú ý vì hầu hết các lịch học thuật tổ chức phù hợp với các cơ hội du lịch mùa xuân trong các mốc thời gian cam kết chuyên nghiệp đòi hỏi quốc tế. Điều kiện thời tiết tháng tư khắp các địa điểm hội nghị ôn hòa cung cấp môi trường kết nối mạng ngoài trời thoải mái trong khi đáp ứng các quần thể nhân khẩu học đáng kể yêu cầu lập lịch đồng bộ xung quanh các hạn chót lập kế hoạch năm tài chính tiêu chuẩn ảnh hưởng đáng kể đến các quy trình phê duyệt ngân sách doanh nghiệp theo truyền thống trong sự phối hợp tổ chức đa quốc gia.",
+              "vocabs": [
+                "april",
+                "participation rates",
+                "institutional academic calendars",
+                "spring travel",
+                "temperate conference locations",
+                "fiscal year planning"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Has organizing April gatherings successfully attracted increasingly substantive international audiences expanding professional networking opportunities across diverse industry sectors comprehensively throughout subsequent expansion years?",
+              "vi": "Việc tổ chức các cuộc tụ họp tháng tư đã thành công thu hút các khán giả quốc tế ngày càng thực chất mở rộng các cơ hội kết nối mạng chuyên nghiệp qua các lĩnh vực ngành đa dạng một cách toàn diện trong các năm mở rộng tiếp theo chưa?",
+              "vocabs": [
+                "april gatherings",
+                "international audiences",
+                "professional networking",
+                "industry sectors"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Annual April conferences successfully expanded substantively attracting approximately fifteen thousand professional attendees representing seventy diverse industrial sectors internationally throughout coming substantive years substantially. April scheduling consistency built substantively reliable expectations encouraging multinational corporate sponsors committing extended financial partnerships supporting comprehensive technological innovation showcase opportunities benefiting countless professionals advancing meaningful career trajectories throughout demanding international competitive industry environments effectively.",
+              "vi": "Các hội nghị tháng tư hàng năm đã thành công mở rộng thực chất thu hút khoảng mười lăm nghìn người tham dự chuyên nghiệp đại diện cho bảy mươi lĩnh vực công nghiệp đa dạng quốc tế trong các năm thực chất sắp tới đáng kể. Sự nhất quán lập lịch tháng tư đã xây dựng các kỳ vọng đáng tin cậy thực chất khuyến khích các nhà tài trợ doanh nghiệp đa quốc gia cam kết các quan hệ đối tác tài chính mở rộng hỗ trợ các cơ hội trình diễn đổi mới công nghệ toàn diện mang lại lợi ích cho vô số chuyên gia thúc đẩy các quỹ đạo nghề nghiệp có ý nghĩa trong các môi trường ngành cạnh tranh quốc tế đòi hỏi một cách hiệu quả.",
+              "vocabs": [
+                "april conferences",
+                "industrial sectors",
+                "scheduling consistency",
+                "multinational corporate",
+                "innovation showcase",
+                "competitive industry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "word": "army",
+      "phonetic": "/ˈɑːmi/",
+      "pos": "Noun",
+      "frequency": 3,
+      "categories": [
+        "General",
+        "Military"
+      ],
+      "meanings": [
+        {
+          "vi": "Quân đội, lực lượng vũ trang quốc gia",
+          "examples": [
+            {
+              "en": "He served in the army for ten years.",
+              "vi": "Anh ấy đã phục vụ trong quân đội mười năm.",
+              "category": "Work"
+            },
+            {
+              "en": "The army protects national borders.",
+              "vi": "Quân đội bảo vệ biên giới quốc gia.",
+              "category": "General"
+            }
+          ]
+        },
+        {
+          "vi": "Đám đông lớn, nhóm người tham gia hoạt động",
+          "examples": [
+            {
+              "en": "An army of volunteers helped after the storm.",
+              "vi": "Một đội ngũ tình nguyện viên đã giúp đỡ sau cơn bão.",
+              "category": "Social"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Veteran transition · army",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How challenging was transitioning from demanding army service back toward civilian professional life throughout multiple challenging adjustment years following twenty years military experience substantially?",
+              "vi": "Việc chuyển đổi từ phục vụ quân đội đòi hỏi quay lại cuộc sống chuyên nghiệp dân sự khó khăn như thế nào trong nhiều năm điều chỉnh thử thách sau hai mươi năm kinh nghiệm quân sự đáng kể?",
+              "vocabs": [
+                "army service",
+                "civilian professional",
+                "adjustment years",
+                "military experience"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Transitioning from disciplined army hierarchical structures toward flexible civilian corporate environments required extensive psychological adjustment throughout demanding two-year reintegration period substantially complex emotionally. Adapting military leadership patterns appropriately to civilian collaborative team dynamics, processing emotional combat experiences through dedicated veteran counseling services, and translating military technical skills for compatible civilian professional career opportunities required substantial patient supportive professional resources throughout extensive demanding reintegration journeys meaningfully.",
+              "vi": "Chuyển đổi từ các cấu trúc thứ bậc quân đội kỷ luật hướng tới các môi trường doanh nghiệp dân sự linh hoạt đòi hỏi sự điều chỉnh tâm lý rộng rãi trong giai đoạn tái hòa nhập hai năm đòi hỏi đáng kể phức tạp về mặt cảm xúc. Điều chỉnh các mẫu lãnh đạo quân sự một cách phù hợp với động lực đội cộng tác dân sự, xử lý các trải nghiệm chiến đấu cảm xúc qua các dịch vụ tư vấn cựu chiến binh chuyên dụng và chuyển đổi các kỹ năng kỹ thuật quân sự cho các cơ hội nghề nghiệp dân sự tương thích đòi hỏi các nguồn lực chuyên nghiệp hỗ trợ kiên nhẫn đáng kể trong các hành trình tái hòa nhập đòi hỏi rộng rãi một cách có ý nghĩa.",
+              "vocabs": [
+                "army hierarchical",
+                "civilian corporate",
+                "psychological adjustment",
+                "military leadership",
+                "combat experiences",
+                "veteran counseling"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "What specific government veteran services genuinely supported your demanding professional transition throughout substantive career rebuilding processes after extensive army service commitment historically?",
+              "vi": "Những dịch vụ cựu chiến binh chính phủ cụ thể nào đã hỗ trợ chân thực sự chuyển đổi chuyên nghiệp đòi hỏi của bạn trong các quy trình xây dựng lại nghề nghiệp thực chất sau cam kết phục vụ quân đội rộng rãi lịch sử?",
+              "vocabs": [
+                "army service commitment",
+                "government veteran services",
+                "professional transition",
+                "career rebuilding"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Dedicated veteran support programs provided invaluable comprehensive career counseling, substantive educational benefits funding additional advanced civilian degrees, and supportive vocational rehabilitation training throughout demanding post-army transition periods substantively effectively. Programs translating substantial army leadership credentials appropriately into civilian corporate executive qualifications, providing supportive mental health resources processing combat-related psychological challenges, and connecting veterans with sympathetic employer partner companies substantially eased my demanding personal career rebuilding journey throughout multiple challenging post-service years meaningfully.",
+              "vi": "Các chương trình hỗ trợ cựu chiến binh chuyên dụng đã cung cấp tư vấn nghề nghiệp toàn diện vô giá, các phúc lợi giáo dục thực chất tài trợ cho các bằng cấp dân sự nâng cao bổ sung và đào tạo phục hồi chức năng nghề nghiệp hỗ trợ trong các giai đoạn chuyển tiếp sau quân đội đòi hỏi một cách thực chất hiệu quả. Các chương trình chuyển đổi các chứng chỉ lãnh đạo quân đội đáng kể một cách phù hợp thành các trình độ điều hành doanh nghiệp dân sự, cung cấp các nguồn lực sức khỏe tâm thần hỗ trợ xử lý các thử thách tâm lý liên quan đến chiến đấu và kết nối các cựu chiến binh với các công ty đối tác sử dụng lao động đồng cảm đã đáng kể giảm bớt hành trình xây dựng lại sự nghiệp cá nhân đòi hỏi của tôi trong nhiều năm sau phục vụ thử thách một cách có ý nghĩa.",
+              "vocabs": [
+                "army leadership credentials",
+                "veteran support programs",
+                "educational benefits",
+                "vocational rehabilitation",
+                "combat-related psychological",
+                "employer partner"
               ]
             }
           ]
