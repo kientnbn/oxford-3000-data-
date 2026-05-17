@@ -2183,7 +2183,8 @@
                     }
                 };
                 
-                utterance.onerror = (e) => {
+                utterance.onerror = () => {
+                    if (_stopRequested) return;   // explicit stop — don't continue
                     currentUtteranceIndex++;
                     setTimeout(speakNextUtterance, 200);
                 };
@@ -2219,7 +2220,10 @@
             updateMediaSession();
         }
         
+        let _stopRequested = false;
+
         function stopAudio() {
+            _stopRequested = true;     // tell onerror NOT to auto-next
             speechSynthesis.cancel();
             currentUtterances = [];
             currentUtteranceIndex = 0;
@@ -2228,7 +2232,8 @@
             speakerVoiceMap = {};
             stopKeepAlive();
             updateMediaSession(null);
-            // Don't auto-next after explicit stop
+            // Reset flag after a tick (after pending onerror callbacks clear)
+            setTimeout(() => { _stopRequested = false; }, 50);
         }
 
         // ===================================================
@@ -2237,31 +2242,54 @@
         let _kaCtx    = null;   // AudioContext for keep-alive
         let _kaSource = null;   // BufferSourceNode (looping silence)
 
+        // Shortest valid silent WAV (base64) — 44-byte header + 0 samples
+        // Used by HTMLAudioElement to register AVAudioSession on iOS
+        const _SILENT_WAV = 'data:audio/wav;base64,' +
+            'UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=';
+
+        let _kaAudio = null;  // HTMLAudioElement (for iOS MediaSession)
+        let _kaOsc   = null;  // OscillatorNode   (for AudioContext keep-alive)
+        let _kaGain  = null;  // GainNode
+
         function startKeepAlive() {
-            if (_kaCtx) return;
-            try {
-                _kaCtx = new (window.AudioContext || window.webkitAudioContext)();
-                // 0.3s of silence, looped — keeps audio session open on iOS
-                const buf = _kaCtx.createBuffer(1, _kaCtx.sampleRate * 0.3, _kaCtx.sampleRate);
-                _kaSource = _kaCtx.createBufferSource();
-                _kaSource.buffer = buf;
-                _kaSource.loop   = true;
-                _kaSource.connect(_kaCtx.destination);
-                _kaSource.start(0);
-            } catch(e) { _kaCtx = null; }
+            // 1. HTMLAudioElement — registers AVAudioSession so MediaSession shows
+            if (!_kaAudio) {
+                _kaAudio = new Audio(_SILENT_WAV);
+                _kaAudio.loop   = true;
+                _kaAudio.volume = 0.001;   // nearly inaudible
+                _kaAudio.play().catch(() => {});
+            }
+            // 2. AudioContext oscillator — keeps Web Audio session alive
+            if (!_kaCtx) {
+                try {
+                    _kaCtx = new (window.AudioContext || window.webkitAudioContext)();
+                    _kaOsc  = _kaCtx.createOscillator();
+                    _kaGain = _kaCtx.createGain();
+                    _kaGain.gain.value = 0.0001;   // totally inaudible
+                    _kaOsc.type = 'sine';
+                    _kaOsc.frequency.value = 440;
+                    _kaOsc.connect(_kaGain);
+                    _kaGain.connect(_kaCtx.destination);
+                    _kaOsc.start();
+                } catch(e) { _kaCtx = null; }
+            }
         }
 
         function stopKeepAlive() {
             try {
-                if (_kaSource) { _kaSource.stop(); _kaSource = null; }
-                if (_kaCtx)    { _kaCtx.close();   _kaCtx = null;   }
+                if (_kaOsc)   { _kaOsc.stop();    _kaOsc   = null; }
+                if (_kaGain)  { _kaGain.disconnect(); _kaGain = null; }
+                if (_kaCtx)   { _kaCtx.close();   _kaCtx   = null; }
+                if (_kaAudio) { _kaAudio.pause(); _kaAudio = null; }
             } catch(e) {}
         }
 
-        // Resume AudioContext after iOS suspends it (tap required)
         function ensureAudioContext() {
             if (_kaCtx && _kaCtx.state === 'suspended') {
                 _kaCtx.resume().catch(() => {});
+            }
+            if (_kaAudio && _kaAudio.paused) {
+                _kaAudio.play().catch(() => {});
             }
         }
 
@@ -2303,54 +2331,50 @@
         // screen turns back on after lock/sleep
         // ===================================================
         (function setupVisibilityRecovery() {
-            let wasPlaying = false;
-            let savedIndex = 0;
+            const SS_KEY = 'ox3k_bgplay';  // sessionStorage key
+
+            function saveBgState() {
+                if (isSpeaking && !isPaused && currentUtterances.length > 0) {
+                    sessionStorage.setItem(SS_KEY, JSON.stringify({
+                        idx: currentUtteranceIndex,
+                        autoPlay, playWordIndex
+                    }));
+                } else {
+                    sessionStorage.removeItem(SS_KEY);
+                }
+            }
+
+            function restoreBgState() {
+                const raw = sessionStorage.getItem(SS_KEY);
+                if (!raw) return;
+                try {
+                    const s = JSON.parse(raw);
+                    sessionStorage.removeItem(SS_KEY);
+                    if (!currentUtterances.length) return;
+                    _stopRequested = false;
+                    currentUtteranceIndex = Math.min(s.idx, currentUtterances.length - 1);
+                    autoPlay = s.autoPlay ?? autoPlay;
+                    ensureAudioContext();
+                    isSpeaking = true; isPaused = false;
+                    setTimeout(() => {
+                        speechSynthesis.cancel();
+                        setTimeout(() => { speakNextUtterance(); updateMediaSession(); }, 150);
+                    }, 150);
+                } catch(e) {}
+            }
 
             document.addEventListener('visibilitychange', () => {
                 if (document.hidden) {
-                    // Screen going off — save playback position
-                    wasPlaying = isSpeaking && !isPaused;
-                    savedIndex = currentUtteranceIndex;
-                    // iOS may cancel speech; don't explicitly cancel
+                    saveBgState();
                 } else {
-                    // Screen back on
-                    if (wasPlaying && currentUtterances.length > 0) {
-                        wasPlaying = false;
-                        // Cancel whatever half-state the browser left
-                        speechSynthesis.cancel();
-                        // Small delay so cancel flushes
-                        setTimeout(() => {
-                            // Restore position (may have advanced partially)
-                            currentUtteranceIndex = Math.min(
-                                savedIndex,
-                                currentUtterances.length - 1
-                            );
-                            isSpeaking = true;
-                            isPaused   = false;
-                            ensureAudioContext();
-                            speakNextUtterance();
-                            updateMediaSession();
-                        }, 300);
-                    }
+                    restoreBgState();
                 }
             });
 
-            // iOS Page Lifecycle: pagehide / pageshow (more reliable than visibilitychange)
-            window.addEventListener('pagehide', () => {
-                wasPlaying = isSpeaking && !isPaused;
-                savedIndex = currentUtteranceIndex;
-            });
-            window.addEventListener('pageshow', (e) => {
-                if (wasPlaying && currentUtterances.length > 0) {
-                    wasPlaying = false;
-                    setTimeout(() => {
-                        speechSynthesis.cancel();
-                        currentUtteranceIndex = savedIndex;
-                        isSpeaking = true; isPaused = false;
-                        ensureAudioContext();
-                        speakNextUtterance();
-                    }, 300);
-                }
+            window.addEventListener('pagehide', saveBgState);
+            window.addEventListener('pageshow', () => {
+                // Small delay to let app fully restore
+                setTimeout(restoreBgState, 400);
             });
         })();
         
@@ -4112,7 +4136,7 @@
 
         // Called when all utterances for current word are done
         function onWordReadingComplete() {
-            if (!autoPlay) return;
+            if (!autoPlay || _stopRequested) return;
 
             const INTER_WORD_DELAY = 1400;  // gap between words (ms)
 
