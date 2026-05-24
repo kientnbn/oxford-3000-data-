@@ -1,46 +1,260 @@
 {
   "batch_info": {
-    "batch_number": 30,
-    "batch_size": 2,
-    "cumulative_entries": "1-292",
-    "batches_included": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30
-    ],
-    "date": "2026-05-17",
-    "status": "🎉 PROJECT COMPLETED 🎉",
-    "scope": "C0 only (conversations rewrite) - FINAL BATCH",
-    "test_results": "292/292 PASS",
-    "milestone": "🏆 100% COMPLETION ACHIEVED - All 292 Oxford 3000/5000 words processed!"
+    "batch_number": 31,
+    "version": "V1 (T1 scope)",
+    "batch_size": 10,
+    "cumulative_entries": "1-302",
+    "v0_entries": "1-292 (T0 scope - conversations only)",
+    "v1_entries": "293-302 (T1 scope - comprehensive enrichment)",
+    "date": "2026-05-24",
+    "status": "✅ V1 INAUGURAL BATCH COMPLETE",
+    "milestone": "🎉 #300 entry: 'ago' — passed 300-word threshold!",
+    "framework": "Q0 quality framework with 8 criteria + loop self-test",
+    "v0_structure_preserved": "All V0 fields unchanged, V1 additions namespaced with v1_*",
+    "all_entries_pass": true
   },
+  "q0_batch_report": [
+    {
+      "id": 293,
+      "word": "against",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 8.5,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.0,
+        "Q6": 9.0,
+        "Q7": 9.5,
+        "Q8": 10.0
+      },
+      "total": 9.22,
+      "status": "PASS",
+      "spillover": 21,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    },
+    {
+      "id": 294,
+      "word": "actually",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 9.0,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.5,
+        "Q6": 9.5,
+        "Q7": 9.5,
+        "Q8": 10.0
+      },
+      "total": 9.39,
+      "status": "PASS",
+      "spillover": 18,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    },
+    {
+      "id": 295,
+      "word": "ability",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 8.5,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.0,
+        "Q6": 9.5,
+        "Q7": 9.5,
+        "Q8": 10.0
+      },
+      "total": 9.28,
+      "status": "PASS",
+      "spillover": 23,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    },
+    {
+      "id": 296,
+      "word": "answer",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 9.0,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.0,
+        "Q6": 9.0,
+        "Q7": 9.0,
+        "Q8": 10.0
+      },
+      "total": 9.21,
+      "status": "PASS",
+      "spillover": 18,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    },
+    {
+      "id": 297,
+      "word": "across",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 9.0,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.5,
+        "Q6": 9.0,
+        "Q7": 9.0,
+        "Q8": 10.0
+      },
+      "total": 9.28,
+      "status": "PASS",
+      "spillover": 24,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    },
+    {
+      "id": 298,
+      "word": "air",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 9.0,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.0,
+        "Q6": 9.0,
+        "Q7": 9.0,
+        "Q8": 10.0
+      },
+      "total": 9.21,
+      "status": "PASS",
+      "spillover": 16,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    },
+    {
+      "id": 299,
+      "word": "age",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 9.0,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.5,
+        "Q6": 9.5,
+        "Q7": 9.5,
+        "Q8": 10.0
+      },
+      "total": 9.39,
+      "status": "PASS",
+      "spillover": 21,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    },
+    {
+      "id": 300,
+      "word": "ago",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 9.0,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.0,
+        "Q6": 9.0,
+        "Q7": 9.5,
+        "Q8": 10.0
+      },
+      "total": 9.29,
+      "status": "PASS",
+      "spillover": 22,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    },
+    {
+      "id": 301,
+      "word": "active",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 9.0,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.5,
+        "Q6": 9.5,
+        "Q7": 9.5,
+        "Q8": 10.0
+      },
+      "total": 9.39,
+      "status": "PASS",
+      "spillover": 20,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    },
+    {
+      "id": 302,
+      "word": "achievement",
+      "scores": {
+        "Q1": 9.0,
+        "Q2": 9.0,
+        "Q3": 9.0,
+        "Q4": 9.5,
+        "Q5": 9.0,
+        "Q6": 9.0,
+        "Q7": 9.5,
+        "Q8": 10.0
+      },
+      "total": 9.29,
+      "status": "PASS",
+      "spillover": 18,
+      "structure_check": {
+        "v0_top_fields": true,
+        "v0_meanings_unchanged": true,
+        "v0_examples_unchanged": true,
+        "v0_lines_unchanged": true,
+        "v1_namespaced": true
+      }
+    }
+  ],
   "data": [
     {
       "id": 1,
@@ -26880,6 +27094,3021 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "id": 293,
+      "word": "against",
+      "phonetic": "/əˈɡenst/",
+      "pos": "Preposition, Adverb",
+      "frequency": 5,
+      "categories": [
+        "General",
+        "Communication"
+      ],
+      "meanings": [
+        {
+          "vi": "Chống lại, đối lập với (ai/cái gì)",
+          "examples": [
+            {
+              "en": "She fought against discrimination her entire career.",
+              "vi": "Cô ấy đã đấu tranh chống phân biệt đối xử suốt sự nghiệp.",
+              "category": "Social"
+            },
+            {
+              "en": "Many citizens voted against the new tax law.",
+              "vi": "Nhiều công dân đã bỏ phiếu chống lại luật thuế mới.",
+              "category": "Politics"
+            },
+            {
+              "en": "The team played well against a stronger opponent.",
+              "vi": "Đội đã chơi hay khi đối đầu với đối thủ mạnh hơn.",
+              "category": "Sports"
+            }
+          ]
+        },
+        {
+          "vi": "Tựa vào, dựa vào (vị trí vật lý)",
+          "examples": [
+            {
+              "en": "He leaned against the wall, exhausted.",
+              "vi": "Anh ấy tựa vào tường, kiệt sức.",
+              "category": "General"
+            },
+            {
+              "en": "The ladder rested against the apple tree.",
+              "vi": "Cái thang dựa vào cây táo.",
+              "category": "Home"
+            },
+            {
+              "en": "Rain beat against the windows all night.",
+              "vi": "Mưa đập vào cửa sổ suốt đêm.",
+              "category": "Nature"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Climate activism · against",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why are so many young people speaking out against fossil fuel companies, even when their own governments hesitate to take action?",
+              "vi": "Tại sao nhiều người trẻ lại lên tiếng chống lại các công ty nhiên liệu hóa thạch, ngay cả khi chính phủ của họ còn do dự hành động?",
+              "vocabs": [
+                "speaking out",
+                "fossil fuel companies",
+                "governments hesitate",
+                "take action"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, they feel the consequences will land on their generation, not on the executives making decisions today. When you grow up watching wildfires, floods, and rising sea levels, standing against the industries causing it stops feeling political — it feels personal. That's a very different kind of activism than what we saw in the past.",
+              "vi": "Thành thật mà nói, họ cảm thấy hậu quả sẽ rơi vào thế hệ của họ, chứ không phải những người điều hành ra quyết định hôm nay. Khi bạn lớn lên giữa cháy rừng, lũ lụt, và mực nước biển dâng cao, đứng chống lại các ngành công nghiệp gây ra điều đó không còn là chuyện chính trị nữa — nó trở thành chuyện cá nhân. Đó là một dạng hoạt động xã hội rất khác so với trước đây.",
+              "vocabs": [
+                "consequences",
+                "executives",
+                "wildfires",
+                "floods",
+                "rising sea levels",
+                "industries causing it",
+                "activism"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Do you think pushing against corporations actually achieves more than working with them through policy reform?",
+              "vi": "Anh nghĩ việc đối đầu trực tiếp với các tập đoàn có thực sự hiệu quả hơn là hợp tác qua cải cách chính sách không?",
+              "vocabs": [
+                "pushing against",
+                "corporations",
+                "achieves more",
+                "policy reform"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Both have their place. Pressure against companies — protests, divestment campaigns, public shaming — moves quickly but rarely produces lasting change. Policy reform is slow and frustrating, but the laws that come out of it last decades. The smartest movements use both: pressure on the outside, negotiation on the inside.",
+              "vi": "Cả hai đều có vai trò. Áp lực chống lại các công ty — biểu tình, chiến dịch rút vốn, làm xấu danh tiếng — diễn ra nhanh nhưng hiếm khi tạo thay đổi bền vững. Cải cách chính sách thì chậm và khó chịu, nhưng luật pháp sinh ra từ đó tồn tại hàng thập kỷ. Phong trào khôn ngoan nhất kết hợp cả hai: gây áp lực từ bên ngoài, thương lượng từ bên trong.",
+              "vocabs": [
+                "protests",
+                "divestment campaigns",
+                "public shaming",
+                "lasting change",
+                "frustrating",
+                "smartest movements",
+                "negotiation"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 5,
+        "scale": "1-5",
+        "label": "Cực kỳ thông dụng",
+        "coca_rank": 150,
+        "coca_band": "1-500",
+        "oxford_level": "Oxford 1000",
+        "cefr_level": "A2",
+        "appearance_rate": "Xuất hiện trong 95%+ hội thoại + văn viết",
+        "methodology": "COCA + Oxford OALD + Cambridge English Profile",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD",
+          "Cambridge English Profile"
+        ]
+      },
+      "v1_register": "neutral",
+      "v1_word_forms": [
+        {
+          "form": "againstness",
+          "pos": "Noun (rare)",
+          "phonetic": "/əˈɡenstnəs/",
+          "vi": "Sự đối lập (hiếm dùng)",
+          "example_en": "There's a sense of againstness in his writing.",
+          "example_vi": "Có một cảm giác đối lập trong văn của anh ấy."
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "No article needed",
+          "rule": "'against' KHÔNG cần article phía sau khi đi với noun.",
+          "correct_examples": [
+            "✅ against the law",
+            "✅ against the wall"
+          ],
+          "common_mistakes": [
+            "❌ against a law (in general) → ✅ against the law"
+          ]
+        },
+        {
+          "topic": "against vs opposite",
+          "rule": "'against' = chống lại/đối lập về quan điểm hoặc lực. 'opposite' = đối diện vị trí.",
+          "correct_examples": [
+            "✅ I'm against the proposal. (oppose)",
+            "✅ The bank is opposite the school. (position)"
+          ],
+          "common_mistakes": [
+            "❌ I'm opposite this idea. → ✅ I'm against this idea."
+          ]
+        },
+        {
+          "topic": "Common verbs + against",
+          "rule": "Verbs thường đi với 'against': fight, vote, argue, protest, lean, push.",
+          "correct_examples": [
+            "✅ fight against poverty",
+            "✅ vote against the bill",
+            "✅ lean against the wall"
+          ],
+          "common_mistakes": [
+            "❌ fight with poverty → ✅ fight against poverty"
+          ]
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Đối lập về quan điểm/lực"
+        },
+        {
+          "meaning_index": 1,
+          "register": "neutral",
+          "usage_context": "Vị trí vật lý"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "opposed to",
+          "nuance": "Trang trọng hơn, dùng formal writing. VD: 'I am opposed to the plan'"
+        },
+        {
+          "word": "versus",
+          "nuance": "Dùng trong bối cảnh thi đấu/tranh luận. VD: 'team A versus team B'"
+        },
+        {
+          "word": "contrary to",
+          "nuance": "Trang trọng, dùng văn viết. VD: 'contrary to popular belief'"
+        },
+        {
+          "word": "in opposition to",
+          "nuance": "Rất trang trọng. VD: 'in opposition to the policy'"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "for",
+          "nuance": "Ủng hộ, đối nghĩa trực tiếp. VD: 'Are you for or against it?'"
+        },
+        {
+          "word": "in favor of",
+          "nuance": "Trang trọng hơn 'for'. VD: 'in favor of the proposal'"
+        },
+        {
+          "word": "with",
+          "nuance": "Cùng phía, hỗ trợ"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "against the law",
+          "example_en": "Smoking here is against the law.",
+          "example_vi": "Hút thuốc ở đây là trái pháp luật.",
+          "frequency_note": "Idiom cố định, rất phổ biến"
+        },
+        {
+          "phrase": "against all odds",
+          "example_en": "She succeeded against all odds.",
+          "example_vi": "Cô ấy thành công bất chấp mọi khó khăn.",
+          "frequency_note": "Idiom phổ biến trong văn nói/viết"
+        },
+        {
+          "phrase": "against one's will",
+          "example_en": "He was forced to sign against his will.",
+          "example_vi": "Anh ấy bị ép ký trái với ý muốn.",
+          "frequency_note": "Trang trọng, văn pháp lý"
+        },
+        {
+          "phrase": "vote against",
+          "example_en": "Most senators voted against the proposal.",
+          "example_vi": "Hầu hết thượng nghị sĩ đã bỏ phiếu chống lại đề xuất.",
+          "frequency_note": "Phổ biến trong chính trị/họp"
+        },
+        {
+          "phrase": "race against time",
+          "example_en": "Rescuers raced against time to save the trapped miners.",
+          "example_vi": "Đội cứu hộ chạy đua với thời gian để cứu các thợ mỏ bị mắc kẹt.",
+          "frequency_note": "Idiom phổ biến"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "against all odds",
+          "meaning": "Bất chấp mọi khó khăn",
+          "example_en": "Against all odds, the small team won the championship.",
+          "example_vi": "Bất chấp mọi khó khăn, đội nhỏ đã vô địch.",
+          "register": "neutral"
+        },
+        {
+          "phrase": "go against the grain",
+          "meaning": "Trái với bản chất/quan điểm thường",
+          "example_en": "Lying goes against the grain for him.",
+          "example_vi": "Nói dối là điều trái với bản chất của anh ấy.",
+          "register": "informal"
+        },
+        {
+          "phrase": "have something against someone",
+          "meaning": "Có gì đó bất mãn với ai",
+          "example_en": "I have nothing against him personally.",
+          "example_vi": "Tôi không có gì cá nhân chống lại anh ấy.",
+          "register": "informal"
+        }
+      ],
+      "v1_usage_notes": [
+        "Phân biệt 'against' (chống lại) vs 'opposite' (đối diện): different concepts!",
+        "Trong thi đấu thể thao, 'against' = đối đầu. VD: 'Vietnam against Thailand'.",
+        "Dành cho người Việt: 'against' KHÔNG dịch là 'chống' trong mọi trường hợp. Vd: 'lean against the wall' = 'tựa vào tường', không phải 'chống vào tường'.",
+        "Idiom 'against all odds' rất phổ biến — học thuộc."
+      ]
+    },
+    {
+      "id": 294,
+      "word": "actually",
+      "phonetic": "/ˈæktʃuəli/",
+      "pos": "Adverb",
+      "frequency": 5,
+      "categories": [
+        "Communication",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Thực ra, trên thực tế (đối lập với điều người ta tưởng)",
+          "examples": [
+            {
+              "en": "I thought he was British, but actually he's Australian.",
+              "vi": "Tôi tưởng anh ấy là người Anh, nhưng thực ra anh ấy là người Úc.",
+              "category": "Social"
+            },
+            {
+              "en": "She seems quiet, but she's actually quite outgoing.",
+              "vi": "Cô ấy có vẻ trầm tính, nhưng thực ra cô ấy khá cởi mở.",
+              "category": "Personal"
+            },
+            {
+              "en": "The book looks small, but it actually has 600 pages.",
+              "vi": "Cuốn sách trông nhỏ, nhưng thực ra có 600 trang.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Thực sự (dùng nhấn mạnh điều gì đáng ngạc nhiên hoặc đúng sự thật)",
+          "examples": [
+            {
+              "en": "I can't believe she actually did it!",
+              "vi": "Tôi không thể tin cô ấy thực sự đã làm điều đó!",
+              "category": "Communication"
+            },
+            {
+              "en": "He actually apologized for once.",
+              "vi": "Lần này anh ấy thực sự đã xin lỗi.",
+              "category": "Family"
+            },
+            {
+              "en": "Does this drug actually work, or is it just placebo?",
+              "vi": "Loại thuốc này thực sự có tác dụng, hay chỉ là giả dược?",
+              "category": "Health"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Polite correction · actually",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "So the meeting starts at two, right? I'll be there a few minutes early to set up.",
+              "vi": "Vậy cuộc họp bắt đầu lúc hai giờ, đúng không? Tôi sẽ đến sớm vài phút để chuẩn bị.",
+              "vocabs": [
+                "meeting starts",
+                "set up",
+                "few minutes early"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Actually, they moved it to three. The client had a scheduling conflict, so the whole agenda got pushed back by an hour. The conference room booking was updated this morning, but I forgot to mention it in the group chat.",
+              "vi": "Thực ra, họ đã dời sang ba giờ. Khách hàng có lịch trùng nên toàn bộ chương trình bị đẩy lùi một tiếng. Việc đặt phòng họp đã được cập nhật sáng nay, nhưng tôi quên báo trong nhóm chat.",
+              "vocabs": [
+                "scheduling conflict",
+                "agenda",
+                "pushed back",
+                "conference room booking",
+                "group chat"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Oh, that's helpful to know. Is the presentation deck actually ready, or are we still revising the financial slides?",
+              "vi": "Ồ, tốt là biết được. Slide thuyết trình thực sự đã sẵn sàng chưa, hay chúng ta vẫn đang chỉnh sửa phần slide tài chính?",
+              "vocabs": [
+                "presentation deck",
+                "revising",
+                "financial slides"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Actually, the deck is mostly done — Maria finalized the revenue projections last night. There's one chart I'd like to clean up, but it's not blocking anything. We should focus on rehearsing the Q&A section, since that's where the client tends to dig deepest.",
+              "vi": "Thực ra, slide gần xong rồi — Maria đã hoàn thiện phần dự báo doanh thu tối qua. Có một biểu đồ tôi muốn làm gọn lại, nhưng không cản trở gì. Chúng ta nên tập trung luyện phần hỏi đáp, vì đó là phần khách hàng thường đào sâu nhất.",
+              "vocabs": [
+                "finalized",
+                "revenue projections",
+                "clean up",
+                "blocking",
+                "rehearsing",
+                "Q&A section",
+                "dig deepest"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 5,
+        "scale": "1-5",
+        "label": "Cực kỳ thông dụng",
+        "coca_rank": 198,
+        "coca_band": "1-500",
+        "oxford_level": "Oxford 1000",
+        "cefr_level": "A2",
+        "appearance_rate": "Top 200 từ trong tiếng Anh nói",
+        "methodology": "COCA + Oxford OALD + Cambridge English Profile",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD"
+        ]
+      },
+      "v1_register": "neutral (cả formal và informal)",
+      "v1_word_forms": [
+        {
+          "form": "actual",
+          "pos": "Adjective",
+          "phonetic": "/ˈæktʃuəl/",
+          "vi": "Thực tế, có thật",
+          "example_en": "The actual cost was higher than estimated.",
+          "example_vi": "Chi phí thực tế cao hơn dự kiến."
+        },
+        {
+          "form": "actuality",
+          "pos": "Noun (formal)",
+          "phonetic": "/ˌæktʃuˈæləti/",
+          "vi": "Thực tế (trang trọng)",
+          "example_en": "In actuality, the situation was different.",
+          "example_vi": "Trong thực tế, tình hình lại khác."
+        },
+        {
+          "form": "act",
+          "pos": "Verb/Noun",
+          "phonetic": "/ækt/",
+          "vi": "Hành động",
+          "example_en": "She acted quickly to save the child.",
+          "example_vi": "Cô ấy hành động nhanh để cứu đứa trẻ."
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "Position in sentence",
+          "rule": "'Actually' linh hoạt vị trí: đầu câu (softener), giữa câu (emphasis), cuối câu (less common).",
+          "correct_examples": [
+            "✅ Actually, I prefer tea. (softener)",
+            "✅ She actually finished the marathon. (emphasis)",
+            "✅ I prefer tea, actually. (afterthought)"
+          ],
+          "common_mistakes": []
+        },
+        {
+          "topic": "False friend với tiếng Pháp",
+          "rule": "'Actually' (EN) ≠ 'actuellement' (FR) = 'currently/now'. Sai phổ biến với người học Pháp.",
+          "correct_examples": [
+            "✅ 'Currently' = hiện tại",
+            "✅ 'Actually' = thực ra/thực sự"
+          ],
+          "common_mistakes": [
+            "❌ Actually I'm in Paris. (sai nếu nghĩa là 'currently') → ✅ Currently I'm in Paris."
+          ]
+        },
+        {
+          "topic": "Softener function",
+          "rule": "Đầu câu, 'Actually' thường dùng để LỊCH SỰ correct hoặc disagree.",
+          "correct_examples": [
+            "✅ Actually, I think you're mistaken. (polite disagreement)",
+            "✅ Actually, the deadline is Friday, not Monday."
+          ],
+          "common_mistakes": []
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Correction/clarification (formal+informal)"
+        },
+        {
+          "meaning_index": 1,
+          "register": "neutral-emphatic",
+          "usage_context": "Emphasis/surprise"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "in fact",
+          "nuance": "Trang trọng hơn 'actually'. Dùng văn viết. VD: 'In fact, the report shows...'"
+        },
+        {
+          "word": "really",
+          "nuance": "Ít emphatic hơn, gần với 'actually' đa năng"
+        },
+        {
+          "word": "as a matter of fact",
+          "nuance": "Rất emphatic, dùng nhấn mạnh điều đáng ngạc nhiên"
+        },
+        {
+          "word": "in reality",
+          "nuance": "Trang trọng, văn viết"
+        },
+        {
+          "word": "truly",
+          "nuance": "Strong emphasis, văn viết hoặc trang trọng"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "supposedly",
+          "nuance": "Đối nghĩa - ám chỉ chưa chắc đúng"
+        },
+        {
+          "word": "allegedly",
+          "nuance": "Đối nghĩa formal, dùng pháp lý/báo chí"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "actually happened",
+          "example_en": "I'm still in shock that it actually happened.",
+          "example_vi": "Tôi vẫn sốc rằng điều đó thực sự đã xảy ra.",
+          "frequency_note": "Rất phổ biến"
+        },
+        {
+          "phrase": "actually mean",
+          "example_en": "What did he actually mean by that?",
+          "example_vi": "Ý anh ấy thực sự là gì khi nói vậy?",
+          "frequency_note": "Phổ biến trong clarification"
+        },
+        {
+          "phrase": "actually believe",
+          "example_en": "Do you actually believe his story?",
+          "example_vi": "Anh có thực sự tin câu chuyện của anh ấy không?",
+          "frequency_note": "Emphatic question"
+        },
+        {
+          "phrase": "what actually...",
+          "example_en": "What actually went wrong with the project?",
+          "example_vi": "Điều gì thực sự đã đi sai với dự án?",
+          "frequency_note": "Phổ biến trong investigation"
+        },
+        {
+          "phrase": "actually exist",
+          "example_en": "Does the perfect job actually exist?",
+          "example_vi": "Công việc hoàn hảo có thực sự tồn tại không?",
+          "frequency_note": "Triết lý/hoài nghi"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "actually speaking",
+          "meaning": "Nói thực ra (trang trọng)",
+          "example_en": "Actually speaking, the data tells a different story.",
+          "example_vi": "Thực ra mà nói, dữ liệu cho thấy câu chuyện khác.",
+          "register": "formal"
+        },
+        {
+          "phrase": "come to think of it, actually...",
+          "meaning": "Nghĩ kỹ lại thì thực ra...",
+          "example_en": "Come to think of it, actually I did see him yesterday.",
+          "example_vi": "Nghĩ kỹ thì thực ra tôi có gặp anh ấy hôm qua.",
+          "register": "informal"
+        },
+        {
+          "phrase": "if (you/we) actually...",
+          "meaning": "Nếu thực sự...",
+          "example_en": "If you actually finish on time, I'll be impressed.",
+          "example_vi": "Nếu anh thực sự hoàn thành đúng hạn, tôi sẽ ấn tượng.",
+          "register": "neutral"
+        }
+      ],
+      "v1_usage_notes": [
+        "'Actually' rất linh hoạt — softener, emphasizer, corrector. Học cảm nhận tone qua context.",
+        "Trong giao tiếp lịch sự, dùng 'Actually...' khi sửa người khác để không làm họ ngại.",
+        "Dành cho người Việt: KHÔNG dịch là 'hiện tại' (đó là 'currently'). 'Actually' = thực ra/thực sự.",
+        "Trong văn viết formal, ưu tiên 'in fact' thay 'actually' để professional hơn.",
+        "Lặp 'actually' nhiều lần trong 1 đoạn nói = filler không hay. Đa dạng với 'in fact', 'really', 'truly'."
+      ]
+    },
+    {
+      "id": 295,
+      "word": "ability",
+      "phonetic": "/əˈbɪləti/",
+      "pos": "Noun",
+      "frequency": 5,
+      "categories": [
+        "General",
+        "Ability",
+        "Education"
+      ],
+      "meanings": [
+        {
+          "vi": "Khả năng làm được điều gì đó (về thể chất hoặc trí tuệ)",
+          "examples": [
+            {
+              "en": "She has the ability to learn languages quickly.",
+              "vi": "Cô ấy có khả năng học ngôn ngữ rất nhanh.",
+              "category": "Education"
+            },
+            {
+              "en": "His artistic ability impressed the gallery owner.",
+              "vi": "Khả năng nghệ thuật của anh ấy đã gây ấn tượng với chủ phòng tranh.",
+              "category": "Arts"
+            },
+            {
+              "en": "The new drug shows ability to slow the aging process.",
+              "vi": "Loại thuốc mới này thể hiện khả năng làm chậm quá trình lão hóa.",
+              "category": "Science"
+            }
+          ]
+        },
+        {
+          "vi": "Tài năng, kỹ năng đặc biệt của một người",
+          "examples": [
+            {
+              "en": "Children develop different abilities at different ages.",
+              "vi": "Trẻ em phát triển những tài năng khác nhau ở các độ tuổi khác nhau.",
+              "category": "Family"
+            },
+            {
+              "en": "Mixed-ability classes require careful planning from teachers.",
+              "vi": "Lớp học có trình độ khác nhau đòi hỏi giáo viên phải lên kế hoạch cẩn thận.",
+              "category": "Education"
+            },
+            {
+              "en": "Her negotiation abilities helped close the deal.",
+              "vi": "Kỹ năng đàm phán đã giúp cô ấy chốt được hợp đồng.",
+              "category": "Business"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Talent vs effort · ability",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How do teachers reliably identify a child's true ability rather than simply rewarding those who already perform well in conventional classroom settings?",
+              "vi": "Làm thế nào để giáo viên nhận diện chính xác khả năng thực sự của một đứa trẻ, thay vì chỉ khen thưởng những em vốn đã giỏi trong lớp học truyền thống?",
+              "vocabs": [
+                "reliably identify",
+                "conventional classroom settings",
+                "rewarding"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, that's one of the hardest problems in education. Standardized tests measure performance, not ability — they tell you what a child has learned, not what they can learn. Skilled teachers look for curiosity, persistence, and the ability to recover from mistakes. Those traits predict long-term growth far better than test scores.",
+              "vi": "Thành thật mà nói, đó là một trong những bài toán khó nhất của giáo dục. Các bài kiểm tra chuẩn hóa đo lường hiệu suất, không phải khả năng — chúng cho biết đứa trẻ đã học được gì, chứ không phải có thể học được gì. Giáo viên giỏi nhìn vào sự tò mò, lòng kiên trì, và khả năng đứng dậy sau sai lầm. Những phẩm chất đó dự báo sự phát triển dài hạn tốt hơn nhiều so với điểm số.",
+              "vocabs": [
+                "standardized tests",
+                "measure performance",
+                "curiosity",
+                "persistence",
+                "recover from mistakes",
+                "predict long-term growth",
+                "test scores",
+                "traits"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "So you'd say creativity and resilience matter more than raw cognitive ability in predicting success?",
+              "vi": "Vậy theo anh, sự sáng tạo và kiên cường quan trọng hơn khả năng trí tuệ thuần túy trong việc dự đoán thành công?",
+              "vocabs": [
+                "creativity",
+                "resilience",
+                "raw cognitive",
+                "predicting success"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "I'd say they're inseparable. Pure intellectual ability without resilience often plateaus by adolescence, while average ability paired with strong work habits keeps developing for decades. The students I've seen flourish in adulthood weren't always the highest-scoring — they were the ones who treated their abilities as something to grow, not protect.",
+              "vi": "Tôi sẽ nói rằng chúng không thể tách rời. Khả năng trí tuệ thuần túy mà thiếu kiên cường thường chững lại ở tuổi thiếu niên. Trong khi đó, khả năng trung bình kết hợp với thói quen làm việc tốt vẫn tiếp tục phát triển hàng thập kỷ. Những học trò tôi từng thấy thành công khi trưởng thành không phải lúc nào cũng là những em đạt điểm cao nhất — đó là những em xem khả năng của mình là điều cần được nuôi dưỡng, chứ không phải bảo vệ.",
+              "vocabs": [
+                "inseparable",
+                "intellectual",
+                "plateaus",
+                "adolescence",
+                "work habits",
+                "flourish in adulthood",
+                "highest-scoring",
+                "nurture vs protect"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 5,
+        "scale": "1-5",
+        "label": "Cực kỳ thông dụng",
+        "coca_rank": 347,
+        "coca_band": "1-500",
+        "oxford_level": "Oxford 1000",
+        "cefr_level": "A2",
+        "appearance_rate": "95%+ hội thoại + văn viết học thuật",
+        "methodology": "COCA + Oxford OALD + Cambridge English Profile",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD",
+          "Cambridge English Profile"
+        ]
+      },
+      "v1_register": "neutral",
+      "v1_word_forms": [
+        {
+          "form": "able",
+          "pos": "Adjective",
+          "phonetic": "/ˈeɪbl/",
+          "vi": "Có khả năng",
+          "example_en": "She is able to speak three languages fluently.",
+          "example_vi": "Cô ấy có khả năng nói ba thứ tiếng trôi chảy."
+        },
+        {
+          "form": "ably",
+          "pos": "Adverb",
+          "phonetic": "/ˈeɪbli/",
+          "vi": "Một cách tài giỏi",
+          "example_en": "She ably defended her thesis.",
+          "example_vi": "Cô ấy đã bảo vệ luận án một cách tài giỏi."
+        },
+        {
+          "form": "enable",
+          "pos": "Verb",
+          "phonetic": "/ɪˈneɪbl/",
+          "vi": "Cho phép, tạo điều kiện",
+          "example_en": "The scholarship enabled her to study abroad.",
+          "example_vi": "Học bổng đã tạo điều kiện cho cô ấy du học."
+        },
+        {
+          "form": "inability",
+          "pos": "Noun (neg.)",
+          "phonetic": "/ˌɪnəˈbɪləti/",
+          "vi": "Sự thiếu khả năng",
+          "example_en": "His inability to focus affected his work.",
+          "example_vi": "Sự thiếu tập trung của anh ấy đã ảnh hưởng đến công việc."
+        },
+        {
+          "form": "unable",
+          "pos": "Adjective (neg.)",
+          "phonetic": "/ʌnˈeɪbl/",
+          "vi": "Không thể",
+          "example_en": "I was unable to attend the meeting.",
+          "example_vi": "Tôi không thể tham dự cuộc họp."
+        },
+        {
+          "form": "disability",
+          "pos": "Noun (related)",
+          "phonetic": "/ˌdɪsəˈbɪləti/",
+          "vi": "Khuyết tật",
+          "example_en": "He overcame his disability to become a champion.",
+          "example_vi": "Anh ấy đã vượt qua khuyết tật để trở thành nhà vô địch."
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "Countable vs Uncountable",
+          "rule": "Cả hai. Uncount: tổng quát. Count: nhiều kỹ năng cụ thể.",
+          "correct_examples": [
+            "✅ She has natural ability.",
+            "✅ She has many abilities."
+          ],
+          "common_mistakes": [
+            "❌ She has many ability. → ✅ many abilities"
+          ]
+        },
+        {
+          "topic": "Article rules",
+          "rule": "'the ability to + V' (specific), 'an ability' (with adj), bare 'ability' (general).",
+          "correct_examples": [
+            "✅ the ability to learn",
+            "✅ an exceptional ability"
+          ],
+          "common_mistakes": [
+            "❌ ability to learn → ✅ the ability to learn"
+          ]
+        },
+        {
+          "topic": "Verb pattern: ability + TO + V",
+          "rule": "BẮT BUỘC dùng 'to + INFINITIVE'.",
+          "correct_examples": [
+            "✅ ability TO swim"
+          ],
+          "common_mistakes": [
+            "❌ ability of swimming → ✅ ability to swim"
+          ]
+        },
+        {
+          "topic": "Prepositions",
+          "rule": "'ability in + lĩnh vực'; 'ability with + công cụ/người'; 'ability for + năng khiếu'.",
+          "correct_examples": [
+            "✅ ability in math",
+            "✅ ability with children",
+            "✅ ability for music"
+          ],
+          "common_mistakes": [
+            "❌ ability of math → ✅ ability in math"
+          ]
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Khả năng tổng quát, đo lường được"
+        },
+        {
+          "meaning_index": 1,
+          "register": "neutral",
+          "usage_context": "Dùng số nhiều cho nhiều kỹ năng cụ thể"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "capability",
+          "nuance": "Trang trọng hơn, dùng cho tổ chức"
+        },
+        {
+          "word": "capacity",
+          "nuance": "Nhấn mạnh tiềm năng tối đa"
+        },
+        {
+          "word": "skill",
+          "nuance": "Đã luyện tập qua thời gian"
+        },
+        {
+          "word": "talent",
+          "nuance": "Bẩm sinh, tự nhiên"
+        },
+        {
+          "word": "aptitude",
+          "nuance": "Tiềm tàng, đo qua test"
+        },
+        {
+          "word": "competence",
+          "nuance": "Đạt chuẩn nghề nghiệp"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "inability",
+          "nuance": "Trực tiếp đối nghĩa"
+        },
+        {
+          "word": "incapability",
+          "nuance": "Trang trọng hơn"
+        },
+        {
+          "word": "incompetence",
+          "nuance": "Không đạt chuẩn"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "natural ability",
+          "example_en": "He has a natural ability for music.",
+          "example_vi": "Anh ấy có năng khiếu tự nhiên với âm nhạc.",
+          "frequency_note": "Rất phổ biến"
+        },
+        {
+          "phrase": "innate ability",
+          "example_en": "Some have an innate ability that can't be taught.",
+          "example_vi": "Một số có khả năng bẩm sinh không thể dạy được.",
+          "frequency_note": "Trang trọng"
+        },
+        {
+          "phrase": "to the best of one's ability",
+          "example_en": "I'll do this to the best of my ability.",
+          "example_vi": "Tôi sẽ làm hết khả năng.",
+          "frequency_note": "Idiom phổ biến"
+        },
+        {
+          "phrase": "demonstrate ability",
+          "example_en": "She demonstrated remarkable ability under pressure.",
+          "example_vi": "Cô ấy đã thể hiện khả năng đáng nể.",
+          "frequency_note": "Chuyên nghiệp"
+        },
+        {
+          "phrase": "mixed-ability group",
+          "example_en": "Teaching a mixed-ability group is challenging.",
+          "example_vi": "Dạy lớp đa trình độ là thử thách.",
+          "frequency_note": "Giáo dục"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "to the best of my ability",
+          "meaning": "Làm hết sức mình",
+          "example_en": "I answered to the best of my ability.",
+          "example_vi": "Tôi đã trả lời bằng tất cả khả năng.",
+          "register": "neutral-formal"
+        },
+        {
+          "phrase": "beyond one's ability",
+          "meaning": "Vượt khả năng",
+          "example_en": "Solving that was beyond my ability.",
+          "example_vi": "Giải bài đó vượt quá khả năng của tôi.",
+          "register": "neutral"
+        },
+        {
+          "phrase": "of mixed ability",
+          "meaning": "Trình độ khác nhau (giáo dục)",
+          "example_en": "The class is of mixed ability.",
+          "example_vi": "Lớp có trình độ khác nhau.",
+          "register": "formal/academic"
+        }
+      ],
+      "v1_usage_notes": [
+        "Không nhầm 'ability' (làm được) vs 'capability' (phạm vi/tổ chức).",
+        "'mixed-ability' là cụm cố định (không nói 'mixed-skill').",
+        "Pattern: 'ability TO + V' (chuẩn), KHÔNG 'ability of doing'.",
+        "Dành cho người Việt: 'ability' LUÔN là DANH TỪ. Sai khi nói 'I'm ability...' → 'I have the ability to...'.",
+        "False friend: 'ability' ≠ tiếng Pháp 'habilité'."
+      ]
+    },
+    {
+      "id": 296,
+      "word": "answer",
+      "phonetic": "/ˈɑːnsə(r)/",
+      "pos": "Verb, Noun",
+      "frequency": 5,
+      "categories": [
+        "Communication",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Trả lời (động từ)",
+          "examples": [
+            {
+              "en": "Please answer the question clearly.",
+              "vi": "Vui lòng trả lời câu hỏi rõ ràng.",
+              "category": "Education"
+            },
+            {
+              "en": "She refused to answer the journalist's questions.",
+              "vi": "Cô ấy từ chối trả lời câu hỏi của phóng viên.",
+              "category": "Communication"
+            },
+            {
+              "en": "He answered the door wearing pajamas.",
+              "vi": "Anh ấy ra mở cửa khi đang mặc đồ ngủ.",
+              "category": "Home"
+            }
+          ]
+        },
+        {
+          "vi": "Câu trả lời, lời đáp (danh từ)",
+          "examples": [
+            {
+              "en": "I'm still waiting for an answer from the hiring manager.",
+              "vi": "Tôi vẫn đang chờ câu trả lời từ người quản lý tuyển dụng.",
+              "category": "Work"
+            },
+            {
+              "en": "There's no easy answer to that question.",
+              "vi": "Không có câu trả lời dễ dàng cho câu hỏi đó.",
+              "category": "Communication"
+            },
+            {
+              "en": "Her answer surprised everyone in the room.",
+              "vi": "Câu trả lời của cô ấy đã làm mọi người trong phòng ngạc nhiên.",
+              "category": "Social"
+            }
+          ]
+        },
+        {
+          "vi": "Giải pháp cho vấn đề",
+          "examples": [
+            {
+              "en": "Technology isn't always the answer to social problems.",
+              "vi": "Công nghệ không phải lúc nào cũng là giải pháp cho các vấn đề xã hội.",
+              "category": "Technology"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Interview anxiety · answer",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What's the hardest interview question you've ever had to answer, and how did you handle it under pressure?",
+              "vi": "Câu hỏi phỏng vấn khó nhất bạn từng phải trả lời là gì, và bạn đã xử lý nó dưới áp lực như thế nào?",
+              "vocabs": [
+                "hardest interview question",
+                "handle it",
+                "under pressure"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, the worst one was 'What's your biggest weakness?' I knew the textbook answers, but I wanted to be authentic without sabotaging myself. I ended up describing a real struggle with delegation, then walked through the specific habits I'd built to fix it. That felt risky in the moment, but the interviewer later told me it was the most memorable response of the day.",
+              "vi": "Thành thật mà nói, câu tệ nhất là 'Điểm yếu lớn nhất của bạn là gì?' Tôi biết các câu trả lời mẫu, nhưng tôi muốn chân thực mà không tự hạ thấp mình. Cuối cùng tôi mô tả một khó khăn thật sự với việc giao việc, rồi nêu cụ thể những thói quen tôi đã xây dựng để khắc phục. Lúc đó cảm thấy mạo hiểm, nhưng nhà phỏng vấn sau đó nói với tôi đó là câu trả lời đáng nhớ nhất ngày hôm đó.",
+              "vocabs": [
+                "biggest weakness",
+                "textbook answers",
+                "authentic",
+                "sabotaging myself",
+                "delegation",
+                "specific habits",
+                "memorable response"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Do you think there's a universal answer that works for tough behavioral questions, or does it really depend on the company?",
+              "vi": "Bạn nghĩ có một câu trả lời chung dùng được cho các câu hỏi hành vi khó, hay nó thực sự phụ thuộc vào công ty?",
+              "vocabs": [
+                "universal answer",
+                "behavioral questions",
+                "depend on the company"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "There's no universal answer, but there is a universal approach: structure your response around a specific situation, your action, and the measurable outcome. Beyond that, you have to read the room. A startup wants energy and adaptability; a financial institution wants precision and risk awareness. Same question, completely different best answers.",
+              "vi": "Không có câu trả lời chung, nhưng có một cách tiếp cận chung: cấu trúc câu trả lời quanh tình huống cụ thể, hành động của bạn, và kết quả đo lường được. Ngoài ra, bạn phải đọc được không khí phòng. Startup muốn năng lượng và sự linh hoạt; tổ chức tài chính muốn sự chính xác và ý thức rủi ro. Cùng câu hỏi, câu trả lời tốt nhất hoàn toàn khác nhau.",
+              "vocabs": [
+                "structure your response",
+                "specific situation",
+                "measurable outcome",
+                "read the room",
+                "adaptability",
+                "financial institution",
+                "risk awareness"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 5,
+        "scale": "1-5",
+        "label": "Cực kỳ thông dụng",
+        "coca_rank": 489,
+        "coca_band": "1-500",
+        "oxford_level": "Oxford 1000",
+        "cefr_level": "A1",
+        "appearance_rate": "Xuất hiện gần như mọi cuộc hội thoại",
+        "methodology": "COCA + Oxford OALD + Cambridge English Profile",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD"
+        ]
+      },
+      "v1_register": "neutral",
+      "v1_word_forms": [
+        {
+          "form": "answered",
+          "pos": "Verb (past)",
+          "phonetic": "/ˈɑːnsəd/",
+          "vi": "Đã trả lời",
+          "example_en": "She answered immediately.",
+          "example_vi": "Cô ấy đã trả lời ngay lập tức."
+        },
+        {
+          "form": "answering",
+          "pos": "Verb (V-ing)",
+          "phonetic": "/ˈɑːnsərɪŋ/",
+          "vi": "Đang trả lời",
+          "example_en": "He spent the morning answering emails.",
+          "example_vi": "Anh ấy dành buổi sáng để trả lời email."
+        },
+        {
+          "form": "unanswered",
+          "pos": "Adjective (neg.)",
+          "phonetic": "/ʌnˈɑːnsəd/",
+          "vi": "Chưa được trả lời",
+          "example_en": "Many questions remain unanswered.",
+          "example_vi": "Nhiều câu hỏi vẫn chưa có lời đáp."
+        },
+        {
+          "form": "answerable",
+          "pos": "Adjective",
+          "phonetic": "/ˈɑːnsərəbl/",
+          "vi": "Có thể trả lời được / chịu trách nhiệm",
+          "example_en": "Managers are answerable to shareholders.",
+          "example_vi": "Các quản lý phải chịu trách nhiệm với cổ đông."
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "Transitive (no preposition)",
+          "rule": "'answer + something' (KHÔNG dùng 'to' sau answer khi nói về câu hỏi).",
+          "correct_examples": [
+            "✅ She answered the question.",
+            "✅ He answered the phone."
+          ],
+          "common_mistakes": [
+            "❌ She answered to the question. → ✅ She answered the question."
+          ]
+        },
+        {
+          "topic": "answer for vs answer to",
+          "rule": "'answer for' = chịu trách nhiệm cho. 'answer to' = báo cáo với (ai cao hơn).",
+          "correct_examples": [
+            "✅ He must answer for his actions. (responsible)",
+            "✅ Managers answer to the CEO. (report to)"
+          ],
+          "common_mistakes": []
+        },
+        {
+          "topic": "in answer to (formal)",
+          "rule": "'In answer to your question/letter' = trang trọng, thường văn viết.",
+          "correct_examples": [
+            "✅ In answer to your email, I attach the report.",
+            "✅ In answer to that, I'd say no."
+          ],
+          "common_mistakes": []
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Đáp lại câu hỏi/cửa/điện thoại"
+        },
+        {
+          "meaning_index": 1,
+          "register": "neutral",
+          "usage_context": "Lời đáp (countable)"
+        },
+        {
+          "meaning_index": 2,
+          "register": "neutral",
+          "usage_context": "Giải pháp (figurative)"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "reply",
+          "nuance": "Gần nghĩa, hơi formal hơn"
+        },
+        {
+          "word": "respond",
+          "nuance": "Trang trọng hơn, dùng văn viết/professional"
+        },
+        {
+          "word": "retort",
+          "nuance": "Trả lời sắc bén/nhanh, có chút tranh cãi"
+        },
+        {
+          "word": "solution",
+          "nuance": "Đối với nghĩa 'giải pháp' - đồng nghĩa"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "question",
+          "nuance": "Đối lập trong cặp Q&A"
+        },
+        {
+          "word": "ignore",
+          "nuance": "Đối nghĩa hành động - bỏ qua không trả lời"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "answer the phone",
+          "example_en": "She answered the phone on the third ring.",
+          "example_vi": "Cô ấy bắt điện thoại ở hồi chuông thứ ba.",
+          "frequency_note": "Cực phổ biến"
+        },
+        {
+          "phrase": "answer the door",
+          "example_en": "Could you answer the door, please?",
+          "example_vi": "Bạn có thể ra mở cửa giúp không?",
+          "frequency_note": "Rất phổ biến"
+        },
+        {
+          "phrase": "give an answer",
+          "example_en": "I can't give you an answer right now.",
+          "example_vi": "Tôi chưa thể đưa câu trả lời ngay được.",
+          "frequency_note": "Phổ biến"
+        },
+        {
+          "phrase": "have an answer for everything",
+          "example_en": "She always has an answer for everything.",
+          "example_vi": "Cô ấy luôn có câu trả lời cho mọi thứ.",
+          "frequency_note": "Idiom"
+        },
+        {
+          "phrase": "in answer to",
+          "example_en": "In answer to your question, yes.",
+          "example_vi": "Đáp lại câu hỏi của bạn, có.",
+          "frequency_note": "Formal"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "answer back",
+          "meaning": "Cãi lại (thường người lớn tuổi/cấp trên - tiêu cực)",
+          "example_en": "Don't answer back to your mother!",
+          "example_vi": "Đừng cãi lại mẹ!",
+          "register": "informal"
+        },
+        {
+          "phrase": "no answer",
+          "meaning": "Không ai trả lời (điện thoại/cửa)",
+          "example_en": "I called three times but got no answer.",
+          "example_vi": "Tôi gọi ba lần mà không ai trả lời.",
+          "register": "neutral"
+        },
+        {
+          "phrase": "the answer is yes/no",
+          "meaning": "Câu trả lời rõ ràng",
+          "example_en": "If you're asking if I'm in, the answer is yes.",
+          "example_vi": "Nếu bạn hỏi tôi có tham gia không, câu trả lời là có.",
+          "register": "neutral"
+        }
+      ],
+      "v1_usage_notes": [
+        "'Answer' KHÔNG cần 'to' khi trả lời câu hỏi: 'answer the question' (không 'answer to the question').",
+        "Phân biệt 'answer for' (chịu trách nhiệm) vs 'answer to' (báo cáo với).",
+        "Dành cho người Việt: 'answer the phone' = bắt máy điện thoại, KHÔNG dịch word-for-word.",
+        "Trong văn viết formal, dùng 'respond' thay 'answer' để professional hơn.",
+        "'Answer back' có nghĩa tiêu cực (cãi lại), không nhầm với 'reply'."
+      ]
+    },
+    {
+      "id": 297,
+      "word": "across",
+      "phonetic": "/əˈkrɒs/",
+      "pos": "Preposition, Adverb",
+      "frequency": 5,
+      "categories": [
+        "General",
+        "Movement"
+      ],
+      "meanings": [
+        {
+          "vi": "Băng qua, đi từ bên này sang bên kia",
+          "examples": [
+            {
+              "en": "She walked across the street to greet him.",
+              "vi": "Cô ấy đi băng qua đường để chào anh ấy.",
+              "category": "Social"
+            },
+            {
+              "en": "The bridge stretches across the river.",
+              "vi": "Cây cầu trải dài qua dòng sông.",
+              "category": "Nature"
+            },
+            {
+              "en": "He swam across the lake in twenty minutes.",
+              "vi": "Anh ấy bơi qua hồ trong hai mươi phút.",
+              "category": "Sports"
+            }
+          ]
+        },
+        {
+          "vi": "Trên khắp, lan rộng khắp một khu vực",
+          "examples": [
+            {
+              "en": "The disease spread rapidly across Europe.",
+              "vi": "Dịch bệnh lan rộng nhanh chóng khắp châu Âu.",
+              "category": "Health"
+            },
+            {
+              "en": "Sales increased across all product categories.",
+              "vi": "Doanh số tăng trên tất cả các danh mục sản phẩm.",
+              "category": "Business"
+            },
+            {
+              "en": "Reactions varied widely across different age groups.",
+              "vi": "Phản ứng khác biệt rõ rệt giữa các nhóm tuổi khác nhau.",
+              "category": "Social"
+            }
+          ]
+        },
+        {
+          "vi": "Đối diện, phía bên kia",
+          "examples": [
+            {
+              "en": "She lives just across from the park.",
+              "vi": "Cô ấy sống ngay đối diện công viên.",
+              "category": "Home"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "International marketing · across",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How challenging is it to maintain a consistent brand identity across so many different cultural markets simultaneously?",
+              "vi": "Việc duy trì một bản sắc thương hiệu nhất quán trên nhiều thị trường văn hóa khác nhau đồng thời khó khăn đến mức nào?",
+              "vocabs": [
+                "consistent brand identity",
+                "cultural markets",
+                "simultaneously"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, it's a constant balancing act. Our core values stay the same across every region — quality, transparency, accessibility — but the way we express them shifts dramatically. A campaign that resonates across Western Europe might feel cold or impersonal in Southeast Asia. We learned the hard way that direct translation rarely works; you need local creative teams who understand cultural nuance.",
+              "vi": "Thành thật mà nói, đó là một việc cân bằng liên tục. Các giá trị cốt lõi của chúng tôi giữ nguyên trên mọi khu vực — chất lượng, minh bạch, dễ tiếp cận — nhưng cách thể hiện thay đổi mạnh mẽ. Một chiến dịch gây tiếng vang khắp Tây Âu có thể bị cảm thấy lạnh lùng hoặc thiếu cá nhân ở Đông Nam Á. Chúng tôi đã học bài học đắt giá rằng dịch trực tiếp hiếm khi hiệu quả; bạn cần đội ngũ sáng tạo địa phương hiểu được sắc thái văn hóa.",
+              "vocabs": [
+                "balancing act",
+                "core values",
+                "transparency",
+                "accessibility",
+                "resonates",
+                "Western Europe",
+                "impersonal",
+                "Southeast Asia",
+                "direct translation",
+                "cultural nuance"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Have you noticed any unexpected patterns emerging across regions that you didn't anticipate when you first expanded internationally?",
+              "vi": "Bạn có nhận thấy bất kỳ mẫu hình bất ngờ nào xuất hiện trên các khu vực mà bạn không lường trước khi mới mở rộng quốc tế không?",
+              "vocabs": [
+                "unexpected patterns",
+                "anticipate",
+                "expanded internationally"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "One huge surprise: sustainability messaging performs strongly across both wealthy and emerging markets, but for completely different reasons. In developed economies, customers respond to climate concerns; in emerging markets, they respond to durability and value-for-money framing. Same product, same green credentials, but the story we tell varies entirely across audiences.",
+              "vi": "Một bất ngờ lớn: thông điệp về bền vững hoạt động mạnh trên cả thị trường giàu có và thị trường mới nổi, nhưng vì lý do hoàn toàn khác. Ở các nền kinh tế phát triển, khách hàng phản ứng với mối lo khí hậu; ở thị trường mới nổi, họ phản ứng với độ bền và giá trị-tương-xứng-giá. Cùng sản phẩm, cùng tín chỉ xanh, nhưng câu chuyện chúng tôi kể khác hoàn toàn tùy đối tượng.",
+              "vocabs": [
+                "sustainability messaging",
+                "wealthy and emerging markets",
+                "developed economies",
+                "climate concerns",
+                "durability",
+                "value-for-money",
+                "green credentials",
+                "varies entirely"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 5,
+        "scale": "1-5",
+        "label": "Cực kỳ thông dụng",
+        "coca_rank": 681,
+        "coca_band": "501-1000",
+        "oxford_level": "Oxford 1000",
+        "cefr_level": "A1",
+        "appearance_rate": "Xuất hiện trong hầu hết văn bản",
+        "methodology": "COCA + Oxford OALD",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD"
+        ]
+      },
+      "v1_register": "neutral",
+      "v1_word_forms": [
+        {
+          "form": "cross",
+          "pos": "Verb",
+          "phonetic": "/krɒs/",
+          "vi": "Băng qua (động từ chính)",
+          "example_en": "Please cross the street carefully.",
+          "example_vi": "Vui lòng băng qua đường cẩn thận."
+        },
+        {
+          "form": "crossing",
+          "pos": "Noun",
+          "phonetic": "/ˈkrɒsɪŋ/",
+          "vi": "Chỗ băng qua, lối qua đường",
+          "example_en": "Use the pedestrian crossing for safety.",
+          "example_vi": "Dùng lối qua đường dành cho người đi bộ để an toàn."
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "across vs through",
+          "rule": "'across' = qua bề mặt 2D (mặt phẳng). 'through' = xuyên qua không gian 3D.",
+          "correct_examples": [
+            "✅ walk across the field (bề mặt)",
+            "✅ walk through the forest (giữa cây cối)"
+          ],
+          "common_mistakes": [
+            "❌ walk through the field → ✅ walk across the field"
+          ]
+        },
+        {
+          "topic": "across vs over",
+          "rule": "'across' = ngang qua, di chuyển từ bên này sang bên kia. 'over' = vượt qua (thường có chiều cao).",
+          "correct_examples": [
+            "✅ swim across the river",
+            "✅ jump over the fence"
+          ],
+          "common_mistakes": []
+        },
+        {
+          "topic": "across from = đối diện",
+          "rule": "'across from + Noun' = đối diện. KHÔNG dùng 'opposite to'.",
+          "correct_examples": [
+            "✅ She sat across from me.",
+            "✅ The shop is across from the park."
+          ],
+          "common_mistakes": [
+            "❌ across to me → ✅ across from me"
+          ]
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Chuyển động vật lý qua không gian"
+        },
+        {
+          "meaning_index": 1,
+          "register": "neutral",
+          "usage_context": "Phạm vi/lan rộng (figurative)"
+        },
+        {
+          "meaning_index": 2,
+          "register": "neutral",
+          "usage_context": "Vị trí đối diện"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "throughout",
+          "nuance": "Cho nghĩa 'khắp' - trang trọng hơn"
+        },
+        {
+          "word": "over",
+          "nuance": "Cho nghĩa 'qua' - dùng khi có chiều cao"
+        },
+        {
+          "word": "opposite",
+          "nuance": "Cho nghĩa 'đối diện' - dùng độc lập"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "along",
+          "nuance": "Đi DỌC theo (chứ không CẮT NGANG)"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "come across",
+          "example_en": "I came across an old photo yesterday.",
+          "example_vi": "Tôi tình cờ thấy một bức ảnh cũ hôm qua.",
+          "frequency_note": "Phrasal verb cực phổ biến"
+        },
+        {
+          "phrase": "across the board",
+          "example_en": "Salaries increased across the board.",
+          "example_vi": "Lương tăng trên toàn diện.",
+          "frequency_note": "Idiom phổ biến"
+        },
+        {
+          "phrase": "cut across",
+          "example_en": "This issue cuts across political lines.",
+          "example_vi": "Vấn đề này vượt qua mọi ranh giới chính trị.",
+          "frequency_note": "Phổ biến"
+        },
+        {
+          "phrase": "across the country",
+          "example_en": "Protests broke out across the country.",
+          "example_vi": "Biểu tình bùng phát trên cả nước.",
+          "frequency_note": "Tin tức"
+        },
+        {
+          "phrase": "across the board",
+          "example_en": "Cuts will be made across the board.",
+          "example_vi": "Cắt giảm sẽ áp dụng toàn diện.",
+          "frequency_note": "Business"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "come across as",
+          "meaning": "Tạo ấn tượng là...",
+          "example_en": "He comes across as arrogant.",
+          "example_vi": "Anh ấy gây ấn tượng kiêu ngạo.",
+          "register": "neutral"
+        },
+        {
+          "phrase": "across the board",
+          "meaning": "Toàn diện, áp dụng cho tất cả",
+          "example_en": "We need cuts across the board.",
+          "example_vi": "Chúng ta cần cắt giảm toàn diện.",
+          "register": "neutral"
+        },
+        {
+          "phrase": "get across (an idea)",
+          "meaning": "Truyền đạt được ý",
+          "example_en": "I couldn't get my point across.",
+          "example_vi": "Tôi không thể truyền đạt được quan điểm.",
+          "register": "neutral"
+        }
+      ],
+      "v1_usage_notes": [
+        "'across' = qua bề mặt 2D, 'through' = xuyên không gian 3D.",
+        "'across from' = đối diện (KHÔNG dùng 'opposite to').",
+        "Phrasal verb 'come across' (tình cờ gặp) cực phổ biến — học thuộc.",
+        "Dành cho người Việt: 'across' KHÔNG luôn dịch là 'qua' — đôi khi là 'khắp' (across the country) hoặc 'đối diện' (across from)."
+      ]
+    },
+    {
+      "id": 298,
+      "word": "air",
+      "phonetic": "/eə(r)/",
+      "pos": "Noun",
+      "frequency": 5,
+      "categories": [
+        "Nature",
+        "General"
+      ],
+      "meanings": [
+        {
+          "vi": "Không khí, khí quyển bao quanh chúng ta",
+          "examples": [
+            {
+              "en": "The mountain air felt fresh and cool.",
+              "vi": "Không khí trên núi cảm thấy trong lành và mát mẻ.",
+              "category": "Nature"
+            },
+            {
+              "en": "She took a deep breath of the morning air.",
+              "vi": "Cô ấy hít một hơi sâu không khí buổi sáng.",
+              "category": "Health"
+            },
+            {
+              "en": "Air pollution in the city has reached dangerous levels.",
+              "vi": "Ô nhiễm không khí trong thành phố đã đạt mức nguy hiểm.",
+              "category": "Nature"
+            }
+          ]
+        },
+        {
+          "vi": "Phong cách, vẻ bề ngoài (formal/literary)",
+          "examples": [
+            {
+              "en": "She walked in with an air of confidence.",
+              "vi": "Cô ấy bước vào với phong thái tự tin.",
+              "category": "Personal"
+            },
+            {
+              "en": "The old mansion had an air of mystery.",
+              "vi": "Ngôi biệt thự cổ mang vẻ bí ẩn.",
+              "category": "Arts"
+            }
+          ]
+        },
+        {
+          "vi": "Trên không, đường hàng không",
+          "examples": [
+            {
+              "en": "We traveled by air to save time.",
+              "vi": "Chúng tôi đi bằng đường hàng không để tiết kiệm thời gian.",
+              "category": "Travel"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Urban environment · air",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Has the air quality in your neighborhood actually improved since the new emissions regulations went into effect last year?",
+              "vi": "Chất lượng không khí ở khu phố của bạn có thực sự được cải thiện kể từ khi quy định khí thải mới có hiệu lực năm ngoái không?",
+              "vocabs": [
+                "air quality",
+                "neighborhood",
+                "emissions regulations",
+                "into effect"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Surprisingly, yes — the difference is noticeable. We have monitoring stations on three streets now, and particulate matter has dropped by about thirty percent. I can finally open my windows in the morning without smelling diesel. My kids' asthma flare-ups have decreased too, which is honestly the change that matters most to our family.",
+              "vi": "Đáng ngạc nhiên là có — sự khác biệt rất rõ ràng. Giờ có ba trạm quan trắc trên các con phố quanh đây, và lượng hạt bụi đã giảm khoảng ba mươi phần trăm. Tôi cuối cùng có thể mở cửa sổ buổi sáng mà không ngửi mùi dầu diesel. Các đợt bùng phát hen suyễn của con tôi cũng giảm, điều đó thật sự là thay đổi quan trọng nhất với gia đình tôi.",
+              "vocabs": [
+                "monitoring stations",
+                "particulate matter",
+                "diesel",
+                "asthma flare-ups",
+                "matters most"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Do you think these air quality improvements will hold up if the city continues growing and adding more vehicles?",
+              "vi": "Bạn nghĩ những cải thiện về chất lượng không khí này sẽ duy trì được không nếu thành phố tiếp tục phát triển và có thêm xe cộ?",
+              "vocabs": [
+                "air quality improvements",
+                "hold up",
+                "vehicles"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, I'm cautiously optimistic. The shift toward electric buses and the expansion of bike lanes are working in our favor, but population growth is racing ahead of infrastructure. Cleaner air requires constant investment — you can't just pass one law and walk away. The real test will be whether the next administration treats this as a priority or quietly defunds the programs.",
+              "vi": "Thành thật mà nói, tôi lạc quan thận trọng. Việc chuyển sang xe buýt điện và mở rộng làn xe đạp đang có lợi cho chúng ta, nhưng tăng dân số đang chạy nhanh hơn cơ sở hạ tầng. Không khí sạch hơn đòi hỏi đầu tư liên tục — bạn không thể chỉ thông qua một luật rồi bỏ đi. Bài kiểm tra thực sự sẽ là liệu chính quyền tiếp theo có coi đây là ưu tiên hay âm thầm cắt giảm các chương trình.",
+              "vocabs": [
+                "cautiously optimistic",
+                "electric buses",
+                "bike lanes",
+                "population growth",
+                "infrastructure",
+                "defunds the programs"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 5,
+        "scale": "1-5",
+        "label": "Cực kỳ thông dụng",
+        "coca_rank": 743,
+        "coca_band": "501-1000",
+        "oxford_level": "Oxford 1000",
+        "cefr_level": "A1",
+        "appearance_rate": "Xuất hiện gần như mọi văn bản",
+        "methodology": "COCA + Oxford OALD",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD"
+        ]
+      },
+      "v1_register": "neutral",
+      "v1_word_forms": [
+        {
+          "form": "airy",
+          "pos": "Adjective",
+          "phonetic": "/ˈeəri/",
+          "vi": "Thoáng khí, nhẹ nhàng",
+          "example_en": "The room is bright and airy.",
+          "example_vi": "Căn phòng sáng và thoáng khí."
+        },
+        {
+          "form": "aerial",
+          "pos": "Adjective",
+          "phonetic": "/ˈeəriəl/",
+          "vi": "Trên không, hàng không",
+          "example_en": "An aerial view of the city.",
+          "example_vi": "Một góc nhìn từ trên không của thành phố."
+        },
+        {
+          "form": "airless",
+          "pos": "Adjective",
+          "phonetic": "/ˈeələs/",
+          "vi": "Ngột ngạt, thiếu khí",
+          "example_en": "The basement was airless and damp.",
+          "example_vi": "Tầng hầm ngột ngạt và ẩm thấp."
+        },
+        {
+          "form": "airy",
+          "pos": "Adjective (figurative)",
+          "phonetic": "/ˈeəri/",
+          "vi": "Mơ hồ, viển vông",
+          "example_en": "He dismissed her plan as airy nonsense.",
+          "example_vi": "Anh ấy gạt bỏ kế hoạch của cô ấy là vô nghĩa viển vông."
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "Uncountable",
+          "rule": "'Air' (không khí) là DANH TỪ KHÔNG ĐẾM. KHÔNG dùng 'an air' / 'airs' cho nghĩa cơ bản.",
+          "correct_examples": [
+            "✅ The air is fresh.",
+            "✅ I need some air."
+          ],
+          "common_mistakes": [
+            "❌ an air → ✅ some/the air"
+          ]
+        },
+        {
+          "topic": "Idiom: 'on the air'",
+          "rule": "'on the air' = đang phát sóng (radio/TV).",
+          "correct_examples": [
+            "✅ The show is on the air at 8pm."
+          ],
+          "common_mistakes": []
+        },
+        {
+          "topic": "Idiom: 'in the air'",
+          "rule": "'in the air' = (1) đang lơ lửng, (2) cảm giác có gì đó đang đến (figurative).",
+          "correct_examples": [
+            "✅ Change is in the air. (figurative)",
+            "✅ Smoke hung in the air."
+          ],
+          "common_mistakes": []
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Khí quyển (uncountable)"
+        },
+        {
+          "meaning_index": 1,
+          "register": "formal/literary",
+          "usage_context": "'an air of...' = vẻ/phong thái"
+        },
+        {
+          "meaning_index": 2,
+          "register": "neutral",
+          "usage_context": "Travel mode (by air)"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "atmosphere",
+          "nuance": "Trang trọng hơn, cả nghĩa khí quyển và bầu không khí"
+        },
+        {
+          "word": "breeze",
+          "nuance": "Cụ thể về luồng gió nhẹ"
+        },
+        {
+          "word": "wind",
+          "nuance": "Gió - di chuyển của không khí"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "vacuum",
+          "nuance": "Đối nghĩa khoa học - không có khí"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "fresh air",
+          "example_en": "Let's go outside for some fresh air.",
+          "example_vi": "Hãy ra ngoài hít chút không khí trong lành.",
+          "frequency_note": "Cực phổ biến"
+        },
+        {
+          "phrase": "thin air",
+          "example_en": "She disappeared into thin air.",
+          "example_vi": "Cô ấy biến mất không một dấu vết.",
+          "frequency_note": "Idiom phổ biến"
+        },
+        {
+          "phrase": "by air",
+          "example_en": "We sent the package by air.",
+          "example_vi": "Chúng tôi gửi bưu kiện bằng đường hàng không.",
+          "frequency_note": "Travel/logistics"
+        },
+        {
+          "phrase": "air pollution",
+          "example_en": "Air pollution affects millions of children.",
+          "example_vi": "Ô nhiễm không khí ảnh hưởng đến hàng triệu trẻ em.",
+          "frequency_note": "Tin tức"
+        },
+        {
+          "phrase": "open air",
+          "example_en": "The concert is held in the open air.",
+          "example_vi": "Buổi hòa nhạc được tổ chức ngoài trời.",
+          "frequency_note": "Phổ biến"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "out of thin air",
+          "meaning": "Đột ngột xuất hiện, không có nguồn gốc rõ",
+          "example_en": "She produced the answer out of thin air.",
+          "example_vi": "Cô ấy đưa ra câu trả lời như từ trên trời rơi xuống.",
+          "register": "informal"
+        },
+        {
+          "phrase": "on the air",
+          "meaning": "Đang phát sóng (radio/TV)",
+          "example_en": "We're going on the air in five minutes.",
+          "example_vi": "Chúng ta lên sóng trong năm phút nữa.",
+          "register": "broadcasting"
+        },
+        {
+          "phrase": "clear the air",
+          "meaning": "Giải quyết hiểu lầm",
+          "example_en": "Let's meet and clear the air.",
+          "example_vi": "Hãy gặp nhau để giải quyết hiểu lầm.",
+          "register": "informal"
+        }
+      ],
+      "v1_usage_notes": [
+        "'Air' là UNCOUNTABLE — KHÔNG dùng 'an air'/'airs' cho nghĩa cơ bản 'không khí'.",
+        "'An air of...' = vẻ/phong thái - dùng formal/literary (nghĩa #2).",
+        "Idiom 'clear the air' = giải quyết hiểu lầm - học thuộc.",
+        "Dành cho người Việt: 'by air' = bằng đường hàng không (không phải 'bằng không khí')."
+      ]
+    },
+    {
+      "id": 299,
+      "word": "age",
+      "phonetic": "/eɪdʒ/",
+      "pos": "Noun, Verb",
+      "frequency": 5,
+      "categories": [
+        "General",
+        "Time"
+      ],
+      "meanings": [
+        {
+          "vi": "Tuổi, số năm đã sống",
+          "examples": [
+            {
+              "en": "She started piano at the age of five.",
+              "vi": "Cô ấy bắt đầu học piano lúc năm tuổi.",
+              "category": "Education"
+            },
+            {
+              "en": "What's the legal age to vote in your country?",
+              "vi": "Tuổi hợp pháp để bầu cử ở nước bạn là bao nhiêu?",
+              "category": "Politics"
+            },
+            {
+              "en": "He looks young for his age.",
+              "vi": "Anh ấy trông trẻ so với tuổi.",
+              "category": "Personal"
+            }
+          ]
+        },
+        {
+          "vi": "Thời đại, kỷ nguyên lịch sử",
+          "examples": [
+            {
+              "en": "We are living in the digital age.",
+              "vi": "Chúng ta đang sống trong thời đại kỹ thuật số.",
+              "category": "Technology"
+            },
+            {
+              "en": "The Ice Age lasted thousands of years.",
+              "vi": "Kỷ băng hà kéo dài hàng nghìn năm.",
+              "category": "Science"
+            }
+          ]
+        },
+        {
+          "vi": "Già đi, lão hóa (động từ)",
+          "examples": [
+            {
+              "en": "She has aged beautifully over the years.",
+              "vi": "Cô ấy đã già đi một cách đẹp đẽ qua năm tháng.",
+              "category": "Personal"
+            },
+            {
+              "en": "Wine ages well in oak barrels.",
+              "vi": "Rượu vang già đi tốt trong thùng gỗ sồi.",
+              "category": "Food"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Aging gracefully · age",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Why do some people seem to age so much slower than others, even when they have similar lifestyles and stress levels?",
+              "vi": "Tại sao một số người dường như già đi chậm hơn nhiều so với người khác, ngay cả khi họ có lối sống và mức độ căng thẳng tương tự?",
+              "vocabs": [
+                "age slower",
+                "similar lifestyles",
+                "stress levels"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, genetics play a bigger role than most people want to admit. But beyond that, the biggest predictors are sleep quality, social connection, and how someone responds to chronic stress. Two people can work the same hours, but if one has a strong support network and the other feels isolated, their biological age will diverge within a decade.",
+              "vi": "Thành thật mà nói, di truyền đóng vai trò lớn hơn nhiều người muốn thừa nhận. Nhưng ngoài đó ra, các yếu tố dự báo lớn nhất là chất lượng giấc ngủ, sự kết nối xã hội, và cách một người phản ứng với căng thẳng mãn tính. Hai người có thể làm cùng số giờ, nhưng nếu một người có mạng lưới hỗ trợ mạnh và người kia cảm thấy bị cô lập, tuổi sinh học của họ sẽ chênh lệch trong vòng một thập kỷ.",
+              "vocabs": [
+                "genetics",
+                "predictors",
+                "sleep quality",
+                "social connection",
+                "chronic stress",
+                "support network",
+                "isolated",
+                "biological age",
+                "diverge"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Are there habits at any age that can actually slow down the aging process meaningfully?",
+              "vi": "Có những thói quen ở bất kỳ độ tuổi nào có thể thực sự làm chậm quá trình lão hóa một cách có ý nghĩa không?",
+              "vocabs": [
+                "habits",
+                "slow down",
+                "aging process"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Yes, and the research is becoming clearer every year. Resistance training preserves muscle mass and bone density; consistent sleep protects cellular repair; deep human relationships seem to lower inflammation. None of these are magic, but together they compound. The people who age best didn't discover one secret at sixty — they made dozens of small choices repeatedly for decades.",
+              "vi": "Có, và nghiên cứu đang ngày càng rõ ràng hơn mỗi năm. Tập kháng lực bảo tồn khối lượng cơ và mật độ xương; giấc ngủ nhất quán bảo vệ quá trình sửa chữa tế bào; các mối quan hệ con người sâu sắc dường như làm giảm viêm. Không có gì là phép thuật, nhưng kết hợp lại chúng cộng dồn. Những người già đi tốt nhất không tìm ra một bí mật ở tuổi sáu mươi — họ đã đưa ra hàng chục lựa chọn nhỏ một cách lặp đi lặp lại suốt hàng thập kỷ.",
+              "vocabs": [
+                "resistance training",
+                "muscle mass",
+                "bone density",
+                "cellular repair",
+                "deep relationships",
+                "lower inflammation",
+                "compound",
+                "small choices"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 5,
+        "scale": "1-5",
+        "label": "Cực kỳ thông dụng",
+        "coca_rank": 803,
+        "coca_band": "501-1000",
+        "oxford_level": "Oxford 1000",
+        "cefr_level": "A1",
+        "appearance_rate": "Xuất hiện mọi văn bản nói/viết",
+        "methodology": "COCA + Oxford OALD",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD"
+        ]
+      },
+      "v1_register": "neutral",
+      "v1_word_forms": [
+        {
+          "form": "aging / ageing",
+          "pos": "Noun/Adjective",
+          "phonetic": "/ˈeɪdʒɪŋ/",
+          "vi": "Sự lão hóa / đang già",
+          "example_en": "The aging population is a major concern.",
+          "example_vi": "Dân số già là mối quan tâm lớn."
+        },
+        {
+          "form": "aged",
+          "pos": "Adjective",
+          "phonetic": "/eɪdʒd/ or /ˈeɪdʒɪd/",
+          "vi": "Già; có tuổi (như aged 5)",
+          "example_en": "An aged man / Children aged 5 to 10.",
+          "example_vi": "Một người đàn ông già / Trẻ em từ 5 đến 10 tuổi."
+        },
+        {
+          "form": "ageless",
+          "pos": "Adjective",
+          "phonetic": "/ˈeɪdʒləs/",
+          "vi": "Không tuổi, vĩnh cửu",
+          "example_en": "Her beauty is ageless.",
+          "example_vi": "Vẻ đẹp của cô ấy là vĩnh cửu."
+        },
+        {
+          "form": "ageism",
+          "pos": "Noun",
+          "phonetic": "/ˈeɪdʒɪzəm/",
+          "vi": "Phân biệt tuổi tác",
+          "example_en": "Ageism in hiring remains a serious problem.",
+          "example_vi": "Phân biệt tuổi tác trong tuyển dụng vẫn là vấn đề nghiêm trọng."
+        },
+        {
+          "form": "underage",
+          "pos": "Adjective",
+          "phonetic": "/ˌʌndərˈeɪdʒ/",
+          "vi": "Chưa đủ tuổi",
+          "example_en": "Underage drinking is illegal.",
+          "example_vi": "Uống rượu khi chưa đủ tuổi là bất hợp pháp."
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "at the age of vs aged",
+          "rule": "'at the age of [number]' (formal/written). 'aged [number]' (parenthetical, formal writing).",
+          "correct_examples": [
+            "✅ She graduated at the age of 22.",
+            "✅ Students aged 12-15 must attend."
+          ],
+          "common_mistakes": [
+            "❌ at age of 22 → ✅ at the age of 22"
+          ]
+        },
+        {
+          "topic": "for one's age",
+          "rule": "'for + possessive + age' = so với tuổi.",
+          "correct_examples": [
+            "✅ He's tall for his age.",
+            "✅ She's wise for her age."
+          ],
+          "common_mistakes": []
+        },
+        {
+          "topic": "ages (informal: 'rất lâu')",
+          "rule": "'ages' (số nhiều, informal) = rất lâu rồi.",
+          "correct_examples": [
+            "✅ I haven't seen you in ages!",
+            "✅ It took ages to load."
+          ],
+          "common_mistakes": []
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Tuổi (số năm)"
+        },
+        {
+          "meaning_index": 1,
+          "register": "neutral",
+          "usage_context": "Thời đại lịch sử/văn hóa"
+        },
+        {
+          "meaning_index": 2,
+          "register": "neutral",
+          "usage_context": "Quá trình lão hóa (verb)"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "era",
+          "nuance": "Thời đại - trang trọng hơn, lịch sử"
+        },
+        {
+          "word": "period",
+          "nuance": "Thời kỳ - trung tính"
+        },
+        {
+          "word": "epoch",
+          "nuance": "Kỷ nguyên - rất trang trọng, văn học"
+        },
+        {
+          "word": "years",
+          "nuance": "Số tuổi - dùng informal: 'She is 25 years old'"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "youth",
+          "nuance": "Tuổi trẻ - đối lập với 'old age'"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "of all ages",
+          "example_en": "Movies for people of all ages.",
+          "example_vi": "Phim cho mọi lứa tuổi.",
+          "frequency_note": "Cực phổ biến"
+        },
+        {
+          "phrase": "act your age",
+          "example_en": "Stop crying — act your age!",
+          "example_vi": "Đừng khóc — hành xử cho ra tuổi!",
+          "frequency_note": "Idiom"
+        },
+        {
+          "phrase": "in this day and age",
+          "example_en": "In this day and age, that's unusual.",
+          "example_vi": "Trong thời đại này, điều đó là bất thường.",
+          "frequency_note": "Idiom phổ biến"
+        },
+        {
+          "phrase": "old age",
+          "example_en": "She wrote her memoir in old age.",
+          "example_vi": "Bà ấy viết hồi ký lúc về già.",
+          "frequency_note": "Cực phổ biến"
+        },
+        {
+          "phrase": "come of age",
+          "example_en": "The tech industry came of age in the 90s.",
+          "example_vi": "Ngành công nghệ trưởng thành vào thập niên 90.",
+          "frequency_note": "Phổ biến figurative"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "in ages",
+          "meaning": "Đã rất lâu rồi",
+          "example_en": "I haven't seen him in ages.",
+          "example_vi": "Tôi đã không gặp anh ấy rất lâu.",
+          "register": "informal"
+        },
+        {
+          "phrase": "act your age",
+          "meaning": "Hành xử cho phù hợp lứa tuổi",
+          "example_en": "You're 30, act your age!",
+          "example_vi": "Bạn 30 rồi, hành xử cho ra tuổi đi!",
+          "register": "informal"
+        },
+        {
+          "phrase": "come of age",
+          "meaning": "Trưởng thành (cá nhân/ngành)",
+          "example_en": "She came of age during the war.",
+          "example_vi": "Cô ấy trưởng thành trong thời chiến.",
+          "register": "formal/literary"
+        }
+      ],
+      "v1_usage_notes": [
+        "Cấu trúc 'at the age of [number]' BẮT BUỘC có 'the' giữa.",
+        "'Aged' phát âm khác nhau: /eɪdʒd/ (children aged 5) vs /ˈeɪdʒɪd/ (an aged man).",
+        "Idiom 'in ages' = đã rất lâu - chỉ dùng informal.",
+        "Dành cho người Việt: 'How old are you?' = 'Bạn bao nhiêu tuổi?', KHÔNG phải 'How is your age?'."
+      ]
+    },
+    {
+      "id": 300,
+      "word": "ago",
+      "phonetic": "/əˈɡəʊ/",
+      "pos": "Adverb",
+      "frequency": 5,
+      "categories": [
+        "General",
+        "Time"
+      ],
+      "meanings": [
+        {
+          "vi": "Trước đây, cách đây (chỉ thời gian quá khứ)",
+          "examples": [
+            {
+              "en": "We met three years ago at a conference.",
+              "vi": "Chúng tôi gặp nhau ba năm trước tại một hội nghị.",
+              "category": "Social"
+            },
+            {
+              "en": "She moved to Tokyo a long time ago.",
+              "vi": "Cô ấy chuyển đến Tokyo từ rất lâu rồi.",
+              "category": "Travel"
+            },
+            {
+              "en": "Just a moment ago, he was sitting right here.",
+              "vi": "Chỉ một lát trước, anh ấy còn ngồi ngay đây.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Career reflection · ago",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "Looking back, what's the most important career decision you made ten years ago that still affects your life today?",
+              "vi": "Nhìn lại, quyết định nghề nghiệp quan trọng nhất bạn đưa ra mười năm trước vẫn ảnh hưởng đến cuộc sống của bạn hôm nay là gì?",
+              "vocabs": [
+                "looking back",
+                "career decision",
+                "affects your life"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "About a decade ago, I turned down a much higher-paying job at a corporate firm to join a small startup nobody had heard of. Friends thought I was being reckless — the salary cut was huge. But that decision exposed me to people who later became mentors, customers, and even co-founders of my current company. None of that would've happened on the safer path.",
+              "vi": "Khoảng một thập kỷ trước, tôi đã từ chối một công việc lương cao hơn nhiều ở một công ty lớn để gia nhập một startup nhỏ chẳng ai biết đến. Bạn bè nghĩ tôi liều lĩnh — cắt giảm lương quá lớn. Nhưng quyết định đó đã cho tôi tiếp xúc với những người sau này trở thành cố vấn, khách hàng, thậm chí đồng sáng lập công ty hiện tại của tôi. Không điều nào trong đó xảy ra trên con đường an toàn hơn.",
+              "vocabs": [
+                "a decade ago",
+                "turned down",
+                "higher-paying job",
+                "corporate firm",
+                "small startup",
+                "reckless",
+                "salary cut",
+                "mentors",
+                "co-founders",
+                "safer path"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Do you ever wonder what your life would look like if you'd taken that corporate offer years ago instead?",
+              "vi": "Bạn có bao giờ tự hỏi cuộc sống mình sẽ trông như thế nào nếu nhận lời mời doanh nghiệp đó nhiều năm trước không?",
+              "vocabs": [
+                "taken that offer",
+                "instead",
+                "wonder"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Sure, occasionally. I'd probably be financially more comfortable, with a senior title and a predictable career trajectory. But I think I'd also be restless, second-guessing whether I'd missed something bigger. A few years ago I might have envied that path; now I genuinely don't. The risk paid off in ways I couldn't have predicted back then.",
+              "vi": "Có, thỉnh thoảng. Tôi có lẽ sẽ thoải mái tài chính hơn, với chức danh cao và quỹ đạo nghề nghiệp ổn định. Nhưng tôi nghĩ tôi cũng sẽ không yên, băn khoăn liệu mình có bỏ lỡ điều gì lớn hơn không. Vài năm trước có lẽ tôi đã ghen tị với con đường đó; bây giờ thì thực sự không. Sự mạo hiểm đã được đền đáp theo cách mà tôi không thể dự đoán lúc bấy giờ.",
+              "vocabs": [
+                "financially comfortable",
+                "senior title",
+                "predictable career trajectory",
+                "restless",
+                "second-guessing",
+                "few years ago",
+                "envied",
+                "risk paid off"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 5,
+        "scale": "1-5",
+        "label": "Cực kỳ thông dụng",
+        "coca_rank": 856,
+        "coca_band": "501-1000",
+        "oxford_level": "Oxford 1000",
+        "cefr_level": "A1",
+        "appearance_rate": "Mọi cuộc hội thoại nói về quá khứ",
+        "methodology": "COCA + Oxford OALD",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD"
+        ]
+      },
+      "v1_register": "neutral",
+      "v1_word_forms": [
+        {
+          "form": "(no derivatives)",
+          "pos": "—",
+          "phonetic": "—",
+          "vi": "'Ago' là từ đơn lẻ, không có dạng phái sinh phổ biến",
+          "example_en": "—",
+          "example_vi": "—"
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "Position: AFTER time expression",
+          "rule": "'ago' LUÔN đứng SAU expression thời gian. KHÔNG đứng trước.",
+          "correct_examples": [
+            "✅ two years ago",
+            "✅ a long time ago",
+            "✅ five minutes ago"
+          ],
+          "common_mistakes": [
+            "❌ ago two years → ✅ two years ago"
+          ]
+        },
+        {
+          "topic": "Tense: ALWAYS Past Simple",
+          "rule": "'ago' BẮT BUỘC đi với THÌ QUÁ KHỨ ĐƠN. KHÔNG dùng với Present Perfect.",
+          "correct_examples": [
+            "✅ I saw her two days ago. (past simple)",
+            "❌ I have seen her two days ago. → ✅ I saw her two days ago."
+          ],
+          "common_mistakes": [
+            "❌ have/has + ago → ✅ saw/met/went... ago"
+          ]
+        },
+        {
+          "topic": "ago vs before vs since",
+          "rule": "'ago' = từ hiện tại tính ngược về. 'before' = trước một điểm khác trong quá khứ. 'since' = từ một điểm cụ thể đến nay.",
+          "correct_examples": [
+            "✅ I met him two years ago. (counting from now)",
+            "✅ I had met him two years before. (counting from another past)",
+            "✅ I have known him since 2020. (from then to now)"
+          ],
+          "common_mistakes": [
+            "❌ since two years ago → ✅ two years ago / since 2 years"
+          ]
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Đếm thời gian từ hiện tại về quá khứ"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "before now",
+          "nuance": "Trang trọng/literary, hiếm dùng"
+        },
+        {
+          "word": "back then",
+          "nuance": "Informal, hoài niệm. VD: 'Back then, things were different'"
+        },
+        {
+          "word": "in the past",
+          "nuance": "Trang trọng, không cụ thể thời gian"
+        },
+        {
+          "word": "earlier",
+          "nuance": "Trong cùng ngày/period: 'I called earlier'"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "from now",
+          "nuance": "Hướng tương lai - 'two years from now'"
+        },
+        {
+          "word": "in the future",
+          "nuance": "Hướng về phía trước"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "a long time ago",
+          "example_en": "A long time ago, in a faraway land...",
+          "example_vi": "Cách đây rất lâu, ở một vùng đất xa xôi...",
+          "frequency_note": "Mở đầu chuyện kể"
+        },
+        {
+          "phrase": "not long ago",
+          "example_en": "Not long ago, we were discussing this.",
+          "example_vi": "Cách đây không lâu, chúng ta đã thảo luận về điều này.",
+          "frequency_note": "Phổ biến"
+        },
+        {
+          "phrase": "moments ago",
+          "example_en": "He was here moments ago.",
+          "example_vi": "Anh ấy vừa ở đây cách đây vài giây.",
+          "frequency_note": "Tin tức"
+        },
+        {
+          "phrase": "ages ago",
+          "example_en": "I read that book ages ago.",
+          "example_vi": "Tôi đã đọc cuốn sách đó từ lâu lắm rồi.",
+          "frequency_note": "Informal"
+        },
+        {
+          "phrase": "a while ago",
+          "example_en": "She called a while ago.",
+          "example_vi": "Cô ấy đã gọi cách đây một lúc.",
+          "frequency_note": "Cực phổ biến"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "not so long ago",
+          "meaning": "Cách đây không lâu",
+          "example_en": "Not so long ago, people didn't have smartphones.",
+          "example_vi": "Cách đây không lâu, người ta chưa có điện thoại thông minh.",
+          "register": "neutral"
+        },
+        {
+          "phrase": "long, long ago",
+          "meaning": "Từ rất lâu rồi (kể chuyện)",
+          "example_en": "Long, long ago, dragons ruled the skies.",
+          "example_vi": "Từ rất lâu, rất lâu trước đây, rồng cai trị bầu trời.",
+          "register": "literary/storytelling"
+        },
+        {
+          "phrase": "as long ago as [year]",
+          "meaning": "Sớm tận năm...",
+          "example_en": "As long ago as 1990, scientists warned about this.",
+          "example_vi": "Sớm tận năm 1990, các nhà khoa học đã cảnh báo về điều này.",
+          "register": "formal"
+        }
+      ],
+      "v1_usage_notes": [
+        "QUAN TRỌNG: 'ago' CHỈ đi với PAST SIMPLE. Lỗi phổ biến nhất là dùng với Present Perfect.",
+        "Vị trí: LUÔN sau expression thời gian (two years ago, not 'ago two years').",
+        "KHÔNG nhầm 'ago' với 'before' hay 'since'.",
+        "Dành cho người Việt: 'ago' = 'trước/cách đây' tính từ HIỆN TẠI ngược về. 'Before' = trước một mốc khác."
+      ]
+    },
+    {
+      "id": 301,
+      "word": "active",
+      "phonetic": "/ˈæktɪv/",
+      "pos": "Adjective",
+      "frequency": 4,
+      "categories": [
+        "General",
+        "Health"
+      ],
+      "meanings": [
+        {
+          "vi": "Năng động, hoạt động nhiều (về thể chất hoặc tinh thần)",
+          "examples": [
+            {
+              "en": "She leads a very active lifestyle.",
+              "vi": "Cô ấy có lối sống rất năng động.",
+              "category": "Health"
+            },
+            {
+              "en": "Even at 80, he remains mentally active.",
+              "vi": "Ngay cả ở tuổi 80, ông ấy vẫn năng động về tinh thần.",
+              "category": "Personal"
+            },
+            {
+              "en": "Children should be physically active every day.",
+              "vi": "Trẻ em nên vận động thể chất mỗi ngày.",
+              "category": "Family"
+            }
+          ]
+        },
+        {
+          "vi": "Đang hoạt động, đang vận hành (đối lập với 'inactive')",
+          "examples": [
+            {
+              "en": "The volcano has been active for centuries.",
+              "vi": "Núi lửa đã hoạt động trong nhiều thế kỷ.",
+              "category": "Nature"
+            },
+            {
+              "en": "Is this account still active?",
+              "vi": "Tài khoản này còn đang hoạt động không?",
+              "category": "Technology"
+            },
+            {
+              "en": "She's an active member of our book club.",
+              "vi": "Cô ấy là thành viên tích cực của câu lạc bộ sách.",
+              "category": "Social"
+            }
+          ]
+        },
+        {
+          "vi": "Chủ động, tích cực tham gia",
+          "examples": [
+            {
+              "en": "He took an active role in the project.",
+              "vi": "Anh ấy đóng vai trò chủ động trong dự án.",
+              "category": "Work"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Healthy aging · active",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "What's the single most important thing people in their fifties should do to stay physically and mentally active into old age?",
+              "vi": "Điều quan trọng nhất mà những người ở tuổi năm mươi nên làm để giữ được sự năng động về thể chất và tinh thần đến tuổi già là gì?",
+              "vocabs": [
+                "fifties",
+                "physically and mentally active",
+                "old age"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, the single best predictor I've seen in twenty years of research is daily walking — not intense exercise, just consistent movement. People who stay active by walking thirty minutes a day preserve cognitive function dramatically better than gym warriors who train hard but sit the rest of the day. Movement frequency matters more than intensity.",
+              "vi": "Thành thật mà nói, yếu tố dự báo tốt nhất tôi từng thấy trong hai mươi năm nghiên cứu là đi bộ hàng ngày — không phải tập luyện cường độ cao, chỉ là chuyển động đều đặn. Những người giữ được sự năng động bằng cách đi bộ ba mươi phút mỗi ngày bảo tồn chức năng nhận thức tốt hơn nhiều so với các 'chiến binh phòng gym' tập nặng nhưng ngồi cả ngày còn lại. Tần suất chuyển động quan trọng hơn cường độ.",
+              "vocabs": [
+                "best predictor",
+                "consistent movement",
+                "preserve cognitive function",
+                "gym warriors",
+                "train hard",
+                "movement frequency",
+                "intensity"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Does staying socially active also play a role, or is that more about mood than longevity?",
+              "vi": "Việc giữ năng động về mặt xã hội có đóng vai trò không, hay điều đó chỉ liên quan đến tâm trạng hơn là tuổi thọ?",
+              "vocabs": [
+                "socially active",
+                "mood",
+                "longevity"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Social activity is actually more powerful than most people realize — it rivals exercise in its effect on lifespan. People with strong, active friendships have lower inflammation, better immune response, and significantly reduced dementia risk. The mechanism isn't fully understood, but the data is unambiguous. Loneliness shortens life about as much as smoking fifteen cigarettes a day.",
+              "vi": "Hoạt động xã hội thực ra mạnh hơn nhiều so với hầu hết mọi người nhận ra — nó sánh ngang với tập thể dục về tác động lên tuổi thọ. Những người có tình bạn mạnh mẽ, năng động có mức viêm thấp hơn, phản ứng miễn dịch tốt hơn, và giảm đáng kể nguy cơ sa sút trí tuệ. Cơ chế chưa được hiểu hoàn toàn, nhưng dữ liệu thì rõ ràng. Sự cô đơn rút ngắn tuổi thọ tương đương với hút mười lăm điếu thuốc mỗi ngày.",
+              "vocabs": [
+                "social activity",
+                "rivals exercise",
+                "lifespan",
+                "inflammation",
+                "immune response",
+                "dementia risk",
+                "mechanism",
+                "unambiguous",
+                "loneliness"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 4,
+        "scale": "1-5",
+        "label": "Rất thông dụng",
+        "coca_rank": 1024,
+        "coca_band": "1001-2000",
+        "oxford_level": "Oxford 2000",
+        "cefr_level": "A2",
+        "appearance_rate": "~80% hội thoại + văn viết phổ thông",
+        "methodology": "COCA + Oxford OALD",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD"
+        ]
+      },
+      "v1_register": "neutral",
+      "v1_word_forms": [
+        {
+          "form": "act",
+          "pos": "Verb",
+          "phonetic": "/ækt/",
+          "vi": "Hành động",
+          "example_en": "We must act now.",
+          "example_vi": "Chúng ta phải hành động ngay."
+        },
+        {
+          "form": "action",
+          "pos": "Noun",
+          "phonetic": "/ˈækʃn/",
+          "vi": "Hành động (n)",
+          "example_en": "Take action immediately.",
+          "example_vi": "Hãy hành động ngay lập tức."
+        },
+        {
+          "form": "activity",
+          "pos": "Noun",
+          "phonetic": "/ækˈtɪvəti/",
+          "vi": "Hoạt động",
+          "example_en": "Outdoor activities are popular here.",
+          "example_vi": "Các hoạt động ngoài trời phổ biến ở đây."
+        },
+        {
+          "form": "actively",
+          "pos": "Adverb",
+          "phonetic": "/ˈæktɪvli/",
+          "vi": "Một cách năng động",
+          "example_en": "She actively participates in meetings.",
+          "example_vi": "Cô ấy tích cực tham gia các cuộc họp."
+        },
+        {
+          "form": "inactive",
+          "pos": "Adjective (neg.)",
+          "phonetic": "/ɪnˈæktɪv/",
+          "vi": "Không hoạt động",
+          "example_en": "The account has been inactive for years.",
+          "example_vi": "Tài khoản này không hoạt động từ nhiều năm."
+        },
+        {
+          "form": "activate",
+          "pos": "Verb",
+          "phonetic": "/ˈæktɪveɪt/",
+          "vi": "Kích hoạt",
+          "example_en": "Please activate your card before use.",
+          "example_vi": "Vui lòng kích hoạt thẻ trước khi sử dụng."
+        },
+        {
+          "form": "activation",
+          "pos": "Noun",
+          "phonetic": "/ˌæktɪˈveɪʃn/",
+          "vi": "Sự kích hoạt",
+          "example_en": "Activation takes 24 hours.",
+          "example_vi": "Kích hoạt mất 24 giờ."
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "active vs activeness",
+          "rule": "'active' (adj) là từ phổ biến. 'activeness' (noun) RẤT HIẾM dùng, thay bằng 'activity'.",
+          "correct_examples": [
+            "✅ She is active.",
+            "✅ Her level of activity is high."
+          ],
+          "common_mistakes": [
+            "❌ her activeness → ✅ her activity / how active she is"
+          ]
+        },
+        {
+          "topic": "active in vs active at",
+          "rule": "'active in [field/area]' (lĩnh vực). 'active at [place/event]' (địa điểm/sự kiện).",
+          "correct_examples": [
+            "✅ She's active in politics.",
+            "✅ He was active at the conference."
+          ],
+          "common_mistakes": [
+            "❌ active on politics → ✅ active in politics"
+          ]
+        },
+        {
+          "topic": "Active vs Passive Voice (grammar term)",
+          "rule": "'active voice' là thuật ngữ ngữ pháp đối lập với 'passive voice'. Học riêng.",
+          "correct_examples": [
+            "✅ Active: The cat ate the fish. Passive: The fish was eaten by the cat."
+          ],
+          "common_mistakes": []
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Lối sống/cá nhân năng động"
+        },
+        {
+          "meaning_index": 1,
+          "register": "neutral",
+          "usage_context": "Trạng thái hoạt động (system/account)"
+        },
+        {
+          "meaning_index": 2,
+          "register": "neutral",
+          "usage_context": "Vai trò chủ động/tham gia"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "energetic",
+          "nuance": "Cụ thể về năng lượng dồi dào"
+        },
+        {
+          "word": "dynamic",
+          "nuance": "Năng động + có tính thay đổi/lãnh đạo"
+        },
+        {
+          "word": "lively",
+          "nuance": "Sống động, tươi vui"
+        },
+        {
+          "word": "engaged",
+          "nuance": "Tham gia tích cực, gần với meaning #3"
+        },
+        {
+          "word": "vigorous",
+          "nuance": "Mạnh mẽ, đầy sức sống"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "inactive",
+          "nuance": "Trực tiếp đối nghĩa"
+        },
+        {
+          "word": "passive",
+          "nuance": "Bị động, không chủ động (gần meaning #3)"
+        },
+        {
+          "word": "dormant",
+          "nuance": "Ngủ yên, tạm ngưng (cho volcano, gene...)"
+        },
+        {
+          "word": "sedentary",
+          "nuance": "Ít vận động (lối sống ngồi nhiều)"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "active lifestyle",
+          "example_en": "Doctors recommend an active lifestyle.",
+          "example_vi": "Bác sĩ khuyên có lối sống năng động.",
+          "frequency_note": "Cực phổ biến"
+        },
+        {
+          "phrase": "physically active",
+          "example_en": "Try to stay physically active.",
+          "example_vi": "Hãy cố gắng giữ năng động thể chất.",
+          "frequency_note": "Health"
+        },
+        {
+          "phrase": "actively involved",
+          "example_en": "She's actively involved in charity work.",
+          "example_vi": "Cô ấy tích cực tham gia công tác từ thiện.",
+          "frequency_note": "Phổ biến"
+        },
+        {
+          "phrase": "active duty",
+          "example_en": "He's on active duty in the army.",
+          "example_vi": "Anh ấy đang tại ngũ trong quân đội.",
+          "frequency_note": "Military"
+        },
+        {
+          "phrase": "active ingredient",
+          "example_en": "The active ingredient is caffeine.",
+          "example_vi": "Thành phần hoạt chất là caffeine.",
+          "frequency_note": "Pharmaceutical"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "take an active role/interest",
+          "meaning": "Đóng vai trò/quan tâm chủ động",
+          "example_en": "She takes an active role in her child's education.",
+          "example_vi": "Cô ấy đóng vai trò chủ động trong việc học của con.",
+          "register": "neutral"
+        },
+        {
+          "phrase": "active duty",
+          "meaning": "Tại ngũ (quân đội)",
+          "example_en": "He returned from active duty last month.",
+          "example_vi": "Anh ấy mới trở về sau khi tại ngũ tháng trước.",
+          "register": "military"
+        },
+        {
+          "phrase": "in active use",
+          "meaning": "Đang được sử dụng tích cực",
+          "example_en": "This software is no longer in active use.",
+          "example_vi": "Phần mềm này không còn được sử dụng tích cực.",
+          "register": "technical"
+        }
+      ],
+      "v1_usage_notes": [
+        "Đừng dùng 'activeness' — gần như không bao giờ dùng. Dùng 'activity' hoặc 'how active'.",
+        "'Active' có thể đối nghĩa nhiều cách: inactive (general), passive (role), dormant (system), sedentary (lifestyle).",
+        "Trong grammar: 'active voice' vs 'passive voice' là cặp thuật ngữ riêng.",
+        "Dành cho người Việt: 'physically active' = năng động THỂ CHẤT (KHÔNG dịch 'năng động vật lý')."
+      ]
+    },
+    {
+      "id": 302,
+      "word": "achievement",
+      "phonetic": "/əˈtʃiːvmənt/",
+      "pos": "Noun",
+      "frequency": 4,
+      "categories": [
+        "Success",
+        "Education",
+        "Career"
+      ],
+      "meanings": [
+        {
+          "vi": "Thành tựu, điều đạt được sau nỗ lực",
+          "examples": [
+            {
+              "en": "Winning the championship was her greatest achievement.",
+              "vi": "Vô địch giải đấu là thành tựu lớn nhất của cô ấy.",
+              "category": "Sports"
+            },
+            {
+              "en": "His scientific achievements changed the field forever.",
+              "vi": "Những thành tựu khoa học của ông ấy đã thay đổi ngành mãi mãi.",
+              "category": "Science"
+            },
+            {
+              "en": "Graduating from medical school is a major achievement.",
+              "vi": "Tốt nghiệp trường y là một thành tựu lớn.",
+              "category": "Education"
+            }
+          ]
+        },
+        {
+          "vi": "Sự đạt được, quá trình hoàn thành mục tiêu",
+          "examples": [
+            {
+              "en": "The achievement of world peace remains a distant goal.",
+              "vi": "Việc đạt được hòa bình thế giới vẫn là mục tiêu xa vời.",
+              "category": "Politics"
+            },
+            {
+              "en": "Achievement requires both talent and discipline.",
+              "vi": "Để đạt được thành tựu cần cả tài năng lẫn kỷ luật.",
+              "category": "General"
+            }
+          ]
+        }
+      ],
+      "conversations": [
+        {
+          "title": "Measuring success · achievement",
+          "lines": [
+            {
+              "speaker": "A",
+              "en": "How do you personally distinguish between a real achievement and just doing what was expected of you?",
+              "vi": "Bạn cá nhân phân biệt thế nào giữa một thành tựu thật sự và chỉ làm những gì được mong đợi?",
+              "vocabs": [
+                "distinguish",
+                "real achievement",
+                "expected of you"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Honestly, I've come to believe a real achievement is something you couldn't have done five years earlier. It requires growth you didn't possess at the start. Hitting quarterly targets isn't an achievement — it's competence. But shipping something nobody believed possible, building a team that survives without you, leading through genuine crisis — those are achievements because they fundamentally change who you are.",
+              "vi": "Thành thật mà nói, tôi đã đi đến niềm tin rằng một thành tựu thật sự là điều bạn không thể làm được năm năm trước. Nó đòi hỏi sự trưởng thành mà bạn không có lúc bắt đầu. Đạt chỉ tiêu quý không phải thành tựu — đó là sự thành thạo. Nhưng tạo ra điều không ai tin là khả thi, xây dựng đội ngũ tự vận hành không cần bạn, dẫn dắt qua khủng hoảng thực sự — đó mới là thành tựu vì chúng thay đổi tận gốc con người bạn.",
+              "vocabs": [
+                "growth",
+                "quarterly targets",
+                "competence",
+                "shipping something",
+                "team that survives",
+                "genuine crisis",
+                "fundamentally change"
+              ]
+            },
+            {
+              "speaker": "A",
+              "en": "Does that mean smaller daily achievements don't really matter compared to those big milestones?",
+              "vi": "Vậy có nghĩa là những thành tựu nhỏ hằng ngày không thực sự quan trọng so với những cột mốc lớn đó?",
+              "vocabs": [
+                "smaller daily achievements",
+                "matter",
+                "milestones"
+              ]
+            },
+            {
+              "speaker": "B",
+              "en": "Quite the opposite. Big achievements are almost always made of thousands of small, invisible ones — the difficult conversation you had at 11pm, the boring task you finished when no one was watching, the rejection you absorbed without quitting. Most people only celebrate the trophy, but the people who actually achieve great things learned to recognize their small wins long before anyone else did.",
+              "vi": "Hoàn toàn ngược lại. Những thành tựu lớn gần như luôn được tạo thành từ hàng nghìn thành tựu nhỏ, vô hình — cuộc trò chuyện khó khăn lúc 11 giờ đêm, nhiệm vụ nhàm chán bạn hoàn thành khi không ai để mắt tới, sự từ chối bạn hấp thụ mà không bỏ cuộc. Hầu hết mọi người chỉ ăn mừng chiếc cúp, nhưng những người thật sự đạt được điều lớn lao đã học cách nhận ra những chiến thắng nhỏ của mình từ rất lâu trước khi người khác làm vậy.",
+              "vocabs": [
+                "invisible ones",
+                "difficult conversation",
+                "boring task",
+                "rejection",
+                "absorbed",
+                "trophy",
+                "small wins"
+              ]
+            }
+          ]
+        }
+      ],
+      "v1_frequency_detail": {
+        "score": 4,
+        "scale": "1-5",
+        "label": "Rất thông dụng",
+        "coca_rank": 1487,
+        "coca_band": "1001-2000",
+        "oxford_level": "Oxford 2000",
+        "cefr_level": "B1",
+        "appearance_rate": "~80% văn viết học thuật, ~60% hội thoại",
+        "methodology": "COCA + Oxford OALD",
+        "data_sources": [
+          "COCA",
+          "Oxford OALD"
+        ]
+      },
+      "v1_register": "neutral-formal",
+      "v1_word_forms": [
+        {
+          "form": "achieve",
+          "pos": "Verb",
+          "phonetic": "/əˈtʃiːv/",
+          "vi": "Đạt được",
+          "example_en": "She achieved her goals.",
+          "example_vi": "Cô ấy đã đạt được các mục tiêu."
+        },
+        {
+          "form": "achieved",
+          "pos": "Verb (past/p.p.)",
+          "phonetic": "/əˈtʃiːvd/",
+          "vi": "Đã đạt được",
+          "example_en": "He achieved more than expected.",
+          "example_vi": "Anh ấy đã đạt được nhiều hơn dự kiến."
+        },
+        {
+          "form": "achieving",
+          "pos": "Verb (V-ing)",
+          "phonetic": "/əˈtʃiːvɪŋ/",
+          "vi": "Việc đạt được",
+          "example_en": "Achieving balance is difficult.",
+          "example_vi": "Đạt được sự cân bằng là khó."
+        },
+        {
+          "form": "achiever",
+          "pos": "Noun (person)",
+          "phonetic": "/əˈtʃiːvə/",
+          "vi": "Người đạt được thành tựu",
+          "example_en": "She's a high achiever.",
+          "example_vi": "Cô ấy là người có thành tích cao."
+        },
+        {
+          "form": "achievable",
+          "pos": "Adjective",
+          "phonetic": "/əˈtʃiːvəbl/",
+          "vi": "Có thể đạt được",
+          "example_en": "Set achievable goals.",
+          "example_vi": "Đặt mục tiêu có thể đạt được."
+        },
+        {
+          "form": "underachieve",
+          "pos": "Verb",
+          "phonetic": "/ˌʌndərəˈtʃiːv/",
+          "vi": "Đạt dưới mức tiềm năng",
+          "example_en": "He's underachieving at school.",
+          "example_vi": "Cậu ấy đang đạt dưới mức ở trường."
+        },
+        {
+          "form": "overachiever",
+          "pos": "Noun",
+          "phonetic": "/ˌəʊvərəˈtʃiːvə/",
+          "vi": "Người đạt vượt mức kỳ vọng",
+          "example_en": "She's a classic overachiever.",
+          "example_vi": "Cô ấy là típ người đạt vượt kỳ vọng kinh điển."
+        }
+      ],
+      "v1_grammar_notes": [
+        {
+          "topic": "Countable",
+          "rule": "'Achievement' thường COUNTABLE. Dùng 'an achievement' / 'achievements'.",
+          "correct_examples": [
+            "✅ a great achievement",
+            "✅ her many achievements"
+          ],
+          "common_mistakes": [
+            "❌ much achievement → ✅ many achievements / great achievement"
+          ]
+        },
+        {
+          "topic": "achievement vs success",
+          "rule": "'achievement' = điều cụ thể đạt được. 'success' = trạng thái thành công (broader).",
+          "correct_examples": [
+            "✅ Her achievements include three patents.",
+            "✅ Her success was widely recognized."
+          ],
+          "common_mistakes": []
+        },
+        {
+          "topic": "sense of achievement",
+          "rule": "Idiom: 'a sense of achievement' = cảm giác hoàn thành/thỏa mãn.",
+          "correct_examples": [
+            "✅ Finishing the marathon gave me a sense of achievement.",
+            "✅ He felt a deep sense of achievement."
+          ],
+          "common_mistakes": [
+            "❌ feeling of achievement (less natural) → ✅ sense of achievement"
+          ]
+        }
+      ],
+      "v1_meaning_metadata": [
+        {
+          "meaning_index": 0,
+          "register": "neutral",
+          "usage_context": "Thành tựu cụ thể (countable)"
+        },
+        {
+          "meaning_index": 1,
+          "register": "formal",
+          "usage_context": "Quá trình đạt được (uncountable, abstract)"
+        }
+      ],
+      "v1_synonyms": [
+        {
+          "word": "accomplishment",
+          "nuance": "Gần như đồng nghĩa, hơi formal hơn"
+        },
+        {
+          "word": "feat",
+          "nuance": "Thành tích đáng nể, dùng cho việc khó. VD: 'an engineering feat'"
+        },
+        {
+          "word": "triumph",
+          "nuance": "Chiến thắng vẻ vang, emotional"
+        },
+        {
+          "word": "success",
+          "nuance": "Trạng thái thành công - rộng hơn"
+        },
+        {
+          "word": "milestone",
+          "nuance": "Cột mốc quan trọng trên hành trình"
+        }
+      ],
+      "v1_antonyms": [
+        {
+          "word": "failure",
+          "nuance": "Trực tiếp đối nghĩa"
+        },
+        {
+          "word": "underachievement",
+          "nuance": "Đạt dưới mức tiềm năng"
+        }
+      ],
+      "v1_collocations": [
+        {
+          "phrase": "major achievement",
+          "example_en": "Landing the deal was a major achievement.",
+          "example_vi": "Chốt được hợp đồng là thành tựu lớn.",
+          "frequency_note": "Cực phổ biến"
+        },
+        {
+          "phrase": "great achievement",
+          "example_en": "It was a great achievement for the team.",
+          "example_vi": "Đó là thành tựu lớn của đội.",
+          "frequency_note": "Phổ biến"
+        },
+        {
+          "phrase": "sense of achievement",
+          "example_en": "She felt a deep sense of achievement.",
+          "example_vi": "Cô ấy cảm thấy thỏa mãn sâu sắc.",
+          "frequency_note": "Cực phổ biến"
+        },
+        {
+          "phrase": "academic achievement",
+          "example_en": "Academic achievement varies by income level.",
+          "example_vi": "Thành tích học tập khác nhau theo mức thu nhập.",
+          "frequency_note": "Học thuật"
+        },
+        {
+          "phrase": "lifetime achievement",
+          "example_en": "She received a lifetime achievement award.",
+          "example_vi": "Cô ấy nhận giải thành tựu trọn đời.",
+          "frequency_note": "Trao giải"
+        },
+        {
+          "phrase": "personal achievement",
+          "example_en": "This is my biggest personal achievement.",
+          "example_vi": "Đây là thành tựu cá nhân lớn nhất của tôi.",
+          "frequency_note": "Phỏng vấn"
+        }
+      ],
+      "v1_related_phrases": [
+        {
+          "phrase": "sense of achievement",
+          "meaning": "Cảm giác hoàn thành/thỏa mãn",
+          "example_en": "Completing the project gave me a real sense of achievement.",
+          "example_vi": "Hoàn thành dự án mang lại cho tôi cảm giác hoàn thành thực sự.",
+          "register": "neutral"
+        },
+        {
+          "phrase": "lifetime achievement (award)",
+          "meaning": "Giải thành tựu trọn đời",
+          "example_en": "He was honored with a lifetime achievement award.",
+          "example_vi": "Ông ấy được vinh danh với giải thành tựu trọn đời.",
+          "register": "formal"
+        },
+        {
+          "phrase": "high-achieving",
+          "meaning": "Đạt thành tích cao (adjective)",
+          "example_en": "She comes from a high-achieving family.",
+          "example_vi": "Cô ấy đến từ một gia đình có thành tích cao.",
+          "register": "neutral"
+        }
+      ],
+      "v1_usage_notes": [
+        "'Achievement' thường COUNTABLE - dùng 'an achievement' / 'many achievements'.",
+        "Phân biệt 'achievement' (cụ thể) vs 'success' (trạng thái rộng).",
+        "Idiom 'sense of achievement' = cảm giác hoàn thành - học thuộc.",
+        "Dành cho người Việt: 'achievement' = thành tựu/thành tích. Trong CV thường dùng 'achievements' (số nhiều).",
+        "'High achiever' / 'underachiever' / 'overachiever' - cụm từ phổ biến trong giáo dục/công việc."
       ]
     }
   ]
